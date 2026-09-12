@@ -1,10 +1,11 @@
+# Install scripts are opt-in, one package at a time.
+#
+# esbuild needs its postinstall to place the platform binary that tsx and Vitest run on.
+# unrs-resolver's postinstall only probes for a prebuilt native binding, which pnpm has
+# already installed as an optional dependency, so it is denied rather than trusted.
 allowBuilds:
-  unrs-resolver: set this to true or false
-# unrs-resolver's postinstall only probes for a prebuilt native binding; the
-# platform package is installed as an optional dependency and the resolver falls
-# back to WASM without it. Nothing here needs to run arbitrary install scripts.
-ignoredBuiltDependencies:
-  - unrs-resolver
+  esbuild: true
+  unrs-resolver: false
 onlyBuiltDependencies:
   - "@tailwindcss/oxide"
   - sharp

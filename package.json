@@ -13,7 +13,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "ingest": "tsx scripts/ingest.ts"
   },
   "dependencies": {
     "next": "^16.3.4",
@@ -31,6 +32,7 @@
     "postcss": "^8.5.28",
     "prettier": "^3.9.6",
     "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.13",
     "typescript": "^5.9.3",
     "vitest": "^5.0.0"
   }
