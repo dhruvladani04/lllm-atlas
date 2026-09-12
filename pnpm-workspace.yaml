@@ -1,0 +1,11 @@
+allowBuilds:
+  unrs-resolver: set this to true or false
+# unrs-resolver's postinstall only probes for a prebuilt native binding; the
+# platform package is installed as an optional dependency and the resolver falls
+# back to WASM without it. Nothing here needs to run arbitrary install scripts.
+ignoredBuiltDependencies:
+  - unrs-resolver
+onlyBuiltDependencies:
+  - "@tailwindcss/oxide"
+  - sharp
+strictDepBuilds: false
