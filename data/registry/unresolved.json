@@ -1,1 +1,2284 @@
-[]
+[
+  {
+    "name": "ALBERT (ensemble)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "AlphaCode 41B (test set, 10@100k, no clustering)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "AlphaCode 41B + clustering (test set, 10@100k)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "AlphaCode 9B (test set, 10@100k, no clustering)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Anthropic Opus 4.6 (Max)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "ARChitects (Kaggle 2024 winner)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "BART (gold spans) (paper Table 3 R-1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "BART (paper Table 3 R-1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "BART 1024 (paper Table 2 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "BART 256 (paper Table 2 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "BART 512 (paper Table 2 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "BART* (paper Table 3 R-1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "BERT Large",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "BERT-Large",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "BERT-Large (fine-tuned)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "BERT++",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "best frontier model (Tiers 1–3, tools-on)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Chameleon (GPT-4, Text-GT, tools)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "ChatGLM2-6B (paper Table 3 OverAll)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "ChatGLM2-6B-32k (paper Table 3 OverAll)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "ChatGPT (gpt-3.5-turbo)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "ChatGPT (paper Table 3 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Chinchilla 70B",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude (paper Table 3 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 2 (BM25 retrieval)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 2 (paper Table 3 Average)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 3 Opus",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 3 Opus (3-shot CoT)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 3 Opus (5-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 3 Opus (BM25 retrieval)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 3.5 Sonnet",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 3.5 Sonnet (3-shot CoT)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 3.5 Sonnet (June 2024)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 3.5 Sonnet (Oct 2024; CodeSOTA MBPP pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 3.5 Sonnet (upgraded; Anthropic tools scaffold)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 4.5 Haiku (high reasoning; mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 4.5 Opus (high reasoning; mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 4.5 Sonnet (high reasoning; mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 4.7 (High)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude 4.7 (Max)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Code + Fable 5 (xhigh; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Code + GLM-5.1 (max; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Code + Opus 4.7 (max; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Code + Opus 4.8 (high; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Code + Sonnet 5 (high; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Fable 5 (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Mythos Preview (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Opus 4 (CodeSOTA MBPP pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Opus 4.1 + SWE-agent (public, launch revision)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Opus 4.5 (FC)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Opus 4.6 (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Opus 4.6 (mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Opus 4.7 (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Opus 4.8 (FrontierCode 1.1 Main pass rate)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Opus 4.8 (High)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Opus 4.8 (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Opus 4.8 (max; Toolathlon-Verified)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Sonnet 4 (CodeSOTA MBPP pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Sonnet 4 + SWE-agent (public, launch revision)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Sonnet 4.5 (FC)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Sonnet 5 (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude-4-Sonnet (paper Overall)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "code-davinci-002 (MultiPL-HumanEval Python, pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "CodeBERT encoder (CodeSearchNet summarization, six-language overall BLEU)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "CodeLlama-34B base (Mercury-eval Overall Beyond, 5 samples)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "CodeLlama-34B Instruct",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "CodeQwen1.5-7B base (Mercury-eval Overall Beyond, 5 samples)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "CodeQwen1.5-7B-Chat",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Codex (code-davinci-002)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Codex + GPT-5.5 (xhigh; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Codex + GPT-5.6 Luna (max; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Codex + GPT-5.6 Terra (max; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Codex-12B (original paper, 164-task HumanEval pass@1 estimator)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "CPACE",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Cursor CLI + Grok 4.5 (high; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DaVinci003 (paper Table 3 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeBERTa (TuringNLRv4)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeBERTa 1.5B (single model)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeBERTa ensemble (TuringNLRv4)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeBERTa-xxlarge (1.5B)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeepSeek V3 (open weight)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeepSeek V3.2 (high reasoning; mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeepSeek-Coder-33B base (Mercury-eval Overall Beyond, 5 samples)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeepSeek-Coder-V2-Instruct",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeepSeek-Coder-V2-Instruct (CodeSOTA MBPP pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeepSeek-R1 (paper Overall)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeepSeek-R1-0528 (paper Overall)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeepSeek-V2.5 (November 2024)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeepSeek-V3 (base, 0-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeepSeek-V3 (CodeSOTA MBPP pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "DeepSeek-V3 (November 2024)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "ELECTRA-Large",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "ERNIE 3.0",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "EXAONE-4.0-32B (README Avg. snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Ext. Oracle (paper Table 3 R-1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Flan-T5 (paper Table 3 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Flan-UL2 (paper Table 3 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 1.5 Pro",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 1.5 Pro (3-shot CoT)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 1.5 Pro (with subtitles, 1/0.5 fps)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 1.5 Pro 002",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 2.5 Pro Preview 06-05 (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 2.5 Pro Thinking (audiovisual)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3 Flash (high reasoning; mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3 Flash (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3 Pro",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3 Pro (Challenge Avg@3)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3 Pro (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3 Pro (mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3.1 Flash-Lite (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3.1 Pro (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3.1 Pro (Preview)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3.5 Flash (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3.5 Flash-Lite (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3.6 Flash (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 3.6 Flash (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini CLI + Gemini 3 Pro (high; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini CLI + Gemini 3.1 Pro (high; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini Ultra (10-shot decontaminated)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini Ultra 1.0 (3-shot CoT)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini-1.5-Pro",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini-1.5-pro (README Avg. snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini-2.5-Flash (paper Overall)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini-2.5-Pro (paper Overall)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemma 3 27B (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemma 4 12B (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemma 4 26B-A4B (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemma 4 31B (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemma 4 E2B (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemma 4 E4B (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GLM-4",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GLM-4.7 (glm-4-7; open weight)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GLM-5 (high reasoning; mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GLM-5.1 (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GLM-5.2 (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Goedel-Prover (Lean, 7/644, pass@512)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Gopher 280B",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT 5.2 Codex (mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-3 + PromptPG (2-shot CoT, Text-GT)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-3 175B",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-3 175B (few-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-3 175B (fine-tuned)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-3 175B (full MATH)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "gpt-3.5-turbo",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-3.5-Turbo-16k (paper Table 3 OverAll)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "gpt-4",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4 (3-shot CoT)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4 (5-shot CoT)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4 (5-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4 (EvalPlus Table 3, greedy, HumanEval base pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4 (full MATH)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4 (May 2023)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4 (paper Table 3 Average)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4 (paper Table 3 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4 base (10-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4 Turbo + SWE-agent",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4-1106-preview (README Avg. snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4-Turbo",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4-Turbo (April 2024)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4-Turbo (November 2023)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4.1 (CodeSOTA MBPP pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4.1-2025-04-14 (FC)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4.5",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4.5 (pure LLM)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o (198-task Diamond offline)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o (Agentless)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o (AIME 2024, pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o (August 2024)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o (few-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o (full benchmark)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o (paper era, Lean, ~1/640)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o (testmini)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o (validation, paper update)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o (with subtitles, 384 frames)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o + SWE-agent (public, launch revision)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4o Mini (July 2024)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4V (full benchmark)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4V (testmini, original paper)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-4V (validation, paper)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5 (Lean, ~42/660, pass@1, ~10-turn ReAct)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5 (paper Overall)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5 + SWE-agent (public, launch revision)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5 Mini (mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5-2 (high reasoning; mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5-2 Codex (mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.4 mini (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.4 nano (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.5 (FrontierCode 1.1 Main pass rate)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.5 (High)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.5 (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.5 (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.5 (xhigh, expected performance)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.5 (xHigh)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.5 high (Challenge Avg@3)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.5 Pro (High)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.6 Luna (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.6 Luna (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.6 Sol (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.6 Sol (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.6 Sol (Max)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.6 Sol (xHigh)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.6 Terra (LLM Stats MRCR v2 8-needle)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.6 Terra (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-5.6-Sol (max, expected performance)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Grok 4.5 (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Grok Beta",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "HMNet (gold spans) (paper Table 3 R-1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "HMNet* (paper Table 3 R-1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "InCoder-6.7B (MultiPL-HumanEval Python, pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "InternLM-7B-8k (paper Table 3 OverAll)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Jamba-1.5-large (README Avg. snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Jamba-1.5-mini (README Avg. snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Jeremy Berman system",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "KEAR ensemble",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "KEAR single model",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Kimi K2 Thinking",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Kimi K2.5 (high reasoning; mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Kimi K2.6 (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Kimi K2.7 Code (FrontierCode 1.1 Main pass rate)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Kimi K3 (max; Toolathlon-Verified)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Kimi-Chat (paper Table 3 Average)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "LED 1024 (paper Table 2 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "LED 16384 (paper Table 2 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "LED 4096 (paper Table 2 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Llama 2 70B (5-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Llama 3 70B",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Llama 3 70B (5-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Llama 3 70B (7-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "llama 3 70b-instruct",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "llama 3 8b-instruct",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Llama 3.1 405B",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Llama 3.1 405B (5-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "LLaMA-65B",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Llama2-7B-chat-4k (paper Table 3 OverAll)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "LongChat-v1.5-7B-32k (paper Table 3 OverAll)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "mini-SWE-agent + Muse Spark 1.1 (xhigh; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "MiniMax M2.5 (high reasoning; mini-SWE-agent 2.0.0)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "MiniMax M3 (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "MiniMax-M2 (paper Overall)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "MT-DNN",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Muse Spark 1.1 (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Muse Spark 1.2 (xhigh; Toolathlon-Verified)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Naive (paper Table 2 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "NVARC",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o1",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o1 (198-task Diamond offline)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o1 (AIME 2024, pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o1 (MATH-500)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "O1 Mini (Sept 2024)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "O1 Preview (Sept 2024)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o1-mini",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o1-mini (September 2024)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o1-preview",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o1-preview (September 2024)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o3 (AIME 2024, pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o3 with Python + browsing",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o3-mini (CodeSOTA MBPP pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o3-mini high (Epoch independent eval, Tiers 1–3, tools-on)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o3-preview-low (CoT + search/synthesis)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o4-mini (CodeSOTA MBPP pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o4-mini with Python + browsing",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "o4-mini-2025-04-16 (FC)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "OpenAI o1 (testmini)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "OpenAI o1-mini",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "PaLM 540B",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "PaLM 540B (5-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "PaLM 540B (8-shot CoT)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "PaLM 540B (CoT + self-consistency)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "PaLM 540B (translate-to-English CoT)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "PGNet (gold spans) (paper Table 3 R-1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "PGNet (paper Table 3 R-1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "PGNet* (paper Table 3 R-1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen2.5 72B (base, 0-shot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen2.5-14B-Instruct-1M (README Avg. snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen2.5-7B-Instruct-1M (README Avg. snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen2.5-Coder 32B (CodeSOTA MBPP pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen2.5-Coder-32B-Instruct",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen2.5-Coder-32B-Instruct (CodeSOTA MBPP pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen2.5-Coder-32B-Instruct (EvalPlus, greedy, HumanEval base pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3 32B + SWE-agent (public, launch revision)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3-14B (README Avg. snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3-235B-A22B (README Avg. snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3-235B-A22B-Thinking-2507 (paper Overall)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3-30B-A3B-Thinking-2507 (paper Overall)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3-32B (README Avg. snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3-Next-80B-A3B-Thinking (paper Overall)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3-Omni-30B (audiovisual)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3.6-27B (open weight)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3.6-35B-A3B (open weight)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3.7 Max (LLM Stats snapshot)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3.7 Max (qwen3-7-max; closed)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Qwen3.7 Plus (qwen3-7-plus; closed)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "r1 / r1-zero (single CoT)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Random (paper Table 3 R-1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "RoBERTa",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "RoBERTa encoder (CodeSearchNet summarization, six-language overall BLEU)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "RoBERTa ensemble",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "RoBERTa-large",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "RoBERTa-large (fine-tuned)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "SantaCoder-1.1B (MultiPL-HumanEval Python, pass@1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Seq2Seq (CodeSearchNet summarization, six-language overall BLEU)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "ST-MoE-32B",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "StarCoder2-15B base (Mercury-eval Overall Beyond, 5 samples)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "SWE-1.6 (FrontierCode 1.1 Main pass rate)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "SWE-1.7 (FrontierCode 1.1 Main pass rate)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "T0pp (paper Table 3 Avg)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "T5 (ensemble)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "T5-11B",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Terminus 2 + Fable 5 (high; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Terminus 2 + Gemini 3 Pro (high; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Terminus 2 + Gemini 3.1 Pro (high; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Terminus 2 + GPT-5.5 (xhigh; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Terminus 2 + Opus 4.7 (max; TB 2.1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "text-davinci-003",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "TextRank (paper Table 3 R-1)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Transformer (CodeSearchNet summarization, six-language overall BLEU)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "UN codellama-13b-instruct",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "UN codellama-34b-instruct",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "UN codellama-70b-instruct",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Vega v2",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "Vicuna-v1.5-7B-16k (paper Table 3 OverAll)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "XGen-7B-8k (paper Table 3 OverAll)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "XLNet (ensemble)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  },
+  {
+    "name": "YaRN-Mistral (paper Table 3 Average)",
+    "source_id": "benchwiki",
+    "first_seen_at": "2026-09-12",
+    "last_seen_at": "2026-09-12",
+    "occurrences": 1
+  }
+]
