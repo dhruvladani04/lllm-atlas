@@ -8,6 +8,7 @@ import {
   loadModels,
 } from "@/lib/data/derived";
 import { buildRows, type CapabilityIndexEntry } from "@/lib/leaderboard/rows";
+import { toTableData, toTableModels } from "@/lib/leaderboard/view";
 import { Leaderboard } from "@/components/leaderboard/leaderboard";
 
 /**
@@ -42,45 +43,54 @@ export default function ModelsPage() {
 
   // Both views of every tab are built here, so toggling "hide saturated benchmarks"
   // reorders prerendered rows on the client rather than asking the server for anything.
+  //
+  // When hiding saturated benchmarks changes nothing — which happens whenever the
+  // most-measured benchmark is healthy — the two views are the same object, and the RSC
+  // payload carries it once instead of twice.
+  const pair = (
+    hidden: ReturnType<typeof toTableData>,
+    shown: ReturnType<typeof toTableData>,
+  ) =>
+    JSON.stringify(hidden) === JSON.stringify(shown)
+      ? { hidden, shown: hidden }
+      : { hidden, shown };
+
   const tabs = {
-    text: {
-      hidden: buildRows({
-        scores,
-        models,
-        capabilityIndex,
-        tab: "text",
-        hideSaturated: true,
-      }),
-      shown: buildRows({
-        scores,
-        models,
-        capabilityIndex,
-        tab: "text",
-        hideSaturated: false,
-      }),
-    },
-    agentic: {
-      hidden: buildRows({
-        scores,
-        models,
-        capabilityIndex,
-        tab: "agentic",
-        hideSaturated: true,
-      }),
-      shown: buildRows({
-        scores,
-        models,
-        capabilityIndex,
-        tab: "agentic",
-        hideSaturated: false,
-      }),
-    },
+    text: pair(
+      toTableData(
+        buildRows({ scores, models, capabilityIndex, tab: "text", hideSaturated: true }),
+      ),
+      toTableData(
+        buildRows({ scores, models, capabilityIndex, tab: "text", hideSaturated: false }),
+      ),
+    ),
+    agentic: pair(
+      toTableData(
+        buildRows({
+          scores,
+          models,
+          capabilityIndex,
+          tab: "agentic",
+          hideSaturated: true,
+        }),
+      ),
+      toTableData(
+        buildRows({
+          scores,
+          models,
+          capabilityIndex,
+          tab: "agentic",
+          hideSaturated: false,
+        }),
+      ),
+    ),
   };
 
   return (
     <Suspense fallback={null}>
       <Leaderboard
         tabs={tabs}
+        tableModels={toTableModels(models)}
         image={image}
         models={models}
         freshness={freshness}

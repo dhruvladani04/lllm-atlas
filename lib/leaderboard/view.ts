@@ -1,0 +1,112 @@
+import type { QuotedNumber } from "@/lib/schemas/common";
+import type { HealthFlag } from "@/lib/schemas/score";
+import type { Model } from "@/lib/schemas/model";
+import type {
+  BuildRowsResult,
+  LeaderboardRow,
+  UnrankedRow,
+} from "@/lib/leaderboard/rows";
+
+/**
+ * What the client table actually needs.
+ *
+ * A `JoinedScore` carries its whole benchmark record — statistical notes, leaderboard links,
+ * the performance timeline — which is right for the join and wrong to ship to a browser. The
+ * table renders a name, a status and a number, so that is what crosses the wire. Sending the
+ * full record for every row on both toggle states put 444KB into the page and 480ms of
+ * blocking time into the reader's main thread, for data nothing on screen used.
+ */
+
+/**
+ * Model facts are identical across every row for that model, and the page ships four
+ * datasets (two tabs, two toggle states). Repeating a model's prices — each a quoted number
+ * with a source URL — in every one of them put tens of kilobytes of duplicate JSON into the
+ * page. They travel once, in a lookup, and rows reference them.
+ */
+export interface TableModel {
+  display_name: string;
+  creator: string;
+  open_weights: boolean | null;
+  released_at: string | null;
+  context_window: QuotedNumber | null;
+  price_input: QuotedNumber | null;
+  price_output: QuotedNumber | null;
+}
+
+export interface TableRow {
+  key: string;
+  model_id: string;
+  variant: string;
+  value: number;
+  unit: "percent" | "elo" | "index" | "count" | "usd" | "seconds";
+  confidence_interval: number | null;
+  provenance: "independent" | "vendor-reported" | "mixed";
+  health_flags: HealthFlag[];
+  benchmark_status: "active" | "nearing-saturation" | "saturated" | "deprecated";
+  eci: number | null;
+}
+
+export interface TableUnranked {
+  model_id: string;
+  reason: UnrankedRow["reason"];
+  scoreCount: number;
+}
+
+export interface TableData {
+  reference: { slug: string; name: string; status: TableRow["benchmark_status"] } | null;
+  rows: TableRow[];
+  unranked: TableUnranked[];
+  excluded: { benchmarks: number; scores: number };
+}
+
+function toRow(row: LeaderboardRow): TableRow {
+  return {
+    key: `${row.model.model_id}#${row.variant}`,
+    model_id: row.model.model_id,
+    variant: row.variant,
+    value: row.score.value,
+    unit: row.score.unit,
+    confidence_interval: row.score.confidence_interval,
+    provenance: row.provenance,
+    health_flags: row.score.health_flags,
+    benchmark_status: row.score.benchmark.status,
+    eci: row.capabilityIndex?.eci ?? null,
+  };
+}
+
+export function toTableModels(models: readonly Model[]): Record<string, TableModel> {
+  return Object.fromEntries(
+    models.map((model) => [
+      model.model_id,
+      {
+        display_name: model.display_name,
+        creator: model.creator,
+        open_weights: model.open_weights,
+        released_at: model.released_at,
+        context_window: model.context_window,
+        price_input: model.price_input_per_mtok,
+        price_output: model.price_output_per_mtok,
+      },
+    ]),
+  );
+}
+
+export function toTableData(result: BuildRowsResult): TableData {
+  return {
+    reference:
+      result.reference === null
+        ? null
+        : {
+            slug: result.reference.slug,
+            name: result.reference.name,
+            status: result.reference.status,
+          },
+    rows: result.rows.map(toRow),
+    unranked: result.unranked.map((entry) => ({
+      model_id: entry.model.model_id,
+      reason: entry.reason,
+      scoreCount: entry.scoreCount,
+    })),
+    excluded: result.excluded,
+  };
+}

@@ -158,15 +158,35 @@ export function formatScore(value: number, unit: JoinedScore["unit"]): string {
  * A saturated benchmark's score renders recessed — the number is not wrong, it simply no
  * longer means much, and greying it is a stronger signal than colouring it.
  */
-export function ScoreCell({ score }: { score: JoinedScore }) {
-  const recessed = score.health_flags.includes("saturated") ||
-    score.health_flags.includes("deprecated");
+export function ScoreCell({
+  score,
+  value,
+  unit,
+  confidenceInterval = null,
+  flags,
+}: {
+  /** Pass a whole score, or the primitives — the table ships only the primitives. */
+  score?: JoinedScore;
+  value?: number;
+  unit?: JoinedScore["unit"];
+  confidenceInterval?: number | null;
+  flags?: readonly HealthFlag[];
+}) {
+  const shownValue = score?.value ?? value ?? 0;
+  const shownUnit = score?.unit ?? unit ?? "percent";
+  const interval = score?.confidence_interval ?? confidenceInterval;
+  const healthFlags = score?.health_flags ?? flags ?? [];
+  const recessed =
+    healthFlags.includes("saturated") || healthFlags.includes("deprecated");
 
   return (
-    <span className="tabular whitespace-nowrap" style={{ color: recessed ? "var(--ink-mute)" : "var(--ink)" }}>
-      {formatScore(score.value, score.unit)}
-      {score.confidence_interval !== null ? (
-        <span className="text-ink-mute"> ±{score.confidence_interval}</span>
+    <span
+      className="tabular whitespace-nowrap"
+      style={{ color: recessed ? "var(--ink-mute)" : "var(--ink)" }}
+    >
+      {formatScore(shownValue, shownUnit)}
+      {interval !== null && interval !== undefined ? (
+        <span className="text-ink-mute"> ±{interval}</span>
       ) : null}
     </span>
   );

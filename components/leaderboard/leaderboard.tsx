@@ -6,10 +6,8 @@ import type { Model } from "@/lib/schemas/model";
 import type { Score } from "@/lib/schemas/score";
 import type { SourceMeta } from "@/lib/schemas/common";
 import type { Tab } from "@/lib/leaderboard/rows";
-import {
-  LeaderboardTable,
-  type TabData,
-} from "@/components/leaderboard/leaderboard-table";
+import { LeaderboardTable } from "@/components/leaderboard/leaderboard-table";
+import type { TableData, TableModel } from "@/lib/leaderboard/view";
 import { ImageTable } from "@/components/leaderboard/image-table";
 
 /**
@@ -27,12 +25,14 @@ export function Leaderboard({
   tabs,
   image,
   models,
+  tableModels,
   freshness,
   capabilityIndexNote,
 }: {
-  tabs: Record<"text" | "agentic", { hidden: TabData; shown: TabData }>;
+  tabs: Record<"text" | "agentic", { hidden: TableData; shown: TableData }>;
   image: { note: string; source: SourceMeta; scores: Score[] } | null;
   models: Model[];
+  tableModels: Record<string, TableModel>;
   freshness: Record<string, string | null>;
   capabilityIndexNote: string | null;
 }) {
@@ -86,6 +86,7 @@ export function Leaderboard({
             ) : null}
             <LeaderboardTable
               key={tab}
+              models={tableModels}
               hidden={tabs[tab].hidden}
               shown={tabs[tab].shown}
               fetchedAt={freshness["epoch"] ?? null}

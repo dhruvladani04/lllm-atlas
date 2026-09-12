@@ -1,10 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Link from "next/link";
-import type { Benchmark } from "@/lib/schemas/benchmark";
-import type { LeaderboardRow, UnrankedRow } from "@/lib/leaderboard/rows";
+import type { UnrankedRow } from "@/lib/leaderboard/rows";
+import type { TableData, TableModel, TableRow } from "@/lib/leaderboard/view";
 import {
   HealthFlags,
   MissingValue,
@@ -25,13 +25,6 @@ import { FreshnessStamp } from "@/components/data/freshness-stamp";
  * fetches anything.
  */
 
-export interface TabData {
-  reference: Benchmark | null;
-  rows: LeaderboardRow[];
-  unranked: UnrankedRow[];
-  excluded: { benchmarks: number; scores: number };
-}
-
 type SortKey = "score" | "eci" | "price" | "context" | "released" | "model";
 
 const UNRANKED_REASON: Record<UnrankedRow["reason"], string> = {
@@ -49,14 +42,16 @@ function daysSince(date: string | null): number | null {
 }
 
 export function LeaderboardTable({
+  models,
   hidden,
   shown,
   fetchedAt,
 }: {
   /** The tab's data with saturated benchmarks excluded from reference selection. */
-  hidden: TabData;
+  models: Record<string, TableModel>;
+  hidden: TableData;
   /** The same tab with every benchmark eligible. */
-  shown: TabData;
+  shown: TableData;
   fetchedAt: string | null;
 }) {
   const [hideSaturated, setHideSaturated] = useState(true);
@@ -68,43 +63,68 @@ export function LeaderboardTable({
 
   const data = hideSaturated ? hidden : shown;
 
+  const meta = useCallback(
+    (model_id: string): TableModel =>
+      models[model_id] ?? {
+        // A row whose model is missing from the lookup should still render its number
+        // rather than disappear; the id is the most honest stand-in for a name.
+        display_name: model_id,
+        creator: "",
+        open_weights: null,
+        released_at: null,
+        context_window: null,
+        price_input: null,
+        price_output: null,
+      },
+    [models],
+  );
+
   const creators = useMemo(
     () =>
       [
-        ...new Set([...shown.rows, ...hidden.rows].map((row) => row.model.creator)),
-      ].sort(),
-    [hidden.rows, shown.rows],
+        ...new Set(
+          [...shown.rows, ...hidden.rows].map(
+            (row) => models[row.model_id]?.creator ?? "",
+          ),
+        ),
+      ]
+        .filter((name) => name !== "")
+        .sort(),
+    [hidden.rows, models, shown.rows],
   );
 
   const rows = useMemo(() => {
     const filtered = data.rows.filter((row) => {
       if (independentOnly && row.provenance === "vendor-reported") return false;
-      if (openWeightsOnly && row.model.open_weights !== true) return false;
-      if (creator !== "all" && row.model.creator !== creator) return false;
+      if (openWeightsOnly && models[row.model_id]?.open_weights !== true) return false;
+      if (creator !== "all" && models[row.model_id]?.creator !== creator) return false;
       return true;
     });
 
-    const value = (row: LeaderboardRow): number => {
+    const value = (row: TableRow): number => {
       switch (sort) {
         case "eci":
-          return row.capabilityIndex?.eci ?? Number.NEGATIVE_INFINITY;
+          return row.eci ?? Number.NEGATIVE_INFINITY;
         case "price":
-          return -(row.model.price_input_per_mtok?.value ?? Number.POSITIVE_INFINITY);
+          return -(models[row.model_id]?.price_input?.value ?? Number.POSITIVE_INFINITY);
         case "context":
-          return row.model.context_window?.value ?? Number.NEGATIVE_INFINITY;
+          return models[row.model_id]?.context_window?.value ?? Number.NEGATIVE_INFINITY;
         case "released":
-          return Date.parse(row.model.released_at ?? "") || Number.NEGATIVE_INFINITY;
+          return (
+            Date.parse(models[row.model_id]?.released_at ?? "") ||
+            Number.NEGATIVE_INFINITY
+          );
         default:
-          return row.score.value;
+          return row.value;
       }
     };
 
     return [...filtered].sort((a, b) =>
       sort === "model"
-        ? a.model.display_name.localeCompare(b.model.display_name)
+        ? meta(a.model_id).display_name.localeCompare(meta(b.model_id).display_name)
         : value(b) - value(a),
     );
-  }, [creator, data.rows, independentOnly, openWeightsOnly, sort]);
+  }, [creator, data.rows, independentOnly, meta, models, openWeightsOnly, sort]);
 
   const columns: { key: SortKey; label: string; numeric: boolean }[] = [
     { key: "model", label: "Model", numeric: false },
@@ -234,19 +254,18 @@ export function LeaderboardTable({
             </thead>
             <tbody ref={body}>
               {rows.map((row, index) => {
-                const age = daysSince(row.model.released_at);
+                const model = meta(row.model_id);
+                const age = daysSince(model.released_at);
                 return (
-                  <tr
-                    key={`${row.model.model_id}#${row.variant}`}
-                    className="border-b border-rule"
-                  >
+                  <tr key={row.key} className="border-b border-rule">
                     <td className="tabular py-2 pr-3 text-ink-mute">{index + 1}</td>
                     <td className="py-2 pr-3">
                       <Link
-                        href={`/models/${encodeURIComponent(row.model.model_id)}`}
+                        href={`/models/${row.model_id}`}
+                        prefetch={false}
                         className="underline-offset-2 hover:underline"
                       >
-                        {row.model.display_name}
+                        {model.display_name}
                       </Link>
                       {row.variant !== "base" ? (
                         <span className="font-mono text-xs text-ink-mute">
@@ -254,54 +273,57 @@ export function LeaderboardTable({
                           ({row.variant})
                         </span>
                       ) : null}
-                      {row.model.open_weights === true ? (
+                      {model.open_weights === true ? (
                         <span className="text-xs text-ink-mute" title="Open weights">
                           {" "}
                           ◇
                         </span>
                       ) : null}
-                      <span className="block text-xs text-ink-mute">
-                        {row.model.creator}
-                      </span>
+                      <span className="block text-xs text-ink-mute">{model.creator}</span>
                     </td>
                     <td className="py-2 pr-3 text-right">
-                      <ScoreCell score={row.score} />
+                      <ScoreCell
+                        value={row.value}
+                        unit={row.unit}
+                        confidenceInterval={row.confidence_interval}
+                        flags={row.health_flags}
+                      />
                     </td>
                     <td className="tabular py-2 pr-3 text-right">
-                      {row.capabilityIndex === null ? (
+                      {row.eci === null ? (
                         <MissingValue reason="Not covered by Epoch's capability index" />
                       ) : (
                         <span title="Epoch AI's Capability Index — a composite with no benchmark health record behind it">
-                          {row.capabilityIndex.eci.toFixed(1)}
+                          {row.eci.toFixed(1)}
                         </span>
                       )}
                     </td>
                     <td className="py-2 pr-3 text-right">
                       <QuotedValue
-                        quoted={row.model.context_window}
+                        quoted={model.context_window}
                         format={(value) => `${Math.round(value / 1000)}k`}
                         missingReason="No context window published by the vendor or OpenRouter"
                       />
                     </td>
                     <td className="py-2 pr-3 text-right">
                       <QuotedValue
-                        quoted={row.model.price_input_per_mtok}
+                        quoted={model.price_input}
                         format={(value) => `$${value.toFixed(2)}`}
                         missingReason="No price published by the vendor or OpenRouter"
                       />
                       <span className="text-ink-mute"> / </span>
                       <QuotedValue
-                        quoted={row.model.price_output_per_mtok}
+                        quoted={model.price_output}
                         format={(value) => `$${value.toFixed(2)}`}
                         missingReason="No price published by the vendor or OpenRouter"
                       />
                     </td>
                     <td className="tabular py-2 pr-3 text-right whitespace-nowrap">
-                      {row.model.released_at === null ? (
+                      {model.released_at === null ? (
                         <MissingValue reason="No confirmed release date" />
                       ) : (
                         <>
-                          {row.model.released_at}
+                          {model.released_at}
                           {age !== null && age < 14 ? (
                             <span
                               className="text-xs"
@@ -318,7 +340,7 @@ export function LeaderboardTable({
                       <ProvenanceBadge provenance={row.provenance} />
                     </td>
                     <td className="py-2">
-                      <HealthFlags flags={row.score.health_flags} />
+                      <HealthFlags flags={row.health_flags} />
                     </td>
                   </tr>
                 );
@@ -343,12 +365,15 @@ export function LeaderboardTable({
             independent scores yet is worth seeing.
           </p>
           <ul className="mt-3 divide-y divide-rule border-y border-rule">
-            {data.unranked.map(({ model, reason, scoreCount }) => {
+            {data.unranked.map((entry) => {
+              const model = meta(entry.model_id);
               const age = daysSince(model.released_at);
+              const { reason, scoreCount } = entry;
               return (
-                <li key={model.model_id} className="flex flex-wrap gap-x-3 py-2 text-sm">
+                <li key={entry.model_id} className="flex flex-wrap gap-x-3 py-2 text-sm">
                   <Link
-                    href={`/models/${encodeURIComponent(model.model_id)}`}
+                    href={`/models/${entry.model_id}`}
+                    prefetch={false}
                     className="underline-offset-2 hover:underline"
                   >
                     {model.display_name}
