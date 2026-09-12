@@ -52,7 +52,7 @@ Data palette — used *only* for the meanings listed:
 ```
 --status-active       #1C6F55   benchmark still discriminates
 --status-nearing      #97650A   nearing saturation
---status-saturated    #7E8279   saturated (deliberately grey: it means "stop reading this")
+--status-saturated    #6F736B   saturated (deliberately grey: it means "stop reading this")
 --status-deprecated   #9B3232   deprecated
 --risk-high           #9B3232   high contamination
 --risk-medium         #97650A   medium contamination
@@ -223,12 +223,17 @@ transitions drop to zero duration. No content is unreachable in reduced-motion m
 ## Quality floor
 
 Responsive to 360px. Visible keyboard focus. Table headers are real `<th scope>`. Contrast
-at least 4.5:1 for text and 3:1 for the status colours against their background. The site
+at least 4.5:1 for text. **The status colours are held to the text floor too**, not to
+3:1: every one of them is rendered as a chip label, a flag or a badge, so every one of them
+is text. An axe audit caught the saturated grey at 3.75:1 inside a 13px label, and it was
+darkened until it passed. A unit test holds all of them at 4.5:1 in both schemes. The site
 must be readable and correct with CSS disabled.
 
 ## Changelog
 
 - Initial version.
+- Status colours are held to the 4.5:1 text floor rather than 3:1, since all of them
+  render as text; the saturated grey was darkened to pass. Milestone 7.
 - Motion section rewritten: achromatic explanatory 3D and scroll-driven scenes are
   permitted in the evals section and on benchmark detail pages, with an approved
   library list, a static fallback requirement and a performance floor. Data surfaces

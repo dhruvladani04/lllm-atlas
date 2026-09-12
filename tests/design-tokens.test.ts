@@ -57,9 +57,12 @@ describe.each(SCHEMES)("%s scheme", (scheme) => {
     }
   });
 
-  it.each(DATA_TOKENS)("--%s reaches 3:1 against paper and surface", (name) => {
+  it.each(DATA_TOKENS)("--%s reaches 4.5:1 against paper and surface", (name) => {
+    // The design system sets a 3:1 floor for status colours, but every one of them is
+    // rendered as text — a chip label, a flag, a badge — so they are held to the text floor.
+    // An axe audit caught the saturated grey at 3.75:1 sitting inside a 13px label.
     for (const ground of grounds) {
-      expect(contrast(token(`${name}-${scheme}`), ground)).toBeGreaterThanOrEqual(3);
+      expect(contrast(token(`${name}-${scheme}`), ground)).toBeGreaterThanOrEqual(4.5);
     }
   });
 
