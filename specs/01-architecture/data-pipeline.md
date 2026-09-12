@@ -42,6 +42,7 @@ a bad upstream change visible as a diff in a pull request, and costs nothing to 
 | Source returns fewer than 50% of the previous record count | Treat as failure and keep the previous snapshot. Guards against upstream truncation being silently mirrored. |
 | Vendor pricing page unparseable | Treat as a schema error for that vendor only. Keep the last good price, log it, fall back to the OpenRouter price at render time with its label. |
 | Unresolved model name | Write to `unresolved.json`, exclude from derived output, surface the count in the ingestion log. |
+| Unresolved model name **inside a benchmark's own timeline** | Keep the point, carrying the upstream name and a null `model_id`, and record the name for review. A timeline point is benchmark metadata, not a score row: dropping it would distort the benchmark's trajectory, which is a claim about the benchmark rather than about any model on this site. |
 | Three consecutive failures for one source | Fail the Actions job so a notification fires. |
 
 The site must never render a number without a fetch date, and never render a stale number
@@ -69,9 +70,12 @@ Written to `data/derived/`, regenerated wholesale on each run:
 | `benchmark-models.json` | Reverse index: benchmark to models with scores |
 | `freshness.json` | Per-source last-success timestamp, read by the freshness stamp |
 | `models.json` | Registry identity joined to ingested price, context window and state |
+| `benchmarks.json` | Benchmark health records mapped from the benchwiki snapshot |
 
 ## Changelog
 
 - Initial version.
+- Added `benchmarks.json` to the derived files, and the rule for unresolved names inside
+  a benchmark timeline. Milestone 2.
 - Added `models.json` to the derived build inputs and a failure row for vendor pricing
   scrapers. Milestone 3.
