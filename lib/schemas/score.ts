@@ -21,6 +21,10 @@ export const Score = z.object({
   harness: z.string().min(1).nullable(),
   value: z.number(),
   unit: ScoreUnit,
+  /** Half-width of the reported interval, in the same unit. Elo without one is not comparable. */
+  confidence_interval: z.number().nonnegative().nullable(),
+  /** Votes, tasks or runs behind the number — an Elo on 40 votes is not an Elo on 40,000. */
+  sample_size: z.number().int().nonnegative().nullable(),
   provenance: Provenance,
   measured_at: z.string().nullable(),
   source: SourceMeta,

@@ -48,7 +48,10 @@ Same, with two changes that matter:
 ### Columns — image tab
 
 Elo, confidence interval, arena appearance count, source. No capability index — there
-isn't an honest one. If the arena mirror is unavailable, render the empty state described
+isn't an honest one. These rows are not part of the benchmark join and carry no health
+flags, because no benchmark health record exists for an arena board upstream. The tab
+says so rather than leaving the reader to assume the flags were checked and came back
+clean: a preference ranking is a different kind of claim from a benchmark score. If the arena mirror is unavailable, render the empty state described
 below, not a fallback ranking from another modality.
 
 ### Interactions
@@ -107,6 +110,7 @@ Decide." Copy guidance is in `04-design/design-system.md`.
 ## Changelog
 
 - Initial version.
+- Image tab states that arena rows carry no health flags, and why. Milestone 3.
 - Row reordering animates on toggle, sort and filter.
 - Leaderboard rows keyed by model + variant, with a visible variant column.
 - Price column labels vendor list price against OpenRouter routed price. Milestone 3.

@@ -45,6 +45,21 @@ a bad upstream change visible as a diff in a pull request, and costs nothing to 
 | Unresolved model name **inside a benchmark's own timeline** | Keep the point, carrying the upstream name and a null `model_id`, and record the name for review. A timeline point is benchmark metadata, not a score row: dropping it would distort the benchmark's trajectory, which is a claim about the benchmark rather than about any model on this site. |
 | Three consecutive failures for one source | Fail the Actions job so a notification fires. |
 
+**Arena Elo sits outside the join.** benchwiki publishes no health record for an arena
+board, and the site will not invent one, so those rows live in their own derived file
+and are rendered with that absence stated. It is worth stating: a preference ranking
+from public votes is a different kind of claim from a benchmark score, and the reader
+should see which one they are looking at.
+
+**Benchmark identity is the model-registry problem again.** Epoch names benchmarks
+differently from benchwiki, so names resolve by exact slug, exact name, normalised name,
+then a hand-reviewed alias file — and nothing else. A name that resolves to nothing is
+written to `data/registry/unresolved-benchmarks.json` and its scores are excluded from
+the join, because a score with no health record is exactly what section 1 refuses to
+render. Where two benchmarks answer to one normalised name, that name stops resolving
+for both rather than picking a winner; unlike the model registry, this index is built
+from upstream data, so a collision must degrade rather than abort the build.
+
 The site must never render a number without a fetch date, and never render a stale number
 without saying it is stale. Anything older than 7 days renders with a visible staleness
 marker.
@@ -71,10 +86,13 @@ Written to `data/derived/`, regenerated wholesale on each run:
 | `freshness.json` | Per-source last-success timestamp, read by the freshness stamp |
 | `models.json` | Registry identity joined to ingested price, context window and state |
 | `benchmarks.json` | Benchmark health records mapped from the benchwiki snapshot |
+| `leaderboard-image.json` | Arena Elo rows, held outside the join — see below |
 
 ## Changelog
 
 - Initial version.
+- Added `leaderboard-image.json`, the arena exception to the join, and benchmark identity
+  resolution. Milestone 3.
 - Added `benchmarks.json` to the derived files, and the rule for unresolved names inside
   a benchmark timeline. Milestone 2.
 - Added `models.json` to the derived build inputs and a failure row for vendor pricing

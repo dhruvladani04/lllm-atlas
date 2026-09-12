@@ -11,6 +11,9 @@ Run this before closing any milestone. A milestone with an unchecked box is not 
 - [ ] Elo and percentage values are never compared or combined
 - [ ] Missing values render through `MissingValue`, never as a dash, zero, or blank
 - [ ] Unresolved model names are in `unresolved.json`, not silently dropped or fuzzy-matched
+- [ ] Unresolved benchmark names are in `unresolved-benchmarks.json`, and their scores
+      are excluded from the join rather than rendered without health
+- [ ] Every benchmark alias was checked against the benchwiki record, not the name
 - [ ] Nothing in `data/` was hand-edited outside the registry
 - [ ] Every price names its source — vendor list price or OpenRouter routed price — and
       the two are never presented as the same claim
@@ -85,6 +88,7 @@ If any answer is yes, the milestone is not done regardless of the boxes above.
 ## Changelog
 
 - Initial version.
+- Added benchmark resolution checks. Milestone 3.
 - Added scene fallback, bundle isolation and WebGL-absent checks.
 - Added price provenance, scraper politeness and render-time freshness checks.
   Milestone 3.

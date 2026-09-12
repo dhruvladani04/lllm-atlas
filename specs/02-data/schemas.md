@@ -191,10 +191,22 @@ const Score = z.object({
 });
 ```
 
+`confidence_interval` and `sample_size` are carried because the image tab needs them:
+an Elo without its interval is not comparable, and an Elo on 40 votes is not an Elo on
+40,000. Both are nullable, because most benchmark scores report neither.
+
 Rules enforced in code, not just documented:
 - Two scores differing only in `harness` are two rows. Never averaged.
 - Two scores differing only in `provenance` are two rows. Never averaged.
 - A score with `unit: "elo"` is never compared against one with `unit: "percent"`.
+- `percent` means a 0-100 scale everywhere. A source reporting 0-1 fractions is scaled
+  once, at ingest. This is a unit conversion, not rounding: no value is ever rounded
+  before render.
+- Provenance is read from the source, never defaulted. Where a source states it only
+  indirectly — Epoch cites where each number came from — the rule used to decide the
+  label is applied consistently and recorded in `notes`, so a reader can audit the
+  label rather than trust it. Where it cannot be established at all, the row is
+  `vendor-reported`, the weaker of the two claims.
 
 ## Joined row — the core artefact
 
@@ -253,6 +265,8 @@ const IngestionRun = z.object({
 ## Changelog
 
 - Initial version.
+- `Score` gained `confidence_interval` and `sample_size`; percent scale and provenance
+  derivation stated. Milestone 3.
 - `Benchmark` extended to the payload's real shape, and `TimelinePoint` added.
   Milestone 2.
 - Added `RegistryModel` and `UnresolvedName`, separating hand-maintained identity from
