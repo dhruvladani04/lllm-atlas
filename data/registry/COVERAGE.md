@@ -8,7 +8,26 @@ Last reviewed: 2026-09-12.
 
 ## What is here
 
-19 models: 13 text and agentic, 6 image generation, a mix of open and closed weights.
+30 models. Seeded at 19 in Milestone 1, then grown in Milestone 4 by working the
+`unresolved.json` queue — the workflow this file describes, applied for the first time.
+
+The 11 models added there were reviewed by hand and their identity fields come from Epoch's
+own data rather than from memory: creator from its `Organization` column, release date from
+its `Release date` column. Effort variants (`low`, `high`, `xhigh`, `max`) were added to
+existing models the same way, which is why the leaderboard now shows several rows per
+model.
+
+Two rules were applied while doing it, both learned the hard way:
+
+- **Identity is decided by a human; only aliases come from the data.** A first attempt
+  derived models from Epoch's `model_version` strings and split one model into seven
+  (`gpt-6-astra`, `gpt-6-astra-max`, `gpt-6-astra-high`, …). Names in the data are aliases,
+  not identities.
+- **Where `display_name` and `model_version` disagree about the tier, the row is skipped.**
+  Epoch sometimes labels a row `Claude Opus 5` while its version string says
+  `claude-opus-5_max`. 28 rows were skipped on that basis rather than guessed at. The
+  registry's own ambiguity guard caught this: it refused to index an alias claimed by two
+  variants at once.
 Agentic is not a separate set of models — the same models are scored under a harness, and
 the harness belongs to the score key, not to the model.
 
