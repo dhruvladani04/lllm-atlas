@@ -151,7 +151,26 @@ const Benchmark = z.object({
 ```
 
 `judge_model` is carried deliberately: it is used in section 3 to make the LLM-as-judge
-argument with real examples rather than as an abstract caveat.
+argument with real examples rather than as an abstract caveat. It arrives nested as
+`metric.judge_model` and is lifted here, as is `metric.primary`.
+
+The record also carries `launch_date`, `languages`, `contamination.mitigation`,
+`leaderboards` and `performance_timeline`, all of which sections 1 and 2 render and all
+of which the upstream payload supplies. A timeline point is:
+
+```ts
+const TimelinePoint = z.object({
+  model: z.string(),                 // the name upstream reported, kept verbatim
+  model_id: z.string().nullable(),   // null when the registry could not resolve it
+  vendor: z.string().nullable(),
+  measured_at: z.iso.date(),
+  score: z.number(),
+  provenance: Provenance,
+  source_url: z.url(),
+});
+```
+
+`source_url` on a benchmark is derived from the slug, not supplied by the payload.
 
 ## Score
 
@@ -234,6 +253,8 @@ const IngestionRun = z.object({
 ## Changelog
 
 - Initial version.
+- `Benchmark` extended to the payload's real shape, and `TimelinePoint` added.
+  Milestone 2.
 - Added `RegistryModel` and `UnresolvedName`, separating hand-maintained identity from
   the derived `Model` record. Milestone 1.
 - Prices and context window became `QuotedNumber`, carrying their own source and fetch

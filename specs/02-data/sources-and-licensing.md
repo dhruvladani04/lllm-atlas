@@ -14,6 +14,14 @@ this category forbid exactly what this site does. Read this file before adding a
   `saturated_date`, `successor`, `lineage`, `contamination.risk`,
   `contamination.refresh_cycle`, `human_baseline`, `statistical_note`, `metric`,
   `leaderboards`, `performance_timeline`, `last_updated`.
+- Canonical record page: `https://benchwiki.vercel.app/benchmarks/<slug>` — verified
+  against the live site, and the target of `rel="canonical"` on mirrored pages. The
+  payload does not carry this URL; it is derived from the slug.
+- The payload nests more than the list above suggests: `metric` is an object whose
+  `primary` and `judge_model` the site lifts to the top level, `contamination` carries a
+  `mitigation` string section 2 renders, and records also carry `launch_date` and
+  `languages`. Dates arrive as midnight-UTC datetimes and are trimmed to calendar dates
+  on the way in.
 - Cadence: daily.
 - **Licensing status: no published licence.** The endpoint is public; the terms are not
   stated. Treat this as permission-not-granted rather than permission-denied.
@@ -122,5 +130,7 @@ this file. No source ships without all six.
 ## Changelog
 
 - Initial version.
+- Recorded the verified canonical URL pattern and the payload's real nesting.
+  Milestone 2.
 - Added source 5, vendor pricing pages, with OpenRouter as the labelled fallback for price
   and context window. Milestone 3.
