@@ -12,6 +12,8 @@
 | Validation | Zod | Every ingested payload is parsed, never cast |
 | Tables | TanStack Table (headless) | Sorting and filtering are client-side over prerendered data |
 | Charts | Recharts or visx | Score timelines only; no chart library on the leaderboard route |
+| Motion | Motion (`motion/react`), Auto-Animate | Approved uses in `04-design/design-system.md` |
+| Scenes | GSAP + ScrollTrigger, React Three Fiber + Drei, Lenis | Evals guides and benchmark detail only; never in a data route's bundle |
 | Tests | Vitest, plus Playwright for two smoke paths | |
 | Scheduling | GitHub Actions cron | Not Vercel Cron — the job commits to the repo |
 | Hosting | Vercel | |
@@ -23,6 +25,9 @@
 - No runtime calls to upstream APIs from a user request. Ever. The only network access to
   upstream sources happens inside scheduled ingestion jobs.
 - No database in v1. If a feature seems to need one, it is out of scope.
+- No scene or scroll library appears in the bundle for `/models` or `/benchmarks`.
+  Scenes load through `next/dynamic` with `ssr: false`, behind an intersection
+  observer, on the routes that use them.
 
 ## Repository structure
 
@@ -85,3 +90,5 @@
 ## Changelog
 
 - Initial version.
+- Added the approved motion and scene libraries, and the rule keeping them out of data
+  route bundles.

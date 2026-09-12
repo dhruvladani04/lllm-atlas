@@ -57,7 +57,9 @@ below, not a fallback ranking from another modality.
 - Filters: creator, open-weights, released-within, minimum provenance (`independent only`).
 - **"Hide saturated benchmarks" toggle.** On by default. This is the section's signature
   control — it visibly changes the ranking, which is the entire argument of the site made
-  interactive.
+  interactive. Rows animate to their new positions rather than jumping, because watching
+  the ranking rearrange is what makes the argument land. Position only, under 300ms,
+  disabled under `prefers-reduced-motion`. Sorting and filtering animate the same way.
 - No pagination. Virtualise if rows exceed 200.
 
 ### Empty and degraded states
@@ -105,5 +107,6 @@ Decide." Copy guidance is in `04-design/design-system.md`.
 ## Changelog
 
 - Initial version.
+- Row reordering animates on toggle, sort and filter.
 - Leaderboard rows keyed by model + variant, with a visible variant column.
 - Price column labels vendor list price against OpenRouter routed price. Milestone 3.

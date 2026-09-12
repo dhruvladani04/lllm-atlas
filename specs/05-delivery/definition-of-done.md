@@ -55,7 +55,11 @@ Run this before closing any milestone. A milestone with an unchecked box is not 
 - [ ] Keyboard navigable end to end with visible focus
 - [ ] Table headers use `<th scope>`
 - [ ] Contrast at least 4.5:1 for text, 3:1 for status colours
-- [ ] `prefers-reduced-motion` respected
+- [ ] `prefers-reduced-motion` respected, and every scene has a static fallback
+      carrying the same information
+- [ ] No scene, scroll or 3D library appears in the bundle for `/models` or
+      `/benchmarks`
+- [ ] Every page is reachable and readable with WebGL unavailable
 - [ ] Readable and correct at 360px
 - [ ] No console errors or hydration warnings
 - [ ] Lighthouse performance and accessibility both above 90 on `/models`
@@ -81,5 +85,6 @@ If any answer is yes, the milestone is not done regardless of the boxes above.
 ## Changelog
 
 - Initial version.
+- Added scene fallback, bundle isolation and WebGL-absent checks.
 - Added price provenance, scraper politeness and render-time freshness checks.
   Milestone 3.

@@ -74,8 +74,9 @@ rather than losing its price or presenting it as a list price.
 ## Milestone 4 — Leaderboard
 
 **Produces:** `/models` with all three tabs, sorting, filters, the "hide saturated
-benchmarks" toggle, `/models/[slug]` detail pages, and every degraded state including the
-`released_unranked` block.
+benchmarks" toggle with its animated reordering, `/models/[slug]` detail pages, and every
+degraded state including the `released_unranked` block. Motion and Auto-Animate arrive
+here; no scene library does.
 
 **Must not touch:** sections 2 and 3.
 
@@ -101,7 +102,9 @@ leaderboard's health flags still work.
 **Produces:** MDX pipeline, the components listed in `03-sections/evals.md`, the index
 page with its positioning paragraph, the foundations page embedding the CampusX playlist
 with credit, and **three complete guides**: RAG, agentic systems, and the framework
-comparison. Agentic is the priority — it is the guide with no equivalent elsewhere.
+comparison. Agentic is the priority — it is the guide with no equivalent elsewhere, and it
+carries the trajectory scene. The scene libraries arrive here, behind the loading and
+fallback rules in `04-design/design-system.md`.
 
 **Must not touch:** data pipeline.
 
@@ -128,4 +131,5 @@ Artificial Analysis integration if commercial terms are obtained; a public API.
 ## Changelog
 
 - Initial version.
+- Named which milestone each motion and scene library arrives in.
 - Milestone 3 gained the vendor pricing scrapers and `data/derived/models.json`.

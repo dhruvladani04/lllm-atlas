@@ -141,12 +141,75 @@ Density is a virtue in the first two and a vice in the third.
 
 ## Motion
 
-One orchestrated moment only: the home page's demonstration row, which reveals its health
-flags a beat after the score so the reader sees the score first and the caveat second.
-That sequence is the argument.
+Motion here has one job: to show a mechanism the reader would otherwise have to imagine.
+A number changing rank, a trajectory bending, an agent taking a wrong branch and
+recovering — these are processes, and a still image of a process is a worse explanation
+than a moving one. Motion that is not explaining something is decoration, and decoration
+is still out.
 
-Everything else: state-change transitions under 150ms, and nothing on scroll. Respect
-`prefers-reduced-motion`.
+Three rules govern everything below.
+
+1. **Motion carries information or it does not ship.** Entrance animations, hover
+   flourishes and parallax carry none.
+2. **Motion is achromatic like the rest of the interface.** Scenes and diagrams render in
+   the neutral tokens — `--ink`, `--ink-mute`, `--rule`, `--paper`. Colour enters a scene
+   only where it encodes the same facts it encodes in a table: status, contamination,
+   provenance, staleness. A glowing gradient scene would break the colour vocabulary the
+   whole site depends on.
+3. **Density surfaces stay calm.** The leaderboard and the benchmark matrix are for
+   scanning. They get functional motion only.
+
+### Per surface
+
+| Surface | What moves | What must not |
+|---|---|---|
+| Home | The demonstration row: health flags resolve a beat after the score, so the reader sees the number first and the caveat second. That sequence is the argument. | A hero scene, a scroll narrative, an animated backdrop. The home page is not a marketing page. |
+| Leaderboard | Row reordering when "hide saturated benchmarks", a filter or a sort changes the ranking — the signature control, and seeing rows *move* is the point. Under 300ms, position only. | Anything on scroll. Anything 3D. Any per-row entrance animation. |
+| Benchmark matrix | Cell and filter state changes under 150ms. | Scroll effects, scene work. |
+| Benchmark detail | The trajectory: points may draw in along the time axis once, on first view, so the shape of saturation is legible. Never connect points across harnesses, exam years or protocol changes — animating a line the data does not support is a stronger lie than drawing one. | Camera moves, 3D framing of 2D data. |
+| Evals guides | Scroll-driven explanatory scenes: trajectory branching, modality ablation, retriever-versus-generator failure. This is the one place a scene may own the viewport, because the surrounding text is already asking the reader to follow a process. | Scene work that decorates a paragraph rather than explaining it. |
+
+### 3D and scroll-driven scenes
+
+Permitted in the evals section, and on a benchmark detail page where a trajectory genuinely
+needs a third axis. Conditions, all of them binding:
+
+- **Client-only and lazily loaded.** `next/dynamic` with `ssr: false`, mounted behind an
+  intersection observer, never in the initial bundle of a data route. No 3D runtime is
+  loaded on `/models` or `/benchmarks`.
+- **A static fallback that says the same thing.** Every scene ships a still diagram
+  carrying the same information, rendered when the scene is not loaded, when WebGL is
+  unavailable, and whenever `prefers-reduced-motion: reduce` is set. The fallback is the
+  accessible version of the argument, not an apology for a missing one.
+- **Smooth scrolling is opt-in per route.** Lenis may be mounted on an evals guide, never
+  globally, never on a data route, and never under reduced motion. A reader must always be
+  able to reach the end of a page with a keyboard and a normal scroll wheel.
+- **The performance floor holds.** Lighthouse performance and accessibility above 90 on
+  `/models` is a definition-of-done item and is not negotiable for a scene elsewhere.
+
+### Approved libraries
+
+| Library | Used for | Where |
+|---|---|---|
+| Motion (`motion/react`) | The home demonstration sequence; layout and presence transitions | Everywhere motion is permitted |
+| Auto-Animate | Leaderboard reordering on toggle, filter and sort | Leaderboard |
+| GSAP + ScrollTrigger | Scroll-driven scene choreography | Evals guides only |
+| Lenis | Scroll inertia under a scroll-driven guide | Evals guides only, opt-in |
+| React Three Fiber + Drei | Achromatic explanatory 3D scenes | Evals guides; benchmark detail where a third axis is real |
+| Theatre.js | Authoring scene timelines; its editor is a build-time tool | Development only, never shipped to the client |
+| Spline | An embedded scene where hand-building it would be disproportionate | Evals guides only, and only if the embed respects the fallback and colour rules |
+
+**Not adopted: Aceternity UI and Magic UI.** Their components are built around glows,
+gradients and tinted cards, which is precisely the colour vocabulary this site reserves
+for data. Borrowing a technique from them is fine; installing them as component libraries
+would contradict the brief at the top of this file.
+
+### Reduced motion
+
+`prefers-reduced-motion: reduce` disables scroll-driven scenes, the trajectory draw-in and
+the home sequence — the home row renders with its score and its health flags already
+resolved, which is the same argument delivered at once instead of in two beats. Functional
+transitions drop to zero duration. No content is unreachable in reduced-motion mode.
 
 ## Copy
 
@@ -166,6 +229,10 @@ must be readable and correct with CSS disabled.
 ## Changelog
 
 - Initial version.
+- Motion section rewritten: achromatic explanatory 3D and scroll-driven scenes are
+  permitted in the evals section and on benchmark detail pages, with an approved
+  library list, a static fallback requirement and a performance floor. Data surfaces
+  and the home page are unchanged.
 - Added the dark-scheme data palette and `--rule-strong` for dark, which the light
   values could not satisfy at the stated contrast floor. Milestone 0.
 - `FreshnessStamp` computes relative time at render, not at build.

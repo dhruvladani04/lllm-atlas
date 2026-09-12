@@ -117,6 +117,16 @@ verified_on: 2026-09-20
   comparison lives in one place and its `verified_on` is enforced
 - `<BenchmarkRef slug="...">` — pulls live benchmark metadata from `data/`, linking the
   evals section back to sections 1 and 2. Use this for the judge-model argument.
+- `<Scene id="..." fallback="...">` — a scroll-driven explanatory scene, achromatic,
+  client-only and lazily loaded. Every scene declares a fallback diagram carrying the
+  same information, which is what renders under `prefers-reduced-motion`, without WebGL,
+  and before the scene loads. A scene that cannot be reduced to a still diagram is
+  explaining nothing and does not belong in a guide.
+
+The two deep guides are where scenes earn their place: trajectory branching — the same
+task reached through six wrong tool calls and a lucky recovery — and modality ablation,
+where audio-only, visual-only and fused runs are compared. Both are processes, and both
+are what readers currently have to reconstruct from prose.
 
 ## Writing rules
 
@@ -129,3 +139,4 @@ verified_on: 2026-09-20
 ## Changelog
 
 - Initial version.
+- Added the `<Scene>` component and its static-fallback requirement.

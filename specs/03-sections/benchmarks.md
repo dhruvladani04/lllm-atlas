@@ -37,7 +37,10 @@ Mirror the benchwiki record, plus the reverse lookup that is this site's contrib
    as if equivalent.
 5. **Trajectory** — the `performance_timeline`, with vendor-reported and independent points
    distinguished. Respect the source's own warnings: do not connect points across exam
-   years, harnesses or protocol changes with one line.
+   years, harnesses or protocol changes with one line. Points may draw in along the time
+   axis once on first view, so the shape of saturation is legible as a process; under
+   `prefers-reduced-motion` the finished chart renders immediately. Animating a
+   connection the data does not support is a stronger lie than drawing one.
 6. **Source** — canonical link to the benchwiki page, its `last_updated` date, and this
    site's fetch date.
 
@@ -62,3 +65,5 @@ mirrored pages, not the site's core feature.
 ## Changelog
 
 - Initial version.
+- Trajectory may draw in once on first view, with a static equivalent under reduced
+  motion.
