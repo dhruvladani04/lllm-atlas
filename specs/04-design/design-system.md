@@ -45,7 +45,7 @@ Neutral base — used for everything that is not data:
 ```
 
 Dark mode inverts: `--paper #101317`, `--surface #171B20`, `--ink #E8E9E4`,
-`--ink-mute #9BA0A8`, `--rule #262B31`.
+`--ink-mute #9BA0A8`, `--rule #262B31`, `--rule-strong #3A4149`.
 
 Data palette — used *only* for the meanings listed:
 
@@ -59,6 +59,24 @@ Data palette — used *only* for the meanings listed:
 --provenance-vendor   #6B4E9B   vendor-reported
 --stale               #97650A   source older than 7 days
 ```
+
+The data palette above is the light-scheme set. Dark backgrounds need lighter hues to
+hold their contrast floor, so each has a dark-scheme counterpart carrying the same
+meaning:
+
+```
+--status-active       #5CBF98
+--status-nearing      #D9A441
+--status-saturated    #9AA096   still the grey one, still meaning "stop reading this"
+--status-deprecated   #F08A86
+--risk-high           #F08A86
+--risk-medium         #D9A441
+--provenance-vendor   #B49AE0
+--stale               #D9A441
+```
+
+Both sets are checked against both grounds by a unit test rather than by eye, since the
+contrast floor below is a measurable claim.
 
 Saturated status is grey on purpose. Greying a score is a stronger signal than colouring
 it, and it keeps the table calm when many benchmarks are saturated at once.
@@ -148,6 +166,8 @@ must be readable and correct with CSS disabled.
 ## Changelog
 
 - Initial version.
+- Added the dark-scheme data palette and `--rule-strong` for dark, which the light
+  values could not satisfy at the stated contrast floor. Milestone 0.
 - `FreshnessStamp` computes relative time at render, not at build.
 - Added `PriceCell`, which labels a vendor list price against an OpenRouter routed
   price. Milestone 3.

@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+/*
+  specs/04-design/design-system.md — the interface is achromatic; colour belongs to
+  the data. Literal values are declared once as -light/-dark pairs; the scheme blocks
+  below only re-point the token at one of the pair.
+*/
+:root {
+  /* neutral base — everything that is not data */
+  --paper-light: #fafaf8;
+  --surface-light: #ffffff;
+  --ink-light: #14171c;
+  --ink-mute-light: #5f646d;
+  --rule-light: #e2e3de;
+  --rule-strong-light: #c6c8c1;
+
+  --paper-dark: #101317;
+  --surface-dark: #171b20;
+  --ink-dark: #e8e9e4;
+  --ink-mute-dark: #9ba0a8;
+  --rule-dark: #262b31;
+  --rule-strong-dark: #3a4149;
+
+  /* data palette — used only for the meanings named, never for decoration */
+  --status-active-light: #1c6f55;
+  --status-nearing-light: #97650a;
+  --status-saturated-light: #7e8279;
+  --status-deprecated-light: #9b3232;
+  --risk-high-light: #9b3232;
+  --risk-medium-light: #97650a;
+  --provenance-vendor-light: #6b4e9b;
+  --stale-light: #97650a;
+
+  --status-active-dark: #5cbf98;
+  --status-nearing-dark: #d9a441;
+  --status-saturated-dark: #9aa096;
+  --status-deprecated-dark: #f08a86;
+  --risk-high-dark: #f08a86;
+  --risk-medium-dark: #d9a441;
+  --provenance-vendor-dark: #b49ae0;
+  --stale-dark: #d9a441;
+
+  --paper: var(--paper-light);
+  --surface: var(--surface-light);
+  --ink: var(--ink-light);
+  --ink-mute: var(--ink-mute-light);
+  --rule: var(--rule-light);
+  --rule-strong: var(--rule-strong-light);
+  --status-active: var(--status-active-light);
+  --status-nearing: var(--status-nearing-light);
+  --status-saturated: var(--status-saturated-light);
+  --status-deprecated: var(--status-deprecated-light);
+  --risk-high: var(--risk-high-light);
+  --risk-medium: var(--risk-medium-light);
+  --provenance-vendor: var(--provenance-vendor-light);
+  --stale: var(--stale-light);
+
+  color-scheme: light dark;
+}
+
+/* The dark values, applied identically by the media query and by the forced class.
+   .scheme-light / .scheme-dark exist so both schemes can be shown side by side on
+   the token reference page. */
+@media (prefers-color-scheme: dark) {
+  :root:not(.scheme-light) {
+    --paper: var(--paper-dark);
+    --surface: var(--surface-dark);
+    --ink: var(--ink-dark);
+    --ink-mute: var(--ink-mute-dark);
+    --rule: var(--rule-dark);
+    --rule-strong: var(--rule-strong-dark);
+    --status-active: var(--status-active-dark);
+    --status-nearing: var(--status-nearing-dark);
+    --status-saturated: var(--status-saturated-dark);
+    --status-deprecated: var(--status-deprecated-dark);
+    --risk-high: var(--risk-high-dark);
+    --risk-medium: var(--risk-medium-dark);
+    --provenance-vendor: var(--provenance-vendor-dark);
+    --stale: var(--stale-dark);
+  }
+}
+
+.scheme-dark {
+  --paper: var(--paper-dark);
+  --surface: var(--surface-dark);
+  --ink: var(--ink-dark);
+  --ink-mute: var(--ink-mute-dark);
+  --rule: var(--rule-dark);
+  --rule-strong: var(--rule-strong-dark);
+  --status-active: var(--status-active-dark);
+  --status-nearing: var(--status-nearing-dark);
+  --status-saturated: var(--status-saturated-dark);
+  --status-deprecated: var(--status-deprecated-dark);
+  --risk-high: var(--risk-high-dark);
+  --risk-medium: var(--risk-medium-dark);
+  --provenance-vendor: var(--provenance-vendor-dark);
+  --stale: var(--stale-dark);
+  color-scheme: dark;
+}
+
+.scheme-light {
+  --paper: var(--paper-light);
+  --surface: var(--surface-light);
+  --ink: var(--ink-light);
+  --ink-mute: var(--ink-mute-light);
+  --rule: var(--rule-light);
+  --rule-strong: var(--rule-strong-light);
+  --status-active: var(--status-active-light);
+  --status-nearing: var(--status-nearing-light);
+  --status-saturated: var(--status-saturated-light);
+  --status-deprecated: var(--status-deprecated-light);
+  --risk-high: var(--risk-high-light);
+  --risk-medium: var(--risk-medium-light);
+  --provenance-vendor: var(--provenance-vendor-light);
+  --stale: var(--stale-light);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-mute: var(--ink-mute);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-status-active: var(--status-active);
+  --color-status-nearing: var(--status-nearing);
+  --color-status-saturated: var(--status-saturated);
+  --color-status-deprecated: var(--status-deprecated);
+  --color-risk-high: var(--risk-high);
+  --color-risk-medium: var(--risk-medium);
+  --color-provenance-vendor: var(--provenance-vendor);
+  --color-stale: var(--stale);
+
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, monospace;
+
+  /* 13 / 14 / 16 / 20 / 26 / 34 — the whole scale, nothing between */
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.625rem;
+  --text-2xl: 2.125rem;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+  }
+
+  /* Misaligned digits in a comparison table is a correctness problem. */
+  table,
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
