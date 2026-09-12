@@ -21,7 +21,11 @@ import {
   fetchArenaLeaderboard,
 } from "@/lib/ingest/arena";
 import type { SourceDefinition } from "@/lib/ingest/run";
-import { EpochBenchmarkMeta, EpochResultRow } from "@/lib/schemas/epoch";
+import {
+  EpochBenchmarkMeta,
+  EpochCapabilityIndexRow,
+  EpochResultRow,
+} from "@/lib/schemas/epoch";
 import { z } from "zod";
 
 /**
@@ -72,6 +76,26 @@ export function bundleFromSnapshot(records: readonly unknown[]): EpochBundle {
     results: new Map(parsed.map((record) => [record.meta.benchmark, record.rows])),
     capabilityIndex: [],
   };
+}
+
+/**
+ * Epoch's capability index, as its own source so it carries its own snapshot and its own
+ * freshness stamp. It is a composite and has no benchmark health record behind it, so it is
+ * never the leaderboard's ranking basis and is always labelled as Epoch's number.
+ */
+export const EPOCH_ECI_SOURCE_ID = "epoch-eci";
+
+export const epochCapabilityIndexSource: SourceDefinition = {
+  source_id: EPOCH_ECI_SOURCE_ID,
+  sourceMeta: (now) => ({ ...epochSourceMeta(now), source_id: EPOCH_ECI_SOURCE_ID }),
+  fetchRecords: async (fetcher) =>
+    (await fetchEpochBundle(fetcher)).bundle.capabilityIndex,
+};
+
+export function capabilityIndexFromSnapshot(
+  records: readonly unknown[],
+): EpochCapabilityIndexRow[] {
+  return records.map((record) => EpochCapabilityIndexRow.parse(record));
 }
 
 export function arenaSource(date: string): SourceDefinition {

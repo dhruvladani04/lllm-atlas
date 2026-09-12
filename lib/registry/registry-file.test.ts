@@ -11,9 +11,21 @@ const registry = loadRegistry();
 const index = buildRegistryIndex(registry);
 
 describe("data/registry/models.json", () => {
-  it("parses against the schema and holds the seed set the milestone asks for", () => {
+  it("parses against the schema and holds a reviewed set of models", () => {
+    // Seeded at 19 in Milestone 1 and grown through the unresolved queue since, which is
+    // the workflow the registry spec describes. There is no upper bound: the constraint is
+    // that every entry was reviewed, not that there are few of them.
     expect(registry.length).toBeGreaterThanOrEqual(15);
-    expect(registry.length).toBeLessThanOrEqual(20);
+  });
+
+  it("carries effort variants for the models whose vendors expose them", () => {
+    const withTiers = registry.filter((model) => model.variants.length > 1);
+    expect(withTiers.length).toBeGreaterThan(0);
+    for (const model of withTiers) {
+      // A variant with no alias can never be resolved to, so it would be dead weight.
+      for (const variant of model.variants)
+        expect(variant.aliases.length).toBeGreaterThan(0);
+    }
   });
 
   it("indexes with no ambiguous alias", () => {

@@ -149,11 +149,11 @@ describe("harvestEpochScores", () => {
     const { scores, unresolvedModels } = harvestEpochScores(
       bundle([
         {
-          model_version: "gpt-6-astra_max",
-          display_name: "GPT-6 Astra (Max)",
+          model_version: "totally-unknown-model_max",
+          display_name: "Totally Unknown Model (Max)",
           score: 0.95,
           release_date: "2026-09-03",
-          organization: "OpenAI",
+          organization: "ExampleCorp",
           harness: null,
           source_link: "Epoch AI evaluation",
         },
@@ -164,7 +164,9 @@ describe("harvestEpochScores", () => {
     );
 
     expect(scores).toHaveLength(0);
-    expect(unresolvedModels).toEqual([{ name: "GPT-6 Astra (Max)", source_id: "epoch" }]);
+    expect(unresolvedModels).toEqual([
+      { name: "Totally Unknown Model (Max)", source_id: "epoch" },
+    ]);
   });
 
   it("reports a benchmark with no health record rather than scoring against nothing", () => {

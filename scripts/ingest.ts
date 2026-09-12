@@ -21,6 +21,8 @@ import {
   arenaSource,
   benchwikiSource,
   bundleFromSnapshot,
+  capabilityIndexFromSnapshot,
+  epochCapabilityIndexSource,
   epochSource,
   openRouterSource,
 } from "@/lib/ingest/sources";
@@ -94,6 +96,14 @@ async function main(): Promise<void> {
   );
   unresolvedModels.push(...epochHarvest.unresolvedModels);
 
+  // 2b. Epoch's capability index. A composite with no health record behind it, so it is
+  // kept apart from the join and labelled as Epoch's number wherever it appears.
+  const eci = await runSource(epochCapabilityIndexSource, options);
+  runs.push(eci);
+  const capabilityIndex = capabilityIndexFromSnapshot(eci.records)
+    .map((row) => ({ ...row, model_id: resolve(row.display_name) ?? resolve(row.model) }))
+    .filter((row) => row.model_id !== null);
+
   // 3. Arena Elo for the image tab. Not joined: no benchmark health record exists for it.
   const arena = await runSource(arenaSource(date), options);
   runs.push(arena);
@@ -148,6 +158,13 @@ async function main(): Promise<void> {
       "model-benchmark-join.json. They are a preference ranking, not a benchmark score.",
     source: arena.source,
     scores: arenaHarvest.scores,
+  });
+  writeDerived("capability-index.json", {
+    note:
+      "Epoch AI's Capability Index. A composite score with no benchmark health record " +
+      "behind it, so it is never this site's ranking basis and is always attributed.",
+    source: eci.source,
+    rows: capabilityIndex,
   });
   writeDerived("freshness.json", buildFreshness(runs));
 
