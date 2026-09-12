@@ -110,7 +110,14 @@ Density is a virtue in the first two and a vice in the third.
 - **`ProvenanceBadge`** — `ind.` or `vendor`, always present, never inferred.
 - **`StatusChip`** — benchmark status, colour plus label.
 - **`FreshnessStamp`** — "fetched 4 hours ago" / "last successful fetch 3 days ago",
-  appearing on every data surface. Goes amber past 7 days.
+  appearing on every data surface. Goes amber past 7 days. The relative time is computed
+  in the browser from the `fetched_at` the page was built with, not baked in at build
+  time — a build-time string freezes whenever the pipeline has nothing to commit. Render
+  the absolute date server-side and swap to relative after mount, so there is no
+  hydration mismatch and the page is correct with JavaScript disabled.
+- **`PriceCell`** — price plus a marker naming its source. A vendor list price renders
+  plain; an OpenRouter routed price renders with the marker and a tooltip saying which
+  claim it is. The two are different facts and are never shown as one.
 - **`MissingValue`** — an explicit component. Renders "not reported" with a tooltip giving
   the reason. Never an em dash, never a zero, never a blank cell.
 
@@ -141,3 +148,6 @@ must be readable and correct with CSS disabled.
 ## Changelog
 
 - Initial version.
+- `FreshnessStamp` computes relative time at render, not at build.
+- Added `PriceCell`, which labels a vendor list price against an OpenRouter routed
+  price. Milestone 3.

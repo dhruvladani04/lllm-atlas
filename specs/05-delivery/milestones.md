@@ -55,14 +55,19 @@ simulated upstream failure leaves the previous snapshot intact with a logged err
 
 ## Milestone 3 — Remaining sources and the join
 
-**Produces:** Epoch, OpenRouter and arena-mirror ingest modules. The join producing
+**Produces:** Epoch, OpenRouter and arena-mirror ingest modules. Vendor pricing scrapers
+per `02-data/sources-and-licensing.md` source 5, with the OpenRouter price as labelled
+fallback, producing `data/derived/models.json`. The join producing
 `model-benchmark-join.json` with `health_flags` computed per the derivation table in
-`02-data/schemas.md`. Unit tests for every flag condition.
+`02-data/schemas.md`. Unit tests for every flag condition, and for price fallback
+selection.
 
 **Must not touch:** UI.
 
 **Done when:** a score on a saturated, high-contamination benchmark emerges from the join
-carrying both flags, and a vendor-reported-only score is flagged as such.
+carrying both flags, a vendor-reported-only score is flagged as such, and a model whose
+vendor scraper fails falls back to an OpenRouter price carrying the `openrouter` label
+rather than losing its price or presenting it as a list price.
 
 ---
 
@@ -123,3 +128,4 @@ Artificial Analysis integration if commercial terms are obtained; a public API.
 ## Changelog
 
 - Initial version.
+- Milestone 3 gained the vendor pricing scrapers and `data/derived/models.json`.

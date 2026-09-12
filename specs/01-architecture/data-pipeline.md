@@ -40,6 +40,7 @@ a bad upstream change visible as a diff in a pull request, and costs nothing to 
 | Source unreachable | Keep last good snapshot. Log it. Site shows that source's freshness stamp going stale. |
 | Schema mismatch | Same as unreachable. Do not partially ingest. |
 | Source returns fewer than 50% of the previous record count | Treat as failure and keep the previous snapshot. Guards against upstream truncation being silently mirrored. |
+| Vendor pricing page unparseable | Treat as a schema error for that vendor only. Keep the last good price, log it, fall back to the OpenRouter price at render time with its label. |
 | Unresolved model name | Write to `unresolved.json`, exclude from derived output, surface the count in the ingestion log. |
 | Three consecutive failures for one source | Fail the Actions job so a notification fires. |
 
@@ -67,7 +68,10 @@ Written to `data/derived/`, regenerated wholesale on each run:
 | `model-benchmark-join.json` | Every score joined to its benchmark health record — the core artefact |
 | `benchmark-models.json` | Reverse index: benchmark to models with scores |
 | `freshness.json` | Per-source last-success timestamp, read by the freshness stamp |
+| `models.json` | Registry identity joined to ingested price, context window and state |
 
 ## Changelog
 
 - Initial version.
+- Added `models.json` to the derived build inputs and a failure row for vendor pricing
+  scrapers. Milestone 3.

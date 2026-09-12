@@ -12,6 +12,9 @@ Run this before closing any milestone. A milestone with an unchecked box is not 
 - [ ] Missing values render through `MissingValue`, never as a dash, zero, or blank
 - [ ] Unresolved model names are in `unresolved.json`, not silently dropped or fuzzy-matched
 - [ ] Nothing in `data/` was hand-edited outside the registry
+- [ ] Every price names its source — vendor list price or OpenRouter routed price — and
+      the two are never presented as the same claim
+- [ ] Vendor pricing scrapers honour `robots.txt` and reproduce no page prose
 
 ## The core join
 
@@ -26,6 +29,8 @@ Run this before closing any milestone. A milestone with an unchecked box is not 
 - [ ] Every data surface shows a freshness stamp
 - [ ] Data older than 7 days renders a visible staleness marker
 - [ ] A failed source shows its last successful fetch date, not a blank
+- [ ] Freshness is computed at render time, so a stamp is never frozen by a build that
+      had nothing to commit
 - [ ] Evals guides older than 180 days show a staleness marker
 
 ## Licensing and attribution
@@ -76,3 +81,5 @@ If any answer is yes, the milestone is not done regardless of the boxes above.
 ## Changelog
 
 - Initial version.
+- Added price provenance, scraper politeness and render-time freshness checks.
+  Milestone 3.

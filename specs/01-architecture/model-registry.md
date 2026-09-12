@@ -57,6 +57,14 @@ Not by model name. Not by model name plus benchmark.
 }
 ```
 
+The registry holds **identity only**. Price, context window and `state` are ingested or
+derived and live in `data/derived/models.json`. Keeping mutable numbers out of the
+hand-maintained file is what lets the definition of done forbid hand-editing everything
+else in `data/`.
+
+Note that `status` in the example above is spelled `state` in `02-data/schemas.md`, and
+`state` is the correct name. It is derived from whether scores exist, never hand-set.
+
 ## Resolution rules
 
 1. Exact match on `model_id` wins.
@@ -80,3 +88,5 @@ This is intentionally manual in v1. Automating it means automating the wrong-mer
 ## Changelog
 
 - Initial version.
+- Clarified that the registry holds identity only, and that `state` is derived rather
+  than hand-set.

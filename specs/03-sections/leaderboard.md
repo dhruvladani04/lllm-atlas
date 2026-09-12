@@ -18,19 +18,29 @@ destroy column alignment.
 |---|---|
 | Rank | Position within current sort. Not a stored property. |
 | Model | Name plus creator. Links to detail. Open-weights models carry a small marker. |
+| Variant | Effort or reasoning tier — `base`, `high`, `xhigh`. Shown always, including for `base`. |
 | Capability | Primary independent score, with its benchmark named inline — never an unlabelled composite |
 | Health | Compact strip of health flags for the benchmarks behind that score |
 | Provenance | `independent` / `vendor-reported` / `mixed` |
 | Context | Context window |
-| Price | Input / output per million tokens |
+| Price | Input / output per million tokens, each labelled vendor list price or OpenRouter routed price |
 | Adoption | OpenRouter usage rank, visually separated from capability columns |
 | Released | Date, with "new" marker under 14 days |
+
+**The row key is model + variant.** `Claude Opus 5` and `Claude Opus 5 (high)` are two
+rows, not one, because they score differently and merging them silently produces a wrong
+number with no error anywhere — the same argument `01-architecture/model-registry.md`
+makes for the score tuple. Sorting and filtering operate over variant rows.
+
+Where no vendor price is available, the OpenRouter price renders with a small marker and
+a tooltip: a routed price is not a list price. Where neither exists, the cell renders
+through `MissingValue`.
 
 ### Columns — agentic tab
 
 Same, with two changes that matter:
 
-- The row key is **model + harness**, and the harness is a visible column. Two rows for
+- The row key is **model + variant + harness**, and the harness is a visible column. Two rows for
   the same model under different scaffolds is correct, not a duplicate.
 - A persistent note above the table: agentic scores are system scores, not model scores.
   Changing the harness changes the number.
@@ -95,3 +105,5 @@ Decide." Copy guidance is in `04-design/design-system.md`.
 ## Changelog
 
 - Initial version.
+- Leaderboard rows keyed by model + variant, with a visible variant column.
+- Price column labels vendor list price against OpenRouter routed price. Milestone 3.

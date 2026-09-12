@@ -22,6 +22,17 @@ const ContaminationRisk = z.enum(["low", "medium", "high", "unknown"]);
 
 const ModelState = z.enum(["ranked", "released_unranked", "announced"]);
 
+const PriceQuotedBy = z.enum(["vendor", "openrouter"]);
+
+// A number that knows where it came from and when. Used for prices and context window,
+// which — unlike scores — have two possible sources making two different claims.
+const QuotedNumber = z.object({
+  value: z.number(),
+  quoted_by: PriceQuotedBy,
+  source_url: z.string().url(),       // the specific pricing page, not a homepage
+  fetched_at: z.string().datetime(),
+});
+
 const SourceMeta = z.object({
   source_id: z.string(),
   source_url: z.string().url(),
@@ -41,9 +52,9 @@ const Model = z.object({
   released_at: z.string().nullable(),
   open_weights: z.boolean().nullable(),
   state: ModelState,
-  context_window: z.number().int().nullable(),
-  price_input_per_mtok: z.number().nullable(),
-  price_output_per_mtok: z.number().nullable(),
+  context_window: QuotedNumber.nullable(),        // .value is an integer
+  price_input_per_mtok: QuotedNumber.nullable(),
+  price_output_per_mtok: QuotedNumber.nullable(),
   aliases: z.array(z.string()),
   variants: z.array(z.object({
     variant: z.string(),
@@ -51,6 +62,12 @@ const Model = z.object({
   })),
 });
 ```
+
+`Model` is not the registry file. `data/registry/models.json` holds identity only —
+ids, names, creator, release date, aliases and variants, hand-maintained. Price and
+context window are ingested (source 5, with OpenRouter as fallback) and land in
+`data/derived/models.json`, which is what the UI reads. Nothing in `data/derived/` is
+ever hand-edited.
 
 ## Benchmark
 
@@ -139,9 +156,15 @@ one place and is testable.
 | `saturated` | `benchmark.status` is `saturated` |
 | `deprecated` | `benchmark.status` is `deprecated` |
 | `high-contamination` | `benchmark.contamination.risk` is `high` |
-| `vendor-reported-only` | no `independent` score exists for this model+benchmark |
+| `vendor-reported-only` | no `independent` score exists for this (model, variant, benchmark, harness) |
 | `superseded` | `benchmark.successor` is non-null |
-| `stale-source` | `source.fetched_at` older than 7 days |
+| `stale-source` | `source.fetched_at` older than 7 days **at build time** |
+
+A build-time `stale-source` flag is a floor, not the whole story: the pipeline commits
+only when data changes, so a dead source produces no rebuild and a flag computed at
+build time would freeze. Staleness is therefore also computed at render time in the
+browser from `fetched_at`, by `FreshnessStamp`. The flag marks data that was already
+stale when the build ran; the stamp is always current.
 
 ## Ingestion log
 
@@ -162,3 +185,9 @@ const IngestionRun = z.object({
 ## Changelog
 
 - Initial version.
+- Prices and context window became `QuotedNumber`, carrying their own source and fetch
+  date, so a vendor list price is never presented as an OpenRouter routed price.
+  Milestone 3.
+- `vendor-reported-only` keyed on the full score tuple, not model+benchmark.
+- `stale-source` clarified as a build-time floor, with render-time staleness in
+  `FreshnessStamp`.
