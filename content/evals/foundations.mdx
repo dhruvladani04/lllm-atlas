@@ -1,0 +1,148 @@
+---
+title: Foundations
+slug: foundations
+archetype: foundations
+unit_of_evaluation: not-applicable
+summary: Why one eval pipeline is never enough, and why the unit you score decides everything downstream.
+level: intro
+frameworks: []
+prerequisites: []
+published_on: 2026-09-12
+verified_on: 2026-09-12
+---
+
+Two disciplines share the word "evaluation" and almost nothing else.
+
+**Model evaluation** asks whether one foundation model is better than another. It runs a
+fixed set of questions against many models and produces a number you can rank on. That is
+what sections 1 and 2 of this site are: scores, and the health of the benchmarks behind
+them.
+
+**Application evaluation** asks whether _your_ system works. It runs your inputs through
+your prompts, your retrieval, your tools and your model, and asks whether the result was
+any good. RAGAS and DeepEval will not tell you whether Claude beats Gemini. They tell you
+whether your pipeline hallucinates.
+
+Confusing the two is the most common mistake in this area, and it is expensive in both
+directions. Teams pick a model from a leaderboard and never measure their own system.
+Or they build an elaborate eval harness for their application and use it to argue about
+which model is smarter, which it cannot answer.
+
+## The unit of evaluation
+
+Here is the idea the rest of this section hangs on: **the thing you score is not always a
+response.** Most eval tooling assumes one input, one output, one score, because that is the
+shape of a benchmark question. Real applications are not that shape.
+
+| Archetype             | What you must score                                                                  |
+| --------------------- | ------------------------------------------------------------------------------------ |
+| Plain generation      | One response                                                                         |
+| RAG                   | One response **plus its retrieved context** — two components that fail independently |
+| Agentic               | **The trajectory** — the whole sequence of tool calls                                |
+| Multi-turn            | **The session** — memory, contradiction, degradation across turns                    |
+| Structured extraction | **Each field**, not the object                                                       |
+
+Get the unit wrong and your numbers are confidently meaningless. Score a RAG system at the
+response level and you cannot tell a retrieval miss from a model that ignored good context —
+two failures with opposite fixes. Score an agent at the response level and a run that
+reached the right answer through six wrong tool calls looks identical to one that went
+straight there.
+
+<Callout type="pitfall">
+  A single number that goes up is not evidence that your system improved. It is evidence
+  that the thing you chose to measure went up. Those are different claims, and the gap
+  between them is where most eval work goes wrong.
+</Callout>
+
+## Why one pipeline is never enough
+
+An eval pipeline encodes one definition of "good". Applications have several, and they
+conflict:
+
+- **Correctness** — is the answer right?
+- **Groundedness** — is it supported by the context you retrieved?
+- **Format** — will the downstream parser accept it?
+- **Safety** — does it leak, refuse badly, or take the bait on injection?
+- **Cost and latency** — could you afford to serve it?
+
+A change that improves one usually costs another. Longer, more careful answers score better
+on correctness and worse on latency and cost. Stricter grounding reduces hallucination and
+increases refusals on questions your corpus almost covers. You need separate pipelines
+because you need to see the trade, not a blended number that hides it.
+
+## Reference-based and reference-free
+
+**Reference-based** evaluation compares output to a known-good answer. It is precise, it is
+cheap to run, and it requires someone to write the answers. It works for extraction,
+classification and anything with a correct result.
+
+**Reference-free** evaluation judges output on its own terms — usually with another model
+as the judge — against a rubric. It scales to open-ended tasks where no single answer is
+correct, and it inherits every bias of the judge.
+
+That inheritance is not hypothetical. Several benchmarks on this site are themselves scored
+by a model:
+
+<BenchmarkRef slug="mt-bench" />
+
+<BenchmarkRef slug="humanitys-last-exam" />
+
+The second one matters more than the first. MT-Bench is nearing saturation, so its judge
+is a historical curiosity. Humanity's Last Exam is _active_ — a benchmark people quote
+today — and its answers are checked by a model. Every score on it inherits that checker's
+failure modes.
+
+When the judge is a model, you are measuring agreement with that model's taste. That is
+often good enough. It is never the same as correctness, and a rubric that a judge scores
+highly can still be a rubric your users hate.
+
+<Callout type="note">
+  Use reference-based evaluation wherever you can write the reference. Reach for a judge
+  when you genuinely cannot — then validate the judge against human labels on a sample,
+  and re-validate it whenever you change the judge model.
+</Callout>
+
+## Offline and online
+
+**Offline** evals run against a fixed set before you ship: a golden set, in CI, gating a
+deploy. They are repeatable and they catch regressions.
+
+**Online** evals run against live traffic after you ship: sampling real sessions, scoring
+them, watching signals like task completion, user corrections and retries. They catch what
+your golden set never contained — which is most of what actually breaks.
+
+You need both, and they are not the same measurement. A golden set is a fixed distribution
+you chose; production is a moving one your users chose. A system can hold steady offline
+while degrading online simply because the traffic changed.
+
+## The video groundwork
+
+CampusX has published an LLM Evaluation series that covers this conceptual groundwork
+carefully, and there is no reason to restate it badly here. The episode below is the one
+that maps directly onto the distinction this page opens with.
+
+<div className="my-6 aspect-video">
+  <iframe
+    className="h-full w-full border border-rule"
+    src="https://www.youtube-nocookie.com/embed/cNF_MO82Qew"
+    title="Introduction to LLM Evaluations – Model Evals vs Application Evals (CampusX)"
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  />
+</div>
+
+_Introduction to LLM Evaluations – Model Evals vs Application Evals_, by
+[CampusX](https://www.youtube.com/@campusx-official). Embedded with credit; the video is
+theirs and is worth watching in full on their channel.
+
+Other episodes in the series worth your time:
+
+- [How to Evaluate LLM Applications: The Complete Workflow](https://www.youtube.com/watch?v=Pv4mkG2K_s8)
+- [Why Your AI Application Needs Multiple Eval Pipelines?](https://www.youtube.com/watch?v=DcZ-XCk-O_M)
+- [LLM Eval Methods: LLM-as-a-Judge, reference-based vs reference-free](https://www.youtube.com/watch?v=uQFLY8rQVYA)
+- [Offline Evals vs Online Evals](https://www.youtube.com/watch?v=SahaDGzN-Bk)
+- [LLM Model Evals & Capabilities](https://www.youtube.com/watch?v=FPS0rIAQwzo)
+- The full series is on the [CampusX playlists page](https://www.youtube.com/@campusx-official/playlists).
+
+What the guides here add is the layer above: what changes per archetype, what each measure
+misses, and how to read the results when they disagree.

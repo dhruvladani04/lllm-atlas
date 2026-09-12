@@ -1,0 +1,122 @@
+# The framework comparison lives here, in one file, so its verified_on is enforced in one
+# place. Every claim below was checked against the project's own documentation on the date
+# given. Framework feature sets move fast; an undated comparison is wrong within a quarter.
+verified_on: "2026-09-12"
+note: >-
+  Organised by which archetype each framework serves, because that is the decision a reader
+  is actually making. Claims here describe what each project is built around, not a feature
+  checklist — checklists go stale faster than they can be maintained.
+
+frameworks:
+  - id: ragas
+    name: RAGAS
+    archetypes: [rag]
+    strength: >-
+      Scores the retriever and the generator separately, which is the distinction RAG
+      evaluation lives or dies on.
+    watch_out: >-
+      RAG-shaped by design. Bending it around an agent or a multi-turn session means
+      reimplementing most of what it does.
+    licence: Apache-2.0
+    url: https://docs.ragas.io/
+
+  - id: deepeval
+    name: DeepEval
+    archetypes: [generation, rag, agentic, multi-turn, extraction]
+    strength: >-
+      The broadest metric library, driven from a pytest-style workflow, so evals run where
+      your other tests run and fail a build the same way.
+    watch_out: >-
+      Breadth invites using a metric because it exists. Most of its judge-based metrics
+      inherit the judge model's biases.
+    licence: Apache-2.0
+    url: https://deepeval.com/
+
+  - id: langsmith
+    name: LangSmith
+    archetypes: [agentic, multi-turn, generation, rag]
+    strength: >-
+      Tracing first: you can see the trajectory a run actually took, which is the
+      precondition for scoring one.
+    watch_out: >-
+      Hosted and commercial. The data you are tracing is usually the data you are least
+      free to send elsewhere.
+    licence: Proprietary (hosted)
+    url: https://docs.langchain.com/langsmith
+
+  - id: langfuse
+    name: Langfuse
+    archetypes: [agentic, multi-turn, generation, rag]
+    strength: >-
+      Open-source tracing and eval with a self-hosted path, which matters once traces
+      contain production data.
+    watch_out: >-
+      Self-hosting is real operational work — it is a database and a service, not a library.
+    licence: MIT (core)
+    url: https://langfuse.com/
+
+  - id: phoenix
+    name: Arize Phoenix
+    archetypes: [rag, agentic, generation]
+    strength: >-
+      Strong at retrieval debugging: embedding drift and retrieval quality analysis rather
+      than just a pass or fail number.
+    watch_out: >-
+      Most useful when you already have volume. On a handful of traces it tells you little.
+    licence: Elastic-2.0
+    url: https://arize.com/docs/phoenix
+
+  - id: opik
+    name: Opik
+    archetypes: [agentic, generation, rag]
+    strength: >-
+      Tracing plus evaluation with an open-source core, aimed at moving offline evals online.
+    watch_out: >-
+      Younger than the alternatives; expect faster API movement.
+    licence: Apache-2.0
+    url: https://www.comet.com/docs/opik/
+
+  - id: promptfoo
+    name: promptfoo
+    archetypes: [generation, extraction, reference]
+    strength: >-
+      Declarative test matrices across prompts, models and providers, plus red-teaming and
+      jailbreak probes. Runs in CI without a service.
+    watch_out: >-
+      Built around inputs and outputs. It has little to say about a trajectory.
+    licence: MIT
+    url: https://www.promptfoo.dev/
+
+  - id: inspect
+    name: Inspect
+    archetypes: [reference, agentic]
+    strength: >-
+      Built by the UK AI Safety Institute for model evaluation, with solvers, scorers and a
+      log viewer designed for auditable runs.
+    watch_out: >-
+      Aimed at evaluating models, not your application. The two are different disciplines.
+    licence: MIT
+    url: https://inspect.aisi.org.uk/
+
+  - id: evidently
+    name: Evidently
+    archetypes: [generation, reference]
+    strength: >-
+      Comes from the classic ML monitoring lineage, so drift and data-quality reports are
+      first-class rather than bolted on.
+    watch_out: >-
+      Its LLM support is newer than its tabular support, and it shows in places.
+    licence: Apache-2.0
+    url: https://www.evidentlyai.com/
+
+  - id: mlflow
+    name: MLflow
+    archetypes: [generation, reference]
+    strength: >-
+      If your organisation already tracks experiments in MLflow, its LLM evaluation support
+      puts eval runs beside everything else rather than in a separate tool.
+    watch_out: >-
+      A general experiment tracker with eval features, not an eval framework. The metric
+      library is thin by comparison.
+    licence: Apache-2.0
+    url: https://mlflow.org/docs/latest/llms/llm-evaluate/index.html

@@ -1,0 +1,315 @@
+---
+title: Evaluating agentic systems
+slug: agentic-systems
+archetype: agentic
+unit_of_evaluation: trajectory
+summary: Scoring the path an agent took, not just where it ended up — and why an agent score is a system score.
+level: advanced
+frameworks: [deepeval, langsmith, langfuse, inspect]
+prerequisites: [foundations]
+published_on: 2026-09-12
+verified_on: 2026-09-12
+---
+
+**The unit of evaluation here is the trajectory** — the whole sequence of tool calls,
+arguments and observations that led to an answer. Not the answer.
+
+That is the entire guide in one sentence, and almost every eval tool will let you ignore it.
+Score an agent the way you score a chatbot and you will measure whether the last message was
+correct, which is a fact about luck as much as about capability.
+
+## The run that passes and should not
+
+Here is a real failure shape. The agent is asked to fix a failing test. It succeeds. The
+final tests pass. Response-level scoring records a win.
+
+<Scene
+  id="agent-trajectory"
+  caption="Eight steps to a correct answer. Four of them are wrong: a repeated search with identical arguments, two reads of a path that does not exist, and a test run before any fix was written. Step six finally lists the directory — information that was one call away since step two. Response-level scoring sees only step eight."
+/>
+
+The run cost four wasted tool calls, three of which would have failed the same way forever
+if the loop had not broken by chance. Ship this agent and it will hit the cases where that
+chance does not arrive: the loop continues, the budget runs out, the user waits.
+
+<Callout type="pitfall">
+  A correct answer reached through six wrong tool calls and a lucky recovery is a failing
+  run. If your eval cannot express that, it is not evaluating an agent — it is evaluating
+  a sentence the agent happened to produce last.
+</Callout>
+
+## An agent score is a system score
+
+This point is worth stating flatly, because the entire leaderboard on this site depends on
+it too: **an agentic score measures the model and its harness together.**
+
+Swap the scaffold — different tool definitions, a different retry policy, a different system
+prompt, a different context window budget — and the number moves, sometimes by more than the
+gap between two models. Benchwiki's own records make this point repeatedly, and it is why
+[this site's agentic tab](/models?tab=agentic) keys its rows on model **plus harness** and
+shows two rows for the same model under two scaffolds.
+
+Look at what that means in practice on a benchmark you have probably seen quoted:
+
+<BenchmarkRef slug="terminal-bench" />
+
+<BenchmarkRef slug="swe-bench-verified" />
+
+When someone says "this model scores X on SWE-bench", the honest question is "under which
+harness?" Without that, the number is not reproducible and not comparable — and the second
+of those two benchmarks is already saturated, so the number is telling you less than it
+appears to regardless.
+
+<Callout type="warning">
+  If you take one thing from this guide into a meeting: never compare two agentic scores
+  without checking they used the same scaffold. Most published comparisons do not.
+</Callout>
+
+## What actually breaks
+
+Five failure shapes, in rough order of how often they cost real money:
+
+1. **Wrong tool.** The agent reaches for `search` when it needed `list`. Usually a tool
+   description problem, not a model problem.
+2. **Right tool, wrong arguments.** Far more common and much harder to spot, because the
+   call succeeds and returns something plausible.
+3. **Loops.** The same call with the same arguments, repeatedly. Cheap to detect, and almost
+   nobody detects it.
+4. **Non-termination.** The agent neither finishes nor fails. This is the one that quietly
+   consumes a budget.
+5. **Accidental recovery.** The run above. The worst of the five, because it looks like
+   success in every response-level metric you have.
+
+## Measures that catch them
+
+<MetricCard
+  name="Tool-call correctness"
+  measures={
+    <>
+      Whether the tools the agent chose are the tools the task needed, ignoring arguments
+      and order.
+    </>
+  }
+  misses={
+    <>
+      Everything about how the tool was called. An agent can select perfectly and still
+      pass nonsense arguments every time.
+    </>
+  }
+  frameworks={["deepeval", "langsmith"]}
+/>
+
+<MetricCard
+  name="Argument correctness"
+  measures={
+    <>
+      Whether the arguments passed to each call were right — the path, the query, the
+      identifier.
+    </>
+  }
+  misses={
+    <>
+      Whether the call was needed at all. A perfectly-argued call that should never have
+      been made still scores well.
+    </>
+  }
+  frameworks={["deepeval", "langfuse"]}
+/>
+
+<MetricCard
+  name="Trajectory match"
+  measures={<>How close the observed sequence of calls came to a reference sequence.</>}
+  misses={
+    <>
+      Legitimate alternative routes. A stricter match penalises an agent for being
+      cleverer than your reference.
+    </>
+  }
+  frameworks={["deepeval", "langsmith", "inspect"]}
+/>
+
+<MetricCard
+  name="Task completion"
+  measures={
+    <>
+      Whether the end state is the one the task asked for — the file edited, the ticket
+      closed, the tests passing.
+    </>
+  }
+  misses={
+    <>
+      Cost. A run that completes after forty steps and one that completes in four score
+      identically.
+    </>
+  }
+  frameworks={["langsmith", "langfuse", "inspect"]}
+/>
+
+<MetricCard
+  name="Steps and cost per task"
+  measures={<>Tool calls, tokens and wall-clock spent reaching the end state.</>}
+  misses={
+    <>
+      Whether the end state was correct. Cheap and wrong is still wrong — always read this
+      beside completion.
+    </>
+  }
+  frameworks={["langfuse", "opik"]}
+/>
+
+Score tool selection **separately** from argument construction. They have different fixes:
+selection problems are usually solved by rewriting tool descriptions, argument problems by
+constraining schemas or adding validation. A blended "tool use" score tells you something is
+wrong and nothing about which.
+
+## Three ways to match a trajectory, and when each is right
+
+This is where most trajectory evaluation goes wrong, so be deliberate about it.
+
+**Exact match** requires the same calls in the same order. Use it only when the order is
+genuinely load-bearing — a migration that must back up before it writes, a transaction that
+must authorise before it charges. Anywhere else it punishes valid strategies.
+
+**Any-order match** requires the same set of calls, order irrelevant. This is the right
+default for read-only information gathering, where fetching the schema before the rows or
+after is a matter of taste.
+
+**Superset match** requires that the reference calls all appear, and tolerates extra ones.
+Use it when you care that the agent did the necessary things and you are not yet trying to
+make it efficient. Pair it with a step-count budget, or you have licensed the forty-step
+run.
+
+<Callout type="note">
+  A reference trajectory is a claim about the one right way to do something. Most tasks
+  have several. Start with any-order matching plus a step budget, and tighten to exact
+  match only where order is a correctness property rather than a preference.
+</Callout>
+
+## A worked example
+
+This runs. It needs no framework — the point is that trajectory scoring is not exotic
+machinery, it is a few lines you can write today and then adopt a framework for later.
+
+```python
+"""Score an agent run on its trajectory, not its final answer.
+
+Run: python trajectory_eval.py
+"""
+from dataclasses import dataclass, field
+
+
+@dataclass
+class Call:
+    tool: str
+    args: dict
+
+
+@dataclass
+class Run:
+    calls: list[Call]
+    final_state_correct: bool
+    cost_usd: float = 0.0
+
+
+@dataclass
+class Verdict:
+    passed: bool
+    reasons: list[str] = field(default_factory=list)
+
+
+def score(run: Run, required: list[str], step_budget: int) -> Verdict:
+    """Any-order superset match, plus the three checks response scoring cannot make."""
+    reasons: list[str] = []
+    used = [call.tool for call in run.calls]
+
+    # 1. Did it do the necessary things at all?
+    missing = [tool for tool in required if tool not in used]
+    if missing:
+        reasons.append(f"never called: {', '.join(missing)}")
+
+    # 2. Loops: the same call with identical arguments, back to back.
+    #    Note "back to back". Flagging *any* repeat is the obvious first implementation and
+    #    it is wrong: re-running the tests after a fix repeats an earlier call legitimately.
+    previous: tuple[str, str] | None = None
+    for call in run.calls:
+        key = (call.tool, repr(sorted(call.args.items())))
+        if key == previous:
+            reasons.append(f"repeated identical call: {call.tool}({call.args})")
+        previous = key
+
+    # 3. Efficiency: a correct answer after forty steps is not the same as after four.
+    if len(run.calls) > step_budget:
+        reasons.append(f"took {len(run.calls)} steps against a budget of {step_budget}")
+
+    # 4. And only now, the thing response-level scoring would have checked alone.
+    if not run.final_state_correct:
+        reasons.append("final state is wrong")
+
+    return Verdict(passed=not reasons, reasons=reasons)
+
+
+if __name__ == "__main__":
+    lucky_recovery = Run(
+        calls=[
+            Call("search_docs", {"q": "failing test"}),
+            Call("search_docs", {"q": "failing test"}),      # loop
+            Call("read_file", {"path": "src/mian.py"}),       # typo, does not exist
+            Call("read_file", {"path": "src/mian.py"}),       # loop
+            Call("run_tests", {}),                            # before any fix
+            Call("list_dir", {"path": "src"}),
+            Call("edit_file", {"path": "src/main.py"}),
+            Call("run_tests", {}),
+        ],
+        final_state_correct=True,
+    )
+
+    verdict = score(lucky_recovery, required=["list_dir", "edit_file"], step_budget=5)
+    print("response-level scoring would say: PASS")
+    print(f"trajectory scoring says: {'PASS' if verdict.passed else 'FAIL'}")
+    for reason in verdict.reasons:
+        print(f"  - {reason}")
+```
+
+Running it prints:
+
+```text
+response-level scoring would say: PASS
+trajectory scoring says: FAIL
+  - repeated identical call: search_docs({'q': 'failing test'})
+  - repeated identical call: read_file({'path': 'src/mian.py'})
+  - took 8 steps against a budget of 5
+```
+
+<Callout type="pitfall">
+  The loop check above looks at *consecutive* calls, and the first version of it did not —
+  it flagged any repeat. That version reported the final `run_tests` as a loop, because
+  the agent had run the tests once before fixing anything. Re-running a command after a
+  change is not a loop, it is the point. A loop detector that cries wolf on legitimate
+  retries gets switched off within a week, and then catches nothing.
+</Callout>
+
+Two lines of difference, one of which is the difference between shipping this agent and not.
+
+## Reading the results
+
+- **Completion high, steps high.** The agent works and wastes money. Look at tool
+  descriptions before you look at the model.
+- **Completion high, loops present.** You are one unlucky run from non-termination. Loop
+  detection belongs in the agent, not only in the eval.
+- **Tool selection high, argument correctness low.** A schema problem. Constrain the
+  arguments or validate before dispatch; a bigger model will not reliably fix this.
+- **Everything high offline, complaints online.** Your golden set does not contain the
+  shapes production sends. Sample real trajectories and add them.
+
+## What to take away
+
+Score the path. Score selection apart from arguments. Put a step budget beside every
+completion number. And whenever you see an agentic score quoted anywhere — including on
+this site — ask which harness produced it, because the number belongs to the system, not to
+the model.
+
+## Where to go next
+
+The [framework comparison](/evals/framework-comparison) covers which tools make trajectory
+evaluation practical at scale, and the [RAG guide](/evals/rag) covers the other archetype
+where the unit of evaluation is not a response.

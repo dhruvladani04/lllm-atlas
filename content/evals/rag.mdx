@@ -1,0 +1,226 @@
+---
+title: Evaluating RAG and knowledge assistants
+slug: rag
+archetype: rag
+unit_of_evaluation: response-plus-context
+summary: Scoring the retriever and the generator separately, because they fail independently and their fixes are opposite.
+level: intermediate
+frameworks: [ragas, deepeval, phoenix]
+prerequisites: [foundations]
+published_on: 2026-09-12
+verified_on: 2026-09-12
+---
+
+**The unit of evaluation here is one response plus its retrieved context.** Two components,
+scored separately, because they fail independently and the fixes point in opposite
+directions.
+
+A single end-to-end "is the answer good" score cannot tell you which half broke. That
+matters more than it sounds: the two failures look identical to a user and require
+completely different work from you.
+
+## Three failures that produce the same bad answer
+
+1. **Retrieval miss.** The right passage was never fetched. The model had nothing to work
+   with, and a larger model will not help. Fix the chunking, the embedding, the query
+   rewriting, or the index.
+2. **The model ignores good context.** The passage was right there and the answer
+   contradicts it. Fix the prompt, the context ordering, or the model.
+3. **Answering from parametric memory.** The model knows the answer from training and
+   answers without consulting the context at all. This is the dangerous one: it is _right_
+   most of the time, until your corpus disagrees with the internet, which is exactly the
+   case your RAG system exists to handle.
+
+The third failure is why you cannot evaluate RAG by correctness alone. A system answering
+from memory scores beautifully on a golden set drawn from public knowledge and fails
+silently on your internal documents.
+
+<Callout type="pitfall">
+  If your eval set is built from questions whose answers are also on the public internet,
+  you cannot distinguish a working retriever from a model that memorised the answer.
+  Include questions whose answers exist **only** in your corpus — and questions where your
+  corpus contradicts common knowledge.
+</Callout>
+
+## Score the retriever and the generator apart
+
+<MetricCard
+  name="Context recall"
+  measures={<>Whether the passages needed to answer were actually retrieved.</>}
+  misses={
+    <>
+      Everything about the answer. Perfect recall with a generator that ignores the
+      context still fails the user.
+    </>
+  }
+  frameworks={["ragas", "deepeval", "phoenix"]}
+/>
+
+<MetricCard
+  name="Context precision"
+  measures={
+    <>
+      Whether the retrieved passages are relevant, and whether the relevant ones ranked
+      near the top.
+    </>
+  }
+  misses={
+    <>
+      Whether anything was missing. You can score well by retrieving three tightly
+      relevant passages and omitting the one that mattered.
+    </>
+  }
+  frameworks={["ragas", "phoenix"]}
+/>
+
+<MetricCard
+  name="Faithfulness"
+  measures={<>Whether the claims in the answer are supported by the retrieved context.</>}
+  misses={
+    <>
+      Whether the answer is useful or complete. A faithful answer can be faithful to an
+      irrelevant passage, and "I cannot say from the context" is perfectly faithful.
+    </>
+  }
+  frameworks={["ragas", "deepeval"]}
+/>
+
+<MetricCard
+  name="Answer relevancy"
+  measures={<>Whether the answer addresses the question that was asked.</>}
+  misses={
+    <>
+      Correctness. A confidently wrong answer to exactly the right question scores well.
+    </>
+  }
+  frameworks={["ragas", "deepeval"]}
+/>
+
+Read them in pairs. **Recall low, faithfulness high** is a retrieval problem wearing a
+convincing disguise: the system is honestly reporting what it found, and it found the wrong
+thing. **Recall high, faithfulness low** is a generation problem: the context was there and
+the model went its own way. Only the pair distinguishes them.
+
+## The ablation that finds parametric answering
+
+The trick is to take the context away and see whether the answer changes. If a system
+answers just as well with no retrieved context, retrieval is decorative for that question.
+
+This generalises: run the eval retrieve-text-only, retrieve-image-only, and both. If the
+combined run barely beats the best single source, your system is not fusing — it is picking
+one and ignoring the other. Almost no eval tutorial covers this, and it is the fastest way
+to find out that an expensive multimodal pipeline is doing nothing.
+
+```python
+"""Find questions your system answers from memory rather than from retrieval.
+
+Run: python rag_ablation.py
+"""
+from dataclasses import dataclass
+
+
+@dataclass
+class Question:
+    text: str
+    answer: str
+    # True when the answer exists only in the private corpus.
+    corpus_only: bool
+
+
+def ask(question: str, context: list[str]) -> str:
+    """Stand-in for your pipeline. Replace with a real call.
+
+    This fake answers from 'memory' whenever the question is about the public world,
+    which is exactly the behaviour the ablation is designed to expose.
+    """
+    if context:
+        return context[0]
+    return "Paris" if "capital" in question else "I don't know"
+
+
+def ablate(questions: list[Question], retrieve) -> None:
+    for question in questions:
+        with_context = ask(question.text, retrieve(question.text))
+        without_context = ask(question.text, [])
+
+        grounded = with_context.strip().lower() == question.answer.strip().lower()
+        memorised = without_context.strip().lower() == question.answer.strip().lower()
+
+        if memorised and question.corpus_only:
+            verdict = "IMPOSSIBLE - answered without context for a corpus-only fact"
+        elif memorised:
+            verdict = "PARAMETRIC - retrieval contributed nothing here"
+        elif grounded:
+            verdict = "GROUNDED - the answer depended on retrieval"
+        else:
+            verdict = "FAILED - wrong even with context"
+
+        print(f"{verdict:<58} {question.text}")
+
+
+if __name__ == "__main__":
+    corpus = {
+        "What is our refund window?": ["30 days from delivery, per policy PR-114."],
+        "What is the capital of France?": ["Paris is the capital of France."],
+    }
+
+    ablate(
+        [
+            Question("What is our refund window?", "30 days from delivery, per policy PR-114.", corpus_only=True),
+            Question("What is the capital of France?", "Paris", corpus_only=False),
+        ],
+        retrieve=lambda q: corpus.get(q, []),
+    )
+```
+
+The second question comes back `PARAMETRIC`. That is not a bug in the system — it is a
+warning that this question cannot tell you anything about your retriever, and a golden set
+full of questions like it will report health you do not have.
+
+## Building a golden set that is worth having
+
+- **Include corpus-only questions.** If the answer is on Wikipedia, the question is testing
+  the model, not your pipeline.
+- **Include contradictions.** Questions where your documents disagree with common knowledge
+  are the sharpest test of whether context wins.
+- **Include unanswerable questions.** The correct behaviour is a refusal. Systems tuned only
+  on answerable questions learn to always answer.
+- **Include questions needing two passages.** Single-passage sets never exercise the ranking.
+- **Keep the sizes uneven.** Real queries are not uniformly distributed; neither should your
+  set be.
+
+<Callout type="note">
+  A golden set of fifty carefully-chosen questions beats five hundred generated ones. The
+  generated ones are drawn from the same distribution as your documents, which is the
+  distribution you already handle.
+</Callout>
+
+## Watch the judge
+
+Most faithfulness and relevancy metrics are judged by a model, which means they inherit that
+model's biases — the point made on the [foundations page](/evals/foundations), and visible
+in the benchmark data on this site:
+
+<BenchmarkRef slug="simpleqa" />
+
+A hallucination benchmark whose grading is itself a model classifier. That is a reasonable
+engineering choice and it is still a dependency: when the judge changes version, your
+numbers move without your system changing at all. Pin the judge model, record which one you
+used beside every score, and re-validate against human labels when you change it.
+
+## Reading the results
+
+- **Precision high, recall low.** Your retriever is cautious. Widen the candidate pool
+  before you touch the prompt.
+- **Recall high, precision low.** You are flooding the context window. Expect the model to
+  latch onto whichever passage came first.
+- **Faithfulness high, relevancy low.** The system is grounded in the wrong passages —
+  usually a ranking problem.
+- **Everything high, users unhappy.** Check the ablation. You may be measuring a system that
+  answers from memory on a set where memory is enough.
+
+## Where to go next
+
+The [agentic guide](/evals/agentic-systems) covers the archetype where the unit is the whole
+trajectory, and the [framework comparison](/evals/framework-comparison) covers which tools
+implement the measures above.

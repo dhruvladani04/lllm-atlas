@@ -1,0 +1,93 @@
+---
+title: Which eval framework, for which archetype
+slug: framework-comparison
+archetype: reference
+unit_of_evaluation: not-applicable
+summary: Choosing an eval framework by the shape of your application rather than by feature checklist.
+level: intermediate
+frameworks:
+  [
+    ragas,
+    deepeval,
+    langsmith,
+    langfuse,
+    phoenix,
+    opik,
+    promptfoo,
+    inspect,
+    evidently,
+    mlflow,
+  ]
+prerequisites: [foundations]
+published_on: 2026-09-12
+verified_on: 2026-09-12
+---
+
+Framework comparisons usually list features in a grid and let you count ticks. That grid is
+wrong within a quarter, and it answers a question nobody has. The question people actually
+have is: **my application has this shape — what should I reach for?**
+
+So this page is organised by archetype, and every claim on it carries a date.
+
+<Callout type="warning">
+  Everything below was checked on the date stamped under the table. Feature sets in this
+  area move faster than documentation does. If that date is more than a few months old by
+  the time you read this, treat the specifics as a starting point for your own check
+  rather than as current fact — the page will tell you when it has gone stale.
+</Callout>
+
+## The whole field, by what it serves
+
+<FrameworkTable />
+
+## Choosing by shape
+
+**You are building RAG.** Start with RAGAS. Its whole design is the retriever/generator
+split that the [RAG guide](/evals/rag) argues for, and you will not have to construct that
+split yourself. Add Phoenix when you have enough traffic for retrieval debugging to pay off.
+
+**You are building an agent.** You need tracing before you need metrics, because you cannot
+score a trajectory you cannot see. LangSmith or Langfuse first — Langfuse if the traces
+contain data you would rather self-host — then DeepEval or Inspect for the scoring described
+in the [agentic guide](/evals/agentic-systems).
+
+**You are building plain generation or a chat feature.** DeepEval in CI, pytest-style, and
+promptfoo when you need to sweep prompts and models against each other rather than score one
+pipeline.
+
+**You are doing structured extraction.** You probably need less than you think: per-field
+precision and recall against references, plus a schema-validity rate. promptfoo's matrices
+fit this well, and a plain test suite fits it even better.
+
+**You are red-teaming.** promptfoo for jailbreak and injection probes; Inspect if you are
+evaluating models rather than an application.
+
+**You already live in an MLOps stack.** Evidently or MLflow keep eval results beside the
+rest of your experiments. Neither has the metric depth of the specialists, and that is often
+an acceptable trade against having one fewer tool.
+
+## The choice that matters more than the tool
+
+Two decisions outrank framework selection, and both are yours regardless of what you pick:
+
+**Where evals run.** A framework that only runs on your laptop will stop being run. Put the
+offline suite in CI where a regression fails a build, and put sampling in production where
+online evals can see the traffic the golden set never had.
+
+**Who owns the golden set.** The set decides what "better" means. If nobody owns it, it
+ossifies, and you spend a year optimising against questions that stopped being
+representative months ago. Review it on a schedule and record when you last did — the same
+discipline this page applies to itself.
+
+<Callout type="note">
+  Pick the smallest thing that measures the unit you actually care about. Most teams adopt
+  a platform and use four of its metrics. Starting with four metrics you understand, in
+  your own test suite, is a better first step than a platform you half-configure.
+</Callout>
+
+## A note on lock-in
+
+Traces are the sticky part, not the metrics. Metric implementations are a few dozen lines
+each and you can move them; a year of production traces in a hosted schema is a migration.
+If that worries you, weigh the self-hostable options — Langfuse, Phoenix, Opik — before the
+volume makes the decision for you.
