@@ -1,0 +1,635 @@
+[
+  {
+    "model_id": "anthropic/claude-opus-5",
+    "display_name": "Claude Opus 5",
+    "creator": "Anthropic",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "Claude Opus 5",
+      "claude-opus-5",
+      "anthropic/claude-opus-5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Claude Opus 5"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1000000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-opus-5",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_input_per_mtok": {
+      "value": 5,
+      "quoted_by": "vendor",
+      "source_url": "https://www.anthropic.com/pricing",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_output_per_mtok": {
+      "value": 25,
+      "quoted_by": "vendor",
+      "source_url": "https://www.anthropic.com/pricing",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    }
+  },
+  {
+    "model_id": "anthropic/claude-sonnet-5",
+    "display_name": "Claude Sonnet 5",
+    "creator": "Anthropic",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "Claude Sonnet 5",
+      "claude-sonnet-5",
+      "anthropic/claude-sonnet-5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Claude Sonnet 5"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1000000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-sonnet-5",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_input_per_mtok": {
+      "value": 2,
+      "quoted_by": "vendor",
+      "source_url": "https://www.anthropic.com/pricing",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_output_per_mtok": {
+      "value": 10,
+      "quoted_by": "vendor",
+      "source_url": "https://www.anthropic.com/pricing",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    }
+  },
+  {
+    "model_id": "anthropic/claude-haiku-4.5",
+    "display_name": "Claude Haiku 4.5",
+    "creator": "Anthropic",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "Claude Haiku 4.5",
+      "claude-haiku-4.5",
+      "anthropic/claude-haiku-4.5",
+      "claude-haiku-4-5",
+      "claude-haiku-4-5-20251001"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Claude Haiku 4.5"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 200000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-haiku-4.5",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_input_per_mtok": {
+      "value": 1,
+      "quoted_by": "vendor",
+      "source_url": "https://www.anthropic.com/pricing",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_output_per_mtok": {
+      "value": 5,
+      "quoted_by": "vendor",
+      "source_url": "https://www.anthropic.com/pricing",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    }
+  },
+  {
+    "model_id": "anthropic/claude-fable-5.1",
+    "display_name": "Claude Fable 5.1",
+    "creator": "Anthropic",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "Claude Fable 5.1",
+      "claude-fable-5.1",
+      "anthropic/claude-fable-5.1",
+      "claude-fable-5-1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Claude Fable 5.1"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1000000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-fable-5.1",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_input_per_mtok": {
+      "value": 10,
+      "quoted_by": "vendor",
+      "source_url": "https://www.anthropic.com/pricing",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_output_per_mtok": {
+      "value": 50,
+      "quoted_by": "vendor",
+      "source_url": "https://www.anthropic.com/pricing",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    }
+  },
+  {
+    "model_id": "openai/gpt-5",
+    "display_name": "GPT-5",
+    "creator": "OpenAI",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "GPT-5",
+      "gpt-5",
+      "openai/gpt-5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "GPT-5"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 400000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-5",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_input_per_mtok": {
+      "value": 1.25,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-5",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_output_per_mtok": {
+      "value": 10,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-5",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    }
+  },
+  {
+    "model_id": "google/gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "creator": "Google",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "Gemini 2.5 Pro",
+      "gemini-2.5-pro",
+      "google/gemini-2.5-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Gemini 2.5 Pro"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1048576,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_input_per_mtok": {
+      "value": 1.25,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_output_per_mtok": {
+      "value": 10,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    }
+  },
+  {
+    "model_id": "meta/llama-4-maverick",
+    "display_name": "Llama 4 Maverick",
+    "creator": "Meta",
+    "released_at": "2025-04-05",
+    "open_weights": true,
+    "aliases": [
+      "Llama 4 Maverick",
+      "llama-4-maverick",
+      "meta/llama-4-maverick",
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Llama 4 Maverick"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1048576,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.19999999999999998,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_output_per_mtok": {
+      "value": 0.696,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    }
+  },
+  {
+    "model_id": "meta/llama-4-scout",
+    "display_name": "Llama 4 Scout",
+    "creator": "Meta",
+    "released_at": "2025-04-05",
+    "open_weights": true,
+    "aliases": [
+      "Llama 4 Scout",
+      "llama-4-scout",
+      "meta/llama-4-scout",
+      "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Llama 4 Scout"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1310720,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.09999999999999999,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_output_per_mtok": {
+      "value": 0.3,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    }
+  },
+  {
+    "model_id": "deepseek/deepseek-r1",
+    "display_name": "DeepSeek-R1",
+    "creator": "DeepSeek",
+    "released_at": "2025-01-20",
+    "open_weights": true,
+    "aliases": [
+      "DeepSeek-R1",
+      "deepseek-r1",
+      "deepseek/deepseek-r1",
+      "deepseek-ai/DeepSeek-R1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "DeepSeek-R1"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 64000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.7,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_output_per_mtok": {
+      "value": 2.5,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    }
+  },
+  {
+    "model_id": "deepseek/deepseek-v3",
+    "display_name": "DeepSeek-V3",
+    "creator": "DeepSeek",
+    "released_at": "2024-12-26",
+    "open_weights": true,
+    "aliases": [
+      "DeepSeek-V3",
+      "deepseek-v3",
+      "deepseek/deepseek-v3",
+      "deepseek-ai/DeepSeek-V3"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "DeepSeek-V3"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 163840,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.2574,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_output_per_mtok": {
+      "value": 1.0287,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    }
+  },
+  {
+    "model_id": "alibaba/qwen3-235b-a22b",
+    "display_name": "Qwen3-235B-A22B",
+    "creator": "Alibaba",
+    "released_at": "2025-04-29",
+    "open_weights": true,
+    "aliases": [
+      "Qwen3-235B-A22B",
+      "qwen3-235b-a22b",
+      "alibaba/qwen3-235b-a22b",
+      "Qwen/Qwen3-235B-A22B"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Qwen3-235B-A22B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 131072,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/qwen/qwen3-235b-a22b",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.45499999999999996,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/qwen/qwen3-235b-a22b",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    },
+    "price_output_per_mtok": {
+      "value": 1.8199999999999998,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/qwen/qwen3-235b-a22b",
+      "fetched_at": "2026-09-12T13:53:59.127Z"
+    }
+  },
+  {
+    "model_id": "xai/grok-4",
+    "display_name": "Grok 4",
+    "creator": "xAI",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "Grok 4",
+      "grok-4",
+      "xai/grok-4"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Grok 4"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "mistral/mistral-large-2",
+    "display_name": "Mistral Large 2",
+    "creator": "Mistral AI",
+    "released_at": "2024-07-24",
+    "open_weights": true,
+    "aliases": [
+      "Mistral Large 2",
+      "mistral-large-2",
+      "mistral/mistral-large-2",
+      "mistralai/Mistral-Large-Instruct-2407"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Mistral Large 2"
+        ]
+      }
+    ],
+    "state": "released_unranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-image-1",
+    "display_name": "GPT Image 1",
+    "creator": "OpenAI",
+    "released_at": "2025-04-23",
+    "open_weights": false,
+    "aliases": [
+      "GPT Image 1",
+      "gpt-image-1",
+      "openai/gpt-image-1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "GPT Image 1"
+        ]
+      }
+    ],
+    "state": "released_unranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "black-forest-labs/flux-1.1-pro",
+    "display_name": "FLUX 1.1 [pro]",
+    "creator": "Black Forest Labs",
+    "released_at": "2024-10-03",
+    "open_weights": false,
+    "aliases": [
+      "FLUX 1.1 [pro]",
+      "flux-1.1-pro",
+      "black-forest-labs/flux-1.1-pro",
+      "flux-pro-1.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "FLUX 1.1 [pro]"
+        ]
+      }
+    ],
+    "state": "released_unranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "black-forest-labs/flux-1-dev",
+    "display_name": "FLUX.1 [dev]",
+    "creator": "Black Forest Labs",
+    "released_at": "2024-08-01",
+    "open_weights": true,
+    "aliases": [
+      "FLUX.1 [dev]",
+      "flux-1-dev",
+      "black-forest-labs/flux-1-dev",
+      "black-forest-labs/FLUX.1-dev"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "FLUX.1 [dev]"
+        ]
+      }
+    ],
+    "state": "released_unranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "stability/stable-diffusion-3.5-large",
+    "display_name": "Stable Diffusion 3.5 Large",
+    "creator": "Stability AI",
+    "released_at": "2024-10-22",
+    "open_weights": true,
+    "aliases": [
+      "Stable Diffusion 3.5 Large",
+      "stable-diffusion-3.5-large",
+      "stability/stable-diffusion-3.5-large",
+      "stabilityai/stable-diffusion-3.5-large"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Stable Diffusion 3.5 Large"
+        ]
+      }
+    ],
+    "state": "released_unranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "midjourney/midjourney-v7",
+    "display_name": "Midjourney v7",
+    "creator": "Midjourney",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "Midjourney v7",
+      "midjourney-v7",
+      "midjourney/midjourney-v7"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Midjourney v7"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "google/imagen-3",
+    "display_name": "Imagen 3",
+    "creator": "Google",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "Imagen 3",
+      "imagen-3",
+      "google/imagen-3"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Imagen 3"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  }
+]

@@ -1,5 +1,153 @@
 [
   {
+    "run_at": "2026-09-12T13:53:59.127Z",
+    "results": [
+      {
+        "source_id": "benchwiki",
+        "status": "ok",
+        "record_count": 72,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "epoch",
+        "status": "ok",
+        "record_count": 59,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "arena-mirror",
+        "status": "ok",
+        "record_count": 78,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "openrouter",
+        "status": "ok",
+        "record_count": 445,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      }
+    ]
+  },
+  {
+    "run_at": "2026-09-12T13:49:45.605Z",
+    "results": [
+      {
+        "source_id": "benchwiki",
+        "status": "ok",
+        "record_count": 72,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "epoch",
+        "status": "ok",
+        "record_count": 59,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "arena-mirror",
+        "status": "ok",
+        "record_count": 78,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "openrouter",
+        "status": "ok",
+        "record_count": 445,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      }
+    ]
+  },
+  {
+    "run_at": "2026-09-12T13:48:17.469Z",
+    "results": [
+      {
+        "source_id": "benchwiki",
+        "status": "ok",
+        "record_count": 72,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "epoch",
+        "status": "ok",
+        "record_count": 59,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "arena-mirror",
+        "status": "ok",
+        "record_count": 78,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "openrouter",
+        "status": "ok",
+        "record_count": 445,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      }
+    ]
+  },
+  {
+    "run_at": "2026-09-12T13:47:57.385Z",
+    "results": [
+      {
+        "source_id": "benchwiki",
+        "status": "ok",
+        "record_count": 72,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "epoch",
+        "status": "schema-error",
+        "record_count": 0,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": "payload did not match the schema: source_file Too small: expected string to have >=1 characters; score_column Too small: expected string to have >=1 characters"
+      },
+      {
+        "source_id": "arena-mirror",
+        "status": "ok",
+        "record_count": 78,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "openrouter",
+        "status": "ok",
+        "record_count": 445,
+        "previous_record_count": null,
+        "unresolved_models": [],
+        "message": null
+      }
+    ]
+  },
+  {
     "run_at": "2026-09-12T12:58:11.693Z",
     "results": [
       {
