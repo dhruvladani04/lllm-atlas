@@ -1,11 +1,41 @@
 # Section 1 — Leaderboard
 
-Route: `/models`, with `?tab=text|agentic|image`. Model detail at `/models/[slug]`.
+Route: `/models`, with `?tab=text|agentic|image`. Model detail at `/models/[...slug]`.
+
+A catch-all segment rather than `[slug]`, because a `model_id` contains a slash:
+`/models/anthropic/claude-opus-5` is the id itself, which a reader can recognise, where
+an encoded single segment would not be. `/models` reads its tab from the URL on the
+client so the route stays static.
 
 ## The rule that governs this section
 
 A score never appears without its benchmark's health and the number's provenance. If you
 find yourself rendering a bare number anywhere in this section, that is a bug.
+
+## How the table ranks
+
+Models are measured on different benchmarks, and a score on one is not comparable to a
+score on another. The table therefore ranks on a single **reference benchmark** per tab:
+
+1. The reference is the benchmark the most model-variants in that tab are measured on.
+2. Ties are broken on benchmark health, then on total score count, then on slug. Health
+   comes first deliberately. ARC-AGI and ARC-AGI-2 currently cover the same 49
+   model-variants and differ by one score, so a count-only rule would hand the ranking to
+   whichever gained a row overnight — half the time the saturated one.
+3. Its name is the column header, so the reader always knows what they are looking at.
+4. Only models measured on it are ranked. Everything else goes to the block below, with
+   the reason stated.
+
+**"Hide saturated benchmarks" removes saturated and deprecated benchmarks from the tab
+entirely** — not merely from reference eligibility. Their scores do not appear, a model
+whose only measurements sit on them drops out of the ranking, and the reference is chosen
+from what remains. The control states how much it is excluding ("hiding 61 scores on 6
+benchmarks") so it is informative even when the ranking happens not to move, and when the
+reference would differ the table says which benchmark the other setting would rank on.
+
+Whether the ranking reorders is a property of the data, not of the control. It reorders
+when the most-covered benchmark is saturated. Today it does not, because ARC-AGI-2 —
+nearing saturation, not saturated — is the most-measured benchmark on the text tab.
 
 ## Index page
 
@@ -19,7 +49,8 @@ destroy column alignment.
 | Rank | Position within current sort. Not a stored property. |
 | Model | Name plus creator. Links to detail. Open-weights models carry a small marker. |
 | Variant | Effort or reasoning tier — `base`, `high`, `xhigh`. Shown always, including for `base`. |
-| Capability | Primary independent score, with its benchmark named inline — never an unlabelled composite |
+| Capability | The reference benchmark's score, its name in the header. Independent is preferred where both exist; never an unlabelled composite |
+| Epoch index | Epoch AI's Capability Index, labelled as a third-party composite. Sortable, but never the rank: it has no benchmark health record behind it, so it carries no flags |
 | Health | Compact strip of health flags for the benchmarks behind that score |
 | Provenance | `independent` / `vendor-reported` / `mixed` |
 | Context | Context window |
@@ -110,6 +141,8 @@ Decide." Copy guidance is in `04-design/design-system.md`.
 ## Changelog
 
 - Initial version.
+- Added the ranking rule, the Epoch index column, and the catch-all detail route.
+  Milestone 4.
 - Image tab states that arena rows carry no health flags, and why. Milestone 3.
 - Row reordering animates on toggle, sort and filter.
 - Leaderboard rows keyed by model + variant, with a visible variant column.

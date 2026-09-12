@@ -37,6 +37,12 @@ Do not build these. If they seem necessary, propose a spec amendment first.
 | Voting, comments, user-submitted scores | Turns a reference site into a moderation problem |
 | Video, audio, TTS, STT, embedding leaderboards | Three more ingestion paths, none benefiting from the core join |
 | A composite "LLM Atlas Score" | Every aggregator has one; ours would be another opaque weighting |
+
+The site computes no composite of its own. It does display **Epoch AI's** Capability
+Index, attributed, as a labelled column beside the ranking and on model detail pages —
+a third party's published number, never blended into this site's ranking and never
+presented as a benchmark score. It carries no health flags, because no benchmark health
+record stands behind a composite, and the site says so where it appears.
 | Real-time / websocket updates | The underlying data changes daily at best; polling is honest |
 | A public API | Ship the site first; an API is a support commitment |
 | Newsletter, notifications, alerts | Post-launch, if people ask |
@@ -63,3 +69,5 @@ competitor's placeholder ranking.
 ## Changelog
 
 - Initial version.
+- Clarified the composite non-goal: no composite of ours, Epoch's shown and attributed.
+  Milestone 4.
