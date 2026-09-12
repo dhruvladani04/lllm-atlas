@@ -33,10 +33,16 @@ Every guide states its unit of evaluation in the frontmatter and in the opening.
 
 ### Foundations (embed, do not rewrite)
 
-CampusX's LLM Evaluation playlist covers the conceptual groundwork: why one eval pipeline
+CampusX's LLM Evaluation series covers the conceptual groundwork: why one eval pipeline
 is not enough, LLM-as-judge, reference-based versus reference-free, offline versus online
 evals, and the pivot from application evals to model evals. Embed the relevant episode on
-the foundations page and link the playlist prominently with clear credit.
+the foundations page and link the series prominently with clear credit.
+
+Every embedded or linked video must be verified to exist and to belong to CampusX before
+it ships — the six currently linked were checked through YouTube's oEmbed endpoint, which
+returns the channel name. No stable playlist id could be verified, so the series link
+points at the channel's playlists page rather than at an invented `list=` parameter. A
+broken or wrong credit is worse than a less convenient link.
 
 Do not transcribe or republish the videos. Add the layer above them.
 
@@ -110,7 +116,10 @@ verified_on: 2026-09-20
 
 ## Components available inside MDX
 
-- `<CodeBlock>` — syntax highlighted, copy button, language label
+- `<CodeBlock>` — syntax highlighted at build time, copy button, language label.
+  Guides use ordinary fenced code blocks; the MDX `pre` mapping routes them here, which
+  is less error-prone for an author than a component invocation wrapping a template
+  literal. No highlighter ships to the reader.
 - `<Callout type="warning|note|pitfall">` — `pitfall` is the common one here
 - `<MetricCard>` — name, what it measures, what it misses, which frameworks implement it
 - `<FrameworkTable>` — reads from a single `content/evals/_frameworks.yaml` so the
@@ -131,7 +140,8 @@ are what readers currently have to reconstruct from prose.
 ## Writing rules
 
 - Runnable code over described code. Every archetype guide ships at least one complete,
-  executable example.
+  executable example, and the example is actually executed before it ships. Any output
+  quoted in the prose must be the output the code really produces.
 - Name what a metric *misses*, not only what it measures.
 - No framework marketing language.
 - Sentence case headings, plain verbs, active voice.
@@ -139,4 +149,6 @@ are what readers currently have to reconstruct from prose.
 ## Changelog
 
 - Initial version.
+- Fenced code blocks route through `CodeBlock`; embedded videos must be verified; quoted
+  example output must be real. Milestone 6.
 - Added the `<Scene>` component and its static-fallback requirement.
