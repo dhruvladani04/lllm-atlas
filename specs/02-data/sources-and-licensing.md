@@ -135,6 +135,12 @@ section 1.
 Revisit only if a commercial licence is obtained. If that happens, it is a spec amendment
 and a new source module — not a quiet addition.
 
+**A link is not data.** benchwiki's records list, per benchmark, the leaderboards where
+results are tracked, and for four benchmarks one of those is Artificial Analysis. Those
+links are rendered as links. No number on this site comes from them, and none ever may
+without the licence above. The exclusion is on their data, not on acknowledging that they
+exist.
+
 ### Derived aggregators
 
 llm-stats, benchlm, whatllm, modelgrep, skiln and similar sites re-aggregate the sources

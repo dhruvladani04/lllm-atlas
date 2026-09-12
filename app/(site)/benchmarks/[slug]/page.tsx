@@ -238,6 +238,28 @@ export default async function BenchmarkPage({
         <Trajectory benchmark={benchmark} />
       </section>
 
+      {benchmark.leaderboards.length > 0 ? (
+        <section className="mt-8">
+          <h2 className="text-lg font-medium">Where results are tracked</h2>
+          <p className="mt-1 max-w-[66ch] text-sm text-ink-mute">
+            Leaderboards benchwiki lists for this benchmark. These are links out, not
+            sources this site ingests — no score below comes from any of them.
+          </p>
+          <ul className="mt-2 divide-y divide-rule border-y border-rule text-sm">
+            {benchmark.leaderboards.map((board) => (
+              <li key={board.url} className="flex flex-wrap gap-x-3 py-2">
+                <a className="underline underline-offset-2" href={board.url}>
+                  {board.name}
+                </a>
+                {board.type !== null ? (
+                  <span className="text-xs text-ink-mute">{board.type}</span>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
       <section className="mt-8 border-t border-rule pt-4 text-sm">
         <h2 className="text-lg font-medium">Source</h2>
         <p className="mt-2 max-w-[66ch] text-ink-mute">

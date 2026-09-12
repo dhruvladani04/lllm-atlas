@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSyncExternalStore } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Model } from "@/lib/schemas/model";
 import type { Score } from "@/lib/schemas/score";
@@ -14,6 +15,9 @@ import { ImageTable } from "@/components/leaderboard/image-table";
  * The tab shell. The tab is read from the URL on the client so the route can stay static;
  * every tab's rows were built at build time and shipped with the page.
  */
+
+/** The tab never changes without a navigation, so there is nothing to subscribe to. */
+const subscribeToNothing = () => () => {};
 
 const TAB_LABEL: Record<Tab, string> = {
   text: "Text",
@@ -37,7 +41,25 @@ export function Leaderboard({
   capabilityIndexNote: string | null;
 }) {
   const params = useSearchParams();
-  const requested = params.get("tab");
+
+  /**
+   * The page is prerendered, so the server has no query string and always renders the text
+   * tab. Reading the tab straight from the URL during the first client render would
+   * therefore disagree with the server HTML on a deep link to `?tab=agentic`, which React
+   * reports as a hydration error and which leaves the reader on a page React has given up
+   * reconciling.
+   *
+   * So the first client render deliberately matches the server, and the requested tab is
+   * applied immediately afterwards. A deep link shows the text tab for one frame; that is
+   * the honest cost of prerendering a page whose state lives in the query string.
+   */
+  const hydrated = useSyncExternalStore(
+    subscribeToNothing,
+    () => true,
+    () => false,
+  );
+
+  const requested = hydrated ? params.get("tab") : null;
   const tab: Tab =
     requested === "agentic" || requested === "image" || requested === "text"
       ? requested
