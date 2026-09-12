@@ -3,7 +3,7 @@
     "model_id": "anthropic/claude-opus-5",
     "display_name": "Claude Opus 5",
     "creator": "Anthropic",
-    "released_at": null,
+    "released_at": "2026-07-24",
     "open_weights": false,
     "aliases": [
       "Claude Opus 5",
@@ -16,6 +16,43 @@
         "aliases": [
           "Claude Opus 5"
         ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Claude Opus 5 (High)",
+          "Claude Opus 5 (high)",
+          "claude-opus-5_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Claude Opus 5 (low)",
+          "claude-opus-5_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "Claude Opus 5 (Max)",
+          "Claude Opus 5 (max)",
+          "claude-opus-5_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Claude Opus 5 (medium)",
+          "claude-opus-5_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "Claude Opus 5 (xhigh)",
+          "claude-opus-5_xhigh"
+        ]
       }
     ],
     "state": "ranked",
@@ -23,26 +60,26 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-5",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_input_per_mtok": {
       "value": 5,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_output_per_mtok": {
       "value": 25,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     }
   },
   {
     "model_id": "anthropic/claude-sonnet-5",
     "display_name": "Claude Sonnet 5",
     "creator": "Anthropic",
-    "released_at": null,
+    "released_at": "2026-06-30",
     "open_weights": false,
     "aliases": [
       "Claude Sonnet 5",
@@ -53,7 +90,8 @@
       {
         "variant": "base",
         "aliases": [
-          "Claude Sonnet 5"
+          "Claude Sonnet 5",
+          "claude-sonnet-5_unknown"
         ]
       }
     ],
@@ -62,26 +100,26 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-5",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_input_per_mtok": {
       "value": 2,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     }
   },
   {
     "model_id": "anthropic/claude-haiku-4.5",
     "display_name": "Claude Haiku 4.5",
     "creator": "Anthropic",
-    "released_at": null,
+    "released_at": "2025-10-15",
     "open_weights": false,
     "aliases": [
       "Claude Haiku 4.5",
@@ -94,7 +132,9 @@
       {
         "variant": "base",
         "aliases": [
-          "Claude Haiku 4.5"
+          "Claude Haiku 4.5",
+          "claude-haiku-4-5-20251001",
+          "claude-haiku-4-5-20251001_unknown"
         ]
       }
     ],
@@ -103,26 +143,26 @@
       "value": 200000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-haiku-4.5",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_input_per_mtok": {
       "value": 1,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_output_per_mtok": {
       "value": 5,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     }
   },
   {
     "model_id": "anthropic/claude-fable-5.1",
     "display_name": "Claude Fable 5.1",
     "creator": "Anthropic",
-    "released_at": null,
+    "released_at": "2026-09-01",
     "open_weights": false,
     "aliases": [
       "Claude Fable 5.1",
@@ -136,6 +176,43 @@
         "aliases": [
           "Claude Fable 5.1"
         ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Claude Fable 5.1 (High)",
+          "Fable 5.1 (High)",
+          "claude-fable-5-1_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Claude Fable 5.1 (Low)",
+          "claude-fable-5-1_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "Claude Fable 5.1 (Max)",
+          "claude-fable-5-1_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Claude Fable 5.1 (Medium)",
+          "claude-fable-5-1_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "Claude Fable 5.1 (XHigh)",
+          "Fable 5.1 (xhigh)",
+          "claude-fable-5-1_xhigh"
+        ]
       }
     ],
     "state": "ranked",
@@ -143,26 +220,26 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-fable-5.1",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_input_per_mtok": {
       "value": 10,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_output_per_mtok": {
       "value": 50,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     }
   },
   {
     "model_id": "openai/gpt-5",
     "display_name": "GPT-5",
     "creator": "OpenAI",
-    "released_at": null,
+    "released_at": "2025-08-07",
     "open_weights": false,
     "aliases": [
       "GPT-5",
@@ -173,7 +250,36 @@
       {
         "variant": "base",
         "aliases": [
-          "GPT-5"
+          "GPT-5",
+          "gpt-5-2025-08-07_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-5 (High)",
+          "gpt-5-2025-08-07_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-5 (Low)",
+          "gpt-5-2025-08-07_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5 (Medium)",
+          "gpt-5-2025-08-07_medium"
+        ]
+      },
+      {
+        "variant": "minimal",
+        "aliases": [
+          "GPT-5 (Minimal)",
+          "gpt-5-2025-08-07_minimal"
         ]
       }
     ],
@@ -182,26 +288,26 @@
       "value": 400000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_input_per_mtok": {
       "value": 1.25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     }
   },
   {
     "model_id": "google/gemini-2.5-pro",
     "display_name": "Gemini 2.5 Pro",
     "creator": "Google",
-    "released_at": null,
+    "released_at": "2025-06-17",
     "open_weights": false,
     "aliases": [
       "Gemini 2.5 Pro",
@@ -212,7 +318,8 @@
       {
         "variant": "base",
         "aliases": [
-          "Gemini 2.5 Pro"
+          "Gemini 2.5 Pro",
+          "gemini-2.5-pro"
         ]
       }
     ],
@@ -221,19 +328,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_input_per_mtok": {
       "value": 1.25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     }
   },
   {
@@ -261,19 +368,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_input_per_mtok": {
       "value": 0.19999999999999998,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_output_per_mtok": {
       "value": 0.696,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     }
   },
   {
@@ -301,19 +408,19 @@
       "value": 1310720,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_input_per_mtok": {
       "value": 0.09999999999999999,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_output_per_mtok": {
       "value": 0.3,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     }
   },
   {
@@ -341,19 +448,19 @@
       "value": 64000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_input_per_mtok": {
       "value": 0.7,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_output_per_mtok": {
       "value": 2.5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     }
   },
   {
@@ -381,19 +488,19 @@
       "value": 163840,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_input_per_mtok": {
       "value": 0.2574,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_output_per_mtok": {
       "value": 1.0287,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     }
   },
   {
@@ -421,26 +528,26 @@
       "value": 131072,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen3-235b-a22b",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_input_per_mtok": {
       "value": 0.45499999999999996,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen3-235b-a22b",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     },
     "price_output_per_mtok": {
       "value": 1.8199999999999998,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen3-235b-a22b",
-      "fetched_at": "2026-09-12T13:53:59.127Z"
+      "fetched_at": "2026-09-12T16:39:12.250Z"
     }
   },
   {
     "model_id": "xai/grok-4",
     "display_name": "Grok 4",
     "creator": "xAI",
-    "released_at": null,
+    "released_at": "2025-07-09",
     "open_weights": false,
     "aliases": [
       "Grok 4",
@@ -451,7 +558,8 @@
       {
         "variant": "base",
         "aliases": [
-          "Grok 4"
+          "Grok 4",
+          "grok-4-0709"
         ]
       }
     ],
@@ -631,5 +739,620 @@
     "context_window": null,
     "price_input_per_mtok": null,
     "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-6-astra",
+    "display_name": "GPT-6 Astra",
+    "creator": "OpenAI",
+    "released_at": "2026-09-03",
+    "open_weights": false,
+    "aliases": [
+      "GPT-6 Astra",
+      "OpenAI GPT-6 Astra"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "GPT-6 Astra",
+          "gpt-6-astra_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-6 Astra (High)",
+          "gpt-6-astra_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-6 Astra (Low)",
+          "gpt-6-astra_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "GPT-6 Astra (Max)",
+          "gpt-6-astra_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-6 Astra (Medium)",
+          "gpt-6-astra_medium"
+        ]
+      },
+      {
+        "variant": "none",
+        "aliases": [
+          "GPT-6 Astra (None)",
+          "gpt-6-astra_none"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT-6 Astra (XHigh)",
+          "gpt-6-astra_xhigh"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1050000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6-astra",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_input_per_mtok": {
+      "value": 10,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6-astra",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_output_per_mtok": {
+      "value": 50,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6-astra",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    }
+  },
+  {
+    "model_id": "google/gemini-3.7-flash",
+    "display_name": "Gemini 3.7 Flash",
+    "creator": "Google DeepMind",
+    "released_at": "2026-08-13",
+    "open_weights": false,
+    "aliases": [
+      "Gemini 3.7 Flash",
+      "Google Gemini 3.7 Flash"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Gemini 3.7 Flash",
+          "gemini-3.7-flash_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Gemini 3.7 Flash (High)",
+          "gemini-3.7-flash_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Gemini 3.7 Flash (Low)",
+          "gemini-3.7-flash_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Gemini 3.7 Flash (Medium)",
+          "gemini-3.7-flash_medium"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1048576,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-3.7-flash",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.75,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-3.7-flash",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_output_per_mtok": {
+      "value": 3.75,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-3.7-flash",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    }
+  },
+  {
+    "model_id": "google/gemini-3.6-flash",
+    "display_name": "Gemini 3.6 Flash",
+    "creator": "Google DeepMind",
+    "released_at": "2026-07-21",
+    "open_weights": false,
+    "aliases": [
+      "Gemini 3.6 Flash",
+      "Google Gemini 3.6 Flash"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Gemini 3.6 Flash",
+          "gemini-3.6-flash_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Gemini 3.6 Flash (High)",
+          "gemini-3.6-flash_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Gemini 3.6 Flash (Low)",
+          "gemini-3.6-flash_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Gemini 3.6 Flash (Medium)",
+          "gemini-3.6-flash_medium"
+        ]
+      },
+      {
+        "variant": "minimal",
+        "aliases": [
+          "Gemini 3.6 Flash (Minimal)",
+          "gemini-3.6-flash_minimal"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1048576,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-3.6-flash",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.75,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-3.6-flash",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_output_per_mtok": {
+      "value": 3.75,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-3.6-flash",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    }
+  },
+  {
+    "model_id": "google/gemini-3.5-flash-lite",
+    "display_name": "Gemini 3.5 Flash-Lite",
+    "creator": "Google DeepMind",
+    "released_at": "2026-07-21",
+    "open_weights": false,
+    "aliases": [
+      "Gemini 3.5 Flash-Lite",
+      "Google Gemini 3.5 Flash-Lite"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Gemini 3.5 Flash-Lite"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Gemini 3.5 Flash-Lite (High)",
+          "gemini-3.5-flash-lite_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Gemini 3.5 Flash-Lite (Low)",
+          "gemini-3.5-flash-lite_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Gemini 3.5 Flash-Lite (Medium)",
+          "gemini-3.5-flash-lite_medium"
+        ]
+      },
+      {
+        "variant": "minimal",
+        "aliases": [
+          "Gemini 3.5 Flash-Lite (Minimal)",
+          "gemini-3.5-flash-lite_minimal"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1048576,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-3.5-flash-lite",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.3,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-3.5-flash-lite",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_output_per_mtok": {
+      "value": 2.5,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-3.5-flash-lite",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    }
+  },
+  {
+    "model_id": "deepseek/deepseek-v4-pro",
+    "display_name": "DeepSeek V4 Pro",
+    "creator": "DeepSeek",
+    "released_at": "2026-04-24",
+    "open_weights": true,
+    "aliases": [
+      "DeepSeek V4 Pro",
+      "DeepSeek V4 Pro 0813"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "DeepSeek V4 Pro"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "DeepSeek V4 Pro (High)",
+          "DeepSeek V4 Pro 0813 (High)",
+          "deepseek-v4-pro-0813_high",
+          "deepseek-v4-pro_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "DeepSeek V4 Pro 0813 (Low)",
+          "deepseek-v4-pro-0813_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "DeepSeek V4 Pro 0813 (Max)",
+          "deepseek-v4-pro-0813_max"
+        ]
+      },
+      {
+        "variant": "none",
+        "aliases": [
+          "DeepSeek V4 Pro 0813 (None)",
+          "deepseek-v4-pro-0813_none"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1048576,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.72819,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_output_per_mtok": {
+      "value": 1.45638,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    }
+  },
+  {
+    "model_id": "deepseek/deepseek-v4-flash",
+    "display_name": "DeepSeek V4 Flash",
+    "creator": "DeepSeek",
+    "released_at": "2026-07-31",
+    "open_weights": true,
+    "aliases": [
+      "DeepSeek V4 Flash",
+      "DeepSeek V4 Flash 0731"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "DeepSeek V4 Flash 0731",
+          "deepseek-v4-flash-0731_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "DeepSeek V4 Flash 0731 (High)",
+          "deepseek-v4-flash-0731_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "DeepSeek V4 Flash 0731 (Low)",
+          "deepseek-v4-flash-0731_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "DeepSeek V4 Flash 0731 (Max)",
+          "deepseek-v4-flash-0731_max"
+        ]
+      },
+      {
+        "variant": "none",
+        "aliases": [
+          "DeepSeek V4 Flash 0731 (None)",
+          "deepseek-v4-flash-0731_none"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1048576,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.06594,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_output_per_mtok": {
+      "value": 0.13188,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    }
+  },
+  {
+    "model_id": "xai/grok-4.6",
+    "display_name": "Grok 4.6",
+    "creator": "xAI",
+    "released_at": "2026-08-12",
+    "open_weights": false,
+    "aliases": [
+      "Grok 4.6",
+      "xAI Grok 4.6"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Grok 4.6",
+          "grok-4.6_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Grok 4.6 (High)",
+          "grok-4.6_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Grok 4.6 (Low)",
+          "grok-4.6_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Grok 4.6 (Medium)",
+          "grok-4.6_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "Grok 4.6 (XHigh)",
+          "grok-4.6_xhigh"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "thinking-machines/inkling",
+    "display_name": "Inkling",
+    "creator": "Thinking Machines",
+    "released_at": "2026-07-15",
+    "open_weights": false,
+    "aliases": [
+      "Inkling",
+      "Thinking Machines Inkling"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Inkling"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1048576,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/thinkingmachines/inkling",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_input_per_mtok": {
+      "value": 1,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/thinkingmachines/inkling",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_output_per_mtok": {
+      "value": 4.05,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/thinkingmachines/inkling",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    }
+  },
+  {
+    "model_id": "anthropic/claude-opus-4",
+    "display_name": "Claude Opus 4",
+    "creator": "Anthropic",
+    "released_at": "2025-05-22",
+    "open_weights": false,
+    "aliases": [
+      "Claude Opus 4"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Claude Opus 4",
+          "claude-opus-4-20250514",
+          "claude-opus-4-20250514_unknown"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 200000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-opus-4",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_input_per_mtok": {
+      "value": 15,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-opus-4",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_output_per_mtok": {
+      "value": 75,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-opus-4",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    }
+  },
+  {
+    "model_id": "anthropic/claude-sonnet-4",
+    "display_name": "Claude Sonnet 4",
+    "creator": "Anthropic",
+    "released_at": "2025-05-22",
+    "open_weights": false,
+    "aliases": [
+      "Claude Sonnet 4"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Claude Sonnet 4",
+          "claude-sonnet-4-20250514",
+          "claude-sonnet-4-20250514_unknown"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1000000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_input_per_mtok": {
+      "value": 3,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_output_per_mtok": {
+      "value": 15,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    }
+  },
+  {
+    "model_id": "openai/gpt-4.1",
+    "display_name": "GPT-4.1",
+    "creator": "OpenAI",
+    "released_at": "2025-04-14",
+    "open_weights": false,
+    "aliases": [
+      "GPT-4.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "GPT-4.1",
+          "gpt-4.1-2025-04-14"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1047576,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-4.1",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_input_per_mtok": {
+      "value": 2,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-4.1",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    },
+    "price_output_per_mtok": {
+      "value": 8,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-4.1",
+      "fetched_at": "2026-09-12T16:39:12.250Z"
+    }
   }
 ]

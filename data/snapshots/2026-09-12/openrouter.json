@@ -2,7 +2,7 @@
   "_meta": {
     "source_id": "openrouter",
     "source_url": "https://openrouter.ai/api/v1/models",
-    "fetched_at": "2026-09-12T13:53:59.127Z",
+    "fetched_at": "2026-09-12T16:39:12.250Z",
     "record_count": 445,
     "status": "ok"
   },
@@ -333,8 +333,8 @@
       "name": "Z.ai: GLM 5.3 Flash",
       "context_length": 1310720,
       "pricing": {
-        "prompt": "0.000000075",
-        "completion": "0.00000025"
+        "prompt": "0.00000015",
+        "completion": "0.0000005"
       }
     },
     {
@@ -523,8 +523,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "context_length": 1048576,
       "pricing": {
-        "prompt": "0.00000057816",
-        "completion": "0.00000173448"
+        "prompt": "0.00000057948",
+        "completion": "0.00000173844"
       }
     },
     {
@@ -1043,8 +1043,8 @@
       "name": "Tencent: Hy3",
       "context_length": 262144,
       "pricing": {
-        "prompt": "0.000000132",
-        "completion": "0.000000528"
+        "prompt": "0.0000000825",
+        "completion": "0.00000033"
       }
     },
     {
@@ -1593,8 +1593,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "context_length": 1048576,
       "pricing": {
-        "prompt": "0.00000075864",
-        "completion": "0.00000151728"
+        "prompt": "0.00000072819",
+        "completion": "0.00000145638"
       }
     },
     {
@@ -1603,8 +1603,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "context_length": 1048576,
       "pricing": {
-        "prompt": "0.00000006622",
-        "completion": "0.00000013244"
+        "prompt": "0.00000006594",
+        "completion": "0.00000013188"
       }
     },
     {
