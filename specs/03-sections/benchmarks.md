@@ -35,7 +35,11 @@ Mirror the benchwiki record, plus the reverse lookup that is this site's contrib
    site with a score here, each with provenance, harness where relevant, date and source.
    Sortable. Vendor-reported and independent scores visually separated, never interleaved
    as if equivalent.
-5. **Trajectory** — the `performance_timeline`, with vendor-reported and independent points
+5. **Trajectory** — drawn as inline SVG rather than with a chart library: it is a scatter
+   with two mark types, and a charting dependency would add weight to a route that does
+   not need one. Independent points are filled circles and vendor-reported ones open
+   squares, so the distinction survives greyscale and colour blindness. Points are never
+   joined. The `performance_timeline`, with vendor-reported and independent points
    distinguished. Respect the source's own warnings: do not connect points across exam
    years, harnesses or protocol changes with one line. Points may draw in along the time
    axis once on first view, so the shape of saturation is legible as a process; under
@@ -56,7 +60,9 @@ Mirror the benchwiki record, plus the reverse lookup that is this site's contrib
 
 `/benchmarks` renders a single page: a short explanation of what benchmark health means,
 why it matters for reading the leaderboard, and a prominent link to benchwiki. Detail
-routes redirect to the corresponding benchwiki page.
+routes redirect to the corresponding benchwiki page with a 307, and prerender nothing —
+`generateStaticParams` returns an empty list, so the route is served on demand purely to
+issue the redirect. No URL that was live in mirror mode 404s in link mode.
 
 Critically: **the leaderboard's health flags keep working in this mode.** The join uses
 the last committed snapshot regardless of display mode. Flipping the variable removes the
@@ -65,5 +71,6 @@ mirrored pages, not the site's core feature.
 ## Changelog
 
 - Initial version.
+- Recorded the link-mode redirect behaviour and the hand-drawn trajectory. Milestone 5.
 - Trajectory may draw in once on first view, with a static equivalent under reduced
   motion.
