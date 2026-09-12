@@ -1,0 +1,46 @@
+import { z } from "zod";
+import { Provenance, SourceMeta } from "@/lib/schemas/common";
+import { Benchmark } from "@/lib/schemas/benchmark";
+
+/**
+ * specs/02-data/schemas.md — Score, the central record.
+ *
+ * A score row is keyed by (model_id, variant, benchmark_slug, harness, provenance,
+ * measured_at). Not by model name, and not by model name plus benchmark. Two scores
+ * differing only in harness are two rows; so are two differing only in provenance.
+ * Neither pair is ever averaged.
+ */
+
+export const ScoreUnit = z.enum(["percent", "elo", "index", "count", "usd", "seconds"]);
+export type ScoreUnit = z.infer<typeof ScoreUnit>;
+
+export const Score = z.object({
+  model_id: z.string().min(1),
+  variant: z.string().min(1),
+  benchmark_slug: z.string().min(1),
+  harness: z.string().min(1).nullable(),
+  value: z.number(),
+  unit: ScoreUnit,
+  provenance: Provenance,
+  measured_at: z.string().nullable(),
+  source: SourceMeta,
+  notes: z.string().nullable(),
+});
+export type Score = z.infer<typeof Score>;
+
+export const HealthFlag = z.enum([
+  "saturated",
+  "deprecated",
+  "high-contamination",
+  "vendor-reported-only",
+  "superseded",
+  "stale-source",
+]);
+export type HealthFlag = z.infer<typeof HealthFlag>;
+
+/** The core artefact: every score joined to the health of the benchmark that produced it. */
+export const JoinedScore = Score.extend({
+  benchmark: Benchmark,
+  health_flags: z.array(HealthFlag),
+});
+export type JoinedScore = z.infer<typeof JoinedScore>;

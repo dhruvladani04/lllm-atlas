@@ -3,6 +3,10 @@
 Every file in `data/` conforms to a Zod schema in `lib/schemas/`. The schemas below are
 normative; the TypeScript is generated from them via `z.infer`.
 
+They are written against Zod 4, where `z.url()` and `z.iso.datetime()` replace the Zod 3
+spellings `z.string().url()` and `z.string().datetime()`. The shapes are what is normative,
+not the spelling.
+
 Nothing is `optional` when it could instead be `nullable`. A missing value must be
 representable and renderable, never absent.
 
@@ -41,6 +45,51 @@ const SourceMeta = z.object({
   attribution: z.string(),
 });
 ```
+
+## Registry model
+
+`data/registry/models.json` is identity only, hand-maintained, and the one file in `data/`
+a human may edit. It carries no score, no price and no state, because those change without
+anyone editing anything.
+
+```ts
+const ModelVariant = z.object({
+  variant: z.string(),                 // "base", "high", "xhigh"
+  aliases: z.array(z.string()),
+});
+
+const RegistryModel = z.object({
+  model_id: z.string(),
+  display_name: z.string(),
+  creator: z.string(),
+  released_at: z.iso.date().nullable(),
+  open_weights: z.boolean().nullable(),
+  aliases: z.array(z.string()),
+  variants: z.array(ModelVariant).min(1),   // one of them must be "base"
+});
+```
+
+Every model declares a `base` variant. It is what a source reporting no tier resolves to,
+and a registry entry without one is rejected at index time rather than at render time.
+
+## Unresolved names
+
+`data/registry/unresolved.json` — the queue a human works through. A name here is one no
+rule matched, kept with its source so the trail back to the upstream record survives.
+
+```ts
+const UnresolvedName = z.object({
+  name: z.string(),
+  source_id: z.string(),
+  first_seen_at: z.iso.date(),
+  last_seen_at: z.iso.date(),
+  occurrences: z.number().int().positive(),
+});
+```
+
+A name is recorded per source, so the same unmatched string arriving from two sources is
+two entries. That is deliberate: it shows whether one upstream renamed something or the
+model is genuinely unknown to the registry.
 
 ## Model
 
@@ -185,6 +234,8 @@ const IngestionRun = z.object({
 ## Changelog
 
 - Initial version.
+- Added `RegistryModel` and `UnresolvedName`, separating hand-maintained identity from
+  the derived `Model` record. Milestone 1.
 - Prices and context window became `QuotedNumber`, carrying their own source and fetch
   date, so a vendor list price is never presented as an OpenRouter routed price.
   Milestone 3.
