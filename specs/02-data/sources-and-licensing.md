@@ -40,7 +40,12 @@ this category forbid exactly what this site does. Read this file before adding a
 ### 2. OpenRouter — real-world usage
 
 - Rankings page: `https://openrouter.ai/rankings`
-- Data API: returns top models per day by token usage; requires an OpenRouter API key.
+- Model list: `https://openrouter.ai/api/v1/models` — public, no key, verified. Carries
+  `context_length` and per-token prices as decimal strings, which is where the price
+  fallback comes from.
+- Usage API: top models per day by token usage; **requires an OpenRouter API key**. With
+  no key configured the adoption column has no data, and says so rather than showing a
+  blank or a zero.
 - **Licence: CC BY 4.0.** Redistribution is permitted with attribution. This is the
   safest source in the set.
 - Use for: an "adoption" column and a usage tab. Never blended into a capability ranking.
@@ -50,7 +55,11 @@ this category forbid exactly what this site does. Read this file before adding a
 ### 3. Epoch AI — benchmark results and capability index
 
 - Hub: `https://epoch.ai/benchmarks`
-- Bulk data: benchmark results ZIP and ECI CSVs, refreshed frequently.
+- Bulk data: `https://epoch.ai/data/benchmark_data.zip` — a ZIP of CSVs, verified. It
+  contains `benchmark_metadata.csv`, which names each benchmark and says which column
+  of which file holds its score, one file per benchmark, and an
+  `epoch_capabilities_index/` directory. The bundle's own README states the licence
+  and the citation string reproduced below.
 - **Licence: CC BY.** Redistribution permitted with attribution. Note that some
   third-party data in the hub carries its own licence (Aider Polyglot and Terminal-Bench
   data are Apache 2.0) — preserve those notices.
@@ -59,8 +68,12 @@ this category forbid exactly what this site does. Read this file before adding a
 ### 4. Arena leaderboard mirror — image generation and preference Elo
 
 - LMArena / Arena.ai publishes no official API.
-- A community project publishes daily auto-updated JSON snapshots of every arena
-  leaderboard, including `text-to-image`, served without authentication.
+- The mirror used is `oolong-tea-2026/arena-ai-leaderboards` on GitHub, verified: dated
+  directories of JSON, one file per board, served raw without authentication. v1 reads
+  `text-to-image.json` only. Each row carries rank, model, vendor, licence, Elo, a
+  confidence interval and a vote count.
+- Today's directory may not exist when the job runs, so the fetch walks back up to seven
+  days and records which date it actually served.
 - **Status: unofficial.** Treat as best-effort. The image tab must degrade to an empty
   state with an explanation if this source fails, and must never be the site's only
   claim about a model.
@@ -86,6 +99,13 @@ this category forbid exactly what this site does. Read this file before adding a
 - A scraper that cannot find its expected anchors is a **schema error for that vendor**,
   handled exactly like any other source failure: keep the last good value, log it, let the
   freshness stamp go stale. Never emit a guessed or partial price.
+
+**Which vendors are scraped.** A creator is listed only where its page states prices in
+a form that can be read without assuming anything. Anthropic's page names a model and
+then states `Input $X / MTok Output $Y / MTok`, which is unambiguous. DeepSeek's table
+splits peak from off-peak and cache-hit from cache-miss, so picking one of the four to
+call "the" price would be a guess, and it is absent. OpenAI's pricing page returns 403
+to automated requests, which is a refusal and is honoured as one.
 
 **Fallback to OpenRouter.** Where no vendor price is available — no scraper, scraper
 failed, or the model is absent from the vendor's page — the OpenRouter price is used
@@ -130,6 +150,8 @@ this file. No source ships without all six.
 ## Changelog
 
 - Initial version.
+- Recorded the verified Epoch, OpenRouter and arena-mirror endpoints, and which vendors
+  are scraped. Milestone 3.
 - Recorded the verified canonical URL pattern and the payload's real nesting.
   Milestone 2.
 - Added source 5, vendor pricing pages, with OpenRouter as the labelled fallback for price

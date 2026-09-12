@@ -1,43 +1,48 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { ZodError } from "zod";
-import type { Benchmark } from "@/lib/schemas/benchmark";
+import type { SourceMeta } from "@/lib/schemas/common";
 import type { IngestionResult } from "@/lib/schemas/ingestion";
-import {
-  BENCHWIKI_SOURCE_ID,
-  type Fetcher,
-  fetchBenchwiki,
-  toBenchmark,
-} from "@/lib/ingest/benchwiki";
+import type { Fetcher } from "@/lib/ingest/benchwiki";
 import { checkTruncation } from "@/lib/ingest/guard";
 import {
-  type Snapshot,
-  type SnapshotStatus,
   SNAPSHOT_ROOT,
+  type SnapshotStatus,
   findLatestSnapshot,
   writeSnapshot,
 } from "@/lib/ingest/snapshot";
-import { benchwikiSourceMeta } from "@/lib/ingest/benchwiki";
-import { BenchwikiPayload } from "@/lib/schemas/benchwiki";
-import { resolveModelName } from "@/lib/registry/resolve";
-import type { RegistryIndex } from "@/lib/registry/resolve";
-import type { UnresolvedSighting } from "@/lib/registry/unresolved";
 
 /**
- * One source failing must not abort the others, so every outcome here is a returned value
- * rather than a thrown error. The rule the whole module serves: when a fetch fails, the
- * previous snapshot stands and the site keeps serving it — visibly stale, never blank and
- * never invented.
+ * The shared shape of a source run — specs/01-architecture/data-pipeline.md.
+ *
+ * One source failing must not abort the others, so nothing here throws on a source's
+ * behalf: every outcome is a returned value. When a fetch fails, the previous snapshot
+ * stands and the site keeps serving it — visibly stale, never blank, never invented.
  */
 
 export const DERIVED_ROOT = join("data", "derived");
 
-export interface SourceOutcome {
+export interface SourceRun {
   result: IngestionResult;
-  benchmarks: Benchmark[];
-  unresolved: UnresolvedSighting[];
-  /** The fetch date the served data actually carries, which is not today's when a fetch failed. */
+  /** Records as fetched, or the last good snapshot's records when today's fetch failed. */
+  records: unknown[];
+  /** When the served records were actually fetched. Not today's date if a fetch failed. */
   served_from: string | null;
+  source: SourceMeta;
+}
+
+export interface SourceDefinition {
+  source_id: string;
+  sourceMeta: (now: string) => SourceMeta;
+  /** Fetches and validates. Throws on transport or schema failure; the runner classifies. */
+  fetchRecords: (fetcher: Fetcher) => Promise<unknown[]>;
+}
+
+export interface RunOptions {
+  date: string;
+  now: string;
+  fetcher?: Fetcher;
+  snapshotRoot?: string;
 }
 
 function classifyFailure(error: unknown): { status: SnapshotStatus; message: string } {
@@ -56,102 +61,67 @@ function classifyFailure(error: unknown): { status: SnapshotStatus; message: str
   };
 }
 
-function benchmarksFromSnapshot(snapshot: Snapshot, index: RegistryIndex): Benchmark[] {
-  // A committed snapshot was validated when it was written; re-parsing it keeps the
-  // guarantee that nothing reaches the site unchecked.
-  return BenchwikiPayload.parse(snapshot.records).map((record) =>
-    toBenchmark(record, (name) => resolveOrNull(index, name)),
-  );
-}
-
-function resolveOrNull(index: RegistryIndex, name: string): string | null {
-  const resolution = resolveModelName(index, name);
-  return resolution.resolved ? resolution.model_id : null;
-}
-
-export interface IngestOptions {
-  /** ISO date for the snapshot directory. Supplied, never read from the clock, so runs are reproducible. */
-  date: string;
-  /** ISO datetime recorded as `fetched_at`. */
-  now: string;
-  registry: RegistryIndex;
-  fetcher?: Fetcher;
-  snapshotRoot?: string;
-}
-
-export async function ingestBenchwiki(options: IngestOptions): Promise<SourceOutcome> {
+export async function runSource(
+  definition: SourceDefinition,
+  options: RunOptions,
+): Promise<SourceRun> {
   const root = options.snapshotRoot ?? SNAPSHOT_ROOT;
-  const previous = findLatestSnapshot(BENCHWIKI_SOURCE_ID, root, options.date);
+  const source = definition.sourceMeta(options.now);
+  const previous = findLatestSnapshot(definition.source_id, root, options.date);
   const previousCount = previous?.snapshot._meta.record_count ?? null;
 
-  const fallback = (status: SnapshotStatus, message: string): SourceOutcome => ({
+  const keepPrevious = (status: SnapshotStatus, message: string): SourceRun => ({
     result: {
-      source_id: BENCHWIKI_SOURCE_ID,
+      source_id: definition.source_id,
       status,
-      record_count: previous ? previous.snapshot._meta.record_count : 0,
+      record_count: previous?.snapshot._meta.record_count ?? 0,
       previous_record_count: previousCount,
       unresolved_models: [],
       message,
     },
-    benchmarks: previous
-      ? benchmarksFromSnapshot(previous.snapshot, options.registry)
-      : [],
-    unresolved: [],
-    served_from: previous ? previous.snapshot._meta.fetched_at : null,
+    records: previous ? [...previous.snapshot.records] : [],
+    served_from: previous?.snapshot._meta.fetched_at ?? null,
+    // The served data carries the fetch date it was actually fetched on.
+    source: previous
+      ? { ...source, fetched_at: previous.snapshot._meta.fetched_at }
+      : source,
   });
 
-  let payload;
-  let raw: unknown;
+  let records: unknown[];
   try {
-    const fetched = await fetchBenchwiki(options.fetcher ?? fetch);
-    payload = fetched.payload;
-    raw = fetched.raw;
+    records = await definition.fetchRecords(options.fetcher ?? fetch);
   } catch (error) {
     const { status, message } = classifyFailure(error);
-    return fallback(status, message);
+    return keepPrevious(status, message);
   }
 
-  const truncation = checkTruncation(payload.length, previousCount);
+  const truncation = checkTruncation(records.length, previousCount);
   if (truncation.truncated) {
-    return fallback("truncated", truncation.message ?? "record count below the floor");
+    return keepPrevious(
+      "truncated",
+      truncation.message ?? "record count below the floor",
+    );
   }
-
-  const unresolved: UnresolvedSighting[] = [];
-  const seen = new Set<string>();
-  const benchmarks = payload.map((record) =>
-    toBenchmark(record, (name) => {
-      const model_id = resolveOrNull(options.registry, name);
-      if (model_id === null && !seen.has(name)) {
-        seen.add(name);
-        unresolved.push({ name, source_id: BENCHWIKI_SOURCE_ID });
-      }
-      return model_id;
-    }),
-  );
 
   writeSnapshot(
     options.date,
-    {
-      ...benchwikiSourceMeta(options.now),
-      record_count: payload.length,
-      status: "ok",
-    },
-    Array.isArray(raw) ? raw : payload,
+    { ...source, record_count: records.length, status: "ok" },
+    records,
     root,
   );
 
   return {
     result: {
-      source_id: BENCHWIKI_SOURCE_ID,
+      source_id: definition.source_id,
       status: "ok",
-      record_count: payload.length,
+      record_count: records.length,
       previous_record_count: previousCount,
-      unresolved_models: unresolved.map((sighting) => sighting.name).sort(),
+      unresolved_models: [],
       message: null,
     },
-    benchmarks,
-    unresolved,
+    records,
     served_from: options.now,
+    source,
   };
 }
 
@@ -168,11 +138,9 @@ export function writeDerived(
 
 /** Per-source last-success timestamp, read by the freshness stamp. */
 export function buildFreshness(
-  outcomes: readonly SourceOutcome[],
+  runs: readonly SourceRun[],
 ): Record<string, string | null> {
   const freshness: Record<string, string | null> = {};
-  for (const outcome of outcomes) {
-    freshness[outcome.result.source_id] = outcome.served_from;
-  }
+  for (const run of runs) freshness[run.result.source_id] = run.served_from;
   return freshness;
 }
