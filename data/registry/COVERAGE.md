@@ -32,6 +32,31 @@ distinction the vendor may not make.
 **Prices and context windows are not here at all.** The registry holds identity only; those
 are ingested — see `specs/02-data/sources-and-licensing.md` source 5.
 
+## Benchmark aliases
+
+`benchmark-aliases.json` maps an upstream benchmark name to a benchwiki slug. Three
+entries, each checked against the benchwiki record rather than against the name:
+
+- `GPQA diamond` -> `gpqa`, because benchwiki's own record states it is "reported on its
+  198-question Diamond subset" and its metric is accuracy on GPQA Diamond.
+- `BBH` -> `big-bench-hard` and `HLE` -> `humanitys-last-exam`, both standard
+  abbreviations of the benchmark benchwiki records.
+
+Things that look aliasable and are not, with the reason, so nobody adds them later:
+
+- `MATH level 5` is not `math`. Benchwiki's MATH record is evaluated on the MATH-500
+  subset; level 5 is a difficulty split. Different test, different numbers.
+- `SimpleQA Verified` is not `simpleqa`. Benchwiki's record scores all 4,326 questions;
+  Verified is a revised 1,000-question subset.
+- The four private `FrontierMath-*` tiers are not `frontiermath`. Tier 4 and Tiers 1-3 are
+  far apart in difficulty, and averaging them under one name would be meaningless.
+- `ARC AI2` is not `arc-agi`. AI2's ARC and ARC-AGI are unrelated benchmarks that happen to
+  share three letters.
+
+Everything else in `unresolved-benchmarks.json` has no benchwiki record at all. Those
+scores are excluded from the join, because a score with no benchmark health record is
+exactly what section 1 refuses to render.
+
 ## Adding a model
 
 1. Read `unresolved.json`. It is the queue.

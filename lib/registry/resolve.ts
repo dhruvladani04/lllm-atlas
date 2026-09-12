@@ -40,16 +40,22 @@ export class RegistryConflictError extends Error {
 }
 
 /**
- * Lowercase, and collapse runs of punctuation into a single space. Deliberately
- * conservative: `claude-opus-5` and `Claude Opus 5` normalise together, but `claudeopus5`
- * does not join them. Removing separators entirely would merge `gpt-4.1` with `gpt-41`,
- * and a silent merge is the failure mode this whole file exists to prevent.
+ * Lowercase, and collapse runs of punctuation into a single space, except `+`, which is
+ * expanded to the word rather than dropped. Deliberately conservative: `claude-opus-5` and
+ * `Claude Opus 5` normalise together, but `claudeopus5` does not join them. Removing
+ * separators entirely would merge `gpt-4.1` with `gpt-41`, and a silent merge is the
+ * failure mode this whole file exists to prevent.
  */
 export function normaliseName(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
+  return (
+    name
+      .toLowerCase()
+      // "+" is semantic in this domain, not punctuation: HumanEval+ is a different
+      // benchmark from HumanEval, and collapsing it would merge the two silently.
+      .replace(/\+/g, " plus ")
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim()
+  );
 }
 
 function sameTarget(a: Target, b: Target): boolean {
