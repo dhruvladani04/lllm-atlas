@@ -1,0 +1,83 @@
+{
+  "arc-agi": {
+    "lineage": [
+      {
+        "date": "2019-11",
+        "note": "ARC-AGI-1 introduces static colored-grid abstraction tasks."
+      },
+      {
+        "date": "2025-03",
+        "note": "ARC-AGI-2 keeps the static grid format but raises difficulty and improves human calibration and private-set controls."
+      },
+      {
+        "date": "2026-04",
+        "note": "ARC-AGI-3 appears as arXiv:2603.24621v2, introducing interactive turn-based environments and RHAE scoring."
+      },
+      {
+        "date": "2026-07",
+        "note": "The official leaderboard generated on 2026-07-23 lists GPT-5.6 Sol (Max) at 7.78% on the ARC-AGI-3 semi-private axis, with substantially higher cost than static ARC runs."
+      }
+    ],
+    "further_reading": [
+      { "label": "ARC-AGI-3 overview", "url": "https://arcprize.org/arc-agi/3" },
+      { "label": "ARC-AGI-3 paper", "url": "https://arxiv.org/abs/2603.24621" },
+      { "label": "ARC-AGI-3 HTML paper", "url": "https://arxiv.org/html/2603.24621v2" },
+      { "label": "ARC Prize verified leaderboard", "url": "https://arcprize.org/leaderboard" },
+      { "label": "ARC-AGI-2 paper", "url": "https://arxiv.org/abs/2505.11831" }
+    ]
+  },
+  "arc-agi-2": {
+    "lineage": [
+      {
+        "date": "2019-11",
+        "note": "ARC-AGI-1 introduces static colored-grid abstraction tasks."
+      },
+      {
+        "date": "2025-03",
+        "note": "ARC-AGI-2 keeps the static grid format but raises difficulty and improves human calibration and private-set controls."
+      },
+      {
+        "date": "2026-04",
+        "note": "ARC-AGI-3 appears as arXiv:2603.24621v2, introducing interactive turn-based environments and RHAE scoring."
+      },
+      {
+        "date": "2026-07",
+        "note": "The official leaderboard generated on 2026-07-23 lists GPT-5.6 Sol (Max) at 7.78% on the ARC-AGI-3 semi-private axis, with substantially higher cost than static ARC runs."
+      }
+    ],
+    "further_reading": [
+      { "label": "ARC-AGI-3 overview", "url": "https://arcprize.org/arc-agi/3" },
+      { "label": "ARC-AGI-3 paper", "url": "https://arxiv.org/abs/2603.24621" },
+      { "label": "ARC-AGI-3 HTML paper", "url": "https://arxiv.org/html/2603.24621v2" },
+      { "label": "ARC Prize verified leaderboard", "url": "https://arcprize.org/leaderboard" },
+      { "label": "ARC-AGI-2 paper", "url": "https://arxiv.org/abs/2505.11831" }
+    ]
+  },
+  "arc-agi-3": {
+    "lineage": [
+      {
+        "date": "2019-11",
+        "note": "ARC-AGI-1 introduces static colored-grid abstraction tasks."
+      },
+      {
+        "date": "2025-03",
+        "note": "ARC-AGI-2 keeps the static grid format but raises difficulty and improves human calibration and private-set controls."
+      },
+      {
+        "date": "2026-04",
+        "note": "ARC-AGI-3 appears as arXiv:2603.24621v2, introducing interactive turn-based environments and RHAE scoring."
+      },
+      {
+        "date": "2026-07",
+        "note": "The official leaderboard generated on 2026-07-23 lists GPT-5.6 Sol (Max) at 7.78% on the ARC-AGI-3 semi-private axis, with substantially higher cost than static ARC runs."
+      }
+    ],
+    "further_reading": [
+      { "label": "ARC-AGI-3 overview", "url": "https://arcprize.org/arc-agi/3" },
+      { "label": "ARC-AGI-3 paper", "url": "https://arxiv.org/abs/2603.24621" },
+      { "label": "ARC-AGI-3 HTML paper", "url": "https://arxiv.org/html/2603.24621v2" },
+      { "label": "ARC Prize verified leaderboard", "url": "https://arcprize.org/leaderboard" },
+      { "label": "ARC-AGI-2 paper", "url": "https://arxiv.org/abs/2505.11831" }
+    ]
+  }
+}

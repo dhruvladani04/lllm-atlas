@@ -2,6 +2,7 @@ import type { Metadata, Route } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import {
+  loadBenchmarkHistory,
   loadBenchmarks,
   loadFreshness,
   loadJoinedScores,
@@ -72,6 +73,7 @@ export default async function BenchmarkPage({
   const independent = scores.filter((score) => score.provenance === "independent");
   const vendor = scores.filter((score) => score.provenance === "vendor-reported");
   const successor = benchmark.successor;
+  const history = loadBenchmarkHistory()[slug] ?? null;
 
   return (
     <main className="mx-auto max-w-4xl px-6 py-10">
@@ -198,6 +200,39 @@ export default async function BenchmarkPage({
           </p>
         ) : null}
       </section>
+
+      {history !== null && history.lineage.length > 0 ? (
+        <section className="mt-8">
+          <h2 className="text-lg font-medium">History &amp; lineage</h2>
+          <p className="mt-1 max-w-[66ch] text-sm text-ink-mute">
+            Hand-maintained, not part of the benchwiki record above — each line cites the
+            paper or leaderboard it comes from.
+          </p>
+          <ol className="mt-3 space-y-2 text-sm">
+            {history.lineage.map((event) => (
+              <li key={event.date} className="flex gap-4">
+                <span className="tabular w-20 shrink-0 text-ink-mute">{event.date}</span>
+                <span>{event.note}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ) : null}
+
+      {history !== null && history.further_reading.length > 0 ? (
+        <section className="mt-8">
+          <h2 className="text-lg font-medium">Further reading</h2>
+          <ul className="mt-2 divide-y divide-rule border-y border-rule text-sm">
+            {history.further_reading.map((link) => (
+              <li key={link.url} className="py-2">
+                <a className="underline underline-offset-2" href={link.url}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
       <section className="mt-8">
         <h2 className="text-lg font-medium">Models scored on this benchmark</h2>

@@ -2,6 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import { Benchmark } from "@/lib/schemas/benchmark";
+import { BenchmarkHistory } from "@/lib/schemas/benchmark-history";
 import { JoinedScore, Score } from "@/lib/schemas/score";
 import { Model } from "@/lib/schemas/model";
 import { SourceMeta } from "@/lib/schemas/common";
@@ -16,6 +17,7 @@ import { SourceMeta } from "@/lib/schemas/common";
  */
 
 const DERIVED = join(process.cwd(), "data", "derived");
+const REGISTRY = join(process.cwd(), "data", "registry");
 
 function read<T>(fileName: string, schema: z.ZodType<T>, fallback: T): T {
   const path = join(DERIVED, fileName);
@@ -60,6 +62,17 @@ export function loadModels(): Model[] {
 
 export function loadBenchmarks(): Benchmark[] {
   return read("benchmarks.json", z.array(Benchmark), []);
+}
+
+/**
+ * Hand-maintained, not ingested — see `lib/schemas/benchmark-history.ts`. Lives under
+ * `data/registry/` rather than `data/derived/` because nothing generates it; a human edits
+ * it directly, the same way `data/registry/models.json` is edited directly.
+ */
+export function loadBenchmarkHistory(): BenchmarkHistory {
+  const path = join(REGISTRY, "benchmark-history.json");
+  if (!existsSync(path)) return {};
+  return BenchmarkHistory.parse(JSON.parse(readFileSync(path, "utf8")) as unknown);
 }
 
 export function loadFreshness(): Freshness {

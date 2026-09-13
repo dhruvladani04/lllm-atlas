@@ -31,11 +31,18 @@ Mirror the benchwiki record, plus the reverse lookup that is this site's contrib
 3. **Health** — status evidence, saturation date, contamination mitigation, refresh cycle.
    Render `statistical_note` prominently. These notes are the most useful and most ignored
    field in the whole dataset.
-4. **Models scored on this benchmark** — the reverse index. Table of every model on the
+4. **History & lineage** and **Further reading** — optional, rendered only where
+   `data/registry/benchmark-history.json` has an entry for the slug. This is hand-written
+   editorial content, not part of the benchwiki ingestion: benchwiki's `successor` field
+   names the next benchmark in a family but carries no narrative and no citations, and
+   this site will not invent either. Every lineage line and every further-reading link
+   names its own real, dated source (a paper, an official leaderboard) rather than
+   paraphrasing from memory. See `lib/schemas/benchmark-history.ts`.
+5. **Models scored on this benchmark** — the reverse index. Table of every model on the
    site with a score here, each with provenance, harness where relevant, date and source.
    Sortable. Vendor-reported and independent scores visually separated, never interleaved
    as if equivalent.
-5. **Trajectory** — drawn as inline SVG rather than with a chart library: it is a scatter
+6. **Trajectory** — drawn as inline SVG rather than with a chart library: it is a scatter
    with two mark types, and a charting dependency would add weight to a route that does
    not need one. Independent points are filled circles and vendor-reported ones open
    squares, so the distinction survives greyscale and colour blindness. Points are never
@@ -45,7 +52,7 @@ Mirror the benchwiki record, plus the reverse lookup that is this site's contrib
    axis once on first view, so the shape of saturation is legible as a process; under
    `prefers-reduced-motion` the finished chart renders immediately. Animating a
    connection the data does not support is a stronger lie than drawing one.
-6. **Source** — canonical link to the benchwiki page, its `last_updated` date, and this
+7. **Source** — canonical link to the benchwiki page, its `last_updated` date, and this
    site's fetch date.
 
 ### Constraints
@@ -74,3 +81,6 @@ mirrored pages, not the site's core feature.
 - Recorded the link-mode redirect behaviour and the hand-drawn trajectory. Milestone 5.
 - Trajectory may draw in once on first view, with a static equivalent under reduced
   motion.
+- Added the optional hand-maintained "History & lineage" and "Further reading" blocks,
+  backed by `data/registry/benchmark-history.json`, and renumbered the detail-page list.
+  Populated for the ARC-AGI family (`arc-agi`, `arc-agi-2`, `arc-agi-3`).
