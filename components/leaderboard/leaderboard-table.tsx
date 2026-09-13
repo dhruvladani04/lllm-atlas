@@ -5,6 +5,7 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Link from "next/link";
 import type { UnrankedRow } from "@/lib/leaderboard/rows";
 import type { TableData, TableModel, TableRow } from "@/lib/leaderboard/view";
+import { formatTokenCount } from "@/lib/format/number";
 import {
   HealthFlags,
   MissingValue,
@@ -301,7 +302,7 @@ export function LeaderboardTable({
                     <td className="py-2 pr-3 text-right">
                       <QuotedValue
                         quoted={model.context_window}
-                        format={(value) => `${Math.round(value / 1000)}k`}
+                        format={formatTokenCount}
                         missingReason="No context window published by the vendor or OpenRouter"
                       />
                     </td>

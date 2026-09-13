@@ -9,6 +9,7 @@ import {
   loadModels,
 } from "@/lib/data/derived";
 import type { JoinedScore } from "@/lib/schemas/score";
+import { formatTokenCount } from "@/lib/format/number";
 import {
   HealthFlags,
   MissingValue,
@@ -145,7 +146,7 @@ export default async function ModelPage({
           <div className="text-xs text-ink-mute">Context</div>
           <QuotedValue
             quoted={model.context_window}
-            format={(value) => `${Math.round(value / 1000)}k tokens`}
+            format={(value) => `${formatTokenCount(value)} tokens`}
             missingReason="No context window published by the vendor or OpenRouter"
           />
         </div>
@@ -229,7 +230,10 @@ export default async function ModelPage({
             </p>
             <ul className="mt-2 divide-y divide-rule border-y border-rule text-sm">
               {arena.map((score) => (
-                <li key={score.benchmark_slug} className="flex gap-4 py-2">
+                <li
+                  key={`${score.model_id}#${score.variant}#${score.benchmark_slug}#${score.measured_at ?? "none"}`}
+                  className="flex gap-4 py-2"
+                >
                   <span className="tabular">{Math.round(score.value)} Elo</span>
                   {score.confidence_interval !== null ? (
                     <span className="tabular text-ink-mute">
@@ -294,7 +298,7 @@ function ScoreTable({ scores }: { scores: readonly JoinedScore[] }) {
         <tbody>
           {scores.map((score) => (
             <tr
-              key={`${score.benchmark_slug}#${score.harness ?? "none"}#${score.provenance}`}
+              key={`${score.model_id}#${score.variant}#${score.benchmark_slug}#${score.harness ?? "none"}#${score.provenance}#${score.measured_at ?? "none"}`}
               className="border-b border-rule"
             >
               <td className="py-2 pr-3">
