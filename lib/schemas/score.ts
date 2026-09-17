@@ -9,6 +9,12 @@ import { Benchmark } from "@/lib/schemas/benchmark";
  * measured_at). Not by model name, and not by model name plus benchmark. Two scores
  * differing only in harness are two rows; so are two differing only in provenance.
  * Neither pair is ever averaged.
+ *
+ * That key is not actually unique in upstream data — Epoch has reported two HLE scores
+ * for the same model on the same day with no distinguishing `harness` (the benchmark's
+ * own statistical_note names no-tools / tool-augmented / multi-agent as materially
+ * different configurations it does not otherwise capture per-score). Rendered lists key
+ * on this tuple plus an array-index tiebreaker rather than assume it disambiguates.
  */
 
 export const ScoreUnit = z.enum(["percent", "elo", "index", "count", "usd", "seconds"]);

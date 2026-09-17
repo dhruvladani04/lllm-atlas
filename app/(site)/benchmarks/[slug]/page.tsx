@@ -350,11 +350,15 @@ function ScoreTable({
             </tr>
           </thead>
           <tbody>
-            {scores.map((score) => {
+            {scores.map((score, index) => {
               const model = names.get(score.model_id);
               return (
                 <tr
-                  key={`${score.model_id}#${score.variant}#${score.harness ?? "none"}`}
+                  // Epoch sometimes reports two distinct scores (e.g. different HLE tool
+                  // configurations) that are identical on every field the schema declares
+                  // as the score's identity — see specs/02-data/schemas.md's Score key.
+                  // `index` is the tiebreaker of last resort so React never collides.
+                  key={`${score.model_id}#${score.variant}#${score.harness ?? "none"}#${score.provenance}#${score.measured_at ?? "none"}#${index}`}
                   className="row-hover border-b border-rule"
                 >
                   <td className="py-2 pr-3">

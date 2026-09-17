@@ -229,9 +229,9 @@ export default async function ModelPage({
               an arena board, so there are no flags to show.
             </p>
             <ul className="mt-2 divide-y divide-rule border-y border-rule text-sm">
-              {arena.map((score) => (
+              {arena.map((score, index) => (
                 <li
-                  key={`${score.model_id}#${score.variant}#${score.benchmark_slug}#${score.measured_at ?? "none"}`}
+                  key={`${score.model_id}#${score.variant}#${score.benchmark_slug}#${score.measured_at ?? "none"}#${index}`}
                   className="flex gap-4 py-2"
                 >
                   <span className="tabular">{Math.round(score.value)} Elo</span>
@@ -296,9 +296,13 @@ function ScoreTable({ scores }: { scores: readonly JoinedScore[] }) {
           </tr>
         </thead>
         <tbody>
-          {scores.map((score) => (
+          {scores.map((score, index) => (
             <tr
-              key={`${score.model_id}#${score.variant}#${score.benchmark_slug}#${score.harness ?? "none"}#${score.provenance}#${score.measured_at ?? "none"}`}
+              // The tiebreaker index guards against Epoch reporting two distinct scores
+              // (e.g. different HLE tool configurations) that are identical on every
+              // field the schema declares as the score's identity — see the Score key
+              // comment in specs/02-data/schemas.md.
+              key={`${score.model_id}#${score.variant}#${score.benchmark_slug}#${score.harness ?? "none"}#${score.provenance}#${score.measured_at ?? "none"}#${index}`}
               className="row-hover border-b border-rule"
             >
               <td className="py-2 pr-3">
