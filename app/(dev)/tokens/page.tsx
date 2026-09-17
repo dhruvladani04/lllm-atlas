@@ -14,6 +14,11 @@ const NEUTRAL = [
   { token: "--rule-strong", use: "emphasised borders" },
 ] as const;
 
+const ACCENT = [
+  { token: "--accent", use: "link hover/focus, focus ring, checked controls" },
+  { token: "--accent-strong", use: "hover/active state of the accent" },
+] as const;
+
 const DATA = [
   { token: "--status-active", meaning: "benchmark still discriminates", glyph: "●" },
   { token: "--status-nearing", meaning: "nearing saturation", glyph: "◐" },
@@ -39,6 +44,23 @@ function Swatches({ scheme }: { scheme: "light" | "dark" }) {
             <span
               aria-hidden="true"
               className="h-6 w-10 shrink-0 border border-rule-strong"
+              style={{ backgroundColor: `var(${token})` }}
+            />
+            <code className="font-mono text-xs text-ink">{token}</code>
+            <span className="text-xs text-ink-mute">{use}</span>
+          </li>
+        ))}
+      </ul>
+
+      <h3 className="mt-6 text-sm font-medium text-ink">
+        Interface accent — interaction only, never a static heading or border
+      </h3>
+      <ul className="mt-2 divide-y divide-rule border-y border-rule">
+        {ACCENT.map(({ token, use }) => (
+          <li key={token} className="flex items-center gap-4 py-2">
+            <span
+              aria-hidden="true"
+              className="h-6 w-10 shrink-0 rounded-sm"
               style={{ backgroundColor: `var(${token})` }}
             />
             <code className="font-mono text-xs text-ink">{token}</code>

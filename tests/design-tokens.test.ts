@@ -35,7 +35,7 @@ function contrast(a: string, b: string): number {
 
 const SCHEMES = ["light", "dark"] as const;
 
-const TEXT_TOKENS = ["ink", "ink-mute"] as const;
+const TEXT_TOKENS = ["ink", "ink-mute", "accent"] as const;
 
 const DATA_TOKENS = [
   "status-active",

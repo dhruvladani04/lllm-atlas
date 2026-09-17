@@ -181,7 +181,7 @@ export function LeaderboardTable({
         <label className="flex items-center gap-2">
           Creator
           <select
-            className="border border-rule bg-surface px-2 py-1"
+            className="rounded-sm border border-rule bg-surface px-2 py-1"
             value={creator}
             onChange={(event) => setCreator(event.target.value)}
           >
@@ -223,7 +223,7 @@ export function LeaderboardTable({
       {data.rows.length > 0 ? (
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-sm">
-            <thead>
+            <thead className="sticky top-12 z-[5] bg-paper shadow-sm">
               <tr className="border-b border-rule-strong text-left">
                 <th scope="col" className="py-2 pr-3 font-medium">
                   #
@@ -237,7 +237,7 @@ export function LeaderboardTable({
                     <button
                       type="button"
                       onClick={() => setSort(column.key)}
-                      className="underline-offset-2 hover:underline"
+                      className="underline-offset-2 hover:text-accent hover:underline"
                       aria-label={`Sort by ${column.label}`}
                     >
                       {column.label}
@@ -258,7 +258,7 @@ export function LeaderboardTable({
                 const model = meta(row.model_id);
                 const age = daysSince(model.released_at);
                 return (
-                  <tr key={row.key} className="border-b border-rule">
+                  <tr key={row.key} className="row-hover border-b border-rule">
                     <td className="tabular py-2 pr-3 text-ink-mute">{index + 1}</td>
                     <td className="py-2 pr-3">
                       <Link

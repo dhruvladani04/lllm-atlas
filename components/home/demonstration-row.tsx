@@ -34,8 +34,12 @@ export function DemonstrationRow({ demonstration }: { demonstration: Demonstrati
         };
 
   return (
-    <section className="mt-8 border-y border-rule py-6" aria-label="A worked example">
-      <motion.div {...appear(SCORE_IN)}>
+    <section
+      className="mt-8 rounded-md border border-rule bg-surface p-6 shadow-md"
+      aria-label="A worked example"
+    >
+      <p className="text-xs font-medium text-ink-mute">Worked example</p>
+      <motion.div className="mt-3" {...appear(SCORE_IN)}>
         <div className="flex flex-wrap items-baseline gap-x-3">
           <Link
             href={`/models/${model.model_id}`}

@@ -33,12 +33,15 @@ export function ProvenanceBadge({
         ? "Both independent and vendor-reported numbers exist"
         : "Reported by the model's own vendor";
 
+  const colour = provenance === "independent" ? "var(--ink-mute)" : "var(--provenance-vendor)";
+
   return (
     <span
       title={title}
-      className="font-mono text-xs"
+      className="rounded-sm px-1.5 py-0.5 font-mono text-xs whitespace-nowrap"
       style={{
-        color: provenance === "independent" ? "var(--ink-mute)" : "var(--provenance-vendor)",
+        color: colour,
+        backgroundColor: `color-mix(in srgb, ${colour} 12%, transparent)`,
       }}
     >
       {label}
@@ -68,10 +71,12 @@ const STATUS_COLOUR: Record<Benchmark["status"], string> = {
 };
 
 export function StatusChip({ status }: { status: Benchmark["status"] }) {
+  const colour = STATUS_COLOUR[status];
+
   return (
     <span
-      className="inline-flex items-center gap-1 text-xs whitespace-nowrap"
-      style={{ color: STATUS_COLOUR[status] }}
+      className="inline-flex items-center gap-1 rounded-sm px-1.5 py-0.5 text-xs whitespace-nowrap"
+      style={{ color: colour, backgroundColor: `color-mix(in srgb, ${colour} 12%, transparent)` }}
     >
       <span aria-hidden="true">{STATUS_GLYPH[status]}</span>
       {STATUS_LABEL[status]}
@@ -131,18 +136,24 @@ export function HealthFlags({ flags }: { flags: readonly HealthFlag[] }) {
   }
 
   return (
-    <span className="flex flex-wrap gap-x-2 gap-y-0.5">
-      {flags.map((flag) => (
-        <span
-          key={flag}
-          title={FLAG_LABEL[flag].title}
-          className="text-xs whitespace-nowrap"
-          style={{ color: FLAG_COLOUR[flag] }}
-        >
-          <span aria-hidden="true">{FLAG_LABEL[flag].glyph} </span>
-          {FLAG_LABEL[flag].short}
-        </span>
-      ))}
+    <span className="flex flex-wrap gap-x-1.5 gap-y-1">
+      {flags.map((flag) => {
+        const colour = FLAG_COLOUR[flag];
+        return (
+          <span
+            key={flag}
+            title={FLAG_LABEL[flag].title}
+            className="rounded-sm px-1.5 py-0.5 text-xs whitespace-nowrap"
+            style={{
+              color: colour,
+              backgroundColor: `color-mix(in srgb, ${colour} 12%, transparent)`,
+            }}
+          >
+            <span aria-hidden="true">{FLAG_LABEL[flag].glyph} </span>
+            {FLAG_LABEL[flag].short}
+          </span>
+        );
+      })}
     </span>
   );
 }

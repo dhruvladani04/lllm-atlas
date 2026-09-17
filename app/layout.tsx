@@ -72,12 +72,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
 
-        <header className="border-b border-rule">
+        <header className="sticky top-0 z-10 border-b border-rule bg-paper shadow-sm">
           <div className="mx-auto flex max-w-[1400px] flex-wrap items-baseline gap-x-6 gap-y-2 px-6 py-3">
             <Link
               href="/"
-              className="text-sm font-medium underline-offset-2 hover:underline"
+              className="flex items-baseline gap-2 text-sm font-medium underline-offset-2 hover:underline"
             >
+              <span aria-hidden="true" className="inline-block h-2 w-2 rounded-sm bg-accent" />
               LLM Atlas
             </Link>
             <nav aria-label="Main">

@@ -8,15 +8,22 @@ immediately see which ones to distrust.
 
 That gives one governing idea, and everything below follows from it:
 
-> **The interface is achromatic. Colour belongs to the data.**
+> **Data colour encodes facts. Interface colour encodes interaction.**
 
-Chrome, navigation, headings, borders and backgrounds are paper and ink. Colour appears
-only where it encodes a fact: benchmark status, contamination risk, provenance, staleness.
-A reader who learns the colour vocabulary once can scan a 200-row table and find the
-untrustworthy cells without reading a word.
+Two separate, non-overlapping jobs. The data palette below still means only what it has
+always meant — benchmark status, contamination risk, provenance, staleness — and is never
+spent on decoration. Chrome, navigation and structure were pure paper-and-ink through
+Milestone 7; from here they carry exactly **one** accent hue, spent only on things a
+reader can act on: a link, a focus ring, a checked control, the row you're hovering. An
+accent on a static heading or a border for no reason is the old mistake with a new colour;
+the test is still "does this pixel tell the reader something," just answered for
+interaction as well as data now.
 
-This rules out decorative accent colours, gradient washes, tinted hero sections and
-coloured buttons. If a colour is not carrying information, remove it.
+Still ruled out: gradient washes, tinted hero sections, a coloured button for an action
+that isn't the page's one interactive control, and more than one accent hue. Elevation
+(shadow) is permitted on interactive or floating chrome — a sticky header, a hovered row,
+an elevated panel on the home page — never on the dense leaderboard or benchmark-matrix
+body, which stay flat so density reads as density.
 
 ## What to avoid
 
@@ -25,11 +32,13 @@ other AI-adjacent page:
 
 - Cream background near `#F4F1EA` with a serif display face and a terracotta accent
 - Near-black background with one acid-green or vermilion accent
-- Identical rounded cards with the same soft grey shadow under each
+- Identical rounded cards with the same soft grey shadow under each, used everywhere rather
+  than on the specific interactive/elevated surfaces named below
 - Tracked-out all-caps eyebrow labels above every heading
 - Meta strings joined with middle dots
 - A `→` appended to link text
 - Fade-and-slide-up entrance animations on each section
+- A second accent hue anywhere, "just for this one badge"
 
 ## Colour
 
@@ -84,6 +93,43 @@ it, and it keeps the table calm when many benchmarks are saturated at once.
 Colour is never the only carrier. Every status also has a text label or a glyph, for
 colour-blind readers and for print.
 
+### Interface accent and elevation
+
+One accent hue, spent only on interaction: link hover/focus, the focus ring, a checked
+toggle, a hovered table row. It never appears on static text, headings or borders that
+carry no interactive meaning, and it never appears alongside a second accent.
+
+One named, singular exception: the small square mark beside the wordmark in the site
+header. It is brand identity, not a status or an action, appears exactly once per page,
+and is not a licence to reuse the accent decoratively anywhere else.
+
+```
+--accent-light         #1D4ED8   light-scheme accent — links, focus, checked controls
+--accent-strong-light  #1741B0   hover/active state of the accent
+--accent-dark          #93C5FD   dark-scheme accent
+--accent-strong-dark   #BFD7FF   hover/active state, dark scheme
+```
+
+`--accent` is held to the same 4.5:1 text-contrast floor as `--ink`, because it renders as
+link text, not just as a border — checked by the same unit test as the data palette.
+
+Elevation tokens, for the interactive/floating surfaces named per-component below —
+never for the leaderboard or benchmark-matrix body, which stay flat:
+
+```
+--shadow-sm   a 1px hairline shadow — a sticky header, a hovered row
+--shadow-md   a soft, wider shadow — the home page's worked-example panel
+--radius-sm   6px  — pill badges, inputs, small controls
+--radius-md   10px — elevated panels
+```
+
+**Status, health-flag and provenance badges render as tinted pills**, not bare coloured
+text: a small rounded background at low opacity of the badge's own colour, using
+`color-mix(in srgb, currentColor 12%, transparent)` so the tint is always derived from the
+one colour that already carries the fact, never a second hand-picked value. This is
+elevation in service of the data palette, not a departure from it — the colour still means
+only what it always meant.
+
 ## Type
 
 Two families, clearly distinct roles.
@@ -112,7 +158,8 @@ Three layout modes, one per section. The structure itself tells the reader which
 they are in.
 
 - **Leaderboard** — full-bleed data table, left-aligned text columns, right-aligned
-  numeric columns, sticky header, hairline row rules, no card containers, no shadows.
+  numeric columns, sticky header (`--shadow-sm` once it's pinned), hairline row rules, a
+  subtle hover tint per row, no card containers, no shadow on the table body itself.
 - **Benchmarks** — the capability × status grid. Fixed row labels, scrollable columns on
   narrow viewports.
 - **Evals** — single narrow reading column, generous leading, a quiet sidebar for
@@ -243,3 +290,8 @@ must be readable and correct with CSS disabled.
 - `FreshnessStamp` computes relative time at render, not at build.
 - Added `PriceCell`, which labels a vendor list price against an OpenRouter routed
   price. Milestone 3.
+- Loosened the strictly achromatic chrome: added one interface accent (link/focus/checked
+  states only, held to the 4.5:1 text floor), elevation tokens for interactive/floating
+  surfaces, and tinted-pill badges derived from each status colour via `color-mix`. The
+  data palette's meaning and the flat, shadow-free density of the leaderboard and
+  benchmark-matrix bodies are unchanged. Post-launch polish.

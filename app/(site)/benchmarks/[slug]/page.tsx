@@ -355,7 +355,7 @@ function ScoreTable({
               return (
                 <tr
                   key={`${score.model_id}#${score.variant}#${score.harness ?? "none"}`}
-                  className="border-b border-rule"
+                  className="row-hover border-b border-rule"
                 >
                   <td className="py-2 pr-3">
                     <Link

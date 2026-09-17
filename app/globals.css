@@ -40,6 +40,19 @@
   --provenance-vendor-dark: #b49ae0;
   --stale-dark: #d9a441;
 
+  /* interface accent — interaction only: link hover/focus, checked controls, hovered rows.
+     never on static text or a border with no interactive meaning. */
+  --accent-light: #1d4ed8;
+  --accent-strong-light: #1741b0;
+  --accent-dark: #93c5fd;
+  --accent-strong-dark: #bfd7ff;
+
+  /* elevation — interactive/floating chrome only, never the dense table body */
+  --shadow-sm-light: 0 1px 2px rgba(20, 23, 28, 0.08);
+  --shadow-md-light: 0 8px 24px rgba(20, 23, 28, 0.1);
+  --shadow-sm-dark: 0 1px 2px rgba(0, 0, 0, 0.45);
+  --shadow-md-dark: 0 8px 24px rgba(0, 0, 0, 0.55);
+
   --paper: var(--paper-light);
   --surface: var(--surface-light);
   --ink: var(--ink-light);
@@ -54,6 +67,10 @@
   --risk-medium: var(--risk-medium-light);
   --provenance-vendor: var(--provenance-vendor-light);
   --stale: var(--stale-light);
+  --accent: var(--accent-light);
+  --accent-strong: var(--accent-strong-light);
+  --elevation-sm: var(--shadow-sm-light);
+  --elevation-md: var(--shadow-md-light);
 
   color-scheme: light dark;
 }
@@ -77,6 +94,10 @@
     --risk-medium: var(--risk-medium-dark);
     --provenance-vendor: var(--provenance-vendor-dark);
     --stale: var(--stale-dark);
+    --accent: var(--accent-dark);
+    --accent-strong: var(--accent-strong-dark);
+    --elevation-sm: var(--shadow-sm-dark);
+    --elevation-md: var(--shadow-md-dark);
   }
 }
 
@@ -95,6 +116,10 @@
   --risk-medium: var(--risk-medium-dark);
   --provenance-vendor: var(--provenance-vendor-dark);
   --stale: var(--stale-dark);
+  --accent: var(--accent-dark);
+  --accent-strong: var(--accent-strong-dark);
+  --elevation-sm: var(--shadow-sm-dark);
+  --elevation-md: var(--shadow-md-dark);
   color-scheme: dark;
 }
 
@@ -113,6 +138,10 @@
   --risk-medium: var(--risk-medium-light);
   --provenance-vendor: var(--provenance-vendor-light);
   --stale: var(--stale-light);
+  --accent: var(--accent-light);
+  --accent-strong: var(--accent-strong-light);
+  --elevation-sm: var(--shadow-sm-light);
+  --elevation-md: var(--shadow-md-light);
   color-scheme: light;
 }
 
@@ -131,6 +160,13 @@
   --color-risk-medium: var(--risk-medium);
   --color-provenance-vendor: var(--provenance-vendor);
   --color-stale: var(--stale);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+
+  --shadow-sm: var(--elevation-sm);
+  --shadow-md: var(--elevation-md);
+  --radius-sm: 6px;
+  --radius-md: 10px;
 
   --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
@@ -161,9 +197,30 @@
     font-variant-numeric: tabular-nums;
   }
 
+  /* The one accent hue, spent only on interaction — never a static heading or a border
+     with no interactive meaning. specs/04-design/design-system.md, "Interface accent". */
+  a[href] {
+    transition: color 120ms ease;
+  }
+
+  a[href]:hover,
+  a[href]:focus-visible {
+    color: var(--accent);
+  }
+
+  input[type="checkbox"] {
+    accent-color: var(--accent);
+  }
+
   :focus-visible {
-    outline: 2px solid var(--ink);
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* A hovered leaderboard/benchmark row — interaction feedback, not decoration. */
+  .row-hover:hover {
+    background-color: color-mix(in srgb, var(--ink) 5%, transparent);
   }
 
   @media (prefers-reduced-motion: reduce) {

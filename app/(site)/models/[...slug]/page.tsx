@@ -299,7 +299,7 @@ function ScoreTable({ scores }: { scores: readonly JoinedScore[] }) {
           {scores.map((score) => (
             <tr
               key={`${score.model_id}#${score.variant}#${score.benchmark_slug}#${score.harness ?? "none"}#${score.provenance}#${score.measured_at ?? "none"}`}
-              className="border-b border-rule"
+              className="row-hover border-b border-rule"
             >
               <td className="py-2 pr-3">
                 <a
