@@ -2379,6 +2379,88 @@
     "source_url": "https://benchwiki.vercel.app/benchmarks/ifeval"
   },
   {
+    "slug": "indirect-prompt-injection",
+    "name": "Indirect Prompt Injection Arena",
+    "capability": "safety-alignment",
+    "languages": [
+      "english"
+    ],
+    "secondary_capabilities": [
+      "agentic-tool-use",
+      "coding",
+      "multimodal"
+    ],
+    "short_description": "Forty-one agent scenarios derived from a 272,000-attempt public competition on concealed indirect prompt injection.",
+    "launch_date": "2026-03-16",
+    "status": "active",
+    "status_evidence": "This is a current, agent-level security benchmark with tool, coding, and browser scenarios; every tested frontier model was vulnerable in the 2026 competition.",
+    "saturated_date": null,
+    "successor": null,
+    "contamination": {
+      "risk": "high",
+      "refresh_cycle": "continuous",
+      "test_set_public": true,
+      "mitigation": "The open release includes 41 behaviors and 95 attacks across 28 behaviors, while production evaluation should add private scenarios, rotate untrusted-content locations, and keep tool side effects sandboxed."
+    },
+    "human_baseline": {
+      "score": null,
+      "note": "No human agent baseline is defined. The source evidence is adversarial competition success against model-based agents."
+    },
+    "statistical_note": "The public competition had 464 participants, 272,000 attack attempts, 8,648 successful attacks, 13 frontier models, and 41 scenarios. Timeline points use overall competition ASR, not curated transfer ASR; lower is safer. Timeline dates are model public-launch dates, not competition or evaluation dates.",
+    "metric_primary": "concealed attack success rate (%) - lower is safer",
+    "judge_model": null,
+    "last_updated": "2026-09-14",
+    "leaderboards": [],
+    "performance_timeline": [
+      {
+        "model": "Gemini 2.5 Pro (competition ASR)",
+        "model_id": null,
+        "vendor": "google",
+        "measured_at": "2025-03-25",
+        "score": 8.5,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2603.15714v1"
+      },
+      {
+        "model": "Kimi K2 (competition ASR)",
+        "model_id": null,
+        "vendor": "moonshot-ai",
+        "measured_at": "2025-07-11",
+        "score": 4.8,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2603.15714v1"
+      },
+      {
+        "model": "Claude Sonnet 4.5 (competition ASR)",
+        "model_id": null,
+        "vendor": "anthropic",
+        "measured_at": "2025-09-29",
+        "score": 1,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2603.15714v1"
+      },
+      {
+        "model": "Claude Haiku 4.5 (competition ASR)",
+        "model_id": null,
+        "vendor": "anthropic",
+        "measured_at": "2025-10-15",
+        "score": 1.3,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2603.15714v1"
+      },
+      {
+        "model": "Claude Opus 4.5 (competition ASR)",
+        "model_id": null,
+        "vendor": "anthropic",
+        "measured_at": "2025-11-24",
+        "score": 0.5,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2603.15714v1"
+      }
+    ],
+    "source_url": "https://benchwiki.vercel.app/benchmarks/indirect-prompt-injection"
+  },
+  {
     "slug": "infinitebench",
     "name": "InfiniteBench",
     "capability": "long-context",
@@ -2458,6 +2540,83 @@
       }
     ],
     "source_url": "https://benchwiki.vercel.app/benchmarks/infinitebench"
+  },
+  {
+    "slug": "jailbreakbench",
+    "name": "JailbreakBench",
+    "capability": "safety-alignment",
+    "languages": [
+      "english"
+    ],
+    "secondary_capabilities": [
+      "instruction-following"
+    ],
+    "short_description": "An open framework, behavior set, artifact repository, and leaderboard for comparing jailbreak attacks and defenses.",
+    "launch_date": "2024-03-28",
+    "status": "active",
+    "status_evidence": "JailbreakBench remains a useful standardized red-teaming framework because it fixes behaviors, threat models, templates, judges, and artifact formats, while accepting evolving attacks and defenses.",
+    "saturated_date": null,
+    "successor": null,
+    "contamination": {
+      "risk": "high",
+      "refresh_cycle": "continuous",
+      "test_set_public": true,
+      "mitigation": "Keep target behaviors fixed for comparability, version jailbreak artifacts and judges, enforce equal target-call budgets, and maintain private behaviors for deployment decisions."
+    },
+    "human_baseline": {
+      "score": null,
+      "note": "No human attack-success baseline is defined. A separate 300-example judge-comparison set contains three human labels per response for judge validation."
+    },
+    "statistical_note": "ASR is conditional on target model version, system prompt, chat template, attack budget, defense, generation settings, and judge. Timeline points use the paper's undefended PAIR attack only so one attack protocol is compared across targets; lower is safer. Timeline dates are target-model public-launch dates, not evaluation dates.",
+    "metric_primary": "attack success rate on 100 misuse behaviors (%)",
+    "judge_model": "Llama-3-70B jailbreak judge in the current official package",
+    "last_updated": "2026-09-14",
+    "leaderboards": [
+      {
+        "name": "Official JailbreakBench leaderboard",
+        "url": "https://jailbreakbench.github.io/",
+        "type": "official"
+      }
+    ],
+    "performance_timeline": [
+      {
+        "model": "GPT-3.5 Turbo targeted by PAIR",
+        "model_id": null,
+        "vendor": "openai",
+        "measured_at": "2023-03-01",
+        "score": 71,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2404.01318v5"
+      },
+      {
+        "model": "GPT-4 targeted by PAIR",
+        "model_id": null,
+        "vendor": "openai",
+        "measured_at": "2023-03-14",
+        "score": 34,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2404.01318v5"
+      },
+      {
+        "model": "Vicuna-13B targeted by PAIR",
+        "model_id": null,
+        "vendor": "lmsys",
+        "measured_at": "2023-03-30",
+        "score": 69,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2404.01318v5"
+      },
+      {
+        "model": "Llama 2 targeted by PAIR",
+        "model_id": null,
+        "vendor": "meta",
+        "measured_at": "2023-07-18",
+        "score": 0,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2404.01318v5"
+      }
+    ],
+    "source_url": "https://benchwiki.vercel.app/benchmarks/jailbreakbench"
   },
   {
     "slug": "livecodebench",
@@ -3349,6 +3508,59 @@
       }
     ],
     "source_url": "https://benchwiki.vercel.app/benchmarks/mgsm"
+  },
+  {
+    "slug": "mm-safetybench",
+    "name": "MM-SafetyBench",
+    "capability": "safety-alignment",
+    "languages": [
+      "english"
+    ],
+    "secondary_capabilities": [
+      "multimodal"
+    ],
+    "short_description": "A 5,040-pair benchmark testing whether query-relevant images can bypass multimodal model safeguards.",
+    "launch_date": "2023-11-29",
+    "status": "deprecated",
+    "status_evidence": "MM-SafetyBench established the image-based jailbreak threat, but its static public scenarios and early-model protocol have been overtaken by broader multimodal safety suites and later variants.",
+    "saturated_date": null,
+    "successor": "mm-safetybench-plus-plus",
+    "contamination": {
+      "risk": "high",
+      "refresh_cycle": "static",
+      "test_set_public": true,
+      "mitigation": "Version question and image files, keep image conditions separate, use response-only judging where possible, and add private image attacks generated after the target model's training cutoff."
+    },
+    "human_baseline": {
+      "score": null,
+      "note": "No protocol-comparable human attack-success baseline is reported; humans are not safety-aligned multimodal target models."
+    },
+    "statistical_note": "ASR depends on the scenario, image variant, target model, model safety policy, prompt formatting, and GPT-4 judge implementation. Timeline points use the comparable tiny-set SD+TYPO condition; lower is safer. Timeline dates are target-model public-launch dates, not evaluation dates.",
+    "metric_primary": "attack success rate (%) - lower is safer",
+    "judge_model": "GPT-4 in the paper protocol",
+    "last_updated": "2026-09-14",
+    "leaderboards": [],
+    "performance_timeline": [
+      {
+        "model": "LLaVA-1.5 / Vicuna-7B (tiny SD+TYPO ASR)",
+        "model_id": null,
+        "vendor": "llava",
+        "measured_at": "2023-10-05",
+        "score": 77.33,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2311.17600v5"
+      },
+      {
+        "model": "LLaVA-Phi / Phi-2-2.7B (tiny SD+TYPO ASR)",
+        "model_id": null,
+        "vendor": "llava",
+        "measured_at": "2024-01-03",
+        "score": 66.72,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2311.17600v5"
+      }
+    ],
+    "source_url": "https://benchwiki.vercel.app/benchmarks/mm-safetybench"
   },
   {
     "slug": "mme",
@@ -4456,6 +4668,75 @@
     "source_url": "https://benchwiki.vercel.app/benchmarks/quality"
   },
   {
+    "slug": "realtoxicityprompts",
+    "name": "RealToxicityPrompts",
+    "capability": "safety-alignment",
+    "languages": [
+      "english"
+    ],
+    "secondary_capabilities": [],
+    "short_description": "One hundred thousand web-text prompts for measuring how often language models continue into toxic text.",
+    "launch_date": "2020-09-24",
+    "status": "deprecated",
+    "status_evidence": "It remains a standard toxicity test bed, but its static public prompts and dependence on the aging Perspective API make it unsuitable as a sole frontier safety benchmark.",
+    "saturated_date": null,
+    "successor": "realer-toxicity-prompts",
+    "contamination": {
+      "risk": "high",
+      "refresh_cycle": "static",
+      "test_set_public": true,
+      "mitigation": "Use versioned prompt IDs and evaluator settings, report clean and toxic prompt strata separately, and add newer private or adversarial prompts."
+    },
+    "human_baseline": {
+      "score": null,
+      "note": "No protocol-comparable human baseline exists; toxicity is assigned by Perspective API rather than by humans completing the prompts."
+    },
+    "statistical_note": "Scores depend strongly on prompt subset, number of continuations, decoding parameters, continuation length, Perspective API version, and toxicity threshold. Timeline points use expected maximum toxicity on the non-toxic-prompt subset with 25 generations; lower is safer. Timeline dates are model public-launch dates, not evaluation dates.",
+    "metric_primary": "expected maximum Perspective toxicity over sampled continuations",
+    "judge_model": "Perspective API",
+    "last_updated": "2026-09-14",
+    "leaderboards": [],
+    "performance_timeline": [
+      {
+        "model": "GPT-1 (non-toxic prompts; 25 generations)",
+        "model_id": null,
+        "vendor": "openai",
+        "measured_at": "2018-06-11",
+        "score": 0.58,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2009.11462v2"
+      },
+      {
+        "model": "GPT-2 (non-toxic prompts; 25 generations)",
+        "model_id": null,
+        "vendor": "openai",
+        "measured_at": "2019-02-14",
+        "score": 0.51,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2009.11462v2"
+      },
+      {
+        "model": "CTRL (non-toxic prompts; 25 generations)",
+        "model_id": null,
+        "vendor": "salesforce",
+        "measured_at": "2019-09-11",
+        "score": 0.52,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2009.11462v2"
+      },
+      {
+        "model": "GPT-3 (non-toxic prompts; 25 generations)",
+        "model_id": null,
+        "vendor": "openai",
+        "measured_at": "2020-05-28",
+        "score": 0.52,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2009.11462v2"
+      }
+    ],
+    "source_url": "https://benchwiki.vercel.app/benchmarks/realtoxicityprompts"
+  },
+  {
     "slug": "ruler",
     "name": "RULER",
     "capability": "long-context",
@@ -4585,6 +4866,84 @@
       }
     ],
     "source_url": "https://benchwiki.vercel.app/benchmarks/ruler"
+  },
+  {
+    "slug": "safetybench",
+    "name": "SafetyBench",
+    "capability": "safety-alignment",
+    "languages": [
+      "chinese",
+      "english"
+    ],
+    "secondary_capabilities": [
+      "knowledge"
+    ],
+    "short_description": "A bilingual 11,435-question multiple-choice test of safety knowledge across seven risk categories.",
+    "launch_date": "2023-09-13",
+    "status": "nearing-saturation",
+    "status_evidence": "SafetyBench remains a broad, cheap bilingual diagnostic, but its static multiple-choice format measures safety recognition rather than deployed refusal or agent behavior.",
+    "saturated_date": null,
+    "successor": null,
+    "contamination": {
+      "risk": "medium",
+      "refresh_cycle": "static",
+      "test_set_public": false,
+      "mitigation": "Test inputs are public but labels are withheld by the official submission system. Keep labels private, version submissions, and avoid training on translated or source datasets used to construct the questions."
+    },
+    "human_baseline": {
+      "score": null,
+      "note": "No single protocol-comparable human aggregate is published on the official benchmark page. Questions have answer keys, but that is not a measured human baseline."
+    },
+    "statistical_note": "The Chinese, English, and sensitive-keyword-filtered Chinese sets are distinct axes. The timeline uses English zero-shot average accuracy only. Five-shot prompts use 35 public development examples per language. Hidden test labels require official submission, and answer-extraction rules can affect API-model results. Timeline dates are model public-launch dates, not evaluation dates.",
+    "metric_primary": "multiple-choice accuracy (%)",
+    "judge_model": null,
+    "last_updated": "2026-09-14",
+    "leaderboards": [
+      {
+        "name": "Official SafetyBench leaderboard",
+        "url": "https://llmbench.ai/safety",
+        "type": "official"
+      }
+    ],
+    "performance_timeline": [
+      {
+        "model": "Flan-T5-XXL (English zero-shot)",
+        "model_id": null,
+        "vendor": "google",
+        "measured_at": "2022-10-20",
+        "score": 74.2,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2309.07045v2"
+      },
+      {
+        "model": "GPT-3.5 Turbo (English zero-shot)",
+        "model_id": null,
+        "vendor": "openai",
+        "measured_at": "2023-03-01",
+        "score": 78.8,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2309.07045v2"
+      },
+      {
+        "model": "GPT-4 (English zero-shot)",
+        "model_id": null,
+        "vendor": "openai",
+        "measured_at": "2023-03-14",
+        "score": 88.9,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2309.07045v2"
+      },
+      {
+        "model": "ChatGLM2-lite (English zero-shot)",
+        "model_id": null,
+        "vendor": "zhipu-ai",
+        "measured_at": "2023-06-25",
+        "score": 77.1,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2309.07045v2"
+      }
+    ],
+    "source_url": "https://benchwiki.vercel.app/benchmarks/safetybench"
   },
   {
     "slug": "scrolls",
@@ -4840,6 +5199,74 @@
       }
     ],
     "source_url": "https://benchwiki.vercel.app/benchmarks/soohak"
+  },
+  {
+    "slug": "stereoset",
+    "name": "StereoSet",
+    "capability": "safety-alignment",
+    "languages": [
+      "english"
+    ],
+    "secondary_capabilities": [
+      "knowledge"
+    ],
+    "short_description": "English context-association tests that separate stereotypical preference from basic language-modeling ability.",
+    "launch_date": "2020-04-20",
+    "status": "deprecated",
+    "status_evidence": "StereoSet remains a useful historical bias diagnostic, but its static public data, US-centric stereotypes, and sensitivity to scoring choices make it a weak standalone frontier safety benchmark.",
+    "saturated_date": null,
+    "successor": null,
+    "contamination": {
+      "risk": "high",
+      "refresh_cycle": "static",
+      "test_set_public": true,
+      "mitigation": "Use the released set as a regression diagnostic, disclose the exact split and tokenizer scoring method, and pair it with newer or privately held bias probes."
+    },
+    "human_baseline": {
+      "score": null,
+      "note": "No protocol-comparable human ICAT baseline is reported. ICAT 100 describes an idealized model with perfect language modeling and stereotype score 50, not measured human performance."
+    },
+    "statistical_note": "The released Hugging Face validation data contain 2,123 intersentence and 2,106 intrasentence contexts. The often-quoted roughly 17,000 figure counts candidate sentences, not independent scored contexts. ICAT can hide different LMS/SS trade-offs, so publish all three values per track. Timeline dates are model public-launch dates, not evaluation dates.",
+    "metric_primary": "ICAT score (0-100; higher balances language modeling and stereotype neutrality)",
+    "judge_model": null,
+    "last_updated": "2026-09-14",
+    "leaderboards": [
+      {
+        "name": "StereoSet project",
+        "url": "https://stereoset.mit.edu/",
+        "type": "official"
+      }
+    ],
+    "performance_timeline": [
+      {
+        "model": "BERT-base (test ICAT)",
+        "model_id": null,
+        "vendor": "google",
+        "measured_at": "2018-11-02",
+        "score": 71.2,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2004.09456v1"
+      },
+      {
+        "model": "GPT-2 124M (test ICAT)",
+        "model_id": null,
+        "vendor": "openai",
+        "measured_at": "2019-02-14",
+        "score": 73,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2004.09456v1"
+      },
+      {
+        "model": "XLNet-large (test ICAT)",
+        "model_id": null,
+        "vendor": "google",
+        "measured_at": "2019-06-19",
+        "score": 72,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2004.09456v1"
+      }
+    ],
+    "source_url": "https://benchwiki.vercel.app/benchmarks/stereoset"
   },
   {
     "slug": "structflowbench",
@@ -6049,6 +6476,68 @@
     "source_url": "https://benchwiki.vercel.app/benchmarks/video-mme"
   },
   {
+    "slug": "wildguardtest",
+    "name": "WildGuardTest",
+    "capability": "safety-alignment",
+    "languages": [
+      "english"
+    ],
+    "secondary_capabilities": [
+      "instruction-following"
+    ],
+    "short_description": "A human-annotated test set for prompt harmfulness, response harmfulness, and refusal classification.",
+    "launch_date": "2024-06-26",
+    "status": "active",
+    "status_evidence": "WildGuardTest remains a widely used open moderation test with adversarial and in-the-wild examples across three safety-classification tasks, though its public English-only set is not a deployment policy.",
+    "saturated_date": null,
+    "successor": null,
+    "contamination": {
+      "risk": "medium",
+      "refresh_cycle": "static",
+      "test_set_public": true,
+      "mitigation": "Access is gated by Ai2 responsible-use terms. Keep the official split untouched, report task and adversarial subset, and evaluate on private policy-specific traffic before deployment."
+    },
+    "human_baseline": {
+      "score": null,
+      "note": "The labels come from three independent annotators per prompt-response pair, but no single human model-style F1 baseline is reported."
+    },
+    "statistical_note": "The released test split has 1,725 prompt-response items. Counting three label tasks yields roughly 5K labeled decisions, which should not be reported as 5,000 independent conversations. The timeline plots prompt-harmfulness total F1 only. Timeline dates are moderator-model public-launch dates, not evaluation dates.",
+    "metric_primary": "prompt-harmfulness total F1 (%)",
+    "judge_model": null,
+    "last_updated": "2026-09-14",
+    "leaderboards": [],
+    "performance_timeline": [
+      {
+        "model": "GPT-4 judge (prompt-harmfulness total F1)",
+        "model_id": null,
+        "vendor": "openai",
+        "measured_at": "2023-03-14",
+        "score": 87.9,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2406.18495v3"
+      },
+      {
+        "model": "Llama Guard 2 (prompt-harmfulness total F1)",
+        "model_id": null,
+        "vendor": "meta",
+        "measured_at": "2024-04-18",
+        "score": 70.9,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2406.18495v3"
+      },
+      {
+        "model": "WildGuard (prompt-harmfulness total F1)",
+        "model_id": null,
+        "vendor": "ai2",
+        "measured_at": "2024-06-26",
+        "score": 88.9,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2406.18495v3"
+      }
+    ],
+    "source_url": "https://benchwiki.vercel.app/benchmarks/wildguardtest"
+  },
+  {
     "slug": "winogrande",
     "name": "WinoGrande",
     "capability": "reasoning",
@@ -6169,6 +6658,86 @@
       }
     ],
     "source_url": "https://benchwiki.vercel.app/benchmarks/winogrande"
+  },
+  {
+    "slug": "xstest",
+    "name": "XSTest",
+    "capability": "safety-alignment",
+    "languages": [
+      "english"
+    ],
+    "secondary_capabilities": [
+      "instruction-following"
+    ],
+    "short_description": "A 450-prompt test of whether models refuse unsafe requests without over-refusing superficially similar safe ones.",
+    "launch_date": "2023-08-02",
+    "status": "active",
+    "status_evidence": "XSTest remains a useful two-sided calibration diagnostic because it measures exaggerated refusal alongside harmful compliance, though its small public set should be paired with broader tests.",
+    "saturated_date": null,
+    "successor": null,
+    "contamination": {
+      "risk": "medium",
+      "refresh_cycle": "static",
+      "test_set_public": true,
+      "mitigation": "Keep the official prompt taxonomy intact, publish per-type results, and supplement it with fresh private borderline prompts."
+    },
+    "human_baseline": {
+      "score": null,
+      "note": "No single human score is appropriate. Humans created and labeled the prompts and response taxonomy; the desired direction is compliance on safe prompts and refusal on unsafe prompts."
+    },
+    "statistical_note": "With 250 safe and 200 unsafe prompts, a few responses move category rates visibly. Timeline scores are manual total refusal on unsafe prompts (full plus partial); the model label records the companion safe-prompt total-refusal rate. Timeline dates are model public-launch dates, not evaluation dates.",
+    "metric_primary": "unsafe-prompt total refusal rate (%)",
+    "judge_model": null,
+    "last_updated": "2026-09-14",
+    "leaderboards": [],
+    "performance_timeline": [
+      {
+        "model": "GPT-4 (unsafe total refusal; safe 8.4%)",
+        "model_id": null,
+        "vendor": "openai",
+        "measured_at": "2023-03-14",
+        "score": 99.5,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2308.01263v3"
+      },
+      {
+        "model": "Llama 2.0 prompt (unsafe total refusal; safe 59.6%)",
+        "model_id": null,
+        "vendor": "meta",
+        "measured_at": "2023-07-18",
+        "score": 100,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2308.01263v3"
+      },
+      {
+        "model": "Llama 2.1 prompt (unsafe total refusal; safe 29.6%)",
+        "model_id": null,
+        "vendor": "meta",
+        "measured_at": "2023-07-18",
+        "score": 100,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2308.01263v3"
+      },
+      {
+        "model": "Mistral-Instruct prompt (unsafe total refusal; safe 1.6%)",
+        "model_id": null,
+        "vendor": "mistral-ai",
+        "measured_at": "2023-09-27",
+        "score": 36,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2308.01263v3"
+      },
+      {
+        "model": "Mistral-Guard prompt (unsafe total refusal; safe 18.8%)",
+        "model_id": null,
+        "vendor": "mistral-ai",
+        "measured_at": "2023-09-27",
+        "score": 96.5,
+        "provenance": "independent",
+        "source_url": "https://arxiv.org/html/2308.01263v3"
+      }
+    ],
+    "source_url": "https://benchwiki.vercel.app/benchmarks/xstest"
   },
   {
     "slug": "zeroscrolls",
