@@ -79,6 +79,30 @@
 - **Numbers on disk are raw.** Rounding, percentage conversion and unit formatting happen
   at render time only.
 
+## Security headers
+
+Set in `next.config.ts` for every route, because a static site still has an origin.
+
+| Header | Value | Why |
+|---|---|---|
+| `Content-Security-Policy` | see below | No foreign script origin executes; nothing frames the site |
+| `X-Content-Type-Options` | `nosniff` | |
+| `X-Frame-Options` | `DENY` | Legacy equivalent of `frame-ancestors 'none'` |
+| `Referrer-Policy` | `strict-origin-when-cross-origin` | |
+| `Permissions-Policy` | camera, microphone, geolocation, payment all `()` | The site needs none of them |
+
+`script-src` includes `'unsafe-inline'`, and that is a decision rather than an oversight.
+The App Router emits the RSC payload as inline `<script>` tags; the alternative is
+per-request nonces via middleware, which forces every route to render dynamically and
+trades the entire static-first architecture for one header. The reason it is an acceptable
+trade here specifically: the site renders no user input anywhere. Every page is built from
+JSON committed to the repo, and the single URL parameter it reads (`?tab=`) is matched
+against a fixed list rather than printed. If that ever stops being true — a search box, a
+comment, anything reflected — this trade has to be revisited before the feature ships.
+
+`frame-src` allows exactly one origin, `https://www.youtube-nocookie.com`, for the CampusX
+playlist embedded on the foundations guide.
+
 ## Environment variables
 
 | Var | Values | Purpose |
@@ -92,3 +116,5 @@
 - Initial version.
 - Added the approved motion and scene libraries, and the rule keeping them out of data
   route bundles.
+- Added the security-header block, and recorded why `script-src 'unsafe-inline'` is an
+  accepted trade for a site that renders no user input. Post-launch audit.

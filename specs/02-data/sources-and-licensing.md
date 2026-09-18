@@ -31,6 +31,12 @@ this category forbid exactly what this site does. Read this file before adding a
   elsewhere: "Benchmark metadata from benchwiki", linking to the corresponding benchwiki
   page, not just the homepage.
 - `rel="canonical"` on mirrored benchmark detail pages pointing at the benchwiki original.
+  Those pages are also kept out of `sitemap.xml`: listing a URL while canonicalling it to
+  another domain asks a crawler to do two contradictory things, and the canonical is the
+  half that reflects who owns the record. The consequence is accepted knowingly — this
+  site's own contribution on those pages, the reverse lookup, cannot rank while it lives
+  at a mirrored URL. Giving it a separate indexable home is the fix, and it is a feature,
+  not a metadata tweak.
 - Fetch once daily, server-side, cached. Never proxy user requests to their endpoint.
 - Honour `BENCHWIKI_MODE=link` as a one-variable kill switch — see
   `01-architecture/stack-and-structure.md`.
@@ -162,3 +168,5 @@ this file. No source ships without all six.
   Milestone 2.
 - Added source 5, vendor pricing pages, with OpenRouter as the labelled fallback for price
   and context window. Milestone 3.
+- Mirrored benchmark pages are kept out of the sitemap, so the canonical to benchwiki is
+  not contradicted by this site's own crawl signals. Post-launch audit.

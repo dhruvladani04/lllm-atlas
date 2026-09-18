@@ -23,13 +23,13 @@
 
   /* data palette — used only for the meanings named, never for decoration */
   --status-active-light: #1c6f55;
-  --status-nearing-light: #97650a;
-  --status-saturated-light: #6f736b;
+  --status-nearing-light: #8b5d09;
+  --status-saturated-light: #646760;
   --status-deprecated-light: #9b3232;
   --risk-high-light: #9b3232;
-  --risk-medium-light: #97650a;
+  --risk-medium-light: #8b5d09;
   --provenance-vendor-light: #6b4e9b;
-  --stale-light: #97650a;
+  --stale-light: #8b5d09;
 
   --status-active-dark: #5cbf98;
   --status-nearing-dark: #d9a441;

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="LLM Atlas">
+  <!-- The header's accent mark, carrying a ranking glyph: three bars of descending length.
+       Solid ground rather than transparent so it holds up on a light or a dark tab strip,
+       and three shapes at most because anything finer disappears at 16px. -->
+  <rect width="32" height="32" rx="7" fill="#1D4ED8" />
+  <g fill="#FFFFFF">
+    <rect x="7" y="9" width="18" height="3.5" rx="1.75" />
+    <rect x="7" y="14.25" width="13" height="3.5" rx="1.75" />
+    <rect x="7" y="19.5" width="8" height="3.5" rx="1.75" />
+  </g>
+</svg>

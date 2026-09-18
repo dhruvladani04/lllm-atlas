@@ -33,6 +33,28 @@ function contrast(a: string, b: string): number {
   return (hi + 0.05) / (lo + 0.05);
 }
 
+/**
+ * The badge tint: `color-mix(in srgb, currentColor 12%, transparent)` over a ground.
+ *
+ * This has to be tested, not eyeballed, and testing only against paper and surface is what
+ * let it break once already. Status badges render as tinted pills, so the ground behind a
+ * status label is not paper — it is paper mixed with the label's own colour, which lowers
+ * the contrast of every one of them by roughly 0.7. Amber at 4.80 on paper is 4.11 on its
+ * own tint, and an axe audit caught it in production while this file was still passing.
+ */
+const BADGE_TINT = 0.12;
+
+function tintedGround(colour: string, ground: string): string {
+  const channel = (i: number) => {
+    const fg = Number.parseInt(colour.slice(1 + i * 2, 3 + i * 2), 16);
+    const bg = Number.parseInt(ground.slice(1 + i * 2, 3 + i * 2), 16);
+    return Math.round(BADGE_TINT * fg + (1 - BADGE_TINT) * bg)
+      .toString(16)
+      .padStart(2, "0");
+  };
+  return `#${channel(0)}${channel(1)}${channel(2)}`;
+}
+
 const SCHEMES = ["light", "dark"] as const;
 
 const TEXT_TOKENS = ["ink", "ink-mute", "accent"] as const;
@@ -63,6 +85,15 @@ describe.each(SCHEMES)("%s scheme", (scheme) => {
     // An axe audit caught the saturated grey at 3.75:1 sitting inside a 13px label.
     for (const ground of grounds) {
       expect(contrast(token(`${name}-${scheme}`), ground)).toBeGreaterThanOrEqual(4.5);
+    }
+  });
+
+  it.each(DATA_TOKENS)("--%s reaches 4.5:1 against its own badge tint", (name) => {
+    // Every one of these renders as a pill whose background is a 12% wash of the label's
+    // own colour. That tint, not paper, is the real ground behind the text.
+    const colour = token(`${name}-${scheme}`);
+    for (const ground of grounds) {
+      expect(contrast(colour, tintedGround(colour, ground))).toBeGreaterThanOrEqual(4.5);
     }
   });
 

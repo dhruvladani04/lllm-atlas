@@ -60,13 +60,13 @@ Data palette — used *only* for the meanings listed:
 
 ```
 --status-active       #1C6F55   benchmark still discriminates
---status-nearing      #97650A   nearing saturation
---status-saturated    #6F736B   saturated (deliberately grey: it means "stop reading this")
+--status-nearing      #8B5D09   nearing saturation
+--status-saturated    #646760   saturated (deliberately grey: it means "stop reading this")
 --status-deprecated   #9B3232   deprecated
 --risk-high           #9B3232   high contamination
---risk-medium         #97650A   medium contamination
+--risk-medium         #8B5D09   medium contamination
 --provenance-vendor   #6B4E9B   vendor-reported
---stale               #97650A   source older than 7 days
+--stale               #8B5D09   source older than 7 days
 ```
 
 The data palette above is the light-scheme set. Dark backgrounds need lighter hues to
@@ -129,6 +129,14 @@ text: a small rounded background at low opacity of the badge's own colour, using
 one colour that already carries the fact, never a second hand-picked value. This is
 elevation in service of the data palette, not a departure from it — the colour still means
 only what it always meant.
+
+**The tint is part of the contrast floor.** A pill's background is not paper; it is paper
+mixed with the label's own colour, which costs roughly 0.7 of contrast ratio. The light
+amber and the saturated grey both passed against paper and failed against their own tint
+(4.11 and 4.01), and an axe audit caught them in production while the unit test was still
+green, because the test only knew about paper and surface. Both were darkened, and the
+test now checks every data colour against its tinted ground in both schemes. Changing the
+tint opacity means re-running that check, not eyeballing it.
 
 ## Type
 
