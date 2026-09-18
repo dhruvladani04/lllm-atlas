@@ -3,6 +3,7 @@
     "model_id": "anthropic/claude-opus-5",
     "display_name": "Claude Opus 5",
     "creator": "Anthropic",
+    "modality": "text",
     "released_at": "2026-07-24",
     "open_weights": false,
     "aliases": [
@@ -60,6 +61,7 @@
     "model_id": "anthropic/claude-sonnet-5",
     "display_name": "Claude Sonnet 5",
     "creator": "Anthropic",
+    "modality": "text",
     "released_at": "2026-06-30",
     "open_weights": false,
     "aliases": [
@@ -81,6 +83,7 @@
     "model_id": "anthropic/claude-haiku-4.5",
     "display_name": "Claude Haiku 4.5",
     "creator": "Anthropic",
+    "modality": "text",
     "released_at": "2025-10-15",
     "open_weights": false,
     "aliases": [
@@ -105,6 +108,7 @@
     "model_id": "anthropic/claude-fable-5.1",
     "display_name": "Claude Fable 5.1",
     "creator": "Anthropic",
+    "modality": "text",
     "released_at": "2026-09-01",
     "open_weights": false,
     "aliases": [
@@ -163,6 +167,7 @@
     "model_id": "openai/gpt-5",
     "display_name": "GPT-5",
     "creator": "OpenAI",
+    "modality": "text",
     "released_at": "2025-08-07",
     "open_weights": false,
     "aliases": [
@@ -212,6 +217,7 @@
     "model_id": "google/gemini-2.5-pro",
     "display_name": "Gemini 2.5 Pro",
     "creator": "Google",
+    "modality": "text",
     "released_at": "2025-06-17",
     "open_weights": false,
     "aliases": [
@@ -233,6 +239,7 @@
     "model_id": "meta/llama-4-maverick",
     "display_name": "Llama 4 Maverick",
     "creator": "Meta",
+    "modality": "text",
     "released_at": "2025-04-05",
     "open_weights": true,
     "aliases": [
@@ -254,6 +261,7 @@
     "model_id": "meta/llama-4-scout",
     "display_name": "Llama 4 Scout",
     "creator": "Meta",
+    "modality": "text",
     "released_at": "2025-04-05",
     "open_weights": true,
     "aliases": [
@@ -275,6 +283,7 @@
     "model_id": "deepseek/deepseek-r1",
     "display_name": "DeepSeek-R1",
     "creator": "DeepSeek",
+    "modality": "text",
     "released_at": "2025-01-20",
     "open_weights": true,
     "aliases": [
@@ -296,6 +305,7 @@
     "model_id": "deepseek/deepseek-v3",
     "display_name": "DeepSeek-V3",
     "creator": "DeepSeek",
+    "modality": "text",
     "released_at": "2024-12-26",
     "open_weights": true,
     "aliases": [
@@ -317,6 +327,7 @@
     "model_id": "alibaba/qwen3-235b-a22b",
     "display_name": "Qwen3-235B-A22B",
     "creator": "Alibaba",
+    "modality": "text",
     "released_at": "2025-04-29",
     "open_weights": true,
     "aliases": [
@@ -338,6 +349,7 @@
     "model_id": "xai/grok-4",
     "display_name": "Grok 4",
     "creator": "xAI",
+    "modality": "text",
     "released_at": "2025-07-09",
     "open_weights": false,
     "aliases": [
@@ -359,6 +371,7 @@
     "model_id": "mistral/mistral-large-2",
     "display_name": "Mistral Large 2",
     "creator": "Mistral AI",
+    "modality": "text",
     "released_at": "2024-07-24",
     "open_weights": true,
     "aliases": [
@@ -380,6 +393,7 @@
     "model_id": "openai/gpt-image-1",
     "display_name": "GPT Image 1",
     "creator": "OpenAI",
+    "modality": "image",
     "released_at": "2025-04-23",
     "open_weights": false,
     "aliases": [
@@ -400,6 +414,7 @@
     "model_id": "black-forest-labs/flux-1.1-pro",
     "display_name": "FLUX 1.1 [pro]",
     "creator": "Black Forest Labs",
+    "modality": "image",
     "released_at": "2024-10-03",
     "open_weights": false,
     "aliases": [
@@ -421,6 +436,7 @@
     "model_id": "black-forest-labs/flux-1-dev",
     "display_name": "FLUX.1 [dev]",
     "creator": "Black Forest Labs",
+    "modality": "image",
     "released_at": "2024-08-01",
     "open_weights": true,
     "aliases": [
@@ -442,6 +458,7 @@
     "model_id": "stability/stable-diffusion-3.5-large",
     "display_name": "Stable Diffusion 3.5 Large",
     "creator": "Stability AI",
+    "modality": "image",
     "released_at": "2024-10-22",
     "open_weights": true,
     "aliases": [
@@ -463,6 +480,7 @@
     "model_id": "midjourney/midjourney-v7",
     "display_name": "Midjourney v7",
     "creator": "Midjourney",
+    "modality": "image",
     "released_at": null,
     "open_weights": false,
     "aliases": [
@@ -483,6 +501,7 @@
     "model_id": "google/imagen-3",
     "display_name": "Imagen 3",
     "creator": "Google",
+    "modality": "image",
     "released_at": null,
     "open_weights": false,
     "aliases": [
@@ -503,6 +522,7 @@
     "model_id": "openai/gpt-6-astra",
     "display_name": "GPT-6 Astra",
     "creator": "OpenAI",
+    "modality": "text",
     "released_at": "2026-09-03",
     "open_weights": false,
     "aliases": [
@@ -565,6 +585,7 @@
     "model_id": "google/gemini-3.7-flash",
     "display_name": "Gemini 3.7 Flash",
     "creator": "Google DeepMind",
+    "modality": "text",
     "released_at": "2026-08-13",
     "open_weights": false,
     "aliases": [
@@ -606,6 +627,7 @@
     "model_id": "google/gemini-3.6-flash",
     "display_name": "Gemini 3.6 Flash",
     "creator": "Google DeepMind",
+    "modality": "text",
     "released_at": "2026-07-21",
     "open_weights": false,
     "aliases": [
@@ -654,6 +676,7 @@
     "model_id": "google/gemini-3.5-flash-lite",
     "display_name": "Gemini 3.5 Flash-Lite",
     "creator": "Google DeepMind",
+    "modality": "text",
     "released_at": "2026-07-21",
     "open_weights": false,
     "aliases": [
@@ -701,6 +724,7 @@
     "model_id": "deepseek/deepseek-v4-pro",
     "display_name": "DeepSeek V4 Pro",
     "creator": "DeepSeek",
+    "modality": "text",
     "released_at": "2026-04-24",
     "open_weights": true,
     "aliases": [
@@ -750,6 +774,7 @@
     "model_id": "deepseek/deepseek-v4-flash",
     "display_name": "DeepSeek V4 Flash",
     "creator": "DeepSeek",
+    "modality": "text",
     "released_at": "2026-07-31",
     "open_weights": true,
     "aliases": [
@@ -798,6 +823,7 @@
     "model_id": "xai/grok-4.6",
     "display_name": "Grok 4.6",
     "creator": "xAI",
+    "modality": "text",
     "released_at": "2026-08-12",
     "open_weights": false,
     "aliases": [
@@ -846,6 +872,7 @@
     "model_id": "thinking-machines/inkling",
     "display_name": "Inkling",
     "creator": "Thinking Machines",
+    "modality": "text",
     "released_at": "2026-07-15",
     "open_weights": false,
     "aliases": [
@@ -865,6 +892,7 @@
     "model_id": "anthropic/claude-opus-4",
     "display_name": "Claude Opus 4",
     "creator": "Anthropic",
+    "modality": "text",
     "released_at": "2025-05-22",
     "open_weights": false,
     "aliases": [
@@ -885,6 +913,7 @@
     "model_id": "anthropic/claude-sonnet-4",
     "display_name": "Claude Sonnet 4",
     "creator": "Anthropic",
+    "modality": "text",
     "released_at": "2025-05-22",
     "open_weights": false,
     "aliases": [
@@ -905,6 +934,7 @@
     "model_id": "openai/gpt-4.1",
     "display_name": "GPT-4.1",
     "creator": "OpenAI",
+    "modality": "text",
     "released_at": "2025-04-14",
     "open_weights": false,
     "aliases": [

@@ -53,8 +53,10 @@ export const metadata: Metadata = {
 
 const NAV = [
   { href: "/models", label: "Leaderboard" },
+  { href: "/compare", label: "Compare" },
   { href: "/benchmarks", label: "Benchmarks" },
   { href: "/evals", label: "Evals" },
+  { href: "/methodology", label: "Methodology" },
 ] as const;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -86,7 +88,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               LLM Atlas
             </Link>
             <nav aria-label="Main">
-              <ul className="flex gap-4 text-sm">
+              {/* flex-wrap, not flex: five items no longer fit on one line at 360px, which
+                  the quality floor promises to support. */}
+              <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
                 {NAV.map((item) => (
                   <li key={item.href}>
                     <Link

@@ -29,6 +29,8 @@ export interface MatrixFilters {
   language: string;
   /** The addition no upstream view offers: only benchmarks models on this site are scored on. */
   hasScoresHere: boolean;
+  /** Free-text search over name, slug and description. Empty means no constraint. */
+  query: string;
 }
 
 export const DEFAULT_FILTERS: MatrixFilters = {
@@ -36,6 +38,7 @@ export const DEFAULT_FILTERS: MatrixFilters = {
   refreshCycle: "any",
   language: "any",
   hasScoresHere: false,
+  query: "",
 };
 
 export function applyFilters(
@@ -60,6 +63,24 @@ export function applyFilters(
       return false;
     }
     if (filters.hasScoresHere && !scoredSlugs.has(benchmark.slug)) return false;
+
+    // Matched against what the reader can actually see or would plausibly type: the name,
+    // the slug in the URL, and the one-line description. Not the status evidence or the
+    // contamination prose, where a common word would match almost everything and make the
+    // search feel broken.
+    const query = filters.query.trim().toLowerCase();
+    if (query !== "") {
+      const haystack = [
+        benchmark.name,
+        benchmark.slug,
+        benchmark.short_description,
+        benchmark.capability,
+      ]
+        .join(" ")
+        .toLowerCase();
+      if (!haystack.includes(query)) return false;
+    }
+
     return true;
   });
 }

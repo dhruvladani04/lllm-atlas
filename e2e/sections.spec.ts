@@ -53,3 +53,49 @@ test.describe("benchmarks and evals", () => {
     ).toBeVisible();
   });
 });
+
+test.describe("methodology, compare and export", () => {
+  test("the methodology page states the rules and counts them from real data", async ({
+    page,
+  }) => {
+    await page.goto("/methodology");
+    await expect(page.getByRole("heading", { name: "Methodology", level: 1 })).toBeVisible();
+    // The claim that makes the ranking readable at all.
+    await expect(page.getByText(/best on this benchmark/)).toBeVisible();
+    await expect(page.getByText(/never averages them/)).toBeVisible();
+  });
+
+  test("compare separates comparable benchmarks from partially-measured ones", async ({
+    page,
+  }) => {
+    await page.goto("/compare");
+    const selects = page.locator("select");
+    await selects.nth(0).selectOption({ index: 1 });
+    await selects.nth(1).selectOption({ index: 2 });
+
+    await expect(
+      page.getByRole("heading", { name: /Measured on the same benchmark/ }),
+    ).toBeVisible();
+    // A blank must never be presentable as a low score.
+    await expect(page.getByText(/only the first group can be\s+read as a comparison/)).toBeVisible();
+  });
+
+  test("the export carries its own licensing, so the file stays self-describing", async ({
+    request,
+  }) => {
+    const json = await request.get("/api/scores");
+    expect(json.ok()).toBe(true);
+    const body = (await json.json()) as {
+      _meta: { sources: { source_id: string; redistribution: string }[] };
+      scores: unknown[];
+    };
+    expect(body.scores.length).toBeGreaterThan(0);
+
+    const benchwiki = body._meta.sources.find((s) => s.source_id === "benchwiki");
+    expect(benchwiki?.redistribution).toMatch(/No licence is published/);
+
+    const csv = await request.get("/api/scores.csv");
+    expect(csv.headers()["content-type"]).toContain("text/csv");
+    expect(await csv.text()).toMatch(/^# LLM Atlas/);
+  });
+});

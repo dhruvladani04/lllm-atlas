@@ -32,8 +32,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     entry("/", 1),
     entry("/models", 0.9),
+    entry("/compare", 0.8),
     entry("/benchmarks", 0.8),
     entry("/evals", 0.8),
+    entry("/methodology", 0.7),
     ...loadModels().map((model) => entry(`/models/${model.model_id}`, 0.6)),
     ...guideSlugs().map((slug) => entry(`/evals/${slug}`, 0.7)),
   ];

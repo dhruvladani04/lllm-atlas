@@ -80,6 +80,7 @@ function model(model_id: string, overrides: Partial<Model> = {}): Model {
     model_id,
     display_name: model_id,
     creator: "ExampleCorp",
+    modality: "text",
     released_at: "2026-01-01",
     open_weights: false,
     aliases: [],
@@ -263,5 +264,38 @@ describe("buildRows", () => {
 
     expect(result.rows).toHaveLength(2);
     expect(result.rows[0]?.variant).toBe("high");
+  });
+});
+
+describe("modality keeps a tab's unranked block honest", () => {
+  it("omits an image model from the text tab's unranked block", () => {
+    // An image generator has no path to a score on a text benchmark, so listing it as
+    // "released, not yet independently scored" promises a gap that will never close.
+    const result = buildRows({
+      scores: [score("a", ACTIVE, 90)],
+      models: [
+        model("a"),
+        model("an-image-model", { modality: "image", state: "released_unranked" }),
+      ],
+      capabilityIndex: new Map(),
+      tab: "text",
+      hideSaturated: true,
+    });
+
+    expect(result.unranked.map((row) => row.model.model_id)).not.toContain(
+      "an-image-model",
+    );
+  });
+
+  it("still lists a text model with no scores", () => {
+    const result = buildRows({
+      scores: [score("a", ACTIVE, 90)],
+      models: [model("a"), model("unscored", { state: "released_unranked" })],
+      capabilityIndex: new Map(),
+      tab: "text",
+      hideSaturated: true,
+    });
+
+    expect(result.unranked.map((row) => row.model.model_id)).toContain("unscored");
   });
 });

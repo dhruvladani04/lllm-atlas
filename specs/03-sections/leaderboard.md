@@ -157,6 +157,33 @@ that never ends, never a blank table.
   "Released, not yet independently scored", ordered by release date, showing days elapsed.
   This block is a feature. Do not merge it into the main table and do not omit it.
 
+## Compare view
+
+Route: `/compare`. Selection lives in component state, not the URL — the route is static,
+and reading a search parameter during render is what caused the hydration mismatch the tabs
+had to be rewritten to avoid.
+
+The view exists to answer the question a leaderboard raises and does not settle: how do
+these two actually differ. Its one non-obvious rule is the reason it is worth building at
+all:
+
+**Two models are only comparable on a benchmark both were measured on.** A side-by-side
+table that shows a number against a blank invites the reader to read the blank as a loss,
+when it means nobody ran the test. So the comparison is split into "measured on the same
+benchmark" and "measured on only some of them", and the second group is stated as an
+absence of measurement rather than rendered as an empty cell.
+
+Every compared score keeps its health flags and provenance. Two models can be compared
+perfectly fairly on a benchmark that no longer separates anyone, and the result still means
+little — the flags are what stop the comparison from overstating itself.
+
+## Search
+
+A text filter on each catalogue, client-side over prerendered data: models by name, creator
+or id; benchmarks by name, slug, description or capability. Matching stops there
+deliberately — searching the status evidence and contamination prose would match a common
+word against almost every record and make the search feel broken.
+
 ## Model detail page
 
 Sections in this order:
@@ -205,3 +232,5 @@ Decide." Copy guidance is in `04-design/design-system.md`.
 - One row per model by default, carrying its best configuration and saying how many it
   beat; a toggle expands every variant. The ranking states how much of the benchmark
   universe it can speak to. Post-launch audit.
+- Added the compare view and catalogue search; recorded that comparability requires a
+  benchmark both models were measured on. Post-launch.

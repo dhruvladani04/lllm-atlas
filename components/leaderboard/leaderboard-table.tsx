@@ -193,6 +193,7 @@ export function LeaderboardTable({
   const [openWeightsOnly, setOpenWeightsOnly] = useState(false);
   const [creator, setCreator] = useState<string>("all");
   const [everyConfig, setEveryConfig] = useState(false);
+  const [query, setQuery] = useState("");
   const [body] = useAutoAnimate<HTMLTableSectionElement>();
 
   const data = hideSaturated ? hidden : shown;
@@ -228,10 +229,21 @@ export function LeaderboardTable({
   );
 
   const rows = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+
     const filtered = data.rows.filter((row) => {
       if (independentOnly && row.provenance === "vendor-reported") return false;
       if (openWeightsOnly && models[row.model_id]?.open_weights !== true) return false;
       if (creator !== "all" && models[row.model_id]?.creator !== creator) return false;
+      if (needle !== "") {
+        // The id is searchable as well as the name: it is what the URL shows and what
+        // someone who already knows the model is most likely to type.
+        const model = models[row.model_id];
+        const haystack = [row.model_id, model?.display_name ?? "", model?.creator ?? ""]
+          .join(" ")
+          .toLowerCase();
+        if (!haystack.includes(needle)) return false;
+      }
       return true;
     });
 
@@ -271,6 +283,7 @@ export function LeaderboardTable({
     meta,
     models,
     openWeightsOnly,
+    query,
     sort,
   ]);
 
@@ -307,6 +320,17 @@ export function LeaderboardTable({
               {data.excluded.benchmarks === 1 ? "" : "s"})
             </span>
           ) : null}
+        </label>
+
+        <label className="flex items-center gap-2">
+          <span className="sr-only">Search models</span>
+          <input
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Search models"
+            className="w-44 rounded-sm border border-rule bg-surface px-2 py-1"
+          />
         </label>
 
         <label className="flex items-center gap-2">

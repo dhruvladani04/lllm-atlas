@@ -12,10 +12,22 @@ export const ModelVariant = z.object({
 });
 export type ModelVariant = z.infer<typeof ModelVariant>;
 
+/**
+ * What kind of thing the model produces, and therefore which ranking can ever apply to it.
+ *
+ * Not "what it accepts": most text models read images, and that is irrelevant here. An
+ * image generator can never hold a score on a text benchmark, so listing one under the text
+ * tab as "released, not yet independently scored" describes a gap that will never close.
+ * Six of the seven models in that block were image models before this field existed.
+ */
+export const Modality = z.enum(["text", "image"]);
+export type Modality = z.infer<typeof Modality>;
+
 export const RegistryModel = z.object({
   model_id: z.string().min(1),
   display_name: z.string().min(1),
   creator: z.string().min(1),
+  modality: Modality,
   released_at: IsoDate.nullable(),
   open_weights: z.boolean().nullable(),
   aliases: z.array(z.string().min(1)),

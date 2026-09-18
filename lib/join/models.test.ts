@@ -91,6 +91,7 @@ describe("buildModels", () => {
       model_id: "anthropic/claude-opus-5",
       display_name: "Claude Opus 5",
       creator: "Anthropic",
+      modality: "text",
       released_at: "2026-01-15",
       open_weights: false,
       aliases: ["claude-opus-5"],

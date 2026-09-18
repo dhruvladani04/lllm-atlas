@@ -285,6 +285,10 @@ export function buildRows(input: BuildRowsInput): BuildRowsResult {
   const scoredAtAll = new Set(all.map((score) => score.model_id));
 
   const unranked: UnrankedRow[] = input.models
+    // Only models this tab could ever rank. An image generator has no path to a score on a
+    // text benchmark, so listing it here as "released, not yet independently scored"
+    // describes a gap that will never close — it belongs to the image tab's own ranking.
+    .filter((model) => model.modality === "text")
     .filter((model) => !ranked.has(model.model_id))
     .map((model) => ({
       model,

@@ -90,3 +90,14 @@ This is intentionally manual in v1. Automating it means automating the wrong-mer
 - Initial version.
 - Clarified that the registry holds identity only, and that `state` is derived rather
   than hand-set.
+
+## Modality
+
+Every registry entry declares a `modality` — `text` or `image` — meaning *what the model
+produces*, not what it accepts. Most text models read images and that is irrelevant here.
+
+The field exists because a ranking has to know which models it could ever include. An image
+generator has no path to a score on a text benchmark, so listing one in the text tab's
+"released, not yet independently scored" block promises a gap that will never close. Six of
+the seven models in that block were image models before this field existed.
+- Added `modality`, so a ranking only lists models it could ever include. Post-launch.

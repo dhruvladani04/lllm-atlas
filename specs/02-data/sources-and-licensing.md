@@ -160,6 +160,31 @@ llm-stats, benchlm, whatllm, modelgrep, skiln and similar sites re-aggregate the
 above under their own weightings. Do not ingest them. They are useful for cross-checking
 during development; they are not sources of truth.
 
+## Bulk export
+
+`/api/scores` (JSON) and `/api/scores.csv` publish the joined corpus, including benchmark
+health records derived from benchwiki.
+
+**This is a deliberate decision with a known risk, not an oversight.** Epoch's scores are
+CC BY 4.0 and redistributing them with attribution is exactly what that licence is for.
+benchwiki's health records are the harder case: no licence is published, and this file
+treats that as permission-not-granted, which binds a bulk download more tightly than a
+rendered page — a page is a citation, a download is a copy.
+
+The mitigations are part of the payload rather than a footnote:
+
+- Every export carries a per-source block naming the licence, the attribution string, the
+  canonical site, and — for benchwiki — a plain statement that no licence is published,
+  that permission has been neither granted nor refused, and that anyone redistributing
+  further inherits that uncertainty.
+- The CSV repeats it in header comments, so the file stays self-describing once detached
+  from this site.
+- Every row keeps its own `source_id`, `source_url` and `fetched_at`.
+
+**If benchwiki objects, the health records come out of the export.** That is the response,
+not a negotiation: the site's position throughout is that an unlicensed source is a guest.
+Revisiting this belongs in this file, with a changelog entry, the same as adding a source.
+
 ## Adding a source later
 
 A new source requires, in this order: a stated licence permitting redistribution, an
@@ -178,3 +203,5 @@ this file. No source ships without all six.
 - Mirrored benchmark pages are kept out of the sitemap, so the canonical to benchwiki is
   not contradicted by this site's own crawl signals. Post-launch audit.
 - Language values are normalised on ingest for true synonyms only. Post-launch audit.
+- Added the bulk export section: the decision to include benchwiki health records, its
+  risk, the in-payload mitigations, and the response if benchwiki objects. Post-launch.

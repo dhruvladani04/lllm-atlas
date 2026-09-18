@@ -49,6 +49,17 @@ export function MatrixView({
     <div>
       <div className="flex flex-wrap items-center gap-x-6 gap-y-3 border-y border-rule py-3 text-sm">
         <label className="flex items-center gap-2">
+          <span className="sr-only">Search benchmarks</span>
+          <input
+            type="search"
+            value={filters.query}
+            onChange={(event) => set("query", event.target.value)}
+            placeholder="Search benchmarks"
+            className="w-52 rounded-sm border border-rule bg-surface px-2 py-1"
+          />
+        </label>
+
+        <label className="flex items-center gap-2">
           Contamination risk
           <select
             className="border border-rule bg-surface px-2 py-1"
