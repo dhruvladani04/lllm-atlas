@@ -4,6 +4,7 @@ import type { Model } from "@/lib/schemas/model";
 import type {
   BuildRowsResult,
   LeaderboardRow,
+  ReferenceRationale,
   UnrankedRow,
 } from "@/lib/leaderboard/rows";
 
@@ -54,6 +55,8 @@ export interface TableUnranked {
 
 export interface TableData {
   reference: { slug: string; name: string; status: TableRow["benchmark_status"] } | null;
+  /** Why a less-than-active benchmark is the ranking basis. Null when it is active. */
+  rationale: ReferenceRationale | null;
   rows: TableRow[];
   unranked: TableUnranked[];
   excluded: { benchmarks: number; scores: number };
@@ -101,6 +104,7 @@ export function toTableData(result: BuildRowsResult): TableData {
             name: result.reference.name,
             status: result.reference.status,
           },
+    rationale: result.rationale,
     rows: result.rows.map(toRow),
     unranked: result.unranked.map((entry) => ({
       model_id: entry.model.model_id,

@@ -7,7 +7,7 @@ import { VerifiedStamp } from "@/components/evals/verified-stamp";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Evals — LLM Atlas",
+  title: "Evals",
   description:
     "Evaluating your own GenAI application: what to score per archetype, and what each measure misses.",
 };

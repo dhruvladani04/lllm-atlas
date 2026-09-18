@@ -173,6 +173,9 @@ async function main(): Promise<void> {
     ...new Set([...epochHarvest.unresolvedBenchmarks, ...unmatchedBenchmarks]),
   ].sort();
   writeDerived("unresolved-benchmarks.json", allUnmatchedBenchmarks, "data/registry");
+  // Rows the source contradicted itself on. Not unresolved — resolvable twice, to two
+  // different answers — so they get their own queue rather than being mixed in above.
+  writeDerived("conflicting-rows.json", epochHarvest.conflicts, "data/registry");
   writeUnresolved(
     UNRESOLVED_PATH,
     mergeUnresolved(loadUnresolved(), unresolvedModels, date),
@@ -182,7 +185,8 @@ async function main(): Promise<void> {
   console.log(
     `[join] ${joined.length} joined scores | ${arenaHarvest.scores.length} arena rows | ` +
       `${unresolvedModels.length} unresolved model names | ` +
-      `${allUnmatchedBenchmarks.length} unmatched benchmarks`,
+      `${allUnmatchedBenchmarks.length} unmatched benchmarks | ` +
+      `${epochHarvest.conflicts.length} contradictory rows dropped`,
   );
 
   const log = appendRun(readIngestionLog(), {

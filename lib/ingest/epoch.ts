@@ -136,7 +136,12 @@ export function readEpochBundle(zip: Uint8Array): {
         score,
         release_date: optional(result, "Release date"),
         organization: optional(result, "Organization"),
-        harness: optional(result, "Harness", "Scaffold"),
+        // Terminal-Bench names this column "Agent" ("Goose", "Codex CLI", …). Missing it
+        // meant five distinct agent runs of one model arrived as five rows identical in
+        // every field but their score — indistinguishable to a reader, and colliding on
+        // the key the Score schema calls the row's identity. The harness is not a detail
+        // on an agentic benchmark; it is half of what was measured.
+        harness: optional(result, "Harness", "Scaffold", "Agent"),
         source_link: optional(result, "Source link", "Source"),
       });
     }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Design tokens — LLM Atlas",
+  title: "Design tokens",
   robots: { index: false, follow: false },
 };
 

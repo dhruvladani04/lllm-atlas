@@ -35,6 +35,62 @@ const UNRANKED_REASON: Record<UnrankedRow["reason"], string> = {
   announced: "announced, not yet servable",
 };
 
+/**
+ * The ranking basis defending itself.
+ *
+ * Coverage beats health when picking a reference benchmark, which is the right rule and an
+ * uncomfortable-looking one: this table currently ranks on a benchmark flagged "nearing
+ * saturation" and "superseded". Stating the trade-off is the difference between a site that
+ * contradicts its own thesis and one that applies it to itself.
+ */
+function ReferenceRationaleNote({
+  reference,
+  rationale,
+}: {
+  reference: NonNullable<TableData["reference"]>;
+  rationale: TableData["rationale"];
+}) {
+  if (rationale === null) return null;
+
+  const successorUnscored =
+    rationale.successor !== null && rationale.successor.coverage === 0;
+  const healthierThinner =
+    rationale.healthier !== null && rationale.healthier.coverage < rationale.coverage;
+
+  if (!successorUnscored && !healthierThinner) return null;
+
+  return (
+    <>
+      It is not the healthiest benchmark here, and it is the basis anyway because it is the
+      most measured:{" "}
+      {successorUnscored ? (
+        <>
+          its successor{" "}
+          <Link
+            href={`/benchmarks/${rationale.successor?.slug}`}
+            className="underline-offset-2 hover:underline"
+          >
+            {rationale.successor?.name}
+          </Link>{" "}
+          has no scores on this site yet, so ranking on it would rank nothing
+        </>
+      ) : (
+        <>
+          <Link
+            href={`/benchmarks/${rationale.healthier?.slug}`}
+            className="underline-offset-2 hover:underline"
+          >
+            {rationale.healthier?.name}
+          </Link>{" "}
+          is healthier but covers {rationale.healthier?.coverage} of the{" "}
+          {rationale.coverage} model-variants {reference.name} does
+        </>
+      )}
+      . Read the ranking as &ldquo;best on {reference.name}&rdquo;, not &ldquo;best&rdquo;.{" "}
+    </>
+  );
+}
+
 function daysSince(date: string | null): number | null {
   if (date === null) return null;
   const then = Date.parse(date);
@@ -216,6 +272,10 @@ export function LeaderboardTable({
               instead.{" "}
             </>
           ) : null}
+          <ReferenceRationaleNote
+            reference={data.reference}
+            rationale={data.rationale}
+          />
           <FreshnessStamp fetchedAt={fetchedAt} />
         </p>
       )}
@@ -223,7 +283,7 @@ export function LeaderboardTable({
       {data.rows.length > 0 ? (
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-sm">
-            <thead className="sticky top-12 z-[5] bg-paper shadow-sm">
+            <thead className="sticky top-0 z-[5] bg-paper shadow-sm">
               <tr className="border-b border-rule-strong text-left">
                 <th scope="col" className="py-2 pr-3 font-medium">
                   #

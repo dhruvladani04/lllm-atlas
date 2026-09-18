@@ -100,6 +100,64 @@ export function selectReferenceBenchmark(
   return candidates[0]?.benchmark ?? null;
 }
 
+/**
+ * Why *this* benchmark and not a healthier one.
+ *
+ * Coverage wins over health in `referenceCandidates`, which is the right rule — ranking on
+ * a pristine benchmark two models share tells a reader less than ranking on a tired one
+ * forty-nine of them share. But applied silently it reads as the site contradicting itself:
+ * the home page says not to quote saturated numbers, and then the leaderboard ranks on a
+ * benchmark carrying a "superseded" flag without explanation.
+ *
+ * So the rule states its own reasoning. Where the chosen reference is anything less than
+ * `active`, the UI names the healthier benchmark that lost and what it lost on, and names
+ * the successor's coverage where a successor exists. The reader can then disagree with the
+ * trade-off, which is the point — a hidden trade-off is not one they can check.
+ */
+export interface ReferenceRationale {
+  coverage: number;
+  /** The most-covered candidate with a strictly healthier status, where one exists. */
+  healthier: { slug: string; name: string; coverage: number } | null;
+  /** The reference's named successor and how many model-variants here are scored on it. */
+  successor: { slug: string; name: string; coverage: number } | null;
+}
+
+export function explainReference(
+  reference: Benchmark,
+  candidates: readonly ReferenceCandidate[],
+  /** Slug to display name, so a successor with no scores here is still named properly. */
+  names: ReadonlyMap<string, string> = new Map(),
+): ReferenceRationale {
+  const chosen = candidates.find((candidate) => candidate.slug === reference.slug);
+  const healthier =
+    candidates.find(
+      (candidate) =>
+        STATUS_PRIORITY[candidate.benchmark.status] < STATUS_PRIORITY[reference.status],
+    ) ?? null;
+
+  return {
+    coverage: chosen?.coverage ?? 0,
+    healthier:
+      healthier === null
+        ? null
+        : {
+            slug: healthier.slug,
+            name: healthier.benchmark.name,
+            coverage: healthier.coverage,
+          },
+    successor:
+      reference.successor === null
+        ? null
+        : {
+            slug: reference.successor,
+            name: names.get(reference.successor) ?? reference.successor,
+            coverage:
+              candidates.find((candidate) => candidate.slug === reference.successor)
+                ?.coverage ?? 0,
+          },
+  };
+}
+
 export type RowProvenance = "independent" | "vendor-reported" | "mixed";
 
 export interface LeaderboardRow {
@@ -149,10 +207,14 @@ export interface BuildRowsInput {
   capabilityIndex: ReadonlyMap<string, CapabilityIndexEntry>;
   tab: Exclude<Tab, "image">;
   hideSaturated: boolean;
+  /** Slug to display name for every known benchmark, not only the scored ones. */
+  benchmarkNames?: ReadonlyMap<string, string>;
 }
 
 export interface BuildRowsResult {
   reference: Benchmark | null;
+  /** Null when the reference is `active` and needs no defending. */
+  rationale: ReferenceRationale | null;
   rows: LeaderboardRow[];
   unranked: UnrankedRow[];
   /** What the saturated toggle is keeping out of this view, so the control can say so. */
@@ -167,7 +229,15 @@ export function buildRows(input: BuildRowsInput): BuildRowsResult {
   const inTab = input.hideSaturated
     ? all.filter((score) => isDiscriminating(score.benchmark))
     : all;
-  const reference = selectReferenceBenchmark(inTab, input.hideSaturated);
+  const candidates = referenceCandidates(inTab).filter((candidate) =>
+    input.hideSaturated ? isDiscriminating(candidate.benchmark) : true,
+  );
+  const reference = candidates[0]?.benchmark ?? null;
+  // An `active` reference is self-justifying; anything else owes the reader a reason.
+  const rationale =
+    reference !== null && reference.status !== "active"
+      ? explainReference(reference, candidates, input.benchmarkNames)
+      : null;
   const excludedScores = all.length - inTab.length;
   const excludedBenchmarks = new Set(
     all
@@ -236,6 +306,7 @@ export function buildRows(input: BuildRowsInput): BuildRowsResult {
 
   return {
     reference,
+    rationale,
     rows,
     unranked,
     excluded: {

@@ -41,10 +41,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const benchmark = loadBenchmarks().find((entry) => entry.slug === slug);
-  if (benchmark === undefined) return { title: "Benchmark — LLM Atlas" };
+  if (benchmark === undefined) return { title: "Benchmark" };
 
   return {
-    title: `${benchmark.name} — LLM Atlas`,
+    title: `${benchmark.name}`,
     description: benchmark.short_description,
     alternates: { canonical: benchwikiUrl(benchmark.slug) },
   };

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { siteUrl } from "@/app/layout";
+import { siteUrl } from "@/lib/config";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -11,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: "/tokens",
       },
     ],
-    sitemap: new URL("/sitemap.xml", siteUrl).toString(),
+    sitemap: new URL("/sitemap.xml", siteUrl()).toString(),
   };
 }

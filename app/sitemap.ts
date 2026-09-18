@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { loadBenchmarks, loadModels } from "@/lib/data/derived";
 import { guideSlugs } from "@/lib/evals/load";
 import { benchwikiMode } from "@/lib/config";
-import { siteUrl } from "@/app/layout";
+import { siteUrl } from "@/lib/config";
 
 /**
  * Every route the site actually serves. Benchmark detail pages are omitted in link mode,
@@ -12,7 +12,7 @@ import { siteUrl } from "@/app/layout";
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const entry = (path: string, priority: number) => ({
-    url: new URL(path, siteUrl).toString(),
+    url: new URL(path, siteUrl()).toString(),
     lastModified: now,
     priority,
   });

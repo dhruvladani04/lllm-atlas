@@ -49,7 +49,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const model = findModel(slug);
   return {
-    title: model === null ? "Model — LLM Atlas" : `${model.display_name} — LLM Atlas`,
+    title: model === null ? "Model" : `${model.display_name}`,
   };
 }
 
@@ -278,6 +278,11 @@ function ScoreTable({ scores }: { scores: readonly JoinedScore[] }) {
             <th scope="col" className="py-2 pr-3 font-medium">
               Benchmark
             </th>
+            {/* Without this the reasoning-effort variants read as one benchmark scored
+                six different ways for no stated reason. */}
+            <th scope="col" className="py-2 pr-3 font-medium">
+              Config
+            </th>
             <th scope="col" className="py-2 pr-3 text-right font-medium">
               Score
             </th>
@@ -315,6 +320,13 @@ function ScoreTable({ scores }: { scores: readonly JoinedScore[] }) {
                 <span className="block">
                   <StatusChip status={score.benchmark.status} />
                 </span>
+              </td>
+              <td className="py-2 pr-3 font-mono text-xs">
+                {score.variant === "base" ? (
+                  <span className="text-ink-mute">base</span>
+                ) : (
+                  score.variant
+                )}
               </td>
               <td className="py-2 pr-3 text-right">
                 <ScoreCell score={score} />

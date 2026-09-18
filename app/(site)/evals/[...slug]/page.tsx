@@ -26,9 +26,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const guide = loadGuide(slug.join("/"));
-  if (guide === null) return { title: "Guide — LLM Atlas" };
+  if (guide === null) return { title: "Guide" };
   return {
-    title: `${guide.frontmatter.title} — LLM Atlas`,
+    title: `${guide.frontmatter.title}`,
     description: guide.frontmatter.summary,
   };
 }

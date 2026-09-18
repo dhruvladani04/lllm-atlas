@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
+import { siteUrl } from "@/lib/config";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
@@ -24,13 +25,11 @@ const sourceSerif = Source_Serif_4({
   display: "swap",
 });
 
-export const siteUrl = process.env.SITE_URL ?? "http://localhost:3000";
-
 const DESCRIPTION =
   "Model scores shown with the health of the benchmark that produced them and the provenance of the number.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(siteUrl()),
   title: {
     default: "LLM Atlas",
     template: "%s — LLM Atlas",
@@ -42,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "LLM Atlas",
     title: "LLM Atlas",
     description: DESCRIPTION,
-    url: siteUrl,
+    url: siteUrl(),
   },
   twitter: {
     card: "summary",
@@ -72,7 +71,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
 
-        <header className="sticky top-0 z-10 border-b border-rule bg-paper shadow-sm">
+        {/* Deliberately not sticky. The leaderboard's own table header is sticky, and two
+            stacked sticky elements have to agree on a pixel offset that the nav breaks by
+            wrapping to two lines below ~400px — the table header would pin underneath it
+            at exactly the widths the quality floor promises to support. Between pinning
+            the nav and pinning the column headers of a 49-row table, the table wins. */}
+        <header className="border-b border-rule bg-paper shadow-sm">
           <div className="mx-auto flex max-w-[1400px] flex-wrap items-baseline gap-x-6 gap-y-2 px-6 py-3">
             <Link
               href="/"

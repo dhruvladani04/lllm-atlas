@@ -22,6 +22,63 @@ export interface ScoreHarvest {
   scores: Score[];
   unresolvedModels: UnresolvedSighting[];
   unresolvedBenchmarks: string[];
+  /** Rows dropped because the source contradicted itself — see `contradictoryRow`. */
+  conflicts: string[];
+}
+
+/**
+ * Epoch's CSVs carry a model twice: once as `model_version` (`claude-opus-5_max`) and once
+ * as `display_name` ("Claude Opus 5 (Max)"). Usually they agree. Where they do not, the
+ * row is a transcription error upstream, and a real one: ARC-AGI-2 ships a row whose
+ * `model_version` says `_max` while its `display_name` says "(High)", carrying the same
+ * score as the genuine `_high` row. Trusting `model_version` invents a "max" score that
+ * nobody measured and that then collides with the real one.
+ *
+ * There is no way to tell which half of a contradictory row is right, so the row is
+ * dropped and recorded rather than guessed at — the same rule the registry applies to a
+ * name it cannot resolve.
+ */
+function contradictoryRow(
+  models: RegistryIndex,
+  modelVersion: string,
+  displayName: string | null,
+): boolean {
+  if (displayName === null) return false;
+  const byVersion = resolveModelName(models, modelVersion);
+  const byDisplay = resolveModelName(models, displayName);
+  if (!byVersion.resolved || !byDisplay.resolved) return false;
+  return (
+    byVersion.model_id !== byDisplay.model_id || byVersion.variant !== byDisplay.variant
+  );
+}
+
+/**
+ * Epoch also ships byte-identical duplicate rows (ARC-AGI-2 lists GPT-5 (Low) at 1.94%
+ * twice). Collapsing those loses nothing; two rows differing in *value* are never merged
+ * here, because that would be averaging two different claims.
+ */
+function dropExactDuplicates(scores: readonly Score[]): Score[] {
+  const seen = new Set<string>();
+  const kept: Score[] = [];
+  for (const score of scores) {
+    const key = [
+      score.model_id,
+      score.variant,
+      score.benchmark_slug,
+      score.harness ?? "none",
+      score.provenance,
+      score.measured_at ?? "none",
+      // Epoch ships the same measurement at both 0.283 and 0.28300000000000003; scaling to
+      // percent turns that into 28.299999999999997 vs 28.300000000000004. Comparing the raw
+      // floats would call one measurement two, so identity rounds to a precision far finer
+      // than any score is actually reported at.
+      score.value.toFixed(6),
+    ].join("#");
+    if (seen.has(key)) continue;
+    seen.add(key);
+    kept.push(score);
+  }
+  return kept;
 }
 
 function collect(): {
@@ -71,6 +128,7 @@ export function harvestEpochScores(
 ): ScoreHarvest {
   const found = collect();
   const scores: Score[] = [];
+  const conflicts: string[] = [];
 
   for (const meta of bundle.benchmarks) {
     const benchmark = resolveBenchmarkName(benchmarks, meta.benchmark);
@@ -80,6 +138,13 @@ export function harvestEpochScores(
     }
 
     for (const row of bundle.results.get(meta.benchmark) ?? []) {
+      if (contradictoryRow(models, row.model_version, row.display_name)) {
+        conflicts.push(
+          `${meta.benchmark}: "${row.model_version}" vs "${row.display_name}" resolve to different models`,
+        );
+        continue;
+      }
+
       const resolution = resolveModelName(models, row.model_version).resolved
         ? resolveModelName(models, row.model_version)
         : resolveModelName(models, row.display_name ?? row.model_version);
@@ -115,9 +180,10 @@ export function harvestEpochScores(
   }
 
   return {
-    scores,
+    scores: dropExactDuplicates(scores),
     unresolvedModels: found.models,
     unresolvedBenchmarks: [...found.benchmarks].sort(),
+    conflicts: conflicts.sort(),
   };
 }
 
@@ -170,8 +236,9 @@ export function harvestArenaScores(
   }
 
   return {
-    scores,
+    scores: dropExactDuplicates(scores),
     unresolvedModels: found.models,
     unresolvedBenchmarks: [],
+    conflicts: [],
   };
 }

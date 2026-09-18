@@ -9,7 +9,7 @@ import { BenchwikiAttribution } from "@/components/benchmarks/attribution";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Benchmarks — LLM Atlas",
+  title: "Benchmarks",
   description:
     "Which benchmarks still discriminate between models, and which have been saturated, deprecated or contaminated.",
 };

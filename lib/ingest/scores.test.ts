@@ -246,3 +246,112 @@ describe("harvestArenaScores", () => {
     expect(unresolvedModels[0]?.name).toBe("gpt-image-2.5-sunburst");
   });
 });
+
+describe("contradictory and duplicate source rows", () => {
+  const source = epochSourceMeta(NOW);
+
+  function gpqaBundle(
+    rows: EpochBundle["results"] extends Map<string, infer R> ? R : never,
+  ): EpochBundle {
+    return {
+      benchmarks: [
+        {
+          benchmark: "GPQA",
+          in_eci: true,
+          source_file: "gpqa.csv",
+          score_column: "Score",
+          scale: 1,
+          random_baseline: 0.25,
+          score_ceiling: 1,
+          release_date: null,
+          superseded_by: null,
+        },
+      ],
+      results: new Map([["GPQA", rows]]),
+      capabilityIndex: [],
+    };
+  }
+
+  const row = (over: Record<string, unknown>) => ({
+    model_version: "claude-opus-5_max",
+    display_name: "Claude Opus 5 (Max)",
+    score: 0.9,
+    release_date: "2026-07-24",
+    organization: "Anthropic",
+    harness: null,
+    source_link: null,
+    ...over,
+  });
+
+  it("drops a row whose model_version and display_name name different variants", () => {
+    // Epoch really ships this: a `_max` model_version carrying a "(High)" display name and
+    // the High score. Trusting either half invents a measurement nobody made.
+    const { scores, conflicts } = harvestEpochScores(
+      gpqaBundle([row({ display_name: "Claude Opus 5 (High)", score: 0.88 })]),
+      models,
+      benchmarks,
+      source,
+    );
+    expect(scores).toHaveLength(0);
+    expect(conflicts).toHaveLength(1);
+    expect(conflicts[0]).toContain("claude-opus-5_max");
+  });
+
+  it("keeps a row whose two names agree", () => {
+    const { scores, conflicts } = harvestEpochScores(
+      gpqaBundle([row({})]),
+      models,
+      benchmarks,
+      source,
+    );
+    expect(scores).toHaveLength(1);
+    expect(conflicts).toHaveLength(0);
+  });
+
+  it("collapses byte-identical duplicate rows", () => {
+    const { scores } = harvestEpochScores(
+      gpqaBundle([row({}), row({})]),
+      models,
+      benchmarks,
+      source,
+    );
+    expect(scores).toHaveLength(1);
+  });
+
+  it("treats float noise as one measurement, not two", () => {
+    // 0.283 and 0.28300000000000003 are the same number reported twice.
+    const { scores } = harvestEpochScores(
+      gpqaBundle([row({ score: 0.283 }), row({ score: 0.28300000000000003 })]),
+      models,
+      benchmarks,
+      source,
+    );
+    expect(scores).toHaveLength(1);
+  });
+
+  it("keeps two genuinely different scores apart", () => {
+    const { scores } = harvestEpochScores(
+      gpqaBundle([row({ score: 0.9 }), row({ score: 0.7 })]),
+      models,
+      benchmarks,
+      source,
+    );
+    expect(scores).toHaveLength(2);
+  });
+
+  it("keeps the same model under two harnesses apart", () => {
+    // Terminal-Bench measures a model once per agent scaffold; the harness is half of
+    // what was measured, not a detail.
+    const { scores } = harvestEpochScores(
+      gpqaBundle([
+        row({ harness: "Claude Code", score: 0.9 }),
+        row({ harness: "Goose", score: 0.7 }),
+      ]),
+      models,
+      benchmarks,
+      source,
+    );
+    expect(scores).toHaveLength(2);
+    expect(scores.map((s) => s.harness).sort()).toEqual(["Claude Code", "Goose"]);
+  });
+});

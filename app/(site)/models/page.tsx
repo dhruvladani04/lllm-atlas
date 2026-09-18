@@ -4,6 +4,7 @@ import {
   loadCapabilityIndex,
   loadFreshness,
   loadImageLeaderboard,
+  loadBenchmarks,
   loadJoinedScores,
   loadModels,
 } from "@/lib/data/derived";
@@ -22,7 +23,7 @@ import { Leaderboard } from "@/components/leaderboard/leaderboard";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Leaderboard — LLM Atlas",
+  title: "Leaderboard",
   description:
     "Model scores shown with the health of the benchmark that produced them and the provenance of the number.",
 };
@@ -33,6 +34,12 @@ export default function ModelsPage() {
   const freshness = loadFreshness();
   const indexFile = loadCapabilityIndex();
   const image = loadImageLeaderboard();
+
+  // Names for every benchmark, not only the scored ones: the ranking rationale may need to
+  // name a successor that has no scores here yet, which is precisely why it is the runner-up.
+  const benchmarkNames = new Map(
+    loadBenchmarks().map((benchmark) => [benchmark.slug, benchmark.name]),
+  );
 
   const capabilityIndex = new Map<string, CapabilityIndexEntry>(
     (indexFile?.rows ?? []).map((row) => [
@@ -58,10 +65,10 @@ export default function ModelsPage() {
   const tabs = {
     text: pair(
       toTableData(
-        buildRows({ scores, models, capabilityIndex, tab: "text", hideSaturated: true }),
+        buildRows({ scores, models, capabilityIndex, benchmarkNames, tab: "text", hideSaturated: true }),
       ),
       toTableData(
-        buildRows({ scores, models, capabilityIndex, tab: "text", hideSaturated: false }),
+        buildRows({ scores, models, capabilityIndex, benchmarkNames, tab: "text", hideSaturated: false }),
       ),
     ),
     agentic: pair(
@@ -70,6 +77,7 @@ export default function ModelsPage() {
           scores,
           models,
           capabilityIndex,
+          benchmarkNames,
           tab: "agentic",
           hideSaturated: true,
         }),
@@ -79,6 +87,7 @@ export default function ModelsPage() {
           scores,
           models,
           capabilityIndex,
+          benchmarkNames,
           tab: "agentic",
           hideSaturated: false,
         }),

@@ -25,6 +25,14 @@ score on another. The table therefore ranks on a single **reference benchmark** 
 3. Its name is the column header, so the reader always knows what they are looking at.
 4. Only models measured on it are ranked. Everything else goes to the block below, with
    the reason stated.
+5. **A reference that is not `active` states why it was chosen anyway.** Coverage beating
+   health is the right rule — ranking on a pristine benchmark two models share tells a
+   reader less than ranking on a tired one forty-nine of them share — but applied silently
+   it reads as the site contradicting its own home page, which says not to quote exactly
+   this kind of number. So the header names the healthier benchmark that lost and what it
+   lost on ("its successor ARC-AGI-3 has no scores here yet, so ranking on it would rank
+   nothing"), and tells the reader to read the table as "best on ARC-AGI-2", not "best".
+   A trade-off the reader cannot see is not one they can disagree with.
 
 **"Hide saturated benchmarks" removes saturated and deprecated benchmarks from the tab
 entirely** — not merely from reference eligibility. Their scores do not appear, a model
@@ -147,3 +155,6 @@ Decide." Copy guidance is in `04-design/design-system.md`.
 - Row reordering animates on toggle, sort and filter.
 - Leaderboard rows keyed by model + variant, with a visible variant column.
 - Price column labels vendor list price against OpenRouter routed price. Milestone 3.
+- A non-active reference benchmark now defends its own selection in the header, and the
+  model detail page renders each score's variant so reasoning-effort configs stop reading
+  as one benchmark scored six unexplained ways. Post-launch audit.

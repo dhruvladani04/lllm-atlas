@@ -42,6 +42,8 @@ a bad upstream change visible as a diff in a pull request, and costs nothing to 
 | Source returns fewer than 50% of the previous record count | Treat as failure and keep the previous snapshot. Guards against upstream truncation being silently mirrored. |
 | Vendor pricing page unparseable | Treat as a schema error for that vendor only. Keep the last good price, log it, fall back to the OpenRouter price at render time with its label. |
 | Unresolved model name | Write to `unresolved.json`, exclude from derived output, surface the count in the ingestion log. |
+| **Row the source contradicts itself on** | A row naming one model in `model_version` and a different one in `display_name` is dropped and written to `data/registry/conflicting-rows.json`. There is no rule for deciding which half is right, and guessing invents a measurement nobody made. Epoch ships exactly this: a `claude-opus-5_max` row carrying the "(High)" display name and the High score, which trusting `model_version` turns into a phantom "max" score colliding with the real one. |
+| **Byte-identical duplicate rows** | Collapsed to one. Identity for this purpose includes the value rounded to six decimal places, because the same measurement arrives as both `0.283` and `0.28300000000000003`. Two rows differing in value are never merged — that would be averaging two different claims. |
 | Unresolved model name **inside a benchmark's own timeline** | Keep the point, carrying the upstream name and a null `model_id`, and record the name for review. A timeline point is benchmark metadata, not a score row: dropping it would distort the benchmark's trajectory, which is a claim about the benchmark rather than about any model on this site. |
 | Three consecutive failures for one source | Fail the Actions job so a notification fires. |
 
@@ -97,3 +99,6 @@ Written to `data/derived/`, regenerated wholesale on each run:
   a benchmark timeline. Milestone 2.
 - Added `models.json` to the derived build inputs and a failure row for vendor pricing
   scrapers. Milestone 3.
+- Added the contradictory-row and duplicate-row rules, and recorded that a benchmark's
+  harness column may be named `Agent` — Terminal-Bench's is, and missing it collapsed
+  seven distinct agent runs into indistinguishable rows. Post-launch audit.
