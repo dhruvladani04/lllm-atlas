@@ -32,8 +32,7 @@ test.describe("the leaderboard states its caveats", () => {
     const statedAboveTable = page.getByText(
       /(measured independently of the model's maker|reported by the model's own maker|both independent and vendor-reported)/,
     );
-    const stated =
-      (await badgeInRow.count()) > 0 || (await statedAboveTable.count()) > 0;
+    const stated = (await badgeInRow.count()) > 0 || (await statedAboveTable.count()) > 0;
     expect(stated, "the view states provenance in the row or above the table").toBe(true);
   });
 

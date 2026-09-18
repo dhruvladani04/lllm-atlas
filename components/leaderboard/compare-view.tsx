@@ -75,7 +75,11 @@ export function CompareView({
   );
 
   const result = useMemo(
-    () => compareModels(scores, chosen.map((model) => model.model_id)),
+    () =>
+      compareModels(
+        scores,
+        chosen.map((model) => model.model_id),
+      ),
     [chosen, scores],
   );
 
@@ -210,8 +214,8 @@ export function CompareView({
 
             {result.comparable.length === 0 ? (
               <p className="mt-3 max-w-[66ch] text-sm text-ink-mute">
-                No benchmark has a score for all of these models. That is a fact about what
-                has been measured, not about the models.
+                No benchmark has a score for all of these models. That is a fact about
+                what has been measured, not about the models.
               </p>
             ) : (
               <div className="mt-2 overflow-x-auto">
@@ -291,8 +295,8 @@ export function CompareView({
               </h2>
               <p className="mt-1 max-w-[66ch] text-sm text-ink-mute">
                 Shown so the absence is visible rather than implied. A blank here means
-                nobody ran that benchmark on that model — it is not a low score, and reading
-                it as one is the mistake this section exists to prevent.
+                nobody ran that benchmark on that model — it is not a low score, and
+                reading it as one is the mistake this section exists to prevent.
               </p>
               <ul className="mt-3 divide-y divide-rule border-y border-rule text-sm">
                 {result.incomplete.map((row) => (

@@ -73,10 +73,24 @@ export default function ModelsPage() {
   const tabs = {
     text: pair(
       toTableData(
-        buildRows({ scores, models, capabilityIndex, benchmarkNames, tab: "text", hideSaturated: true }),
+        buildRows({
+          scores,
+          models,
+          capabilityIndex,
+          benchmarkNames,
+          tab: "text",
+          hideSaturated: true,
+        }),
       ),
       toTableData(
-        buildRows({ scores, models, capabilityIndex, benchmarkNames, tab: "text", hideSaturated: false }),
+        buildRows({
+          scores,
+          models,
+          capabilityIndex,
+          benchmarkNames,
+          tab: "text",
+          hideSaturated: false,
+        }),
       ),
     ),
     agentic: pair(

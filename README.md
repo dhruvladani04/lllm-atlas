@@ -24,19 +24,34 @@ work when it can't get you a number at all.
 
 That shows up as three sections, in a deliberate reading order:
 
-| Section | Question it answers |
-|---|---|
-| **Leaderboard** (`/models`) | Who is ahead right now, on a named benchmark, with the benchmark's health and each score's provenance shown beside it |
-| **Benchmarks** (`/benchmarks`) | Is the test they're ahead on still measuring anything — saturation, contamination, deprecation, lineage |
-| **Evals** (`/evals`) | How do *you* measure *your* application — a different discipline from ranking foundation models, and where most teams actually need help |
+| Section                        | Question it answers                                                                                                                      |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Leaderboard** (`/models`)    | Who is ahead right now, on a named benchmark, with the benchmark's health and each score's provenance shown beside it                    |
+| **Benchmarks** (`/benchmarks`) | Is the test they're ahead on still measuring anything — saturation, contamination, deprecation, lineage                                  |
+| **Evals** (`/evals`)           | How do _you_ measure _your_ application — a different discipline from ranking foundation models, and where most teams actually need help |
+
+Two supporting routes carry the same argument: **Compare** (`/compare`) puts models
+side by side _only_ on benchmarks all of them were measured on, and **Methodology**
+(`/methodology`) states every rule the site applies, with the counts read from the
+committed data at build time so the page cannot drift out of date.
 
 ## What it does (functional overview)
 
 - **Ranks models** on text, agentic, and image-generation tabs, each against a reference
   benchmark chosen by coverage → benchmark health → sample size → slug — not by whichever
   benchmark a model happens to win on.
-- **Surfaces health flags** per score: `saturated`, `nearing-saturation`, `deprecated`,
-  `high-contamination`, `vendor-reported-only` — computed from the join, not hand-curated.
+- **Surfaces health flags** per score: `saturated`, `deprecated`, `high-contamination`,
+  `vendor-reported-only`, `superseded`, `stale-source`, `disputed` — computed from the
+  join, not hand-curated.
+- **Shows one row per model by default**, carrying its best-scoring configuration and
+  saying which one and how many it beat ("best of 6 configurations"). Reasoning-effort
+  variants otherwise let a single model occupy the top four ranks. One toggle expands
+  every configuration; nothing is ever averaged.
+- **Collapses columns that repeat themselves.** When provenance or health reads identically
+  on every visible row, the column is replaced by one sentence _above_ the table. A column
+  that says the same thing 49 times is a fact about the view, not information per row.
+- **Exports the corpus** as JSON (`/api/scores`) and CSV (`/api/scores.csv`), each carrying
+  its own per-source licensing so the file stays self-describing once it leaves the site.
 - **Shows the Epoch Capability Index** as an explicitly labelled, independently-sourced
   column and on every model detail page, kept separate from the per-benchmark ranking it
   sits beside.
@@ -80,13 +95,15 @@ flowchart LR
         D1[/models — leaderboard/]
         D2[/benchmarks — health matrix/]
         D3[/evals — MDX guides/]
+        D4[/compare · /methodology]
+        D5[/api/scores · /api/scores.csv]
     end
 
     A1 & A2 & A3 & A4 & A5 --> B1 --> B2 --> B3 --> B4 --> B5
     B5 --> C1
     B5 --> C2
     C3 --> B3
-    C2 --> D1 & D2 & D3
+    C2 --> D1 & D2 & D3 & D4 & D5
 ```
 
 A commit to `data/` is what triggers the Vercel deploy — every deployment is reproducible,
@@ -100,7 +117,9 @@ most product judgment baked into it.
 
 ```mermaid
 flowchart TD
-    S[Raw score<br/>model name, benchmark name, value] --> R1{Model resolves?<br/>exact → alias → normalised}
+    S[Raw score<br/>model name, benchmark name, value] --> R0{Source contradicts itself?<br/>model_version vs display_name}
+    R0 -- yes --> U0[data/registry/conflicting-rows.json<br/>dropped — no rule says which half is right]
+    R0 -- no --> R1{Model resolves?<br/>exact → alias → normalised}
     R1 -- no --> U1[data/registry/unresolved.json<br/>excluded, queued for review]
     R1 -- yes --> R2{Benchmark resolves?}
     R2 -- no --> U2[unresolved-benchmarks.json<br/>excluded — a score with no health<br/>record is what this site refuses to show]
@@ -108,10 +127,12 @@ flowchart TD
     J --> F1{status = saturated /<br/>deprecated?}
     J --> F2{contamination = high?}
     J --> F3{only vendor-reported<br/>scores exist for this cell?}
+    J --> F4{source reports two values<br/>for this one measurement?}
     F1 -- yes --> FLAG1[+ saturated / deprecated]
     F2 -- yes --> FLAG2[+ high-contamination]
     F3 -- yes --> FLAG3[+ vendor-reported-only]
-    FLAG1 & FLAG2 & FLAG3 --> OUT[Row rendered with score,<br/>provenance, and every flag —<br/>never silently dropped or averaged away]
+    F4 -- yes --> FLAG4[+ disputed — both values kept,<br/>picking one would be a coin toss]
+    FLAG1 & FLAG2 & FLAG3 & FLAG4 --> OUT[Row rendered with score,<br/>provenance, and every flag —<br/>never silently dropped or averaged away]
 ```
 
 Two rules that shaped a lot of the edge-case handling:
@@ -120,7 +141,7 @@ Two rules that shaped a lot of the edge-case handling:
   it queues for a human. Silent misattribution (crediting the wrong model, or merging two
   distinct benchmarks) is worse than a visible gap.
 - **A collision degrades, it doesn't pick a winner.** If two upstream benchmarks normalise
-  to the same name, that name stops resolving for *both* rather than one silently shadowing
+  to the same name, that name stops resolving for _both_ rather than one silently shadowing
   the other, because this index is built from upstream data the site doesn't control.
 
 ## Engineering decisions worth calling out
@@ -129,7 +150,7 @@ Two rules that shaped a lot of the edge-case handling:
   benchmark record (statistical notes, leaderboard links, performance timeline) to the
   client on every row, across two tabs and two toggle states — 444KB and 480ms of blocking
   main-thread time for data nothing on screen used. It's now a normalised `{ TableRow[],
-  TableModel lookup }` shape (`lib/leaderboard/view.ts`), which took mobile Lighthouse
+TableModel lookup }` shape (`lib/leaderboard/view.ts`), which took mobile Lighthouse
   performance from the 65–83 range to 81–100. Model facts that repeat across rows — prices,
   release date — live once in a lookup rather than once per row.
 - **Hydration-safe deep links.** `?tab=agentic` deep links need the client tab state to
@@ -149,26 +170,48 @@ Two rules that shaped a lot of the edge-case handling:
   complete single API for every modality — and its free tier doesn't grant redistribution
   rights, so it's excluded from v1 entirely; even the benchmarks it appears on render only
   as outbound links, never as a number sourced from them.
+- **A column nobody read was hiding a real fact.** Terminal-Bench names its harness column
+  `Agent` ("Goose", "Codex CLI", "Claude Code"), not `Harness`. Missing it meant seven
+  distinct agent runs of one model arrived identical in every field but their score —
+  indistinguishable to a reader, and colliding on the key the schema calls the row's
+  identity. On an agentic benchmark the harness is half of what was measured.
+- **The declared identity key isn't unique upstream, and pretending otherwise is worse than
+  admitting it.** Epoch ships a row whose `model_version` says `_max` while its
+  `display_name` says "(High)", carrying the High score — trusting either half invents a
+  measurement nobody made, so the row is dropped and queued. Separately it reports two HLE
+  scores for one model on one day with no field distinguishing them; both are kept and
+  flagged `disputed`, because choosing one would be a coin toss presented as a fact.
+- **The contrast floor includes the background a badge creates.** Turning status badges into
+  tinted pills put amber text on an amber-tinted ground: 4.11:1, under the floor. The unit
+  test stayed green because it only checked colours against `paper` and `surface` — the axe
+  audit caught it in production. Both colours were darkened and the test now checks every
+  data colour against its own tinted ground in both schemes.
+- **CSP keeps `'unsafe-inline'`, deliberately.** The App Router emits the RSC payload as
+  inline scripts; nonces would force every route to render dynamically, trading the
+  static-first architecture for one header. The site renders no user input anywhere, so
+  that surface is empty — and the spec records the condition under which the trade has to
+  be revisited rather than leaving it as an unexamined default.
 
 ## Stack
 
-| Concern | Choice |
-|---|---|
-| Framework | Next.js 16 (App Router, Turbopack), React 19 — static-first, prerendered |
-| Language | TypeScript 5.9, `strict: true` |
-| Styling | Tailwind CSS v4, tokenised light/dark pairs |
-| Validation | Zod 4 — every ingested payload is parsed, never cast |
-| Content | MDX via `next-mdx-remote`, Shiki for code blocks |
-| Motion | `motion/react`, Auto-Animate — informative motion only, never decorative |
-| Data store | JSON committed to the repo — no database, no runtime fetch |
-| Testing | Vitest (unit), Playwright + axe-core (smoke + accessibility) |
-| Scheduling | GitHub Actions cron (06:00 UTC daily) — not Vercel Cron, because the job commits |
-| Package manager | pnpm |
+| Concern         | Choice                                                                           |
+| --------------- | -------------------------------------------------------------------------------- |
+| Framework       | Next.js 16 (App Router, Turbopack), React 19 — static-first, prerendered         |
+| Language        | TypeScript 5.9, `strict: true`                                                   |
+| Styling         | Tailwind CSS v4, tokenised light/dark pairs                                      |
+| Validation      | Zod 4 — every ingested payload is parsed, never cast                             |
+| Content         | MDX via `next-mdx-remote`, Shiki for code blocks                                 |
+| Motion          | `motion/react`, Auto-Animate — informative motion only, never decorative         |
+| Data store      | JSON committed to the repo — no database, no runtime fetch                       |
+| Testing         | Vitest (unit), Playwright + axe-core (smoke + accessibility)                     |
+| Scheduling      | GitHub Actions cron (06:00 UTC daily) — not Vercel Cron, because the job commits |
+| Package manager | pnpm                                                                             |
 
 ## Repository structure
 
 ```
-app/(site)/            routes: home, models, benchmarks, evals
+app/(site)/            routes: home, models, compare, benchmarks, evals, methodology
+app/api/               JSON and CSV exports, prerendered like every other route
 components/            data primitives, leaderboard, benchmarks, evals, home
 content/evals/         MDX guides
 data/
@@ -179,7 +222,7 @@ lib/
   schemas/             Zod schemas — the source of truth for every shape on disk
   ingest/               one module per upstream source
   join/                 score × benchmark-health join, health-flag derivation
-  leaderboard/          ranking, wire-format shaping
+  leaderboard/          ranking, comparison, wire-format shaping
 scripts/ingest.ts      entry point for the cron job
 specs/                 the actual source of truth — code is downstream of it
 ```
@@ -195,19 +238,28 @@ pnpm install
 pnpm dev          # http://localhost:3000
 ```
 
-| Script | Does |
-|---|---|
-| `pnpm dev` | Development server |
-| `pnpm build` | Production build — every route prerendered |
-| `pnpm start` | Serve the production build |
-| `pnpm ingest` | Run the ingestion pipeline locally (`tsx scripts/ingest.ts`) |
-| `pnpm lint` | ESLint |
-| `pnpm typecheck` | `tsc --noEmit`, strict |
-| `pnpm test` | Vitest |
-| `pnpm e2e` | Playwright — smoke paths + accessibility audit |
-| `pnpm format` | Prettier |
+| Script           | Does                                                         |
+| ---------------- | ------------------------------------------------------------ |
+| `pnpm dev`       | Development server                                           |
+| `pnpm build`     | Production build — every route prerendered                   |
+| `pnpm start`     | Serve the production build                                   |
+| `pnpm ingest`    | Run the ingestion pipeline locally (`tsx scripts/ingest.ts`) |
+| `pnpm lint`      | ESLint                                                       |
+| `pnpm typecheck` | `tsc --noEmit`, strict                                       |
+| `pnpm test`      | Vitest                                                       |
+| `pnpm e2e`       | Playwright — smoke paths + accessibility audit               |
+| `pnpm format`    | Prettier                                                     |
 
 Copy `.env.example` to `.env.local`. No variable is required for a local build.
+
+`/api/scores` (JSON) and `/api/scores.csv` publish the whole joined corpus. Both are
+prerendered like every other route, and both carry their own per-source licensing inside
+the payload — including a plain statement that benchwiki publishes no licence for the
+health records, so the file stays self-describing once it leaves the site. See
+[specs/02-data/sources-and-licensing.md](specs/02-data/sources-and-licensing.md#bulk-export).
+
+`/methodology` states every rule the site applies and counts them from the committed data
+at build time, so it cannot quietly go stale the way a hand-written "about" page does.
 
 `/tokens` is a development reference page showing every design token in both colour
 schemes side by side. It's `noindex`, excluded in `robots.txt`, and not linked from the
@@ -219,9 +271,14 @@ the committed snapshot rather than those pages.
 
 ## Status
 
-All seven build milestones are complete. The site ingests five sources daily, joins every
-score to its benchmark's health record, and serves the leaderboard, the benchmark mirror,
-and the evals guides.
+All seven build milestones are complete, plus a full pass against an external site audit
+covering metadata, security headers, data integrity, accessibility and product gaps. The
+site ingests five sources daily, joins every score to its benchmark's health record, and
+serves the leaderboard, comparison, the benchmark mirror, the evals guides and the exports.
+
+Quality gates: 251 unit tests and 26 end-to-end tests, the latter including an axe
+accessibility audit on four routes, a console-error check on nine, and a 360px layout
+check. `pnpm lint` and `pnpm typecheck` are clean.
 
 What's deliberately absent, and why, is written down rather than left to be discovered:
 
@@ -233,6 +290,11 @@ What's deliberately absent, and why, is written down rather than left to be disc
 - **Five of the eight eval archetype guides.** The index lists which are missing.
 - **Vendor list prices for most creators.** Only pages that state prices unambiguously are
   scraped; everything else falls back to OpenRouter's routed price, labelled as such.
+- **Search ranking for the reverse lookup.** Mirrored benchmark pages carry
+  `rel="canonical"` to benchwiki and are kept out of the sitemap, so this site's own
+  contribution on them — which models here scored on that benchmark — cannot rank on its
+  own. Giving it a separate indexable home is a feature, not a metadata tweak, and is not
+  built yet.
 
 Build order and the gate each milestone passed are in
 [specs/05-delivery/milestones.md](specs/05-delivery/milestones.md) and
@@ -252,7 +314,10 @@ Benchmark metadata comes from benchwiki (no published licence — treated as
 permission-not-granted, with persistent attribution and canonical links back), usage data
 and price fallback from OpenRouter (CC BY 4.0), benchmark results and the Capability Index
 from Epoch AI (CC BY), and image-generation Elo from LMArena via an unofficial community
-mirror, degrading to an empty state if that mirror is unavailable. Full attribution
+mirror, degrading to an empty state if that mirror is unavailable. The bulk exports
+redistribute that corpus and carry the same terms inside the payload, including the
+unresolved status of benchwiki's — the reasoning, the mitigations and the response if
+benchwiki objects are all recorded in the licensing spec. Full attribution
 requirements per source are in
 [specs/02-data/sources-and-licensing.md](specs/02-data/sources-and-licensing.md) and are
 not optional.

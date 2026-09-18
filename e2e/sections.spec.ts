@@ -59,7 +59,9 @@ test.describe("methodology, compare and export", () => {
     page,
   }) => {
     await page.goto("/methodology");
-    await expect(page.getByRole("heading", { name: "Methodology", level: 1 })).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Methodology", level: 1 }),
+    ).toBeVisible();
     // The claim that makes the ranking readable at all.
     await expect(page.getByText(/best on this benchmark/)).toBeVisible();
     await expect(page.getByText(/never averages them/)).toBeVisible();
@@ -77,7 +79,9 @@ test.describe("methodology, compare and export", () => {
       page.getByRole("heading", { name: /Measured on the same benchmark/ }),
     ).toBeVisible();
     // A blank must never be presentable as a low score.
-    await expect(page.getByText(/only the first group can be\s+read as a comparison/)).toBeVisible();
+    await expect(
+      page.getByText(/only the first group can be\s+read as a comparison/),
+    ).toBeVisible();
   });
 
   test("the export carries its own licensing, so the file stays self-describing", async ({

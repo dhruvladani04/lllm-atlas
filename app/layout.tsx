@@ -84,7 +84,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               href="/"
               className="flex items-baseline gap-2 text-sm font-medium underline-offset-2 hover:underline"
             >
-              <span aria-hidden="true" className="inline-block h-2 w-2 rounded-sm bg-accent" />
+              <span
+                aria-hidden="true"
+                className="inline-block h-2 w-2 rounded-sm bg-accent"
+              />
               LLM Atlas
             </Link>
             <nav aria-label="Main">

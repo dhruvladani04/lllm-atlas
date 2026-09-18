@@ -62,20 +62,20 @@ export default function MethodologyPage() {
 
       <Rule heading="What the ranking actually ranks">
         <p>
-          Models are measured on different benchmarks, and a score on one is not comparable
-          to a score on another. Averaging them would produce a single confident number
-          with no meaning, so the table instead picks one{" "}
-          <strong className="font-medium">reference benchmark</strong> per tab — the one the
-          most models in that tab have been measured on — names it in the column header, and
-          ranks only the models that have a score on it. Everything else is listed below the
-          table with the reason stated.
+          Models are measured on different benchmarks, and a score on one is not
+          comparable to a score on another. Averaging them would produce a single
+          confident number with no meaning, so the table instead picks one{" "}
+          <strong className="font-medium">reference benchmark</strong> per tab — the one
+          the most models in that tab have been measured on — names it in the column
+          header, and ranks only the models that have a score on it. Everything else is
+          listed below the table with the reason stated.
         </p>
         <p>
-          Coverage beats health when picking that benchmark. Ranking on a pristine benchmark
-          two models share tells you less than ranking on a tired one that forty-nine share.
-          Where the chosen benchmark is anything less than <em>active</em>, the header says
-          so and names the healthier benchmark it beat, so you can disagree with the
-          trade-off rather than be subjected to it.
+          Coverage beats health when picking that benchmark. Ranking on a pristine
+          benchmark two models share tells you less than ranking on a tired one that
+          forty-nine share. Where the chosen benchmark is anything less than{" "}
+          <em>active</em>, the header says so and names the healthier benchmark it beat,
+          so you can disagree with the trade-off rather than be subjected to it.
         </p>
         <p>
           Read a ranking here as &ldquo;best on this benchmark&rdquo;, never as
@@ -86,9 +86,9 @@ export default function MethodologyPage() {
       <Rule heading="What is never merged">
         <p>
           A vendor-reported number and an independent measurement are two different claims
-          about the world, and this site never averages them into one. Where both exist, the
-          independent number is shown and the row says both exist. Where only the vendor
-          has reported, the row says that too.{" "}
+          about the world, and this site never averages them into one. Where both exist,
+          the independent number is shown and the row says both exist. Where only the
+          vendor has reported, the row says that too.{" "}
           {vendorOnly === 0 ? (
             <>
               No score currently carries that flag, which is a fact about today&rsquo;s
@@ -102,11 +102,11 @@ export default function MethodologyPage() {
           )}
         </p>
         <p>
-          The same applies to a model&rsquo;s configurations. A model run at high reasoning
-          effort and the same model run at low effort are two measurements, kept apart in
-          the data. The leaderboard shows one row per model by default, carrying its best
-          configuration, and says which one and how many it beat — a collapse that names
-          itself rather than a merge that hides.
+          The same applies to a model&rsquo;s configurations. A model run at high
+          reasoning effort and the same model run at low effort are two measurements, kept
+          apart in the data. The leaderboard shows one row per model by default, carrying
+          its best configuration, and says which one and how many it beat — a collapse
+          that names itself rather than a merge that hides.
         </p>
         <p>
           An agentic score is a system score. The harness is half of what was measured, so
@@ -116,21 +116,21 @@ export default function MethodologyPage() {
 
       <Rule heading="When a row is dropped, and when it is kept and flagged">
         <p>
-          A name that does not resolve to the registry is never guessed at. It is written to
-          a review queue with its source and excluded until a human matches it. A near-miss
-          that resolved silently would credit the wrong model with someone else&rsquo;s
-          score, and nothing downstream would ever catch it.
+          A name that does not resolve to the registry is never guessed at. It is written
+          to a review queue with its source and excluded until a human matches it. A
+          near-miss that resolved silently would credit the wrong model with someone
+          else&rsquo;s score, and nothing downstream would ever catch it.
         </p>
         <p>
           A row whose source contradicts itself is dropped and recorded — Epoch ships rows
-          naming one model in the machine-readable column and a different one in the display
-          column, and there is no rule for deciding which half is right.
+          naming one model in the machine-readable column and a different one in the
+          display column, and there is no rule for deciding which half is right.
         </p>
         <p>
-          A measurement the source reports two different values for is{" "}
-          <em>not</em> dropped. Both values are shown, both flagged{" "}
-          <span className="font-mono text-xs">disputed</span>, because picking one would be
-          a coin toss presented as a fact. That currently affects{" "}
+          A measurement the source reports two different values for is <em>not</em>{" "}
+          dropped. Both values are shown, both flagged{" "}
+          <span className="font-mono text-xs">disputed</span>, because picking one would
+          be a coin toss presented as a fact. That currently affects{" "}
           <strong className="font-medium">{disputed}</strong>{" "}
           {disputed === 1 ? "score" : "scores"}.
         </p>
@@ -139,8 +139,8 @@ export default function MethodologyPage() {
       <Rule heading="How much of the field this covers">
         <p>
           <strong className="font-medium">{scoredBenchmarks}</strong> of the{" "}
-          <strong className="font-medium">{benchmarks.length}</strong> benchmarks catalogued
-          here have any score at all, across{" "}
+          <strong className="font-medium">{benchmarks.length}</strong> benchmarks
+          catalogued here have any score at all, across{" "}
           <strong className="font-medium">{textModels}</strong> text models and{" "}
           <strong className="font-medium">{models.length - textModels}</strong> image
           models. The gap is a licensing constraint more than a technical one: the most
@@ -158,11 +158,11 @@ export default function MethodologyPage() {
 
       <Rule heading="Where the numbers come from, and how fresh they are">
         <p>
-          There is no database and nothing is fetched while you read this page. A scheduled
-          job runs daily at 06:00 UTC, validates each source against a schema, writes a
-          dated snapshot into the repository and commits it. The commit is what deploys the
-          site, so every number on it is reproducible from a specific commit, and an
-          upstream change is visible as a diff rather than a silent edit.
+          There is no database and nothing is fetched while you read this page. A
+          scheduled job runs daily at 06:00 UTC, validates each source against a schema,
+          writes a dated snapshot into the repository and commits it. The commit is what
+          deploys the site, so every number on it is reproducible from a specific commit,
+          and an upstream change is visible as a diff rather than a silent edit.
         </p>
         <p>
           A source that fails keeps its last good snapshot and goes visibly stale rather
@@ -184,10 +184,10 @@ export default function MethodologyPage() {
       <Rule heading="What this site will not do">
         <p>
           It will not show a number without a source and a date. It will not present a
-          routed price as a vendor&rsquo;s list price. It will not render a missing value as
-          a dash or a zero, because both read as data. It will not ingest a source whose
-          licence does not permit redistribution, however much better that would make the
-          coverage look.
+          routed price as a vendor&rsquo;s list price. It will not render a missing value
+          as a dash or a zero, because both read as data. It will not ingest a source
+          whose licence does not permit redistribution, however much better that would
+          make the coverage look.
         </p>
         <p>
           Where those rules cost something — a thinner ranking, a visible gap, a benchmark

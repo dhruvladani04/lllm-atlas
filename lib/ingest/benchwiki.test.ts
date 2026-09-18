@@ -93,7 +93,10 @@ describe("normaliseLanguages", () => {
   it("leaves a category that is not a language alone", () => {
     // "code" and "multilingual" are the honest answer for a benchmark spanning many
     // languages; folding them into a specific one would invent a fact.
-    expect(normaliseLanguages(["code", "multilingual"])).toEqual(["code", "multilingual"]);
+    expect(normaliseLanguages(["code", "multilingual"])).toEqual([
+      "code",
+      "multilingual",
+    ]);
   });
 
   it("is case and whitespace insensitive, and deduplicates", () => {

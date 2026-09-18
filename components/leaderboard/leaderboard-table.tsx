@@ -68,8 +68,8 @@ function ReferenceRationaleNote({
 
   return (
     <>
-      It is not the healthiest benchmark here, and it is the basis anyway because it is the
-      most measured:{" "}
+      It is not the healthiest benchmark here, and it is the basis anyway because it is
+      the most measured:{" "}
       {successorUnscored ? (
         <>
           its successor{" "}
@@ -93,13 +93,15 @@ function ReferenceRationaleNote({
           {rationale.coverage} model-variants {reference.name} does
         </>
       )}
-      . Read the ranking as &ldquo;best on {reference.name}&rdquo;, not &ldquo;best&rdquo;.{" "}
+      . Read the ranking as &ldquo;best on {reference.name}&rdquo;, not
+      &ldquo;best&rdquo;.{" "}
     </>
   );
 }
 
 const PROVENANCE_SENTENCE: Record<TableRow["provenance"], string> = {
-  independent: "Every number in this view was measured independently of the model's maker.",
+  independent:
+    "Every number in this view was measured independently of the model's maker.",
   "vendor-reported":
     "Every number in this view was reported by the model's own maker, with no independent measurement to check it against.",
   mixed: "Every model in this view has both independent and vendor-reported numbers.",
@@ -150,8 +152,8 @@ function Legend({ uniform }: { uniform: UniformColumns }) {
         <p>
           <strong className="font-medium text-ink">Provenance:</strong>{" "}
           <span className="font-mono">ind.</span> means independently measured;{" "}
-          <span className="font-mono">vendor</span> means reported by the model&rsquo;s own
-          maker. The two are never averaged.
+          <span className="font-mono">vendor</span> means reported by the model&rsquo;s
+          own maker. The two are never averaged.
         </p>
       ) : null}
 
@@ -398,10 +400,7 @@ export function LeaderboardTable({
               instead.{" "}
             </>
           ) : null}
-          <ReferenceRationaleNote
-            reference={data.reference}
-            rationale={data.rationale}
-          />
+          <ReferenceRationaleNote reference={data.reference} rationale={data.rationale} />
           <FreshnessStamp fetchedAt={fetchedAt} />
         </p>
       )}
@@ -414,10 +413,11 @@ export function LeaderboardTable({
               measured". */}
           <p className="max-w-[92ch] pb-3 text-sm text-ink-mute">
             {coverage.scored} of the {coverage.total} benchmarks tracked here have any
-            score at all, so this ranking describes the part of the field that Epoch and the
-            arena mirror have measured, not the whole of it.{" "}
+            score at all, so this ranking describes the part of the field that Epoch and
+            the arena mirror have measured, not the whole of it.{" "}
             <Link href="/benchmarks" className="underline-offset-2 hover:underline">
-              The other {coverage.total - coverage.scored} are catalogued with their health
+              The other {coverage.total - coverage.scored} are catalogued with their
+              health
             </Link>
             . <CollapsedColumns uniform={uniform} />
           </p>
