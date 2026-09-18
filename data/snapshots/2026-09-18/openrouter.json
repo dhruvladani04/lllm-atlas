@@ -2,7 +2,7 @@
   "_meta": {
     "source_id": "openrouter",
     "source_url": "https://openrouter.ai/api/v1/models",
-    "fetched_at": "2026-09-18T10:23:01.364Z",
+    "fetched_at": "2026-09-18T16:51:23.078Z",
     "record_count": 445,
     "status": "ok"
   },
@@ -23,8 +23,8 @@
       "name": "DeepSeek: DeepSeek Pro Latest",
       "context_length": 1048576,
       "pricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00000198"
+        "prompt": "0.00000057816",
+        "completion": "0.00000173448"
       }
     },
     {
@@ -33,8 +33,8 @@
       "name": "DeepSeek: DeepSeek Flash Latest",
       "context_length": 1048576,
       "pricing": {
-        "prompt": "0.0000001485",
-        "completion": "0.000000594"
+        "prompt": "0.00000015",
+        "completion": "0.0000006"
       }
     },
     {
@@ -433,8 +433,8 @@
       "name": "Z.ai: GLM Latest",
       "context_length": 1310720,
       "pricing": {
-        "prompt": "0.0000008775",
-        "completion": "0.00000297"
+        "prompt": "0.0000008988",
+        "completion": "0.0000028248"
       }
     },
     {
@@ -563,8 +563,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "context_length": 1048576,
       "pricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00000198"
+        "prompt": "0.00000057816",
+        "completion": "0.00000173448"
       }
     },
     {
@@ -643,8 +643,8 @@
       "name": "Meta: Muse Glimmer 30B",
       "context_length": 131072,
       "pricing": {
-        "prompt": "0.0000003",
-        "completion": "0.0000011"
+        "prompt": "0.00000035",
+        "completion": "0.0000015"
       }
     },
     {
@@ -673,8 +673,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "context_length": 1310720,
       "pricing": {
-        "prompt": "0.0000000558",
-        "completion": "0.0000001767"
+        "prompt": "0.000000055",
+        "completion": "0.000000165"
       }
     },
     {
@@ -1083,8 +1083,8 @@
       "name": "Tencent: Hy3",
       "context_length": 262144,
       "pricing": {
-        "prompt": "0.000000132",
-        "completion": "0.000000528"
+        "prompt": "0.0000000825",
+        "completion": "0.00000033"
       }
     },
     {
@@ -1183,8 +1183,8 @@
       "name": "Z.ai: GLM 5.2",
       "context_length": 1048576,
       "pricing": {
-        "prompt": "0.0000005625",
-        "completion": "0.0000018"
+        "prompt": "0.0000005544",
+        "completion": "0.0000017424"
       }
     },
     {
@@ -1653,8 +1653,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "context_length": 1048576,
       "pricing": {
-        "prompt": "0.000000088606",
-        "completion": "0.000000177212"
+        "prompt": "0.00000004984",
+        "completion": "0.00000009968"
       }
     },
     {

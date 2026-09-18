@@ -4,532 +4,532 @@
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "Cosmos3-Super-Text2Image",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "Cosmos3-Super-Text2Image (Agentic)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "dall-e-3",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "flux-1-dev-fp8",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "flux-1-kontext-dev",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "flux-1-kontext-max",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "flux-1-kontext-pro",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "flux-2-dev",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "flux-2-flex",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "flux-2-klein-4b",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "flux-2-klein-9b",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "flux-2-max",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "flux-2-pro",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "gemini-2.0-flash-preview-image-generation",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "gemini-2.5-flash-image-preview (nano-banana)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "gemini-3-pro-image-2k (nano-banana-pro)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "gemini-3-pro-image-preview (nano-banana-pro)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "gemini-3.1-flash-image (nano-banana-2) [web-search]",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "gemini-3.1-flash-lite-image (nano-banana-2-lite)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "glm-image",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "gpt-image-1-mini",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "gpt-image-1.5-high-fidelity",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "gpt-image-2 (medium)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "gpt-image-2.5-flare",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "gpt-image-2.5-sunburst",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "grok-imagine-image",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "grok-imagine-image-2.0 (low)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "grok-imagine-image-pro",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "hidream-o1-image",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "hunyuan-image-3.0",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "ideogram-4.0-quality",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "ideogram-v2",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "ideogram-v3-quality",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "imagen-3.0-generate-002",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "imagen-4.0-generate-001",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "imagen-ultra-4.0-generate-001",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "krea-2-large",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "krea-2-medium",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "krea-2-turbo",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "lucid-origin",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "mai-image-1",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "mai-image-2",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "mai-image-2.5",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "mai-image-2.6",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "muse-image",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "p-image",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "photon",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "qwen-image",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "qwen-image-2.0-pro-2026-06-22",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "qwen-image-2512",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "qwen-image-3.0-pro",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "qwen-image-prompt-extend",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "recraft-v3",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "recraft-v4",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "recraft-v4.1-pro",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "recraft-v4.1-utility-pro",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "reve-2.0",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "reve-2.1",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "reve-v1.5",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "runway-gen4",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "seedream-3",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "seedream-4-2k",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "seedream-4-fal",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "seedream-4-high-res-fal",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "seedream-4.5",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "seedream-5.0-lite",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "seedream-5.0-pro",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "stable-diffusion-v35-large",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "uni-1.1",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "uni-1.1-max",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "wan2.5-t2i-preview",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "wan2.6-t2i",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "wan2.7-image",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "wan2.7-image-pro",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "z-image-turbo",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 11
+    "occurrences": 12
   },
   {
     "name": "ALBERT (ensemble)",
@@ -2818,378 +2818,378 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "ada (350M)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Amazon Nova Lite",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Amazon Nova Micro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Amazon Nova Pro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "babbage (1.3B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Baichuan 1-13B-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Baichuan 1-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Baichuan 2 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Baichuan 2 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Baichuan 2-13B-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Baichuan 2-7B-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Baichuan-2 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Baichuan2 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Baichuan2 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Baichuan2-Chat 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "BLOOM (176B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Cerebras-GPT-13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "ChatGLM 2-6B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "ChatGLM 2-6B (base)*",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "ChatGLM2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "ChatGLM2 6B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "ChatGLM2 6B (8-shot)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Chinchilla 70B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 1.3",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 2.1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3 Haiku",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3 Haiku (20240307)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3 Opus",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3 Opus (20240229)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3 Sonnet",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3 Sonnet (20240229)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3.5 Haiku (20241022)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3.5 Sonnet (20240620)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3.5 Sonnet (20241022)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3.5 Sonnet (October 2024)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Claude 3.7",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3.7 (16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3.7 (1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3.7 (8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 3.7 Sonnet (Thinking)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Claude 4.5 Sonnet",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 4.6 Opus",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 4.7 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 4.7 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 4.7 (Max)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude 4.7 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Fable 5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Fable 5 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Fable 5 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Fable 5 (Max)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Fable 5 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Fable 5 (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Fable 5.1 (High)",
@@ -3231,49 +3231,49 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Haiku 4.5 (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Haiku 4.5 (Thinking 32K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Haiku 4.5 (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude instant",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Instant 1.1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Instant 1.2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4",
@@ -3287,21 +3287,21 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4 (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4 (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4 (Thinking)",
@@ -3315,126 +3315,126 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.5 (32k thinking)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.5 (64k thinking)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.6",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.6 (120K, High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.6 (120K, Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.6 (120K, Max)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.6 (120K, Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.6 (High, 120k thinking)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.7",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.7 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.7 (Max)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.8",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.8 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.8 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.8 (Max)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 4.8 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Opus 5 (High)",
@@ -3462,21 +3462,21 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Sonnet 4 (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Sonnet 4 (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Sonnet 4 (Thinking)",
@@ -3490,196 +3490,196 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Sonnet 4.5 (Thinking 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Sonnet 4.5 (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Sonnet 4.5 (Thinking 32K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Sonnet 4.5 (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Sonnet 4.6",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Sonnet 4.6 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Claude Sonnet 4.6 (Max)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "claude-2.0",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-2.1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-3-5-haiku-20241022",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-3-5-sonnet-20240620",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-3-5-sonnet-20241022",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-3-7-sonnet-20250219",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "claude-3-7-sonnet-20250219_16K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-3-7-sonnet-20250219_32K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-3-7-sonnet-20250219_64K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-3-haiku-20240307",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-3-opus-20240229",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-3-sonnet-20240229",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-fable-5_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-fable-5_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-fable-5_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-haiku-4-5-20251001_32K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-1-20250805",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "claude-opus-4-1-20250805_16K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-1-20250805_27K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-1-20250805-thinking",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-20250514",
@@ -3693,119 +3693,119 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-5-20251101",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "claude-opus-4-5-20251101_128K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "claude-opus-4-5-20251101_16K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-5-20251101_32K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-5-20251101-thinking",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-6",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "claude-opus-4-6 (Non-Thinking)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-6_32K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-6_64K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-6_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-6-thinking-max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-7_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "claude-opus-4-7_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-8_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-8_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-4-8_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-opus-5_low",
@@ -3833,182 +3833,182 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-4-20250514_32K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-4-20250514_59K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-4-5-20250929",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "claude-sonnet-4-5-20250929_16K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-4-5-20250929_32K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-4-5-20250929_59K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-4-5-20250929-thinking",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-4-6",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "claude-sonnet-4-6_32K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-4-6_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-4-6_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-4-6_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-5_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "claude-sonnet-5_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "code-davinci-002",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "CodeQwen1.5-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Codex Mini (Latest)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Command R",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Command R Plus",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Composer 2.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "curie (6.7B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "davinci (175B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "dbrx-instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Deepseek R1 (05/28)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Deepseek V3.2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "DeepSeek V4 Flash 0731",
@@ -4085,84 +4085,84 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "deepseek-llm-67b-chat",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "DeepSeek-R1-0528",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "deepseek-r1-0528-qwen3-8b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "DeepSeek-R1-Distill-Llama-70B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "DeepSeek-R1-Distill-Qwen-1.5B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "DeepSeek-R1-Distill-Qwen-14B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "DeepSeek-R1-Distill-Qwen-32B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "deepseek-reasoner",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "DeepSeek-V2 Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "DeepSeek-V3-0324",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "DeepSeek-V3.2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "deepseek-v4-flash-0731_max",
@@ -4183,14 +4183,14 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "deepseek-v4-pro_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "deepseek-v4-pro-0813_max",
@@ -4204,63 +4204,63 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "DS-Coder-1.3B-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "DS-Coder-33B-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "DS-Coder-6.7B-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "DS-Coder-V2-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "DS-Coder-V2-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "DS-Coder-V2-Lite-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "DS-Coder-V2-Lite-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Eurus-2-7B-PRIME",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Fable 5.1 (xhigh)",
@@ -4274,378 +4274,378 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Falcon (7B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Falcon 180B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Falcon 40B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Falcon 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Falcon-180B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Falcon-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Falcon-Instruct (40B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Falcon2-11B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Falcon2-11B stage 4",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "fireworks/kimi-k2p5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Gemini 1.0 Pro (001)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 1.5 Flash (001)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 1.5 Flash (002)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 1.5 Flash (0514 preview)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 1.5 Pro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 1.5 Pro (001)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 1.5 Pro (002)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 1.5 Pro (Feb 2024)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 1.5 Pro (May 2024)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.0 Flash",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.0 Flash (Experimental)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.0 Flash Thinking (January 2025)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Gemini 2.5 Flash",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Flash (April 2025)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Gemini 2.5 Flash (Preview)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Flash (Preview) (Thinking 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Flash (Preview) (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Flash (Preview) (Thinking 24K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Flash (Preview) (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Flash Preview (May 2025)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Gemini 2.5 Pro (Preview, Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Pro (Preview)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Pro (Thinking 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Pro (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Pro (Thinking 32K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Pro (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 2.5 Pro Experimental (March 2025)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Gemini 2.5 Pro Preview (May 06 2025)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Gemini 3 Deep Think (2/26)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3 Deep Think (Preview)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3 Deep Think (Preview) ²",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3 Flash",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3 Flash Preview (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3 Flash Preview (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3 Flash Preview (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3 Flash Preview (Minimal)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3 Pro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3.1 Pro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3.1 Pro (Preview",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3.1 Pro (Preview)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3.1 Pro Preview (thinking high)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Gemini 3.5 Flash (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3.5 Flash (Minimal)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemini 3.5 Flash-Lite (High)",
@@ -4743,196 +4743,196 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Gemini-1.5 Flash",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gemini-1.5-flash-001",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-1.5-flash-002",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-1.5-flash-8b-001",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-1.5-pro-001",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-1.5-pro-002",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Gemini-1.5-Pro-002",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-2.0-flash-001",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-2.0-flash-thinking-exp-01-21",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-2.0-pro-exp-02-05",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-2.5-flash-preview-09-2025",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gemini-2.5-pro-exp-03-25",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-2.5-pro-preview-05-06",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-2.5-pro-preview-06-05",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-3-flash-preview",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gemini-3-flash-preview_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-3-pro-preview",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gemini-3.1-flash-lite_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-3.1-flash-lite_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-3.1-flash-lite_minimal",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-3.1-flash-lite-preview",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-3.1-pro-preview",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gemini-3.1-pro-preview_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-3.1-pro-preview-customtools",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gemini-3.5-flash_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gemini-3.5-flash_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-3.5-flash_minimal",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemini-3.5-flash-lite_high",
@@ -4988,497 +4988,497 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Gemma (7B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemma 2 Instruct (27B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemma 2 Instruct (9B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemma 2B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemma 7b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemma 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gemma-2 9B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gemma-2-27b-it",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemma-2-9b-it",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemma-2b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gemma-3-12b-it",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemma-3-1b-it",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemma-3-27b-it",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemma-3-4b-it",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemma-4-26b-a4b-it_minimal",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemma-4-31b-it_minimal",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gemma-7b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GLaM",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GLaM (MoE)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GLM 4.6",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GLM 4.7",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GLM 5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GLM 5.2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "glm-4.6",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "glm-4.7",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "glm-4.7-flash",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "glm-4.7-flash_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "glm-4p5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "glm-4p5-air",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "glm-5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GLM-5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "glm-5.1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GLM-5.2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "glm-5.2_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "glm-5.2_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "glm-5.2_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "glm-5.3_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "glm-5.3-flash_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Gopher",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gopher (280B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gopher (k-Shot)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Gopher 280B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT 4.5 Preview",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT 4o-mini",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-2-XL 1.5B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3 (175B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3 175B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3 Few-Shot",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3 One-Shot",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3 Zero-Shot",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3.5 (8-shot)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3.5 Turbo",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3.5 Turbo (0125)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3.5 Turbo (0613)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-3.5 version 1106",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-3.5-turbo-0125",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-3.5-turbo-0613",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-3.5-turbo-1106",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-4",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-4 (0613)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-4 (initial release)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-4 Turbo (1106 preview)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-4 Turbo (2024-04-09)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-4-0125-preview",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-4-0314",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-4-0613",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-4-1106-preview",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-4-turbo-2024-04-09",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-4.1",
@@ -5499,112 +5499,112 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-4.1-mini-2025-04-14",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-4.1-Nano",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-4.1-nano-2025-04-14",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-4.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-4.5-preview-2025-02-27",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-4o",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-4o (2024-05-13)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-4o (2024-08-06)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-4o (November 2024)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-4o mini (2024-07-18)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-4o-2024-05-13",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-4o-2024-08-06",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-4o-2024-11-20",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-4o-mini",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-4o-mini-2024-07-18",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-5 (High)",
@@ -5639,63 +5639,63 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5 Mini (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5 Mini (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5 Mini (Minimal)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5 Nano (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5 Nano (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5 Nano (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5 Nano (Minimal)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5 Pro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5-2025-08-07",
@@ -5730,896 +5730,896 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5-Codex",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5-Mini",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5-mini-2025-08-07",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5-mini-2025-08-07_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5-mini-2025-08-07_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5-mini-2025-08-07_minimal",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-5-Nano",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5-nano-2025-08-07_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5-nano-2025-08-07_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5-nano-2025-08-07_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5-nano-2025-08-07_minimal",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5-pro-2025-10-06",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-5.1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.1 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.1 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.1 (Thinking, High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.1 (Thinking, Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.1 (Thinking, Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.1 (Thinking, None)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.1-2025-11-13_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.1-2025-11-13_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.1-2025-11-13_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.1-codex",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.1-Codex",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.1-Codex-Max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.1-codex-mini",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.1-Codex-Mini",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.1-instant",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.1-thinking",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-5.2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.2 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.2 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.2 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.2 (X-High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.2 (xHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.2 (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.2 Pro (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.2 Pro (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.2 Pro (X-High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.2 Pro (xHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.2 Pro (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.2-2025-12-11",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.2-2025-12-11_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.2-2025-12-11_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.2-2025-12-11_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.2-2025-12-11_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.2-2025-12-11_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-5.2-Codex",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.3-Codex",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.3-codex_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 (xHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Mini (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Mini (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Mini (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Mini (xHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Mini (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Nano (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Nano (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Nano (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Nano (xHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Nano (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Pro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-5.4 Pro (xHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.4 Pro (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.4-2026-03-05 (xhigh thinking)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.4-2026-03-05_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.4-2026-03-05_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.4-2026-03-05_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.4-2026-03-05_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.4-2026-03-05_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-5.4-mini",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.4-mini-2026-03-17_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.4-mini-2026-03-17_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.4-mini-2026-03-17_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.4-nano-2026-03-17_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.4-nano-2026-03-17_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.4-nano-2026-03-17_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.4-pro-2026-03-05_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-5.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.5 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.5 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.5 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.5 (xHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.5 (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.5 Pro (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.5 Pro (xHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.5 Pro (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.5_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.5_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.5-instant",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.5-pre-release_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.5-pro-pre-release_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-5.6 Luna",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Luna (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Luna (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Luna (Max)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Luna (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Luna (xHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Luna (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Sol",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Sol (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Sol (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Sol (Max)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Sol (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Sol (xHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Sol (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Terra",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Terra (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Terra (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Terra (Max)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Terra (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Terra (xHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-5.6 Terra (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-5.6-luna_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.6-luna_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.6-luna_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.6-sol_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.6-sol_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.6-sol_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.6-terra_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.6-terra_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-5.6-terra_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT-6 Astra",
@@ -6682,119 +6682,119 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-Neo-2.7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-neox-20B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-oss-120b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-OSS-120B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-oss-20b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "GPT-OSS-20B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "gpt-oss-20b_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-oss-20b_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "gpt-oss-20b_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "GPT2-XL-1.5B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "granite-4.0-1b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "granite-4.0-350m",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "granite-4.0-micro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Grok 3",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Grok 3 Mini (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Grok 4 (Fast Reasoning)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Grok 4 (Thinking)",
@@ -6808,42 +6808,42 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Grok 4.20 Reasoning",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Grok 4.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Grok 4.5 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Grok 4.5 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Grok 4.5 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Grok 4.6",
@@ -6885,35 +6885,35 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "grok-2-1212",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "grok-3-beta",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "grok-3-mini-beta_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "grok-3-mini-beta_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "grok-4-0709",
@@ -6927,21 +6927,21 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "grok-4.3_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "grok-4.5_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "grok-4.6_high",
@@ -6962,21 +6962,21 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Hermes-2-Theta-Llama-3-70B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Inflection 1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Inkling",
@@ -6990,2470 +6990,2470 @@
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Inkling Small (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Inkling Small (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Inkling Small (Minimal)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Inkling Small (None)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Inkling Small (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Inkling_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "inkling-small_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "INTELLECT-1-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "INTELLECT-1-INSTRUCT",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "InternLM 20B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "InternLM 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "InternLM-Chat 20B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Kimi K2 Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Kimi K2 Thinking",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Kimi K2.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Kimi K2.7",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Kimi K3",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Kimi K3 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Kimi K3 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Kimi K3 (Max)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Kimi-K2-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "kimi-k2-thinking",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "kimi-k2-thinking-turbo",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "kimi-k2.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "kimi-k2.6",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "kimi-k2.7-code",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "kimi-k3_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "kimi-k3_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "kimi-k3_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "LLaMA (13B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA (30B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA (65B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA (7B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA 1 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 1 33B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA 1 33B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA 1 65B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA 1 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama 2 (13B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama 2 (70B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama 2 (7B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 2 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA 2 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LlaMA 2 34B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 2 34B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA 2 34B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LlaMA 2 70B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 2 70B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA 2 70B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LlaMA 2 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 2 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA 2 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 2-13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA 2-13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 2-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA 2-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama 3 (70B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama 3 (8B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 3 405B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 3 70B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 3 8B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama 3.1 Instruct Turbo (405B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama 3.1 Instruct Turbo (70B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama 3.1 Instruct Turbo (8B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama 3.2 Vision Instruct Turbo (11B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama 3.2 Vision Instruct Turbo (90B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama 3.3 Instruct Turbo (70B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 33B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 65B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA-13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA-2 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA-2 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "LLaMA-2 34B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA-2 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA-2 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Llama-2-13b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama-2-70b-chat-hf",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Llama-2-7b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama-3-In 8b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA-3.1 405B Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama-3.1-405B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Llama-3.1-70B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Llama-3.1-8B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Llama-3.1-In 8B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama-3.1-Tulu-3-70B-DPO",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Llama-3.2-1B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Llama-3.2-90B-Vision-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Llama-3.3-70B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Llama-4-Maverick-17B-128E-Instruct-FP8",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Llama-4-Scout-17B-16E-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Llama-65B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLAMA-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama2-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA2-Chat 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "LLaMA2-Chat 70B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Llama3.3 70b instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Magistral Medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Magistral Medium (Thinking)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Magistral Small",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "magistral-small-2506",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "magistral-small-2509",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Megatron-NLG (530B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Meta-Llama-3-70B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Meta-Llama-3-8B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "MiniMax M2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "MiniMax M2.1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Minimax m2.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Minimax M2.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "MiniMax M2.7",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "MiniMax M2.7 Highspeed",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "MiniMax M3",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "minimax-m2.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "MiniMax-M3",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "MiniMax-M3_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "ministral-3b-2410",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "ministral-8b-2410",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Mistral 3.5 Medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Mistral 7b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Mistral 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Mistral Instruct v0.3 (7B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Mistral Large (2402)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Mistral Large 2 (2407)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Mistral Medium 3",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Mistral Small (2402)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Mistral v0.1 (7B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Mistral-7B-Instruct-v0.3",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "mistral-large-2402",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "mistral-large-2407",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "mistral-large-2411",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "mistral-medium-2505",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Mistral-Nemo 12B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "mistral-small-2501",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "mistral-small-2503",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "mistral-small-3-2501",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "mistral-small-3.1-2503",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "mistral-small-3.2-2506",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Mixtral (8x22B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Mixtral 8x7b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Mixtral 8x7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Mixtral-8x7B-Instruct-v0.1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "MPT (30B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "MPT 30B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "MPT 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "MPT-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "MPT-Instruct (30B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "MT-NLG",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Muse Spark",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "muse-spark",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "nemotron-3-ultra",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Nemotron-4 15B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Nova Lite",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Nova Pro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o1 (December 2024)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o1 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o1 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o1 Pro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o1-2024-12-17_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o1-2024-12-17_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o1-2024-12-17_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o1-mini",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o1-mini-2024-09-12_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o1-mini-2024-09-12_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o1-preview",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o1-preview-2024-09-12",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o1-pro (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o3 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o3 (high) (April 2025)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o3 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o3 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o3 (medium) (April 2025)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o3-2025-04-16_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o3-2025-04-16_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o3-2025-04-16_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o3-mini (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o3-mini (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o3-mini (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o3-mini-2025-01-31_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o3-mini-2025-01-31_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o3-mini-2025-01-31_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o3-Pro (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o3-Pro (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o3-Pro (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o4-mini (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o4-mini (high) (April 2025)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o4-mini (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o4-mini (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "o4-mini (medium) (April 2025)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o4-mini-2025-04-16_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o4-mini-2025-04-16_low",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "o4-mini-2025-04-16_medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "open-mistral-7b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "open-mistral-nemo-2407",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "open-mixtral-8x22b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "open-mixtral-8x7b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "openai/gpt-oss-120b_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "OpenLLaMA-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "OPT (175B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "OPT (66B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "OPT-1.3B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "OPT-13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Opus 4.5 (Thinking, 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Opus 4.5 (Thinking, 32K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Opus 4.5 (Thinking, 64K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Opus 4.5 (Thinking, 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Opus 4.5 (Thinking, None)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "PaLM 2-L",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "PaLM 2-M",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "PaLM 2-S",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "PaLM 540B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "PaLM 62B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "PaLM-540B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "phi-1.5",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-2 2.7b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-3 (14B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-3 14b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-3-medium",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-3-medium 14b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-3-medium-128k-instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Phi-3-mini",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-3-mini 3.8b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-3-small",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-3-small 7b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-3.5-mini",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Phi-3.5-MoE",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "phi-4",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Phi-4 14b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen 1.8B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "QWEN 1.8B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen 14B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "QWEN 14B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen 3 Coder 480B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen 3.7 Plus",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "QWEN 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen-Chat 14B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "qwen-max-2025-01-25",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen-plus-2025-01-25",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen-turbo-2024-11-01",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen1.5 (14B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen1.5 (32B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen1.5 (7B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "qwen1.5-32b-chat",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen1.5-72b-chat",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen2 Instruct (72B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "qwen2-72b-instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen2.5 14b instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5 72B Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5 72b instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5 Instruct Turbo (72B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5 Instruct Turbo (7B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "qwen2.5-32b-instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen2.5-72b-instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen2.5-7b-instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen2.5-Coder-0.5B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5-Coder-1.5B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5-Coder-14B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5-Coder-14B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5-Coder-32B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5-Coder-32B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5-Coder-3B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5-Coder-3B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5-Coder-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen2.5-Coder-7B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "qwen3-1.7b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3-1.7b_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3-14b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3-14b_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen3-235b-a22b Instruct (25/07)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Qwen3-235B-A22B-Thinking-2507",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen3-30B-A3B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen3-30B-A3B_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3-30b-a3b-instruct-2507",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3-30b-a3b-thinking-2507",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen3-32B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen3-32B_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3-4b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3-4b_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3-4b-instruct-2507",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3-8b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3-8b_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen3-Coder-480B-A35B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "qwen3-max-2025-09-23",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.5-35b-a3b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.5-35b-a3b_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.5-397b-a17b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.5-397b-a17b_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.5-9B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen3.5-9B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "qwen3.5-9B_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.5-flash",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.5-plus",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.6-27b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.6-27b_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.6-35b-a3b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Qwen3.6-35B-A3B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "qwen3.6-35b-a3b_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.6-flash",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.6-max-preview",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "qwen3.6-plus",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "qwen3.7-flash",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.7-flash_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.7-max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "qwen3.7-plus",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.7-plus_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.8-max_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwen3.8-max-0902_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "QwQ-32B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "qwq-plus",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Redpajama-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "seed-oss-36b-instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "StableBeluga2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "StableBeluga2 70B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "StableLM-alpha-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "StarCoder2-15B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "StarCoder2-3B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "StarCoder2-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "SWE-1.6",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "SWE-1.7",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Switch-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Switch-Large",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "T5-11B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "T5-3B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "T5-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "T5-Large",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "T5-Small",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "text-ada-001",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "text-babbage-001",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "text-curie-001",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "text-davinci-002",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "text-davinci-003",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Tiny Recursion Model (TRM)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Vicuna v1.3 (13B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Vicuna-13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Vicuna-13B (v1.1)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "WizardLM-2-8x22B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "XGen-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Yi (34B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Yi (6B)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Yi 34B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Yi 6B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Yi Large (Preview)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Yi-1.5-34B-Chat",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Yi-34B-Chat",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 9
+    "occurrences": 10
   },
   {
     "name": "Yi-6B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Yi-9B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Yi-Chat 34B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "name": "Yi-Chat 6B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
     "last_seen_at": "2026-09-18",
-    "occurrences": 10
+    "occurrences": 11
   }
 ]

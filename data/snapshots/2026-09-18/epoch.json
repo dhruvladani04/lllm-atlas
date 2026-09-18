@@ -2,7 +2,7 @@
   "_meta": {
     "source_id": "epoch",
     "source_url": "https://epoch.ai/data/benchmark_data.zip",
-    "fetched_at": "2026-09-18T10:23:01.364Z",
+    "fetched_at": "2026-09-18T16:51:23.078Z",
     "record_count": 59,
     "status": "ok"
   },
@@ -20141,7 +20141,7 @@
           "score": 0.473,
           "release_date": "2025-07-09",
           "organization": "xAI",
-          "harness": null,
+          "harness": "True",
           "source_link": "https://drb.futuresearch.ai"
         },
         {
@@ -27671,7 +27671,7 @@
           "score": 72.1,
           "release_date": "2026-02-17",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "claude-sonnet-4-6 (100 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27680,7 +27680,7 @@
           "score": 62.9,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "claude-sonnet-4-5-20250929 (100 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27689,7 +27689,7 @@
           "score": 58.1,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "claude-sonnet-4-5-20250929 (50 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27698,7 +27698,7 @@
           "score": 43.9,
           "release_date": "2025-05-22",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "claude-4-sonnet-20250514 (50 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27707,7 +27707,7 @@
           "score": 42.9,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "claude-sonnet-4-5-20250929 (15 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27716,7 +27716,7 @@
           "score": 41.4,
           "release_date": "2025-05-22",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "claude-4-sonnet-20250514 (100 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27725,7 +27725,7 @@
           "score": 35.8,
           "release_date": "2025-02-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "claude-3-7-sonnet-20250219 (50 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27734,7 +27734,7 @@
           "score": 35.6,
           "release_date": "2025-02-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "claude-3-7-sonnet-20250219 (100 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27743,7 +27743,7 @@
           "score": 31.3,
           "release_date": "2025-03-11",
           "organization": null,
-          "harness": null,
+          "harness": "computer-use-preview (50 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27752,7 +27752,7 @@
           "score": 31.2,
           "release_date": "2025-05-22",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "claude-4-sonnet-20250514 (15 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27761,7 +27761,7 @@
           "score": 30.5,
           "release_date": "2025-03-11",
           "organization": null,
-          "harness": null,
+          "harness": "computer-use-preview (100 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27770,7 +27770,7 @@
           "score": 27.1,
           "release_date": "2025-02-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "claude-3-7-sonnet-20250219 (15 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27779,7 +27779,7 @@
           "score": 26,
           "release_date": "2025-03-11",
           "organization": null,
-          "harness": null,
+          "harness": "computer-use-preview (15 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27788,7 +27788,7 @@
           "score": 23,
           "release_date": "2025-04-16",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "o3 (100 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27797,7 +27797,7 @@
           "score": 17.2,
           "release_date": "2025-04-16",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "o3 (50 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27806,7 +27806,7 @@
           "score": 9.1,
           "release_date": "2025-04-16",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "o3 (15 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27815,7 +27815,7 @@
           "score": 5,
           "release_date": "2024-09-19",
           "organization": "Alibaba",
-          "harness": null,
+          "harness": "qwen2.5-vl-72b-instruct (100 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27824,7 +27824,7 @@
           "score": 4.4,
           "release_date": "2024-09-19",
           "organization": "Alibaba",
-          "harness": null,
+          "harness": "qwen2.5-vl-72b-instruct (15 steps)",
           "source_link": "https://os-world.github.io/"
         },
         {
@@ -27833,7 +27833,7 @@
           "score": 66.3,
           "release_date": "2025-11-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Claude Opus 4.5",
           "source_link": "https://www.anthropic.com/news/claude-opus-4-5"
         },
         {
@@ -27842,7 +27842,7 @@
           "score": 63.3,
           "release_date": "2026-01-27",
           "organization": "Moonshot",
-          "harness": null,
+          "harness": "Kimi-K2.5",
           "source_link": "https://os-world.github.io/"
         }
       ]
@@ -30185,7 +30185,7 @@
           "score": 0.8470000000000001,
           "release_date": "2026-04-23",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "NexAU-AHE",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30194,7 +30194,7 @@
           "score": 0.831,
           "release_date": "2026-04-23",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Capy",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30203,7 +30203,7 @@
           "score": 0.8220000000000001,
           "release_date": "2026-04-23",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30212,7 +30212,7 @@
           "score": 0.8200000000000001,
           "release_date": "2026-04-23",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30221,7 +30221,7 @@
           "score": 0.818,
           "release_date": "2026-03-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "ForgeCode",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30230,7 +30230,7 @@
           "score": 0.802,
           "release_date": "2026-02-19",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "TongAgents",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30239,7 +30239,7 @@
           "score": 0.802,
           "release_date": "2026-04-16",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "WOZCODE",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30248,7 +30248,7 @@
           "score": 0.798,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "ForgeCode",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30257,7 +30257,7 @@
           "score": 0.784,
           "release_date": "2026-02-19",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Forge Code",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30266,7 +30266,7 @@
           "score": 0.784,
           "release_date": "2026-02-19",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "ForgeCode",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30275,7 +30275,7 @@
           "score": 0.784,
           "release_date": "2026-02-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "SageAgent",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30284,7 +30284,7 @@
           "score": 0.773,
           "release_date": "2026-02-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Droid",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30293,7 +30293,7 @@
           "score": 0.7640000000000001,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Meta-Harness",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30302,7 +30302,7 @@
           "score": 0.758,
           "release_date": "2026-02-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "CodeBrain-1.5",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30311,7 +30311,7 @@
           "score": 0.757,
           "release_date": "2026-02-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codelia",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30320,7 +30320,7 @@
           "score": 0.753,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Capy",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30329,7 +30329,7 @@
           "score": 0.751,
           "release_date": "2026-02-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Simple Codex",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30338,7 +30338,7 @@
           "score": 0.748,
           "release_date": "2026-02-19",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Terminus-KIRA",
           "source_link": null
         },
         {
@@ -30347,7 +30347,7 @@
           "score": 0.747,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Terminus-KIRA",
           "source_link": null
         },
         {
@@ -30356,7 +30356,7 @@
           "score": 0.746,
           "release_date": "2026-02-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mux",
           "source_link": null
         },
         {
@@ -30365,7 +30365,7 @@
           "score": 0.721,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "MAYA-V2",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30374,7 +30374,7 @@
           "score": 0.7190000000000001,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "TongAgents",
           "source_link": null
         },
         {
@@ -30383,7 +30383,7 @@
           "score": 0.715,
           "release_date": "2026-02-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "spoox-o-m",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30392,7 +30392,7 @@
           "score": 0.703,
           "release_date": "2026-02-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "CodeBrain-1",
           "source_link": null
         },
         {
@@ -30401,7 +30401,7 @@
           "score": 0.6990000000000001,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Droid",
           "source_link": null
         },
         {
@@ -30410,7 +30410,7 @@
           "score": 0.699,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Droid",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30419,7 +30419,7 @@
           "score": 0.6940000000000001,
           "release_date": "2025-11-18",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Ante",
           "source_link": null
         },
         {
@@ -30428,7 +30428,7 @@
           "score": 0.691,
           "release_date": "2026-02-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "IndusAGI Coding Agent",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30437,7 +30437,7 @@
           "score": 0.669,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Crux",
           "source_link": null
         },
         {
@@ -30446,7 +30446,7 @@
           "score": 0.665,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Mux",
           "source_link": null
         },
         {
@@ -30455,7 +30455,7 @@
           "score": 0.665,
           "release_date": "2025-12-18",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Deep Agents",
           "source_link": null
         },
         {
@@ -30464,7 +30464,7 @@
           "score": 0.6609999999999999,
           "release_date": "2026-04-23",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "clnkr",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30473,7 +30473,7 @@
           "score": 0.652,
           "release_date": "2025-11-18",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "SageAgent",
           "source_link": null
         },
         {
@@ -30482,7 +30482,7 @@
           "score": 0.649,
           "release_date": "2025-12-11",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Droid",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30491,7 +30491,7 @@
           "score": 0.649,
           "release_date": "2025-12-11",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Droid",
           "source_link": null
         },
         {
@@ -30500,7 +30500,7 @@
           "score": 0.647,
           "release_date": "2026-02-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -30509,7 +30509,7 @@
           "score": 0.643,
           "release_date": "2025-12-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Junie CLI",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30518,7 +30518,7 @@
           "score": 0.631,
           "release_date": "2025-11-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Droid",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30527,7 +30527,7 @@
           "score": 0.631,
           "release_date": "2025-11-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Droid",
           "source_link": null
         },
         {
@@ -30536,7 +30536,7 @@
           "score": 0.629,
           "release_date": "2025-12-11",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30545,7 +30545,7 @@
           "score": 0.629,
           "release_date": "2025-12-11",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": null
         },
         {
@@ -30554,7 +30554,7 @@
           "score": 0.629,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -30563,7 +30563,7 @@
           "score": 0.622,
           "release_date": "2025-11-18",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "CodeBrain-1",
           "source_link": null
         },
         {
@@ -30572,7 +30572,7 @@
           "score": 0.622,
           "release_date": "2025-11-18",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "CodeBrain-1.5",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30581,7 +30581,7 @@
           "score": 0.618,
           "release_date": "2025-11-18",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "II-Agent",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30590,7 +30590,7 @@
           "score": 0.616,
           "release_date": "2025-11-12",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "hookele",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30599,7 +30599,7 @@
           "score": 0.611,
           "release_date": "2025-11-18",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Droid",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30608,7 +30608,7 @@
           "score": 0.6070000000000001,
           "release_date": "2025-12-11",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mux",
           "source_link": null
         },
         {
@@ -30617,7 +30617,7 @@
           "score": 0.604,
           "release_date": "2025-11-19",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30626,7 +30626,7 @@
           "score": 0.594,
           "release_date": "2026-02-19",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Gemini CLI",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30635,7 +30635,7 @@
           "score": 0.5910000000000001,
           "release_date": "2025-11-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Letta Code",
           "source_link": null
         },
         {
@@ -30644,7 +30644,7 @@
           "score": 0.591,
           "release_date": "2025-11-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Letta Code",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30653,7 +30653,7 @@
           "score": 0.584,
           "release_date": "2025-11-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Mux",
           "source_link": null
         },
         {
@@ -30662,7 +30662,7 @@
           "score": 0.58,
           "release_date": "2026-02-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Claude Code",
           "source_link": null
         },
         {
@@ -30671,7 +30671,7 @@
           "score": 0.578,
           "release_date": "2025-11-12",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30680,7 +30680,7 @@
           "score": 0.578,
           "release_date": "2025-11-12",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Crux",
           "source_link": null
         },
         {
@@ -30689,7 +30689,7 @@
           "score": 0.578,
           "release_date": "2025-11-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -30698,7 +30698,7 @@
           "score": 0.573,
           "release_date": "2026-02-17",
           "organization": "xAI",
-          "harness": null,
+          "harness": "grok-cli",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30707,7 +30707,7 @@
           "score": 0.573,
           "release_date": "2026-02-17",
           "organization": "xAI",
-          "harness": null,
+          "harness": "Grok CLI",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30716,7 +30716,7 @@
           "score": 0.569,
           "release_date": "2025-11-18",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30725,7 +30725,7 @@
           "score": 0.56,
           "release_date": "2025-11-18",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Letta Code",
           "source_link": null
         },
         {
@@ -30734,7 +30734,7 @@
           "score": 0.543,
           "release_date": "2025-11-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Goose",
           "source_link": null
         },
         {
@@ -30743,7 +30743,7 @@
           "score": 0.54,
           "release_date": "2025-12-11",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -30752,7 +30752,7 @@
           "score": 0.535,
           "release_date": "2025-11-12",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Letta Code",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30761,7 +30761,7 @@
           "score": 0.534,
           "release_date": "2026-02-17",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Simplai Agent",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30770,7 +30770,7 @@
           "score": 0.534,
           "release_date": "2026-02-17",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Simplai Agent",
           "source_link": null
         },
         {
@@ -30779,7 +30779,7 @@
           "score": 0.524,
           "release_date": "2026-02-11",
           "organization": "Z.ai (Zhipu AI)",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -30788,7 +30788,7 @@
           "score": 0.521,
           "release_date": "2025-11-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Claude Code",
           "source_link": null
         },
         {
@@ -30797,7 +30797,7 @@
           "score": 0.519,
           "release_date": "2025-11-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -30806,7 +30806,7 @@
           "score": 0.517,
           "release_date": "2025-12-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -30815,7 +30815,7 @@
           "score": 0.517,
           "release_date": "2025-11-24",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "OpenCode",
           "source_link": null
         },
         {
@@ -30824,7 +30824,7 @@
           "score": 0.51,
           "release_date": "2025-12-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Gemini CLI",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30833,7 +30833,7 @@
           "score": 0.49600000000000005,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": null
         },
         {
@@ -30842,7 +30842,7 @@
           "score": 0.496,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30851,7 +30851,7 @@
           "score": 0.47600000000000003,
           "release_date": "2025-11-13",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -30860,7 +30860,7 @@
           "score": 0.476,
           "release_date": "2025-11-13",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30869,7 +30869,7 @@
           "score": 0.476,
           "release_date": "2025-11-13",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30878,7 +30878,7 @@
           "score": 0.474,
           "release_date": "2025-12-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Gemini CLI",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30887,7 +30887,7 @@
           "score": 0.465,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "CAMEL-AI",
           "source_link": null
         },
         {
@@ -30896,7 +30896,7 @@
           "score": 0.451,
           "release_date": "2026-03-18",
           "organization": "MiniMax",
-          "harness": null,
+          "harness": "IndusAGI Coding Agent",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -30905,7 +30905,7 @@
           "score": 0.443,
           "release_date": "2025-09-15",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30914,7 +30914,7 @@
           "score": 0.443,
           "release_date": "2025-09-15",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": null
         },
         {
@@ -30923,7 +30923,7 @@
           "score": 0.438,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30932,7 +30932,7 @@
           "score": 0.438,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -30941,7 +30941,7 @@
           "score": 0.434,
           "release_date": "2025-09-15",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30950,7 +30950,7 @@
           "score": 0.434,
           "release_date": "2025-09-15",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -30959,7 +30959,7 @@
           "score": 0.43200000000000005,
           "release_date": "2026-01-27",
           "organization": "Moonshot",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -30968,7 +30968,7 @@
           "score": 0.43100000000000005,
           "release_date": "2025-11-12",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Crux",
           "source_link": null
         },
         {
@@ -30977,7 +30977,7 @@
           "score": 0.43100000000000005,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Goose",
           "source_link": null
         },
         {
@@ -30986,7 +30986,7 @@
           "score": 0.431,
           "release_date": "2025-11-12",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -30995,7 +30995,7 @@
           "score": 0.429,
           "release_date": "2026-03-18",
           "organization": "MiniMax",
-          "harness": null,
+          "harness": "Harness Agent",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -31004,7 +31004,7 @@
           "score": 0.428,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31013,7 +31013,7 @@
           "score": 0.428,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31022,7 +31022,7 @@
           "score": 0.42700000000000005,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "MAYA",
           "source_link": null
         },
         {
@@ -31031,7 +31031,7 @@
           "score": 0.42700000000000005,
           "release_date": "2026-02-12",
           "organization": "MiniMax",
-          "harness": null,
+          "harness": "cchuter",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -31040,7 +31040,7 @@
           "score": 0.42700000000000005,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "MAYA-V2",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -31049,7 +31049,7 @@
           "score": 0.42600000000000005,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -31058,7 +31058,7 @@
           "score": 0.426,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31067,7 +31067,7 @@
           "score": 0.425,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31076,7 +31076,7 @@
           "score": 0.425,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31085,7 +31085,7 @@
           "score": 0.42200000000000004,
           "release_date": "2026-02-12",
           "organization": "MiniMax",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31094,7 +31094,7 @@
           "score": 0.413,
           "release_date": "2025-09-15",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31103,7 +31103,7 @@
           "score": 0.413,
           "release_date": "2025-09-15",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31112,7 +31112,7 @@
           "score": 0.401,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Claude Code",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31121,7 +31121,7 @@
           "score": 0.401,
           "release_date": "2025-09-29",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Claude Code",
           "source_link": null
         },
         {
@@ -31130,7 +31130,7 @@
           "score": 0.396,
           "release_date": "2025-12-01",
           "organization": "DeepSeek",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31139,7 +31139,7 @@
           "score": 0.38,
           "release_date": "2025-08-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31148,7 +31148,7 @@
           "score": 0.38,
           "release_date": "2025-08-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31157,7 +31157,7 @@
           "score": 0.369,
           "release_date": "2025-11-12",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31166,7 +31166,7 @@
           "score": 0.369,
           "release_date": "2025-08-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31175,7 +31175,7 @@
           "score": 0.369,
           "release_date": "2025-08-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -31184,7 +31184,7 @@
           "score": 0.369,
           "release_date": "2025-11-12",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31193,7 +31193,7 @@
           "score": 0.36600000000000005,
           "release_date": "2025-12-23",
           "organization": "MiniMax",
-          "harness": null,
+          "harness": "Crux",
           "source_link": null
         },
         {
@@ -31202,7 +31202,7 @@
           "score": 0.35700000000000004,
           "release_date": "2025-11-06",
           "organization": "Moonshot",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31211,7 +31211,7 @@
           "score": 0.357,
           "release_date": "2025-11-06",
           "organization": "Moonshot",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31220,7 +31220,7 @@
           "score": 0.355,
           "release_date": "2025-10-15",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Goose",
           "source_link": null
         },
         {
@@ -31229,7 +31229,7 @@
           "score": 0.35200000000000004,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31238,7 +31238,7 @@
           "score": 0.352,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31247,7 +31247,7 @@
           "score": 0.35100000000000003,
           "release_date": "2025-08-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31256,7 +31256,7 @@
           "score": 0.351,
           "release_date": "2025-08-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31265,7 +31265,7 @@
           "score": 0.348,
           "release_date": "2025-08-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Claude Code",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31274,7 +31274,7 @@
           "score": 0.348,
           "release_date": "2025-08-05",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Claude Code",
           "source_link": null
         },
         {
@@ -31283,7 +31283,7 @@
           "score": 0.348,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "spoox-m",
           "source_link": null
         },
         {
@@ -31292,7 +31292,7 @@
           "score": 0.348,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "spoox-o-m",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -31301,7 +31301,7 @@
           "score": 0.339,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31310,7 +31310,7 @@
           "score": 0.33899999999999997,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31319,7 +31319,7 @@
           "score": 0.334,
           "release_date": "2025-12-22",
           "organization": "Z.ai (Zhipu AI)",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31328,7 +31328,7 @@
           "score": 0.33299999999999996,
           "release_date": "2025-12-22",
           "organization": "Z.ai (Zhipu AI)",
-          "harness": null,
+          "harness": "Crux",
           "source_link": null
         },
         {
@@ -31337,7 +31337,7 @@
           "score": 0.326,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31346,7 +31346,7 @@
           "score": 0.326,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31355,7 +31355,7 @@
           "score": 0.319,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31364,7 +31364,7 @@
           "score": 0.319,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": null
         },
         {
@@ -31373,7 +31373,7 @@
           "score": 0.3,
           "release_date": "2025-10-27",
           "organization": "MiniMax",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31382,7 +31382,7 @@
           "score": 0.298,
           "release_date": "2025-10-15",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31391,7 +31391,7 @@
           "score": 0.298,
           "release_date": "2025-10-15",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31400,7 +31400,7 @@
           "score": 0.292,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31409,7 +31409,7 @@
           "score": 0.292,
           "release_date": "2025-12-23",
           "organization": "MiniMax",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31418,7 +31418,7 @@
           "score": 0.292,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -31427,7 +31427,7 @@
           "score": 0.28300000000000003,
           "release_date": "2025-10-15",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31436,7 +31436,7 @@
           "score": 0.283,
           "release_date": "2025-10-15",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31445,7 +31445,7 @@
           "score": 0.278,
           "release_date": "2025-07-12",
           "organization": "Moonshot",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31454,7 +31454,7 @@
           "score": 0.278,
           "release_date": "2025-07-12",
           "organization": "Moonshot",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31463,7 +31463,7 @@
           "score": 0.275,
           "release_date": "2025-10-15",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Claude Code",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31472,7 +31472,7 @@
           "score": 0.275,
           "release_date": "2025-10-15",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "Claude Code",
           "source_link": null
         },
         {
@@ -31481,7 +31481,7 @@
           "score": 0.272,
           "release_date": "2025-07-09",
           "organization": "xAI",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31490,7 +31490,7 @@
           "score": 0.272,
           "release_date": "2025-07-09",
           "organization": "xAI",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -31499,7 +31499,7 @@
           "score": 0.272,
           "release_date": "2025-07-31",
           "organization": "Alibaba",
-          "harness": null,
+          "harness": "Dakou Agent",
           "source_link": null
         },
         {
@@ -31508,7 +31508,7 @@
           "score": 0.267,
           "release_date": "2025-07-12",
           "organization": "Moonshot",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31517,7 +31517,7 @@
           "score": 0.267,
           "release_date": "2025-07-12",
           "organization": "Moonshot",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -31526,7 +31526,7 @@
           "score": 0.261,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31535,7 +31535,7 @@
           "score": 0.261,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31544,7 +31544,7 @@
           "score": 0.258,
           "release_date": "2025-08-28",
           "organization": null,
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31553,7 +31553,7 @@
           "score": 0.258,
           "release_date": "2025-08-28",
           "organization": null,
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31562,7 +31562,7 @@
           "score": 0.254,
           "release_date": "2025-07-09",
           "organization": "xAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31571,7 +31571,7 @@
           "score": 0.254,
           "release_date": "2025-07-31",
           "organization": "Alibaba",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31580,7 +31580,7 @@
           "score": 0.254,
           "release_date": "2025-07-09",
           "organization": "xAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31589,7 +31589,7 @@
           "score": 0.254,
           "release_date": "2025-07-31",
           "organization": "Alibaba",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -31598,7 +31598,7 @@
           "score": 0.245,
           "release_date": "2025-09-30",
           "organization": "Z.ai (Zhipu AI),Tsinghua University",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31607,7 +31607,7 @@
           "score": 0.245,
           "release_date": "2025-09-30",
           "organization": "Z.ai (Zhipu AI),Tsinghua University",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31616,7 +31616,7 @@
           "score": 0.24,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31625,7 +31625,7 @@
           "score": 0.24,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31634,7 +31634,7 @@
           "score": 0.239,
           "release_date": "2025-07-31",
           "organization": "Alibaba",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31643,7 +31643,7 @@
           "score": 0.239,
           "release_date": "2025-07-31",
           "organization": "Alibaba",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31652,7 +31652,7 @@
           "score": 0.231,
           "release_date": "2025-07-09",
           "organization": "xAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31661,7 +31661,7 @@
           "score": 0.231,
           "release_date": "2025-07-09",
           "organization": "xAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31670,7 +31670,7 @@
           "score": 0.23,
           "release_date": "2026-04-14",
           "organization": "Alibaba",
-          "harness": null,
+          "harness": "little-coder",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -31679,7 +31679,7 @@
           "score": 0.222,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31688,7 +31688,7 @@
           "score": 0.222,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31697,7 +31697,7 @@
           "score": 0.218,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "spoox-o-m",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -31706,7 +31706,7 @@
           "score": 0.196,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Gemini CLI",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31715,7 +31715,7 @@
           "score": 0.196,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Gemini CLI",
           "source_link": null
         },
         {
@@ -31724,7 +31724,7 @@
           "score": 0.187,
           "release_date": "2025-08-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31733,7 +31733,7 @@
           "score": 0.187,
           "release_date": "2025-08-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31742,7 +31742,7 @@
           "score": 0.171,
           "release_date": "2025-09-25",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31751,7 +31751,7 @@
           "score": 0.171,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31760,7 +31760,7 @@
           "score": 0.169,
           "release_date": "2025-09-25",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31769,7 +31769,7 @@
           "score": 0.16899999999999998,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31778,7 +31778,7 @@
           "score": 0.164,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31787,7 +31787,7 @@
           "score": 0.164,
           "release_date": "2025-09-25",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31796,7 +31796,7 @@
           "score": 0.16399999999999998,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -31805,7 +31805,7 @@
           "score": 0.16399999999999998,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -31814,7 +31814,7 @@
           "score": 0.154,
           "release_date": "2025-09-25",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Gemini CLI",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31823,7 +31823,7 @@
           "score": 0.154,
           "release_date": "2025-06-17",
           "organization": "Google DeepMind",
-          "harness": null,
+          "harness": "Gemini CLI",
           "source_link": null
         },
         {
@@ -31832,7 +31832,7 @@
           "score": 0.142,
           "release_date": "2025-08-28",
           "organization": null,
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31841,7 +31841,7 @@
           "score": 0.142,
           "release_date": "2025-08-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31850,7 +31850,7 @@
           "score": 0.142,
           "release_date": "2025-08-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31859,7 +31859,7 @@
           "score": 0.142,
           "release_date": "2025-08-28",
           "organization": null,
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31868,7 +31868,7 @@
           "score": 0.139,
           "release_date": "2025-10-15",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31877,7 +31877,7 @@
           "score": 0.139,
           "release_date": "2025-10-15",
           "organization": "Anthropic",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -31886,7 +31886,7 @@
           "score": 0.115,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31895,7 +31895,7 @@
           "score": 0.115,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Codex CLI",
           "source_link": null
         },
         {
@@ -31904,7 +31904,7 @@
           "score": 0.099,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31913,7 +31913,7 @@
           "score": 0.099,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "OpenHands",
           "source_link": null
         },
         {
@@ -31922,7 +31922,7 @@
           "score": 0.092,
           "release_date": "2026-02-24",
           "organization": "Alibaba",
-          "harness": null,
+          "harness": "little-coder",
           "source_link": "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
         },
         {
@@ -31931,7 +31931,7 @@
           "score": 0.079,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31940,7 +31940,7 @@
           "score": 0.079,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31949,7 +31949,7 @@
           "score": 0.07,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31958,7 +31958,7 @@
           "score": 0.07,
           "release_date": "2025-08-07",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31967,7 +31967,7 @@
           "score": 0.034,
           "release_date": "2025-08-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": "Terminal-Bench v2 Leaderboard"
         },
         {
@@ -31976,7 +31976,7 @@
           "score": 0.034,
           "release_date": "2025-08-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Mini-SWE-Agent",
           "source_link": null
         },
         {
@@ -31985,7 +31985,7 @@
           "score": 0.031000000000000003,
           "release_date": "2025-08-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": null
         },
         {
@@ -31994,7 +31994,7 @@
           "score": 0.031,
           "release_date": "2025-08-05",
           "organization": "OpenAI",
-          "harness": null,
+          "harness": "Terminus 2",
           "source_link": "Terminal-Bench v2 Leaderboard"
         }
       ]
