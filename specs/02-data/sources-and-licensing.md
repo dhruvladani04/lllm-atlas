@@ -26,6 +26,13 @@ this category forbid exactly what this site does. Read this file before adding a
 - **Licensing status: no published licence.** The endpoint is public; the terms are not
   stated. Treat this as permission-not-granted rather than permission-denied.
 
+**Normalised on ingest:** language values arrive spelled inconsistently — `cpp` and
+`c-plus-plus` are one language filtered as two. True synonyms are merged behind a small
+alias map. `code`, `multilingual` and `language-neutral` are *not* merged into anything:
+they look like noise beside `python` and `french` but are the honest answer for a benchmark
+spanning many languages or none, and folding them into a specific language would invent a
+fact rather than tidy one.
+
 **Required handling:**
 - Prominent, persistent attribution on every page in section 2 and on every benchmark chip
   elsewhere: "Benchmark metadata from benchwiki", linking to the corresponding benchwiki
@@ -170,3 +177,4 @@ this file. No source ships without all six.
   and context window. Milestone 3.
 - Mirrored benchmark pages are kept out of the sitemap, so the canonical to benchwiki is
   not contradicted by this site's own crawl signals. Post-launch audit.
+- Language values are normalised on ingest for true synonyms only. Post-launch audit.

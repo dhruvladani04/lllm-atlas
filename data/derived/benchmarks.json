@@ -75,8 +75,8 @@
     "name": "AgentIF",
     "capability": "instruction-following",
     "languages": [
-      "english",
-      "chinese"
+      "chinese",
+      "english"
     ],
     "secondary_capabilities": [
       "agentic-tool-use"
@@ -135,8 +135,8 @@
     "name": "AGIEval",
     "capability": "reasoning",
     "languages": [
-      "english",
-      "chinese"
+      "chinese",
+      "english"
     ],
     "secondary_capabilities": [
       "knowledge"
@@ -679,9 +679,9 @@
     "capability": "agentic-tool-use",
     "languages": [
       "english",
-      "python",
       "java",
       "javascript",
+      "python",
       "sql"
     ],
     "secondary_capabilities": [
@@ -981,8 +981,8 @@
     "capability": "coding",
     "languages": [
       "c-plus-plus",
-      "python",
-      "java"
+      "java",
+      "python"
     ],
     "secondary_capabilities": [
       "reasoning"
@@ -1044,18 +1044,18 @@
     "name": "CodeXGLUE",
     "capability": "coding",
     "languages": [
-      "python",
+      "c",
+      "c-plus-plus",
+      "c-sharp",
+      "chinese",
+      "english",
+      "go",
+      "japanese",
       "java",
       "javascript",
       "php",
-      "ruby",
-      "go",
-      "c-sharp",
-      "c",
-      "c-plus-plus",
-      "english",
-      "chinese",
-      "japanese"
+      "python",
+      "ruby"
     ],
     "secondary_capabilities": [],
     "short_description": "A broad code-intelligence suite spanning understanding, retrieval, completion, translation, repair, generation, and summarization.",
@@ -1243,8 +1243,8 @@
     "name": "ComplexBench",
     "capability": "instruction-following",
     "languages": [
-      "english",
-      "chinese"
+      "chinese",
+      "english"
     ],
     "secondary_capabilities": [
       "reasoning"
@@ -2465,9 +2465,9 @@
     "name": "InfiniteBench",
     "capability": "long-context",
     "languages": [
-      "english",
       "chinese",
-      "code"
+      "code",
+      "english"
     ],
     "secondary_capabilities": [
       "coding",
@@ -2716,9 +2716,9 @@
     "name": "LongBench",
     "capability": "long-context",
     "languages": [
-      "english",
       "chinese",
-      "code"
+      "code",
+      "english"
     ],
     "secondary_capabilities": [
       "knowledge",
@@ -2833,8 +2833,8 @@
     "name": "LongBench-Pro",
     "capability": "long-context",
     "languages": [
-      "english",
-      "chinese"
+      "chinese",
+      "english"
     ],
     "secondary_capabilities": [
       "knowledge",
@@ -5534,10 +5534,10 @@
     "capability": "coding",
     "languages": [
       "english",
-      "python",
+      "go",
       "javascript",
-      "typescript",
-      "go"
+      "python",
+      "typescript"
     ],
     "secondary_capabilities": [
       "agentic-tool-use",
@@ -6096,13 +6096,13 @@
     "name": "Terminal-Bench",
     "capability": "coding",
     "languages": [
-      "english",
-      "shell",
-      "python",
       "c",
-      "cpp",
+      "c-plus-plus",
+      "english",
+      "javascript",
+      "python",
       "rust",
-      "javascript"
+      "shell"
     ],
     "secondary_capabilities": [
       "agentic-tool-use"
@@ -6297,8 +6297,8 @@
     "capability": "agentic-tool-use",
     "languages": [
       "english",
-      "shell",
       "python",
+      "shell",
       "sql"
     ],
     "secondary_capabilities": [
@@ -6417,8 +6417,8 @@
     "name": "Video-MME",
     "capability": "multimodal",
     "languages": [
-      "english",
       "chinese",
+      "english",
       "japanese",
       "other-multilingual-video"
     ],

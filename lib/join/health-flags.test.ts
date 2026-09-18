@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { Benchmark } from "@/lib/schemas/benchmark";
 import type { Score } from "@/lib/schemas/score";
-import { deriveHealthFlags } from "@/lib/join/health-flags";
+import { deriveHealthFlags, measurementKey } from "@/lib/join/health-flags";
 
 /**
  * Every condition in the flag derivation table of specs/02-data/schemas.md, asserted
@@ -67,7 +67,7 @@ function score(overrides: Partial<Score> = {}): Score {
 }
 
 const flags = (s: Score, b: Benchmark, independentExists = false) =>
-  deriveHealthFlags(s, b, { independentExists, now: NOW });
+  deriveHealthFlags(s, b, { independentExists, disputed: false, now: NOW });
 
 describe("a healthy score on a healthy benchmark", () => {
   it("carries no flags at all", () => {
@@ -181,5 +181,39 @@ describe("flags combine", () => {
         "superseded",
       ]),
     );
+  });
+});
+
+describe("disputed measurements", () => {
+  it("flags a score the source reports two different values for", () => {
+    expect(
+      deriveHealthFlags(score(), benchmark(), {
+        independentExists: true,
+        disputed: true,
+        now: NOW,
+      }),
+    ).toContain("disputed");
+  });
+
+  it("says nothing when the source is self-consistent", () => {
+    expect(flags(score(), benchmark())).not.toContain("disputed");
+  });
+});
+
+describe("measurementKey", () => {
+  it("separates two provenances of the same measurement", () => {
+    const independent = score({ provenance: "independent" });
+    const vendor = score({ provenance: "vendor-reported" });
+    expect(measurementKey(independent)).not.toBe(measurementKey(vendor));
+  });
+
+  it("separates two dates of the same measurement", () => {
+    expect(measurementKey(score({ measured_at: "2026-01-01" }))).not.toBe(
+      measurementKey(score({ measured_at: "2026-02-01" })),
+    );
+  });
+
+  it("treats an identical measurement as identical", () => {
+    expect(measurementKey(score())).toBe(measurementKey(score()));
   });
 });

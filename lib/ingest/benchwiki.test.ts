@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { benchwikiRecord, timelinePoint } from "@/lib/ingest/fixtures";
-import { benchwikiCanonicalUrl, toBenchmark, toIsoDate } from "@/lib/ingest/benchwiki";
+import {
+  benchwikiCanonicalUrl,
+  normaliseLanguages,
+  toBenchmark,
+  toIsoDate,
+} from "@/lib/ingest/benchwiki";
 import { buildRegistryIndex, resolveModelName } from "@/lib/registry/resolve";
 import { loadRegistry } from "@/lib/registry/load";
 
@@ -77,5 +82,25 @@ describe("toBenchmark", () => {
       model: "PaLM 2-L",
       model_id: null,
     });
+  });
+});
+
+describe("normaliseLanguages", () => {
+  it("merges the same language spelled two ways", () => {
+    expect(normaliseLanguages(["cpp", "c-plus-plus"])).toEqual(["c-plus-plus"]);
+  });
+
+  it("leaves a category that is not a language alone", () => {
+    // "code" and "multilingual" are the honest answer for a benchmark spanning many
+    // languages; folding them into a specific one would invent a fact.
+    expect(normaliseLanguages(["code", "multilingual"])).toEqual(["code", "multilingual"]);
+  });
+
+  it("is case and whitespace insensitive, and deduplicates", () => {
+    expect(normaliseLanguages([" Python ", "py", "PYTHON"])).toEqual(["python"]);
+  });
+
+  it("drops empty entries rather than emitting a blank filter option", () => {
+    expect(normaliseLanguages(["", "  ", "go"])).toEqual(["go"]);
   });
 });

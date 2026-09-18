@@ -67,6 +67,35 @@ function toTimelinePoint(
 }
 
 /**
+ * Upstream spells the same language two ways. `cpp` and `c-plus-plus` are one language
+ * filtered as two, which splits a filter that exists to gather things together.
+ *
+ * Only true synonyms are merged. `code`, `multilingual` and `language-neutral` look like
+ * noise beside `python` and `french` but are not — they are the honest answer for a
+ * benchmark that spans many languages or none, and collapsing them into a specific language
+ * would be inventing a fact rather than tidying one.
+ */
+const LANGUAGE_SYNONYMS: Record<string, string> = {
+  cpp: "c-plus-plus",
+  "c++": "c-plus-plus",
+  csharp: "c-sharp",
+  "c#": "c-sharp",
+  js: "javascript",
+  ts: "typescript",
+  py: "python",
+};
+
+export function normaliseLanguages(languages: readonly string[]): string[] {
+  const seen = new Set<string>();
+  for (const language of languages) {
+    const key = language.trim().toLowerCase();
+    if (key === "") continue;
+    seen.add(LANGUAGE_SYNONYMS[key] ?? key);
+  }
+  return [...seen].sort();
+}
+
+/**
  * Maps an upstream record onto the site's Benchmark shape. Field names differ in several
  * places — `metric.primary` becomes `metric_primary`, `metric.judge_model` is lifted to the
  * top level — and the canonical URL is derived rather than supplied. Nothing is invented:
@@ -80,7 +109,7 @@ export function toBenchmark(
     slug: record.slug,
     name: record.name,
     capability: record.capability,
-    languages: record.languages,
+    languages: normaliseLanguages(record.languages),
     secondary_capabilities: record.secondary_capabilities,
     short_description: record.short_description,
     launch_date: toIsoDateOrNull(record.launch_date),

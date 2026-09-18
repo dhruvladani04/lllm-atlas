@@ -110,6 +110,12 @@ const FLAG_LABEL: Record<HealthFlag, { short: string; glyph: string; title: stri
     glyph: "→",
     title: "A successor benchmark exists",
   },
+  disputed: {
+    short: "disputed",
+    glyph: "≠",
+    title:
+      "The source reports more than one score for this measurement and states no difference between them",
+  },
   "stale-source": {
     short: "stale",
     glyph: "~",
@@ -123,6 +129,7 @@ const FLAG_COLOUR: Record<HealthFlag, string> = {
   "high-contamination": "var(--risk-high)",
   "vendor-reported-only": "var(--provenance-vendor)",
   superseded: "var(--ink-mute)",
+  disputed: "var(--risk-medium)",
   "stale-source": "var(--stale)",
 };
 

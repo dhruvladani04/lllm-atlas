@@ -16,6 +16,8 @@ export interface FlagContext {
   independentExists: boolean;
   /** Build time, as an ISO datetime. Supplied, never read from the clock, so builds are reproducible. */
   now: string;
+  /** Does the source report more than one value for this exact measurement? */
+  disputed: boolean;
 }
 
 export function daysBetween(earlier: string, later: string): number {
@@ -46,6 +48,13 @@ export function deriveHealthFlags(
 
   if (benchmark.successor !== null) flags.push("superseded");
 
+  // Two different numbers for one measurement, and no field distinguishing them. Epoch
+  // reports this for a handful of rows — two HLE scores for the same model on the same day,
+  // which its own note says can differ by tens of points between tool configurations it
+  // does not record per score. Showing both silently makes the table look broken; showing
+  // one would be a coin toss presented as a fact. Both are shown, and both say so.
+  if (context.disputed) flags.push("disputed");
+
   // A floor, not the whole story: the pipeline commits only when data changes, so a build
   // can be older than the data it carries. FreshnessStamp recomputes this at render time.
   if (daysBetween(score.source.fetched_at, context.now) > STALE_AFTER_DAYS) {
@@ -63,4 +72,17 @@ export function scoreKey(score: Score): string {
     score.benchmark_slug,
     score.harness ?? "\u0000none",
   ].join("\u0001");
+}
+
+/**
+ * The full identity `02-data/schemas.md` declares for a score — everything `scoreKey`
+ * covers plus the two fields that make two rows different claims rather than the same one.
+ *
+ * Two scores equal on this key and unequal in value are a contradiction in the source, not
+ * two measurements, and the `disputed` flag is derived from exactly that.
+ */
+export function measurementKey(score: Score): string {
+  return [scoreKey(score), score.provenance, score.measured_at ?? "\u0000none"].join(
+    "\u0001",
+  );
 }

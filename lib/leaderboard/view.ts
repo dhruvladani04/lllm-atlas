@@ -91,6 +91,38 @@ export function uniformColumns(rows: readonly TableRow[]): UniformColumns {
   };
 }
 
+/**
+ * One row per model, carrying its best-scoring configuration.
+ *
+ * Reasoning-effort variants inflate the ranking badly: 49 rows describe 19 models, and a
+ * single model holds ranks 1–4 because it was measured at six effort levels. A reader
+ * asking "who is ahead" is answered worse by that than by one row per model.
+ *
+ * This is not the silent merge `03-sections/leaderboard.md` forbids. Nothing is averaged
+ * and no number changes — the row keeps the variant that produced it, named, and reports
+ * how many configurations it was chosen from, so "best of 6" is visible rather than
+ * implied. Expanding back to every configuration is one toggle away.
+ */
+export interface CollapsedRow extends TableRow {
+  /** How many configurations of this model were measured; 1 means nothing was collapsed. */
+  configurations: number;
+}
+
+export function bestConfigurationPerModel(rows: readonly TableRow[]): CollapsedRow[] {
+  const byModel = new Map<string, TableRow[]>();
+  for (const row of rows) {
+    byModel.set(row.model_id, [...(byModel.get(row.model_id) ?? []), row]);
+  }
+
+  const collapsed: CollapsedRow[] = [];
+  for (const [, group] of byModel) {
+    const best = group.reduce((a, b) => (b.value > a.value ? b : a));
+    collapsed.push({ ...best, configurations: group.length });
+  }
+
+  return collapsed.sort((a, b) => b.value - a.value);
+}
+
 function toRow(row: LeaderboardRow): TableRow {
   return {
     key: `${row.model.model_id}#${row.variant}`,

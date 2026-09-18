@@ -44,6 +44,7 @@ export const HealthFlag = z.enum([
   "high-contamination",
   "vendor-reported-only",
   "superseded",
+  "disputed",
   "stale-source",
 ]);
 export type HealthFlag = z.infer<typeof HealthFlag>;

@@ -72,10 +72,23 @@ destroy column alignment.
 | Adoption | OpenRouter usage rank, visually separated from capability columns |
 | Released | Date, with "new" marker under 14 days |
 
-**The row key is model + variant.** `Claude Opus 5` and `Claude Opus 5 (high)` are two
-rows, not one, because they score differently and merging them silently produces a wrong
-number with no error anywhere — the same argument `01-architecture/model-registry.md`
-makes for the score tuple. Sorting and filtering operate over variant rows.
+**The row key is model + variant, and by default only the best variant per model is
+shown.** `Claude Opus 5` and `Claude Opus 5 (high)` remain two distinct rows in the data —
+merging them silently produces a wrong number with no error anywhere, the same argument
+`01-architecture/model-registry.md` makes for the score tuple. But showing every
+configuration by default answers "who is ahead" badly: 49 rows describe 19 models, and one
+model held ranks 1–4 because it was measured at six effort levels.
+
+So the table shows one row per model, carrying its best-scoring configuration, and says
+which one it was and how many it beat — "best of 6 configurations". Nothing is averaged and
+no number changes; the collapse is named on the row rather than implied. **"Show every
+configuration"** expands back to variant rows. A collapsed row that hid which variant
+produced its number would be the silent merge this rule forbids.
+
+**The ranking states its own reach.** A line above the table says how many of the tracked
+benchmarks have any score at all — 11 of 80 today. Without it the table reads as the state
+of the field rather than as what the sources this site can legally redistribute have
+measured.
 
 Where no vendor price is available, the OpenRouter price renders with a small marker and
 a tooltip: a routed price is not a list price. Where neither exists, the cell renders
@@ -189,3 +202,6 @@ Decide." Copy guidance is in `04-design/design-system.md`.
 - Uniform columns collapse into a sentence, abbreviations moved out of `title` attributes
   into a visible legend, `aria-sort` added, and the model page now links benchmarks
   internally rather than straight out to benchwiki. Post-launch audit.
+- One row per model by default, carrying its best configuration and saying how many it
+  beat; a toggle expands every variant. The ranking states how much of the benchmark
+  universe it can speak to. Post-launch audit.

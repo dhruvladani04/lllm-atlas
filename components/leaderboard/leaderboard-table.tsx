@@ -6,7 +6,12 @@ import Link from "next/link";
 import type { UnrankedRow } from "@/lib/leaderboard/rows";
 import type { HealthFlag } from "@/lib/schemas/score";
 import type { TableData, TableModel, TableRow } from "@/lib/leaderboard/view";
-import { uniformColumns, type UniformColumns } from "@/lib/leaderboard/view";
+import {
+  bestConfigurationPerModel,
+  uniformColumns,
+  type CollapsedRow,
+  type UniformColumns,
+} from "@/lib/leaderboard/view";
 import { formatTokenCount } from "@/lib/format/number";
 import {
   HealthFlags,
@@ -101,15 +106,6 @@ const PROVENANCE_SENTENCE: Record<TableRow["provenance"], string> = {
 };
 
 /**
- * What the table means, said in text rather than in `title` attributes.
- *
- * `ind.` and the `~` after a price were explained only by tooltips, which do not exist on
- * touch and are announced inconsistently by screen readers — so on a phone the two marks
- * that carry the site's entire honesty claim were simply unexplained. They are written out
- * here instead, next to the statements for any column that collapsed because every row
- * agreed.
- */
-/**
  * A collapsed column's fact, stated once, *above* the rows it applies to.
  *
  * Placement is the whole point. This section's governing rule is that a score never appears
@@ -121,7 +117,7 @@ function CollapsedColumns({ uniform }: { uniform: UniformColumns }) {
   if (uniform.provenance === null && uniform.health === null) return null;
 
   return (
-    <p className="max-w-[92ch] pb-3 text-sm text-ink-mute">
+    <>
       {uniform.provenance !== null ? (
         <>{PROVENANCE_SENTENCE[uniform.provenance]} </>
       ) : null}
@@ -134,10 +130,8 @@ function CollapsedColumns({ uniform }: { uniform: UniformColumns }) {
       {uniform.health !== null && uniform.health.length === 0 ? (
         <>No benchmark behind these numbers carries a health warning. </>
       ) : null}
-      <span className="text-ink-mute">
-        Shown once rather than repeated down a column that would read the same on every row.
-      </span>
-    </p>
+      Shown once rather than repeated down a column that would read the same on every row.
+    </>
   );
 }
 
@@ -182,6 +176,7 @@ export function LeaderboardTable({
   hidden,
   shown,
   fetchedAt,
+  coverage,
 }: {
   /** The tab's data with saturated benchmarks excluded from reference selection. */
   models: Record<string, TableModel>;
@@ -189,12 +184,15 @@ export function LeaderboardTable({
   /** The same tab with every benchmark eligible. */
   shown: TableData;
   fetchedAt: string | null;
+  /** Benchmarks with any score on this site, against every benchmark tracked. */
+  coverage: { scored: number; total: number };
 }) {
   const [hideSaturated, setHideSaturated] = useState(true);
   const [sort, setSort] = useState<SortKey>("score");
   const [independentOnly, setIndependentOnly] = useState(false);
   const [openWeightsOnly, setOpenWeightsOnly] = useState(false);
   const [creator, setCreator] = useState<string>("all");
+  const [everyConfig, setEveryConfig] = useState(false);
   const [body] = useAutoAnimate<HTMLTableSectionElement>();
 
   const data = hideSaturated ? hidden : shown;
@@ -255,12 +253,26 @@ export function LeaderboardTable({
       }
     };
 
-    return [...filtered].sort((a, b) =>
+    // Collapse before sorting, so the sort orders models rather than configurations.
+    const pool: CollapsedRow[] = everyConfig
+      ? filtered.map((row) => ({ ...row, configurations: 1 }))
+      : bestConfigurationPerModel(filtered);
+
+    return pool.sort((a, b) =>
       sort === "model"
         ? meta(a.model_id).display_name.localeCompare(meta(b.model_id).display_name)
         : value(b) - value(a),
     );
-  }, [creator, data.rows, independentOnly, meta, models, openWeightsOnly, sort]);
+  }, [
+    creator,
+    data.rows,
+    everyConfig,
+    independentOnly,
+    meta,
+    models,
+    openWeightsOnly,
+    sort,
+  ]);
 
   const uniform = useMemo(() => uniformColumns(rows), [rows]);
 
@@ -295,6 +307,15 @@ export function LeaderboardTable({
               {data.excluded.benchmarks === 1 ? "" : "s"})
             </span>
           ) : null}
+        </label>
+
+        <label className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            checked={everyConfig}
+            onChange={(event) => setEveryConfig(event.target.checked)}
+          />
+          Show every configuration
         </label>
 
         <label className="flex items-center gap-2">
@@ -363,7 +384,19 @@ export function LeaderboardTable({
 
       {data.rows.length > 0 ? (
         <div className="overflow-x-auto">
-          <CollapsedColumns uniform={uniform} />
+          {/* The ranking's reach, said where the ranking is — not only at the bottom of
+              /benchmarks. Without this the table reads as "the state of the field" when it
+              is really "what the sources this site can legally redistribute have
+              measured". */}
+          <p className="max-w-[92ch] pb-3 text-sm text-ink-mute">
+            {coverage.scored} of the {coverage.total} benchmarks tracked here have any
+            score at all, so this ranking describes the part of the field that Epoch and the
+            arena mirror have measured, not the whole of it.{" "}
+            <Link href="/benchmarks" className="underline-offset-2 hover:underline">
+              The other {coverage.total - coverage.scored} are catalogued with their health
+            </Link>
+            . <CollapsedColumns uniform={uniform} />
+          </p>
           <table className="w-full border-collapse text-sm">
             <thead className="sticky top-0 z-[5] bg-paper shadow-sm">
               <tr className="border-b border-rule-strong text-left">
@@ -436,7 +469,14 @@ export function LeaderboardTable({
                           ◇
                         </span>
                       ) : null}
-                      <span className="block text-xs text-ink-mute">{model.creator}</span>
+                      <span className="block text-xs text-ink-mute">
+                        {model.creator}
+                        {/* Which configuration won, and how many it beat. A collapsed row
+                            that hid this would be the silent merge the spec forbids. */}
+                        {row.configurations > 1 ? (
+                          <> · best of {row.configurations} configurations</>
+                        ) : null}
+                      </span>
                     </td>
                     <td className="py-2 pr-3 text-right">
                       <ScoreCell

@@ -32,6 +32,7 @@ export function Leaderboard({
   tableModels,
   freshness,
   capabilityIndexNote,
+  coverage,
 }: {
   tabs: Record<"text" | "agentic", { hidden: TableData; shown: TableData }>;
   image: { note: string; source: SourceMeta; scores: Score[] } | null;
@@ -39,6 +40,7 @@ export function Leaderboard({
   tableModels: Record<string, TableModel>;
   freshness: Record<string, string | null>;
   capabilityIndexNote: string | null;
+  coverage: { scored: number; total: number };
 }) {
   const params = useSearchParams();
 
@@ -112,6 +114,7 @@ export function Leaderboard({
               hidden={tabs[tab].hidden}
               shown={tabs[tab].shown}
               fetchedAt={freshness["epoch"] ?? null}
+              coverage={coverage}
             />
           </>
         )}

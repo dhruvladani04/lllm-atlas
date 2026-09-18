@@ -41,6 +41,14 @@ export default function ModelsPage() {
     loadBenchmarks().map((benchmark) => [benchmark.slug, benchmark.name]),
   );
 
+  // How much of the benchmark universe the ranking can actually speak to. Saying this on
+  // the leaderboard rather than only at the bottom of /benchmarks matters: without it the
+  // table reads as "the state of the field" instead of "what one source has measured".
+  const coverage = {
+    scored: new Set(scores.map((score) => score.benchmark_slug)).size,
+    total: benchmarkNames.size,
+  };
+
   const capabilityIndex = new Map<string, CapabilityIndexEntry>(
     (indexFile?.rows ?? []).map((row) => [
       row.model_id,
@@ -100,6 +108,7 @@ export default function ModelsPage() {
       <Leaderboard
         tabs={tabs}
         tableModels={toTableModels(models)}
+        coverage={coverage}
         image={image}
         models={models}
         freshness={freshness}

@@ -221,6 +221,7 @@ const JoinedScore = Score.extend({
     "high-contamination",
     "vendor-reported-only",
     "superseded",
+    "disputed",
     "stale-source",
   ])),
 });
@@ -238,6 +239,7 @@ one place and is testable.
 | `high-contamination` | `benchmark.contamination.risk` is `high` |
 | `vendor-reported-only` | no `independent` score exists for this (model, variant, benchmark, harness) |
 | `superseded` | `benchmark.successor` is non-null |
+| `disputed` | the source reports more than one value for one measurement — two scores equal on (model_id, variant, benchmark_slug, harness, provenance, measured_at) and unequal in value |
 | `stale-source` | `source.fetched_at` older than 7 days **at build time** |
 
 A build-time `stale-source` flag is a floor, not the whole story: the pipeline commits
@@ -275,5 +277,15 @@ const IngestionRun = z.object({
   date, so a vendor list price is never presented as an OpenRouter routed price.
   Milestone 3.
 - `vendor-reported-only` keyed on the full score tuple, not model+benchmark.
+- `disputed` exists because the identity tuple above is not unique in real upstream data.
+  Epoch reports two Humanity's Last Exam scores for one model on one day, and HLE's own
+  statistical note says tool-augmented and no-tools runs differ by tens of points — a
+  configuration it does not record per score. Showing both silently makes the table look
+  broken; showing one would be a coin toss presented as a fact. Both are shown, both
+  flagged. Values are compared rounded to six decimal places, so float noise is not
+  mistaken for disagreement.
 - `stale-source` clarified as a build-time floor, with render-time staleness in
   `FreshnessStamp`.
+- Added the `disputed` flag: the declared identity tuple is not unique upstream, and two
+  values for one measurement are shown and flagged rather than silently picked between.
+  Post-launch audit.

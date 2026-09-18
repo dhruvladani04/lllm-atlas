@@ -1,7 +1,7 @@
 import type { Benchmark } from "@/lib/schemas/benchmark";
 import type { JoinedScore, Score } from "@/lib/schemas/score";
 import type { BenchmarkIndex } from "@/lib/registry/benchmarks";
-import { deriveHealthFlags, scoreKey } from "@/lib/join/health-flags";
+import { deriveHealthFlags, measurementKey, scoreKey } from "@/lib/join/health-flags";
 
 /**
  * The core artefact — specs/01-architecture/data-pipeline.md, `model-benchmark-join.json`.
@@ -29,6 +29,19 @@ export function joinScores(
     if (score.provenance === "independent") independent.add(scoreKey(score));
   }
 
+  // Measurements the source reports more than one value for. Rounded before comparing so
+  // float noise is not mistaken for disagreement.
+  const valuesSeen = new Map<string, Set<string>>();
+  for (const score of scores) {
+    const key = measurementKey(score);
+    const values = valuesSeen.get(key) ?? new Set<string>();
+    values.add(score.value.toFixed(6));
+    valuesSeen.set(key, values);
+  }
+  const disputed = new Set(
+    [...valuesSeen].filter(([, values]) => values.size > 1).map(([key]) => key),
+  );
+
   const joined: JoinedScore[] = [];
   const unmatched = new Set<string>();
 
@@ -44,6 +57,7 @@ export function joinScores(
       benchmark,
       health_flags: deriveHealthFlags(score, benchmark, {
         independentExists: independent.has(scoreKey(score)),
+        disputed: disputed.has(measurementKey(score)),
         now,
       }),
     });
