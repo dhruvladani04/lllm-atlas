@@ -4,7 +4,9 @@ import { useCallback, useMemo, useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Link from "next/link";
 import type { UnrankedRow } from "@/lib/leaderboard/rows";
+import type { HealthFlag } from "@/lib/schemas/score";
 import type { TableData, TableModel, TableRow } from "@/lib/leaderboard/view";
+import { uniformColumns, type UniformColumns } from "@/lib/leaderboard/view";
 import { formatTokenCount } from "@/lib/format/number";
 import {
   HealthFlags,
@@ -88,6 +90,83 @@ function ReferenceRationaleNote({
       )}
       . Read the ranking as &ldquo;best on {reference.name}&rdquo;, not &ldquo;best&rdquo;.{" "}
     </>
+  );
+}
+
+const PROVENANCE_SENTENCE: Record<TableRow["provenance"], string> = {
+  independent: "Every number in this view was measured independently of the model's maker.",
+  "vendor-reported":
+    "Every number in this view was reported by the model's own maker, with no independent measurement to check it against.",
+  mixed: "Every model in this view has both independent and vendor-reported numbers.",
+};
+
+/**
+ * What the table means, said in text rather than in `title` attributes.
+ *
+ * `ind.` and the `~` after a price were explained only by tooltips, which do not exist on
+ * touch and are announced inconsistently by screen readers — so on a phone the two marks
+ * that carry the site's entire honesty claim were simply unexplained. They are written out
+ * here instead, next to the statements for any column that collapsed because every row
+ * agreed.
+ */
+/**
+ * A collapsed column's fact, stated once, *above* the rows it applies to.
+ *
+ * Placement is the whole point. This section's governing rule is that a score never appears
+ * without its provenance, and a footer legend technically satisfies that while letting a
+ * reader meet forty-nine bare numbers first. Stated here, the caveat arrives before the
+ * data — which is the same order the home page uses to make the argument.
+ */
+function CollapsedColumns({ uniform }: { uniform: UniformColumns }) {
+  if (uniform.provenance === null && uniform.health === null) return null;
+
+  return (
+    <p className="max-w-[92ch] pb-3 text-sm text-ink-mute">
+      {uniform.provenance !== null ? (
+        <>{PROVENANCE_SENTENCE[uniform.provenance]} </>
+      ) : null}
+      {uniform.health !== null && uniform.health.length > 0 ? (
+        <>
+          Every benchmark behind these numbers carries the same warning,{" "}
+          <HealthFlags flags={uniform.health} />.{" "}
+        </>
+      ) : null}
+      {uniform.health !== null && uniform.health.length === 0 ? (
+        <>No benchmark behind these numbers carries a health warning. </>
+      ) : null}
+      <span className="text-ink-mute">
+        Shown once rather than repeated down a column that would read the same on every row.
+      </span>
+    </p>
+  );
+}
+
+/**
+ * The abbreviations, written out rather than hidden in `title` attributes.
+ *
+ * Tooltips do not exist on touch and are announced inconsistently by screen readers, so on
+ * a phone the two marks carrying this site's honesty claim — `ind.` and the `~` on a routed
+ * price — were simply unexplained. A `title` may repeat an explanation; it may never be the
+ * only place one exists.
+ */
+function Legend({ uniform }: { uniform: UniformColumns }) {
+  return (
+    <div className="mt-3 space-y-1 border-t border-rule pt-3 text-xs text-ink-mute">
+      {uniform.provenance === null ? (
+        <p>
+          <strong className="font-medium text-ink">Provenance:</strong>{" "}
+          <span className="font-mono">ind.</span> means independently measured;{" "}
+          <span className="font-mono">vendor</span> means reported by the model&rsquo;s own
+          maker. The two are never averaged.
+        </p>
+      ) : null}
+
+      <p>
+        <strong className="font-medium text-ink">Prices:</strong> a{" "}
+        <span className="font-mono">~</span> marks OpenRouter&rsquo;s routed price, used
+        where the vendor&rsquo;s own page could not be read. It is not a list price.
+      </p>
+    </div>
   );
 }
 
@@ -182,6 +261,8 @@ export function LeaderboardTable({
         : value(b) - value(a),
     );
   }, [creator, data.rows, independentOnly, meta, models, openWeightsOnly, sort]);
+
+  const uniform = useMemo(() => uniformColumns(rows), [rows]);
 
   const columns: { key: SortKey; label: string; numeric: boolean }[] = [
     { key: "model", label: "Model", numeric: false },
@@ -282,6 +363,7 @@ export function LeaderboardTable({
 
       {data.rows.length > 0 ? (
         <div className="overflow-x-auto">
+          <CollapsedColumns uniform={uniform} />
           <table className="w-full border-collapse text-sm">
             <thead className="sticky top-0 z-[5] bg-paper shadow-sm">
               <tr className="border-b border-rule-strong text-left">
@@ -292,6 +374,16 @@ export function LeaderboardTable({
                   <th
                     key={column.key}
                     scope="col"
+                    // Sorting is always high-to-low, so the active column is descending and
+                    // every other one is unsorted. Without this a screen reader gets a
+                    // button called "Sort by Price" and no way to hear that it is in effect.
+                    aria-sort={
+                      sort === column.key
+                        ? column.key === "model"
+                          ? "ascending"
+                          : "descending"
+                        : "none"
+                    }
                     className={`py-2 pr-3 font-medium ${column.numeric ? "text-right" : ""}`}
                   >
                     <button
@@ -305,12 +397,16 @@ export function LeaderboardTable({
                     </button>
                   </th>
                 ))}
-                <th scope="col" className="py-2 pr-3 font-medium">
-                  Provenance
-                </th>
-                <th scope="col" className="py-2 font-medium">
-                  Health
-                </th>
+                {uniform.provenance === null ? (
+                  <th scope="col" className="py-2 pr-3 font-medium">
+                    Provenance
+                  </th>
+                ) : null}
+                {uniform.health === null ? (
+                  <th scope="col" className="py-2 font-medium">
+                    Health
+                  </th>
+                ) : null}
               </tr>
             </thead>
             <tbody ref={body}>
@@ -397,12 +493,16 @@ export function LeaderboardTable({
                         </>
                       )}
                     </td>
-                    <td className="py-2 pr-3">
-                      <ProvenanceBadge provenance={row.provenance} />
-                    </td>
-                    <td className="py-2">
-                      <HealthFlags flags={row.health_flags} />
-                    </td>
+                    {uniform.provenance === null ? (
+                      <td className="py-2 pr-3">
+                        <ProvenanceBadge provenance={row.provenance} />
+                      </td>
+                    ) : null}
+                    {uniform.health === null ? (
+                      <td className="py-2">
+                        <HealthFlags flags={row.health_flags} />
+                      </td>
+                    ) : null}
                   </tr>
                 );
               })}
@@ -413,7 +513,9 @@ export function LeaderboardTable({
               No model matches these filters. Clearing &ldquo;independent measurements
               only&rdquo; usually brings rows back.
             </p>
-          ) : null}
+          ) : (
+            <Legend uniform={uniform} />
+          )}
         </div>
       ) : null}
 

@@ -136,7 +136,10 @@ export function HealthFlags({ flags }: { flags: readonly HealthFlag[] }) {
   }
 
   return (
-    <span className="flex flex-wrap gap-x-1.5 gap-y-1">
+    // inline-flex, not flex: these appear mid-sentence in the leaderboard legend as well
+    // as in a table cell, and a block-level flex there strands the following full stop on
+    // a line of its own.
+    <span className="inline-flex flex-wrap gap-x-1.5 gap-y-1 align-middle">
       {flags.map((flag) => {
         const colour = FLAG_COLOUR[flag];
         return (

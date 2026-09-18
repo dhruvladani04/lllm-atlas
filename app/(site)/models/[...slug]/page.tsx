@@ -311,12 +311,17 @@ function ScoreTable({ scores }: { scores: readonly JoinedScore[] }) {
               className="row-hover border-b border-rule"
             >
               <td className="py-2 pr-3">
-                <a
+                {/* Internal, matching the leaderboard. Linking straight out to benchwiki
+                    from here sent the reader off-site past this site's own contribution —
+                    the reverse lookup on that benchmark's page — and meant the same
+                    benchmark name went to two different places depending on which table
+                    you found it in. The internal page attributes and links onward. */}
+                <Link
                   className="underline-offset-2 hover:underline"
-                  href={score.benchmark.source_url}
+                  href={`/benchmarks/${score.benchmark_slug}`}
                 >
                   {score.benchmark.name}
-                </a>
+                </Link>
                 <span className="block">
                   <StatusChip status={score.benchmark.status} />
                 </span>

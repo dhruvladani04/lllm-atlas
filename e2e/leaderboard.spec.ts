@@ -22,9 +22,19 @@ test.describe("the leaderboard states its caveats", () => {
 
     const firstRow = page.locator("tbody tr").first();
     await expect(firstRow).toBeVisible();
-    // A percentage, a provenance label and a health verdict, on the same row.
     await expect(firstRow).toContainText("%");
-    await expect(firstRow.getByText(/^(ind\.|vendor|mixed)$/)).toBeVisible();
+
+    // Provenance must be stated — but it is legitimately stated in one of two places.
+    // Where every row agrees, the column collapses into a sentence above the table rather
+    // than repeating one word forty-nine times; where rows differ, the column is present.
+    // The thesis is violated only if neither is true, which is what this asserts.
+    const badgeInRow = firstRow.getByText(/^(ind\.|vendor|mixed)$/);
+    const statedAboveTable = page.getByText(
+      /(measured independently of the model's maker|reported by the model's own maker|both independent and vendor-reported)/,
+    );
+    const stated =
+      (await badgeInRow.count()) > 0 || (await statedAboveTable.count()) > 0;
+    expect(stated, "the view states provenance in the row or above the table").toBe(true);
   });
 
   test("the saturated toggle reports what it excludes", async ({ page }) => {

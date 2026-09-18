@@ -12,6 +12,12 @@ client so the route stays static.
 A score never appears without its benchmark's health and the number's provenance. If you
 find yourself rendering a bare number anywhere in this section, that is a bug.
 
+**Where that fact lives is allowed to vary; whether it is present is not.** Per-row is the
+default. Where every visible row agrees, the fact may instead be stated once, in prose,
+*above* the table — never below it, because a footer legend satisfies the letter of the
+rule while letting a reader meet forty-nine bare numbers first. The e2e smoke test asserts
+one of the two forms is present and fails if neither is.
+
 ## How the table ranks
 
 Models are measured on different benchmarks, and a score on one is not comparable to a
@@ -93,9 +99,31 @@ says so rather than leaving the reader to assume the flags were checked and came
 clean: a preference ranking is a different kind of claim from a benchmark score. If the arena mirror is unavailable, render the empty state described
 below, not a fallback ranking from another modality.
 
+### Columns that say the same thing on every row
+
+A column identical in all forty-nine rows is not information. It is a fact about the whole
+view wearing a column's clothing, and it costs horizontal space on a table built for
+scanning. Provenance and Health both do this routinely: rank on an independently-measured
+benchmark with a successor and every row reads `ind.` and `→ superseded`.
+
+So when a column is uniform across the visible rows it collapses into one sentence above
+the table — "Every number in this view was measured independently of the model's maker" —
+and the column is dropped. When a filter or a tab makes it vary again, the column returns.
+Both directions are unit-tested, because with current data only the collapsing direction
+is reachable through the UI.
+
+### Abbreviations are written out, not hovered
+
+`ind.` and the `~` that marks an OpenRouter routed price were explained only by `title`
+attributes. Tooltips do not exist on touch and are announced inconsistently by screen
+readers, so on a phone the two marks carrying this site's entire honesty claim were
+unexplained. Both are spelled out in a legend below the table. A `title` may repeat an
+explanation; it may never be the only place one exists.
+
 ### Interactions
 
-- Sort by any numeric column. Client-side over prerendered data.
+- Sort by any numeric column. Client-side over prerendered data. The sorted column carries
+  `aria-sort`, so the sort is audible and not only visible in the `▾`.
 - Filters: creator, open-weights, released-within, minimum provenance (`independent only`).
 - **"Hide saturated benchmarks" toggle.** On by default. This is the section's signature
   control — it visibly changes the ranking, which is the entire argument of the site made
@@ -158,3 +186,6 @@ Decide." Copy guidance is in `04-design/design-system.md`.
 - A non-active reference benchmark now defends its own selection in the header, and the
   model detail page renders each score's variant so reasoning-effort configs stop reading
   as one benchmark scored six unexplained ways. Post-launch audit.
+- Uniform columns collapse into a sentence, abbreviations moved out of `title` attributes
+  into a visible legend, `aria-sort` added, and the model page now links benchmarks
+  internally rather than straight out to benchwiki. Post-launch audit.

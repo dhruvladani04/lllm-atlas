@@ -62,6 +62,35 @@ export interface TableData {
   excluded: { benchmarks: number; scores: number };
 }
 
+/**
+ * Which columns say the same thing on every row.
+ *
+ * A column identical in all 49 rows is not information; it is a fact about the whole view
+ * wearing a column's clothing, and it costs horizontal space on a table built for scanning.
+ * Where provenance or health is uniform the column collapses into one sentence above the
+ * table; where a filter or tab makes it vary again, it comes back. Returning `null` means
+ * "varies — keep the column".
+ */
+export interface UniformColumns {
+  provenance: TableRow["provenance"] | null;
+  health: HealthFlag[] | null;
+}
+
+export function uniformColumns(rows: readonly TableRow[]): UniformColumns {
+  const first = rows[0];
+  if (first === undefined) return { provenance: null, health: null };
+
+  const flagKey = (row: TableRow) => [...row.health_flags].sort().join(",");
+  const firstFlags = flagKey(first);
+
+  return {
+    provenance: rows.every((row) => row.provenance === first.provenance)
+      ? first.provenance
+      : null,
+    health: rows.every((row) => flagKey(row) === firstFlags) ? first.health_flags : null,
+  };
+}
+
 function toRow(row: LeaderboardRow): TableRow {
   return {
     key: `${row.model.model_id}#${row.variant}`,
