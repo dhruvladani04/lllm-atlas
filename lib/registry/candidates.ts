@@ -50,7 +50,8 @@ const TIER_SUFFIXES = new Set([
 const BUDGET_SUFFIX = /^\d+k$/i;
 
 /** Suffixes that look like a tier glued to part of the model's name. Never auto-approved. */
-const SUSPICIOUS_SUFFIX = /^pro(high|medium|low|xhigh|max|minimal|none|unknown|thinking)$/;
+const SUSPICIOUS_SUFFIX =
+  /^pro(high|medium|low|xhigh|max|minimal|none|unknown|thinking)$/;
 
 export interface SplitName {
   stem: string;
@@ -151,7 +152,9 @@ function groupByStem(rows: readonly SourceRow[]): Map<string, Group> {
 }
 
 function uniqueSorted(values: readonly (string | null)[]): string[] {
-  return [...new Set(values.filter((v): v is string => v !== null && v.trim() !== ""))].sort();
+  return [
+    ...new Set(values.filter((v): v is string => v !== null && v.trim() !== "")),
+  ].sort();
 }
 
 /** The display name most rows agree on, with any tier stripped. */
@@ -211,7 +214,11 @@ function tierFor(
     return "low";
   }
 
-  if (newest >= "2025-01-01" && usableBenchmarks >= 2 && (displayName !== null || openrouter)) {
+  if (
+    newest >= "2025-01-01" &&
+    usableBenchmarks >= 2 &&
+    (displayName !== null || openrouter)
+  ) {
     reasons.push(
       `Single creator, released ${newest}, measured on ${usableBenchmarks} benchmarks this site can join` +
         (openrouter ? ", and currently served by OpenRouter." : "."),
@@ -267,7 +274,9 @@ export function buildCandidates(input: BuildCandidatesInput): Candidate[] {
     const displayName = pickDisplayName(group.rows);
     const openrouter =
       openrouterByNormalised.get(normaliseName(group.stem)) ??
-      (displayName ? (openrouterByNormalised.get(normaliseName(displayName)) ?? null) : null);
+      (displayName
+        ? (openrouterByNormalised.get(normaliseName(displayName)) ?? null)
+        : null);
 
     const benchmarks = [...countBy(group.rows.map((row) => row.benchmark))]
       .map(([benchmark, rows]) => ({ benchmark, rows }))
@@ -297,9 +306,7 @@ export function buildCandidates(input: BuildCandidatesInput): Candidate[] {
     const dropped: CandidateEvidence["dropped_aliases"] = [];
     const keep = (alias: string, owner: string): boolean => {
       const existing =
-        index.exact.get(alias) ??
-        index.normalised.get(normaliseName(alias)) ??
-        null;
+        index.exact.get(alias) ?? index.normalised.get(normaliseName(alias)) ?? null;
       if (existing !== null) {
         dropped.push({ alias, claimed_by: `${existing.model_id}#${existing.variant}` });
         return false;
@@ -313,8 +320,8 @@ export function buildCandidates(input: BuildCandidatesInput): Candidate[] {
     };
 
     const baseOwner = `${model_id}#${BASE_VARIANT}`;
-    const modelAliases = uniqueSorted([group.stem, model_id, displayName]).filter((alias) =>
-      keep(alias, baseOwner),
+    const modelAliases = uniqueSorted([group.stem, model_id, displayName]).filter(
+      (alias) => keep(alias, baseOwner),
     );
     // Claimed before the variants are built, so a name already taken at model level cannot
     // be taken again by a tier of the same model. Order matters here.

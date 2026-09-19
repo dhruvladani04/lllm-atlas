@@ -37,8 +37,8 @@ export default function ReviewPage() {
         <h1 className="text-xl font-medium">Registry review</h1>
         <p className="mt-3 max-w-[66ch] text-sm text-ink-mute">
           No candidates file yet. Run{" "}
-          <code className="font-mono">pnpm generate-candidates</code> to propose entries from
-          the newest snapshot.
+          <code className="font-mono">pnpm generate-candidates</code> to propose entries
+          from the newest snapshot.
         </p>
       </main>
     );
@@ -53,9 +53,10 @@ export default function ReviewPage() {
       <h1 className="text-xl font-medium">Registry review</h1>
       <p className="mt-3 max-w-[76ch] text-sm">
         {file.candidates.length} proposed entries from the {file.snapshot_date} snapshot.
-        Approving writes a decisions file; <code className="font-mono">pnpm registry:approve</code>{" "}
-        merges it into the registry, and <code className="font-mono">pnpm ingest</code> then
-        picks up their scores. Nothing here writes to the registry directly.
+        Approving writes a decisions file;{" "}
+        <code className="font-mono">pnpm registry:approve</code> merges it into the
+        registry, and <code className="font-mono">pnpm ingest</code> then picks up their
+        scores. Nothing here writes to the registry directly.
       </p>
       <p className="mt-2 max-w-[76ch] text-sm text-ink-mute">
         Every proposal is already schema-valid and checked not to collide with an existing

@@ -127,7 +127,7 @@ production-extension `page.tsx` or `route.ts` ever reappears beside them.
 | `BENCHWIKI_MODE` | `mirror` \| `link` | `mirror` renders section 2 in-app; `link` renders a short landing page that links to benchwiki. Default `mirror`. Switching to `link` must not break any route. |
 | `OPENROUTER_API_KEY` | string | Ingestion only. Never referenced in `app/`. |
 | `SITE_URL` | string | Canonical URL for metadata. Optional on Vercel — falls back to `VERCEL_PROJECT_PRODUCTION_URL` |
-| `LLM_ATLAS_REVIEW` | `1` | Development only. Enables the registry-approval endpoint behind `/review` |
+| `LLM_ATLAS_REVIEW` | `1` | Development only. Enables the registry-approval endpoint behind `/review`. Set for you by `pnpm review`; the shell-prefix form is bash-only and silently does nothing in PowerShell |
 
 ## Changelog
 

@@ -238,17 +238,20 @@ pnpm install
 pnpm dev          # http://localhost:3000
 ```
 
-| Script           | Does                                                         |
-| ---------------- | ------------------------------------------------------------ |
-| `pnpm dev`       | Development server                                           |
-| `pnpm build`     | Production build — every route prerendered                   |
-| `pnpm start`     | Serve the production build                                   |
-| `pnpm ingest`    | Run the ingestion pipeline locally (`tsx scripts/ingest.ts`) |
-| `pnpm lint`      | ESLint                                                       |
-| `pnpm typecheck` | `tsc --noEmit`, strict                                       |
-| `pnpm test`      | Vitest                                                       |
-| `pnpm e2e`       | Playwright — smoke paths + accessibility audit               |
-| `pnpm format`    | Prettier                                                     |
+| Script                     | Does                                                         |
+| -------------------------- | ------------------------------------------------------------ |
+| `pnpm dev`                 | Development server                                           |
+| `pnpm build`               | Production build — every route prerendered                   |
+| `pnpm start`               | Serve the production build                                   |
+| `pnpm ingest`              | Run the ingestion pipeline locally (`tsx scripts/ingest.ts`) |
+| `pnpm generate-candidates` | Propose registry entries from the newest snapshot            |
+| `pnpm review`              | Dev server with the registry review UI at `/review`          |
+| `pnpm registry:approve`    | Merge approved candidates into the registry                  |
+| `pnpm lint`                | ESLint                                                       |
+| `pnpm typecheck`           | `tsc --noEmit`, strict                                       |
+| `pnpm test`                | Vitest                                                       |
+| `pnpm e2e`                 | Playwright — smoke paths + accessibility audit               |
+| `pnpm format`              | Prettier                                                     |
 
 Copy `.env.example` to `.env.local`. No variable is required for a local build.
 
@@ -260,6 +263,22 @@ health records, so the file stays self-describing once it leaves the site. See
 
 `/methodology` states every rule the site applies and counts them from the committed data
 at build time, so it cannot quietly go stale the way a hand-written "about" page does.
+
+### Growing the registry
+
+The registry is hand-approved, and the queue of unmatched names outgrew hand-transcription
+long ago — 1,351 names against 30 models. So candidates are generated and a person decides:
+
+```bash
+pnpm generate-candidates   # propose entries from the newest snapshot
+pnpm review                # dev server; decide at /review
+pnpm registry:approve      # merge what you approved, then pnpm ingest
+```
+
+`pnpm review` sets `LLM_ATLAS_REVIEW=1` itself, because the shell-prefix form of that is
+bash-only and silently does nothing in PowerShell. `/review` and its write endpoint are
+excluded from production builds by file extension — see
+[specs/01-architecture/stack-and-structure.md](specs/01-architecture/stack-and-structure.md).
 
 `/tokens` is a development reference page showing every design token in both colour
 schemes side by side. It's `noindex`, excluded in `robots.txt`, and not linked from the

@@ -88,7 +88,10 @@ describe("stripTier and slugify", () => {
 
 describe("buildCandidates", () => {
   it("proposes an entry with a base variant and the creator from the source", () => {
-    const [candidate] = buildCandidates({ rows: [row(), row({ benchmark: "MMLU" })], registry });
+    const [candidate] = buildCandidates({
+      rows: [row(), row({ benchmark: "MMLU" })],
+      registry,
+    });
     expect(candidate?.proposed.creator).toBe("ExampleCorp");
     expect(candidate?.proposed.variants.some((v) => v.variant === "base")).toBe(true);
     expect(candidate?.proposed.model_id).toBe("examplecorp/new-model");
@@ -101,7 +104,9 @@ describe("buildCandidates", () => {
 
   it("skips a model the registry already resolves", () => {
     const candidates = buildCandidates({
-      rows: [row({ model_version: "claude-opus-5_max", display_name: "Claude Opus 5 (Max)" })],
+      rows: [
+        row({ model_version: "claude-opus-5_max", display_name: "Claude Opus 5 (Max)" }),
+      ],
       registry,
     });
     expect(candidates).toHaveLength(0);
@@ -144,7 +149,12 @@ describe("buildCandidates", () => {
       ],
       registry,
     });
-    expect(indexesCleanly(registry, candidates.map((c) => c.proposed)).ok).toBe(true);
+    expect(
+      indexesCleanly(
+        registry,
+        candidates.map((c) => c.proposed),
+      ).ok,
+    ).toBe(true);
   });
 
   it("flags two stems that collapse to one id rather than merging them", () => {
@@ -160,7 +170,10 @@ describe("buildCandidates", () => {
 
   it("produces candidates that index cleanly alongside the registry", () => {
     const candidates = buildCandidates({
-      rows: [row(), row({ model_version: "other", display_name: "Other", benchmark: "MMLU" })],
+      rows: [
+        row(),
+        row({ model_version: "other", display_name: "Other", benchmark: "MMLU" }),
+      ],
       registry,
     });
     expect(

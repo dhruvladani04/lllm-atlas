@@ -30,7 +30,9 @@ function latestSnapshotDate(): string {
 }
 
 function readSnapshot(date: string, source: string): unknown {
-  return JSON.parse(readFileSync(join(SNAPSHOTS, date, `${source}.json`), "utf8")) as unknown;
+  return JSON.parse(
+    readFileSync(join(SNAPSHOTS, date, `${source}.json`), "utf8"),
+  ) as unknown;
 }
 
 interface EpochSnapshot {
@@ -141,7 +143,7 @@ function main(): void {
         .map((tier) => `${byTier.get(tier) ?? 0} ${tier}`)
         .join(", "),
   );
-  console.log(`[candidates] written to ${OUTPUT}. Review them at /review under pnpm dev.`);
+  console.log(`[candidates] written to ${OUTPUT}. Run pnpm review, then open /review.`);
 }
 
 main();

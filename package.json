@@ -17,7 +17,8 @@
     "ingest": "tsx scripts/ingest.ts",
     "e2e": "playwright test",
     "generate-candidates": "tsx scripts/generate-candidates.ts",
-    "registry:approve": "tsx scripts/registry-approve.ts"
+    "registry:approve": "tsx scripts/registry-approve.ts",
+    "review": "tsx scripts/review.ts"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.10.0",

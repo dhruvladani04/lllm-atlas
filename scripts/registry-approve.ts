@@ -1,6 +1,11 @@
 import { existsSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { REGISTRY_PATH, UNRESOLVED_PATH, loadRegistry, loadUnresolved } from "@/lib/registry/load";
+import {
+  REGISTRY_PATH,
+  UNRESOLVED_PATH,
+  loadRegistry,
+  loadUnresolved,
+} from "@/lib/registry/load";
 import { mergeApproved } from "@/lib/registry/approve";
 import { CandidateFile, ApprovalFile } from "@/lib/schemas/candidate";
 import { normaliseName } from "@/lib/registry/resolve";
@@ -27,7 +32,7 @@ function writeAtomic(path: string, contents: string): void {
 function main(): void {
   if (!existsSync(APPROVALS_PATH)) {
     console.error(
-      `[approve] no ${APPROVALS_PATH}. Run pnpm dev, review at /review, and submit your decisions first.`,
+      `[approve] no ${APPROVALS_PATH}. Run pnpm review, decide at /review, and submit first.`,
     );
     process.exitCode = 1;
     return;
@@ -60,7 +65,8 @@ function main(): void {
   for (const id of added) {
     const model = merged.find((entry) => entry.model_id === id);
     if (model === undefined) continue;
-    for (const alias of [model.model_id, ...model.aliases]) claimed.add(normaliseName(alias));
+    for (const alias of [model.model_id, ...model.aliases])
+      claimed.add(normaliseName(alias));
     for (const variant of model.variants) {
       for (const alias of variant.aliases) claimed.add(normaliseName(alias));
     }

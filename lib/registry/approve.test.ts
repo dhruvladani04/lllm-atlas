@@ -16,7 +16,10 @@ const registry: RegistryModel[] = [
   },
 ];
 
-function candidate(over: Partial<Candidate["proposed"]> = {}, confidence = "high"): Candidate {
+function candidate(
+  over: Partial<Candidate["proposed"]> = {},
+  confidence = "high",
+): Candidate {
   return {
     proposed: {
       model_id: "examplecorp/new-model",
@@ -71,7 +74,9 @@ describe("mergeApproved", () => {
   });
 
   it("refuses an id that is not a candidate at all", () => {
-    expect(() => mergeApproved(registry, [candidate()], ["nope/nope"])).toThrow(ApprovalError);
+    expect(() => mergeApproved(registry, [candidate()], ["nope/nope"])).toThrow(
+      ApprovalError,
+    );
   });
 
   it("refuses to add a model the registry already has", () => {

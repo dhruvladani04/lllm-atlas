@@ -42,7 +42,9 @@ describe("dev-only routes", () => {
 
   it("guards at runtime as well, so the extension trick is not the only defence", () => {
     for (const path of DEV_ONLY) {
-      expect(readFileSync(path, "utf8")).toContain('process.env.NODE_ENV === "production"');
+      expect(readFileSync(path, "utf8")).toContain(
+        'process.env.NODE_ENV === "production"',
+      );
     }
   });
 
@@ -50,7 +52,10 @@ describe("dev-only routes", () => {
     // The endpoint records decisions; `scripts/registry-approve.ts` is the only writer of
     // models.json, so no request can change what the site claims. Comments are stripped
     // first: the file explains that rule in prose, and matching the prose is not a test.
-    const code = readFileSync(join("app", "api", "registry-approve", "route.dev.ts"), "utf8")
+    const code = readFileSync(
+      join("app", "api", "registry-approve", "route.dev.ts"),
+      "utf8",
+    )
       .replace(/\/\*[\s\S]*?\*\//g, "")
       .replace(/\/\/.*$/gm, "");
     expect(code).not.toContain("models.json");

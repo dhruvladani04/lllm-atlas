@@ -31,7 +31,9 @@ export function mergeApproved(
   approvedIds: readonly string[],
 ): MergeResult {
   const wanted = new Set(approvedIds);
-  const byId = new Map(candidates.map((candidate) => [candidate.proposed.model_id, candidate]));
+  const byId = new Map(
+    candidates.map((candidate) => [candidate.proposed.model_id, candidate]),
+  );
 
   const unknown = [...wanted].filter((id) => !byId.has(id));
   if (unknown.length > 0) {

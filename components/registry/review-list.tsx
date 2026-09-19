@@ -18,7 +18,8 @@ const TIER_ORDER: Confidence[] = ["high", "medium", "low", "conflict"];
 
 const TIER_NOTE: Record<Confidence, string> = {
   high: "Single creator, released recently, measured on several benchmarks. Still worth a glance — a context or budget variant can look like a separate model.",
-  medium: "Something is thin: one benchmark, an older release, or no published display name.",
+  medium:
+    "Something is thin: one benchmark, an older release, or no published display name.",
   low: "Old, undated, or the name could not be split from its tier reliably.",
   conflict:
     "Cannot be approved here. Either the registry already claims this name or two candidates collapse to one id — both are merge decisions that belong in the file by hand.",
@@ -30,8 +31,8 @@ function Evidence({ candidate }: { candidate: Candidate }) {
     <div className="mt-2 space-y-1 text-xs text-ink-mute">
       <p>{evidence.reasons.join(" ")}</p>
       <p>
-        <span className="font-mono">{evidence.stem}</span> · {evidence.total_occurrences} rows
-        across {evidence.benchmarks.length} benchmark
+        <span className="font-mono">{evidence.stem}</span> · {evidence.total_occurrences}{" "}
+        rows across {evidence.benchmarks.length} benchmark
         {evidence.benchmarks.length === 1 ? "" : "s"}
         {evidence.openrouter ? (
           <> · served by OpenRouter as {evidence.openrouter.id}</>
@@ -87,7 +88,8 @@ export function ReviewList({ candidates }: { candidates: Candidate[] }) {
   const selectTier = (tier: Confidence) =>
     setSelected((current) => {
       const next = new Set(current);
-      for (const candidate of byTier.get(tier) ?? []) next.add(candidate.proposed.model_id);
+      for (const candidate of byTier.get(tier) ?? [])
+        next.add(candidate.proposed.model_id);
       return next;
     });
 
@@ -110,7 +112,7 @@ export function ReviewList({ candidates }: { candidates: Candidate[] }) {
         }),
       });
       if (!response.ok) {
-        setStatus(`Failed (${response.status}). Is LLM_ATLAS_REVIEW=1 set?`);
+        setStatus(`Failed (${response.status}). Start the server with \`pnpm review\`.`);
         return;
       }
       setStatus(
