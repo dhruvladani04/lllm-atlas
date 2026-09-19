@@ -64,6 +64,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       className={`${plexSans.variable} ${plexMono.variable} ${sourceSerif.variable}`}
+      // Browser extensions write their own attributes onto <html> before React hydrates
+      // — a screen recorder adding `data-scribe-recorder-ready` is enough to trigger a
+      // hydration warning for something no code here did. This suppresses exactly one
+      // level: attribute differences on <html> itself. Mismatches anywhere inside the
+      // tree still surface, which is where a real one would be.
+      suppressHydrationWarning
     >
       <body className="min-h-screen bg-paper text-ink">
         <a
