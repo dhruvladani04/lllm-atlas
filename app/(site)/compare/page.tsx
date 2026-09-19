@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { loadJoinedScores, loadModels } from "@/lib/data/derived";
+import { toCompareBenchmarks, toCompareScores } from "@/lib/leaderboard/compare";
+import { toTableModels } from "@/lib/leaderboard/view";
 import { CompareView } from "@/components/leaderboard/compare-view";
 
 /**
@@ -19,9 +21,15 @@ export const metadata: Metadata = {
 };
 
 export default function ComparePage() {
+  const scores = loadJoinedScores();
+  const lookup = toTableModels(loadModels());
+
+  // Compact, like the leaderboard: the picker needs a name and a creator, not a model's
+  // alias list, and the table needs a score's number, not the benchmark record behind it.
   const models = loadModels()
     .filter((model) => model.modality === "text")
-    .sort((a, b) => a.display_name.localeCompare(b.display_name));
+    .sort((a, b) => a.display_name.localeCompare(b.display_name))
+    .map((model) => ({ model_id: model.model_id, ...lookup[model.model_id]! }));
 
   return (
     <main className="mx-auto max-w-4xl px-6 py-10">
@@ -33,7 +41,11 @@ export default function ComparePage() {
         be read as a comparison at all.
       </p>
 
-      <CompareView models={models} scores={loadJoinedScores()} />
+      <CompareView
+        models={models}
+        scores={toCompareScores(scores)}
+        benchmarks={toCompareBenchmarks(scores)}
+      />
     </main>
   );
 }

@@ -3,8 +3,8 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { compareModels } from "@/lib/leaderboard/compare";
-import type { JoinedScore } from "@/lib/schemas/score";
-import type { Model } from "@/lib/schemas/model";
+import type { CompareBenchmark, CompareScore } from "@/lib/leaderboard/compare";
+import type { TableModel } from "@/lib/leaderboard/view";
 import { formatTokenCount } from "@/lib/format/number";
 import {
   HealthFlags,
@@ -32,7 +32,7 @@ function Picker({
   onChange,
   label,
 }: {
-  models: readonly Model[];
+  models: readonly PickableModel[];
   value: string;
   onChange: (value: string) => void;
   label: string;
@@ -56,12 +56,19 @@ function Picker({
   );
 }
 
+/** `TableModel` keyed by id, which is what the picker and the identity table both need. */
+export interface PickableModel extends TableModel {
+  model_id: string;
+}
+
 export function CompareView({
   models,
   scores,
+  benchmarks,
 }: {
-  models: Model[];
-  scores: JoinedScore[];
+  models: PickableModel[];
+  scores: CompareScore[];
+  benchmarks: Record<string, CompareBenchmark>;
 }) {
   const [selected, setSelected] = useState<string[]>(["", "", ""]);
 
@@ -70,7 +77,7 @@ export function CompareView({
       selected
         .filter((id) => id !== "")
         .map((id) => models.find((model) => model.model_id === id))
-        .filter((model): model is Model => model !== undefined),
+        .filter((model): model is PickableModel => model !== undefined),
     [models, selected],
   );
 
@@ -79,8 +86,9 @@ export function CompareView({
       compareModels(
         scores,
         chosen.map((model) => model.model_id),
+        benchmarks,
       ),
-    [chosen, scores],
+    [benchmarks, chosen, scores],
   );
 
   const set = (index: number, value: string) =>
@@ -169,13 +177,13 @@ export function CompareView({
                     {chosen.map((model) => (
                       <td key={model.model_id} className="py-2 pr-3">
                         <QuotedValue
-                          quoted={model.price_input_per_mtok}
+                          quoted={model.price_input}
                           format={(value) => `$${value.toFixed(2)}`}
                           missingReason="No price published"
                         />
                         <span className="text-ink-mute"> / </span>
                         <QuotedValue
-                          quoted={model.price_output_per_mtok}
+                          quoted={model.price_output}
                           format={(value) => `$${value.toFixed(2)}`}
                           missingReason="No price published"
                         />
@@ -269,7 +277,12 @@ export function CompareView({
                                       cell.score.value === best ? "font-medium" : ""
                                     }
                                   >
-                                    <ScoreCell score={cell.score} />
+                                    <ScoreCell
+                                      value={cell.score.value}
+                                      unit={cell.score.unit}
+                                      confidenceInterval={cell.score.confidence_interval}
+                                      flags={cell.score.health_flags}
+                                    />
                                   </span>
                                   <span className="mt-1 flex flex-wrap justify-end gap-2">
                                     <ProvenanceBadge provenance={cell.score.provenance} />

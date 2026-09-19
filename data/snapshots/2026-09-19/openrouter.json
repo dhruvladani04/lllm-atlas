@@ -2,7 +2,7 @@
   "_meta": {
     "source_id": "openrouter",
     "source_url": "https://openrouter.ai/api/v1/models",
-    "fetched_at": "2026-09-19T15:15:50.069Z",
+    "fetched_at": "2026-09-19T15:46:13.373Z",
     "record_count": 447,
     "status": "ok"
   },
@@ -1673,8 +1673,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "context_length": 1048576,
       "pricing": {
-        "prompt": "0.00000004228",
-        "completion": "0.00000008456"
+        "prompt": "0.000000042",
+        "completion": "0.000000084"
       }
     },
     {

@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { compareModels } from "@/lib/leaderboard/compare";
+import {
+  compareModels,
+  toCompareBenchmarks,
+  toCompareScores,
+} from "@/lib/leaderboard/compare";
 import type { JoinedScore } from "@/lib/schemas/score";
 import type { Benchmark } from "@/lib/schemas/benchmark";
 
@@ -62,9 +66,14 @@ function score(
   };
 }
 
+/** The page compacts before handing scores to the browser; the tests go the same way. */
+function compare(scores: JoinedScore[], ids: string[]) {
+  return compareModels(toCompareScores(scores), ids, toCompareBenchmarks(scores));
+}
+
 describe("compareModels", () => {
   it("only calls a benchmark comparable when every selected model has a score", () => {
-    const result = compareModels(
+    const result = compare(
       [score("a", "gpqa", 90), score("b", "gpqa", 80), score("a", "mmlu", 70)],
       ["a", "b"],
     );
@@ -75,13 +84,13 @@ describe("compareModels", () => {
   });
 
   it("marks the missing side rather than dropping the row", () => {
-    const result = compareModels([score("a", "mmlu", 70)], ["a", "b"]);
+    const result = compare([score("a", "mmlu", 70)], ["a", "b"]);
     const row = result.incomplete[0];
     expect(row?.cells.find((cell) => cell.model_id === "b")?.score).toBeNull();
   });
 
   it("prefers an independent measurement over a vendor-reported one", () => {
-    const result = compareModels(
+    const result = compare(
       [
         score("a", "gpqa", 99, { provenance: "vendor-reported" }),
         score("a", "gpqa", 90),
@@ -93,14 +102,14 @@ describe("compareModels", () => {
   });
 
   it("returns nothing for fewer than two models", () => {
-    expect(compareModels([score("a", "gpqa", 90)], ["a"])).toEqual({
+    expect(compare([score("a", "gpqa", 90)], ["a"])).toEqual({
       comparable: [],
       incomplete: [],
     });
   });
 
   it("ignores models that were not selected", () => {
-    const result = compareModels(
+    const result = compare(
       [score("a", "gpqa", 90), score("b", "gpqa", 80), score("c", "gpqa", 70)],
       ["a", "b"],
     );

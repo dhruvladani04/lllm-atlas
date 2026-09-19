@@ -22,6 +22,160 @@
     ]
   },
   {
+    "model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
+    "display_name": "Qwen3 235B-A22B (2507)",
+    "creator": "Alibaba",
+    "modality": "text",
+    "released_at": "2025-07-25",
+    "open_weights": null,
+    "aliases": [
+      "Qwen3 235B-A22B (2507)",
+      "Qwen3-235B-A22B-Instruct-2507",
+      "alibaba/qwen3-235b-a22b-instruct-2507"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Qwen3-235B-A22B-Instruct-2507"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "alibaba/qwen3.5-9b",
+    "display_name": "Qwen3.5 9B",
+    "creator": "Alibaba",
+    "modality": "text",
+    "released_at": "2026-02-24",
+    "open_weights": null,
+    "aliases": [
+      "Qwen3.5 9B",
+      "alibaba/qwen3.5-9b",
+      "qwen3.5-9B"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "qwen3.5-9B",
+          "qwen3.5-9B_none"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "alibaba/qwen3.6-35b-a3b",
+    "display_name": "Qwen3.6 35B-A3B",
+    "creator": "Alibaba",
+    "modality": "text",
+    "released_at": "2026-04-14",
+    "open_weights": null,
+    "aliases": [
+      "Qwen3.6 35B-A3B",
+      "alibaba/qwen3.6-35b-a3b",
+      "qwen3.6-35b-a3b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "qwen3.6-35b-a3b",
+          "qwen3.6-35b-a3b_none"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "alibaba/qwen3.6-max-preview",
+    "display_name": "Qwen3.6-Max (preview)",
+    "creator": "Alibaba",
+    "modality": "text",
+    "released_at": "2026-04-20",
+    "open_weights": null,
+    "aliases": [
+      "Qwen3.6-Max (preview)",
+      "alibaba/qwen3.6-max-preview",
+      "qwen3.6-max-preview"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "qwen3.6-max-preview",
+          "qwen3.6-max-preview_none"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "alibaba/qwen3.6-plus",
+    "display_name": "Qwen3.6-Plus",
+    "creator": "Alibaba",
+    "modality": "text",
+    "released_at": "2026-03-31",
+    "open_weights": null,
+    "aliases": [
+      "Qwen3.6-Plus",
+      "alibaba/qwen3.6-plus",
+      "qwen3.6-plus"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "qwen3.6-plus",
+          "qwen3.6-plus_none"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "alibaba/qwen3.7-max",
+    "display_name": "Qwen3.7-Max",
+    "creator": "Alibaba",
+    "modality": "text",
+    "released_at": "2026-05-19",
+    "open_weights": null,
+    "aliases": [
+      "Qwen3.7-Max",
+      "alibaba/qwen3.7-max",
+      "qwen3.7-max"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "qwen3.7-max",
+          "qwen3.7-max_none"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "alibaba/qwen3.7-plus",
+    "display_name": "Qwen3.7-Plus",
+    "creator": "Alibaba",
+    "modality": "text",
+    "released_at": "2026-06-02",
+    "open_weights": null,
+    "aliases": [
+      "Qwen3.7-Plus",
+      "alibaba/qwen3.7-plus",
+      "qwen3.7-plus"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Qwen 3.7-Plus (thinking)",
+          "qwen3.7-plus",
+          "qwen3.7-plus_none"
+        ]
+      }
+    ]
+  },
+  {
     "model_id": "anthropic/claude-3-7-sonnet-20250219",
     "display_name": "Claude 3.7",
     "creator": "Anthropic",
@@ -331,6 +485,268 @@
     ]
   },
   {
+    "model_id": "anthropic/claude-opus-4-5-20251101",
+    "display_name": "Claude Opus 4.5",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2025-11-24",
+    "open_weights": null,
+    "aliases": [
+      "Claude Opus 4.5",
+      "anthropic/claude-opus-4-5-20251101",
+      "claude-opus-4-5-20251101"
+    ],
+    "variants": [
+      {
+        "variant": "128k",
+        "aliases": [
+          "claude-opus-4-5-20251101_128K"
+        ]
+      },
+      {
+        "variant": "16k",
+        "aliases": [
+          "claude-opus-4-5-20251101_16K"
+        ]
+      },
+      {
+        "variant": "32k",
+        "aliases": [
+          "claude-opus-4-5-20251101_32K"
+        ]
+      },
+      {
+        "variant": "48k",
+        "aliases": [
+          "claude-opus-4-5-20251101_48K"
+        ]
+      },
+      {
+        "variant": "64k",
+        "aliases": [
+          "claude-opus-4-5-20251101_64K"
+        ]
+      },
+      {
+        "variant": "8k",
+        "aliases": [
+          "claude-opus-4-5-20251101_8K"
+        ]
+      },
+      {
+        "variant": "base",
+        "aliases": [
+          "claude-opus-4-5-20251101",
+          "claude-opus-4-5-20251101_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "claude-opus-4-5-20251101_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "claude-opus-4-5-20251101_low"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "anthropic/claude-opus-4-6",
+    "display_name": "Claude Opus 4.6",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2026-02-05",
+    "open_weights": null,
+    "aliases": [
+      "Claude Opus 4.6",
+      "anthropic/claude-opus-4-6",
+      "claude-opus-4-6"
+    ],
+    "variants": [
+      {
+        "variant": "120k",
+        "aliases": [
+          "claude-opus-4-6_120K"
+        ]
+      },
+      {
+        "variant": "32k",
+        "aliases": [
+          "claude-opus-4-6_32K"
+        ]
+      },
+      {
+        "variant": "64k",
+        "aliases": [
+          "claude-opus-4-6_64K"
+        ]
+      },
+      {
+        "variant": "base",
+        "aliases": [
+          "Opus 4.6 (High)",
+          "claude-opus-4-6",
+          "claude-opus-4-6_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Claude Opus 4.6 (High)",
+          "claude-opus-4-6_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "claude-opus-4-6_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "Opus 4.6 (Max)",
+          "claude-opus-4-6_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "claude-opus-4-6_medium"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "anthropic/claude-opus-4-7",
+    "display_name": "Claude Opus 4.7",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2026-04-16",
+    "open_weights": null,
+    "aliases": [
+      "Claude Opus 4.7",
+      "anthropic/claude-opus-4-7",
+      "claude-opus-4-7"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "claude-opus-4-7",
+          "claude-opus-4-7_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Claude 4.7 (High)",
+          "Claude Opus 4.7 (High)",
+          "claude-opus-4-7_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Claude 4.7 (Low)",
+          "claude-opus-4-7_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "Claude 4.7 (Max)",
+          "Claude Opus 4.7 (Max)",
+          "Claude Opus 4.7 (max)",
+          "claude-opus-4-7_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Claude 4.7 (Medium)",
+          "claude-opus-4-7_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "claude-opus-4-7_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "anthropic/claude-opus-4-8",
+    "display_name": "Claude Opus 4.8",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2026-05-28",
+    "open_weights": null,
+    "aliases": [
+      "Claude Opus 4.8",
+      "anthropic/claude-opus-4-8",
+      "claude-opus-4-8"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "claude-opus-4-8_none",
+          "claude-opus-4-8_unknown",
+          "claude-opus-4.8 (none)"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Claude Opus 4.8 (High)",
+          "Opus 4.8 (High)",
+          "claude-opus-4-8 (high)",
+          "claude-opus-4-8_high",
+          "claude-opus-4.8 (high)"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Claude Opus 4.8 (Low)",
+          "claude-opus-4-8 (low)",
+          "claude-opus-4-8_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "Claude Opus 4.8 (Max)",
+          "Claude Opus 4.8 (max)",
+          "Opus 4.8 (Max)",
+          "claude-opus-4-8 (max)",
+          "claude-opus-4-8_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Claude Opus 4.8 (Medium)",
+          "claude-opus-4-8 (medium)",
+          "claude-opus-4-8_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "claude-opus-4-8 (xhigh)",
+          "claude-opus-4-8_xhigh"
+        ]
+      }
+    ]
+  },
+  {
     "model_id": "anthropic/claude-opus-5",
     "display_name": "Claude Opus 5",
     "creator": "Anthropic",
@@ -405,6 +821,145 @@
           "Claude Sonnet 4",
           "claude-sonnet-4-20250514",
           "claude-sonnet-4-20250514_unknown"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "anthropic/claude-sonnet-4-5-20250929",
+    "display_name": "Claude Sonnet 4.5",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2025-09-29",
+    "open_weights": null,
+    "aliases": [
+      "Claude Sonnet 4.5",
+      "anthropic/claude-sonnet-4-5-20250929",
+      "claude-sonnet-4-5-20250929"
+    ],
+    "variants": [
+      {
+        "variant": "12k",
+        "aliases": [
+          "claude-sonnet-4-5-20250929_12K"
+        ]
+      },
+      {
+        "variant": "16k",
+        "aliases": [
+          "claude-sonnet-4-5-20250929_16K"
+        ]
+      },
+      {
+        "variant": "1k",
+        "aliases": [
+          "claude-sonnet-4-5-20250929_1K"
+        ]
+      },
+      {
+        "variant": "2k",
+        "aliases": [
+          "claude-sonnet-4-5-20250929_2K"
+        ]
+      },
+      {
+        "variant": "32k",
+        "aliases": [
+          "claude-sonnet-4-5-20250929_32K"
+        ]
+      },
+      {
+        "variant": "48k",
+        "aliases": [
+          "claude-sonnet-4-5-20250929_48K"
+        ]
+      },
+      {
+        "variant": "59k",
+        "aliases": [
+          "claude-sonnet-4-5-20250929_59K"
+        ]
+      },
+      {
+        "variant": "8k",
+        "aliases": [
+          "claude-sonnet-4-5-20250929_8K"
+        ]
+      },
+      {
+        "variant": "base",
+        "aliases": [
+          "claude-sonnet-4-5-20250929",
+          "claude-sonnet-4-5-20250929_unknown"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "claude-sonnet-4-5-20250929_low"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "anthropic/claude-sonnet-4-6",
+    "display_name": "Claude Sonnet 4.6",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2026-02-17",
+    "open_weights": null,
+    "aliases": [
+      "Claude Sonnet 4.6",
+      "anthropic/claude-sonnet-4-6",
+      "claude-sonnet-4-6"
+    ],
+    "variants": [
+      {
+        "variant": "16k",
+        "aliases": [
+          "claude-sonnet-4-6_16K"
+        ]
+      },
+      {
+        "variant": "32k",
+        "aliases": [
+          "claude-sonnet-4-6_32K"
+        ]
+      },
+      {
+        "variant": "base",
+        "aliases": [
+          "claude-sonnet-4-6",
+          "claude-sonnet-4-6_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Claude Sonnet 4.6 (High)",
+          "claude-sonnet-4-6 (high)",
+          "claude-sonnet-4-6_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "claude-sonnet-4-6_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "Claude Sonnet 4.6 (Max)",
+          "Claude Sonnet 4.6 (max)",
+          "claude-sonnet-4-6_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Claude Sonnet 4.6 (medium)",
+          "claude-sonnet-4-6_medium"
         ]
       }
     ]
@@ -497,6 +1052,27 @@
     ]
   },
   {
+    "model_id": "deepseek/deepseek-deepseek-v3.2",
+    "display_name": "DeepSeek V3.2",
+    "creator": "DeepSeek",
+    "modality": "text",
+    "released_at": "2025-12-01",
+    "open_weights": null,
+    "aliases": [
+      "DeepSeek V3.2",
+      "deepseek/deepseek-deepseek-v3.2",
+      "deepseek/deepseek-v3.2"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "deepseek/deepseek-v3.2"
+        ]
+      }
+    ]
+  },
+  {
     "model_id": "deepseek/deepseek-r1",
     "display_name": "DeepSeek-R1",
     "creator": "DeepSeek",
@@ -514,6 +1090,27 @@
         "variant": "base",
         "aliases": [
           "DeepSeek-R1"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "deepseek/deepseek-r1-0528",
+    "display_name": "Deepseek R1 (05/28)",
+    "creator": "DeepSeek",
+    "modality": "text",
+    "released_at": "2025-05-28",
+    "open_weights": null,
+    "aliases": [
+      "DeepSeek-R1-0528",
+      "Deepseek R1 (05/28)",
+      "deepseek/deepseek-r1-0528"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "DeepSeek-R1-0528"
         ]
       }
     ]
@@ -640,6 +1237,328 @@
     ]
   },
   {
+    "model_id": "google-deepmind-google/gemini-2.0-flash-001",
+    "display_name": "Gemini 2.0 Flash",
+    "creator": "Google DeepMind,Google",
+    "modality": "text",
+    "released_at": "2025-02-05",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 2.0 Flash",
+      "gemini-2.0-flash-001",
+      "google-deepmind-google/gemini-2.0-flash-001"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-2.0-flash-001"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "google-deepmind-google/gemini-2.0-flash-thinking-exp-01-21",
+    "display_name": "Gemini 2.0 Flash Thinking (January 2025)",
+    "creator": "Google DeepMind,Google",
+    "modality": "text",
+    "released_at": "2025-01-21",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 2.0 Flash Thinking (January 2025)",
+      "gemini-2.0-flash-thinking-exp-01-21",
+      "google-deepmind-google/gemini-2.0-flash-thinking-exp-01-21"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-2.0-flash-thinking-exp-01-21"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "google-deepmind/gemini-2.5-flash-preview-05-20",
+    "display_name": "Gemini 2.5 Flash (Preview)",
+    "creator": "Google DeepMind",
+    "modality": "text",
+    "released_at": "2025-05-20",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 2.5 Flash (Preview)",
+      "gemini-2.5-flash-preview-05-20",
+      "google-deepmind/gemini-2.5-flash-preview-05-20"
+    ],
+    "variants": [
+      {
+        "variant": "16k",
+        "aliases": [
+          "gemini-2.5-flash-preview-05-20_16K"
+        ]
+      },
+      {
+        "variant": "1k",
+        "aliases": [
+          "gemini-2.5-flash-preview-05-20_1K"
+        ]
+      },
+      {
+        "variant": "23k",
+        "aliases": [
+          "gemini-2.5-flash-preview-05-20_23K"
+        ]
+      },
+      {
+        "variant": "8k",
+        "aliases": [
+          "gemini-2.5-flash-preview-05-20_8K"
+        ]
+      },
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-2.5-flash-preview-05-20"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "google-deepmind/gemini-2.5-pro-exp-03-25",
+    "display_name": "Gemini 2.5 Pro Experimental (March 2025)",
+    "creator": "Google DeepMind",
+    "modality": "text",
+    "released_at": "2025-03-25",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 2.5 Pro Experimental (March 2025)",
+      "gemini-2.5-pro-exp-03-25",
+      "google-deepmind/gemini-2.5-pro-exp-03-25"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-2.5-pro-exp-03-25"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "google-deepmind/gemini-2.5-pro-preview-05-06",
+    "display_name": "Gemini 2.5 Pro Preview (May 06 2025)",
+    "creator": "Google DeepMind",
+    "modality": "text",
+    "released_at": "2025-05-06",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 2.5 Pro Preview (May 06 2025)",
+      "gemini-2.5-pro-preview-05-06",
+      "google-deepmind/gemini-2.5-pro-preview-05-06"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-2.5-pro-preview-05-06"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "google-deepmind/gemini-2.5-pro-preview-06-05",
+    "display_name": "Gemini 2.5 Pro (Thinking 1K)",
+    "creator": "Google DeepMind",
+    "modality": "text",
+    "released_at": "2025-06-05",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 2.5 Pro (Thinking 1K)",
+      "gemini-2.5-pro-preview-06-05",
+      "google-deepmind/gemini-2.5-pro-preview-06-05"
+    ],
+    "variants": [
+      {
+        "variant": "1k",
+        "aliases": [
+          "gemini-2.5-pro-preview-06-05_1K"
+        ]
+      },
+      {
+        "variant": "32k",
+        "aliases": [
+          "gemini-2.5-pro-preview-06-05_32K"
+        ]
+      },
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-2.5-pro-preview-06-05"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "google-deepmind/gemini-3-deep-think-preview",
+    "display_name": "Gemini 3 Deep Think (2/26)",
+    "creator": "Google DeepMind",
+    "modality": "text",
+    "released_at": "2026-02-12",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 3 Deep Think (2/26)",
+      "gemini-3-deep-think-preview",
+      "google-deepmind/gemini-3-deep-think-preview"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-3-deep-think-preview"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "google-deepmind/gemini-3-flash-preview",
+    "display_name": "Gemini 3 Flash Preview",
+    "creator": "Google DeepMind",
+    "modality": "text",
+    "released_at": "2025-12-17",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 3 Flash Preview",
+      "gemini-3-flash-preview",
+      "google-deepmind/gemini-3-flash-preview"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Gemini 3 Flash Preview (High)",
+          "Gemini 3 Flash Preview (Low)",
+          "Gemini 3 Flash Preview (Medium)",
+          "Gemini 3 Flash Preview (Minimal)",
+          "gemini-3-flash-preview"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "google-deepmind/gemini-3-pro-preview",
+    "display_name": "Gemini 3 Pro",
+    "creator": "Google DeepMind",
+    "modality": "text",
+    "released_at": "2025-11-18",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 3 Pro",
+      "gemini-3-pro-preview",
+      "google-deepmind/gemini-3-pro-preview"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Gemini 3 Pro (High)",
+          "gemini-3-pro-preview"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "gemini-3-pro-preview_low"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "google-deepmind/gemini-3.1-pro-preview",
+    "display_name": "Gemini 3.1 Pro",
+    "creator": "Google DeepMind",
+    "modality": "text",
+    "released_at": "2026-02-19",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 3.1 Pro",
+      "gemini-3.1-pro-preview",
+      "google-deepmind/gemini-3.1-pro-preview"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Gemini 3.1 Pro (High)",
+          "Gemini 3.1 Pro (high)",
+          "gemini-3-1-pro-preview (high)",
+          "gemini-3.1-pro-preview"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "gemini-3.1-pro-preview_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "gemini-3.1-pro-preview_medium"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "google-deepmind/gemini-3.5-flash",
+    "display_name": "Gemini 3.5 Flash",
+    "creator": "Google DeepMind",
+    "modality": "text",
+    "released_at": "2026-05-19",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 3.5 Flash",
+      "gemini-3.5-flash",
+      "google-deepmind/gemini-3.5-flash"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-3.5-flash_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Gemini 3.5 Flash (High)",
+          "gemini-3-5-flash (high)",
+          "gemini-3.5-flash_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "gemini-3.5-flash_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "gemini-3-5-flash (medium)",
+          "gemini-3.5-flash (medium)",
+          "gemini-3.5-flash_medium"
+        ]
+      },
+      {
+        "variant": "minimal",
+        "aliases": [
+          "Gemini 3.5 Flash (Minimal)",
+          "gemini-3.5-flash_minimal"
+        ]
+      }
+    ]
+  },
+  {
     "model_id": "google/gemini-2.5-pro",
     "display_name": "Gemini 2.5 Pro",
     "creator": "Google",
@@ -657,6 +1576,45 @@
         "aliases": [
           "Gemini 2.5 Pro",
           "gemini-2.5-pro"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "google/gemini-3.1-flash-lite",
+    "display_name": "Gemini 3.1 Flash-Lite",
+    "creator": "Google",
+    "modality": "text",
+    "released_at": "2026-03-03",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 3.1 Flash-Lite",
+      "gemini-3.1-flash-lite",
+      "google/gemini-3.1-flash-lite"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-3.1-flash-lite"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "gemini-3.1-flash-lite_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "gemini-3.1-flash-lite_low"
+        ]
+      },
+      {
+        "variant": "minimal",
+        "aliases": [
+          "gemini-3.1-flash-lite_minimal"
         ]
       }
     ]
@@ -822,6 +1780,67 @@
     ]
   },
   {
+    "model_id": "meta-ai/llama-4-maverick-17b-128e-instruct",
+    "display_name": "Llama 4 Maverick",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2025-04-05",
+    "open_weights": null,
+    "aliases": [
+      "Llama-4-Maverick-17B-128E-Instruct",
+      "meta-ai/llama-4-maverick-17b-128e-instruct"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Llama-4-Maverick-17B-128E-Instruct"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "meta-ai/llama-4-scout-17b-16e-instruct",
+    "display_name": "Llama 4 Scout",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2025-04-05",
+    "open_weights": null,
+    "aliases": [
+      "Llama-4-Scout-17B-16E-Instruct",
+      "meta-ai/llama-4-scout-17b-16e-instruct"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Llama-4-Scout-17B-16E-Instruct"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "meta-ai/muse-spark",
+    "display_name": "meta/muse_spark",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2026-04-08",
+    "open_weights": null,
+    "aliases": [
+      "meta-ai/muse-spark",
+      "meta/muse_spark",
+      "muse-spark"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "muse-spark"
+        ]
+      }
+    ]
+  },
+  {
     "model_id": "meta/llama-4-maverick",
     "display_name": "Llama 4 Maverick",
     "creator": "Meta",
@@ -887,6 +1906,114 @@
     ]
   },
   {
+    "model_id": "minimax/minimax-m2.5",
+    "display_name": "Minimax M2.5",
+    "creator": "MiniMax",
+    "modality": "text",
+    "released_at": "2026-02-12",
+    "open_weights": null,
+    "aliases": [
+      "MiniMax-M2.5",
+      "Minimax M2.5",
+      "minimax/minimax-m2.5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "MiniMax M2.5 (Thinking)",
+          "MiniMax-M2.5"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "minimax/minimax-m3",
+    "display_name": "MiniMax M3",
+    "creator": "MiniMax",
+    "modality": "text",
+    "released_at": "2026-06-01",
+    "open_weights": null,
+    "aliases": [
+      "MiniMax M3",
+      "MiniMax-M3",
+      "minimax/minimax-m3"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "MiniMax-M3",
+          "MiniMax-M3_none"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "mistral-ai/magistral-medium-2506",
+    "display_name": "Magistral Medium",
+    "creator": "Mistral AI",
+    "modality": "text",
+    "released_at": "2025-06-10",
+    "open_weights": null,
+    "aliases": [
+      "Magistral Medium",
+      "magistral-medium-2506",
+      "mistral-ai/magistral-medium-2506"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Magistral Medium (Thinking)",
+          "magistral-medium-2506"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "mistral-ai/magistral-small-2506",
+    "display_name": "Magistral Small",
+    "creator": "Mistral AI",
+    "modality": "text",
+    "released_at": "2025-06-10",
+    "open_weights": null,
+    "aliases": [
+      "Magistral Small",
+      "magistral-small-2506",
+      "mistral-ai/magistral-small-2506"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "magistral-small-2506"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "mistral-ai/mistral-medium-2505",
+    "display_name": "Mistral Medium 3",
+    "creator": "Mistral AI",
+    "modality": "text",
+    "released_at": "2025-05-07",
+    "open_weights": null,
+    "aliases": [
+      "Mistral Medium 3",
+      "mistral-ai/mistral-medium-2505",
+      "mistral-medium-2505"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "mistral-medium-2505"
+        ]
+      }
+    ]
+  },
+  {
     "model_id": "mistral/mistral-large-2",
     "display_name": "Mistral Large 2",
     "creator": "Mistral AI",
@@ -909,6 +2036,115 @@
     ]
   },
   {
+    "model_id": "moonshot/kimi-k2.5",
+    "display_name": "Kimi K2.5",
+    "creator": "Moonshot",
+    "modality": "text",
+    "released_at": "2026-01-27",
+    "open_weights": null,
+    "aliases": [
+      "Kimi K2.5",
+      "kimi-k2.5",
+      "moonshot/kimi-k2.5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Kimi K2.5 (High)",
+          "kimi-k2.5"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "moonshot/kimi-k2.6",
+    "display_name": "Kimi K2.6",
+    "creator": "Moonshot",
+    "modality": "text",
+    "released_at": "2026-04-20",
+    "open_weights": null,
+    "aliases": [
+      "Kimi K2.6",
+      "kimi-k2.6",
+      "moonshot/kimi-k2.6"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Kimi K2.6 (Thinking)",
+          "kimi-k2.6",
+          "kimi-k2.6_none"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "moonshot/kimi-k2.7-code",
+    "display_name": "Kimi K2.7",
+    "creator": "Moonshot",
+    "modality": "text",
+    "released_at": "2026-06-12",
+    "open_weights": null,
+    "aliases": [
+      "Kimi K2.7",
+      "kimi-k2.7-code",
+      "moonshot/kimi-k2.7-code"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "kimi-k2.7-code"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "moonshot/kimi-k3",
+    "display_name": "Kimi K3",
+    "creator": "Moonshot",
+    "modality": "text",
+    "released_at": "2026-07-16",
+    "open_weights": null,
+    "aliases": [
+      "Kimi K3",
+      "kimi-k3",
+      "moonshot/kimi-k3"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "kimi-k3_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Kimi K3 (High)",
+          "kimi-k3_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Kimi K3 (Low)",
+          "kimi-k3_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "Kimi K3 (Max)",
+          "kimi-k3 (max)",
+          "kimi-k3_max"
+        ]
+      }
+    ]
+  },
+  {
     "model_id": "openai/gpt-4.1",
     "display_name": "GPT-4.1",
     "creator": "OpenAI",
@@ -924,6 +2160,69 @@
         "aliases": [
           "GPT-4.1",
           "gpt-4.1-2025-04-14"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-4.1-mini-2025-04-14",
+    "display_name": "GPT-4.1 mini",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-04-14",
+    "open_weights": null,
+    "aliases": [
+      "GPT-4.1 mini",
+      "gpt-4.1-mini-2025-04-14",
+      "openai/gpt-4.1-mini-2025-04-14"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-4.1-mini-2025-04-14"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-4.1-nano-2025-04-14",
+    "display_name": "GPT-4.1 nano",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-04-14",
+    "open_weights": null,
+    "aliases": [
+      "GPT-4.1 nano",
+      "gpt-4.1-nano-2025-04-14",
+      "openai/gpt-4.1-nano-2025-04-14"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-4.1-nano-2025-04-14"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-4.5-preview-2025-02-27",
+    "display_name": "GPT-4.5",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-02-27",
+    "open_weights": null,
+    "aliases": [
+      "GPT-4.5",
+      "gpt-4.5-preview-2025-02-27",
+      "openai/gpt-4.5-preview-2025-02-27"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-4.5-preview-2025-02-27"
         ]
       }
     ]
@@ -974,6 +2273,772 @@
         "aliases": [
           "GPT-5 (Minimal)",
           "gpt-5-2025-08-07_minimal"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5-mini-2025-08-07",
+    "display_name": "GPT-5 Mini",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-08-07",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5 Mini",
+      "gpt-5-mini-2025-08-07",
+      "openai/gpt-5-mini-2025-08-07"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5-mini-2025-08-07_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-5 Mini (High)",
+          "gpt-5-mini-2025-08-07_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-5 Mini (Low)",
+          "gpt-5-mini-2025-08-07_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5 Mini (Medium)",
+          "gpt-5-mini-2025-08-07_medium"
+        ]
+      },
+      {
+        "variant": "minimal",
+        "aliases": [
+          "GPT-5 Mini (Minimal)",
+          "gpt-5-mini-2025-08-07_minimal"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5-nano-2025-08-07",
+    "display_name": "GPT-5 Nano",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-08-07",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5 Nano",
+      "gpt-5-nano-2025-08-07",
+      "openai/gpt-5-nano-2025-08-07"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5-nano-2025-08-07_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-5 Nano (High)",
+          "gpt-5-nano-2025-08-07_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-5 Nano (Low)",
+          "gpt-5-nano-2025-08-07_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5 Nano (Medium)",
+          "gpt-5-nano-2025-08-07_medium"
+        ]
+      },
+      {
+        "variant": "minimal",
+        "aliases": [
+          "GPT-5 Nano (Minimal)",
+          "gpt-5-nano-2025-08-07_minimal"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5-pro-2025-10-06",
+    "display_name": "GPT-5 Pro",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-10-07",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5 Pro",
+      "gpt-5-pro-2025-10-06",
+      "openai/gpt-5-pro-2025-10-06"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5-pro-2025-10-06_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "gpt-5-pro-2025-10-06_high"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.1-2025-11-13",
+    "display_name": "GPT-5.1",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-11-13",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.1",
+      "gpt-5.1-2025-11-13",
+      "openai/gpt-5.1-2025-11-13"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5.1-2025-11-13_none",
+          "gpt-5.1-2025-11-13_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT 5.1 (High)",
+          "GPT-5.1 (High)",
+          "gpt-5.1-2025-11-13_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "gpt-5.1-2025-11-13_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5.1 (Medium)",
+          "gpt-5.1-2025-11-13_medium"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.2-2025-12-11",
+    "display_name": "GPT-5.2",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-12-11",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.2",
+      "gpt-5.2-2025-12-11",
+      "openai/gpt-5.2-2025-12-11"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "GPT-5.2 (High)",
+          "gpt-5.2-2025-12-11_none",
+          "gpt-5.2-2025-12-11_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "gpt-5.2-2025-12-11_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-5.2 (Low)",
+          "gpt-5.2-2025-12-11_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5.2 (Medium)",
+          "gpt-5.2-2025-12-11 (medium)",
+          "gpt-5.2-2025-12-11_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT 5.2 (xHigh)",
+          "GPT-5.2 (XHigh)",
+          "GPT-5.2 (xHigh)",
+          "gpt-5.2-2025-12-11_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.2-pro-2025-12-11",
+    "display_name": "GPT-5.2 Pro",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-12-11",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.2 Pro",
+      "gpt-5.2-pro-2025-12-11",
+      "openai/gpt-5.2-pro-2025-12-11"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5.2-pro-2025-12-11"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-5.2 Pro (High)",
+          "gpt-5.2-pro-2025-12-11_high"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5.2 Pro (Medium)",
+          "gpt-5.2-pro-2025-12-11_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT-5.2 Pro (XHigh)",
+          "GPT-5.2 Pro (xHigh)",
+          "gpt-5.2-pro-2025-12-11_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.3-codex",
+    "display_name": "GPT-5.3-Codex",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-02-05",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.3-Codex",
+      "gpt-5.3-codex",
+      "openai/gpt-5.3-codex"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5.3-codex"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "gpt-5.3-codex_high"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "gpt-5.3-codex_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.4-2026-03-05",
+    "display_name": "GPT-5.4",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-03-05",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.4",
+      "gpt-5.4-2026-03-05",
+      "openai/gpt-5.4-2026-03-05"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5.4-2026-03-05_none",
+          "gpt-5.4-2026-03-05_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT 5.4 (High)",
+          "GPT-5.4 (High)",
+          "gpt-5.4-2026-03-05_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-5.4 (Low)",
+          "gpt-5.4-2026-03-05_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5.4 (Medium)",
+          "gpt-5.4-2026-03-05_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT 5.4 (xHigh)",
+          "GPT-5.4 (XHigh)",
+          "GPT-5.4 (xHigh)",
+          "GPT-5.4 (xhigh)",
+          "gpt-5-4 (xhigh)",
+          "gpt-5.4-2026-03-05_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.4-mini-2026-03-17",
+    "display_name": "GPT-5.4 Mini",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-03-17",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.4 Mini",
+      "gpt-5.4-mini-2026-03-17",
+      "openai/gpt-5.4-mini-2026-03-17"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5.4-mini-2026-03-17_none",
+          "gpt-5.4-mini-2026-03-17_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-5.4 Mini (High)",
+          "gpt-5.4-mini-2026-03-17_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-5.4 Mini (Low)",
+          "gpt-5.4-mini-2026-03-17_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5.4 Mini (Medium)",
+          "gpt-5.4-mini-2026-03-17_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT-5.4 Mini (XHigh)",
+          "GPT-5.4 Mini (xHigh)",
+          "gpt-5.4-mini-2026-03-17_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.4-nano-2026-03-17",
+    "display_name": "GPT-5.4 Nano",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-03-17",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.4 Nano",
+      "gpt-5.4-nano-2026-03-17",
+      "openai/gpt-5.4-nano-2026-03-17"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5.4-nano-2026-03-17_none",
+          "gpt-5.4-nano-2026-03-17_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-5.4 Nano (High)",
+          "gpt-5.4-nano-2026-03-17_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-5.4 Nano (Low)",
+          "gpt-5.4-nano-2026-03-17_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5.4 Nano (Medium)",
+          "gpt-5.4-nano-2026-03-17_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT-5.4 Nano (XHigh)",
+          "GPT-5.4 Nano (xHigh)",
+          "gpt-5.4-nano-2026-03-17_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.4-pro-2026-03-05",
+    "display_name": "GPT-5.4 Pro",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-03-05",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.4 Pro",
+      "gpt-5.4-pro-2026-03-05",
+      "openai/gpt-5.4-pro-2026-03-05"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5.4-pro-2026-03-05_none",
+          "gpt-5.4-pro-2026-03-05_unknown"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT-5.4 Pro (XHigh)",
+          "GPT-5.4 Pro (xHigh)",
+          "gpt-5.4-pro-2026-03-05_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.5",
+    "display_name": "GPT-5.5",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-04-23",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.5",
+      "gpt-5.5",
+      "openai/gpt-5.5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5.5_none",
+          "gpt-5.5_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT 5.5 (High)",
+          "GPT-5.5 (High)",
+          "gpt-5-5 (high)",
+          "gpt-5.5 (high)",
+          "gpt-5.5_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-5.5 (Low)",
+          "gpt-5-5 (low)",
+          "gpt-5.5_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5.5 (Medium)",
+          "gpt-5-5 (medium)",
+          "gpt-5.5 (medium)",
+          "gpt-5.5_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT 5.5 (xHigh)",
+          "GPT-5.5 (XHigh)",
+          "GPT-5.5 (xHigh)",
+          "GPT-5.5 (xhigh)",
+          "gpt-5-5 (xhigh)",
+          "gpt-5.5_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.5-pro",
+    "display_name": "GPT-5.5 Pro",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-04-23",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.5 Pro",
+      "gpt-5.5-pro",
+      "openai/gpt-5.5-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5.5-pro_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-5.5 Pro (High)",
+          "gpt-5.5-pro_high"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT-5.5 Pro (XHigh)",
+          "GPT-5.5 Pro (xHigh)",
+          "gpt-5.5-pro_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.6-luna",
+    "display_name": "GPT-5.6 Luna",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-07-09",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.6 Luna",
+      "gpt-5.6-luna",
+      "openai/gpt-5.6-luna"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5.6-luna_none",
+          "gpt-5.6-luna_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-5.6 Luna (High)",
+          "gpt-5-6-luna (high)",
+          "gpt-5.6-luna_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-5.6 Luna (Low)",
+          "gpt-5-6-luna (low)",
+          "gpt-5.6-luna_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "GPT-5.6 Luna (Max)",
+          "gpt-5-6-luna (max)",
+          "gpt-5.6-luna_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5.6 Luna (Medium)",
+          "gpt-5-6-luna (medium)",
+          "gpt-5.6-luna (medium)",
+          "gpt-5.6-luna_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT-5.6 Luna (XHigh)",
+          "GPT-5.6 Luna (xHigh)",
+          "gpt-5-6-luna (xhigh)",
+          "gpt-5.6-luna_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.6-sol",
+    "display_name": "GPT-5.6 Sol",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-07-09",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.6 Sol",
+      "gpt-5.6-sol",
+      "openai/gpt-5.6-sol"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "GPT 5.6 Sol (xHigh)",
+          "gpt-5.6-sol_none",
+          "gpt-5.6-sol_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-5.6 Sol (High)",
+          "gpt-5-6-sol (high)",
+          "gpt-5.6-sol_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-5.6 Sol (Low)",
+          "gpt-5-6-sol (low)",
+          "gpt-5.6-sol_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "GPT 5.6 (Sol) (Max)",
+          "GPT 5.6 Sol (Max)",
+          "GPT-5.6 Sol (Max)",
+          "GPT-5.6 Sol (max)",
+          "gpt-5-6-sol (max)",
+          "gpt-5.6-sol_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5.6 Sol (Medium)",
+          "gpt-5-6-sol (medium)",
+          "gpt-5.6-sol_medium"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/gpt-5.6-terra",
+    "display_name": "GPT-5.6 Terra",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-07-09",
+    "open_weights": null,
+    "aliases": [
+      "GPT-5.6 Terra",
+      "gpt-5.6-terra",
+      "openai/gpt-5.6-terra"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-5.6-terra_none",
+          "gpt-5.6-terra_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-5.6 Terra (High)",
+          "gpt-5-6-terra (high)",
+          "gpt-5.6-terra_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-5.6 Terra (Low)",
+          "gpt-5-6-terra (low)",
+          "gpt-5.6-terra_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "GPT-5.6 Terra (Max)",
+          "gpt-5-6-terra (max)",
+          "gpt-5.6-terra_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-5.6 Terra (Medium)",
+          "gpt-5-6-terra (medium)",
+          "gpt-5.6-terra_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT-5.6 Terra (XHigh)",
+          "GPT-5.6 Terra (xHigh)",
+          "gpt-5-6-terra (xhigh)",
+          "gpt-5.6-terra (xhigh)",
+          "gpt-5.6-terra_xhigh"
         ]
       }
     ]
@@ -1063,6 +3128,247 @@
     ]
   },
   {
+    "model_id": "openai/gpt-oss-20b",
+    "display_name": "gpt-oss-20b",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-08-05",
+    "open_weights": null,
+    "aliases": [
+      "gpt-oss-20b",
+      "openai/gpt-oss-20b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-oss-20b",
+          "gpt-oss-20b_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "gpt-oss-20b_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "gpt-oss-20b_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "gpt-oss-20b_medium"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/o1-pro-2025-03-19",
+    "display_name": "o1 Pro",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-03-19",
+    "open_weights": null,
+    "aliases": [
+      "o1 Pro",
+      "o1-pro-2025-03-19",
+      "openai/o1-pro-2025-03-19"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "o1-pro-2025-03-19"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "o1-pro (Low)",
+          "o1-pro-2025-03-19_low"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/o3-2025-04-16",
+    "display_name": "o3",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-04-16",
+    "open_weights": null,
+    "aliases": [
+      "o3",
+      "o3-2025-04-16",
+      "openai/o3-2025-04-16"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "o3-2025-04-16_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "o3 (High)",
+          "o3-2025-04-16_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "o3 (Low)",
+          "o3-2025-04-16_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "o3 (Medium)",
+          "o3-2025-04-16_medium"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/o3-mini-2025-01-31",
+    "display_name": "o3-mini",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-01-31",
+    "open_weights": null,
+    "aliases": [
+      "o3-mini",
+      "o3-mini-2025-01-31",
+      "openai/o3-mini-2025-01-31"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "o3-mini",
+          "o3-mini-2025-01-31",
+          "openai/o3-mini-2025-01-31"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "o3-mini (High)",
+          "o3-mini-2025-01-31_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "o3-mini (Low)",
+          "o3-mini-2025-01-31_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "o3-mini (Medium)",
+          "o3-mini-2025-01-31_medium"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/o3-pro-2025-06-10",
+    "display_name": "o3-Pro",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-06-10",
+    "open_weights": null,
+    "aliases": [
+      "o3-Pro",
+      "o3-pro-2025-06-10",
+      "openai/o3-pro-2025-06-10"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "o3-Pro",
+          "o3-pro-2025-06-10",
+          "openai/o3-pro-2025-06-10"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "o3-Pro (High)",
+          "o3-pro-2025-06-10_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "o3-Pro (Low)",
+          "o3-pro-2025-06-10_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "o3-Pro (Medium)",
+          "o3-pro-2025-06-10_medium"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "openai/o4-mini-2025-04-16",
+    "display_name": "o4-mini",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2025-04-16",
+    "open_weights": null,
+    "aliases": [
+      "o4-mini",
+      "o4-mini-2025-04-16",
+      "openai/o4-mini-2025-04-16"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "o4-mini",
+          "o4-mini-2025-04-16",
+          "openai/o4-mini-2025-04-16"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "o4-mini (High)",
+          "o4-mini-2025-04-16_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "o4-mini (Low)",
+          "o4-mini-2025-04-16_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "o4-mini (Medium)",
+          "o4-mini-2025-04-16_medium"
+        ]
+      }
+    ]
+  },
+  {
     "model_id": "stability/stable-diffusion-3.5-large",
     "display_name": "Stable Diffusion 3.5 Large",
     "creator": "Stability AI",
@@ -1105,6 +3411,160 @@
     ]
   },
   {
+    "model_id": "thinking-machines/inkling-small",
+    "display_name": "Inkling Small",
+    "creator": "Thinking Machines",
+    "modality": "text",
+    "released_at": "2026-07-15",
+    "open_weights": null,
+    "aliases": [
+      "Inkling Small",
+      "inkling-small",
+      "thinking-machines/inkling-small"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Inkling Small (None)",
+          "inkling-small",
+          "inkling-small_none"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Inkling Small (High)",
+          "inkling-small_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Inkling Small (Low)",
+          "inkling-small_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Inkling Small (Medium)",
+          "inkling-small_medium"
+        ]
+      },
+      {
+        "variant": "minimal",
+        "aliases": [
+          "Inkling Small (Minimal)",
+          "inkling-small_minimal"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "Inkling Small (XHigh)",
+          "inkling-small_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "xai/grok-3",
+    "display_name": "Grok 3",
+    "creator": "xAI",
+    "modality": "text",
+    "released_at": "2025-04-09",
+    "open_weights": null,
+    "aliases": [
+      "Grok 3",
+      "grok-3",
+      "xai/grok-3"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "grok-3"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "xai/grok-3-mini",
+    "display_name": "Grok 3 Mini",
+    "creator": "xAI",
+    "modality": "text",
+    "released_at": "2025-06-24",
+    "open_weights": null,
+    "aliases": [
+      "Grok 3 Mini",
+      "grok-3-mini",
+      "xai/grok-3-mini"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Grok 3 Mini",
+          "grok-3-mini",
+          "xai/grok-3-mini"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "grok-3-mini_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Grok 3 Mini (Low)",
+          "grok-3-mini_low"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "xai/grok-3-mini-beta",
+    "display_name": "Grok 3 Mini",
+    "creator": "xAI",
+    "modality": "text",
+    "released_at": "2025-04-09",
+    "open_weights": null,
+    "aliases": [
+      "grok-3-mini-beta",
+      "xai/grok-3-mini-beta"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "grok-3-mini-beta",
+          "xai/grok-3-mini-beta"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "grok-3-mini-beta_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "grok-3-mini-beta_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "grok-3-mini-beta_medium"
+        ]
+      }
+    ]
+  },
+  {
     "model_id": "xai/grok-4",
     "display_name": "Grok 4",
     "creator": "xAI",
@@ -1122,6 +3582,93 @@
         "aliases": [
           "Grok 4",
           "grok-4-0709"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "xai/grok-4-20",
+    "display_name": "Grok 4.20",
+    "creator": "xAI",
+    "modality": "text",
+    "released_at": "2026-02-17",
+    "open_weights": null,
+    "aliases": [
+      "Grok 4.20",
+      "grok-4-20",
+      "xai/grok-4-20"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Grok 4.20 (High)",
+          "grok-4-20"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "xai/grok-4-fast",
+    "display_name": "Grok 4 (Fast Reasoning)",
+    "creator": "xAI",
+    "modality": "text",
+    "released_at": "2025-09-19",
+    "open_weights": null,
+    "aliases": [
+      "Grok 4 (Fast Reasoning)",
+      "grok-4-fast",
+      "xai/grok-4-fast"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "grok-4-fast"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "xai/grok-4.5",
+    "display_name": "Grok 4.5",
+    "creator": "xAI",
+    "modality": "text",
+    "released_at": "2026-07-08",
+    "open_weights": null,
+    "aliases": [
+      "Grok 4.5",
+      "grok-4.5",
+      "xai/grok-4.5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "grok-4.5_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Grok 4.5 (High)",
+          "grok-4-5 (high)",
+          "grok-4.5 (high)",
+          "grok-4.5_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Grok 4.5 (Low)",
+          "grok-4.5_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Grok 4.5 (Medium)",
+          "grok-4.5_medium"
         ]
       }
     ]
@@ -1171,6 +3718,127 @@
         "aliases": [
           "Grok 4.6 (XHigh)",
           "grok-4.6_xhigh"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "z.ai-zhipu-ai/glm-4.7",
+    "display_name": "GLM 4.7",
+    "creator": "Z.ai (Zhipu AI)",
+    "modality": "text",
+    "released_at": "2025-12-22",
+    "open_weights": null,
+    "aliases": [
+      "GLM 4.7",
+      "glm-4.7",
+      "z.ai-zhipu-ai/glm-4.7"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "glm-4.7"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "z.ai-zhipu-ai/glm-5",
+    "display_name": "GLM 5",
+    "creator": "Z.ai (Zhipu AI)",
+    "modality": "text",
+    "released_at": "2026-02-11",
+    "open_weights": null,
+    "aliases": [
+      "GLM 5",
+      "glm-5",
+      "z.ai-zhipu-ai/glm-5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "GLM 5 (Thinking)",
+          "glm-5"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "z.ai-zhipu-ai/glm-5.1",
+    "display_name": "Glm 5.1",
+    "creator": "Z.ai (Zhipu AI)",
+    "modality": "text",
+    "released_at": "2026-04-07",
+    "open_weights": null,
+    "aliases": [
+      "Glm 5.1",
+      "glm-5.1",
+      "z.ai-zhipu-ai/glm-5.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "glm-5.1",
+          "glm-5.1_none"
+        ]
+      }
+    ]
+  },
+  {
+    "model_id": "z.ai-zhipu-ai/glm-5.2",
+    "display_name": "GLM-5.2",
+    "creator": "Z.ai (Zhipu AI)",
+    "modality": "text",
+    "released_at": "2026-06-16",
+    "open_weights": null,
+    "aliases": [
+      "GLM-5.2",
+      "glm-5.2",
+      "z.ai-zhipu-ai/glm-5.2"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "glm-5.2_none",
+          "glm-5.2_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "glm-5-2 (high)",
+          "glm-5.2 (high)",
+          "glm-5.2_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "glm-5.2_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "GLM 5.2 (Max)",
+          "glm-5-2 (max)",
+          "glm-5.2_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "glm-5.2_medium"
+        ]
+      },
+      {
+        "variant": "minimal",
+        "aliases": [
+          "glm-5.2_minimal"
         ]
       }
     ]

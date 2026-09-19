@@ -336,9 +336,28 @@ export function buildCandidates(input: BuildCandidatesInput): Candidate[] {
         return { variant, aliases: kept };
       });
 
-    if (!variants.some((entry) => entry.variant === BASE_VARIANT)) {
-      variants.unshift({ variant: BASE_VARIANT, aliases: [] });
+    // A variant nothing can resolve to is dead weight in the registry — either it was
+    // never observed (a synthesised base) or every name it had was already claimed by
+    // another model. Base is kept and seeded from the model's own aliases, which already
+    // resolve to it; a tier with nothing left to match on is dropped entirely.
+    const base = variants.find((entry) => entry.variant === BASE_VARIANT);
+    if (base === undefined) {
+      variants.unshift({ variant: BASE_VARIANT, aliases: [...modelAliases] });
+    } else if (base.aliases.length === 0) {
+      base.aliases = [...modelAliases];
     }
+
+    const unreachable = variants
+      .filter((entry) => entry.variant !== BASE_VARIANT && entry.aliases.length === 0)
+      .map((entry) => entry.variant);
+    if (unreachable.length > 0) {
+      reasons.push(
+        `Dropped the ${unreachable.join(", ")} variant${unreachable.length === 1 ? "" : "s"}: every name they were known by is already claimed, so nothing could ever resolve to them.`,
+      );
+    }
+    const reachable = variants.filter(
+      (entry) => entry.variant === BASE_VARIANT || entry.aliases.length > 0,
+    );
 
     // Two stems slugifying to one id — "Qwen/Qwen3-235B-A22B" and "qwen3-235b-a22b" — are
     // almost certainly the same model written two ways. Almost certainly is not certainly,
@@ -377,7 +396,7 @@ export function buildCandidates(input: BuildCandidatesInput): Candidate[] {
       // guess, and a guess in the registry is invisible once it is in.
       open_weights: null,
       aliases: modelAliases,
-      variants,
+      variants: reachable,
     };
 
     candidates.push({

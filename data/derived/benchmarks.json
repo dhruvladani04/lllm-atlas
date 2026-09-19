@@ -378,7 +378,7 @@
       },
       {
         "model": "Claude 4.7 (High)",
-        "model_id": null,
+        "model_id": "anthropic/claude-opus-4-7",
         "vendor": "anthropic",
         "measured_at": "2026-04-16",
         "score": 93.5,
@@ -387,7 +387,7 @@
       },
       {
         "model": "GPT-5.5 Pro (High)",
-        "model_id": null,
+        "model_id": "openai/gpt-5.5-pro",
         "vendor": "openai",
         "measured_at": "2026-04-23",
         "score": 96.5,
@@ -396,7 +396,7 @@
       },
       {
         "model": "GPT-5.6 Sol (xHigh)",
-        "model_id": null,
+        "model_id": "openai/gpt-5.6-sol",
         "vendor": "openai",
         "measured_at": "2026-07-09",
         "score": 97.5,
@@ -494,7 +494,7 @@
       },
       {
         "model": "Claude 4.7 (Max)",
-        "model_id": null,
+        "model_id": "anthropic/claude-opus-4-7",
         "vendor": "anthropic",
         "measured_at": "2026-04-16",
         "score": 75.8,
@@ -503,7 +503,7 @@
       },
       {
         "model": "GPT-5.5 (xHigh)",
-        "model_id": null,
+        "model_id": "openai/gpt-5.5",
         "vendor": "openai",
         "measured_at": "2026-04-22",
         "score": 85,
@@ -512,7 +512,7 @@
       },
       {
         "model": "GPT-5.6 Sol (Max)",
-        "model_id": null,
+        "model_id": "openai/gpt-5.6-sol",
         "vendor": "openai",
         "measured_at": "2026-07-09",
         "score": 92.5,
@@ -576,7 +576,7 @@
       },
       {
         "model": "Gemini 3.1 Pro (Preview)",
-        "model_id": null,
+        "model_id": "google-deepmind/gemini-3.1-pro-preview",
         "vendor": "google",
         "measured_at": "2026-03-05",
         "score": 0.42,
@@ -585,7 +585,7 @@
       },
       {
         "model": "GPT-5.5 (High)",
-        "model_id": null,
+        "model_id": "openai/gpt-5.5",
         "vendor": "openai",
         "measured_at": "2026-04-23",
         "score": 0.43,
@@ -594,7 +594,7 @@
       },
       {
         "model": "Claude Opus 4.8 (High)",
-        "model_id": null,
+        "model_id": "anthropic/claude-opus-4-8",
         "vendor": "anthropic",
         "measured_at": "2026-06-01",
         "score": 1.52,
@@ -603,7 +603,7 @@
       },
       {
         "model": "GPT-5.6 Sol (Max)",
-        "model_id": null,
+        "model_id": "openai/gpt-5.6-sol",
         "vendor": "openai",
         "measured_at": "2026-07-09",
         "score": 7.78,
@@ -2325,7 +2325,7 @@
       },
       {
         "model": "Gemini 3 Pro",
-        "model_id": null,
+        "model_id": "google-deepmind/gemini-3-pro-preview",
         "vendor": "google",
         "measured_at": "2025-11-18",
         "score": 38.3,
@@ -5129,7 +5129,7 @@
       },
       {
         "model": "GPT-4.5",
-        "model_id": null,
+        "model_id": "openai/gpt-4.5-preview-2025-02-27",
         "vendor": "openai",
         "measured_at": "2025-02-27",
         "score": 62.5,
