@@ -83,13 +83,45 @@ Unresolved names accumulate in `unresolved.json`. A human reviews that file, add
 alias to the registry, and the next ingestion run picks it up. The list of unresolved
 names should be surfaced in the ingestion log so it does not silently grow.
 
-This is intentionally manual in v1. Automating it means automating the wrong-merge risk.
+This is intentionally manual. Automating it means automating the wrong-merge risk, and a
+wrong merge credits one model with another's score in a way nothing downstream can detect.
+
+**What is generated, and what is still decided by a person.** "Manual" had quietly come to
+mean "not at all": the queue reached 1,351 names against a registry of 30, which is not a
+list anyone works through by hand, and the site was discarding scores for hundreds of models
+it already legally ingests. So `scripts/generate-candidates.ts` now *proposes* entries from
+snapshot evidence — creator from Epoch's `organization`, release date, variants from the
+`model_version` suffix — and writes them to `data/registry/candidates.json` with the rows
+that produced each one.
+
+A proposal is not an entry. Nothing reaches `models.json` without a person approving it at
+`/review` (development only) and running `pnpm registry:approve`, which re-checks the merge
+and refuses to write a registry that will not index. What was automated is the
+transcription; the judgement — is this really a distinct model, does its name mean what the
+generator assumed — is exactly what the review step exists for, and candidates the generator
+cannot be sure about are marked `conflict` and cannot be approved there at all.
+
+Three rules the generator follows, each a case where guessing would be worse than stopping:
+
+- **A tier suffix is read only from a closed set.** `gpt-5.6-sol_promax` is far likelier to
+  be the `max` tier of `gpt-5.6-sol-pro` than a `promax` tier of `gpt-5.6-sol`, so an
+  unrecognised suffix stays part of the name and the candidate is never auto-approvable.
+- **A token budget is a variant; a parameter count is a model.** `_16K` is an effort tier
+  expressed in tokens, so Claude 3.7 Sonnet is one model with nine budget variants rather
+  than nine models. `_8B` is not: an 8B model really is a different model from a 70B one.
+- **Two names that collapse to one id are flagged, never merged.** That is the wrong-merge
+  risk in its purest form, and it is a judgement call by definition.
+
+A candidate measured only on benchmarks with no health record here is demoted, because
+approving it would add no scores — accurate, and useless.
 
 ## Changelog
 
 - Initial version.
 - Clarified that the registry holds identity only, and that `state` is derived rather
   than hand-set.
+- Recorded what the candidate generator proposes and what a person still decides. Growth
+  stays manual in the sense that matters: nothing enters the registry unapproved.
 
 ## Modality
 

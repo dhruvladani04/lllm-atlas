@@ -103,13 +103,31 @@ comment, anything reflected — this trade has to be revisited before the featur
 `frame-src` allows exactly one origin, `https://www.youtube-nocookie.com`, for the CampusX
 playlist embedded on the foundations guide.
 
+## Development-only routes
+
+`/review` (the registry review UI) and `/api/registry-approve` exist only outside
+production, and are excluded by **file extension**, not by a runtime check:
+`page.dev.tsx` and `route.dev.ts` are registered as page extensions in `next.config.ts`
+only when `NODE_ENV !== "production"`, so in a production build they are not routes at all.
+
+This is deliberate belt-and-braces, and the belt was needed. The `app/(dev)/` route group
+does *not* exclude anything from the build — `/tokens` ships today — so the first attempt
+shipped a writable POST endpoint and a disk-reading page as server functions, 404-ing at
+runtime but present in the bundle and the only non-static routes on the site. On a site
+with no authentication, a deployed write endpoint is the worst thing in the repository.
+
+The runtime `notFound()` guards remain as the second mechanism, `/api/registry-approve`
+additionally requires `LLM_ATLAS_REVIEW=1`, and `tests/dev-routes.test.ts` fails if a
+production-extension `page.tsx` or `route.ts` ever reappears beside them.
+
 ## Environment variables
 
 | Var | Values | Purpose |
 |---|---|---|
 | `BENCHWIKI_MODE` | `mirror` \| `link` | `mirror` renders section 2 in-app; `link` renders a short landing page that links to benchwiki. Default `mirror`. Switching to `link` must not break any route. |
 | `OPENROUTER_API_KEY` | string | Ingestion only. Never referenced in `app/`. |
-| `SITE_URL` | string | Canonical URL for metadata |
+| `SITE_URL` | string | Canonical URL for metadata. Optional on Vercel — falls back to `VERCEL_PROJECT_PRODUCTION_URL` |
+| `LLM_ATLAS_REVIEW` | `1` | Development only. Enables the registry-approval endpoint behind `/review` |
 
 ## Changelog
 
@@ -118,3 +136,4 @@ playlist embedded on the foundations guide.
   route bundles.
 - Added the security-header block, and recorded why `script-src 'unsafe-inline'` is an
   accepted trade for a site that renders no user input. Post-launch audit.
+- Added the development-only route mechanism and `LLM_ATLAS_REVIEW`. Registry expansion.

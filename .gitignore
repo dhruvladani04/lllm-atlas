@@ -12,3 +12,7 @@ coverage
 test-results
 playwright-report
 lh.tmp.json
+
+# Review decisions are a local step between generating candidates and merging them;
+# the registry diff is the artefact worth keeping, not the clicks that produced it.
+data/registry/approvals.json

@@ -15,7 +15,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "ingest": "tsx scripts/ingest.ts",
-    "e2e": "playwright test"
+    "e2e": "playwright test",
+    "generate-candidates": "tsx scripts/generate-candidates.ts",
+    "registry:approve": "tsx scripts/registry-approve.ts"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.10.0",

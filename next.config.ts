@@ -16,9 +16,20 @@ import type { NextConfig } from "next";
  * `frame-src` allows exactly one origin — the CampusX playlist embedded on the foundations
  * guide, which uses youtube-nocookie.com rather than youtube.com.
  */
+const isProduction = process.env.NODE_ENV === "production";
+
+/**
+ * The dev server compiles with `eval`, for hot reloading and source maps. Refusing it makes
+ * development quietly worse — the page still renders, but HMR dies and every reload is a
+ * full one — so the allowance is scoped to development and never reaches a built site.
+ */
+const SCRIPT_SRC = isProduction
+  ? "script-src 'self' 'unsafe-inline'"
+  : "script-src 'self' 'unsafe-inline' 'unsafe-eval'";
+
 const CSP = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline'",
+  SCRIPT_SRC,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data:",
   "font-src 'self'",
@@ -43,11 +54,31 @@ const SECURITY_HEADERS = [
   },
 ];
 
+/**
+ * Dev-only routes are excluded from the production build by extension, not by a runtime
+ * check.
+ *
+ * The registry review UI writes to disk. A runtime `notFound()` does keep it unreachable in
+ * production, but the route still ships in the bundle and still renders as a server
+ * function — on a site where every other route is static, that is the one endpoint worth
+ * not shipping at all. `page.dev.tsx` and `route.dev.ts` simply are not pages when the
+ * extension is not registered, so the routes cannot exist.
+ *
+ * The runtime guards stay as well. Two independent mechanisms, because the cost of being
+ * wrong here is a writable endpoint on a site with no authentication.
+ */
+const DEV_ONLY_EXTENSIONS = ["dev.tsx", "dev.ts"];
+const PAGE_EXTENSIONS = ["tsx", "ts", "jsx", "js", "mdx"];
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Every page in this project renders from JSON committed to the repository.
   // Nothing fetches upstream at request time — see specs/01-architecture/data-pipeline.md.
   typedRoutes: true,
+
+  pageExtensions: isProduction
+    ? PAGE_EXTENSIONS
+    : [...DEV_ONLY_EXTENSIONS, ...PAGE_EXTENSIONS],
 
   async headers() {
     return [{ source: "/:path*", headers: SECURITY_HEADERS }];
