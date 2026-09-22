@@ -61,19 +61,19 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-5",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 5,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 25,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -102,19 +102,19 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-5",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 2,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -146,19 +146,19 @@
       "value": 200000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-haiku-4.5",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 1,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 5,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -224,19 +224,19 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-fable-5.1",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 10,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 50,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -293,19 +293,19 @@
       "value": 400000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 1.25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -334,19 +334,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 1.25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -375,19 +375,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
-      "value": 0.19999999999999998,
+      "value": 0.1875,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
-      "value": 0.7999999999999999,
+      "value": 0.6525,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -416,19 +416,19 @@
       "value": 1310720,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 0.09999999999999999,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 0.3,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -457,19 +457,19 @@
       "value": 64000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 0.7,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 2.5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -498,19 +498,19 @@
       "value": 163840,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 0.32,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 0.8899999999999999,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -539,19 +539,19 @@
       "value": 131072,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen3-235b-a22b",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 0.45499999999999996,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen3-235b-a22b",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 1.8199999999999998,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen3-235b-a22b",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -826,19 +826,19 @@
       "value": 1050000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-6-astra",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-6-astra",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 50,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-6-astra",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -887,19 +887,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.7-flash",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 0.75,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.7-flash",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 3.75,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.7-flash",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -955,19 +955,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.6-flash",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 0.75,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.6-flash",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 3.75,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.6-flash",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -1022,19 +1022,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.5-flash-lite",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 0.3,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.5-flash-lite",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 2.5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.5-flash-lite",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -1091,19 +1091,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 0.9552599999999999,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 1.9105199999999998,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -1159,19 +1159,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 0.088606,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 0.177212,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -1251,19 +1251,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/thinkingmachines/inkling",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 1,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/thinkingmachines/inkling",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 4.05,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/thinkingmachines/inkling",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -1287,24 +1287,9 @@
       }
     ],
     "state": "ranked",
-    "context_window": {
-      "value": 200000,
-      "quoted_by": "openrouter",
-      "source_url": "https://openrouter.ai/anthropic/claude-opus-4",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
-    },
-    "price_input_per_mtok": {
-      "value": 15,
-      "quoted_by": "openrouter",
-      "source_url": "https://openrouter.ai/anthropic/claude-opus-4",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
-    },
-    "price_output_per_mtok": {
-      "value": 75,
-      "quoted_by": "openrouter",
-      "source_url": "https://openrouter.ai/anthropic/claude-opus-4",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
-    }
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
   },
   {
     "model_id": "anthropic/claude-sonnet-4",
@@ -1328,22 +1313,22 @@
     ],
     "state": "ranked",
     "context_window": {
-      "value": 1000000,
+      "value": 200000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 3,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 15,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   },
   {
@@ -1370,19 +1355,19 @@
       "value": 1047576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4.1",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_input_per_mtok": {
       "value": 2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4.1",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     },
     "price_output_per_mtok": {
       "value": 8,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4.1",
-      "fetched_at": "2026-09-21T11:41:32.332Z"
+      "fetched_at": "2026-09-22T10:45:09.951Z"
     }
   }
 ]

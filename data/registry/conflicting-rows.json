@@ -3,5 +3,6 @@
   "ARC-AGI: \"claude-opus-5_max\" vs \"Claude Opus 5 (High)\" resolve to different models",
   "FrontierCode: \"claude-fable-5-1_medium\" vs \"Claude Fable 5.1\" resolve to different models",
   "FrontierCode: \"claude-opus-5_max\" vs \"Claude Opus 5\" resolve to different models",
+  "FrontierCode: \"deepseek-v4-pro-0813_high\" vs \"DeepSeek V4 Pro 0813\" resolve to different models",
   "FrontierCode: \"gpt-6-astra_max\" vs \"GPT-6 Astra\" resolve to different models"
 ]
