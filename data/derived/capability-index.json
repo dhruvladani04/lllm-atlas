@@ -3,7 +3,7 @@
   "source": {
     "source_id": "epoch-eci",
     "source_url": "https://epoch.ai/data/benchmark_data.zip",
-    "fetched_at": "2026-09-29T11:56:31.527Z",
+    "fetched_at": "2026-09-30T11:44:31.624Z",
     "licence": "CC BY 4.0",
     "attribution": "Epoch AI, 'Capabilities & Benchmarking'. Published online at epoch.ai. Retrieved from 'https://epoch.ai/benchmarks'. CC BY 4.0."
   },
