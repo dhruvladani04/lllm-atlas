@@ -2,7 +2,7 @@
   "note": "Arena Elo has no benchmark health record upstream, so these rows are not part of model-benchmark-join.json. They are a preference ranking, not a benchmark score.",
   "source": {
     "source_id": "arena-mirror",
-    "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-09-30/text-to-image.json",
+    "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-01/text-to-image.json",
     "fetched_at": "2026-09-30T11:44:31.624Z",
     "licence": "Unofficial mirror of LMArena's public leaderboards",
     "attribution": "Arena Elo from LMArena, via the arena-ai-leaderboards daily mirror"
@@ -21,7 +21,7 @@
       "measured_at": null,
       "source": {
         "source_id": "arena-mirror",
-        "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-09-30/text-to-image.json",
+        "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-01/text-to-image.json",
         "fetched_at": "2026-09-30T11:44:31.624Z",
         "licence": "Unofficial mirror of LMArena's public leaderboards",
         "attribution": "Arena Elo from LMArena, via the arena-ai-leaderboards daily mirror"
@@ -41,7 +41,7 @@
       "measured_at": null,
       "source": {
         "source_id": "arena-mirror",
-        "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-09-30/text-to-image.json",
+        "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-01/text-to-image.json",
         "fetched_at": "2026-09-30T11:44:31.624Z",
         "licence": "Unofficial mirror of LMArena's public leaderboards",
         "attribution": "Arena Elo from LMArena, via the arena-ai-leaderboards daily mirror"
