@@ -2,8 +2,8 @@
   "note": "Arena Elo has no benchmark health record upstream, so these rows are not part of model-benchmark-join.json. They are a preference ranking, not a benchmark score.",
   "source": {
     "source_id": "arena-mirror",
-    "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-05/text-to-image.json",
-    "fetched_at": "2026-10-05T13:17:01.950Z",
+    "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-06/text-to-image.json",
+    "fetched_at": "2026-10-06T12:34:19.851Z",
     "licence": "Unofficial mirror of LMArena's public leaderboards",
     "attribution": "Arena Elo from LMArena, via the arena-ai-leaderboards daily mirror"
   },
@@ -16,13 +16,13 @@
       "value": 1116,
       "unit": "elo",
       "confidence_interval": 3,
-      "sample_size": 268466,
+      "sample_size": 268448,
       "provenance": "independent",
       "measured_at": null,
       "source": {
         "source_id": "arena-mirror",
-        "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-05/text-to-image.json",
-        "fetched_at": "2026-10-05T13:17:01.950Z",
+        "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-06/text-to-image.json",
+        "fetched_at": "2026-10-06T12:34:19.851Z",
         "licence": "Unofficial mirror of LMArena's public leaderboards",
         "attribution": "Arena Elo from LMArena, via the arena-ai-leaderboards daily mirror"
       },
@@ -35,14 +35,14 @@
       "harness": null,
       "value": 1016,
       "unit": "elo",
-      "confidence_interval": 3,
+      "confidence_interval": 4,
       "sample_size": 70460,
       "provenance": "independent",
       "measured_at": null,
       "source": {
         "source_id": "arena-mirror",
-        "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-05/text-to-image.json",
-        "fetched_at": "2026-10-05T13:17:01.950Z",
+        "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-06/text-to-image.json",
+        "fetched_at": "2026-10-06T12:34:19.851Z",
         "licence": "Unofficial mirror of LMArena's public leaderboards",
         "attribution": "Arena Elo from LMArena, via the arena-ai-leaderboards daily mirror"
       },
