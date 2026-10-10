@@ -1,5 +1,50 @@
 [
   {
+    "run_at": "2026-10-10T11:43:24.071Z",
+    "results": [
+      {
+        "source_id": "benchwiki",
+        "status": "ok",
+        "record_count": 80,
+        "previous_record_count": 80,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "epoch",
+        "status": "ok",
+        "record_count": 61,
+        "previous_record_count": 61,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "epoch-eci",
+        "status": "ok",
+        "record_count": 274,
+        "previous_record_count": 274,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "arena-mirror",
+        "status": "truncated",
+        "record_count": 81,
+        "previous_record_count": 81,
+        "unresolved_models": [],
+        "message": "returned 20 records against a previous 81 (25% of the last run, below the 50% floor) — keeping the previous snapshot"
+      },
+      {
+        "source_id": "openrouter",
+        "status": "ok",
+        "record_count": 458,
+        "previous_record_count": 469,
+        "unresolved_models": [],
+        "message": null
+      }
+    ]
+  },
+  {
     "run_at": "2026-10-09T12:24:31.798Z",
     "results": [
       {
