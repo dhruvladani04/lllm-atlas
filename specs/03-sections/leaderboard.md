@@ -203,13 +203,46 @@ Sections in this order:
    a single line.
 5. **Unresolved** — if the model appears in `unresolved.json` under an alias, say so.
 
+## Summary cards
+
+A row of cards sits above the tabs on `/models` and below the worked example on the home
+page. They exist so a reader arriving with "who is ahead" gets an answer in the first
+screen, and they are held to the same rule as every other score here: a card is a row, and
+it carries what the row carries.
+
+Each card is one real row from the default view of a ranking, with the rule that picked it
+as its heading:
+
+| Card | Rule |
+|---|---|
+| Highest on the text reference | First row of the text tab, saturated benchmarks hidden |
+| Highest with open weights | First row of the same ranking whose model is recorded as open. Unrecorded is not counted either way, and the card says how many rows that is |
+| Lowest price near the top | Cheapest by input plus output price among rows scoring at least 90% of the leader's. Percent-unit references only: a fraction of an Elo or an index means nothing. Unpriced models are not counted, and the card says so |
+| Highest on the agentic reference | First row of the agentic tab, labelled as a system score |
+| Highest Arena Elo, text to image | Top of the image board, with its interval, labelled as a preference ranking |
+
+Binding rules:
+
+- **A card names its benchmark.** The heading is "Highest on X", never "Best".
+- **A card carries its caveats.** Status chip, health flags and provenance badge, exactly as
+  the row has them. The arena card has no health record to show and says that in words.
+- **A card is never invented.** If a rule matches no row, the card is absent. No fallback
+  to the nearest thing.
+- **Cards and table agree.** Both are built from the same call, so a card cannot name a
+  model the table below ranks differently.
+- **No "biggest mover".** It needs a score history per model that no ingested source
+  provides; computing it from our own snapshot dates would report when we fetched a number,
+  not when a model improved.
+
 ## Home page
 
 The home page is not a marketing page. It is a demonstration of the thesis.
 
 Lead with a single real leaderboard row in which a model shows a high score *and* a
 saturation flag on the benchmark producing it — the argument shown, not stated. Below it,
-the three section entries with one line each.
+the summary cards, which are the same argument applied to the current leaders: each one a
+score with its benchmark's health attached. Then the three section entries with one line
+each. The cards come second on purpose; the caveat is taught before the rankings are shown.
 
 Do not write a hero with a big number and a gradient. Do not write "Track. Compare.
 Decide." Copy guidance is in `04-design/design-system.md`.
@@ -234,3 +267,6 @@ Decide." Copy guidance is in `04-design/design-system.md`.
   universe it can speak to. Post-launch audit.
 - Added the compare view and catalogue search; recorded that comparability requires a
   benchmark both models were measured on. Post-launch.
+- Added summary cards above the tabs and on the home page, each a real row carrying its
+  health flags, with the rule that picked it as its heading. Creator names carry a vendor
+  mark. "Biggest mover" was considered and left out for want of a real history.

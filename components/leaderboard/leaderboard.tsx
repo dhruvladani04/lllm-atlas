@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useSyncExternalStore } from "react";
+import { useSyncExternalStore, type ReactNode } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Score } from "@/lib/schemas/score";
 import type { SourceMeta } from "@/lib/schemas/common";
@@ -26,6 +26,7 @@ const TAB_LABEL: Record<Tab, string> = {
 
 export function Leaderboard({
   tabs,
+  cards,
   image,
   tableModels,
   freshness,
@@ -33,6 +34,8 @@ export function Leaderboard({
   coverage,
 }: {
   tabs: Record<"text" | "agentic", { hidden: TableData; shown: TableData }>;
+  /** Rendered on the server and passed through; this shell adds nothing to them. */
+  cards: ReactNode;
   image: { note: string; source: SourceMeta; scores: Score[] } | null;
   tableModels: Record<string, TableModel>;
   freshness: Record<string, string | null>;
@@ -72,6 +75,8 @@ export function Leaderboard({
         reported the number. A high score on a saturated benchmark is still a high score —
         it just tells you less than it appears to.
       </p>
+
+      {cards}
 
       <nav className="mt-6 flex gap-4 border-b border-rule text-sm" aria-label="Modality">
         {(["text", "agentic", "image"] as const).map((name) => (
@@ -124,8 +129,7 @@ export function Leaderboard({
             benchwiki
           </a>
           . Scores from Epoch AI, CC BY 4.0. Pricing from vendor pages where readable, and
-          from OpenRouter (CC BY 4.0) otherwise. Arena Elo from LMArena via a community
-          mirror.
+          from OpenRouter (CC BY 4.0) otherwise. Arena Elo from Arena, CC BY 4.0.
         </p>
         {capabilityIndexNote !== null ? (
           <p className="mt-1">{capabilityIndexNote}</p>

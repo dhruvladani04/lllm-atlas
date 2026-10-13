@@ -186,6 +186,14 @@ TableModel lookup }` shape (`lib/leaderboard/view.ts`), which took mobile Lighth
   test stayed green because it only checked colours against `paper` and `surface` — the axe
   audit caught it in production. Both colours were darkened and the test now checks every
   data colour against its own tinted ground in both schemes.
+- **A summary card is a row, not a headline.** The cards above the leaderboard answer "who
+  is ahead" in the first screen, and each one is lifted from the same call that builds the
+  table, headed by the rule that picked it ("Highest on GPQA", never "Best") and carrying
+  that row's status chip, health flags and provenance. A rule that matches nothing renders
+  no card. "Biggest mover" was left out: no source provides a real history to compute it.
+- **Vendor marks without a second colour.** Marks are committed SVGs drawn as a mask in the
+  text colour, so they add recognition and no hue. A jointly released model gets no single
+  organisation's mark, and a creator without one gets a monogram.
 - **CSP keeps `'unsafe-inline'`, deliberately.** The App Router emits the RSC payload as
   inline scripts; nonces would force every route to render dynamically, trading the
   static-first architecture for one header. The site renders no user input anywhere, so
@@ -198,7 +206,7 @@ TableModel lookup }` shape (`lib/leaderboard/view.ts`), which took mobile Lighth
 | --------------- | -------------------------------------------------------------------------------- |
 | Framework       | Next.js 16 (App Router, Turbopack), React 19 — static-first, prerendered         |
 | Language        | TypeScript 5.9, `strict: true`                                                   |
-| Styling         | Tailwind CSS v4, tokenised light/dark pairs                                      |
+| Styling         | Tailwind CSS v4, tokenised light/dark pairs — dark by default, remembered toggle |
 | Validation      | Zod 4 — every ingested payload is parsed, never cast                             |
 | Content         | MDX via `next-mdx-remote`, Shiki for code blocks                                 |
 | Motion          | `motion/react`, Auto-Animate — informative motion only, never decorative         |

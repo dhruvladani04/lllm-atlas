@@ -22,6 +22,7 @@ import {
   StatusChip,
 } from "@/components/data/primitives";
 import { FreshnessStamp } from "@/components/data/freshness-stamp";
+import { CreatorLogo } from "@/components/ui/creator-logo";
 
 /**
  * specs/03-sections/leaderboard.md — the index table.
@@ -497,7 +498,8 @@ export function LeaderboardTable({
                           ◇
                         </span>
                       ) : null}
-                      <span className="block text-xs text-ink-mute">
+                      <span className="mt-0.5 flex items-center gap-1.5 text-xs text-ink-mute">
+                        <CreatorLogo creator={model.creator} />
                         {model.creator}
                         {/* Which configuration won, and how many it beat. A collapsed row
                             that hid this would be the silent merge the spec forbids. */}

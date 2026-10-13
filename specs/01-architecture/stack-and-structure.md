@@ -51,7 +51,7 @@
 │  ├─ data/                    ScoreCell, ProvenanceBadge, StatusChip, FreshnessStamp
 │  ├─ leaderboard/
 │  ├─ benchmarks/
-│  └─ ui/                      primitives only
+│  └─ ui/                      primitives only: CreatorLogo, ThemeToggle
 ├─ content/evals/              MDX guides
 ├─ data/
 │  ├─ registry/models.json     canonical model registry, hand-maintained + generated
@@ -62,7 +62,9 @@
 │  ├─ schemas/                 Zod schemas mirroring 02-data/schemas.md
 │  ├─ ingest/                  one module per source
 │  ├─ join/                    score × benchmark-health join
+│  ├─ creators/                creator name to committed vendor mark
 │  └─ format/                  numbers, dates, deltas
+├─ public/logos/               vendor marks, committed (CSP allows this origin only)
 ├─ scripts/ingest.ts           entry point for the cron job
 └─ .github/workflows/ingest.yml
 ```

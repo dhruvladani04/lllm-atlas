@@ -1,5 +1,13 @@
 import Link from "next/link";
-import { loadFreshness, loadJoinedScores, loadModels } from "@/lib/data/derived";
+import {
+  loadFreshness,
+  loadImageLeaderboard,
+  loadJoinedScores,
+  loadModels,
+} from "@/lib/data/derived";
+import { buildRows } from "@/lib/leaderboard/rows";
+import { buildSummaryCards } from "@/lib/leaderboard/cards";
+import { SummaryCards } from "@/components/leaderboard/summary-cards";
 import { selectDemonstration } from "@/lib/home/demonstration";
 import { DemonstrationRow } from "@/components/home/demonstration-row";
 import { FreshnessStamp } from "@/components/data/freshness-stamp";
@@ -8,15 +16,27 @@ import { FreshnessStamp } from "@/components/data/freshness-stamp";
  * specs/03-sections/leaderboard.md — the home page.
  *
  * Not a marketing page. It is a demonstration of the thesis: one real row where a model
- * shows a high score and a saturation flag on the benchmark producing it, then the three
- * sections with one line each. No hero, no big number on a gradient, no three-word tagline.
+ * shows a high score and a saturation flag on the benchmark producing it, then the current
+ * leaders as cards that carry the same caveats, then the three sections with one line
+ * each. No hero, no big number on a gradient, no three-word tagline.
  */
 
 export const dynamic = "force-static";
 
 export default function HomePage() {
   const scores = loadJoinedScores();
-  const demonstration = selectDemonstration(scores, loadModels());
+  const models = loadModels();
+  const demonstration = selectDemonstration(scores, models);
+
+  // The same default views /models ranks on, so a card here and the table there agree.
+  const ranked = (tab: "text" | "agentic") =>
+    buildRows({ scores, models, capabilityIndex: new Map(), tab, hideSaturated: true });
+  const cards = buildSummaryCards({
+    text: ranked("text"),
+    agentic: ranked("agentic"),
+    image: loadImageLeaderboard()?.scores ?? [],
+    models,
+  });
   const freshness = loadFreshness();
 
   return (
@@ -41,6 +61,8 @@ export default function HomePage() {
           <DemonstrationRow demonstration={demonstration} />
         </>
       )}
+
+      <SummaryCards cards={cards} heading="Who is ahead, and on what" />
 
       <nav className="mt-12" aria-label="Sections">
         <ul className="divide-y divide-rule border-y border-rule">
@@ -83,8 +105,8 @@ export default function HomePage() {
           benchwiki
         </a>
         . Scores from Epoch AI (CC BY 4.0). Pricing from vendor pages where readable, and
-        from OpenRouter (CC BY 4.0) otherwise. Arena Elo from Arena (CC BY 4.0). Benchmark data{" "}
-        <FreshnessStamp fetchedAt={freshness["benchwiki"] ?? null} />.
+        from OpenRouter (CC BY 4.0) otherwise. Arena Elo from Arena (CC BY 4.0). Benchmark
+        data <FreshnessStamp fetchedAt={freshness["benchwiki"] ?? null} />.
       </p>
     </main>
   );

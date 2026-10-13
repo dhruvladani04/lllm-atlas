@@ -10,7 +10,9 @@ import {
 } from "@/lib/data/derived";
 import { buildRows, type CapabilityIndexEntry } from "@/lib/leaderboard/rows";
 import { toTableData, toTableModels } from "@/lib/leaderboard/view";
+import { buildSummaryCards } from "@/lib/leaderboard/cards";
 import { Leaderboard } from "@/components/leaderboard/leaderboard";
+import { SummaryCards } from "@/components/leaderboard/summary-cards";
 
 /**
  * specs/03-sections/leaderboard.md — `/models`, with `?tab=text|agentic|image`.
@@ -70,18 +72,25 @@ export default function ModelsPage() {
       ? { hidden, shown: hidden }
       : { hidden, shown };
 
+  const ranked = (tab: "text" | "agentic") =>
+    buildRows({
+      scores,
+      models,
+      capabilityIndex,
+      benchmarkNames,
+      tab,
+      hideSaturated: true,
+    });
+  const text = ranked("text");
+  const agentic = ranked("agentic");
+
+  // The cards are lifted from the default view of each tab, so a card can never name a
+  // model the table below it ranks differently.
+  const cards = buildSummaryCards({ text, agentic, image: image?.scores ?? [], models });
+
   const tabs = {
     text: pair(
-      toTableData(
-        buildRows({
-          scores,
-          models,
-          capabilityIndex,
-          benchmarkNames,
-          tab: "text",
-          hideSaturated: true,
-        }),
-      ),
+      toTableData(text),
       toTableData(
         buildRows({
           scores,
@@ -94,16 +103,7 @@ export default function ModelsPage() {
       ),
     ),
     agentic: pair(
-      toTableData(
-        buildRows({
-          scores,
-          models,
-          capabilityIndex,
-          benchmarkNames,
-          tab: "agentic",
-          hideSaturated: true,
-        }),
-      ),
+      toTableData(agentic),
       toTableData(
         buildRows({
           scores,
@@ -121,6 +121,7 @@ export default function ModelsPage() {
     <Suspense fallback={null}>
       <Leaderboard
         tabs={tabs}
+        cards={<SummaryCards cards={cards} heading="At a glance" />}
         tableModels={toTableModels(models)}
         coverage={coverage}
         image={image}

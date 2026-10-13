@@ -4,6 +4,7 @@ import type { Score } from "@/lib/schemas/score";
 import type { SourceMeta } from "@/lib/schemas/common";
 import { FreshnessStamp } from "@/components/data/freshness-stamp";
 import { MissingValue } from "@/components/data/primitives";
+import { CreatorLogo } from "@/components/ui/creator-logo";
 
 /**
  * specs/03-sections/leaderboard.md — the image tab.
@@ -101,9 +102,12 @@ export function ImageTable({
                         ({score.variant})
                       </span>
                     ) : null}
-                    <span className="block text-xs text-ink-mute">
-                      {model?.creator ?? ""}
-                    </span>
+                    {model !== undefined ? (
+                      <span className="mt-0.5 flex items-center gap-1.5 text-xs text-ink-mute">
+                        <CreatorLogo creator={model.creator} />
+                        {model.creator}
+                      </span>
+                    ) : null}
                   </td>
                   <td className="tabular py-2 pr-3 text-right">
                     {Math.round(score.value)}

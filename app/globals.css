@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 /*
-  specs/04-design/design-system.md — the interface is achromatic; colour belongs to
-  the data. Literal values are declared once as -light/-dark pairs; the scheme blocks
+  specs/04-design/design-system.md — data colour encodes facts, interface colour encodes
+  interaction. Literal values are declared once as -light/-dark pairs; the scheme blocks
   below only re-point the token at one of the pair.
 */
 :root {
@@ -52,55 +52,13 @@
   --shadow-md-light: 0 8px 24px rgba(20, 23, 28, 0.1);
   --shadow-sm-dark: 0 1px 2px rgba(0, 0, 0, 0.45);
   --shadow-md-dark: 0 8px 24px rgba(0, 0, 0, 0.55);
-
-  --paper: var(--paper-light);
-  --surface: var(--surface-light);
-  --ink: var(--ink-light);
-  --ink-mute: var(--ink-mute-light);
-  --rule: var(--rule-light);
-  --rule-strong: var(--rule-strong-light);
-  --status-active: var(--status-active-light);
-  --status-nearing: var(--status-nearing-light);
-  --status-saturated: var(--status-saturated-light);
-  --status-deprecated: var(--status-deprecated-light);
-  --risk-high: var(--risk-high-light);
-  --risk-medium: var(--risk-medium-light);
-  --provenance-vendor: var(--provenance-vendor-light);
-  --stale: var(--stale-light);
-  --accent: var(--accent-light);
-  --accent-strong: var(--accent-strong-light);
-  --elevation-sm: var(--shadow-sm-light);
-  --elevation-md: var(--shadow-md-light);
-
-  color-scheme: light dark;
 }
 
-/* The dark values, applied identically by the media query and by the forced class.
-   .scheme-light / .scheme-dark exist so both schemes can be shown side by side on
+/* Dark is the default scheme, and it does not follow the operating system: the reader
+   chooses with the toggle in the header, which sets data-theme on <html> before first
+   paint. .scheme-light / .scheme-dark exist so both schemes can be shown side by side on
    the token reference page. */
-@media (prefers-color-scheme: dark) {
-  :root:not(.scheme-light) {
-    --paper: var(--paper-dark);
-    --surface: var(--surface-dark);
-    --ink: var(--ink-dark);
-    --ink-mute: var(--ink-mute-dark);
-    --rule: var(--rule-dark);
-    --rule-strong: var(--rule-strong-dark);
-    --status-active: var(--status-active-dark);
-    --status-nearing: var(--status-nearing-dark);
-    --status-saturated: var(--status-saturated-dark);
-    --status-deprecated: var(--status-deprecated-dark);
-    --risk-high: var(--risk-high-dark);
-    --risk-medium: var(--risk-medium-dark);
-    --provenance-vendor: var(--provenance-vendor-dark);
-    --stale: var(--stale-dark);
-    --accent: var(--accent-dark);
-    --accent-strong: var(--accent-strong-dark);
-    --elevation-sm: var(--shadow-sm-dark);
-    --elevation-md: var(--shadow-md-dark);
-  }
-}
-
+:root,
 .scheme-dark {
   --paper: var(--paper-dark);
   --surface: var(--surface-dark);
@@ -123,6 +81,7 @@
   color-scheme: dark;
 }
 
+:root[data-theme="light"],
 .scheme-light {
   --paper: var(--paper-light);
   --surface: var(--surface-light);

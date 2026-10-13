@@ -195,6 +195,16 @@ export default function MethodologyPage() {
         </p>
       </Rule>
 
+      <Rule heading="Vendor marks">
+        <p>
+          The small marks beside creator names are each vendor&rsquo;s trademark. They are
+          here to identify who made a model and imply no endorsement of this site by any
+          of them, or of any of them by this site. A creator with no mark shown gets its
+          initial instead; that says nothing about the model. A model released jointly by
+          several organisations is never given one organisation&rsquo;s mark.
+        </p>
+      </Rule>
+
       <section className="mt-10 border-t border-rule pt-4 text-sm text-ink-mute">
         <p className="max-w-[68ch]">
           The rules above are written down in full, with their reasoning and the arguments

@@ -36,6 +36,24 @@ test.describe("the leaderboard states its caveats", () => {
     expect(stated, "the view states provenance in the row or above the table").toBe(true);
   });
 
+  test("every summary card carries its benchmark's status, or says why it has none", async ({
+    page,
+  }) => {
+    await page.goto("/models");
+
+    const cards = page.getByRole("region", { name: "At a glance" }).getByRole("listitem");
+    expect(await cards.count()).toBeGreaterThan(0);
+
+    // A card is a score in larger type at the top of the page. One without its caveat
+    // would be the thing this site argues against, in the most prominent place it has.
+    for (const card of await cards.all()) {
+      await expect(card).toContainText(
+        /active|nearing saturation|saturated|deprecated|no benchmark health record exists/,
+      );
+      await expect(card.getByRole("link").first()).toHaveAttribute("href", /^\/models\//);
+    }
+  });
+
   test("the saturated toggle reports what it excludes", async ({ page }) => {
     await page.goto("/models");
     const toggle = page.getByLabel(/Hide saturated benchmarks/);

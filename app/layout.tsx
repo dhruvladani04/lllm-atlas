@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
 import { siteUrl } from "@/lib/config";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
@@ -59,6 +60,15 @@ const NAV = [
   { href: "/methodology", label: "Methodology" },
 ] as const;
 
+/**
+ * Applies a stored light preference while the HTML is still being parsed, before anything
+ * paints. Without it a reader who chose light would see the dark default flash on every
+ * load. The key matches `THEME_KEY` in the toggle, and the script only ever compares the
+ * stored value against a literal — nothing read from storage is written into the page.
+ */
+const APPLY_THEME =
+  '(function(){try{if(localStorage.getItem("llm-atlas-theme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}})()';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
@@ -68,9 +78,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       // — a screen recorder adding `data-scribe-recorder-ready` is enough to trigger a
       // hydration warning for something no code here did. This suppresses exactly one
       // level: attribute differences on <html> itself. Mismatches anywhere inside the
-      // tree still surface, which is where a real one would be.
+      // tree still surface, which is where a real one would be. The scheme script below
+      // relies on the same allowance: it sets `data-theme` here before hydration.
       suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: APPLY_THEME }} />
+      </head>
       <body className="min-h-screen bg-paper text-ink">
         <a
           href="#content"
@@ -112,6 +126,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 ))}
               </ul>
             </nav>
+            <div className="ml-auto">
+              <ThemeToggle />
+            </div>
           </div>
         </header>
 

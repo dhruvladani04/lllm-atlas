@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CreatorLogo } from "@/components/ui/creator-logo";
 import { notFound } from "next/navigation";
 import {
   loadCapabilityIndex,
@@ -124,7 +125,10 @@ export default async function ModelPage({
       <section className="mt-6 grid grid-cols-2 gap-x-8 gap-y-3 border-y border-rule py-4 text-sm sm:grid-cols-3">
         <div>
           <div className="text-xs text-ink-mute">Creator</div>
-          {model.creator}
+          <span className="flex items-center gap-1.5">
+            <CreatorLogo creator={model.creator} />
+            {model.creator}
+          </span>
         </div>
         <div>
           <div className="text-xs text-ink-mute">Released</div>

@@ -8,22 +8,41 @@ immediately see which ones to distrust.
 
 That gives one governing idea, and everything below follows from it:
 
-> **Data colour encodes facts. Interface colour encodes interaction.**
+> **Data colour encodes facts. Interface colour encodes interaction. Nothing else is
+> coloured.**
 
-Two separate, non-overlapping jobs. The data palette below still means only what it has
-always meant — benchmark status, contamination risk, provenance, staleness — and is never
-spent on decoration. Chrome, navigation and structure were pure paper-and-ink through
-Milestone 7; from here they carry exactly **one** accent hue, spent only on things a
-reader can act on: a link, a focus ring, a checked control, the row you're hovering. An
-accent on a static heading or a border for no reason is the old mistake with a new colour;
-the test is still "does this pixel tell the reader something," just answered for
-interaction as well as data now.
+Three things carry colour or weight on this site, and each has exactly one job:
 
-Still ruled out: gradient washes, tinted hero sections, a coloured button for an action
-that isn't the page's one interactive control, and more than one accent hue. Elevation
-(shadow) is permitted on interactive or floating chrome — a sticky header, a hovered row,
-an elevated panel on the home page — never on the dense leaderboard or benchmark-matrix
-body, which stay flat so density reads as density.
+1. **The data palette** means benchmark status, contamination risk, provenance and
+   staleness, and is never spent on decoration.
+2. **One accent hue** marks what a reader can act on: a link, a focus ring, a checked
+   control, the row being hovered.
+3. **Vendor marks** identify who made a model. They are drawn in the current text colour,
+   never in the vendor's brand colour, so they add recognition without adding a hue.
+
+The site is **dark by default**, with a light scheme one click away. Both schemes are the
+same design: the same tokens re-pointed, held to the same contrast floor, audited by the
+same tests. Dark is the default because the audience reads dense tables for long stretches
+and the comparable sites they arrive from are dark; it is not a mood.
+
+This replaces two earlier paragraphs. The chrome was strictly achromatic through Milestone
+7, then gained the accent, then gained marks and a dark default. Rather than keep a rule
+with exceptions bolted on, the rule above is what is true now, and the test for any new
+pixel is unchanged: does it tell the reader a fact, or something they can do.
+
+**Still ruled out**, so that this document keeps constraining something:
+
+- Gradient washes, glows and tinted hero sections.
+- A second accent hue, including a vendor's brand colour on its mark, its name or its row.
+- A coloured button for an action that is not the page's one interactive control.
+- Colouring a number to say it is good. Rank is position; colour on a score means a
+  health fact about its benchmark and nothing else.
+- A card that shows a score without the status and flags its row carries.
+- Elevation on the leaderboard or benchmark-matrix body, which stay flat so density reads
+  as density. Shadow is for interactive or floating chrome and for the named card
+  surfaces: the header, a hovered row, the home worked example, the summary cards.
+- Following the operating system's scheme silently. The scheme is the reader's explicit
+  choice and is remembered; it does not change because the room got dark.
 
 ## What to avoid
 
@@ -31,7 +50,8 @@ These are the current defaults of generated design and will make the site look l
 other AI-adjacent page:
 
 - Cream background near `#F4F1EA` with a serif display face and a terracotta accent
-- Near-black background with one acid-green or vermilion accent
+- Near-black background with one acid-green or vermilion accent. The dark scheme here is
+  a blue-grey `#101317` with a muted blue accent, and the accent is never decoration
 - Identical rounded cards with the same soft grey shadow under each, used everywhere rather
   than on the specific interactive/elevated surfaces named below
 - Tracked-out all-caps eyebrow labels above every heading
@@ -53,7 +73,8 @@ Neutral base — used for everything that is not data:
 --rule-strong  #C6C8C1   emphasised borders
 ```
 
-Dark mode inverts: `--paper #101317`, `--surface #171B20`, `--ink #E8E9E4`,
+The block above is the light scheme. The dark scheme, which is the default, inverts it:
+`--paper #101317`, `--surface #171B20`, `--ink #E8E9E4`,
 `--ink-mute #9BA0A8`, `--rule #262B31`, `--rule-strong #3A4149`.
 
 Data palette — used *only* for the meanings listed:
@@ -138,6 +159,43 @@ green, because the test only knew about paper and surface. Both were darkened, a
 test now checks every data colour against its tinted ground in both schemes. Changing the
 tint opacity means re-running that check, not eyeballing it.
 
+### Scheme
+
+Dark is what the server renders. A reader who chooses light has `data-theme="light"` set
+on `<html>` by an inline script while the document is still being parsed, so the page never
+paints in the wrong scheme first. The choice is stored in `localStorage` under
+`llm-atlas-theme`; if storage is blocked the toggle still works for the visit.
+
+The script compares the stored value against a literal and writes nothing from storage into
+the page. The toggle's label is read through `useSyncExternalStore` with a server snapshot
+of "dark", so a reader in light gets a label swap after hydration, not a hydration error.
+
+`.scheme-light` and `.scheme-dark` remain as classes so the token reference page can show
+both schemes side by side.
+
+### Vendor marks
+
+A creator's mark sits beside its name wherever a creator is named in a table, a card or a
+model page. Rules:
+
+- **Committed, not hot-linked.** The files live in `public/logos/`, taken from simple-icons
+  (CC0-1.0) at a pinned version. The CSP allows images from this origin only.
+- **Monochrome.** Drawn as a mask filled with the current text colour. A brand colour would
+  be a second accent hue.
+- **Decorative.** The creator's name is always present as text; the mark is hidden from
+  assistive technology and nothing depends on it loading.
+- **Exact names only.** A table maps creator strings to marks. "Google DeepMind" is not
+  "Google". A creator string naming several organisations is a joint release and gets no
+  single organisation's mark.
+- **Monogram fallback.** A creator with no committed mark gets its first letter in a small
+  bordered square, so a newly approved creator never renders a broken image.
+- **Stated.** `/methodology` says the marks are trademarks used for identification and
+  imply no endorsement.
+
+A unit test holds the table and the directory together: every mapped mark has a file, no
+file is orphaned, every mapped name is a creator the registry uses, and every file is a
+single path with nothing executable in it.
+
 ## Type
 
 Two families, clearly distinct roles.
@@ -167,7 +225,8 @@ they are in.
 
 - **Leaderboard** — full-bleed data table, left-aligned text columns, right-aligned
   numeric columns, sticky header (`--shadow-sm` once it's pinned), hairline row rules, a
-  subtle hover tint per row, no card containers, no shadow on the table body itself.
+  subtle hover tint per row, no shadow on the table body itself. Rows are never cards. A
+  row of summary cards sits above the tabs; see `SummaryCard` below.
 - **Benchmarks** — the capability × status grid. Fixed row labels, scrollable columns on
   narrow viewports.
 - **Evals** — single narrow reading column, generous leading, a quiet sidebar for
@@ -191,6 +250,14 @@ Density is a virtue in the first two and a vice in the third.
 - **`PriceCell`** — price plus a marker naming its source. A vendor list price renders
   plain; an OpenRouter routed price renders with the marker and a tooltip saying which
   claim it is. The two are different facts and are never shown as one.
+- **`SummaryCard`** — one real row from a ranking, with the rule that picked it as its
+  heading. It carries the row's benchmark, status chip, health flags and provenance badge.
+  A card with no benchmark health record behind it, the arena card, says so in words. No
+  entrance animation, no colour beyond the data palette, `--shadow-sm` and `--radius-md`.
+  The rules for which cards exist are in `03-sections/leaderboard.md`.
+- **`CreatorLogo`** — the vendor mark or its monogram fallback, as above.
+- **`ThemeToggle`** — a text button in the header that names its effect, "Switch to light"
+  or "Switch to dark".
 - **`MissingValue`** — an explicit component. Renders "not reported" with a tooltip giving
   the reason. Never an em dash, never a zero, never a blank cell.
 
@@ -218,7 +285,7 @@ Three rules govern everything below.
 
 | Surface | What moves | What must not |
 |---|---|---|
-| Home | The demonstration row: health flags resolve a beat after the score, so the reader sees the number first and the caveat second. That sequence is the argument. | A hero scene, a scroll narrative, an animated backdrop. The home page is not a marketing page. |
+| Home | The demonstration row: health flags resolve a beat after the score, so the reader sees the number first and the caveat second. That sequence is the argument. | A hero scene, a scroll narrative, an animated backdrop, or any motion on the summary cards. The home page is not a marketing page. |
 | Leaderboard | Row reordering when "hide saturated benchmarks", a filter or a sort changes the ranking — the signature control, and seeing rows *move* is the point. Under 300ms, position only. | Anything on scroll. Anything 3D. Any per-row entrance animation. |
 | Benchmark matrix | Cell and filter state changes under 150ms. | Scroll effects, scene work. |
 | Benchmark detail | The trajectory: points may draw in along the time axis once, on first view, so the shape of saturation is legible. Never connect points across harnesses, exam years or protocol changes — animating a line the data does not support is a stronger lie than drawing one. | Camera moves, 3D framing of 2D data. |
@@ -278,7 +345,8 @@ transitions drop to zero duration. No content is unreachable in reduced-motion m
 ## Quality floor
 
 Responsive to 360px. Visible keyboard focus. Table headers are real `<th scope>`. Contrast
-at least 4.5:1 for text. **The status colours are held to the text floor too**, not to
+at least 4.5:1 for text, in both schemes; the axe audit runs every audited route twice, once
+per scheme. **The status colours are held to the text floor too**, not to
 3:1: every one of them is rendered as a chip label, a flag or a badge, so every one of them
 is text. An axe audit caught the saturated grey at 3.75:1 inside a 13px label, and it was
 darkened until it passed. A unit test holds all of them at 4.5:1 in both schemes. The site
@@ -303,3 +371,8 @@ must be readable and correct with CSS disabled.
   surfaces, and tinted-pill badges derived from each status colour via `color-mix`. The
   data palette's meaning and the flat, shadow-free density of the leaderboard and
   benchmark-matrix bodies are unchanged. Post-launch polish.
+- Brief rewritten instead of amended a third time: dark is the default scheme with an
+  explicit, remembered toggle that does not follow the operating system; vendor marks are
+  permitted in the text colour only; summary cards are a named elevated surface. Added the
+  Scheme and Vendor marks sections, three components, and an explicit list of what is still
+  ruled out. The data palette and both contrast floors are unchanged.
