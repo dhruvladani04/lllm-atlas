@@ -112,7 +112,7 @@ export default async function ModelPage({
   }
 
   return (
-    <main className="mx-auto max-w-4xl px-6 py-10">
+    <main className="mx-auto max-w-data px-6 py-10">
       <p className="text-sm text-ink-mute">
         <Link href="/models" className="underline-offset-2 hover:underline">
           Leaderboard

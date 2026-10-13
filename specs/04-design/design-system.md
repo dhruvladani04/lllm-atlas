@@ -234,6 +234,21 @@ they are in.
 
 Density is a virtue in the first two and a vice in the third.
 
+**Two page widths, and only two.** They are theme tokens, not per-page values:
+
+```
+--container-reading   45rem   prose: home, evals index and guides, methodology, error pages
+--container-data      80rem   anything tabular: leaderboard, benchmarks, compare, model and
+                              benchmark detail, and the site header
+```
+
+There were three (768, 896 and 1400px), chosen page by page, and nothing lined up between
+them. A page that needs a width between these two does not need a third token; it needs a
+measure on its paragraphs, which is what `max-w-[66ch]` is for.
+
+`scrollbar-gutter: stable` is set on the root, so the header does not move sideways between
+a page that scrolls and one that does not.
+
 ## Components with fixed behaviour
 
 - **`ScoreCell`** — number, unit, provenance badge, and health flags. Saturated benchmarks
@@ -376,3 +391,7 @@ must be readable and correct with CSS disabled.
   permitted in the text colour only; summary cards are a named elevated surface. Added the
   Scheme and Vendor marks sections, three components, and an explicit list of what is still
   ruled out. The data palette and both contrast floors are unchanged.
+- Two page widths as theme tokens, replacing three per-page values; `scrollbar-gutter:
+  stable`; a navigation that marks the current section and collapses behind a menu button
+  on phones; the home worked example is readable on first paint and animates from dimmed,
+  not from hidden. UX refresh, P0.

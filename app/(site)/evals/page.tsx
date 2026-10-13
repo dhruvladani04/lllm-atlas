@@ -22,7 +22,7 @@ export default function EvalsIndexPage() {
   const rest = guides.filter((guide) => guide.frontmatter.archetype !== "foundations");
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-10">
+    <main className="mx-auto max-w-reading px-6 py-10">
       <h1 className="font-serif text-2xl font-semibold">Evals</h1>
 
       <p className="mt-4 font-serif text-base leading-7">

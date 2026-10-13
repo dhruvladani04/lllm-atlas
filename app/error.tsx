@@ -19,7 +19,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <main className="mx-auto max-w-reading px-6 py-16">
       <h1 className="text-xl font-medium">Something failed while rendering this page</h1>
       <p className="mt-3 max-w-[66ch] text-base">
         This is a fault in the site, not in the data behind it. Every score this site

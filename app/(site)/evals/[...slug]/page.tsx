@@ -48,7 +48,7 @@ export default async function GuidePage({
   );
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-10">
+    <main className="mx-auto max-w-reading px-6 py-10">
       <p className="text-sm text-ink-mute">
         <Link href="/evals" className="underline-offset-2 hover:underline">
           Evals

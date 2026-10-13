@@ -40,7 +40,7 @@ export default function HomePage() {
   const freshness = loadFreshness();
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12">
+    <main className="mx-auto max-w-reading px-6 py-12">
       <h1 className="text-xl font-medium">LLM Atlas</h1>
       <p className="mt-3 max-w-[66ch] text-base">
         Every other leaderboard tells you a model scored 92 on a benchmark. This one also

@@ -3,7 +3,7 @@ import Link from "next/link";
 /** Errors say what happened and what to do — specs/04-design/design-system.md. */
 export default function NotFound() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <main className="mx-auto max-w-reading px-6 py-16">
       <h1 className="text-xl font-medium">That page does not exist</h1>
       <p className="mt-3 max-w-[66ch] text-base">
         The address is wrong, or it pointed at a model or benchmark this site does not

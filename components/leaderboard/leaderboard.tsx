@@ -68,7 +68,7 @@ export function Leaderboard({
       : "text";
 
   return (
-    <main className="mx-auto max-w-[1400px] px-6 py-10">
+    <main className="mx-auto max-w-data px-6 py-10">
       <h1 className="text-xl font-medium">Leaderboard</h1>
       <p className="mt-2 max-w-[66ch] text-sm text-ink-mute">
         Every score here carries the health of the benchmark that produced it and who

@@ -32,7 +32,7 @@ export default function ComparePage() {
     .map((model) => ({ model_id: model.model_id, ...lookup[model.model_id]! }));
 
   return (
-    <main className="mx-auto max-w-4xl px-6 py-10">
+    <main className="mx-auto max-w-data px-6 py-10">
       <h1 className="text-xl font-medium">Compare models</h1>
       <p className="mt-3 max-w-[66ch] text-base">
         Most comparison tables put two numbers beside each other and let you assume they

@@ -51,7 +51,7 @@ export default function MethodologyPage() {
   const textModels = models.filter((model) => model.modality === "text").length;
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-10">
+    <main className="mx-auto max-w-reading px-6 py-10">
       <h1 className="text-xl font-medium">Methodology</h1>
       <p className="mt-3 max-w-[68ch] text-base">
         This site claims that most leaderboards tell you less than they appear to. That is
