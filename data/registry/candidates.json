@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T07:16:26.903Z",
+  "generated_at": "2026-10-13T09:27:40.923Z",
   "snapshot_date": "2026-10-13",
   "candidates": [
     {
@@ -9681,57 +9681,6 @@
         "reasons": [
           "Arena names no vendor for this model.",
           "Licence as Arena records it: Proprietary.",
-          "Arena publishes no release date."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "unknown/stable-diffusion-v35-large",
-        "display_name": "stable-diffusion-v35-large",
-        "creator": "Unknown",
-        "modality": "image",
-        "released_at": null,
-        "open_weights": true,
-        "aliases": [
-          "stable-diffusion-v35-large",
-          "unknown/stable-diffusion-v35-large"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "stable-diffusion-v35-large",
-              "unknown/stable-diffusion-v35-large"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "stable-diffusion-v35-large",
-        "sources": [
-          "arena-mirror"
-        ],
-        "organizations": [],
-        "release_dates": [],
-        "benchmarks": [
-          {
-            "benchmark": "Arena text-to-image",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 1,
-        "raw_model_versions": [
-          "stable-diffusion-v35-large"
-        ],
-        "raw_display_names": [],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Arena names no vendor for this model.",
-          "Licence as Arena records it: Open.",
           "Arena publishes no release date."
         ]
       }

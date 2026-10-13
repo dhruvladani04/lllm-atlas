@@ -10568,13 +10568,15 @@
       "Stable Diffusion 3.5 Large",
       "stable-diffusion-3.5-large",
       "stability/stable-diffusion-3.5-large",
-      "stabilityai/stable-diffusion-3.5-large"
+      "stabilityai/stable-diffusion-3.5-large",
+      "stable-diffusion-v35-large"
     ],
     "variants": [
       {
         "variant": "base",
         "aliases": [
-          "Stable Diffusion 3.5 Large"
+          "Stable Diffusion 3.5 Large",
+          "stable-diffusion-v35-large"
         ]
       }
     ]
