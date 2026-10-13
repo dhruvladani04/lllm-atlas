@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
 import { siteUrl } from "@/lib/config";
+import { SiteNav } from "@/components/ui/site-nav";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import "./globals.css";
 
@@ -94,15 +95,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
 
         {/* Deliberately not sticky. The leaderboard's own table header is sticky, and two
-            stacked sticky elements have to agree on a pixel offset that the nav breaks by
-            wrapping to two lines below ~400px — the table header would pin underneath it
-            at exactly the widths the quality floor promises to support. Between pinning
-            the nav and pinning the column headers of a 49-row table, the table wins. */}
+            stacked sticky elements have to agree on a pixel offset that an open menu
+            changes. Between pinning the nav and pinning the column headers of a long
+            table, the table wins. */}
         <header className="border-b border-rule bg-paper shadow-sm">
-          <div className="mx-auto flex max-w-[1400px] flex-wrap items-baseline gap-x-6 gap-y-2 px-6 py-3">
+          <div className="mx-auto flex max-w-data flex-wrap items-center gap-x-3 gap-y-2 px-6 py-3 sm:gap-x-6">
             <Link
               href="/"
-              className="flex items-baseline gap-2 text-sm font-medium underline-offset-2 hover:underline"
+              className="order-1 flex items-baseline gap-2 text-sm font-medium underline-offset-2 hover:underline"
             >
               <span
                 aria-hidden="true"
@@ -110,23 +110,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               />
               LLM Atlas
             </Link>
-            <nav aria-label="Main">
-              {/* flex-wrap, not flex: five items no longer fit on one line at 360px, which
-                  the quality floor promises to support. */}
-              <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
-                {NAV.map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className="text-ink-mute underline-offset-2 hover:text-ink hover:underline"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <div className="ml-auto">
+            <SiteNav items={NAV} />
+            <div className="order-2 ml-auto sm:order-3">
               <ThemeToggle />
             </div>
           </div>

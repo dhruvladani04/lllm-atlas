@@ -273,6 +273,11 @@ a page that scrolls and one that does not.
 - **`CreatorLogo`** — the vendor mark or its monogram fallback, as above.
 - **`ThemeToggle`** — a text button in the header that names its effect, "Switch to light"
   or "Switch to dark".
+- **`SiteNav`** — the main navigation. The link for the current section carries
+  `aria-current="page"` and is set in ink with a heavier underline; a model page counts as
+  the leaderboard section. Below 640px the links sit behind a "Menu" button with
+  `aria-expanded`, which closes on navigation and on Escape. Where scripting is unavailable
+  the button is hidden and the links stay visible, so it is never the only way to a section.
 - **`MissingValue`** — an explicit component. Renders "not reported" with a tooltip giving
   the reason. Never an em dash, never a zero, never a blank cell.
 
