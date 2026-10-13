@@ -74,3 +74,40 @@ place the site fetches after load.
 - Title-casing model names by rule. It produces names no vendor uses.
 - A hero section or arrows on links. Both are ruled out in the design spec.
 - One typeface everywhere. The serif on guides is deliberate.
+
+## P0 result
+
+Measured 2026-10-13 on a local production build. Screenshots are in
+[`after-p0/`](after-p0/), same naming as `before/`.
+
+| Check                                     | Before               | After                       |
+| ----------------------------------------- | -------------------- | --------------------------- |
+| Page widths in use                        | 3 (768, 896, 1400px) | 2 (720, 1280px)             |
+| `/models` height at 390px                 | 37,289px             | 21,875px                    |
+| Rows rendered on first load               | 210                  | 25, with the total stated   |
+| "not reported" on the text tab            | 598                  | 48                          |
+| `/models` document, uncompressed          | 864KB                | 667KB (53KB gzipped)        |
+| Routes scrolling sideways at 390px        | 0 of 11              | 0 of 11, now held by a test |
+| Nav marks the current section             | no                   | yes                         |
+| Worked example in the HTML at `opacity:0` | yes                  | no                          |
+
+Lighthouse, mobile preset, one run each against `localhost`:
+
+| Page        | Performance | Accessibility |
+| ----------- | ----------- | ------------- |
+| Home        | 81          | 100           |
+| Leaderboard | 80          | 100           |
+| Model page  | 90          | 100           |
+
+Accessibility meets the target on all three. Performance does not on two of them. These
+are single runs on a development machine and will differ on Vercel, but the direction is
+clear: total blocking time is the weak number (420–480ms), not layout shift (0).
+
+Still open after P0, and where it is planned:
+
+- `/models` is still 21,875px tall on a phone. The table is about 4,500px of that; the
+  rest is the "Not ranked here" list, which P1 collapses.
+- The health column still repeats `superseded` on every row whenever one row also carries
+  `disputed`, because the column only collapses when every row is identical. P1 shows only
+  what differs.
+- The sticky table header still does not pin. P1.
