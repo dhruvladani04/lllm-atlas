@@ -68,41 +68,45 @@ Static-first, no database, no runtime fetch. A scheduled job is the only thing t
 talks to the internet; the site itself just reads committed JSON at build time.
 
 ```mermaid
+
 flowchart LR
     subgraph Upstream["Upstream sources (5)"]
-        A1[benchwiki<br/>benchmark health]
-        A2[Epoch AI<br/>scores + ECI]
-        A3[OpenRouter<br/>usage + price fallback]
-        A4[Arena mirror<br/>image Elo]
-        A5[Vendor pricing pages<br/>scraped, robots.txt honoured]
+        A1["benchwiki<br/>benchmark health"]
+        A2["Epoch AI<br/>scores + ECI"]
+        A3["OpenRouter<br/>usage + price fallback"]
+        A4["Arena mirror<br/>image Elo"]
+        A5["Vendor pricing pages<br/>scraped, robots.txt honoured"]
     end
 
     subgraph Pipeline["GitHub Actions — daily 06:00 UTC"]
-        B1[Fetch, per source<br/>one failure ≠ all fail]
-        B2[Validate with Zod<br/>schema fail → keep last good]
-        B3[Resolve model + benchmark<br/>identity — exact → alias → normalised,<br/>never fuzzy]
-        B4[Join scores to benchmark health<br/>→ health_flags]
-        B5[Write dated snapshot<br/>+ regenerate data/derived/]
+        B1["Fetch, per source<br/>one failure ≠ all fail"]
+        B2["Validate with Zod<br/>schema fail → keep last good"]
+        B3["Resolve model + benchmark<br/>identity — exact → alias → normalised,<br/>never fuzzy"]
+        B4["Join scores to benchmark health<br/>→ health_flags"]
+        B5["Write dated snapshot<br/>+ regenerate data/derived/"]
     end
 
     subgraph Repo["Committed to git"]
-        C1[(data/snapshots/YYYY-MM-DD/)]
-        C2[(data/derived/*.json)]
-        C3[(data/registry/models.json<br/>hand-maintained)]
+        C1[("data/snapshots/YYYY-MM-DD/")]
+        C2[("data/derived/*.json")]
+        C3[("data/registry/models.json<br/>hand-maintained")]
     end
 
     subgraph Site["Next.js — prerendered at build"]
-        D1[/models — leaderboard/]
-        D2[/benchmarks — health matrix/]
-        D3[/evals — MDX guides/]
-        D4[/compare · /methodology]
-        D5[/api/scores · /api/scores.csv]
+        D1["/models — leaderboard"]
+        D2["/benchmarks — health matrix"]
+        D3["/evals — MDX guides"]
+        D4["/compare · /methodology"]
+        D5["/api/scores · /api/scores.csv"]
     end
 
-    A1 & A2 & A3 & A4 & A5 --> B1 --> B2 --> B3 --> B4 --> B5
+    A1 & A2 & A3 & A4 & A5 --> B1
+    B1 --> B2 --> B3 --> B4 --> B5
+
     B5 --> C1
     B5 --> C2
     C3 --> B3
+
     C2 --> D1 & D2 & D3 & D4 & D5
 ```
 
