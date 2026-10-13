@@ -83,8 +83,7 @@ export default function HomePage() {
           benchwiki
         </a>
         . Scores from Epoch AI (CC BY 4.0). Pricing from vendor pages where readable, and
-        from OpenRouter (CC BY 4.0) otherwise. Arena Elo from LMArena via a community
-        mirror. Benchmark data{" "}
+        from OpenRouter (CC BY 4.0) otherwise. Arena Elo from Arena (CC BY 4.0). Benchmark data{" "}
         <FreshnessStamp fetchedAt={freshness["benchwiki"] ?? null} />.
       </p>
     </main>

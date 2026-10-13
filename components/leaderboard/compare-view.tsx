@@ -41,7 +41,7 @@ function Picker({
     <label className="flex flex-col gap-1 text-sm">
       <span className="text-xs text-ink-mute">{label}</span>
       <select
-        className="rounded-sm border border-rule bg-surface px-2 py-1"
+        className="max-w-[14rem] truncate rounded-sm border border-rule bg-surface px-2 py-1"
         value={value}
         onChange={(event) => onChange(event.target.value)}
       >

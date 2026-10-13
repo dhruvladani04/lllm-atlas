@@ -78,19 +78,42 @@ fact rather than tidy one.
   data are Apache 2.0) — preserve those notices.
 - Use for: the primary independent score source for text and agentic tabs.
 
-### 4. Arena leaderboard mirror — image generation and preference Elo
+### 4. Arena leaderboard dataset — image generation and preference Elo
 
-- LMArena / Arena.ai publishes no official API.
-- The mirror used is `oolong-tea-2026/arena-ai-leaderboards` on GitHub, verified: dated
-  directories of JSON, one file per board, served raw without authentication. v1 reads
-  `text-to-image.json` only. Each row carries rank, model, vendor, licence, Elo, a
-  confidence interval and a vote count.
-- Today's directory may not exist when the job runs, so the fetch walks back up to seven
-  days and records which date it actually served.
-- **Status: unofficial.** Treat as best-effort. The image tab must degrade to an empty
-  state with an explanation if this source fails, and must never be the site's only
-  claim about a model.
-- Attribute to LMArena as the originator and to the mirror as the transport.
+- Dataset: `lmarena-ai/leaderboard-dataset` on HuggingFace, published by Arena themselves.
+- Read through the datasets-server rows API rather than the parquet files:
+  `https://datasets-server.huggingface.co/rows?dataset=lmarena-ai/leaderboard-dataset&config=text_to_image&split=latest`.
+  The dataset is 124MB across every arena; this pipeline wants one board as JSON.
+- Each row carries `model_name`, `organization`, the *model's* licence, `rating` with
+  explicit `rating_lower`/`rating_upper` bounds, `variance`, `vote_count`, `rank`,
+  `category` and `leaderboard_publish_date`.
+- The `latest` split holds every arena's most recent board, so `category === "overall"`
+  selects text-to-image's own ranking from its sub-boards (`3d_modeling`, and others).
+- **Licence: CC BY 4.0.** Redistribution is permitted with attribution.
+- Attribution string: "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset)
+  on HuggingFace, CC BY 4.0."
+- The image tab must still degrade to an empty state with an explanation if this source
+  fails, and must never be the site's only claim about a model. A board that comes back
+  with no rows in the category is a failure, not an empty leaderboard — Arena has never
+  published one.
+
+**This replaced an unofficial community mirror, and the reason is worth recording.**
+Until October 2026 this read `oolong-tea-2026/arena-ai-leaderboards`, a third-party scrape
+with no published licence, carried on the same permission-not-granted terms as benchwiki.
+It published a partial board on 2026-10-07 (20 models against the previous 81) and then
+stopped publishing entirely; the 50%-truncation guard caught the partial one and the
+site served its last good snapshot for a week while the scheduled job failed nightly.
+
+The guard behaved correctly and the staleness was shown honestly, but a source that has
+stopped publishing needs a decision rather than another retry. Arena's own dataset is
+better on every axis that matters here: it is the originator rather than a scrape, it is
+the first version of this data that may legally be redistributed, and it carries
+confidence bounds and vote counts the mirror only partly had. It also opens `image_edit`,
+`text_to_video`, `image_to_video` and `video_edit`, which the post-v1 list wants.
+
+One honest caveat: the newest board Arena has published is dated 2026-10-07, the same date
+the mirror went quiet. Switching sources did not make the data fresher — the board itself
+has not moved. It made it licensed, richer, and first-party.
 
 ### 5. Vendor pricing pages — list prices and context windows
 
@@ -200,6 +223,9 @@ this file. No source ships without all six.
   Milestone 2.
 - Added source 5, vendor pricing pages, with OpenRouter as the labelled fallback for price
   and context window. Milestone 3.
+- Source 4 moved from an unlicensed community mirror to Arena's own CC BY 4.0 dataset on
+  HuggingFace, after the mirror stopped publishing. The first image data on this site that
+  may legally be redistributed.
 - Mirrored benchmark pages are kept out of the sitemap, so the canonical to benchwiki is
   not contradicted by this site's own crawl signals. Post-launch audit.
 - Language values are normalised on ingest for true synonyms only. Post-launch audit.

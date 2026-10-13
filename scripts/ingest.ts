@@ -105,7 +105,7 @@ async function main(): Promise<void> {
     .filter((row) => row.model_id !== null);
 
   // 3. Arena Elo for the image tab. Not joined: no benchmark health record exists for it.
-  const arena = await runSource(arenaSource(date), options);
+  const arena = await runSource(arenaSource(), options);
   runs.push(arena);
   const arenaHarvest = harvestArenaScores(
     arena.records.map((row) => ArenaRow.parse(row)),

@@ -365,7 +365,11 @@ export function LeaderboardTable({
         <label className="flex items-center gap-2">
           Creator
           <select
-            className="rounded-sm border border-rule bg-surface px-2 py-1"
+            // A select sizes itself to its widest option, and one creator is a
+            // 163-character list of six collaborating universities — honest data that
+            // blew the filter bar to 1169px at a 360px viewport. The value stays whole;
+            // only the control is bounded.
+            className="max-w-[12rem] truncate rounded-sm border border-rule bg-surface px-2 py-1"
             value={creator}
             onChange={(event) => setCreator(event.target.value)}
           >

@@ -17,7 +17,7 @@ import {
 import {
   ARENA_SOURCE_ID,
   arenaSourceMeta,
-  arenaSnapshotUrl,
+  arenaRowsUrl,
   fetchArenaLeaderboard,
 } from "@/lib/ingest/arena";
 import type { SourceDefinition } from "@/lib/ingest/run";
@@ -98,12 +98,18 @@ export function capabilityIndexFromSnapshot(
   return records.map((record) => EpochCapabilityIndexRow.parse(record));
 }
 
-export function arenaSource(date: string): SourceDefinition {
+/**
+ * `date` is no longer part of the request: Arena's dataset has a `latest` split that is
+ * whatever board they published most recently, so there is no dated directory to walk back
+ * through. The board's own publish date travels in the payload instead, which is the date
+ * the freshness stamp should have been showing all along.
+ */
+export function arenaSource(): SourceDefinition {
   return {
     source_id: ARENA_SOURCE_ID,
-    sourceMeta: (now) => arenaSourceMeta(now, arenaSnapshotUrl(date)),
+    sourceMeta: (now) => arenaSourceMeta(now, arenaRowsUrl()),
     fetchRecords: async (fetcher) => {
-      const { payload } = await fetchArenaLeaderboard(date, fetcher);
+      const { payload } = await fetchArenaLeaderboard(new Date().toISOString(), fetcher);
       return payload.models;
     },
   };

@@ -2,10 +2,10 @@
   "note": "Arena Elo has no benchmark health record upstream, so these rows are not part of model-benchmark-join.json. They are a preference ranking, not a benchmark score.",
   "source": {
     "source_id": "arena-mirror",
-    "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-13/text-to-image.json",
-    "fetched_at": "2026-10-06T12:34:19.851Z",
-    "licence": "Unofficial mirror of LMArena's public leaderboards",
-    "attribution": "Arena Elo from LMArena, via the arena-ai-leaderboards daily mirror"
+    "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+    "fetched_at": "2026-10-13T06:56:27.028Z",
+    "licence": "CC BY 4.0",
+    "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
   },
   "scores": [
     {
@@ -13,18 +13,18 @@
       "variant": "base",
       "benchmark_slug": "lmarena-text-to-image",
       "harness": null,
-      "value": 1116,
+      "value": 1115.5957480756792,
       "unit": "elo",
-      "confidence_interval": 3,
-      "sample_size": 268448,
+      "confidence_interval": 3.1272620821332566,
+      "sample_size": 268453,
       "provenance": "independent",
       "measured_at": null,
       "source": {
         "source_id": "arena-mirror",
-        "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-13/text-to-image.json",
-        "fetched_at": "2026-10-06T12:34:19.851Z",
-        "licence": "Unofficial mirror of LMArena's public leaderboards",
-        "attribution": "Arena Elo from LMArena, via the arena-ai-leaderboards daily mirror"
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T06:56:27.028Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
       },
       "notes": "Arena Elo from public pairwise votes."
     },
@@ -33,18 +33,18 @@
       "variant": "base",
       "benchmark_slug": "lmarena-text-to-image",
       "harness": null,
-      "value": 1016,
+      "value": 1015.6184356495064,
       "unit": "elo",
-      "confidence_interval": 4,
+      "confidence_interval": 3.5065862687253,
       "sample_size": 70460,
       "provenance": "independent",
       "measured_at": null,
       "source": {
         "source_id": "arena-mirror",
-        "source_url": "https://raw.githubusercontent.com/oolong-tea-2026/arena-ai-leaderboards/main/data/2026-10-13/text-to-image.json",
-        "fetched_at": "2026-10-06T12:34:19.851Z",
-        "licence": "Unofficial mirror of LMArena's public leaderboards",
-        "attribution": "Arena Elo from LMArena, via the arena-ai-leaderboards daily mirror"
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T06:56:27.028Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
       },
       "notes": "Arena Elo from public pairwise votes."
     }

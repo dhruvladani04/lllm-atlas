@@ -13,7 +13,7 @@ import { MissingValue } from "@/components/data/primitives";
  * benchmark health record exists for an arena board upstream, and the tab says so rather
  * than letting the reader assume the flags were checked and came back clean.
  *
- * If the mirror is unavailable the tab renders its empty state. It never falls back to a
+ * If the source is unavailable the tab renders its empty state. It never falls back to a
  * ranking borrowed from another modality.
  */
 
@@ -31,9 +31,9 @@ export function ImageTable({
       <div className="py-8">
         <p className="max-w-[66ch] text-sm">
           Image rankings unavailable.{" "}
-          <FreshnessStamp fetchedAt={fetchedAt} failed={fetchedAt !== null} /> The arena
-          mirror is an unofficial community project and is treated as best-effort. The job
-          retries daily at 06:00 UTC.
+          <FreshnessStamp fetchedAt={fetchedAt} failed={fetchedAt !== null} /> Arena
+          publish these boards themselves, and this tab shows nothing rather than a stale
+          ranking presented as current. The job retries daily at 06:00 UTC.
         </p>
         <p className="mt-2 max-w-[66ch] text-sm text-ink-mute">
           Nothing is shown in place of these rankings. A ranking borrowed from another
@@ -104,14 +104,14 @@ export function ImageTable({
                   </td>
                   <td className="tabular py-2 pr-3 text-right">
                     {score.confidence_interval === null ? (
-                      <MissingValue reason="The mirror reported no confidence interval" />
+                      <MissingValue reason="Arena published no confidence interval for this model" />
                     ) : (
                       `±${score.confidence_interval}`
                     )}
                   </td>
                   <td className="tabular py-2 pr-3 text-right">
                     {score.sample_size === null ? (
-                      <MissingValue reason="The mirror reported no vote count" />
+                      <MissingValue reason="Arena published no vote count for this model" />
                     ) : (
                       score.sample_size.toLocaleString("en")
                     )}
