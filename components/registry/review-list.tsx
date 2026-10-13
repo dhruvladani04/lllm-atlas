@@ -93,10 +93,20 @@ export function ReviewList({ candidates }: { candidates: Candidate[] }) {
       return next;
     });
 
+  const clearTier = (tier: Confidence) =>
+    setSelected((current) => {
+      const next = new Set(current);
+      for (const candidate of byTier.get(tier) ?? [])
+        next.delete(candidate.proposed.model_id);
+      return next;
+    });
+
   const submit = async () => {
     setBusy(true);
     setStatus(null);
     const approved = [...selected];
+    // Only what was actually shown. Recording every unselected candidate as "rejected"
+    // would claim a decision nobody made — most of them were simply not looked at yet.
     const rejected = candidates
       .map((candidate) => candidate.proposed.model_id)
       .filter((id) => !selected.has(id));
@@ -128,14 +138,9 @@ export function ReviewList({ candidates }: { candidates: Candidate[] }) {
   return (
     <div>
       <div className="sticky top-0 z-10 flex flex-wrap items-center gap-4 border-y border-rule bg-paper py-3 text-sm">
-        <strong className="font-medium">{selected.size} selected</strong>
-        <button
-          type="button"
-          onClick={() => selectTier("high")}
-          className="rounded-sm border border-rule px-2 py-1 hover:text-accent"
-        >
-          Select all high-confidence
-        </button>
+        <strong className="font-medium">
+          {selected.size} selected of {candidates.length}
+        </strong>
         <button
           type="button"
           onClick={() => setSelected(new Set())}
@@ -160,8 +165,26 @@ export function ReviewList({ candidates }: { candidates: Candidate[] }) {
 
         return (
           <section key={tier} className="mt-8">
-            <h2 className="text-lg font-medium">
+            <h2 className="flex flex-wrap items-baseline gap-3 text-lg font-medium">
               {tier} <span className="text-sm text-ink-mute">({group.length})</span>
+              {tier === "conflict" ? null : (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => selectTier(tier)}
+                    className="rounded-sm border border-rule px-2 py-0.5 text-xs font-normal hover:text-accent"
+                  >
+                    Select all {group.length}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => clearTier(tier)}
+                    className="rounded-sm border border-rule px-2 py-0.5 text-xs font-normal hover:text-accent"
+                  >
+                    Clear
+                  </button>
+                </>
+              )}
             </h2>
             <p className="mt-1 max-w-[80ch] text-sm text-ink-mute">{TIER_NOTE[tier]}</p>
 

@@ -2,7 +2,7 @@
   "_meta": {
     "source_id": "openrouter",
     "source_url": "https://openrouter.ai/api/v1/models",
-    "fetched_at": "2026-09-19T15:46:13.373Z",
+    "fetched_at": "2026-09-19T17:15:56.182Z",
     "record_count": 447,
     "status": "ok"
   },
@@ -1103,8 +1103,8 @@
       "name": "Tencent: Hy3",
       "context_length": 262144,
       "pricing": {
-        "prompt": "0.000000132",
-        "completion": "0.000000528"
+        "prompt": "0.0000000825",
+        "completion": "0.00000033"
       }
     },
     {
@@ -1673,8 +1673,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "context_length": 1048576,
       "pricing": {
-        "prompt": "0.000000042",
-        "completion": "0.000000084"
+        "prompt": "0.00000004144",
+        "completion": "0.00000008288"
       }
     },
     {
@@ -2883,8 +2883,8 @@
       "name": "Qwen: Qwen3 VL 30B A3B Instruct",
       "context_length": 262144,
       "pricing": {
-        "prompt": "0.0000002",
-        "completion": "0.0000007"
+        "prompt": "0.00000013",
+        "completion": "0.00000052"
       }
     },
     {
@@ -2913,8 +2913,8 @@
       "name": "Z.ai: GLM 4.6",
       "context_length": 204800,
       "pricing": {
-        "prompt": "0.0000005",
-        "completion": "0.000002"
+        "prompt": "0.00000043",
+        "completion": "0.00000175"
       }
     },
     {

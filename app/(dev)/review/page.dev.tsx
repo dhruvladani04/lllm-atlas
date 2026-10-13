@@ -3,6 +3,8 @@ import { join } from "node:path";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CandidateFile } from "@/lib/schemas/candidate";
+import { loadRegistry } from "@/lib/registry/load";
+import { buildRegistryIndex, normaliseName } from "@/lib/registry/resolve";
 import { ReviewList } from "@/components/registry/review-list";
 
 /**
@@ -48,11 +50,37 @@ export default function ReviewPage() {
     JSON.parse(readFileSync(CANDIDATES, "utf8")) as unknown,
   );
 
+  // The candidates file is a snapshot of what was unresolved when it was generated, so
+  // everything approved since is still sitting in it. Filtering against the live registry
+  // here means the page tells the truth without anyone having to remember to regenerate —
+  // a review queue that re-offers what you already accepted trains you to stop reading it.
+  const registry = loadRegistry();
+  const index = buildRegistryIndex(registry);
+  const inRegistry = new Set(registry.map((model) => model.model_id));
+
+  const pending = file.candidates.filter((candidate) => {
+    if (inRegistry.has(candidate.proposed.model_id)) return false;
+    const stem = candidate.evidence.stem;
+    return !(
+      index.models.has(stem) ||
+      index.exact.has(stem) ||
+      index.normalised.has(normaliseName(stem))
+    );
+  });
+  const settled = file.candidates.length - pending.length;
+
   return (
     <main className="mx-auto max-w-5xl px-6 py-10">
       <h1 className="text-xl font-medium">Registry review</h1>
       <p className="mt-3 max-w-[76ch] text-sm">
-        {file.candidates.length} proposed entries from the {file.snapshot_date} snapshot.
+        {pending.length} still to decide, from the {file.snapshot_date} snapshot.
+        {settled > 0 ? (
+          <>
+            {" "}
+            {settled} {settled === 1 ? "is" : "are"} already in the registry and no longer
+            shown.
+          </>
+        ) : null}{" "}
         Approving writes a decisions file;{" "}
         <code className="font-mono">pnpm registry:approve</code> merges it into the
         registry, and <code className="font-mono">pnpm ingest</code> then picks up their
@@ -64,7 +92,15 @@ export default function ReviewPage() {
         really a distinct model, and whether its name means what the generator assumed.
       </p>
 
-      <ReviewList candidates={file.candidates} />
+      {pending.length === 0 ? (
+        <p className="mt-8 max-w-[66ch] text-sm text-ink-mute">
+          Nothing left to decide from this snapshot. Run{" "}
+          <code className="font-mono">pnpm generate-candidates</code> after the next
+          ingest to look for newly-seen models.
+        </p>
+      ) : (
+        <ReviewList candidates={pending} />
+      )}
     </main>
   );
 }

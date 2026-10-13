@@ -29,6 +29,12 @@ function writeAtomic(path: string, contents: string): void {
   renameSync(temp, path);
 }
 
+/** Matches the formatting the rest of `data/` is written in: 2-space, trailing newline. */
+function withTrailingNewline(value: unknown): string {
+  return `${JSON.stringify(value, null, 2)}
+`;
+}
+
 function main(): void {
   if (!existsSync(APPROVALS_PATH)) {
     console.error(
@@ -51,7 +57,7 @@ function main(): void {
   }
 
   const registry = loadRegistry();
-  const { registry: merged, added } = mergeApproved(
+  const { registry: merged, added, repaired } = mergeApproved(
     registry,
     candidates.candidates,
     approvals.approved,
@@ -76,14 +82,27 @@ function main(): void {
   const remaining = unresolved.filter((entry) => !claimed.has(normaliseName(entry.name)));
   writeAtomic(UNRESOLVED_PATH, `${JSON.stringify(remaining, null, 2)}\n`);
 
+  // Prune what was just accepted out of the candidates file. `/review` also filters against
+  // the live registry, so a stale file is not a correctness problem — but leaving approved
+  // entries in it means the next reader is shown a queue longer than it really is.
+  const stillOpen = candidates.candidates.filter(
+    (candidate) => !added.includes(candidate.proposed.model_id),
+  );
+  writeAtomic(
+    CANDIDATES_PATH,
+    withTrailingNewline({ ...candidates, candidates: stillOpen }),
+  );
+
   console.log(
     `[approve] added ${added.length} model${added.length === 1 ? "" : "s"}; ` +
       `registry is now ${merged.length}.`,
   );
   console.log(
-    `[approve] unresolved queue ${unresolved.length} -> ${remaining.length}. ` +
-      `Run pnpm ingest to pick up their scores, then review the diff.`,
+    `[approve] unresolved queue ${unresolved.length} -> ${remaining.length}; ` +
+      `${stillOpen.length} candidates still open.`,
   );
+  for (const note of repaired) console.log(`[approve] repaired ${note}`);
+  console.log("[approve] run pnpm ingest to pick up their scores, then review the diff.");
 }
 
 main();

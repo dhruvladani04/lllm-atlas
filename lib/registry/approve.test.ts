@@ -100,3 +100,42 @@ describe("mergeApproved", () => {
     ).toThrow();
   });
 });
+
+describe("the approve gate repairs what a stale candidates file carries", () => {
+  it("seeds an alias-less base from the model's own aliases", () => {
+    // candidates.json is a file on disk and can be older than the code that reads it.
+    // Six entries generated before the generator learned this rule were approved from a
+    // stale one, so the gate enforces it rather than trusting the file.
+    const stale = candidate({
+      aliases: ["New Model", "new-model"],
+      variants: [
+        { variant: "base", aliases: [] },
+        { variant: "high", aliases: ["new-model_high"] },
+      ],
+    });
+    const result = mergeApproved(registry, [stale], ["examplecorp/new-model"]);
+    const added = result.registry.find((m) => m.model_id === "examplecorp/new-model");
+    expect(added?.variants.find((v) => v.variant === "base")?.aliases).toEqual([
+      "New Model",
+      "new-model",
+    ]);
+    expect(result.repaired).toHaveLength(1);
+  });
+
+  it("drops a tier nothing could ever resolve to", () => {
+    const stale = candidate({
+      variants: [
+        { variant: "base", aliases: ["new-model"] },
+        { variant: "high", aliases: [] },
+      ],
+    });
+    const result = mergeApproved(registry, [stale], ["examplecorp/new-model"]);
+    const added = result.registry.find((m) => m.model_id === "examplecorp/new-model");
+    expect(added?.variants.map((v) => v.variant)).toEqual(["base"]);
+  });
+
+  it("leaves a sound candidate untouched", () => {
+    const result = mergeApproved(registry, [candidate()], ["examplecorp/new-model"]);
+    expect(result.repaired).toEqual([]);
+  });
+});

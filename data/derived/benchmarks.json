@@ -60,7 +60,7 @@
       },
       {
         "model": "Claude 3 Opus",
-        "model_id": null,
+        "model_id": "anthropic/claude-3-opus-20240229",
         "vendor": "anthropic",
         "measured_at": "2024-03-04",
         "score": 31.1,
@@ -111,7 +111,7 @@
     "performance_timeline": [
       {
         "model": "o1-mini",
-        "model_id": null,
+        "model_id": "openai/o1-mini-2024-09-12",
         "vendor": "openai",
         "measured_at": "2025-05-22",
         "score": 59.8,
@@ -120,7 +120,7 @@
       },
       {
         "model": "GPT-4o",
-        "model_id": null,
+        "model_id": "openai/gpt-4o-2024-05-13",
         "vendor": "openai",
         "measured_at": "2025-05-22",
         "score": 58.5,
@@ -342,7 +342,7 @@
     "performance_timeline": [
       {
         "model": "GPT-4o",
-        "model_id": null,
+        "model_id": "openai/gpt-4o-2024-05-13",
         "vendor": "openai",
         "measured_at": "2024-06-27",
         "score": 5,
@@ -351,7 +351,7 @@
       },
       {
         "model": "o1-preview",
-        "model_id": null,
+        "model_id": "openai/o1-preview-2024-09-12",
         "vendor": "openai",
         "measured_at": "2024-09-13",
         "score": 18,
@@ -965,7 +965,7 @@
       },
       {
         "model": "Kimi K2 Thinking",
-        "model_id": null,
+        "model_id": "moonshot/kimi-k2-thinking",
         "vendor": "moonshot",
         "measured_at": "2025-11-06",
         "score": 60.2,
@@ -1228,7 +1228,7 @@
       },
       {
         "model": "GPT-4o",
-        "model_id": null,
+        "model_id": "openai/gpt-4o-2024-05-13",
         "vendor": "openai",
         "measured_at": "2024-05-13",
         "score": 85.4,
@@ -1360,7 +1360,7 @@
       },
       {
         "model": "gpt-3.5-turbo",
-        "model_id": null,
+        "model_id": "openai/gpt-3.5-turbo-0125",
         "vendor": "openai",
         "measured_at": "2023-03-01",
         "score": 39.13,
@@ -1716,7 +1716,7 @@
     "performance_timeline": [
       {
         "model": "GPT-4o",
-        "model_id": null,
+        "model_id": "openai/gpt-4o-2024-05-13",
         "vendor": "openai",
         "measured_at": "2024-05-13",
         "score": 56.1,
@@ -1725,7 +1725,7 @@
       },
       {
         "model": "o1",
-        "model_id": null,
+        "model_id": "openai/o1-2024-12-17",
         "vendor": "openai",
         "measured_at": "2024-09-12",
         "score": 78,
@@ -1958,7 +1958,7 @@
       },
       {
         "model": "Claude 3 Opus",
-        "model_id": null,
+        "model_id": "anthropic/claude-3-opus-20240229",
         "vendor": "anthropic",
         "measured_at": "2024-03-04",
         "score": 95.4,
@@ -1967,7 +1967,7 @@
       },
       {
         "model": "Llama 3 70B",
-        "model_id": null,
+        "model_id": "meta-ai/meta-llama-3-70b",
         "vendor": "meta",
         "measured_at": "2024-04-18",
         "score": 88,
@@ -1976,7 +1976,7 @@
       },
       {
         "model": "GPT-4o",
-        "model_id": null,
+        "model_id": "openai/gpt-4o-2024-05-13",
         "vendor": "openai",
         "measured_at": "2024-08-01",
         "score": 95.3,
@@ -2108,7 +2108,7 @@
       },
       {
         "model": "Qwen2.5-Coder-32B-Instruct",
-        "model_id": null,
+        "model_id": "alibaba/qwen2.5-coder-32b-instruct",
         "vendor": "alibaba",
         "measured_at": "2024-11-12",
         "score": 87.2,
@@ -2162,7 +2162,7 @@
       },
       {
         "model": "DeepSeek-Coder-V2-Instruct",
-        "model_id": null,
+        "model_id": "deepseek/deepseek-coder-v2-instruct",
         "vendor": "deepseek",
         "measured_at": "2024-06-17",
         "score": 82.3,
@@ -2198,7 +2198,7 @@
       },
       {
         "model": "Gemini 1.5 Pro 002",
-        "model_id": null,
+        "model_id": "google-deepmind/gemini-1.5-pro-002",
         "vendor": "google",
         "measured_at": "2024-09-24",
         "score": 79.3,
@@ -2271,7 +2271,7 @@
     "performance_timeline": [
       {
         "model": "GPT-4o",
-        "model_id": null,
+        "model_id": "openai/gpt-4o-2024-05-13",
         "vendor": "openai",
         "measured_at": "2025-01-24",
         "score": 3.3,
@@ -2289,7 +2289,7 @@
       },
       {
         "model": "o1",
-        "model_id": null,
+        "model_id": "openai/o1-2024-12-17",
         "vendor": "openai",
         "measured_at": "2025-01-24",
         "score": 9.1,
@@ -3359,7 +3359,7 @@
       },
       {
         "model": "Qwen2.5-Coder-32B-Instruct",
-        "model_id": null,
+        "model_id": "alibaba/qwen2.5-coder-32b-instruct",
         "vendor": "alibaba",
         "measured_at": "2024-11-12",
         "score": 77,
@@ -3368,7 +3368,7 @@
       },
       {
         "model": "DeepSeek-Coder-V2-Instruct",
-        "model_id": null,
+        "model_id": "deepseek/deepseek-coder-v2-instruct",
         "vendor": "deepseek",
         "measured_at": "2024-06-17",
         "score": 75.1,
@@ -3377,7 +3377,7 @@
       },
       {
         "model": "Gemini 1.5 Pro 002",
-        "model_id": null,
+        "model_id": "google-deepmind/gemini-1.5-pro-002",
         "vendor": "google",
         "measured_at": "2024-09-24",
         "score": 74.6,
@@ -3691,7 +3691,7 @@
       },
       {
         "model": "Claude 3 Opus",
-        "model_id": null,
+        "model_id": "anthropic/claude-3-opus-20240229",
         "vendor": "anthropic",
         "measured_at": "2024-03-04",
         "score": 86.8,
@@ -3700,7 +3700,7 @@
       },
       {
         "model": "GPT-4o",
-        "model_id": null,
+        "model_id": "openai/gpt-4o-2024-05-13",
         "vendor": "openai",
         "measured_at": "2024-05-13",
         "score": 88.7,
@@ -3709,7 +3709,7 @@
       },
       {
         "model": "Llama 3.1 405B",
-        "model_id": null,
+        "model_id": "meta-ai/llama-3.1-405b",
         "vendor": "meta",
         "measured_at": "2024-07-23",
         "score": 88.6,
@@ -3773,7 +3773,7 @@
       },
       {
         "model": "Claude 3 Opus",
-        "model_id": null,
+        "model_id": "anthropic/claude-3-opus-20240229",
         "vendor": "anthropic",
         "measured_at": "2024-03-04",
         "score": 68.5,
@@ -3791,7 +3791,7 @@
       },
       {
         "model": "GPT-4o",
-        "model_id": null,
+        "model_id": "openai/gpt-4o-2024-05-13",
         "vendor": "openai",
         "measured_at": "2024-05-13",
         "score": 72.6,
@@ -5093,7 +5093,7 @@
     "performance_timeline": [
       {
         "model": "Claude 3 Opus",
-        "model_id": null,
+        "model_id": "anthropic/claude-3-opus-20240229",
         "vendor": "anthropic",
         "measured_at": "2024-11-07",
         "score": 23.5,
@@ -5111,7 +5111,7 @@
       },
       {
         "model": "GPT-4o",
-        "model_id": null,
+        "model_id": "openai/gpt-4o-2024-05-13",
         "vendor": "openai",
         "measured_at": "2024-11-07",
         "score": 38.2,
@@ -5120,7 +5120,7 @@
       },
       {
         "model": "o1-preview",
-        "model_id": null,
+        "model_id": "openai/o1-preview-2024-09-12",
         "vendor": "openai",
         "measured_at": "2024-11-07",
         "score": 42.7,
@@ -5326,7 +5326,7 @@
       },
       {
         "model": "GPT-4o",
-        "model_id": null,
+        "model_id": "openai/gpt-4o-2024-05-13",
         "vendor": "openai",
         "measured_at": "2025-02-20",
         "score": 95,
