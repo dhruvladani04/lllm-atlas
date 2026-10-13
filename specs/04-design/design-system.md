@@ -305,7 +305,7 @@ Three rules govern everything below.
 
 | Surface | What moves | What must not |
 |---|---|---|
-| Home | The demonstration row: health flags resolve a beat after the score, so the reader sees the number first and the caveat second. That sequence is the argument. | A hero scene, a scroll narrative, an animated backdrop, or any motion on the summary cards. The home page is not a marketing page. |
+| Home | The demonstration row: the caveat comes up from dimmed a beat after the score, so the reader sees the number first and the caveat second. That sequence is the argument. It is a CSS animation from 40% opacity, never from hidden: the caveat is in the server HTML and readable with no script at all. | A hero scene, a scroll narrative, an animated backdrop, or any motion on the summary cards. The home page is not a marketing page. |
 | Leaderboard | Row reordering when "hide saturated benchmarks", a filter or a sort changes the ranking — the signature control, and seeing rows *move* is the point. Under 300ms, position only. | Anything on scroll. Anything 3D. Any per-row entrance animation. |
 | Benchmark matrix | Cell and filter state changes under 150ms. | Scroll effects, scene work. |
 | Benchmark detail | The trajectory: points may draw in along the time axis once, on first view, so the shape of saturation is legible. Never connect points across harnesses, exam years or protocol changes — animating a line the data does not support is a stronger lie than drawing one. | Camera moves, 3D framing of 2D data. |
@@ -333,7 +333,7 @@ needs a third axis. Conditions, all of them binding:
 
 | Library | Used for | Where |
 |---|---|---|
-| Motion (`motion/react`) | The home demonstration sequence; layout and presence transitions | Everywhere motion is permitted |
+| Motion (`motion/react`) | Layout and presence transitions inside explanatory scenes | Evals guides. The home sequence is plain CSS, so the home page ships no animation library |
 | Auto-Animate | Leaderboard reordering on toggle, filter and sort | Leaderboard |
 | GSAP + ScrollTrigger | Scroll-driven scene choreography | Evals guides only |
 | Lenis | Scroll inertia under a scroll-driven guide | Evals guides only, opt-in |

@@ -1,6 +1,3 @@
-"use client";
-
-import { motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
 import type { Demonstration } from "@/lib/home/demonstration";
 import { HealthFlags, ScoreCell, StatusChip } from "@/components/data/primitives";
@@ -8,30 +5,19 @@ import { HealthFlags, ScoreCell, StatusChip } from "@/components/data/primitives
 /**
  * specs/04-design/design-system.md — the one orchestrated moment on the whole site.
  *
- * The score resolves first and the health flags a beat later, so the reader sees the number
- * the way a launch announcement presents it, and then sees what it is standing on. That
- * sequence *is* the argument; delivering both at once would state the thesis instead of
- * demonstrating it.
+ * The score is at full strength from the first paint and the caveat arrives a beat later,
+ * so the reader sees the number the way a launch announcement presents it and then sees
+ * what it is standing on. That sequence *is* the argument.
  *
- * Under `prefers-reduced-motion` everything renders at once — the same argument in one beat
- * rather than two, with nothing withheld.
+ * Nothing is ever hidden to make it. This used to fade both halves in from `opacity: 0`
+ * with a script, which meant the server HTML carried an invisible card: with JavaScript
+ * slow, blocked or failed, the page's whole thesis was a blank box. Now the caveat is
+ * present and readable in the HTML and a CSS animation only brings it up from dimmed. It
+ * needs no script, and under `prefers-reduced-motion` it does not run at all.
  */
 
-const SCORE_IN = { duration: 0.35, ease: [0.2, 0.6, 0.2, 1] as const };
-const CAVEAT_IN = { duration: 0.4, delay: 1.1, ease: [0.2, 0.6, 0.2, 1] as const };
-
 export function DemonstrationRow({ demonstration }: { demonstration: Demonstration }) {
-  const reduced = useReducedMotion();
   const { model, variant, headline, successor } = demonstration;
-
-  const appear = (delay: typeof SCORE_IN | typeof CAVEAT_IN) =>
-    reduced
-      ? { initial: false as const }
-      : {
-          initial: { opacity: 0, y: 4 },
-          animate: { opacity: 1, y: 0 },
-          transition: delay,
-        };
 
   return (
     <section
@@ -39,7 +25,7 @@ export function DemonstrationRow({ demonstration }: { demonstration: Demonstrati
       aria-label="A worked example"
     >
       <p className="text-xs font-medium text-ink-mute">Worked example</p>
-      <motion.div className="mt-3" {...appear(SCORE_IN)}>
+      <div className="mt-3">
         <div className="flex flex-wrap items-baseline gap-x-3">
           <Link
             href={`/models/${model.model_id}`}
@@ -67,9 +53,9 @@ export function DemonstrationRow({ demonstration }: { demonstration: Demonstrati
             </Link>
           </span>
         </p>
-      </motion.div>
+      </div>
 
-      <motion.div {...appear(CAVEAT_IN)} className="mt-4">
+      <div className="caveat-arrives mt-4">
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
           <StatusChip status={headline.benchmark.status} />
           {/* The chip already says saturated or deprecated; repeating it as a flag reads
@@ -101,7 +87,7 @@ export function DemonstrationRow({ demonstration }: { demonstration: Demonstrati
             from weak ones, which is not something the number tells you.
           </p>
         )}
-      </motion.div>
+      </div>
     </section>
   );
 }

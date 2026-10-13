@@ -190,7 +190,29 @@
     background-color: color-mix(in srgb, var(--ink) 5%, transparent);
   }
 
+  /* The home page's worked example: the caveat is in the page from the first paint and
+     comes up from dimmed a beat after the score. Dimmed, never hidden — the starting
+     opacity is the floor a reader without the animation would still be able to read. */
+  .caveat-arrives {
+    animation: caveat-arrives 400ms ease-out 900ms both;
+  }
+
+  @keyframes caveat-arrives {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
+    /* The blanket rule below shortens durations but keeps delays, and a delayed animation
+       with a backwards fill would sit dimmed for its whole delay. Remove it outright. */
+    .caveat-arrives {
+      animation: none;
+    }
+
     *,
     *::before,
     *::after {
