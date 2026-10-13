@@ -30,9 +30,12 @@ test.describe("the leaderboard states its caveats", () => {
     // The thesis is violated only if neither is true, which is what this asserts.
     const badgeInRow = firstRow.getByText(/^(ind\.|vendor|mixed)$/);
     const statedAboveTable = page.getByText(
-      /(measured independently of the model's maker|reported by the model's own maker|both independent and vendor-reported)/,
+      /(every number independently measured|every number reported by the model's own maker|both independent and vendor-reported numbers)/,
     );
-    const stated = (await badgeInRow.count()) > 0 || (await statedAboveTable.count()) > 0;
+    // Visible, not merely present: the long form of this sentence also exists inside the
+    // closed "Why this ranking?" disclosure, and a caveat nobody can see is not stated.
+    const stated =
+      (await badgeInRow.count()) > 0 || (await statedAboveTable.first().isVisible());
     expect(stated, "the view states provenance in the row or above the table").toBe(true);
   });
 
