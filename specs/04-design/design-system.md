@@ -225,8 +225,10 @@ they are in.
 
 - **Leaderboard** — full-bleed data table, left-aligned text columns, right-aligned
   numeric columns, sticky header (`--shadow-sm` once it's pinned), hairline row rules, a
-  subtle hover tint per row, no shadow on the table body itself. Rows are never cards. A
-  row of summary cards sits above the tabs; see `SummaryCard` below.
+  subtle hover tint per row, no shadow on the table body itself. Rows are never cards
+  from 768px up. Below that each row stacks into a labelled block, still as one table;
+  the behaviour is specified in `03-sections/leaderboard.md`. A row of summary cards sits
+  above the tabs; see `SummaryCard` below.
 - **Benchmarks** — the capability × status grid. Fixed row labels, scrollable columns on
   narrow viewports.
 - **Evals** — single narrow reading column, generous leading, a quiet sidebar for
@@ -364,7 +366,8 @@ transitions drop to zero duration. No content is unreachable in reduced-motion m
 
 ## Quality floor
 
-Responsive to 360px. Visible keyboard focus. Table headers are real `<th scope>`. Contrast
+Responsive to 360px, with no horizontal page scroll on any route; an e2e test loads every
+route at 390px and measures it. Visible keyboard focus. Table headers are real `<th scope>`. Contrast
 at least 4.5:1 for text, in both schemes; the axe audit runs every audited route twice, once
 per scheme. **The status colours are held to the text floor too**, not to
 3:1: every one of them is rendered as a chip label, a flag or a badge, so every one of them
@@ -400,3 +403,5 @@ must be readable and correct with CSS disabled.
   stable`; a navigation that marks the current section and collapses behind a menu button
   on phones; the home worked example is readable on first paint and animates from dimmed,
   not from hidden. UX refresh, P0.
+- Leaderboard rows stack below 768px as one restyled table with explicit ARIA roles; the
+  quality floor's "no horizontal scroll" is now measured on every route. UX refresh, P0.

@@ -119,11 +119,32 @@ view wearing a column's clothing, and it costs horizontal space on a table built
 scanning. Provenance and Health both do this routinely: rank on an independently-measured
 benchmark with a successor and every row reads `ind.` and `→ superseded`.
 
-So when a column is uniform across the visible rows it collapses into one sentence above
-the table — "Every number in this view was measured independently of the model's maker" —
-and the column is dropped. When a filter or a tab makes it vary again, the column returns.
+So when a column is uniform across every matching row it collapses into the summary line
+above the table — the `ind.` badge with "every number independently measured" — and the
+column is dropped. Uniformity is judged over every row that matches the filters, not only
+the twenty-five on screen, so asking for the rest can never contradict the line above them. When a filter or a tab makes it vary again, the column returns.
 Both directions are unit-tested, because with current data only the collapsing direction
 is reachable through the UI.
+
+### The summary line, and what may sit behind a disclosure
+
+Two paragraphs, about 110 words, used to stand between the reader and the first row. They
+are now one line and a disclosure, and the split between them is a rule, not a matter of
+taste:
+
+- **Visible, always:** the benchmark the table ranks on, linked to its page; that
+  benchmark's status chip; any health flag shared by every row; the provenance shared by
+  every row; how many of the tracked benchmarks have scores; when the data was fetched.
+- **Behind "Why this ranking?":** why that benchmark is the basis, what a different toggle
+  state would rank on, the coverage caveat in full, and the long form of the shared
+  provenance sentence.
+
+The facts a reader needs in order to judge the table stay on the page. Only the reasoning
+for them is folded away. Folding the facts and keeping the prose would break the rule at
+the top of this section, and an e2e test asserts the provenance statement is *visible*,
+not merely present in the document.
+
+The disclosure is a native `<details>`, so it opens without a script.
 
 ### Abbreviations are written out, not hovered
 
@@ -143,7 +164,27 @@ explanation; it may never be the only place one exists.
   interactive. Rows animate to their new positions rather than jumping, because watching
   the ranking rearrange is what makes the argument land. Position only, under 300ms,
   disabled under `prefers-reduced-motion`. Sorting and filtering animate the same way.
-- No pagination. Virtualise if rows exceed 200.
+- **Twenty-five rows first.** The table renders its top 25 and states the total
+  ("Showing 25 of 210 ranked rows") beside a "Show all" button. This replaces "no
+  pagination, virtualise past 200": the registry grew from 30 models to 460, the phone
+  layout was 37,000px tall, and the rows nobody had asked for were most of the page weight.
+  Rank numbers do not change, nothing is dropped, and the count is always stated.
+
+### Below 768px
+
+The leaderboard is the page most likely to be opened from a link on a phone, and it was the
+least usable there: a sideways-scrolling table under six wrapped controls.
+
+- **Rows stack.** Rank, model and score on the first line; Epoch index, context, price and
+  release date as labelled lines beneath; provenance and health badges last. It is the
+  same table restyled, with explicit ARIA roles, so the DOM is not doubled and it is still
+  rows and cells to a screen reader. The header row is not drawn but stays in the
+  accessibility tree.
+- **Filters sit behind one button**, which says how many are on. "Hide saturated
+  benchmarks" counts, because it is on by default and it does remove rows; a filtered table
+  must never look unfiltered. Search stays outside the button.
+- **Sorting moves into the filter panel**, since there are no column headers to press.
+- The image tab stacks the same way.
 
 ### Empty and degraded states
 
@@ -270,3 +311,7 @@ Decide." Copy guidance is in `04-design/design-system.md`.
 - Added summary cards above the tabs and on the home page, each a real row carrying its
   health flags, with the rule that picked it as its heading. Creator names carry a vendor
   mark. "Biggest mover" was considered and left out for want of a real history.
+- The two paragraphs above the table became one summary line and a "Why this ranking?"
+  disclosure, with a rule for which facts must stay visible. Rows stack below 768px, filters
+  collapse behind a counting button there, and the table shows its top 25 first. UX
+  refresh, P0.

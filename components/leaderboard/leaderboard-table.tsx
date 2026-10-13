@@ -23,6 +23,12 @@ import {
 } from "@/components/data/primitives";
 import { FreshnessStamp } from "@/components/data/freshness-stamp";
 import { CreatorLogo } from "@/components/ui/creator-logo";
+import {
+  STACKED_BADGES,
+  STACKED_CELL,
+  STACKED_META,
+  STACKED_ROW,
+} from "@/components/data/stacked-row";
 
 /**
  * specs/03-sections/leaderboard.md — the index table.
@@ -167,6 +173,121 @@ function Legend({ uniform }: { uniform: UniformColumns }) {
   );
 }
 
+/** How many rows render before the reader asks for the rest. */
+const PAGE_SIZE = 25;
+
+const PROVENANCE_SHORT: Record<TableRow["provenance"], string> = {
+  independent: "every number independently measured",
+  "vendor-reported": "every number reported by the model's own maker",
+  mixed: "every model has both independent and vendor-reported numbers",
+};
+
+/**
+ * The ranking's caveats in one line, with the reasoning one click away.
+ *
+ * What stays visible is everything a reader needs in order to decide how far to trust the
+ * table: which benchmark ranks it, that benchmark's status, any health flag or provenance
+ * shared by every row, how much of the field the ranking covers, and how old the data is.
+ * What moves behind "Why this ranking?" is only the explanation of why those things are
+ * so. Hiding the facts and keeping the prose would have been the wrong way round.
+ */
+function RankingSummary({
+  data,
+  alternative,
+  uniform,
+  coverage,
+  fetchedAt,
+}: {
+  data: TableData;
+  /** The benchmark the table would rank on if saturated ones were shown, when different. */
+  alternative: string | null;
+  uniform: UniformColumns;
+  coverage: { scored: number; total: number };
+  fetchedAt: string | null;
+}) {
+  const reference = data.reference;
+  if (reference === null) return null;
+
+  // The status chip already says saturated or deprecated.
+  const shared =
+    uniform.health?.filter((flag) => flag !== "saturated" && flag !== "deprecated") ??
+    null;
+
+  return (
+    <div className="py-3 text-sm">
+      <p className="flex flex-wrap items-center gap-x-4 gap-y-2 text-ink-mute">
+        <span>
+          Ranked on{" "}
+          <Link
+            href={`/benchmarks/${reference.slug}`}
+            prefetch={false}
+            className="font-medium text-ink underline-offset-2 hover:underline"
+          >
+            {reference.name}
+          </Link>
+        </span>
+        <StatusChip status={reference.status} />
+        {shared !== null && shared.length > 0 ? (
+          <span className="inline-flex flex-wrap items-center gap-1.5">
+            <HealthFlags flags={shared} />
+            <span className="text-xs">on every row</span>
+          </span>
+        ) : null}
+        {uniform.provenance !== null ? (
+          <span className="inline-flex flex-wrap items-center gap-1.5">
+            <ProvenanceBadge provenance={uniform.provenance} />
+            <span className="text-xs">{PROVENANCE_SHORT[uniform.provenance]}</span>
+          </span>
+        ) : null}
+        <span>
+          {coverage.scored} of {coverage.total} benchmarks have scores
+        </span>
+        <FreshnessStamp fetchedAt={fetchedAt} />
+      </p>
+
+      <details className="mt-2">
+        <summary className="w-fit cursor-pointer text-ink underline-offset-2 hover:text-accent hover:underline">
+          Why this ranking?
+        </summary>
+        <div className="mt-2 max-w-[76ch] space-y-2 text-ink-mute">
+          <p>
+            {reference.name} is the benchmark most models here are measured on. Scores on
+            different benchmarks are not comparable, so only models measured on this one
+            are ranked.{" "}
+            {alternative !== null ? (
+              <>
+                Showing saturated benchmarks would rank this table on{" "}
+                <strong className="font-medium text-ink">{alternative}</strong>{" "}
+                instead.{" "}
+              </>
+            ) : null}
+            <ReferenceRationaleNote reference={reference} rationale={data.rationale} />
+          </p>
+          {/* The ranking's reach, said where the ranking is — not only at the bottom of
+              /benchmarks. Without this the table reads as "the state of the field" when it
+              is really "what the sources this site can legally redistribute have
+              measured". */}
+          <p>
+            {coverage.scored} of the {coverage.total} benchmarks tracked here have any
+            score at all, so this ranking describes the part of the field that Epoch and
+            Arena have measured, not the whole of it.{" "}
+            <Link href="/benchmarks" className="underline">
+              The other {coverage.total - coverage.scored} are catalogued with their
+              health
+            </Link>
+            .
+          </p>
+          {uniform.provenance !== null || uniform.health !== null ? (
+            <p>
+              <CollapsedColumns uniform={uniform} />
+            </p>
+          ) : null}
+        </div>
+      </details>
+    </div>
+  );
+}
+
 function daysSince(date: string | null): number | null {
   if (date === null) return null;
   const then = Date.parse(date);
@@ -197,6 +318,8 @@ export function LeaderboardTable({
   const [creator, setCreator] = useState<string>("all");
   const [everyConfig, setEveryConfig] = useState(false);
   const [query, setQuery] = useState("");
+  const [showAll, setShowAll] = useState(false);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [body] = useAutoAnimate<HTMLTableSectionElement>();
 
   const data = hideSaturated ? hidden : shown;
@@ -290,7 +413,19 @@ export function LeaderboardTable({
     sort,
   ]);
 
+  // Uniformity is judged over every matching row, not only the ones on screen, so asking
+  // for the rest can never contradict the sentence above the table.
   const uniform = useMemo(() => uniformColumns(rows), [rows]);
+  const visible = showAll ? rows : rows.slice(0, PAGE_SIZE);
+
+  // "Hide saturated" counts: it is on by default and it does remove rows.
+  const activeFilters = [
+    hideSaturated,
+    everyConfig,
+    independentOnly,
+    openWeightsOnly,
+    creator !== "all",
+  ].filter(Boolean).length;
 
   const columns: { key: SortKey; label: string; numeric: boolean }[] = [
     { key: "model", label: "Model", numeric: false },
@@ -308,80 +443,115 @@ export function LeaderboardTable({
   return (
     <div>
       <div className="flex flex-wrap items-center gap-x-6 gap-y-3 border-y border-rule py-3 text-sm">
-        <label className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            checked={hideSaturated}
-            onChange={(event) => setHideSaturated(event.target.checked)}
-          />
-          Hide saturated benchmarks
-          {hideSaturated && data.excluded.benchmarks > 0 ? (
-            <span className="text-xs text-ink-mute">
-              (hiding {data.excluded.scores} score
-              {data.excluded.scores === 1 ? "" : "s"} on {data.excluded.benchmarks}{" "}
-              benchmark
-              {data.excluded.benchmarks === 1 ? "" : "s"})
-            </span>
-          ) : null}
-        </label>
-
-        <label className="flex items-center gap-2">
+        <label className="flex items-center gap-2 max-md:min-w-0 max-md:flex-1">
           <span className="sr-only">Search models</span>
           <input
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search models"
-            className="w-44 rounded-sm border border-rule bg-surface px-2 py-1"
+            className="w-44 rounded-sm border border-rule bg-surface px-2 py-1 max-md:w-full"
           />
         </label>
 
-        <label className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            checked={everyConfig}
-            onChange={(event) => setEveryConfig(event.target.checked)}
-          />
-          Show every configuration
-        </label>
+        {/* On a phone six controls wrapped over five lines above the table. They sit
+            behind one button there, which says how many are switched on so a filtered
+            table never looks like an unfiltered one. */}
+        <button
+          type="button"
+          aria-expanded={filtersOpen}
+          aria-controls="leaderboard-filters"
+          onClick={() => setFiltersOpen((value) => !value)}
+          className="rounded-sm border border-rule-strong px-2 py-1 hover:border-accent hover:text-accent md:hidden"
+        >
+          Filters{activeFilters > 0 ? ` (${activeFilters} on)` : ""}
+        </button>
 
-        <label className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            checked={independentOnly}
-            onChange={(event) => setIndependentOnly(event.target.checked)}
-          />
-          Independent measurements only
-        </label>
+        <div
+          id="leaderboard-filters"
+          className={`basis-full flex-col gap-y-3 md:contents ${filtersOpen ? "flex" : "hidden"}`}
+        >
+          <label className="flex flex-wrap items-center gap-2 md:order-first">
+            <input
+              type="checkbox"
+              checked={hideSaturated}
+              onChange={(event) => setHideSaturated(event.target.checked)}
+            />
+            Hide saturated benchmarks
+            {hideSaturated && data.excluded.benchmarks > 0 ? (
+              <span className="text-xs text-ink-mute">
+                (hiding {data.excluded.scores} score
+                {data.excluded.scores === 1 ? "" : "s"} on {data.excluded.benchmarks}{" "}
+                benchmark
+                {data.excluded.benchmarks === 1 ? "" : "s"})
+              </span>
+            ) : null}
+          </label>
 
-        <label className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            checked={openWeightsOnly}
-            onChange={(event) => setOpenWeightsOnly(event.target.checked)}
-          />
-          Open weights only
-        </label>
+          <label className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={everyConfig}
+              onChange={(event) => setEveryConfig(event.target.checked)}
+            />
+            Show every configuration
+          </label>
 
-        <label className="flex items-center gap-2">
-          Creator
-          <select
-            // A select sizes itself to its widest option, and one creator is a
-            // 163-character list of six collaborating universities — honest data that
-            // blew the filter bar to 1169px at a 360px viewport. The value stays whole;
-            // only the control is bounded.
-            className="max-w-[12rem] truncate rounded-sm border border-rule bg-surface px-2 py-1"
-            value={creator}
-            onChange={(event) => setCreator(event.target.value)}
-          >
-            <option value="all">all</option>
-            {creators.map((name) => (
-              <option key={name} value={name}>
-                {name}
-              </option>
-            ))}
-          </select>
-        </label>
+          <label className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={independentOnly}
+              onChange={(event) => setIndependentOnly(event.target.checked)}
+            />
+            Independent measurements only
+          </label>
+
+          <label className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={openWeightsOnly}
+              onChange={(event) => setOpenWeightsOnly(event.target.checked)}
+            />
+            Open weights only
+          </label>
+
+          <label className="flex items-center gap-2">
+            Creator
+            <select
+              // A select sizes itself to its widest option, and one creator is a
+              // 163-character list of six collaborating universities — honest data that
+              // blew the filter bar to 1169px at a 360px viewport. The value stays whole;
+              // only the control is bounded.
+              className="max-w-[12rem] truncate rounded-sm border border-rule bg-surface px-2 py-1"
+              value={creator}
+              onChange={(event) => setCreator(event.target.value)}
+            >
+              <option value="all">all</option>
+              {creators.map((name) => (
+                <option key={name} value={name}>
+                  {name}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          {/* The column headers are the sort control on a wide screen. A stacked row has
+              no headers to press, so the same choice is offered here. */}
+          <label className="flex items-center gap-2 md:hidden">
+            Sort by
+            <select
+              className="rounded-sm border border-rule bg-surface px-2 py-1"
+              value={sort}
+              onChange={(event) => setSort(event.target.value as SortKey)}
+            >
+              {columns.map((column) => (
+                <option key={column.key} value={column.key}>
+                  {column.label}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
       </div>
 
       {data.reference === null ? (
@@ -390,51 +560,37 @@ export function LeaderboardTable({
           nothing honest to rank on. Every model scored in this tab is listed below.
         </p>
       ) : (
-        <p className="py-3 text-sm text-ink-mute">
-          Ranked on{" "}
-          <strong className="font-medium text-ink">{data.reference.name}</strong>{" "}
-          <StatusChip status={data.reference.status} /> — the benchmark most models here
-          are measured on. Scores on different benchmarks are not comparable, so only
-          models measured on this one are ranked.{" "}
-          {hideSaturated &&
-          shown.reference !== null &&
-          shown.reference.slug !== data.reference.slug ? (
-            <>
-              Showing saturated benchmarks would rank this table on{" "}
-              <strong className="font-medium text-ink">{shown.reference.name}</strong>{" "}
-              instead.{" "}
-            </>
-          ) : null}
-          <ReferenceRationaleNote reference={data.reference} rationale={data.rationale} />
-          <FreshnessStamp fetchedAt={fetchedAt} />
-        </p>
+        <RankingSummary
+          data={data}
+          alternative={
+            hideSaturated &&
+            shown.reference !== null &&
+            shown.reference.slug !== data.reference.slug
+              ? shown.reference.name
+              : null
+          }
+          uniform={uniform}
+          coverage={coverage}
+          fetchedAt={fetchedAt}
+        />
       )}
 
       {data.rows.length > 0 ? (
-        <div className="overflow-x-auto">
-          {/* The ranking's reach, said where the ranking is — not only at the bottom of
-              /benchmarks. Without this the table reads as "the state of the field" when it
-              is really "what the sources this site can legally redistribute have
-              measured". */}
-          <p className="max-w-[92ch] pb-3 text-sm text-ink-mute">
-            {coverage.scored} of the {coverage.total} benchmarks tracked here have any
-            score at all, so this ranking describes the part of the field that Epoch and
-            the arena mirror have measured, not the whole of it.{" "}
-            <Link href="/benchmarks" className="underline-offset-2 hover:underline">
-              The other {coverage.total - coverage.scored} are catalogued with their
-              health
-            </Link>
-            . <CollapsedColumns uniform={uniform} />
-          </p>
-          <table className="w-full border-collapse text-sm">
-            <thead className="sticky top-0 z-[5] bg-paper shadow-sm">
-              <tr className="border-b border-rule-strong text-left">
-                <th scope="col" className="py-2 pr-3 font-medium">
+        <div className="md:overflow-x-auto">
+          <table role="table" className="w-full border-collapse text-sm">
+            {/* Read out but not drawn on a phone, where each cell carries its own label. */}
+            <thead
+              role="rowgroup"
+              className="z-[5] bg-paper max-md:sr-only md:sticky md:top-0 md:shadow-sm"
+            >
+              <tr role="row" className="border-b border-rule-strong text-left">
+                <th role="columnheader" scope="col" className="py-2 pr-3 font-medium">
                   #
                 </th>
                 {columns.map((column) => (
                   <th
                     key={column.key}
+                    role="columnheader"
                     scope="col"
                     // Sorting is always high-to-low, so the active column is descending and
                     // every other one is unsorted. Without this a screen reader gets a
@@ -448,10 +604,13 @@ export function LeaderboardTable({
                     }
                     className={`py-2 pr-3 font-medium ${column.numeric ? "text-right" : ""}`}
                   >
+                    {/* Plain text where the header is not drawn: a focusable button nobody
+                        can see is a keyboard trap for sighted users. */}
+                    <span className="md:hidden">{column.label}</span>
                     <button
                       type="button"
                       onClick={() => setSort(column.key)}
-                      className="underline-offset-2 hover:text-accent hover:underline"
+                      className="underline-offset-2 hover:text-accent hover:underline max-md:hidden"
                       aria-label={`Sort by ${column.label}`}
                     >
                       {column.label}
@@ -460,25 +619,30 @@ export function LeaderboardTable({
                   </th>
                 ))}
                 {uniform.provenance === null ? (
-                  <th scope="col" className="py-2 pr-3 font-medium">
+                  <th role="columnheader" scope="col" className="py-2 pr-3 font-medium">
                     Provenance
                   </th>
                 ) : null}
                 {uniform.health === null ? (
-                  <th scope="col" className="py-2 font-medium">
+                  <th role="columnheader" scope="col" className="py-2 font-medium">
                     Health
                   </th>
                 ) : null}
               </tr>
             </thead>
-            <tbody ref={body}>
-              {rows.map((row, index) => {
+            <tbody role="rowgroup" ref={body}>
+              {visible.map((row, index) => {
                 const model = meta(row.model_id);
                 const age = daysSince(model.released_at);
                 return (
-                  <tr key={row.key} className="row-hover border-b border-rule">
-                    <td className="tabular py-2 pr-3 text-ink-mute">{index + 1}</td>
-                    <td className="py-2 pr-3">
+                  <tr role="row" key={row.key} className={`row-hover ${STACKED_ROW}`}>
+                    <td role="cell" className={`tabular text-ink-mute ${STACKED_CELL}`}>
+                      {index + 1}
+                    </td>
+                    <td
+                      role="cell"
+                      className={`max-md:min-w-0 max-md:pb-1 ${STACKED_CELL}`}
+                    >
                       <Link
                         href={`/models/${row.model_id}`}
                         prefetch={false}
@@ -498,7 +662,7 @@ export function LeaderboardTable({
                           ◇
                         </span>
                       ) : null}
-                      <span className="mt-0.5 flex items-center gap-1.5 text-xs text-ink-mute">
+                      <span className="mt-0.5 flex flex-wrap items-center gap-1.5 text-xs text-ink-mute">
                         <CreatorLogo creator={model.creator} />
                         {model.creator}
                         {/* Which configuration won, and how many it beat. A collapsed row
@@ -508,7 +672,10 @@ export function LeaderboardTable({
                         ) : null}
                       </span>
                     </td>
-                    <td className="py-2 pr-3 text-right">
+                    <td
+                      role="cell"
+                      className={`text-right max-md:text-base ${STACKED_CELL}`}
+                    >
                       <ScoreCell
                         value={row.value}
                         unit={row.unit}
@@ -516,7 +683,11 @@ export function LeaderboardTable({
                         flags={row.health_flags}
                       />
                     </td>
-                    <td className="tabular py-2 pr-3 text-right">
+                    <td
+                      role="cell"
+                      data-label="Epoch index"
+                      className={`tabular text-right ${STACKED_CELL} ${STACKED_META}`}
+                    >
                       {row.eci === null ? (
                         <MissingValue reason="Not covered by Epoch's capability index" />
                       ) : (
@@ -525,31 +696,45 @@ export function LeaderboardTable({
                         </span>
                       )}
                     </td>
-                    <td className="py-2 pr-3 text-right">
+                    <td
+                      role="cell"
+                      data-label="Context"
+                      className={`text-right ${STACKED_CELL} ${STACKED_META}`}
+                    >
                       <QuotedValue
                         quoted={model.context_window}
                         format={formatTokenCount}
                         missingReason="No context window published by the vendor or OpenRouter"
                       />
                     </td>
-                    <td className="py-2 pr-3 text-right">
-                      <QuotedValue
-                        quoted={model.price_input}
-                        format={(value) => `$${value.toFixed(2)}`}
-                        missingReason="No price published by the vendor or OpenRouter"
-                      />
-                      <span className="text-ink-mute"> / </span>
-                      <QuotedValue
-                        quoted={model.price_output}
-                        format={(value) => `$${value.toFixed(2)}`}
-                        missingReason="No price published by the vendor or OpenRouter"
-                      />
+                    <td
+                      role="cell"
+                      data-label="Price in / out"
+                      className={`text-right ${STACKED_CELL} ${STACKED_META}`}
+                    >
+                      <span>
+                        <QuotedValue
+                          quoted={model.price_input}
+                          format={(value) => `$${value.toFixed(2)}`}
+                          missingReason="No price published by the vendor or OpenRouter"
+                        />
+                        <span className="text-ink-mute"> / </span>
+                        <QuotedValue
+                          quoted={model.price_output}
+                          format={(value) => `$${value.toFixed(2)}`}
+                          missingReason="No price published by the vendor or OpenRouter"
+                        />
+                      </span>
                     </td>
-                    <td className="tabular py-2 pr-3 text-right whitespace-nowrap">
+                    <td
+                      role="cell"
+                      data-label="Released"
+                      className={`tabular text-right whitespace-nowrap ${STACKED_CELL} ${STACKED_META}`}
+                    >
                       {model.released_at === null ? (
                         <MissingValue reason="No confirmed release date" />
                       ) : (
-                        <>
+                        <span>
                           {model.released_at}
                           {age !== null && age < 14 ? (
                             <span
@@ -560,16 +745,16 @@ export function LeaderboardTable({
                               new
                             </span>
                           ) : null}
-                        </>
+                        </span>
                       )}
                     </td>
                     {uniform.provenance === null ? (
-                      <td className="py-2 pr-3">
+                      <td role="cell" className={`${STACKED_CELL} ${STACKED_BADGES}`}>
                         <ProvenanceBadge provenance={row.provenance} />
                       </td>
                     ) : null}
                     {uniform.health === null ? (
-                      <td className="py-2">
+                      <td role="cell" className={`py-2 max-md:p-0 ${STACKED_BADGES}`}>
                         <HealthFlags flags={row.health_flags} />
                       </td>
                     ) : null}
@@ -584,7 +769,25 @@ export function LeaderboardTable({
               only&rdquo; usually brings rows back.
             </p>
           ) : (
-            <Legend uniform={uniform} />
+            <>
+              {/* Twenty-five rows answer "who is ahead"; the other hundreds are one press
+                  away and say so. Nothing is dropped — the count is always stated. */}
+              {rows.length > PAGE_SIZE ? (
+                <p className="flex flex-wrap items-center gap-x-4 gap-y-2 py-4 text-sm text-ink-mute">
+                  <span>
+                    Showing {visible.length} of {rows.length} ranked rows.
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setShowAll((value) => !value)}
+                    className="rounded-sm border border-rule-strong px-2 py-1 text-ink hover:border-accent hover:text-accent"
+                  >
+                    {showAll ? `Show the top ${PAGE_SIZE}` : `Show all ${rows.length}`}
+                  </button>
+                </p>
+              ) : null}
+              <Legend uniform={uniform} />
+            </>
           )}
         </div>
       ) : null}
