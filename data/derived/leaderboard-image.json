@@ -3,11 +3,971 @@
   "source": {
     "source_id": "arena-mirror",
     "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
-    "fetched_at": "2026-10-13T06:56:27.028Z",
+    "fetched_at": "2026-10-13T07:17:04.325Z",
     "licence": "CC BY 4.0",
     "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
   },
   "scores": [
+    {
+      "model_id": "openai/gpt-image-2.5-sunburst",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1424.5539886327658,
+      "unit": "elo",
+      "confidence_interval": 6.825901648222725,
+      "sample_size": 17752,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "openai/gpt-image-2.5-flare",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1397.6245129951133,
+      "unit": "elo",
+      "confidence_interval": 6.763014866446156,
+      "sample_size": 16889,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "openai/gpt-image-2",
+      "variant": "medium",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1383.0374000262734,
+      "unit": "elo",
+      "confidence_interval": 4.082634612558422,
+      "sample_size": 93334,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "xai/grok-imagine-image-2.0-canvas",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1333.5425615470726,
+      "unit": "elo",
+      "confidence_interval": 11.559494837260218,
+      "sample_size": 3113,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "microsoft/mai-image-2.6",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1332.1016706522835,
+      "unit": "elo",
+      "confidence_interval": 5.415914343507666,
+      "sample_size": 25091,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "google/gemini-nano-banana-2.1",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1327.7839011200813,
+      "unit": "elo",
+      "confidence_interval": 8.76293063311914,
+      "sample_size": 5310,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "reve/reve-2.1",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1301.7100559093121,
+      "unit": "elo",
+      "confidence_interval": 7.512270836105472,
+      "sample_size": 8249,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "xai/grok-imagine-image-2.0-20260801",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1294.214695721037,
+      "unit": "elo",
+      "confidence_interval": 6.362587099010398,
+      "sample_size": 14483,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "meta/muse-image",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1274.0358987115633,
+      "unit": "elo",
+      "confidence_interval": 5.100027103974071,
+      "sample_size": 42262,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "reve/reve-2.0",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1269.1994436280024,
+      "unit": "elo",
+      "confidence_interval": 6.182164168951658,
+      "sample_size": 15773,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "google/gemini-3.1-flash-image-nano-banana-2-web-search",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1261.7578572114878,
+      "unit": "elo",
+      "confidence_interval": 4.167003372036788,
+      "sample_size": 60515,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "bytedance/seedream-5.0-pro",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1255.4963853790443,
+      "unit": "elo",
+      "confidence_interval": 3.9216507484613885,
+      "sample_size": 94181,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "alibaba/qwen-image-3.0-pro",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1255.17883661931,
+      "unit": "elo",
+      "confidence_interval": 6.477383137499373,
+      "sample_size": 11440,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "microsoft/mai-image-2.5",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1254.1656928820437,
+      "unit": "elo",
+      "confidence_interval": 4.171436157562084,
+      "sample_size": 61265,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "google/gemini-3.1-flash-lite-image-nano-banana-2-lite",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1250.2355534204482,
+      "unit": "elo",
+      "confidence_interval": 5.959206672742539,
+      "sample_size": 17804,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "google/gemini-3-pro-image-2k-nano-banana-pro",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1247.9160761342278,
+      "unit": "elo",
+      "confidence_interval": 3.047537087329374,
+      "sample_size": 175734,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "openai/gpt-image-1.5-high-fidelity",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1237.3662271067433,
+      "unit": "elo",
+      "confidence_interval": 3.064508698382724,
+      "sample_size": 169927,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "google/gemini-3-pro-image-preview-nano-banana-pro",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1234.0680818406342,
+      "unit": "elo",
+      "confidence_interval": 4.864918626156623,
+      "sample_size": 86464,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "alibaba/qwen-image-2.1",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1222.9282859359,
+      "unit": "elo",
+      "confidence_interval": 6.647491565311384,
+      "sample_size": 11441,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "ideogram/ideogram-4.0-quality",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1205.1234488353132,
+      "unit": "elo",
+      "confidence_interval": 4.002821810015121,
+      "sample_size": 60591,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "alibaba/qwen-image-2.0-pro-2026-06-22",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1191.7524360271145,
+      "unit": "elo",
+      "confidence_interval": 5.849233579695692,
+      "sample_size": 13096,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "luma-ai/uni-1.1-max",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1189.2936965914348,
+      "unit": "elo",
+      "confidence_interval": 6.160421718434236,
+      "sample_size": 14072,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "luma-ai/uni-1.1",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1184.2958333350243,
+      "unit": "elo",
+      "confidence_interval": 4.363447174270959,
+      "sample_size": 46699,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "microsoft/mai-image-2",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1183.8355389977744,
+      "unit": "elo",
+      "confidence_interval": 4.535276285333339,
+      "sample_size": 51475,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "xai/grok-imagine-image",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1169.6834389632859,
+      "unit": "elo",
+      "confidence_interval": 2.64599418483931,
+      "sample_size": 272085,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "recraft/recraft-v4.1-utility-pro",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1169.167021341792,
+      "unit": "elo",
+      "confidence_interval": 10.894233211376104,
+      "sample_size": 2617,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "nvidia/cosmos3-super-text2image-agentic",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1165.4768422544082,
+      "unit": "elo",
+      "confidence_interval": 7.048135249766119,
+      "sample_size": 10805,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "xai/grok-imagine-image-pro",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1162.379526740266,
+      "unit": "elo",
+      "confidence_interval": 3.7460837994196936,
+      "sample_size": 99455,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "black-forest-labs/flux-2-max",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1162.0767400638867,
+      "unit": "elo",
+      "confidence_interval": 3.494377411420828,
+      "sample_size": 123203,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "black-forest-labs/flux-2-flex",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1156.56521180093,
+      "unit": "elo",
+      "confidence_interval": 3.3566289651421357,
+      "sample_size": 156923,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "reve/reve-v1.5",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1155.3146354663622,
+      "unit": "elo",
+      "confidence_interval": 4.212784736181675,
+      "sample_size": 39700,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "black-forest-labs/flux-2-pro",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1153.3198148196232,
+      "unit": "elo",
+      "confidence_interval": 2.810801355383319,
+      "sample_size": 212359,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "nvidia/cosmos3-super-text2image",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1151.5596235841535,
+      "unit": "elo",
+      "confidence_interval": 5.847191267704829,
+      "sample_size": 18485,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "google/gemini-2.5-flash-image-preview-nano-banana",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1150.3001706719388,
+      "unit": "elo",
+      "confidence_interval": 2.3675780942994606,
+      "sample_size": 890539,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "tencent/hunyuan-image-3.0",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1149.5019702497289,
+      "unit": "elo",
+      "confidence_interval": 3.321999275978442,
+      "sample_size": 180518,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "bytedance/seedream-4.5",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1148.511910121181,
+      "unit": "elo",
+      "confidence_interval": 2.5535007944556583,
+      "sample_size": 300107,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "google/imagen-ultra-4.0-generate-001",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1147.6883317498996,
+      "unit": "elo",
+      "confidence_interval": 4.330365635678163,
+      "sample_size": 388736,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "black-forest-labs/flux-2-dev",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1145.7703186822487,
+      "unit": "elo",
+      "confidence_interval": 4.147032118993138,
+      "sample_size": 77988,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "bytedance/seedream-4-2k",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1139.869177130931,
+      "unit": "elo",
+      "confidence_interval": 6.5661525260732105,
+      "sample_size": 12562,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "bytedance/seedream-5.0-lite",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1137.9270658811556,
+      "unit": "elo",
+      "confidence_interval": 3.184063050748591,
+      "sample_size": 129950,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "alibaba/wan2.6-t2i",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1137.4883482455705,
+      "unit": "elo",
+      "confidence_interval": 2.7950109033358785,
+      "sample_size": 233292,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "recraft/recraft-v4.1-pro",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1133.0114730930939,
+      "unit": "elo",
+      "confidence_interval": 10.4588976375951,
+      "sample_size": 2795,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "google/imagen-4.0-generate-001",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1129.048665277892,
+      "unit": "elo",
+      "confidence_interval": 2.7034232789715134,
+      "sample_size": 539732,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "alibaba/qwen-image-2512",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1125.4155321690264,
+      "unit": "elo",
+      "confidence_interval": 3.4400884587983,
+      "sample_size": 98288,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "krea/krea-2-medium",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1124.2177752213272,
+      "unit": "elo",
+      "confidence_interval": 4.158883200718947,
+      "sample_size": 58098,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "bytedance/seedream-4-fal",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1116.564326439259,
+      "unit": "elo",
+      "confidence_interval": 6.530020015628452,
+      "sample_size": 11841,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "hidream/hidream-o1-image",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1116.178581378334,
+      "unit": "elo",
+      "confidence_interval": 3.7009908277295835,
+      "sample_size": 66906,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "alibaba/wan2.5-t2i-preview",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1115.6462189410342,
+      "unit": "elo",
+      "confidence_interval": 2.739744346985617,
+      "sample_size": 279229,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
     {
       "model_id": "openai/gpt-image-1",
       "variant": "base",
@@ -22,7 +982,447 @@
       "source": {
         "source_id": "arena-mirror",
         "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
-        "fetched_at": "2026-10-13T06:56:27.028Z",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "recraft/recraft-v4",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1114.9153957174956,
+      "unit": "elo",
+      "confidence_interval": 3.2129865786744176,
+      "sample_size": 137017,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "bytedance/seedream-4-high-res-fal",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1113.4478557835337,
+      "unit": "elo",
+      "confidence_interval": 3.221842870277669,
+      "sample_size": 182685,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "krea/krea-2-turbo",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1113.1755255491064,
+      "unit": "elo",
+      "confidence_interval": 4.464336413038836,
+      "sample_size": 51552,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "krea/krea-2-large",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1111.5161320512998,
+      "unit": "elo",
+      "confidence_interval": 4.162378850676532,
+      "sample_size": 56888,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "openai/gpt-image-1-mini",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1109.7654555027893,
+      "unit": "elo",
+      "confidence_interval": 3.1740191581611725,
+      "sample_size": 171058,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "alibaba/wan2.7-image-pro",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1103.5429577650907,
+      "unit": "elo",
+      "confidence_interval": 5.029653215785174,
+      "sample_size": 30226,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "alibaba/wan2.7-image",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1101.1350748989096,
+      "unit": "elo",
+      "confidence_interval": 5.0139907326074535,
+      "sample_size": 30630,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "recraft/recraft-v4.1-flash",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1099.4954311820882,
+      "unit": "elo",
+      "confidence_interval": 9.467881970785129,
+      "sample_size": 3516,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "microsoft/mai-image-1",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1092.6620817314283,
+      "unit": "elo",
+      "confidence_interval": 3.6145021192353397,
+      "sample_size": 98410,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "alibaba/z-image-turbo",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1083.4963498301272,
+      "unit": "elo",
+      "confidence_interval": 5.3008507974229815,
+      "sample_size": 24808,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "bytedance/seedream-3",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1081.5807118965924,
+      "unit": "elo",
+      "confidence_interval": 4.97019983286873,
+      "sample_size": 36885,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "black-forest-labs/flux-1-kontext-max",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1074.4319802557025,
+      "unit": "elo",
+      "confidence_interval": 3.1904301822419256,
+      "sample_size": 65510,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "black-forest-labs/flux-2-klein-9b",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1070.28637832039,
+      "unit": "elo",
+      "confidence_interval": 3.1959610131898444,
+      "sample_size": 150782,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "alibaba/qwen-image-prompt-extend",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1060.2971447114646,
+      "unit": "elo",
+      "confidence_interval": 2.6765825410300295,
+      "sample_size": 716773,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "black-forest-labs/flux-1-kontext-pro",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1058.7200057577065,
+      "unit": "elo",
+      "confidence_interval": 3.3931634646089606,
+      "sample_size": 332367,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "google/imagen-3.0-generate-002",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1058.0160799183423,
+      "unit": "elo",
+      "confidence_interval": 3.200093259163168,
+      "sample_size": 359772,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "alibaba/qwen-image",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1056.8208577011058,
+      "unit": "elo",
+      "confidence_interval": 2.5740543918718686,
+      "sample_size": 84550,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "ideogram/ideogram-v3-quality",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1048.4479816975381,
+      "unit": "elo",
+      "confidence_interval": 3.7387737054318677,
+      "sample_size": 118538,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "luma-ai/photon",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1035.7066612932733,
+      "unit": "elo",
+      "confidence_interval": 3.6823626101756872,
+      "sample_size": 130160,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "black-forest-labs/flux-2-klein-4b",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1030.0155420619526,
+      "unit": "elo",
+      "confidence_interval": 3.2133380871373447,
+      "sample_size": 152389,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "runway/runway-gen4",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1024.2276277501173,
+      "unit": "elo",
+      "confidence_interval": 4.420246228615497,
+      "sample_size": 54361,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "recraft/recraft-v3",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1020.6216253245301,
+      "unit": "elo",
+      "confidence_interval": 3.6388037798927826,
+      "sample_size": 195627,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
         "licence": "CC BY 4.0",
         "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
       },
@@ -42,7 +1442,167 @@
       "source": {
         "source_id": "arena-mirror",
         "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
-        "fetched_at": "2026-10-13T06:56:27.028Z",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "ideogram/ideogram-v2",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1013.3295642815727,
+      "unit": "elo",
+      "confidence_interval": 3.5687996766852166,
+      "sample_size": 72090,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "leonardo-ai/lucid-origin",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1013.0369045886498,
+      "unit": "elo",
+      "confidence_interval": 3.317374583516653,
+      "sample_size": 287341,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "z.ai-zhipu-ai/glm-image",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 1012.0967586506788,
+      "unit": "elo",
+      "confidence_interval": 8.87386858113075,
+      "sample_size": 4854,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "google/gemini-2.0-flash-preview-image-generation",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 975.2761917189896,
+      "unit": "elo",
+      "confidence_interval": 3.4020783506011867,
+      "sample_size": 257227,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "black-forest-labs/flux-1-dev-fp8",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 969.3811696437589,
+      "unit": "elo",
+      "confidence_interval": 3.752987646736301,
+      "sample_size": 49221,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "openai/dall-e-3",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 967.7905071879426,
+      "unit": "elo",
+      "confidence_interval": 3.7111343357389615,
+      "sample_size": 238743,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "black-forest-labs/flux-1-kontext-dev",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 941.0559693704766,
+      "unit": "elo",
+      "confidence_interval": 3.7816269938391542,
+      "sample_size": 216225,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
+        "licence": "CC BY 4.0",
+        "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
+      },
+      "notes": "Arena Elo from public pairwise votes."
+    },
+    {
+      "model_id": "bytedance/bagel",
+      "variant": "base",
+      "benchmark_slug": "lmarena-text-to-image",
+      "harness": null,
+      "value": 897.8307627509183,
+      "unit": "elo",
+      "confidence_interval": 5.688495623129484,
+      "sample_size": 12363,
+      "provenance": "independent",
+      "measured_at": null,
+      "source": {
+        "source_id": "arena-mirror",
+        "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+        "fetched_at": "2026-10-13T07:17:04.325Z",
         "licence": "CC BY 4.0",
         "attribution": "Arena leaderboard data from Arena (lmarena-ai/leaderboard-dataset) on HuggingFace, CC BY 4.0."
       },

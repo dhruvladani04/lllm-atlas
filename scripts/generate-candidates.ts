@@ -4,6 +4,7 @@ import { loadRegistry } from "@/lib/registry/load";
 import { buildCandidates, indexesCleanly } from "@/lib/registry/candidates";
 import type { OpenRouterRef, SourceRow } from "@/lib/registry/candidates";
 import { CandidateFile } from "@/lib/schemas/candidate";
+import { buildImageCandidates } from "@/lib/registry/image-candidates";
 import { buildBenchmarkIndex, resolveBenchmarkName } from "@/lib/registry/benchmarks";
 import type { BenchmarkAliases } from "@/lib/registry/benchmarks";
 import { toBenchmark } from "@/lib/ingest/benchwiki";
@@ -52,7 +53,12 @@ interface OpenRouterSnapshot {
 }
 
 interface ArenaSnapshot {
-  records: { model: string }[];
+  records: {
+    model: string;
+    vendor: string | null;
+    license: string | null;
+    votes: number | null;
+  }[];
 }
 
 function main(): void {
@@ -104,13 +110,22 @@ function main(): void {
     ),
   );
 
-  const candidates = buildCandidates({
+  const textCandidates = buildCandidates({
     rows,
     registry,
     openrouter,
     imageStems,
     resolvableBenchmarks,
   });
+
+  // Image models come from Arena's board: it is the only source that names them, and the
+  // only one that says anything about their weights.
+  const imageCandidates = buildImageCandidates({
+    rows: arena.records,
+    registry,
+    takenIds: new Set(textCandidates.map((candidate) => candidate.proposed.model_id)),
+  });
+  const candidates = [...textCandidates, ...imageCandidates];
 
   const check = indexesCleanly(
     registry,

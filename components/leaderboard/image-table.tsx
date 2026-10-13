@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Model } from "@/lib/schemas/model";
+import type { TableModel } from "@/lib/leaderboard/view";
 import type { Score } from "@/lib/schemas/score";
 import type { SourceMeta } from "@/lib/schemas/common";
 import { FreshnessStamp } from "@/components/data/freshness-stamp";
@@ -23,7 +23,8 @@ export function ImageTable({
   fetchedAt,
 }: {
   leaderboard: { note: string; source: SourceMeta; scores: Score[] } | null;
-  models: readonly Model[];
+  /** The compact lookup the text tabs already ship; this tab needs only a name and a creator. */
+  models: Record<string, TableModel>;
   fetchedAt: string | null;
 }) {
   if (leaderboard === null || leaderboard.scores.length === 0) {
@@ -43,7 +44,6 @@ export function ImageTable({
     );
   }
 
-  const byId = new Map(models.map((model) => [model.model_id, model]));
   const rows = [...leaderboard.scores].sort((a, b) => b.value - a.value);
 
   return (
@@ -81,7 +81,7 @@ export function ImageTable({
           </thead>
           <tbody>
             {rows.map((score, index) => {
-              const model = byId.get(score.model_id);
+              const model = models[score.model_id];
               return (
                 <tr
                   key={`${score.model_id}#${score.variant}`}
@@ -90,11 +90,17 @@ export function ImageTable({
                   <td className="tabular py-2 pr-3 text-ink-mute">{index + 1}</td>
                   <td className="py-2 pr-3">
                     <Link
-                      href={`/models/${encodeURIComponent(score.model_id)}`}
+                      href={`/models/${score.model_id}`}
                       className="underline-offset-2 hover:underline"
                     >
                       {model?.display_name ?? score.model_id}
                     </Link>
+                    {score.variant !== "base" ? (
+                      <span className="font-mono text-xs text-ink-mute">
+                        {" "}
+                        ({score.variant})
+                      </span>
+                    ) : null}
                     <span className="block text-xs text-ink-mute">
                       {model?.creator ?? ""}
                     </span>
@@ -106,7 +112,7 @@ export function ImageTable({
                     {score.confidence_interval === null ? (
                       <MissingValue reason="Arena published no confidence interval for this model" />
                     ) : (
-                      `±${score.confidence_interval}`
+                      `±${score.confidence_interval.toFixed(1)}`
                     )}
                   </td>
                   <td className="tabular py-2 pr-3 text-right">
@@ -118,7 +124,7 @@ export function ImageTable({
                   </td>
                   <td className="py-2 text-xs text-ink-mute">
                     <a className="underline" href={score.source.source_url}>
-                      LMArena via mirror
+                      Arena
                     </a>
                   </td>
                 </tr>

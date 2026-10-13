@@ -1,412 +1,7 @@
 {
-  "generated_at": "2026-09-19T17:15:40.171Z",
-  "snapshot_date": "2026-09-19",
+  "generated_at": "2026-10-13T07:16:26.903Z",
+  "snapshot_date": "2026-10-13",
   "candidates": [
-    {
-      "proposed": {
-        "model_id": "openai/ada",
-        "display_name": "ada (350M)",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": null,
-        "open_weights": null,
-        "aliases": [
-          "ada",
-          "ada (350M)",
-          "openai/ada"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "ada"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "ada",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "ada"
-        ],
-        "raw_display_names": [
-          "ada (350M)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "No release date, so this cannot be placed in time."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/babbage",
-        "display_name": "babbage (1.3B)",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2020-06-22",
-        "open_weights": null,
-        "aliases": [
-          "babbage",
-          "babbage (1.3B)",
-          "openai/babbage"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "babbage"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "babbage",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2020-06-22"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "babbage"
-        ],
-        "raw_display_names": [
-          "babbage (1.3B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2020-06-22 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "baichuan/baichuan-13b-base",
-        "display_name": "Baichuan 1-13B-Base",
-        "creator": "Baichuan",
-        "modality": "text",
-        "released_at": "2023-07-11",
-        "open_weights": null,
-        "aliases": [
-          "Baichuan 1-13B-Base",
-          "Baichuan-13B-Base",
-          "baichuan/baichuan-13b-base"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Baichuan-13B-Base"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Baichuan-13B-Base",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Baichuan"
-        ],
-        "release_dates": [
-          "2023-07-11"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "BBH",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 3,
-        "raw_model_versions": [
-          "Baichuan-13B-Base"
-        ],
-        "raw_display_names": [
-          "Baichuan 1-13B-Base"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-07-11 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "baichuan/baichuan-2-13b-base",
-        "display_name": "Baichuan2 13B",
-        "creator": "Baichuan",
-        "modality": "text",
-        "released_at": "2023-09-06",
-        "open_weights": null,
-        "aliases": [
-          "Baichuan-2-13B-Base",
-          "Baichuan2 13B",
-          "baichuan/baichuan-2-13b-base"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Baichuan-2-13B-Base"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Baichuan-2-13B-Base",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Baichuan"
-        ],
-        "release_dates": [
-          "2023-09-06"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 4
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 3
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 15,
-        "raw_model_versions": [
-          "Baichuan-2-13B-Base"
-        ],
-        "raw_display_names": [
-          "Baichuan 2 13B",
-          "Baichuan 2-13B-Base",
-          "Baichuan-2 13B",
-          "Baichuan2 13B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-09-06 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "baichuan/baichuan-2-7b-base",
-        "display_name": "Baichuan2 7B",
-        "creator": "Baichuan",
-        "modality": "text",
-        "released_at": "2023-09-20",
-        "open_weights": null,
-        "aliases": [
-          "Baichuan-2-7B-Base",
-          "Baichuan2 7B",
-          "baichuan/baichuan-2-7b-base"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Baichuan-2-7B-Base"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Baichuan-2-7B-Base",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Baichuan"
-        ],
-        "release_dates": [
-          "2023-09-20"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 3
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 10,
-        "raw_model_versions": [
-          "Baichuan-2-7B-Base"
-        ],
-        "raw_display_names": [
-          "Baichuan 2 7B",
-          "Baichuan 2-7B-Base",
-          "Baichuan2 7B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-09-20 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "baichuan/baichuan-7b",
-        "display_name": "Baichuan 1-7B",
-        "creator": "Baichuan",
-        "modality": "text",
-        "released_at": "2023-06-01",
-        "open_weights": null,
-        "aliases": [
-          "Baichuan 1-7B",
-          "Baichuan-7B",
-          "baichuan/baichuan-7b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Baichuan-7B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Baichuan-7B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Baichuan"
-        ],
-        "release_dates": [
-          "2023-06-01"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "BBH",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 4,
-        "raw_model_versions": [
-          "Baichuan-7B"
-        ],
-        "raw_display_names": [
-          "Baichuan 1-7B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-06-01 — too old to be worth ranking."
-        ]
-      }
-    },
     {
       "proposed": {
         "model_id": "unknown/baichuan2-13b-chat",
@@ -525,65 +120,6 @@
     },
     {
       "proposed": {
-        "model_id": "hugging-face-bigscience/bloom",
-        "display_name": "BLOOM (176B)",
-        "creator": "Hugging Face,BigScience",
-        "modality": "text",
-        "released_at": "2022-07-06",
-        "open_weights": null,
-        "aliases": [
-          "BLOOM (176B)",
-          "bloom",
-          "hugging-face-bigscience/bloom"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "bloom"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "bloom",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Hugging Face,BigScience"
-        ],
-        "release_dates": [
-          "2022-07-06"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "bloom"
-        ],
-        "raw_display_names": [
-          "BLOOM (176B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2022-07-06 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "unknown/c4ai-command-r-08-2024",
         "display_name": "Command R (Aug '24)",
         "creator": "Unknown",
@@ -641,80 +177,6 @@
         "dropped_aliases": [],
         "reasons": [
           "No source states which organization made this model."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "cerebras-systems/cerebras-gpt-13b",
-        "display_name": "Cerebras-GPT-13B",
-        "creator": "Cerebras Systems",
-        "modality": "text",
-        "released_at": "2023-03-20",
-        "open_weights": null,
-        "aliases": [
-          "Cerebras-GPT-13B",
-          "cerebras-systems/cerebras-gpt-13b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Cerebras-GPT-13B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Cerebras-GPT-13B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Cerebras Systems"
-        ],
-        "release_dates": [
-          "2023-03-20"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 7,
-        "raw_model_versions": [
-          "Cerebras-GPT-13B"
-        ],
-        "raw_display_names": [
-          "Cerebras-GPT-13B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-03-20 — too old to be worth ranking."
         ]
       }
     },
@@ -904,78 +366,6 @@
         "dropped_aliases": [],
         "reasons": [
           "Measured only on benchmarks with no health record here (1 of them), so approving this would add no scores to the site."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "deepmind/chinchilla-70b",
-        "display_name": "Chinchilla 70B",
-        "creator": "DeepMind",
-        "modality": "text",
-        "released_at": "2022-03-29",
-        "open_weights": null,
-        "aliases": [
-          "Chinchilla (70B)",
-          "Chinchilla 70B",
-          "deepmind/chinchilla-70b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Chinchilla (70B)"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Chinchilla (70B)",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "DeepMind"
-        ],
-        "release_dates": [
-          "2022-03-29"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "TriviaQA",
-            "rows": 3
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 2
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 9,
-        "raw_model_versions": [
-          "Chinchilla (70B)"
-        ],
-        "raw_display_names": [
-          "Chinchilla",
-          "Chinchilla 70B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2022-03-29 — too old to be worth ranking."
         ]
       }
     },
@@ -1764,403 +1154,6 @@
     },
     {
       "proposed": {
-        "model_id": "anthropic/claude-1.3",
-        "display_name": "Claude 1.3",
-        "creator": "Anthropic",
-        "modality": "text",
-        "released_at": "2023-04-18",
-        "open_weights": null,
-        "aliases": [
-          "Claude 1.3",
-          "anthropic/claude-1.3",
-          "claude-1.3"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "claude-1.3"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "claude-1.3",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Anthropic"
-        ],
-        "release_dates": [
-          "2023-04-18"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "claude-1.3"
-        ],
-        "raw_display_names": [
-          "Claude 1.3"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-04-18 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "anthropic/claude-2.0",
-        "display_name": "Claude 2",
-        "creator": "Anthropic",
-        "modality": "text",
-        "released_at": "2023-07-11",
-        "open_weights": null,
-        "aliases": [
-          "Claude 2",
-          "anthropic/claude-2.0",
-          "claude-2.0"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "claude-2.0"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "claude-2.0",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Anthropic"
-        ],
-        "release_dates": [
-          "2023-07-11"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "DTBench",
-            "rows": 1
-          },
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "MATH level 5",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "OTIS Mock AIME 2024-2025",
-            "rows": 1
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 6,
-        "raw_model_versions": [
-          "claude-2.0"
-        ],
-        "raw_display_names": [
-          "Claude 2",
-          "Claude 2.0"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-07-11 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "anthropic/claude-2.1",
-        "display_name": "Claude 2.1",
-        "creator": "Anthropic",
-        "modality": "text",
-        "released_at": "2023-11-21",
-        "open_weights": null,
-        "aliases": [
-          "Claude 2.1",
-          "anthropic/claude-2.1",
-          "claude-2.1"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "claude-2.1"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "claude-2.1",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Anthropic"
-        ],
-        "release_dates": [
-          "2023-11-21"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "DTBench",
-            "rows": 1
-          },
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "OTIS Mock AIME 2024-2025",
-            "rows": 1
-          },
-          {
-            "benchmark": "WeirdML",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 5,
-        "raw_model_versions": [
-          "claude-2.1"
-        ],
-        "raw_display_names": [
-          "Claude 2.1"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-21 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "anthropic/claude-instant-1.1",
-        "display_name": "Claude Instant 1.1",
-        "creator": "Anthropic",
-        "modality": "text",
-        "released_at": null,
-        "open_weights": null,
-        "aliases": [
-          "Claude Instant 1.1",
-          "anthropic/claude-instant-1.1",
-          "claude-instant-1.1"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "claude-instant-1.1"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "claude-instant-1.1",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Anthropic"
-        ],
-        "release_dates": [],
-        "benchmarks": [
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 6,
-        "raw_model_versions": [
-          "claude-instant-1.1"
-        ],
-        "raw_display_names": [
-          "Claude Instant 1.1",
-          "Claude instant"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "No release date, so this cannot be placed in time."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "anthropic/claude-instant-1.2",
-        "display_name": "Claude Instant 1.2",
-        "creator": "Anthropic",
-        "modality": "text",
-        "released_at": "2023-08-09",
-        "open_weights": null,
-        "aliases": [
-          "Claude Instant 1.2",
-          "anthropic/claude-instant-1.2",
-          "claude-instant-1.2"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "claude-instant-1.2"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "claude-instant-1.2",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Anthropic"
-        ],
-        "release_dates": [
-          "2023-08-09"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "DTBench",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 6,
-        "raw_model_versions": [
-          "claude-instant-1.2"
-        ],
-        "raw_display_names": [
-          "Claude Instant 1.2"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-08-09 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/code-davinci-002",
-        "display_name": "code-davinci-002",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2022-03-15",
-        "open_weights": null,
-        "aliases": [
-          "code-davinci-002",
-          "openai/code-davinci-002"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "code-davinci-002"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "code-davinci-002",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2022-03-15"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 1,
-        "raw_model_versions": [
-          "code-davinci-002"
-        ],
-        "raw_display_names": [
-          "code-davinci-002"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2022-03-15 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "unknown/codeqwen1.5-7b",
         "display_name": "CodeQwen1.5-7B",
         "creator": "Unknown",
@@ -2384,120 +1377,6 @@
     },
     {
       "proposed": {
-        "model_id": "openai/curie",
-        "display_name": "curie (6.7B)",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": null,
-        "open_weights": null,
-        "aliases": [
-          "curie",
-          "curie (6.7B)",
-          "openai/curie"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "curie"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "curie",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "curie"
-        ],
-        "raw_display_names": [
-          "curie (6.7B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "No release date, so this cannot be placed in time."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/davinci",
-        "display_name": "davinci (175B)",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": null,
-        "open_weights": null,
-        "aliases": [
-          "davinci",
-          "davinci (175B)",
-          "openai/davinci"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "davinci"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "davinci",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "davinci"
-        ],
-        "raw_display_names": [
-          "davinci (175B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "No release date, so this cannot be placed in time."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "openai/davinci-002",
         "display_name": "davinci-002",
         "creator": "OpenAI",
@@ -2593,207 +1472,6 @@
         "dropped_aliases": [],
         "reasons": [
           "No source states which organization made this model."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "deepseek-peking-university/deepseek-coder-1.3b-base",
-        "display_name": "DS-Coder-1.3B-Base",
-        "creator": "DeepSeek,Peking University",
-        "modality": "text",
-        "released_at": "2023-11-02",
-        "open_weights": null,
-        "aliases": [
-          "DS-Coder-1.3B-Base",
-          "deepseek-coder-1.3b-base",
-          "deepseek-peking-university/deepseek-coder-1.3b-base"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "deepseek-coder-1.3b-base"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "deepseek-coder-1.3b-base",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "DeepSeek,Peking University"
-        ],
-        "release_dates": [
-          "2023-11-02"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 4,
-        "raw_model_versions": [
-          "deepseek-coder-1.3b-base"
-        ],
-        "raw_display_names": [
-          "DS-Coder-1.3B-Base"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-02 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "deepseek-peking-university/deepseek-coder-33b-base",
-        "display_name": "DS-Coder-33B-Base",
-        "creator": "DeepSeek,Peking University",
-        "modality": "text",
-        "released_at": "2023-11-02",
-        "open_weights": null,
-        "aliases": [
-          "DS-Coder-33B-Base",
-          "deepseek-coder-33b-base",
-          "deepseek-peking-university/deepseek-coder-33b-base"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "deepseek-coder-33b-base"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "deepseek-coder-33b-base",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "DeepSeek,Peking University"
-        ],
-        "release_dates": [
-          "2023-11-02"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 4,
-        "raw_model_versions": [
-          "deepseek-coder-33b-base"
-        ],
-        "raw_display_names": [
-          "DS-Coder-33B-Base"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-02 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "deepseek-peking-university/deepseek-coder-6.7b-base",
-        "display_name": "DS-Coder-6.7B-Base",
-        "creator": "DeepSeek,Peking University",
-        "modality": "text",
-        "released_at": "2023-11-02",
-        "open_weights": null,
-        "aliases": [
-          "DS-Coder-6.7B-Base",
-          "deepseek-coder-6.7b-base",
-          "deepseek-peking-university/deepseek-coder-6.7b-base"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "deepseek-coder-6.7b-base"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "deepseek-coder-6.7b-base",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "DeepSeek,Peking University"
-        ],
-        "release_dates": [
-          "2023-11-02"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 4,
-        "raw_model_versions": [
-          "deepseek-coder-6.7b-base"
-        ],
-        "raw_display_names": [
-          "DS-Coder-6.7B-Base"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-02 — too old to be worth ranking."
         ]
       }
     },
@@ -2912,70 +1590,6 @@
         "dropped_aliases": [],
         "reasons": [
           "No source states which organization made this model."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "deepseek/deepseek-llm-67b-chat",
-        "display_name": "deepseek-llm-67b-chat",
-        "creator": "DeepSeek",
-        "modality": "text",
-        "released_at": "2023-11-29",
-        "open_weights": null,
-        "aliases": [
-          "deepseek-llm-67b-chat",
-          "deepseek/deepseek-llm-67b-chat"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "deepseek-llm-67b-chat"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "deepseek-llm-67b-chat",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "DeepSeek"
-        ],
-        "release_dates": [
-          "2023-11-29"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "Chess Puzzles",
-            "rows": 1
-          },
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "MATH level 5",
-            "rows": 1
-          },
-          {
-            "benchmark": "OTIS Mock AIME 2024-2025",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 4,
-        "raw_model_versions": [
-          "deepseek-llm-67b-chat"
-        ],
-        "raw_display_names": [],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-29 — too old to be worth ranking."
         ]
       }
     },
@@ -3438,81 +2052,6 @@
     },
     {
       "proposed": {
-        "model_id": "databricks/dolly-v2-12b",
-        "display_name": "Dolly-v2-12B",
-        "creator": "Databricks",
-        "modality": "text",
-        "released_at": "2023-04-11",
-        "open_weights": null,
-        "aliases": [
-          "Dolly-v2-12B",
-          "databricks/dolly-v2-12b",
-          "dolly-v2-12b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "dolly-v2-12b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "dolly-v2-12b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Databricks"
-        ],
-        "release_dates": [
-          "2023-04-11"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 7,
-        "raw_model_versions": [
-          "dolly-v2-12b"
-        ],
-        "raw_display_names": [
-          "Dolly-v2-12B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-04-11 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "unknown/falcon-11b-vlm",
         "display_name": "Falcon2-11B VLM",
         "creator": "Unknown",
@@ -3561,330 +2100,6 @@
         "dropped_aliases": [],
         "reasons": [
           "No source states which organization made this model."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "technology-innovation-institute/falcon-180b",
-        "display_name": "Falcon 180B",
-        "creator": "Technology Innovation Institute",
-        "modality": "text",
-        "released_at": "2023-09-06",
-        "open_weights": null,
-        "aliases": [
-          "Falcon 180B",
-          "falcon-180B",
-          "technology-innovation-institute/falcon-180b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "falcon-180B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "falcon-180B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Technology Innovation Institute"
-        ],
-        "release_dates": [
-          "2023-09-06"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 2
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 9,
-        "raw_model_versions": [
-          "falcon-180B"
-        ],
-        "raw_display_names": [
-          "Falcon 180B",
-          "Falcon-180B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-09-06 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "technology-innovation-institute/falcon-40b",
-        "display_name": "Falcon 40B",
-        "creator": "Technology Innovation Institute",
-        "modality": "text",
-        "released_at": "2023-03-15",
-        "open_weights": null,
-        "aliases": [
-          "Falcon 40B",
-          "falcon-40b",
-          "technology-innovation-institute/falcon-40b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "falcon-40b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "falcon-40b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Technology Innovation Institute"
-        ],
-        "release_dates": [
-          "2023-03-15"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 4
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 4
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 4
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 3
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 3
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 1
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 27,
-        "raw_model_versions": [
-          "falcon-40b"
-        ],
-        "raw_display_names": [
-          "Falcon (40B)",
-          "Falcon 40B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-03-15 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "technology-innovation-institute/falcon-40b-instruct",
-        "display_name": "Falcon-Instruct (40B)",
-        "creator": "Technology Innovation Institute",
-        "modality": "text",
-        "released_at": "2023-05-25",
-        "open_weights": null,
-        "aliases": [
-          "Falcon-Instruct (40B)",
-          "falcon-40b-instruct",
-          "technology-innovation-institute/falcon-40b-instruct"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "falcon-40b-instruct"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "falcon-40b-instruct",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Technology Innovation Institute"
-        ],
-        "release_dates": [
-          "2023-05-25"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 1,
-        "raw_model_versions": [
-          "falcon-40b-instruct"
-        ],
-        "raw_display_names": [
-          "Falcon-Instruct (40B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-05-25 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "technology-innovation-institute/falcon-7b",
-        "display_name": "Falcon 7B",
-        "creator": "Technology Innovation Institute",
-        "modality": "text",
-        "released_at": "2023-04-24",
-        "open_weights": null,
-        "aliases": [
-          "Falcon 7B",
-          "falcon-7b",
-          "technology-innovation-institute/falcon-7b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "falcon-7b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "falcon-7b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Technology Innovation Institute"
-        ],
-        "release_dates": [
-          "2023-04-24"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 7
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 7
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 7
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 6
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 5
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 5
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 3
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 47,
-        "raw_model_versions": [
-          "falcon-7b"
-        ],
-        "raw_display_names": [
-          "Falcon (7B)",
-          "Falcon 7B",
-          "Falcon-7B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-04-24 — too old to be worth ranking."
         ]
       }
     },
@@ -4055,78 +2270,6 @@
         "dropped_aliases": [],
         "reasons": [
           "Measured only on benchmarks with no health record here (2 of them), so approving this would add no scores to the site."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "google-deepmind/gemini-1.0-pro-001",
-        "display_name": "Gemini 1.0 Pro",
-        "creator": "Google DeepMind",
-        "modality": "text",
-        "released_at": "2023-12-13",
-        "open_weights": null,
-        "aliases": [
-          "Gemini 1.0 Pro",
-          "gemini-1.0-pro-001",
-          "google-deepmind/gemini-1.0-pro-001"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gemini-1.0-pro-001"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gemini-1.0-pro-001",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Google DeepMind"
-        ],
-        "release_dates": [
-          "2023-12-13"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "DTBench",
-            "rows": 1
-          },
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "MATH level 5",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "OTIS Mock AIME 2024-2025",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 5,
-        "raw_model_versions": [
-          "gemini-1.0-pro-001"
-        ],
-        "raw_display_names": [
-          "Gemini 1.0 Pro",
-          "Gemini 1.0 Pro (001)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-12-13 — too old to be worth ranking."
         ]
       }
     },
@@ -4528,6 +2671,77 @@
     },
     {
       "proposed": {
+        "model_id": "google-deepmind/gemini-4-argon",
+        "display_name": "Gemini 4 Argon",
+        "creator": "Google DeepMind",
+        "modality": "text",
+        "released_at": "2026-09-30",
+        "open_weights": null,
+        "aliases": [
+          "Gemini 4 Argon",
+          "gemini-4-argon",
+          "google-deepmind/gemini-4-argon"
+        ],
+        "variants": [
+          {
+            "variant": "base",
+            "aliases": [
+              "gemini-4-argon_unknown"
+            ]
+          },
+          {
+            "variant": "high",
+            "aliases": [
+              "gemini-4-argon_high"
+            ]
+          }
+        ]
+      },
+      "confidence": "low",
+      "evidence": {
+        "stem": "gemini-4-argon",
+        "sources": [
+          "epoch"
+        ],
+        "organizations": [
+          "Google DeepMind"
+        ],
+        "release_dates": [
+          "2026-09-30"
+        ],
+        "benchmarks": [
+          {
+            "benchmark": "APEX-Agents",
+            "rows": 1
+          },
+          {
+            "benchmark": "FrontierSWE",
+            "rows": 1
+          },
+          {
+            "benchmark": "ProofBench",
+            "rows": 1
+          }
+        ],
+        "benchmarks_resolvable": 0,
+        "total_occurrences": 3,
+        "raw_model_versions": [
+          "gemini-4-argon_high",
+          "gemini-4-argon_unknown"
+        ],
+        "raw_display_names": [
+          "Gemini 4 Argon",
+          "google/gemini-4-argon"
+        ],
+        "openrouter": null,
+        "dropped_aliases": [],
+        "reasons": [
+          "Measured only on benchmarks with no health record here (3 of them), so approving this would add no scores to the site."
+        ]
+      }
+    },
+    {
+      "proposed": {
         "model_id": "google-deepmind-google/gemini-exp-1206",
         "display_name": "gemini-exp-1206",
         "creator": "Google DeepMind,Google",
@@ -4691,63 +2905,6 @@
     },
     {
       "proposed": {
-        "model_id": "google-deepmind/gemma-2-9b",
-        "display_name": "Gemma-2 9B",
-        "creator": "Google DeepMind",
-        "modality": "text",
-        "released_at": null,
-        "open_weights": null,
-        "aliases": [
-          "Gemma-2 9B",
-          "gemma-2-9b",
-          "google-deepmind/gemma-2-9b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gemma-2-9b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gemma-2-9b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Google DeepMind"
-        ],
-        "release_dates": [],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "gemma-2-9b"
-        ],
-        "raw_display_names": [
-          "Gemma-2 9B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "No release date, so this cannot be placed in time."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "google-deepmind/gemma-4-26b-a4b",
         "display_name": "Gemma 4 26B-A4B",
         "creator": "Google DeepMind",
@@ -4811,74 +2968,6 @@
     },
     {
       "proposed": {
-        "model_id": "google/glam-moe",
-        "display_name": "GLaM",
-        "creator": "Google",
-        "modality": "text",
-        "released_at": "2021-12-13",
-        "open_weights": null,
-        "aliases": [
-          "GLaM",
-          "GLaM (MoE)",
-          "google/glam-moe"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "GLaM (MoE)"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "GLaM (MoE)",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Google"
-        ],
-        "release_dates": [
-          "2021-12-13"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "HellaSwag",
-            "rows": 3
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 3
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 3
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 3
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 12,
-        "raw_model_versions": [
-          "GLaM (MoE)"
-        ],
-        "raw_display_names": [
-          "GLaM",
-          "GLaM (MoE)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2021-12-13 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "unknown/glm-4.7-flash",
         "display_name": "glm-4.7-flash",
         "creator": "Unknown",
@@ -4937,241 +3026,6 @@
     },
     {
       "proposed": {
-        "model_id": "deepmind/gopher-280b",
-        "display_name": "Gopher",
-        "creator": "DeepMind",
-        "modality": "text",
-        "released_at": "2021-12-08",
-        "open_weights": null,
-        "aliases": [
-          "Gopher",
-          "Gopher (280B)",
-          "deepmind/gopher-280b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Gopher (280B)"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Gopher (280B)",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "DeepMind"
-        ],
-        "release_dates": [
-          "2021-12-08"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "TriviaQA",
-            "rows": 5
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 5
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 3
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 2
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 21,
-        "raw_model_versions": [
-          "Gopher (280B)"
-        ],
-        "raw_display_names": [
-          "Gopher",
-          "Gopher (280B)",
-          "Gopher (k-Shot)",
-          "Gopher 280B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2021-12-08 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/gpt-3.5-turbo-0613",
-        "display_name": "GPT-3.5 Turbo",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2023-06-13",
-        "open_weights": null,
-        "aliases": [
-          "gpt-3.5-turbo-0613",
-          "openai/gpt-3.5-turbo-0613"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gpt-3.5-turbo-0613"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gpt-3.5-turbo-0613",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2023-06-13"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 2
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 5,
-        "raw_model_versions": [
-          "gpt-3.5-turbo-0613"
-        ],
-        "raw_display_names": [
-          "GPT-3.5",
-          "GPT-3.5 Turbo",
-          "GPT-3.5 Turbo (0613)",
-          "gpt-3.5-turbo-0613"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [
-          {
-            "alias": "GPT-3.5 Turbo",
-            "claimed_by": "openai/gpt-3.5-turbo-0125#base"
-          }
-        ],
-        "reasons": [
-          "Last released 2023-06-13 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/gpt-3.5-turbo-1106",
-        "display_name": "GPT-3.5 version 1106",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2023-11-06",
-        "open_weights": null,
-        "aliases": [
-          "GPT-3.5 version 1106",
-          "gpt-3.5-turbo-1106",
-          "openai/gpt-3.5-turbo-1106"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gpt-3.5-turbo-1106"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gpt-3.5-turbo-1106",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2023-11-06"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ANLI",
-            "rows": 1
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "MATH level 5",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 8,
-        "raw_model_versions": [
-          "gpt-3.5-turbo-1106"
-        ],
-        "raw_display_names": [
-          "GPT-3.5 version 1106"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-06 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "openai/gpt-3.5-turbo-instruct",
         "display_name": "gpt-3.5-turbo-instruct",
         "creator": "OpenAI",
@@ -5219,386 +3073,6 @@
         "dropped_aliases": [],
         "reasons": [
           "Last released 2023-09-18 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/gpt-4-0314",
-        "display_name": "GPT-4",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2023-03-14",
-        "open_weights": null,
-        "aliases": [
-          "GPT-4",
-          "gpt-4-0314",
-          "openai/gpt-4-0314"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gpt-4-0314"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gpt-4-0314",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2023-03-14"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "METR Time Horizons",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "OTIS Mock AIME 2024-2025",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 7,
-        "raw_model_versions": [
-          "gpt-4-0314"
-        ],
-        "raw_display_names": [
-          "GPT-4",
-          "GPT-4 (initial release)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-03-14 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/gpt-4-0613",
-        "display_name": "GPT-4",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2023-06-13",
-        "open_weights": null,
-        "aliases": [
-          "gpt-4-0613",
-          "openai/gpt-4-0613"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gpt-4-0613"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gpt-4-0613",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2023-06-13"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "BBH",
-            "rows": 1
-          },
-          {
-            "benchmark": "Chess Puzzles",
-            "rows": 1
-          },
-          {
-            "benchmark": "DTBench",
-            "rows": 1
-          },
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "LMCA",
-            "rows": 1
-          },
-          {
-            "benchmark": "MATH level 5",
-            "rows": 1
-          },
-          {
-            "benchmark": "METR Time Horizons",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "Mystery Game Puzzles",
-            "rows": 1
-          },
-          {
-            "benchmark": "OTIS Mock AIME 2024-2025",
-            "rows": 1
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "WeirdML",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 13,
-        "raw_model_versions": [
-          "gpt-4-0613"
-        ],
-        "raw_display_names": [
-          "GPT-4",
-          "GPT-4 (0613)",
-          "GPT-4-0613"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [
-          {
-            "alias": "GPT-4",
-            "claimed_by": "openai/gpt-4-0314#base"
-          }
-        ],
-        "reasons": [
-          "Last released 2023-06-13 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/gpt-4-1106-preview",
-        "display_name": "gpt-4-1106-preview",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2023-11-06",
-        "open_weights": null,
-        "aliases": [
-          "gpt-4-1106-preview",
-          "openai/gpt-4-1106-preview"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gpt-4-1106-preview"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gpt-4-1106-preview",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2023-11-06"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "MATH level 5",
-            "rows": 1
-          },
-          {
-            "benchmark": "METR Time Horizons",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 3,
-        "raw_model_versions": [
-          "gpt-4-1106-preview"
-        ],
-        "raw_display_names": [],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-06 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/gpt-4-32k-0314",
-        "display_name": "GPT-4",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2023-03-14",
-        "open_weights": null,
-        "aliases": [
-          "gpt-4-32k-0314",
-          "openai/gpt-4-32k-0314"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gpt-4-32k-0314"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gpt-4-32k-0314",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2023-03-14"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "gpt-4-32k-0314"
-        ],
-        "raw_display_names": [
-          "GPT-4"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [
-          {
-            "alias": "GPT-4",
-            "claimed_by": "openai/gpt-4-0314#base"
-          }
-        ],
-        "reasons": [
-          "Last released 2023-03-14 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/gpt-4-turbo",
-        "display_name": "GPT-4 Turbo",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2023-11-06",
-        "open_weights": null,
-        "aliases": [
-          "GPT-4 Turbo",
-          "gpt-4-turbo",
-          "openai/gpt-4-turbo"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gpt-4-turbo"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gpt-4-turbo",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2023-11-06"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "DTBench",
-            "rows": 1
-          },
-          {
-            "benchmark": "LMCA",
-            "rows": 1
-          },
-          {
-            "benchmark": "METR Time Horizons",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 4,
-        "raw_model_versions": [
-          "gpt-4-turbo"
-        ],
-        "raw_display_names": [
-          "GPT-4 Turbo",
-          "GPT-4 Turbo (1106 preview)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-06 — too old to be worth ranking."
         ]
       }
     },
@@ -5822,7 +3296,7 @@
           "gpt-5.6-sol_promax"
         ],
         "raw_display_names": [
-          "GPT 5.6 Sol (Max + Pro)",
+          "GPT-5.6 Sol",
           "GPT-5.6 Sol Pro"
         ],
         "openrouter": null,
@@ -5938,238 +3412,28 @@
     },
     {
       "proposed": {
-        "model_id": "eleutherai-laion/gpt-j-6b",
-        "display_name": "GPT-J-6B",
-        "creator": "EleutherAI,LAION",
-        "modality": "text",
-        "released_at": "2021-08-05",
-        "open_weights": null,
-        "aliases": [
-          "GPT-J-6B",
-          "eleutherai-laion/gpt-j-6b",
-          "gpt-j-6b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gpt-j-6b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gpt-j-6b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "EleutherAI,LAION"
-        ],
-        "release_dates": [
-          "2021-08-05"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 7,
-        "raw_model_versions": [
-          "gpt-j-6b"
-        ],
-        "raw_display_names": [
-          "GPT-J-6B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2021-08-05 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "eleutherai/gpt-neo-2.7b",
-        "display_name": "GPT-Neo-2.7B",
-        "creator": "EleutherAI",
-        "modality": "text",
-        "released_at": "2021-03-30",
-        "open_weights": null,
-        "aliases": [
-          "GPT-Neo-2.7B",
-          "eleutherai/gpt-neo-2.7b",
-          "gpt-neo-2.7B"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gpt-neo-2.7B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gpt-neo-2.7B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "EleutherAI"
-        ],
-        "release_dates": [
-          "2021-03-30"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 3,
-        "raw_model_versions": [
-          "gpt-neo-2.7B"
-        ],
-        "raw_display_names": [
-          "GPT-Neo-2.7B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2021-03-30 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "eleutherai/gpt-neox-20b",
-        "display_name": "GPT-neox-20B",
-        "creator": "EleutherAI",
-        "modality": "text",
-        "released_at": "2022-04-07",
-        "open_weights": null,
-        "aliases": [
-          "GPT-neox-20B",
-          "eleutherai/gpt-neox-20b",
-          "gpt-neox-20b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "gpt-neox-20b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "gpt-neox-20b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "EleutherAI"
-        ],
-        "release_dates": [
-          "2022-04-07"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 5,
-        "raw_model_versions": [
-          "gpt-neox-20b"
-        ],
-        "raw_display_names": [
-          "GPT-neox-20B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2022-04-07 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/gpt2-xl",
-        "display_name": "GPT2-XL-1.5B",
+        "model_id": "openai/gpt-6-astra-promax",
+        "display_name": "gpt-6-astra_promax",
         "creator": "OpenAI",
         "modality": "text",
-        "released_at": "2019-11-05",
+        "released_at": "2026-09-03",
         "open_weights": null,
         "aliases": [
-          "GPT2-XL-1.5B",
-          "gpt2-xl",
-          "openai/gpt2-xl"
+          "gpt-6-astra_promax",
+          "openai/gpt-6-astra-promax"
         ],
         "variants": [
           {
             "variant": "base",
             "aliases": [
-              "gpt2-xl"
+              "gpt-6-astra_promax"
             ]
           }
         ]
       },
       "confidence": "low",
       "evidence": {
-        "stem": "gpt2-xl",
+        "stem": "gpt-6-astra_promax",
         "sources": [
           "epoch"
         ],
@@ -6177,47 +3441,24 @@
           "OpenAI"
         ],
         "release_dates": [
-          "2019-11-05"
+          "2026-09-03"
         ],
         "benchmarks": [
           {
-            "benchmark": "Winogrande",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "METR Time Horizons",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
+            "benchmark": "WeirdML",
             "rows": 1
           }
         ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 7,
+        "benchmarks_resolvable": 0,
+        "total_occurrences": 1,
         "raw_model_versions": [
-          "gpt2-xl"
+          "gpt-6-astra_promax"
         ],
-        "raw_display_names": [
-          "GPT-2-XL 1.5B",
-          "GPT2-XL-1.5B"
-        ],
+        "raw_display_names": [],
         "openrouter": null,
         "dropped_aliases": [],
         "reasons": [
-          "Last released 2019-11-05 — too old to be worth ranking."
+          "The tier suffix looks like it swallowed part of the model's name, so the split into name and variant cannot be trusted."
         ]
       }
     },
@@ -6398,13 +3639,12 @@
     {
       "proposed": {
         "model_id": "xai/grok-4-1",
-        "display_name": "Grok 4.1",
+        "display_name": "grok-4-1",
         "creator": "xAI",
         "modality": "text",
         "released_at": "2025-11-17",
         "open_weights": null,
         "aliases": [
-          "Grok 4.1",
           "grok-4-1",
           "xai/grok-4-1"
         ],
@@ -6431,26 +3671,20 @@
         ],
         "benchmarks": [
           {
-            "benchmark": "APEX-Agents",
-            "rows": 1
-          },
-          {
             "benchmark": "Cybench",
             "rows": 1
           }
         ],
         "benchmarks_resolvable": 0,
-        "total_occurrences": 2,
+        "total_occurrences": 1,
         "raw_model_versions": [
           "grok-4-1"
         ],
-        "raw_display_names": [
-          "Grok 4.1"
-        ],
+        "raw_display_names": [],
         "openrouter": null,
         "dropped_aliases": [],
         "reasons": [
-          "Measured only on benchmarks with no health record here (2 of them), so approving this would add no scores to the site."
+          "Measured only on benchmarks with no health record here (1 of them), so approving this would add no scores to the site."
         ]
       }
     },
@@ -6681,64 +3915,58 @@
     },
     {
       "proposed": {
-        "model_id": "inflection-ai/inflection-1",
-        "display_name": "Inflection-1",
-        "creator": "Inflection AI",
+        "model_id": "tencent/hy4-preview",
+        "display_name": "tencent/hy4-preview",
+        "creator": "Tencent",
         "modality": "text",
-        "released_at": "2023-06-22",
+        "released_at": "2026-08-28",
         "open_weights": null,
         "aliases": [
-          "Inflection-1",
-          "inflection-ai/inflection-1"
+          "hy4-preview",
+          "tencent/hy4-preview"
         ],
         "variants": [
           {
             "variant": "base",
             "aliases": [
-              "Inflection-1"
+              "hy4-preview_unknown"
             ]
           }
         ]
       },
       "confidence": "low",
       "evidence": {
-        "stem": "Inflection-1",
+        "stem": "hy4-preview",
         "sources": [
           "epoch"
         ],
         "organizations": [
-          "Inflection AI"
+          "Tencent"
         ],
         "release_dates": [
-          "2023-06-22"
+          "2026-08-28"
         ],
         "benchmarks": [
           {
-            "benchmark": "LAMBADA",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
+            "benchmark": "ProofBench",
             "rows": 1
           }
         ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 3,
+        "benchmarks_resolvable": 0,
+        "total_occurrences": 1,
         "raw_model_versions": [
-          "Inflection-1"
+          "hy4-preview_unknown"
         ],
         "raw_display_names": [
-          "Inflection 1",
-          "Inflection-1"
+          "tencent/hy4-preview"
         ],
-        "openrouter": null,
+        "openrouter": {
+          "id": "tencent/hy4-preview",
+          "canonical_slug": "tencent/hy4-preview-20260827"
+        },
         "dropped_aliases": [],
         "reasons": [
-          "Last released 2023-06-22 — too old to be worth ranking."
+          "Measured only on benchmarks with no health record here (1 of them), so approving this would add no scores to the site."
         ]
       }
     },
@@ -7385,693 +4613,6 @@
     },
     {
       "proposed": {
-        "model_id": "meta-ai/llama-13b",
-        "display_name": "LLaMA 13B",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2023-02-24",
-        "open_weights": null,
-        "aliases": [
-          "LLaMA 13B",
-          "LLaMA-13B",
-          "meta-ai/llama-13b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "LLaMA-13B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "LLaMA-13B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2023-02-24"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "TriviaQA",
-            "rows": 8
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 5
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 4
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 3
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 3
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 3
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 3
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "ScienceQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 35,
-        "raw_model_versions": [
-          "LLaMA-13B"
-        ],
-        "raw_display_names": [
-          "LLAMA 1 13B",
-          "LLaMA (13B)",
-          "LLaMA 13B",
-          "LLaMA-13B",
-          "LLaMA1-13B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-02-24 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/llama-2-13b",
-        "display_name": "LLaMA-2 13B",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2023-07-18",
-        "open_weights": null,
-        "aliases": [
-          "LLaMA-2 13B",
-          "Llama-2-13b",
-          "meta-ai/llama-2-13b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Llama-2-13b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Llama-2-13b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2023-07-18"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 7
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 6
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 6
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 6
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 5
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 4
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 3
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "ScienceQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 42,
-        "raw_model_versions": [
-          "Llama-2-13b"
-        ],
-        "raw_display_names": [
-          "LLAMA 2 13B",
-          "LLAMA 2-13B",
-          "LLAMA-2 13B",
-          "LLaMA 2 13B",
-          "LLaMA 2-13B",
-          "LLaMA-2 13B",
-          "LLaMA2-13B",
-          "Llama 2 (13B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-07-18 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/llama-2-13b-chat",
-        "display_name": "LLaMA2-Chat 13B",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2023-07-18",
-        "open_weights": null,
-        "aliases": [
-          "LLaMA2-Chat 13B",
-          "Llama-2-13b-chat",
-          "meta-ai/llama-2-13b-chat"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Llama-2-13b-chat"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Llama-2-13b-chat",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2023-07-18"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 2
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "Chess Puzzles",
-            "rows": 1
-          },
-          {
-            "benchmark": "DTBench",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 8,
-        "raw_model_versions": [
-          "Llama-2-13b-chat"
-        ],
-        "raw_display_names": [
-          "LLaMA2-Chat 13B",
-          "Llama 2 13B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-07-18 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/llama-2-34b",
-        "display_name": "LLAMA 2 34B",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2023-07-18",
-        "open_weights": null,
-        "aliases": [
-          "LLAMA 2 34B",
-          "Llama-2-34b",
-          "meta-ai/llama-2-34b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Llama-2-34b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Llama-2-34b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2023-07-18"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 4
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 3
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 3
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 3
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 3
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 2
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 23,
-        "raw_model_versions": [
-          "Llama-2-34b"
-        ],
-        "raw_display_names": [
-          "LLAMA 2 34B",
-          "LLaMA 2 34B",
-          "LLaMA-2 34B",
-          "LlaMA 2 34B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-07-18 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/llama-2-70b-chat",
-        "display_name": "LLaMA2-Chat 70B",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2023-07-18",
-        "open_weights": null,
-        "aliases": [
-          "LLaMA2-Chat 70B",
-          "Llama-2-70b-chat",
-          "meta-ai/llama-2-70b-chat"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Llama-2-70b-chat"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Llama-2-70b-chat",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2023-07-18"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 2
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "DTBench",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 7,
-        "raw_model_versions": [
-          "Llama-2-70b-chat"
-        ],
-        "raw_display_names": [
-          "LLaMA2-Chat 70B",
-          "Llama 2 70B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-07-18 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/llama-2-70b-chat-hf",
-        "display_name": "Llama-2-70b-chat-hf",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2023-07-18",
-        "open_weights": null,
-        "aliases": [
-          "Llama-2-70b-chat-hf",
-          "meta-ai/llama-2-70b-chat-hf"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Llama-2-70b-chat-hf"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Llama-2-70b-chat-hf",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2023-07-18"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "MATH level 5",
-            "rows": 1
-          },
-          {
-            "benchmark": "OTIS Mock AIME 2024-2025",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 3,
-        "raw_model_versions": [
-          "Llama-2-70b-chat-hf"
-        ],
-        "raw_display_names": [],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-07-18 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/llama-2-70b-hf",
-        "display_name": "LLAMA 2 70B",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2023-07-18",
-        "open_weights": null,
-        "aliases": [
-          "LLAMA 2 70B",
-          "Llama-2-70b-hf",
-          "meta-ai/llama-2-70b-hf"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Llama-2-70b-hf"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Llama-2-70b-hf",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2023-07-18"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 6
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 5
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 4
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 4
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 30,
-        "raw_model_versions": [
-          "Llama-2-70b-hf"
-        ],
-        "raw_display_names": [
-          "LLAMA 2 70B",
-          "LLaMA 2 70B",
-          "LLaMA-2 70B",
-          "LlaMA 2 70B",
-          "Llama 2 (70B)",
-          "Llama 2 (7B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-07-18 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/llama-2-7b",
-        "display_name": "LLAMA 2 7B",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2023-07-18",
-        "open_weights": null,
-        "aliases": [
-          "LLAMA 2 7B",
-          "Llama-2-7b",
-          "meta-ai/llama-2-7b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Llama-2-7b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Llama-2-7b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2023-07-18"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 7
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 6
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 6
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 6
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 5
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 3
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 3
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 2
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "ScienceQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 43,
-        "raw_model_versions": [
-          "Llama-2-7b"
-        ],
-        "raw_display_names": [
-          "LLAMA 2 7B",
-          "LLAMA 2-7B",
-          "LLAMA-2 7B",
-          "LLaMA 2 7B",
-          "LLaMA 2-7B",
-          "LLaMA-2 7B",
-          "LLaMA2-7B",
-          "LlaMA 2 7B",
-          "Llama 2 (7B)",
-          "Llama2-7B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-07-18 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "meta-ai/llama-2-7b-chat",
         "display_name": "llama-2-7b-chat",
         "creator": "Meta AI",
@@ -8171,295 +4712,6 @@
         "dropped_aliases": [],
         "reasons": [
           "Measured only on benchmarks with no health record here (1 of them), so approving this would add no scores to the site."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/llama-33b",
-        "display_name": "LLaMA 33B",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2023-02-24",
-        "open_weights": null,
-        "aliases": [
-          "LLaMA 33B",
-          "LLaMA-33B",
-          "meta-ai/llama-33b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "LLaMA-33B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "LLaMA-33B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2023-02-24"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "TriviaQA",
-            "rows": 8
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 5
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 4
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 4
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 2
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 34,
-        "raw_model_versions": [
-          "LLaMA-33B"
-        ],
-        "raw_display_names": [
-          "LLAMA 1 33B",
-          "LLaMA (30B)",
-          "LLaMA 1 33B",
-          "LLaMA 33B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-02-24 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/llama-65b",
-        "display_name": "LLaMA 65B",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2023-02-24",
-        "open_weights": null,
-        "aliases": [
-          "LLaMA 65B",
-          "LLaMA-65B",
-          "meta-ai/llama-65b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "LLaMA-65B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "LLaMA-65B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2023-02-24"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "TriviaQA",
-            "rows": 8
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 5
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 3
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 3
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 2
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 30,
-        "raw_model_versions": [
-          "LLaMA-65B"
-        ],
-        "raw_display_names": [
-          "LLAMA 1 65B",
-          "LLaMA (65B)",
-          "LLaMA 65B",
-          "Llama-65B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-02-24 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/llama-7b",
-        "display_name": "LLaMA 7B",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2023-02-24",
-        "open_weights": null,
-        "aliases": [
-          "LLaMA 7B",
-          "LLaMA-7B",
-          "meta-ai/llama-7b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "LLaMA-7B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "LLaMA-7B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2023-02-24"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "TriviaQA",
-            "rows": 8
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 7
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 6
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 5
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 5
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 5
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 3
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 3
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "ScienceQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 49,
-        "raw_model_versions": [
-          "LLaMA-7B"
-        ],
-        "raw_display_names": [
-          "LLAMA 1 7B",
-          "LLAMA-7B",
-          "LLaMA (7B)",
-          "LLaMA 7B",
-          "LLaMA-7B",
-          "LLaMA1-7B",
-          "Llama-7B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-02-24 — too old to be worth ranking."
         ]
       }
     },
@@ -8731,79 +4983,6 @@
     },
     {
       "proposed": {
-        "model_id": "microsoft-nvidia/megatron-turing-nlg-530b",
-        "display_name": "MT-NLG",
-        "creator": "Microsoft,NVIDIA",
-        "modality": "text",
-        "released_at": "2021-10-11",
-        "open_weights": null,
-        "aliases": [
-          "MT-NLG",
-          "Megatron-Turing NLG 530B",
-          "microsoft-nvidia/megatron-turing-nlg-530b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Megatron-Turing NLG 530B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Megatron-Turing NLG 530B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Microsoft,NVIDIA"
-        ],
-        "release_dates": [
-          "2021-10-11"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "HellaSwag",
-            "rows": 4
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 4
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 4
-          },
-          {
-            "benchmark": "ANLI",
-            "rows": 3
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 19,
-        "raw_model_versions": [
-          "Megatron-Turing NLG 530B"
-        ],
-        "raw_display_names": [
-          "MT-NLG",
-          "MT-NLG (ours)",
-          "Megatron-NLG (530B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2021-10-11 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "inception-labs/mercury-2",
         "display_name": "mercury-2",
         "creator": "Inception Labs",
@@ -8849,6 +5028,64 @@
         "dropped_aliases": [],
         "reasons": [
           "No release date, so this cannot be placed in time."
+        ]
+      }
+    },
+    {
+      "proposed": {
+        "model_id": "inception-labs/mercury-2.5",
+        "display_name": "inception/mercury-2.5",
+        "creator": "Inception Labs",
+        "modality": "text",
+        "released_at": "2026-09-08",
+        "open_weights": null,
+        "aliases": [
+          "inception-labs/mercury-2.5",
+          "inception/mercury-2.5",
+          "mercury-2.5"
+        ],
+        "variants": [
+          {
+            "variant": "base",
+            "aliases": [
+              "mercury-2.5_unknown"
+            ]
+          }
+        ]
+      },
+      "confidence": "low",
+      "evidence": {
+        "stem": "mercury-2.5",
+        "sources": [
+          "epoch"
+        ],
+        "organizations": [
+          "Inception Labs"
+        ],
+        "release_dates": [
+          "2026-09-08"
+        ],
+        "benchmarks": [
+          {
+            "benchmark": "ProofBench",
+            "rows": 1
+          }
+        ],
+        "benchmarks_resolvable": 0,
+        "total_occurrences": 1,
+        "raw_model_versions": [
+          "mercury-2.5_unknown"
+        ],
+        "raw_display_names": [
+          "inception/mercury-2.5"
+        ],
+        "openrouter": {
+          "id": "inception/mercury-2.5",
+          "canonical_slug": "inception/mercury-2.5-20260908"
+        },
+        "dropped_aliases": [],
+        "reasons": [
+          "Measured only on benchmarks with no health record here (1 of them), so approving this would add no scores to the site."
         ]
       }
     },
@@ -9031,6 +5268,124 @@
     },
     {
       "proposed": {
+        "model_id": "xiaomi-corp/mimo-v2.6-flash",
+        "display_name": "xiaomi/mimo-v2.6-flash",
+        "creator": "Xiaomi Corp",
+        "modality": "text",
+        "released_at": "2026-09-21",
+        "open_weights": null,
+        "aliases": [
+          "mimo-v2.6-flash",
+          "xiaomi-corp/mimo-v2.6-flash",
+          "xiaomi/mimo-v2.6-flash"
+        ],
+        "variants": [
+          {
+            "variant": "base",
+            "aliases": [
+              "mimo-v2.6-flash"
+            ]
+          }
+        ]
+      },
+      "confidence": "low",
+      "evidence": {
+        "stem": "mimo-v2.6-flash",
+        "sources": [
+          "epoch"
+        ],
+        "organizations": [
+          "Xiaomi Corp"
+        ],
+        "release_dates": [
+          "2026-09-21"
+        ],
+        "benchmarks": [
+          {
+            "benchmark": "ProofBench",
+            "rows": 1
+          }
+        ],
+        "benchmarks_resolvable": 0,
+        "total_occurrences": 1,
+        "raw_model_versions": [
+          "mimo-v2.6-flash"
+        ],
+        "raw_display_names": [
+          "xiaomi/mimo-v2.6-flash"
+        ],
+        "openrouter": {
+          "id": "xiaomi/mimo-v2.6-flash",
+          "canonical_slug": "xiaomi/mimo-v2.6-flash-20260921"
+        },
+        "dropped_aliases": [],
+        "reasons": [
+          "Measured only on benchmarks with no health record here (1 of them), so approving this would add no scores to the site."
+        ]
+      }
+    },
+    {
+      "proposed": {
+        "model_id": "xiaomi-corp/mimo-v2.6-pro",
+        "display_name": "MiMo V2.6 Pro",
+        "creator": "Xiaomi Corp",
+        "modality": "text",
+        "released_at": "2026-09-21",
+        "open_weights": null,
+        "aliases": [
+          "MiMo V2.6 Pro",
+          "mimo-v2.6-pro",
+          "xiaomi-corp/mimo-v2.6-pro"
+        ],
+        "variants": [
+          {
+            "variant": "base",
+            "aliases": [
+              "mimo-v2.6-pro"
+            ]
+          }
+        ]
+      },
+      "confidence": "low",
+      "evidence": {
+        "stem": "mimo-v2.6-pro",
+        "sources": [
+          "epoch"
+        ],
+        "organizations": [
+          "Xiaomi Corp"
+        ],
+        "release_dates": [
+          "2026-09-21"
+        ],
+        "benchmarks": [
+          {
+            "benchmark": "APEX-Agents",
+            "rows": 1
+          },
+          {
+            "benchmark": "ProofBench",
+            "rows": 1
+          }
+        ],
+        "benchmarks_resolvable": 0,
+        "total_occurrences": 2,
+        "raw_model_versions": [
+          "mimo-v2.6-pro"
+        ],
+        "raw_display_names": [
+          "MiMo V2.6 Pro",
+          "xiaomi/mimo-v2.6-pro"
+        ],
+        "openrouter": null,
+        "dropped_aliases": [],
+        "reasons": [
+          "Measured only on benchmarks with no health record here (2 of them), so approving this would add no scores to the site."
+        ]
+      }
+    },
+    {
+      "proposed": {
         "model_id": "minimax/minimax-m1-80k",
         "display_name": "MiniMax-M1-80k",
         "creator": "MiniMax",
@@ -9138,170 +5493,6 @@
     },
     {
       "proposed": {
-        "model_id": "mistral-ai/mistral-7b-instruct-v0.2",
-        "display_name": "Mistral 7B",
-        "creator": "Mistral AI",
-        "modality": "text",
-        "released_at": "2023-12-11",
-        "open_weights": null,
-        "aliases": [
-          "Mistral-7B-Instruct-v0.2",
-          "mistral-ai/mistral-7b-instruct-v0.2"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Mistral-7B-Instruct-v0.2"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Mistral-7B-Instruct-v0.2",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Mistral AI"
-        ],
-        "release_dates": [
-          "2023-12-11"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 3,
-        "raw_model_versions": [
-          "Mistral-7B-Instruct-v0.2"
-        ],
-        "raw_display_names": [
-          "Mistral 7B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [
-          {
-            "alias": "Mistral 7B",
-            "claimed_by": "mistral-ai/mistral-7b-instruct-v0.1#base"
-          }
-        ],
-        "reasons": [
-          "Last released 2023-12-11 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "mistral-ai/mistral-7b-v0.1",
-        "display_name": "Mistral 7B",
-        "creator": "Mistral AI",
-        "modality": "text",
-        "released_at": "2023-09-27",
-        "open_weights": null,
-        "aliases": [
-          "Mistral-7B-v0.1",
-          "mistral-ai/mistral-7b-v0.1"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Mistral-7B-v0.1"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Mistral-7B-v0.1",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Mistral AI"
-        ],
-        "release_dates": [
-          "2023-09-27"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 5
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 5
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 4
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 4
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "ANLI",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 27,
-        "raw_model_versions": [
-          "Mistral-7B-v0.1"
-        ],
-        "raw_display_names": [
-          "Mistral 7B",
-          "Mistral 7b",
-          "Mistral v0.1 (7B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [
-          {
-            "alias": "Mistral 7B",
-            "claimed_by": "mistral-ai/mistral-7b-instruct-v0.1#base"
-          }
-        ],
-        "reasons": [
-          "Last released 2023-09-27 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "mistral-ai/mistral-large-2512",
         "display_name": "Mistral Large 3",
         "creator": "Mistral AI",
@@ -9356,6 +5547,65 @@
         "dropped_aliases": [],
         "reasons": [
           "Measured only on benchmarks with no health record here (2 of them), so approving this would add no scores to the site."
+        ]
+      }
+    },
+    {
+      "proposed": {
+        "model_id": "mistral-ai/mistral-large-4-0",
+        "display_name": "mistral-large-4-0",
+        "creator": "Mistral AI",
+        "modality": "text",
+        "released_at": "2026-10-06",
+        "open_weights": null,
+        "aliases": [
+          "mistral-ai/mistral-large-4-0",
+          "mistral-large-4-0"
+        ],
+        "variants": [
+          {
+            "variant": "base",
+            "aliases": [
+              "mistral-ai/mistral-large-4-0",
+              "mistral-large-4-0"
+            ]
+          },
+          {
+            "variant": "high",
+            "aliases": [
+              "mistral-large-4-0_high"
+            ]
+          }
+        ]
+      },
+      "confidence": "low",
+      "evidence": {
+        "stem": "mistral-large-4-0",
+        "sources": [
+          "epoch"
+        ],
+        "organizations": [
+          "Mistral AI"
+        ],
+        "release_dates": [
+          "2026-10-06"
+        ],
+        "benchmarks": [
+          {
+            "benchmark": "SimpleQA Verified",
+            "rows": 1
+          }
+        ],
+        "benchmarks_resolvable": 0,
+        "total_occurrences": 1,
+        "raw_model_versions": [
+          "mistral-large-4-0_high"
+        ],
+        "raw_display_names": [],
+        "openrouter": null,
+        "dropped_aliases": [],
+        "reasons": [
+          "Measured only on benchmarks with no health record here (1 of them), so approving this would add no scores to the site."
         ]
       }
     },
@@ -9828,150 +6078,6 @@
     },
     {
       "proposed": {
-        "model_id": "mistral-ai/mixtral-8x7b-instruct-v0.1",
-        "display_name": "Mixtral-8x7B-Instruct-v0.1",
-        "creator": "Mistral AI",
-        "modality": "text",
-        "released_at": "2023-12-11",
-        "open_weights": null,
-        "aliases": [
-          "Mixtral-8x7B-Instruct-v0.1",
-          "mistral-ai/mixtral-8x7b-instruct-v0.1"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Mixtral-8x7B-Instruct-v0.1"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Mixtral-8x7B-Instruct-v0.1",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Mistral AI"
-        ],
-        "release_dates": [
-          "2023-12-11"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "MATH level 5",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "Mixtral-8x7B-Instruct-v0.1"
-        ],
-        "raw_display_names": [],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-12-11 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "mistral-ai/mixtral-8x7b-v0.1",
-        "display_name": "Mixtral 8x7B",
-        "creator": "Mistral AI",
-        "modality": "text",
-        "released_at": "2023-12-11",
-        "open_weights": null,
-        "aliases": [
-          "Mixtral 8x7B",
-          "Mixtral-8x7B-v0.1",
-          "mistral-ai/mixtral-8x7b-v0.1"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Mixtral-8x7B-v0.1"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Mixtral-8x7B-v0.1",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Mistral AI"
-        ],
-        "release_dates": [
-          "2023-12-11"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 2
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 2
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 2
-          },
-          {
-            "benchmark": "ANLI",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 13,
-        "raw_model_versions": [
-          "Mixtral-8x7B-v0.1"
-        ],
-        "raw_display_names": [
-          "Mixtral 8x7B",
-          "Mixtral 8x7b"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-12-11 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "unknown/ml-elephant",
         "display_name": "zoo-ml-text-to-cad",
         "creator": "Unknown",
@@ -10254,237 +6360,6 @@
     },
     {
       "proposed": {
-        "model_id": "mosaicml/mpt-30b",
-        "display_name": "MPT 30B",
-        "creator": "MosaicML",
-        "modality": "text",
-        "released_at": "2023-06-22",
-        "open_weights": null,
-        "aliases": [
-          "MPT 30B",
-          "mosaicml/mpt-30b",
-          "mpt-30b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "mpt-30b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "mpt-30b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "MosaicML"
-        ],
-        "release_dates": [
-          "2023-06-22"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "TriviaQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 3
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 14,
-        "raw_model_versions": [
-          "mpt-30b"
-        ],
-        "raw_display_names": [
-          "MPT (30B)",
-          "MPT 30B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-06-22 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "mosaicml/mpt-30b-instruct",
-        "display_name": "MPT-Instruct (30B)",
-        "creator": "MosaicML",
-        "modality": "text",
-        "released_at": "2023-06-22",
-        "open_weights": null,
-        "aliases": [
-          "MPT-Instruct (30B)",
-          "mosaicml/mpt-30b-instruct",
-          "mpt-30b-instruct"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "mpt-30b-instruct"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "mpt-30b-instruct",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "MosaicML"
-        ],
-        "release_dates": [
-          "2023-06-22"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 1,
-        "raw_model_versions": [
-          "mpt-30b-instruct"
-        ],
-        "raw_display_names": [
-          "MPT-Instruct (30B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-06-22 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "mosaicml/mpt-7b",
-        "display_name": "MPT 7B",
-        "creator": "MosaicML",
-        "modality": "text",
-        "released_at": "2023-05-05",
-        "open_weights": null,
-        "aliases": [
-          "MPT 7B",
-          "mosaicml/mpt-7b",
-          "mpt-7b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "mpt-7b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "mpt-7b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "MosaicML"
-        ],
-        "release_dates": [
-          "2023-05-05"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "MMLU",
-            "rows": 6
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 4
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 4
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 3
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 3
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 3
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 3
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 36,
-        "raw_model_versions": [
-          "mpt-7b"
-        ],
-        "raw_display_names": [
-          "MPT 7B",
-          "MPT-7B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-05-05 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "meta-ai/muse-spark-1.1",
         "display_name": "Muse Spark 1.1",
         "creator": "Meta AI",
@@ -10617,11 +6492,19 @@
         ],
         "benchmarks": [
           {
+            "benchmark": "APEX-Agents",
+            "rows": 1
+          },
+          {
             "benchmark": "DeepSWE",
             "rows": 1
           },
           {
             "benchmark": "DTBench",
+            "rows": 1
+          },
+          {
+            "benchmark": "FrontierSWE",
             "rows": 1
           },
           {
@@ -10646,7 +6529,7 @@
           }
         ],
         "benchmarks_resolvable": 0,
-        "total_occurrences": 7,
+        "total_occurrences": 9,
         "raw_model_versions": [
           "muse-spark-1.2",
           "muse-spark-1.2_xhigh"
@@ -10659,19 +6542,20 @@
         "openrouter": null,
         "dropped_aliases": [],
         "reasons": [
-          "Measured only on benchmarks with no health record here (7 of them), so approving this would add no scores to the site."
+          "Measured only on benchmarks with no health record here (9 of them), so approving this would add no scores to the site."
         ]
       }
     },
     {
       "proposed": {
         "model_id": "meta-ai/muse-spark-1.3",
-        "display_name": "muse-spark-1.3",
+        "display_name": "Muse Spark 1.3",
         "creator": "Meta AI",
         "modality": "text",
         "released_at": "2026-09-02",
         "open_weights": null,
         "aliases": [
+          "Muse Spark 1.3",
           "meta-ai/muse-spark-1.3",
           "muse-spark-1.3"
         ],
@@ -10679,8 +6563,13 @@
           {
             "variant": "base",
             "aliases": [
-              "meta-ai/muse-spark-1.3",
-              "muse-spark-1.3"
+              "muse-spark-1.3_unknown"
+            ]
+          },
+          {
+            "variant": "max",
+            "aliases": [
+              "muse-spark-1.3_max"
             ]
           },
           {
@@ -10706,18 +6595,34 @@
         "benchmarks": [
           {
             "benchmark": "Chess Puzzles",
-            "rows": 1
+            "rows": 2
           },
           {
             "benchmark": "FrontierMath-Tier-4-v2-Private",
-            "rows": 1
+            "rows": 2
           },
           {
             "benchmark": "FrontierMath-Tiers-1-3-v2-Private",
-            "rows": 1
+            "rows": 2
           },
           {
             "benchmark": "Mystery Game Puzzles",
+            "rows": 2
+          },
+          {
+            "benchmark": "ProofBench",
+            "rows": 2
+          },
+          {
+            "benchmark": "APEX-Agents",
+            "rows": 1
+          },
+          {
+            "benchmark": "DTBench",
+            "rows": 1
+          },
+          {
+            "benchmark": "LMCA",
             "rows": 1
           },
           {
@@ -10726,15 +6631,21 @@
           }
         ],
         "benchmarks_resolvable": 0,
-        "total_occurrences": 5,
+        "total_occurrences": 14,
         "raw_model_versions": [
+          "muse-spark-1.3_max",
+          "muse-spark-1.3_unknown",
           "muse-spark-1.3_xhigh"
         ],
-        "raw_display_names": [],
+        "raw_display_names": [
+          "Muse Spark 1.3",
+          "meta/muse_spark_1_3",
+          "meta/muse_spark_1_3_max"
+        ],
         "openrouter": null,
         "dropped_aliases": [],
         "reasons": [
-          "Measured only on benchmarks with no health record here (5 of them), so approving this would add no scores to the site."
+          "Measured only on benchmarks with no health record here (9 of them), so approving this would add no scores to the site."
         ]
       }
     },
@@ -10742,7 +6653,7 @@
       "proposed": {
         "model_id": "nvidia/nemotron-3-super",
         "display_name": "nemotron-3-super",
-        "creator": "NVIDIA",
+        "creator": "Nvidia",
         "modality": "text",
         "released_at": "2026-03-11",
         "open_weights": null,
@@ -10766,7 +6677,7 @@
           "epoch"
         ],
         "organizations": [
-          "NVIDIA"
+          "Nvidia"
         ],
         "release_dates": [
           "2026-03-11"
@@ -10915,132 +6826,6 @@
     },
     {
       "proposed": {
-        "model_id": "mistral-ai/open-mistral-7b",
-        "display_name": "Mistral Tiny",
-        "creator": "Mistral AI",
-        "modality": "text",
-        "released_at": "2023-09-27",
-        "open_weights": null,
-        "aliases": [
-          "Mistral Tiny",
-          "mistral-ai/open-mistral-7b",
-          "open-mistral-7b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "open-mistral-7b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "open-mistral-7b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Mistral AI"
-        ],
-        "release_dates": [
-          "2023-09-27"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "DTBench",
-            "rows": 1
-          },
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "MATH level 5",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 3,
-        "raw_model_versions": [
-          "open-mistral-7b"
-        ],
-        "raw_display_names": [
-          "Mistral Tiny"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-09-27 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "mistral-ai/open-mixtral-8x7b",
-        "display_name": "Mistral Small (Dec '23)",
-        "creator": "Mistral AI",
-        "modality": "text",
-        "released_at": "2023-12-11",
-        "open_weights": null,
-        "aliases": [
-          "Mistral Small (Dec '23)",
-          "mistral-ai/open-mixtral-8x7b",
-          "open-mixtral-8x7b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "open-mixtral-8x7b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "open-mixtral-8x7b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Mistral AI"
-        ],
-        "release_dates": [
-          "2023-12-11"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "DTBench",
-            "rows": 1
-          },
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "MATH level 5",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 3,
-        "raw_model_versions": [
-          "open-mixtral-8x7b"
-        ],
-        "raw_display_names": [
-          "Mistral Small (Dec '23)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-12-11 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "unknown/openhands-lm-32b-v0.1",
         "display_name": "openhands-lm-32b-v0.1",
         "creator": "Unknown",
@@ -11086,77 +6871,6 @@
         "dropped_aliases": [],
         "reasons": [
           "No source states which organization made this model."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/opt-1.3b",
-        "display_name": "OPT-1.3B",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2022-05-11",
-        "open_weights": null,
-        "aliases": [
-          "OPT-1.3B",
-          "meta-ai/opt-1.3b",
-          "opt-1.3b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "opt-1.3b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "opt-1.3b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2022-05-11"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 5,
-        "raw_model_versions": [
-          "opt-1.3b"
-        ],
-        "raw_display_names": [
-          "OPT-1.3B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2022-05-11 — too old to be worth ranking."
         ]
       }
     },
@@ -11230,124 +6944,6 @@
         "dropped_aliases": [],
         "reasons": [
           "No source states which organization made this model."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/opt-175b",
-        "display_name": "OPT (175B)",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2022-05-02",
-        "open_weights": null,
-        "aliases": [
-          "OPT (175B)",
-          "meta-ai/opt-175b",
-          "opt-175b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "opt-175b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "opt-175b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2022-05-02"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "opt-175b"
-        ],
-        "raw_display_names": [
-          "OPT (175B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2022-05-02 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "meta-ai/opt-66b",
-        "display_name": "OPT (66B)",
-        "creator": "Meta AI",
-        "modality": "text",
-        "released_at": "2022-05-03",
-        "open_weights": null,
-        "aliases": [
-          "OPT (66B)",
-          "meta-ai/opt-66b",
-          "opt-66b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "opt-66b"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "opt-66b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Meta AI"
-        ],
-        "release_dates": [
-          "2022-05-03"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "opt-66b"
-        ],
-        "raw_display_names": [
-          "OPT (66B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2022-05-03 — too old to be worth ranking."
         ]
       }
     },
@@ -11554,96 +7150,6 @@
     },
     {
       "proposed": {
-        "model_id": "google-research/palm-540b",
-        "display_name": "PaLM 540B",
-        "creator": "Google Research",
-        "modality": "text",
-        "released_at": "2022-04-04",
-        "open_weights": null,
-        "aliases": [
-          "PaLM 540B",
-          "google-research/palm-540b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "PaLM 540B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "PaLM 540B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Google Research"
-        ],
-        "release_dates": [
-          "2022-04-04"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 5
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 5
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 4
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 3
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 3
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 25,
-        "raw_model_versions": [
-          "PaLM 540B"
-        ],
-        "raw_display_names": [
-          "5-shot PaLM",
-          "8-shot PaLM",
-          "PaLM",
-          "PaLM 540B",
-          "PaLM-540B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2022-04-04 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "unknown/palm-62b",
         "display_name": "PaLM 62B",
         "creator": "Unknown",
@@ -11763,162 +7269,6 @@
         "dropped_aliases": [],
         "reasons": [
           "Measured only on benchmarks with no health record here (1 of them), so approving this would add no scores to the site."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "microsoft/phi-1-5",
-        "display_name": "phi-1.5",
-        "creator": "Microsoft",
-        "modality": "text",
-        "released_at": "2023-09-11",
-        "open_weights": null,
-        "aliases": [
-          "microsoft/phi-1-5",
-          "phi-1.5",
-          "phi-1_5"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "phi-1_5"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "phi-1_5",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Microsoft"
-        ],
-        "release_dates": [
-          "2023-09-11"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 5,
-        "raw_model_versions": [
-          "phi-1_5"
-        ],
-        "raw_display_names": [
-          "phi-1.5",
-          "phi-1.5 (1.3B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-09-11 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "microsoft/phi-2",
-        "display_name": "Phi-2",
-        "creator": "Microsoft",
-        "modality": "text",
-        "released_at": "2023-12-12",
-        "open_weights": null,
-        "aliases": [
-          "Phi-2",
-          "microsoft/phi-2",
-          "phi-2"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "phi-2"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "phi-2",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Microsoft"
-        ],
-        "release_dates": [
-          "2023-12-12"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "ANLI",
-            "rows": 1
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 10,
-        "raw_model_versions": [
-          "phi-2"
-        ],
-        "raw_display_names": [
-          "Phi-2",
-          "Phi-2 2.7b"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-12-12 — too old to be worth ranking."
         ]
       }
     },
@@ -12098,221 +7448,6 @@
         "dropped_aliases": [],
         "reasons": [
           "No source states which organization made this model."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "alibaba/qwen-14b",
-        "display_name": "QWEN 14B",
-        "creator": "Alibaba",
-        "modality": "text",
-        "released_at": "2023-09-28",
-        "open_weights": null,
-        "aliases": [
-          "QWEN 14B",
-          "Qwen-14B",
-          "alibaba/qwen-14b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Qwen-14B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Qwen-14B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Alibaba"
-        ],
-        "release_dates": [
-          "2023-09-28"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "BBH",
-            "rows": 3
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 3
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 2
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 2
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 14,
-        "raw_model_versions": [
-          "Qwen-14B"
-        ],
-        "raw_display_names": [
-          "QWEN 14B",
-          "Qwen 14B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-09-28 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "alibaba/qwen-14b-chat",
-        "display_name": "Qwen-Chat 14B",
-        "creator": "Alibaba",
-        "modality": "text",
-        "released_at": "2023-09-24",
-        "open_weights": null,
-        "aliases": [
-          "Qwen-14B-Chat",
-          "Qwen-Chat 14B",
-          "alibaba/qwen-14b-chat"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Qwen-14B-Chat"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Qwen-14B-Chat",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Alibaba"
-        ],
-        "release_dates": [
-          "2023-09-24"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 2
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 6,
-        "raw_model_versions": [
-          "Qwen-14B-Chat"
-        ],
-        "raw_display_names": [
-          "Qwen-Chat 14B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-09-24 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "alibaba/qwen-7b",
-        "display_name": "QWEN 7B",
-        "creator": "Alibaba",
-        "modality": "text",
-        "released_at": "2023-09-28",
-        "open_weights": null,
-        "aliases": [
-          "QWEN 7B",
-          "Qwen-7B",
-          "alibaba/qwen-7b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Qwen-7B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Qwen-7B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Alibaba"
-        ],
-        "release_dates": [
-          "2023-09-28"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 2
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 9,
-        "raw_model_versions": [
-          "Qwen-7B"
-        ],
-        "raw_display_names": [
-          "QWEN 7B",
-          "Qwen 7B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-09-28 — too old to be worth ranking."
         ]
       }
     },
@@ -13399,73 +8534,6 @@
     },
     {
       "proposed": {
-        "model_id": "alibaba/qwen3.8-27b",
-        "display_name": "alibaba/qwen3.8-27b",
-        "creator": "Alibaba",
-        "modality": "text",
-        "released_at": "2026-08-14",
-        "open_weights": null,
-        "aliases": [
-          "alibaba/qwen3.8-27b",
-          "qwen3.8-27b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "qwen3.8-27b"
-            ]
-          },
-          {
-            "variant": "xhigh",
-            "aliases": [
-              "qwen3.8-27b (xhigh)",
-              "qwen3.8-27b_xhigh"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "qwen3.8-27b",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Alibaba"
-        ],
-        "release_dates": [
-          "2026-08-14"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ProofBench",
-            "rows": 1
-          },
-          {
-            "benchmark": "Surface Evolver Bench",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 0,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "qwen3.8-27b",
-          "qwen3.8-27b_xhigh"
-        ],
-        "raw_display_names": [
-          "alibaba/qwen3.8-27b",
-          "qwen3.8-27b (xhigh)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Measured only on benchmarks with no health record here (2 of them), so approving this would add no scores to the site."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "alibaba/qwq-32b-16k-thinking",
         "display_name": "QwQ-32B (16K thinking)",
         "creator": "Alibaba",
@@ -13704,86 +8772,6 @@
     },
     {
       "proposed": {
-        "model_id": "stability-ai/stablebeluga2",
-        "display_name": "StableBeluga2 70B",
-        "creator": "Stability AI",
-        "modality": "text",
-        "released_at": "2023-07-20",
-        "open_weights": null,
-        "aliases": [
-          "StableBeluga2",
-          "StableBeluga2 70B",
-          "stability-ai/stablebeluga2"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "StableBeluga2"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "StableBeluga2",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Stability AI"
-        ],
-        "release_dates": [
-          "2023-07-20"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "LAMBADA",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 8,
-        "raw_model_versions": [
-          "StableBeluga2"
-        ],
-        "raw_display_names": [
-          "StableBeluga2",
-          "StableBeluga2 70B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-07-20 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
         "model_id": "unknown/stablelm-tuned-alpha-7b",
         "display_name": "StableLM-alpha-7B",
         "creator": "Unknown",
@@ -13848,6 +8836,63 @@
         "dropped_aliases": [],
         "reasons": [
           "No source states which organization made this model."
+        ]
+      }
+    },
+    {
+      "proposed": {
+        "model_id": "stepfun/step-5-preview",
+        "display_name": "stepfun/step-5-preview",
+        "creator": "StepFun",
+        "modality": "text",
+        "released_at": "2026-09-18",
+        "open_weights": null,
+        "aliases": [
+          "step-5-preview",
+          "stepfun/step-5-preview"
+        ],
+        "variants": [
+          {
+            "variant": "base",
+            "aliases": [
+              "step-5-preview_unknown"
+            ]
+          }
+        ]
+      },
+      "confidence": "low",
+      "evidence": {
+        "stem": "step-5-preview",
+        "sources": [
+          "epoch"
+        ],
+        "organizations": [
+          "StepFun"
+        ],
+        "release_dates": [
+          "2026-09-18"
+        ],
+        "benchmarks": [
+          {
+            "benchmark": "ProofBench",
+            "rows": 1
+          }
+        ],
+        "benchmarks_resolvable": 0,
+        "total_occurrences": 1,
+        "raw_model_versions": [
+          "step-5-preview_unknown"
+        ],
+        "raw_display_names": [
+          "stepfun/step-5-preview"
+        ],
+        "openrouter": {
+          "id": "stepfun/step-5-preview",
+          "canonical_slug": "stepfun/step-5-preview-20261008"
+        },
+        "dropped_aliases": [],
+        "reasons": [
+          "Measured only on benchmarks with no health record here (1 of them), so approving this would add no scores to the site."
         ]
       }
     },
@@ -13948,110 +8993,6 @@
         "dropped_aliases": [],
         "reasons": [
           "No source states which organization made this model."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "google/t5-11b",
-        "display_name": "T5-11B",
-        "creator": "Google",
-        "modality": "text",
-        "released_at": null,
-        "open_weights": null,
-        "aliases": [
-          "T5-11B",
-          "google/t5-11b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "T5-11B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "T5-11B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Google"
-        ],
-        "release_dates": [],
-        "benchmarks": [
-          {
-            "benchmark": "SuperGLUE",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 1,
-        "raw_model_versions": [
-          "T5-11B"
-        ],
-        "raw_display_names": [
-          "T5-11B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "No release date, so this cannot be placed in time."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "google/t5-3b",
-        "display_name": "T5-3B",
-        "creator": "Google",
-        "modality": "text",
-        "released_at": null,
-        "open_weights": null,
-        "aliases": [
-          "T5-3B",
-          "google/t5-3b"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "T5-3B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "T5-3B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Google"
-        ],
-        "release_dates": [],
-        "benchmarks": [
-          {
-            "benchmark": "SuperGLUE",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 1,
-        "raw_model_versions": [
-          "T5-3B"
-        ],
-        "raw_display_names": [
-          "T5-3B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "No release date, so this cannot be placed in time."
         ]
       }
     },
@@ -14202,417 +9143,6 @@
         "dropped_aliases": [],
         "reasons": [
           "No source states which organization made this model."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/text-ada-001",
-        "display_name": "text-ada-001",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": null,
-        "open_weights": null,
-        "aliases": [
-          "openai/text-ada-001",
-          "text-ada-001"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "text-ada-001"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "text-ada-001",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "text-ada-001"
-        ],
-        "raw_display_names": [
-          "text-ada-001"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "No release date, so this cannot be placed in time."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/text-babbage-001",
-        "display_name": "text-babbage-001",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": null,
-        "open_weights": null,
-        "aliases": [
-          "openai/text-babbage-001",
-          "text-babbage-001"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "text-babbage-001"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "text-babbage-001",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "text-babbage-001"
-        ],
-        "raw_display_names": [
-          "text-babbage-001"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "No release date, so this cannot be placed in time."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/text-curie-001",
-        "display_name": "text-curie-001",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": null,
-        "open_weights": null,
-        "aliases": [
-          "openai/text-curie-001",
-          "text-curie-001"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "text-curie-001"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "text-curie-001",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 2,
-        "raw_model_versions": [
-          "text-curie-001"
-        ],
-        "raw_display_names": [
-          "text-curie-001"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "No release date, so this cannot be placed in time."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/text-davinci-001",
-        "display_name": "GPT-3",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2022-01-27",
-        "open_weights": null,
-        "aliases": [
-          "GPT-3",
-          "openai/text-davinci-001",
-          "text-davinci-001"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "text-davinci-001"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "text-davinci-001",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2022-01-27"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "Winogrande",
-            "rows": 13
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 9
-          },
-          {
-            "benchmark": "TriviaQA",
-            "rows": 9
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 8
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 7
-          },
-          {
-            "benchmark": "LAMBADA",
-            "rows": 6
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 5
-          },
-          {
-            "benchmark": "ANLI",
-            "rows": 3
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "ScienceQA",
-            "rows": 2
-          },
-          {
-            "benchmark": "SuperGLUE",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 65,
-        "raw_model_versions": [
-          "text-davinci-001"
-        ],
-        "raw_display_names": [
-          "GPT-3",
-          "GPT-3 (0-shot)",
-          "GPT-3 (175B)",
-          "GPT-3 (175B) (50-shot)",
-          "GPT-3 (175B) (One-shot)",
-          "GPT-3 (175B) (Zero-shot)",
-          "GPT-3 (2-shot)",
-          "GPT-3 175B",
-          "GPT-3 Few-Shot",
-          "GPT-3 One-Shot",
-          "GPT-3 Zero-Shot",
-          "GPT3 175B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2022-01-27 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/text-davinci-002",
-        "display_name": "GPT-3.5",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2022-03-15",
-        "open_weights": null,
-        "aliases": [
-          "GPT-3.5",
-          "openai/text-davinci-002",
-          "text-davinci-002"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "text-davinci-002"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "text-davinci-002",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2022-03-15"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 5,
-        "raw_model_versions": [
-          "text-davinci-002"
-        ],
-        "raw_display_names": [
-          "GPT-3.5",
-          "text-davinci-002"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2022-03-15 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "openai/text-davinci-003",
-        "display_name": "GPT-3.5",
-        "creator": "OpenAI",
-        "modality": "text",
-        "released_at": "2022-11-28",
-        "open_weights": null,
-        "aliases": [
-          "openai/text-davinci-003",
-          "text-davinci-003"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "text-davinci-003"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "text-davinci-003",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "OpenAI"
-        ],
-        "release_dates": [
-          "2022-11-28"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 4
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 3
-          }
-        ],
-        "benchmarks_resolvable": 2,
-        "total_occurrences": 7,
-        "raw_model_versions": [
-          "text-davinci-003"
-        ],
-        "raw_display_names": [
-          "GPT-3.5",
-          "GPT-3.5 (8-shot)",
-          "text-davinci-003"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [
-          {
-            "alias": "GPT-3.5",
-            "claimed_by": "openai/text-davinci-002#base"
-          }
-        ],
-        "reasons": [
-          "Last released 2022-11-28 — too old to be worth ranking."
         ]
       }
     },
@@ -14802,412 +9332,6 @@
         "dropped_aliases": [],
         "reasons": [
           "No source states which organization made this model."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "large-model-systems-organization-university-of-california-uc-berkeley/vicuna-13b-v1.3",
-        "display_name": "Vicuna v1.3 (13B)",
-        "creator": "Large Model Systems Organization,University of California (UC) Berkeley",
-        "modality": "text",
-        "released_at": "2023-06-18",
-        "open_weights": null,
-        "aliases": [
-          "Vicuna v1.3 (13B)",
-          "large-model-systems-organization-university-of-california-uc-berkeley/vicuna-13b-v1.3",
-          "vicuna-13b-v1.3"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "vicuna-13b-v1.3"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "vicuna-13b-v1.3",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Large Model Systems Organization,University of California (UC) Berkeley"
-        ],
-        "release_dates": [
-          "2023-06-18"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 1,
-        "total_occurrences": 1,
-        "raw_model_versions": [
-          "vicuna-13b-v1.3"
-        ],
-        "raw_display_names": [
-          "Vicuna v1.3 (13B)"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-06-18 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "salesforce/xgen-7b-8k-base",
-        "display_name": "XGen-7B",
-        "creator": "Salesforce",
-        "modality": "text",
-        "released_at": "2023-06-27",
-        "open_weights": null,
-        "aliases": [
-          "XGen-7B",
-          "salesforce/xgen-7b-8k-base",
-          "xgen-7b-8k-base"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "xgen-7b-8k-base"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "xgen-7b-8k-base",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "Salesforce"
-        ],
-        "release_dates": [
-          "2023-06-27"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "OpenBookQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "PIQA",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 7,
-        "raw_model_versions": [
-          "xgen-7b-8k-base"
-        ],
-        "raw_display_names": [
-          "XGen-7B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-06-27 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "01.ai/yi-34b",
-        "display_name": "Yi 34B",
-        "creator": "01.AI",
-        "modality": "text",
-        "released_at": "2023-11-02",
-        "open_weights": null,
-        "aliases": [
-          "01.ai/yi-34b",
-          "Yi 34B",
-          "Yi-34B"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Yi-34B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Yi-34B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "01.AI"
-        ],
-        "release_dates": [
-          "2023-11-02"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 4,
-        "raw_model_versions": [
-          "Yi-34B"
-        ],
-        "raw_display_names": [
-          "Yi (34B)",
-          "Yi 34B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-02 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "01.ai/yi-34b-chat",
-        "display_name": "Yi-Chat 34B",
-        "creator": "01.AI",
-        "modality": "text",
-        "released_at": "2023-11-22",
-        "open_weights": null,
-        "aliases": [
-          "01.ai/yi-34b-chat",
-          "Yi-34B-Chat",
-          "Yi-Chat 34B"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Yi-34B-Chat"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Yi-34B-Chat",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "01.AI"
-        ],
-        "release_dates": [
-          "2023-11-22"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 2
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "GPQA diamond",
-            "rows": 1
-          },
-          {
-            "benchmark": "MATH level 5",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 4,
-        "total_occurrences": 8,
-        "raw_model_versions": [
-          "Yi-34B-Chat"
-        ],
-        "raw_display_names": [
-          "Yi-Chat 34B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-22 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "01.ai/yi-6b",
-        "display_name": "Yi 6B",
-        "creator": "01.AI",
-        "modality": "text",
-        "released_at": "2023-11-02",
-        "open_weights": null,
-        "aliases": [
-          "01.ai/yi-6b",
-          "Yi 6B",
-          "Yi-6B"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Yi-6B"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Yi-6B",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "01.AI"
-        ],
-        "release_dates": [
-          "2023-11-02"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          },
-          {
-            "benchmark": "ARC AI2",
-            "rows": 1
-          },
-          {
-            "benchmark": "BBH",
-            "rows": 1
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 1
-          },
-          {
-            "benchmark": "HellaSwag",
-            "rows": 1
-          },
-          {
-            "benchmark": "Winogrande",
-            "rows": 1
-          }
-        ],
-        "benchmarks_resolvable": 5,
-        "total_occurrences": 7,
-        "raw_model_versions": [
-          "Yi-6B"
-        ],
-        "raw_display_names": [
-          "Yi (6B)",
-          "Yi 6B",
-          "Yi 6b",
-          "Yi-6B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-02 — too old to be worth ranking."
-        ]
-      }
-    },
-    {
-      "proposed": {
-        "model_id": "01.ai/yi-6b-chat",
-        "display_name": "Yi-Chat 6B",
-        "creator": "01.AI",
-        "modality": "text",
-        "released_at": "2023-11-22",
-        "open_weights": null,
-        "aliases": [
-          "01.ai/yi-6b-chat",
-          "Yi-6B-Chat",
-          "Yi-Chat 6B"
-        ],
-        "variants": [
-          {
-            "variant": "base",
-            "aliases": [
-              "Yi-6B-Chat"
-            ]
-          }
-        ]
-      },
-      "confidence": "low",
-      "evidence": {
-        "stem": "Yi-6B-Chat",
-        "sources": [
-          "epoch"
-        ],
-        "organizations": [
-          "01.AI"
-        ],
-        "release_dates": [
-          "2023-11-22"
-        ],
-        "benchmarks": [
-          {
-            "benchmark": "BBH",
-            "rows": 2
-          },
-          {
-            "benchmark": "GSM8K",
-            "rows": 2
-          },
-          {
-            "benchmark": "MMLU",
-            "rows": 2
-          }
-        ],
-        "benchmarks_resolvable": 3,
-        "total_occurrences": 6,
-        "raw_model_versions": [
-          "Yi-6B-Chat"
-        ],
-        "raw_display_names": [
-          "Yi-Chat 6B"
-        ],
-        "openrouter": null,
-        "dropped_aliases": [],
-        "reasons": [
-          "Last released 2023-11-22 — too old to be worth ranking."
         ]
       }
     },
@@ -15420,10 +9544,6 @@
         ],
         "benchmarks": [
           {
-            "benchmark": "APEX-Agents",
-            "rows": 1
-          },
-          {
             "benchmark": "CL-bench",
             "rows": 1
           },
@@ -15437,7 +9557,7 @@
           }
         ],
         "benchmarks_resolvable": 0,
-        "total_occurrences": 4,
+        "total_occurrences": 3,
         "raw_model_versions": [
           "zai-org/glm-4.7"
         ],
@@ -15453,7 +9573,7 @@
           }
         ],
         "reasons": [
-          "Measured only on benchmarks with no health record here (4 of them), so approving this would add no scores to the site."
+          "Measured only on benchmarks with no health record here (3 of them), so approving this would add no scores to the site."
         ]
       }
     },
@@ -15511,6 +9631,108 @@
         "reasons": [
           "Measured only on benchmarks with no health record here (2 of them), so approving this would add no scores to the site.",
           "Another candidate (\"zai-org/glm-4.7\") produces the same model_id. They are probably the same model named two ways, but merging them is a judgement call, not a rule."
+        ]
+      }
+    },
+    {
+      "proposed": {
+        "model_id": "unknown/p-image",
+        "display_name": "p-image",
+        "creator": "Unknown",
+        "modality": "image",
+        "released_at": null,
+        "open_weights": false,
+        "aliases": [
+          "p-image",
+          "unknown/p-image"
+        ],
+        "variants": [
+          {
+            "variant": "base",
+            "aliases": [
+              "p-image",
+              "unknown/p-image"
+            ]
+          }
+        ]
+      },
+      "confidence": "low",
+      "evidence": {
+        "stem": "p-image",
+        "sources": [
+          "arena-mirror"
+        ],
+        "organizations": [],
+        "release_dates": [],
+        "benchmarks": [
+          {
+            "benchmark": "Arena text-to-image",
+            "rows": 1
+          }
+        ],
+        "benchmarks_resolvable": 1,
+        "total_occurrences": 1,
+        "raw_model_versions": [
+          "p-image"
+        ],
+        "raw_display_names": [],
+        "openrouter": null,
+        "dropped_aliases": [],
+        "reasons": [
+          "Arena names no vendor for this model.",
+          "Licence as Arena records it: Proprietary.",
+          "Arena publishes no release date."
+        ]
+      }
+    },
+    {
+      "proposed": {
+        "model_id": "unknown/stable-diffusion-v35-large",
+        "display_name": "stable-diffusion-v35-large",
+        "creator": "Unknown",
+        "modality": "image",
+        "released_at": null,
+        "open_weights": true,
+        "aliases": [
+          "stable-diffusion-v35-large",
+          "unknown/stable-diffusion-v35-large"
+        ],
+        "variants": [
+          {
+            "variant": "base",
+            "aliases": [
+              "stable-diffusion-v35-large",
+              "unknown/stable-diffusion-v35-large"
+            ]
+          }
+        ]
+      },
+      "confidence": "low",
+      "evidence": {
+        "stem": "stable-diffusion-v35-large",
+        "sources": [
+          "arena-mirror"
+        ],
+        "organizations": [],
+        "release_dates": [],
+        "benchmarks": [
+          {
+            "benchmark": "Arena text-to-image",
+            "rows": 1
+          }
+        ],
+        "benchmarks_resolvable": 1,
+        "total_occurrences": 1,
+        "raw_model_versions": [
+          "stable-diffusion-v35-large"
+        ],
+        "raw_display_names": [],
+        "openrouter": null,
+        "dropped_aliases": [],
+        "reasons": [
+          "Arena names no vendor for this model.",
+          "Licence as Arena records it: Open.",
+          "Arena publishes no release date."
         ]
       }
     }

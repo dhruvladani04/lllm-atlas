@@ -3,11 +3,21 @@
   "source": {
     "source_id": "epoch-eci",
     "source_url": "https://epoch.ai/data/benchmark_data.zip",
-    "fetched_at": "2026-10-13T06:56:27.028Z",
+    "fetched_at": "2026-10-13T07:17:04.325Z",
     "licence": "CC BY 4.0",
     "attribution": "Epoch AI, 'Capabilities & Benchmarking'. Published online at epoch.ai. Retrieved from 'https://epoch.ai/benchmarks'. CC BY 4.0."
   },
   "rows": [
+    {
+      "model": "Claude Opus 5.5",
+      "display_name": "Claude Opus 5.5",
+      "eci": 167.33,
+      "eci_ci_low": 164.06,
+      "eci_ci_high": 171.68,
+      "date": "2026-09-22",
+      "organization": "Anthropic",
+      "model_id": "anthropic/claude-opus-5-5"
+    },
     {
       "model": "GPT-6 Astra",
       "display_name": "GPT-6 Astra",
@@ -17,6 +27,26 @@
       "date": "2026-09-03",
       "organization": "OpenAI",
       "model_id": "openai/gpt-6-astra"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "display_name": "GPT-6.1 Sol",
+      "eci": 166.09,
+      "eci_ci_low": 162.89,
+      "eci_ci_high": 170.63,
+      "date": "2026-09-29",
+      "organization": "OpenAI",
+      "model_id": "openai/gpt-6.1-sol"
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "display_name": "Claude Sonnet 5.5",
+      "eci": 165.03,
+      "eci_ci_low": 161.68,
+      "eci_ci_high": 169.06,
+      "date": "2026-09-28",
+      "organization": "Anthropic",
+      "model_id": "anthropic/claude-sonnet-5-5"
     },
     {
       "model": "Claude Fable 5.1",
@@ -37,6 +67,16 @@
       "date": "2026-07-24",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-opus-5"
+    },
+    {
+      "model": "GPT-6 Sol",
+      "display_name": "GPT-6 Sol",
+      "eci": 162.72,
+      "eci_ci_low": 160.07,
+      "eci_ci_high": 166.57,
+      "date": "2026-09-22",
+      "organization": "OpenAI",
+      "model_id": "openai/gpt-6-sol"
     },
     {
       "model": "GPT-5.5 Pro",
@@ -179,6 +219,16 @@
       "model_id": "openai/gpt-5.6-luna"
     },
     {
+      "model": "GPT-6 Luna",
+      "display_name": "GPT-6 Luna",
+      "eci": 156.28,
+      "eci_ci_low": 153.67,
+      "eci_ci_high": 158.75,
+      "date": "2026-09-22",
+      "organization": "OpenAI",
+      "model_id": "openai/gpt-6-luna"
+    },
+    {
       "model": "Claude Opus 4.7",
       "display_name": "Claude Opus 4.7",
       "eci": 156.25,
@@ -249,6 +299,16 @@
       "model_id": "alibaba/qwen3.8-max-0902"
     },
     {
+      "model": "DeepSeek V4.1 Flash",
+      "display_name": "DeepSeek V4.1 Flash",
+      "eci": 154.9,
+      "eci_ci_low": 148.49,
+      "eci_ci_high": 157.33,
+      "date": "2026-09-09",
+      "organization": "DeepSeek",
+      "model_id": "deepseek/deepseek-v4.1-flash"
+    },
+    {
       "model": "Gemini 3.1 Pro",
       "display_name": "Gemini 3.1 Pro",
       "eci": 154.77,
@@ -307,6 +367,16 @@
       "date": "2026-05-19",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen3.7-max"
+    },
+    {
+      "model": "Grok 4.7",
+      "display_name": "Grok 4.7",
+      "eci": 153.53,
+      "eci_ci_low": 151.84,
+      "eci_ci_high": 155.85,
+      "date": "2026-09-21",
+      "organization": "xAI",
+      "model_id": "xai/grok-4.7"
     },
     {
       "model": "GPT-5.2",
@@ -1229,6 +1299,26 @@
       "model_id": "anthropic/claude-3-sonnet-20240229"
     },
     {
+      "model": "Claude 2",
+      "display_name": "Claude 2",
+      "eci": 120.13,
+      "eci_ci_low": 112.95,
+      "eci_ci_high": 123.79,
+      "date": "2023-07-11",
+      "organization": "Anthropic",
+      "model_id": "anthropic/claude-2.0"
+    },
+    {
+      "model": "Gemma 2 9B",
+      "display_name": "Gemma 2 9B",
+      "eci": 119.83,
+      "eci_ci_low": 111.63,
+      "eci_ci_high": 122.61,
+      "date": "2024-06-24",
+      "organization": "Google DeepMind",
+      "model_id": "google-deepmind/gemma-2-9b"
+    },
+    {
       "model": "Qwen2.5-Coder-32B",
       "display_name": "Qwen2.5-Coder-32B",
       "eci": 119.49,
@@ -1239,6 +1329,16 @@
       "model_id": "alibaba/qwen2.5-coder-32b"
     },
     {
+      "model": "Claude 2.1",
+      "display_name": "Claude 2.1",
+      "eci": 119.27,
+      "eci_ci_low": 111.28,
+      "eci_ci_high": 122.03,
+      "date": "2023-11-21",
+      "organization": "Anthropic",
+      "model_id": "anthropic/claude-2.1"
+    },
+    {
       "model": "Qwen2.5-7B",
       "display_name": "Qwen2.5-7B",
       "eci": 118.51,
@@ -1247,6 +1347,16 @@
       "date": "2024-09-19",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen2.5-7b-instruct"
+    },
+    {
+      "model": "Mixtral 8x7B",
+      "display_name": "Mixtral 8x7B",
+      "eci": 118.47,
+      "eci_ci_low": 110.39,
+      "eci_ci_high": 121.07,
+      "date": "2023-12-11",
+      "organization": "Mistral AI",
+      "model_id": "mistral-ai/mixtral-8x7b-v0.1"
     },
     {
       "model": "Claude 3 Haiku",
@@ -1267,6 +1377,26 @@
       "date": "2024-10-16",
       "organization": "Mistral AI",
       "model_id": "mistral-ai/ministral-3b-2410"
+    },
+    {
+      "model": "Yi-34B",
+      "display_name": "Yi-34B",
+      "eci": 117.39,
+      "eci_ci_low": 107.96,
+      "eci_ci_high": 120.6,
+      "date": "2023-11-02",
+      "organization": "01.AI",
+      "model_id": "01.ai/yi-34b"
+    },
+    {
+      "model": "Gemini 1.0 Pro",
+      "display_name": "Gemini 1.0 Pro",
+      "eci": 117.04,
+      "eci_ci_low": 108.83,
+      "eci_ci_high": 119.49,
+      "date": "2023-12-13",
+      "organization": "Google DeepMind",
+      "model_id": "google-deepmind/gemini-1.0-pro-001"
     },
     {
       "model": "Llama 3.1-8B",
@@ -1299,6 +1429,16 @@
       "model_id": "google-deepmind/gemma-3-4b-it"
     },
     {
+      "model": "Llama 2-70B",
+      "display_name": "Llama 2-70B",
+      "eci": 113.79,
+      "eci_ci_low": 105.66,
+      "eci_ci_high": 117.44,
+      "date": "2023-07-18",
+      "organization": "Meta AI",
+      "model_id": "meta-ai/llama-2-70b-hf"
+    },
+    {
       "model": "Qwen2.5-Coder (7B)",
       "display_name": "Qwen2.5-Coder (7B)",
       "eci": 113.14,
@@ -1307,6 +1447,36 @@
       "date": "2024-09-18",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen2.5-coder-7b"
+    },
+    {
+      "model": "Qwen-14B",
+      "display_name": "Qwen-14B",
+      "eci": 113.03,
+      "eci_ci_low": 103.3,
+      "eci_ci_high": 117.38,
+      "date": "2023-09-24",
+      "organization": "Alibaba",
+      "model_id": "alibaba/qwen-14b"
+    },
+    {
+      "model": "Mistral 7B v0.1",
+      "display_name": "Mistral 7B v0.1",
+      "eci": 112.21,
+      "eci_ci_low": 102.36,
+      "eci_ci_high": 116.31,
+      "date": "2023-09-27",
+      "organization": "Mistral AI",
+      "model_id": "mistral-ai/mistral-7b-v0.1"
+    },
+    {
+      "model": "Falcon-180B",
+      "display_name": "Falcon-180B",
+      "eci": 112.13,
+      "eci_ci_low": 103.14,
+      "eci_ci_high": 118.9,
+      "date": "2023-09-06",
+      "organization": "Technology Innovation Institute",
+      "model_id": "technology-innovation-institute/falcon-180b"
     },
     {
       "model": "Gemma 7B",
@@ -1319,6 +1489,26 @@
       "model_id": "google-deepmind/gemma-7b"
     },
     {
+      "model": "LLaMA-65B",
+      "display_name": "LLaMA-65B",
+      "eci": 110.17,
+      "eci_ci_low": 101.4,
+      "eci_ci_high": 114.12,
+      "date": "2023-02-24",
+      "organization": "Meta AI",
+      "model_id": "meta-ai/llama-65b"
+    },
+    {
+      "model": "Phi-2",
+      "display_name": "Phi-2",
+      "eci": 107.94,
+      "eci_ci_low": 88.62,
+      "eci_ci_high": 113.81,
+      "date": "2023-12-12",
+      "organization": "Microsoft",
+      "model_id": "microsoft/phi-2"
+    },
+    {
       "model": "Nemotron-4 15B",
       "display_name": "Nemotron-4 15B",
       "eci": 107.72,
@@ -1327,6 +1517,76 @@
       "date": "2024-02-26",
       "organization": "Nvidia",
       "model_id": "nvidia/nemotron-4-15b"
+    },
+    {
+      "model": "LLaMA-33B",
+      "display_name": "LLaMA-33B",
+      "eci": 107.41,
+      "eci_ci_low": 97.41,
+      "eci_ci_high": 112.09,
+      "date": "2023-02-24",
+      "organization": "Meta AI",
+      "model_id": "meta-ai/llama-33b"
+    },
+    {
+      "model": "Qwen-7B",
+      "display_name": "Qwen-7B",
+      "eci": 106.83,
+      "eci_ci_low": 93.62,
+      "eci_ci_high": 111.9,
+      "date": "2023-09-28",
+      "organization": "Alibaba",
+      "model_id": "alibaba/qwen-7b"
+    },
+    {
+      "model": "Llama 2-13B",
+      "display_name": "Llama 2-13B",
+      "eci": 106.17,
+      "eci_ci_low": 96.07,
+      "eci_ci_high": 110.78,
+      "date": "2023-07-18",
+      "organization": "Meta AI",
+      "model_id": "meta-ai/llama-2-13b"
+    },
+    {
+      "model": "Llama 2-34B",
+      "display_name": "Llama 2-34B",
+      "eci": 105.2,
+      "eci_ci_low": 94.54,
+      "eci_ci_high": 110.21,
+      "date": "2023-07-18",
+      "organization": "Meta AI",
+      "model_id": "meta-ai/llama-2-34b"
+    },
+    {
+      "model": "Yi 6B",
+      "display_name": "Yi 6B",
+      "eci": 104.77,
+      "eci_ci_low": 94.36,
+      "eci_ci_high": 110.35,
+      "date": "2023-11-22",
+      "organization": "01.AI",
+      "model_id": "01.ai/yi-6b"
+    },
+    {
+      "model": "Falcon-40B",
+      "display_name": "Falcon-40B",
+      "eci": 104.45,
+      "eci_ci_low": 92.77,
+      "eci_ci_high": 109.93,
+      "date": "2023-05-25",
+      "organization": "Technology Innovation Institute",
+      "model_id": "technology-innovation-institute/falcon-40b"
+    },
+    {
+      "model": "Baichuan2-13B",
+      "display_name": "Baichuan2-13B",
+      "eci": 103.19,
+      "eci_ci_low": 91.12,
+      "eci_ci_high": 110.3,
+      "date": "2023-09-06",
+      "organization": "Baichuan",
+      "model_id": "baichuan/baichuan-2-13b-base"
     },
     {
       "model": "Qwen2.5-Coder (1.5B)",
@@ -1339,6 +1599,66 @@
       "model_id": "alibaba/qwen2.5-coder-1.5b"
     },
     {
+      "model": "MPT-30B",
+      "display_name": "MPT-30B",
+      "eci": 100.66,
+      "eci_ci_low": 88.92,
+      "eci_ci_high": 106.41,
+      "date": "2023-06-22",
+      "organization": "MosaicML",
+      "model_id": "mosaicml/mpt-30b"
+    },
+    {
+      "model": "LLaMA-13B",
+      "display_name": "LLaMA-13B",
+      "eci": 100.58,
+      "eci_ci_low": 88.99,
+      "eci_ci_high": 106.41,
+      "date": "2023-02-24",
+      "organization": "Meta AI",
+      "model_id": "meta-ai/llama-13b"
+    },
+    {
+      "model": "Llama 2-7B",
+      "display_name": "Llama 2-7B",
+      "eci": 99.06,
+      "eci_ci_low": 86.79,
+      "eci_ci_high": 105.6,
+      "date": "2023-07-18",
+      "organization": "Meta AI",
+      "model_id": "meta-ai/llama-2-7b"
+    },
+    {
+      "model": "LLaMA-7B",
+      "display_name": "LLaMA-7B",
+      "eci": 96.7,
+      "eci_ci_low": 83.49,
+      "eci_ci_high": 103.66,
+      "date": "2023-02-24",
+      "organization": "Meta AI",
+      "model_id": "meta-ai/llama-7b"
+    },
+    {
+      "model": "Falcon-7B",
+      "display_name": "Falcon-7B",
+      "eci": 95.1,
+      "eci_ci_low": 81.1,
+      "eci_ci_high": 102.36,
+      "date": "2023-04-24",
+      "organization": "Technology Innovation Institute",
+      "model_id": "technology-innovation-institute/falcon-7b"
+    },
+    {
+      "model": "MPT-7B",
+      "display_name": "MPT-7B",
+      "eci": 94.59,
+      "eci_ci_low": 80.52,
+      "eci_ci_high": 101.56,
+      "date": "2023-05-05",
+      "organization": "MosaicML",
+      "model_id": "mosaicml/mpt-7b"
+    },
+    {
       "model": "Gemma 2B",
       "display_name": "Gemma 2B",
       "eci": 94.2,
@@ -1347,6 +1667,36 @@
       "date": "2024-02-21",
       "organization": "Google DeepMind",
       "model_id": "google-deepmind/gemma-2b"
+    },
+    {
+      "model": "XGen-7B",
+      "display_name": "XGen-7B",
+      "eci": 93.4,
+      "eci_ci_low": 78.79,
+      "eci_ci_high": 100.75,
+      "date": "2023-06-27",
+      "organization": "Salesforce",
+      "model_id": "salesforce/xgen-7b-8k-base"
+    },
+    {
+      "model": "Phi-1.5",
+      "display_name": "Phi-1.5",
+      "eci": 91.53,
+      "eci_ci_low": 71.63,
+      "eci_ci_high": 100.79,
+      "date": "2023-09-11",
+      "organization": "Microsoft",
+      "model_id": "microsoft/phi-1-5"
+    },
+    {
+      "model": "Cerebras-GPT-13B",
+      "display_name": "Cerebras-GPT-13B",
+      "eci": 83.24,
+      "eci_ci_low": 66.01,
+      "eci_ci_high": 92.03,
+      "date": "2023-03-20",
+      "organization": "Cerebras Systems",
+      "model_id": "cerebras-systems/cerebras-gpt-13b"
     }
   ]
 }

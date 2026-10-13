@@ -237,7 +237,7 @@ export default async function ModelPage({
                   <span className="tabular">{Math.round(score.value)} Elo</span>
                   {score.confidence_interval !== null ? (
                     <span className="tabular text-ink-mute">
-                      ±{score.confidence_interval}
+                      ±{score.confidence_interval.toFixed(1)}
                     </span>
                   ) : null}
                   {score.sample_size !== null ? (

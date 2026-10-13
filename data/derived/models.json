@@ -24,6 +24,106 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "01.ai/yi-34b",
+    "display_name": "Yi 34B",
+    "creator": "01.AI",
+    "modality": "text",
+    "released_at": "2023-11-02",
+    "open_weights": null,
+    "aliases": [
+      "01.ai/yi-34b",
+      "Yi 34B",
+      "Yi-34B"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Yi-34B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "01.ai/yi-34b-chat",
+    "display_name": "Yi-Chat 34B",
+    "creator": "01.AI",
+    "modality": "text",
+    "released_at": "2023-11-22",
+    "open_weights": null,
+    "aliases": [
+      "01.ai/yi-34b-chat",
+      "Yi-34B-Chat",
+      "Yi-Chat 34B"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Yi-34B-Chat"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "01.ai/yi-6b",
+    "display_name": "Yi 6B",
+    "creator": "01.AI",
+    "modality": "text",
+    "released_at": "2023-11-02",
+    "open_weights": null,
+    "aliases": [
+      "01.ai/yi-6b",
+      "Yi 6B",
+      "Yi-6B"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Yi-6B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "01.ai/yi-6b-chat",
+    "display_name": "Yi-Chat 6B",
+    "creator": "01.AI",
+    "modality": "text",
+    "released_at": "2023-11-22",
+    "open_weights": null,
+    "aliases": [
+      "01.ai/yi-6b-chat",
+      "Yi-6B-Chat",
+      "Yi-Chat 6B"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Yi-6B-Chat"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "01.ai/yi-large",
     "display_name": "Yi Large (Preview)",
     "creator": "01.AI",
@@ -44,6 +144,231 @@
       }
     ],
     "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/qwen-14b",
+    "display_name": "QWEN 14B",
+    "creator": "Alibaba",
+    "modality": "text",
+    "released_at": "2023-09-28",
+    "open_weights": null,
+    "aliases": [
+      "QWEN 14B",
+      "Qwen-14B",
+      "alibaba/qwen-14b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Qwen-14B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/qwen-14b-chat",
+    "display_name": "Qwen-Chat 14B",
+    "creator": "Alibaba",
+    "modality": "text",
+    "released_at": "2023-09-24",
+    "open_weights": null,
+    "aliases": [
+      "Qwen-14B-Chat",
+      "Qwen-Chat 14B",
+      "alibaba/qwen-14b-chat"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Qwen-14B-Chat"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/qwen-7b",
+    "display_name": "QWEN 7B",
+    "creator": "Alibaba",
+    "modality": "text",
+    "released_at": "2023-09-28",
+    "open_weights": null,
+    "aliases": [
+      "QWEN 7B",
+      "Qwen-7B",
+      "alibaba/qwen-7b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Qwen-7B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/qwen-image",
+    "display_name": "qwen-image",
+    "creator": "Alibaba",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "qwen-image",
+      "alibaba/qwen-image"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "qwen-image",
+          "alibaba/qwen-image"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/qwen-image-2.0-pro-2026-06-22",
+    "display_name": "qwen-image-2.0-pro-2026-06-22",
+    "creator": "Alibaba",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "qwen-image-2.0-pro-2026-06-22",
+      "alibaba/qwen-image-2.0-pro-2026-06-22"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "qwen-image-2.0-pro-2026-06-22",
+          "alibaba/qwen-image-2.0-pro-2026-06-22"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/qwen-image-2.1",
+    "display_name": "qwen-image-2.1",
+    "creator": "Alibaba",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "qwen-image-2.1",
+      "alibaba/qwen-image-2.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "qwen-image-2.1",
+          "alibaba/qwen-image-2.1"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/qwen-image-2512",
+    "display_name": "qwen-image-2512",
+    "creator": "Alibaba",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "qwen-image-2512",
+      "alibaba/qwen-image-2512"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "qwen-image-2512",
+          "alibaba/qwen-image-2512"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/qwen-image-3.0-pro",
+    "display_name": "qwen-image-3.0-pro",
+    "creator": "Alibaba",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "qwen-image-3.0-pro",
+      "alibaba/qwen-image-3.0-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "qwen-image-3.0-pro",
+          "alibaba/qwen-image-3.0-pro"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/qwen-image-prompt-extend",
+    "display_name": "qwen-image-prompt-extend",
+    "creator": "Alibaba",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "qwen-image-prompt-extend",
+      "alibaba/qwen-image-prompt-extend"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "qwen-image-prompt-extend",
+          "alibaba/qwen-image-prompt-extend"
+        ]
+      }
+    ],
+    "state": "announced",
     "context_window": null,
     "price_input_per_mtok": null,
     "price_output_per_mtok": null
@@ -366,19 +691,19 @@
       "value": 32768,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen-2.5-72b-instruct",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.36,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen-2.5-72b-instruct",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 0.39999999999999997,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen-2.5-72b-instruct",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -478,19 +803,19 @@
       "value": 32768,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen-2.5-coder-32b-instruct",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.66,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen-2.5-coder-32b-instruct",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/qwen/qwen-2.5-coder-32b-instruct",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -1213,6 +1538,55 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "alibaba/qwen3.8-27b",
+    "display_name": "Qwen3.8-27B",
+    "creator": "Alibaba",
+    "modality": "text",
+    "released_at": "2026-08-14",
+    "open_weights": null,
+    "aliases": [
+      "Qwen3.8-27B",
+      "alibaba/qwen3.8-27b",
+      "qwen3.8-27b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Qwen3.8-27B (None)",
+          "qwen3.8-27b",
+          "qwen3.8-27b_none"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Qwen3.8-27B (Low)",
+          "qwen3.8-27b_low"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Qwen3.8-27B (Medium)",
+          "qwen3.8-27b_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "Qwen3.8-27B (XHigh)",
+          "qwen3.8-27b (xhigh)",
+          "qwen3.8-27b_xhigh"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "alibaba/qwen3.8-max",
     "display_name": "Qwen3.8-Max",
     "creator": "Alibaba",
@@ -1324,6 +1698,131 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "alibaba/wan2.5-t2i-preview",
+    "display_name": "wan2.5-t2i-preview",
+    "creator": "Alibaba",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "wan2.5-t2i-preview",
+      "alibaba/wan2.5-t2i-preview"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "wan2.5-t2i-preview",
+          "alibaba/wan2.5-t2i-preview"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/wan2.6-t2i",
+    "display_name": "wan2.6-t2i",
+    "creator": "Alibaba",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "wan2.6-t2i",
+      "alibaba/wan2.6-t2i"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "wan2.6-t2i",
+          "alibaba/wan2.6-t2i"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/wan2.7-image",
+    "display_name": "wan2.7-image",
+    "creator": "Alibaba",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "wan2.7-image",
+      "alibaba/wan2.7-image"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "wan2.7-image",
+          "alibaba/wan2.7-image"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/wan2.7-image-pro",
+    "display_name": "wan2.7-image-pro",
+    "creator": "Alibaba",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "wan2.7-image-pro",
+      "alibaba/wan2.7-image-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "wan2.7-image-pro",
+          "alibaba/wan2.7-image-pro"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "alibaba/z-image-turbo",
+    "display_name": "z-image-turbo",
+    "creator": "Alibaba",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "z-image-turbo",
+      "alibaba/z-image-turbo"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "z-image-turbo",
+          "alibaba/z-image-turbo"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "allen-institute-for-ai-university-of-washington/llama-3.1-tulu-3-70b-dpo",
     "display_name": "Llama-3.1-Tulu-3-70B-DPO",
     "creator": "Allen Institute for AI,University of Washington",
@@ -1414,6 +1913,81 @@
         "variant": "base",
         "aliases": [
           "amazon.nova-pro-v1:0"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "anthropic/claude-1.3",
+    "display_name": "Claude 1.3",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2023-04-18",
+    "open_weights": null,
+    "aliases": [
+      "Claude 1.3",
+      "anthropic/claude-1.3",
+      "claude-1.3"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "claude-1.3"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "anthropic/claude-2.0",
+    "display_name": "Claude 2",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2023-07-11",
+    "open_weights": null,
+    "aliases": [
+      "Claude 2",
+      "anthropic/claude-2.0",
+      "claude-2.0"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "claude-2.0"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "anthropic/claude-2.1",
+    "display_name": "Claude 2.1",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2023-11-21",
+    "open_weights": null,
+    "aliases": [
+      "Claude 2.1",
+      "anthropic/claude-2.1",
+      "claude-2.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "claude-2.1"
         ]
       }
     ],
@@ -1717,19 +2291,19 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-fable-5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-fable-5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 50,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-fable-5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -1795,19 +2369,19 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-fable-5.1",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 10,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 50,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -1839,20 +2413,128 @@
       "value": 200000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-haiku-4.5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 1,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 5,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
+  },
+  {
+    "model_id": "anthropic/claude-haiku-5-5",
+    "display_name": "claude-haiku-5-5",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2026-10-07",
+    "open_weights": null,
+    "aliases": [
+      "anthropic/claude-haiku-5-5",
+      "claude-haiku-5-5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "anthropic/claude-haiku-5-5",
+          "claude-haiku-5-5"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "claude-haiku-5-5_high"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "claude-haiku-5-5_max"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "claude-haiku-5-5_xhigh"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1000000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-haiku-5.5",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.09999999999999999,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-haiku-5.5",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_output_per_mtok": {
+      "value": 0.5,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-haiku-5.5",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    }
+  },
+  {
+    "model_id": "anthropic/claude-instant-1.1",
+    "display_name": "Claude Instant 1.1",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": null,
+    "open_weights": null,
+    "aliases": [
+      "Claude Instant 1.1",
+      "anthropic/claude-instant-1.1",
+      "claude-instant-1.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "claude-instant-1.1"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "anthropic/claude-instant-1.2",
+    "display_name": "Claude Instant 1.2",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2023-08-09",
+    "open_weights": null,
+    "aliases": [
+      "Claude Instant 1.2",
+      "anthropic/claude-instant-1.2",
+      "claude-instant-1.2"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "claude-instant-1.2"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
   },
   {
     "model_id": "anthropic/claude-mythos-preview-early",
@@ -2099,19 +2781,19 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-4.6",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-4.6",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-4.6",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -2177,19 +2859,19 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-4.7",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-4.7",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-4.7",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -2262,19 +2944,19 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-4.8",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-4.8",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-4.8",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -2339,19 +3021,96 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-opus-5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 4,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 20,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    }
+  },
+  {
+    "model_id": "anthropic/claude-opus-5-5",
+    "display_name": "Claude Opus 5.5",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2026-09-22",
+    "open_weights": null,
+    "aliases": [
+      "Claude Opus 5.5",
+      "anthropic/claude-opus-5-5",
+      "claude-opus-5-5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Claude Opus 5.5",
+          "anthropic/claude-opus-5-5",
+          "claude-opus-5-5"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "Claude Opus 5.5 (High)",
+          "claude-opus-5-5_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "Claude Opus 5.5 (Low)",
+          "claude-opus-5-5_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "Claude Opus 5.5 (Max)",
+          "claude-opus-5-5_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Claude Opus 5.5 (Medium)",
+          "claude-opus-5-5_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "Claude Opus 5.5 (XHigh)",
+          "claude-opus-5-5_xhigh"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1000000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-opus-5.5",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_input_per_mtok": {
+      "value": 4,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-opus-5.5",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_output_per_mtok": {
+      "value": 20,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-opus-5.5",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -2379,19 +3138,19 @@
       "value": 200000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 3,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 15,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -2541,19 +3300,19 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4.6",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 3,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4.6",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 15,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-4.6",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -2582,20 +3341,181 @@
       "value": 1000000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/anthropic/claude-sonnet-5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 2,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "vendor",
       "source_url": "https://www.anthropic.com/pricing",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
+  },
+  {
+    "model_id": "anthropic/claude-sonnet-5-5",
+    "display_name": "Claude Sonnet 5.5",
+    "creator": "Anthropic",
+    "modality": "text",
+    "released_at": "2026-09-28",
+    "open_weights": null,
+    "aliases": [
+      "Claude Sonnet 5.5",
+      "anthropic/claude-sonnet-5-5",
+      "claude-sonnet-5-5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Claude Sonnet 5.5",
+          "anthropic/claude-sonnet-5-5",
+          "claude-sonnet-5-5"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "claude-sonnet-5-5_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "Sonnet 5.5 (Medium)",
+          "claude-sonnet-5-5_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "claude-sonnet-5-5_xhigh"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1000000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-sonnet-5.5",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_input_per_mtok": {
+      "value": 2,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-sonnet-5.5",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_output_per_mtok": {
+      "value": 10,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/anthropic/claude-sonnet-5.5",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    }
+  },
+  {
+    "model_id": "baichuan/baichuan-13b-base",
+    "display_name": "Baichuan 1-13B-Base",
+    "creator": "Baichuan",
+    "modality": "text",
+    "released_at": "2023-07-11",
+    "open_weights": null,
+    "aliases": [
+      "Baichuan 1-13B-Base",
+      "Baichuan-13B-Base",
+      "baichuan/baichuan-13b-base"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Baichuan-13B-Base"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "baichuan/baichuan-2-13b-base",
+    "display_name": "Baichuan2 13B",
+    "creator": "Baichuan",
+    "modality": "text",
+    "released_at": "2023-09-06",
+    "open_weights": null,
+    "aliases": [
+      "Baichuan-2-13B-Base",
+      "Baichuan2 13B",
+      "baichuan/baichuan-2-13b-base"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Baichuan-2-13B-Base"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "baichuan/baichuan-2-7b-base",
+    "display_name": "Baichuan2 7B",
+    "creator": "Baichuan",
+    "modality": "text",
+    "released_at": "2023-09-20",
+    "open_weights": null,
+    "aliases": [
+      "Baichuan-2-7B-Base",
+      "Baichuan2 7B",
+      "baichuan/baichuan-2-7b-base"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Baichuan-2-7B-Base"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "baichuan/baichuan-7b",
+    "display_name": "Baichuan 1-7B",
+    "creator": "Baichuan",
+    "modality": "text",
+    "released_at": "2023-06-01",
+    "open_weights": null,
+    "aliases": [
+      "Baichuan 1-7B",
+      "Baichuan-7B",
+      "baichuan/baichuan-7b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Baichuan-7B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
   },
   {
     "model_id": "black-forest-labs/flux-1-dev",
@@ -2624,6 +3544,106 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "black-forest-labs/flux-1-dev-fp8",
+    "display_name": "flux-1-dev-fp8",
+    "creator": "Black Forest Labs",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "flux-1-dev-fp8",
+      "black-forest-labs/flux-1-dev-fp8"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "flux-1-dev-fp8",
+          "black-forest-labs/flux-1-dev-fp8"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "black-forest-labs/flux-1-kontext-dev",
+    "display_name": "flux-1-kontext-dev",
+    "creator": "Black Forest Labs",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "flux-1-kontext-dev",
+      "black-forest-labs/flux-1-kontext-dev"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "flux-1-kontext-dev",
+          "black-forest-labs/flux-1-kontext-dev"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "black-forest-labs/flux-1-kontext-max",
+    "display_name": "flux-1-kontext-max",
+    "creator": "Black Forest Labs",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "flux-1-kontext-max",
+      "black-forest-labs/flux-1-kontext-max"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "flux-1-kontext-max",
+          "black-forest-labs/flux-1-kontext-max"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "black-forest-labs/flux-1-kontext-pro",
+    "display_name": "flux-1-kontext-pro",
+    "creator": "Black Forest Labs",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "flux-1-kontext-pro",
+      "black-forest-labs/flux-1-kontext-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "flux-1-kontext-pro",
+          "black-forest-labs/flux-1-kontext-pro"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "black-forest-labs/flux-1.1-pro",
     "display_name": "FLUX 1.1 [pro]",
     "creator": "Black Forest Labs",
@@ -2645,6 +3665,380 @@
       }
     ],
     "state": "released_unranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "black-forest-labs/flux-2-dev",
+    "display_name": "flux-2-dev",
+    "creator": "Black Forest Labs",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "flux-2-dev",
+      "black-forest-labs/flux-2-dev"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "flux-2-dev",
+          "black-forest-labs/flux-2-dev"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "black-forest-labs/flux-2-flex",
+    "display_name": "flux-2-flex",
+    "creator": "Black Forest Labs",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "flux-2-flex",
+      "black-forest-labs/flux-2-flex"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "flux-2-flex",
+          "black-forest-labs/flux-2-flex"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "black-forest-labs/flux-2-klein-4b",
+    "display_name": "flux-2-klein-4b",
+    "creator": "Black Forest Labs",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "flux-2-klein-4b",
+      "black-forest-labs/flux-2-klein-4b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "flux-2-klein-4b",
+          "black-forest-labs/flux-2-klein-4b"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "black-forest-labs/flux-2-klein-9b",
+    "display_name": "flux-2-klein-9b",
+    "creator": "Black Forest Labs",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "flux-2-klein-9b",
+      "black-forest-labs/flux-2-klein-9b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "flux-2-klein-9b",
+          "black-forest-labs/flux-2-klein-9b"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "black-forest-labs/flux-2-max",
+    "display_name": "flux-2-max",
+    "creator": "Black Forest Labs",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "flux-2-max",
+      "black-forest-labs/flux-2-max"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "flux-2-max",
+          "black-forest-labs/flux-2-max"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "black-forest-labs/flux-2-pro",
+    "display_name": "flux-2-pro",
+    "creator": "Black Forest Labs",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "flux-2-pro",
+      "black-forest-labs/flux-2-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "flux-2-pro",
+          "black-forest-labs/flux-2-pro"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "bytedance/bagel",
+    "display_name": "bagel",
+    "creator": "ByteDance",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "bagel",
+      "bytedance/bagel"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "bagel",
+          "bytedance/bagel"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "bytedance/seedream-3",
+    "display_name": "seedream-3",
+    "creator": "ByteDance",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "seedream-3",
+      "bytedance/seedream-3"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "seedream-3",
+          "bytedance/seedream-3"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "bytedance/seedream-4-2k",
+    "display_name": "seedream-4-2k",
+    "creator": "ByteDance",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "seedream-4-2k",
+      "bytedance/seedream-4-2k"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "seedream-4-2k",
+          "bytedance/seedream-4-2k"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "bytedance/seedream-4-fal",
+    "display_name": "seedream-4-fal",
+    "creator": "ByteDance",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "seedream-4-fal",
+      "bytedance/seedream-4-fal"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "seedream-4-fal",
+          "bytedance/seedream-4-fal"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "bytedance/seedream-4-high-res-fal",
+    "display_name": "seedream-4-high-res-fal",
+    "creator": "ByteDance",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "seedream-4-high-res-fal",
+      "bytedance/seedream-4-high-res-fal"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "seedream-4-high-res-fal",
+          "bytedance/seedream-4-high-res-fal"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "bytedance/seedream-4.5",
+    "display_name": "seedream-4.5",
+    "creator": "ByteDance",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "seedream-4.5",
+      "bytedance/seedream-4.5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "seedream-4.5",
+          "bytedance/seedream-4.5"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "bytedance/seedream-5.0-lite",
+    "display_name": "seedream-5.0-lite",
+    "creator": "ByteDance",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "seedream-5.0-lite",
+      "bytedance/seedream-5.0-lite"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "seedream-5.0-lite",
+          "bytedance/seedream-5.0-lite"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "bytedance/seedream-5.0-pro",
+    "display_name": "seedream-5.0-pro",
+    "creator": "ByteDance",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "seedream-5.0-pro",
+      "bytedance/seedream-5.0-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "seedream-5.0-pro",
+          "bytedance/seedream-5.0-pro"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "cerebras-systems/cerebras-gpt-13b",
+    "display_name": "Cerebras-GPT-13B",
+    "creator": "Cerebras Systems",
+    "modality": "text",
+    "released_at": "2023-03-20",
+    "open_weights": null,
+    "aliases": [
+      "Cerebras-GPT-13B",
+      "cerebras-systems/cerebras-gpt-13b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Cerebras-GPT-13B"
+        ]
+      }
+    ],
+    "state": "ranked",
     "context_window": null,
     "price_input_per_mtok": null,
     "price_output_per_mtok": null
@@ -2695,6 +4089,39 @@
       }
     ],
     "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "cognition/swe-2",
+    "display_name": "SWE-2",
+    "creator": "Cognition",
+    "modality": "text",
+    "released_at": "2026-09-10",
+    "open_weights": null,
+    "aliases": [
+      "SWE-2",
+      "cognition/swe-2",
+      "swe-2"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "SWE-2",
+          "cognition/swe-2",
+          "swe-2"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "swe-2_max"
+        ]
+      }
+    ],
+    "state": "released_unranked",
     "context_window": null,
     "price_input_per_mtok": null,
     "price_output_per_mtok": null
@@ -2798,6 +4225,156 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "databricks/dolly-v2-12b",
+    "display_name": "Dolly-v2-12B",
+    "creator": "Databricks",
+    "modality": "text",
+    "released_at": "2023-04-11",
+    "open_weights": null,
+    "aliases": [
+      "Dolly-v2-12B",
+      "databricks/dolly-v2-12b",
+      "dolly-v2-12b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "dolly-v2-12b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "deepmind/chinchilla-70b",
+    "display_name": "Chinchilla 70B",
+    "creator": "DeepMind",
+    "modality": "text",
+    "released_at": "2022-03-29",
+    "open_weights": null,
+    "aliases": [
+      "Chinchilla (70B)",
+      "Chinchilla 70B",
+      "deepmind/chinchilla-70b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Chinchilla (70B)"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "deepmind/gopher-280b",
+    "display_name": "Gopher",
+    "creator": "DeepMind",
+    "modality": "text",
+    "released_at": "2021-12-08",
+    "open_weights": null,
+    "aliases": [
+      "Gopher",
+      "Gopher (280B)",
+      "deepmind/gopher-280b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Gopher (280B)"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "deepseek-peking-university/deepseek-coder-1.3b-base",
+    "display_name": "DS-Coder-1.3B-Base",
+    "creator": "DeepSeek,Peking University",
+    "modality": "text",
+    "released_at": "2023-11-02",
+    "open_weights": null,
+    "aliases": [
+      "DS-Coder-1.3B-Base",
+      "deepseek-coder-1.3b-base",
+      "deepseek-peking-university/deepseek-coder-1.3b-base"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "deepseek-coder-1.3b-base"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "deepseek-peking-university/deepseek-coder-33b-base",
+    "display_name": "DS-Coder-33B-Base",
+    "creator": "DeepSeek,Peking University",
+    "modality": "text",
+    "released_at": "2023-11-02",
+    "open_weights": null,
+    "aliases": [
+      "DS-Coder-33B-Base",
+      "deepseek-coder-33b-base",
+      "deepseek-peking-university/deepseek-coder-33b-base"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "deepseek-coder-33b-base"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "deepseek-peking-university/deepseek-coder-6.7b-base",
+    "display_name": "DS-Coder-6.7B-Base",
+    "creator": "DeepSeek,Peking University",
+    "modality": "text",
+    "released_at": "2023-11-02",
+    "open_weights": null,
+    "aliases": [
+      "DS-Coder-6.7B-Base",
+      "deepseek-coder-6.7b-base",
+      "deepseek-peking-university/deepseek-coder-6.7b-base"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "deepseek-coder-6.7b-base"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "deepseek/deepseek-chat",
     "display_name": "DeepSeek Chat",
     "creator": "DeepSeek",
@@ -2822,19 +4399,19 @@
       "value": 163840,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.32,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 0.8899999999999999,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -2912,20 +4489,44 @@
       "value": 163840,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v3.2",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.25899999999999995,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v3.2",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 0.7999999999999999,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v3.2",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
+  },
+  {
+    "model_id": "deepseek/deepseek-llm-67b-chat",
+    "display_name": "deepseek-llm-67b-chat",
+    "creator": "DeepSeek",
+    "modality": "text",
+    "released_at": "2023-11-29",
+    "open_weights": null,
+    "aliases": [
+      "deepseek-llm-67b-chat",
+      "deepseek/deepseek-llm-67b-chat"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "deepseek-llm-67b-chat"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
   },
   {
     "model_id": "deepseek/deepseek-r1",
@@ -2953,19 +4554,19 @@
       "value": 64000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.7,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 2.5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -2993,19 +4594,19 @@
       "value": 163840,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1-0528",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1-0528",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 2.1500000000000004,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-r1-0528",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -3204,19 +4805,19 @@
       "value": 163840,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat-v3-0324",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.29,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat-v3-0324",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1.1400000000000001,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-chat-v3-0324",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -3272,19 +4873,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
-      "value": 0.0433,
+      "value": 0.0428,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1.28,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -3341,20 +4942,148 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.9552599999999999,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1.9105199999999998,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
+  },
+  {
+    "model_id": "deepseek/deepseek-v4.1-flash",
+    "display_name": "DeepSeek V4.1 Flash",
+    "creator": "DeepSeek",
+    "modality": "text",
+    "released_at": "2026-09-09",
+    "open_weights": null,
+    "aliases": [
+      "DeepSeek V4.1 Flash",
+      "deepseek-v4.1-flash",
+      "deepseek/deepseek-v4.1-flash"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "deepseek-v4.1-flash_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "deepseek-v4.1-flash (high)",
+          "deepseek-v4.1-flash_high"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "deepseek-v4.1-flash_max"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1048576,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.0441,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_output_per_mtok": {
+      "value": 0.891,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    }
+  },
+  {
+    "model_id": "eleutherai-laion/gpt-j-6b",
+    "display_name": "GPT-J-6B",
+    "creator": "EleutherAI,LAION",
+    "modality": "text",
+    "released_at": "2021-08-05",
+    "open_weights": null,
+    "aliases": [
+      "GPT-J-6B",
+      "eleutherai-laion/gpt-j-6b",
+      "gpt-j-6b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-j-6b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "eleutherai/gpt-neo-2.7b",
+    "display_name": "GPT-Neo-2.7B",
+    "creator": "EleutherAI",
+    "modality": "text",
+    "released_at": "2021-03-30",
+    "open_weights": null,
+    "aliases": [
+      "GPT-Neo-2.7B",
+      "eleutherai/gpt-neo-2.7b",
+      "gpt-neo-2.7B"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-neo-2.7B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "eleutherai/gpt-neox-20b",
+    "display_name": "GPT-neox-20B",
+    "creator": "EleutherAI",
+    "modality": "text",
+    "released_at": "2022-04-07",
+    "open_weights": null,
+    "aliases": [
+      "GPT-neox-20B",
+      "eleutherai/gpt-neox-20b",
+      "gpt-neox-20b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-neox-20b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
   },
   {
     "model_id": "google-deepmind-google/gemini-2.0-flash-001",
@@ -3423,6 +5152,31 @@
         "variant": "base",
         "aliases": [
           "gemini-2.0-flash-thinking-exp-01-21"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "google-deepmind/gemini-1.0-pro-001",
+    "display_name": "Gemini 1.0 Pro",
+    "creator": "Google DeepMind",
+    "modality": "text",
+    "released_at": "2023-12-13",
+    "open_weights": null,
+    "aliases": [
+      "Gemini 1.0 Pro",
+      "gemini-1.0-pro-001",
+      "google-deepmind/gemini-1.0-pro-001"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-1.0-pro-001"
         ]
       }
     ],
@@ -4166,6 +5920,31 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "google-deepmind/gemma-2-9b",
+    "display_name": "Gemma-2 9B",
+    "creator": "Google DeepMind",
+    "modality": "text",
+    "released_at": null,
+    "open_weights": null,
+    "aliases": [
+      "Gemma-2 9B",
+      "gemma-2-9b",
+      "google-deepmind/gemma-2-9b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemma-2-9b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "google-deepmind/gemma-2-9b-it",
     "display_name": "Gemma 2 Instruct (9B)",
     "creator": "Google DeepMind",
@@ -4403,6 +6182,80 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "google-research/palm-540b",
+    "display_name": "PaLM 540B",
+    "creator": "Google Research",
+    "modality": "text",
+    "released_at": "2022-04-04",
+    "open_weights": null,
+    "aliases": [
+      "PaLM 540B",
+      "google-research/palm-540b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "PaLM 540B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "google/gemini-2.0-flash-preview-image-generation",
+    "display_name": "gemini-2.0-flash-preview-image-generation",
+    "creator": "Google",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gemini-2.0-flash-preview-image-generation",
+      "google/gemini-2.0-flash-preview-image-generation"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-2.0-flash-preview-image-generation",
+          "google/gemini-2.0-flash-preview-image-generation"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "google/gemini-2.5-flash-image-preview-nano-banana",
+    "display_name": "gemini-2.5-flash-image-preview (nano-banana)",
+    "creator": "Google",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gemini-2.5-flash-image-preview (nano-banana)",
+      "google/gemini-2.5-flash-image-preview-nano-banana"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-2.5-flash-image-preview (nano-banana)",
+          "google/gemini-2.5-flash-image-preview-nano-banana"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "google/gemini-2.5-pro",
     "display_name": "Gemini 2.5 Pro",
     "creator": "Google",
@@ -4428,20 +6281,95 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 1.25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-2.5-pro",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
+  },
+  {
+    "model_id": "google/gemini-3-pro-image-2k-nano-banana-pro",
+    "display_name": "gemini-3-pro-image-2k (nano-banana-pro)",
+    "creator": "Google",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gemini-3-pro-image-2k (nano-banana-pro)",
+      "google/gemini-3-pro-image-2k-nano-banana-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-3-pro-image-2k (nano-banana-pro)",
+          "google/gemini-3-pro-image-2k-nano-banana-pro"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "google/gemini-3-pro-image-preview-nano-banana-pro",
+    "display_name": "gemini-3-pro-image-preview (nano-banana-pro)",
+    "creator": "Google",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gemini-3-pro-image-preview (nano-banana-pro)",
+      "google/gemini-3-pro-image-preview-nano-banana-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-3-pro-image-preview (nano-banana-pro)",
+          "google/gemini-3-pro-image-preview-nano-banana-pro"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "google/gemini-3.1-flash-image-nano-banana-2-web-search",
+    "display_name": "gemini-3.1-flash-image (nano-banana-2) [web-search]",
+    "creator": "Google",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gemini-3.1-flash-image (nano-banana-2) [web-search]",
+      "google/gemini-3.1-flash-image-nano-banana-2-web-search"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-3.1-flash-image (nano-banana-2) [web-search]",
+          "google/gemini-3.1-flash-image-nano-banana-2-web-search"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
   },
   {
     "model_id": "google/gemini-3.1-flash-lite",
@@ -4486,20 +6414,45 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.1-flash-lite",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.1-flash-lite",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1.5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.1-flash-lite",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
+  },
+  {
+    "model_id": "google/gemini-3.1-flash-lite-image-nano-banana-2-lite",
+    "display_name": "gemini-3.1-flash-lite-image (nano-banana-2-lite)",
+    "creator": "Google",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gemini-3.1-flash-lite-image (nano-banana-2-lite)",
+      "google/gemini-3.1-flash-lite-image-nano-banana-2-lite"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-3.1-flash-lite-image (nano-banana-2-lite)",
+          "google/gemini-3.1-flash-lite-image-nano-banana-2-lite"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
   },
   {
     "model_id": "google/gemini-3.5-flash-lite",
@@ -4553,19 +6506,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.5-flash-lite",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.3,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.5-flash-lite",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 2.5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.5-flash-lite",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -4621,19 +6574,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.6-flash",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.75,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.6-flash",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 3.75,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.6-flash",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -4682,20 +6635,85 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.7-flash",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.75,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.7-flash",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 3.75,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/google/gemini-3.7-flash",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
+  },
+  {
+    "model_id": "google/gemini-nano-banana-2.1",
+    "display_name": "gemini-nano-banana-2.1",
+    "creator": "Google",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gemini-nano-banana-2.1",
+      "google/gemini-nano-banana-2.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gemini-nano-banana-2.1",
+          "google/gemini-nano-banana-2.1"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": {
+      "value": 65536,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-nano-banana-2.1",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_input_per_mtok": {
+      "value": 1.5,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-nano-banana-2.1",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_output_per_mtok": {
+      "value": 7.5,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/google/gemini-nano-banana-2.1",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    }
+  },
+  {
+    "model_id": "google/glam-moe",
+    "display_name": "GLaM",
+    "creator": "Google",
+    "modality": "text",
+    "released_at": "2021-12-13",
+    "open_weights": null,
+    "aliases": [
+      "GLaM",
+      "GLaM (MoE)",
+      "google/glam-moe"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "GLaM (MoE)"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
   },
   {
     "model_id": "google/imagen-3",
@@ -4718,6 +6736,179 @@
       }
     ],
     "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "google/imagen-3.0-generate-002",
+    "display_name": "imagen-3.0-generate-002",
+    "creator": "Google",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "imagen-3.0-generate-002",
+      "google/imagen-3.0-generate-002"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "imagen-3.0-generate-002",
+          "google/imagen-3.0-generate-002"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "google/imagen-4.0-generate-001",
+    "display_name": "imagen-4.0-generate-001",
+    "creator": "Google",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "imagen-4.0-generate-001",
+      "google/imagen-4.0-generate-001"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "imagen-4.0-generate-001",
+          "google/imagen-4.0-generate-001"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "google/imagen-ultra-4.0-generate-001",
+    "display_name": "imagen-ultra-4.0-generate-001",
+    "creator": "Google",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "imagen-ultra-4.0-generate-001",
+      "google/imagen-ultra-4.0-generate-001"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "imagen-ultra-4.0-generate-001",
+          "google/imagen-ultra-4.0-generate-001"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "google/t5-11b",
+    "display_name": "T5-11B",
+    "creator": "Google",
+    "modality": "text",
+    "released_at": null,
+    "open_weights": null,
+    "aliases": [
+      "T5-11B",
+      "google/t5-11b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "T5-11B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "google/t5-3b",
+    "display_name": "T5-3B",
+    "creator": "Google",
+    "modality": "text",
+    "released_at": null,
+    "open_weights": null,
+    "aliases": [
+      "T5-3B",
+      "google/t5-3b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "T5-3B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "hidream/hidream-o1-image",
+    "display_name": "hidream-o1-image",
+    "creator": "HiDream",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "hidream-o1-image",
+      "hidream/hidream-o1-image"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "hidream-o1-image",
+          "hidream/hidream-o1-image"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "hugging-face-bigscience/bloom",
+    "display_name": "BLOOM (176B)",
+    "creator": "Hugging Face,BigScience",
+    "modality": "text",
+    "released_at": "2022-07-06",
+    "open_weights": null,
+    "aliases": [
+      "BLOOM (176B)",
+      "bloom",
+      "hugging-face-bigscience/bloom"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "bloom"
+        ]
+      }
+    ],
+    "state": "ranked",
     "context_window": null,
     "price_input_per_mtok": null,
     "price_output_per_mtok": null
@@ -4789,6 +6980,504 @@
         "variant": "base",
         "aliases": [
           "starcoder2-7b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "ideogram/ideogram-4.0-quality",
+    "display_name": "ideogram-4.0-quality",
+    "creator": "Ideogram",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "ideogram-4.0-quality",
+      "ideogram/ideogram-4.0-quality"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "ideogram-4.0-quality",
+          "ideogram/ideogram-4.0-quality"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "ideogram/ideogram-v2",
+    "display_name": "ideogram-v2",
+    "creator": "Ideogram",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "ideogram-v2",
+      "ideogram/ideogram-v2"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "ideogram-v2",
+          "ideogram/ideogram-v2"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "ideogram/ideogram-v3-quality",
+    "display_name": "ideogram-v3-quality",
+    "creator": "Ideogram",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "ideogram-v3-quality",
+      "ideogram/ideogram-v3-quality"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "ideogram-v3-quality",
+          "ideogram/ideogram-v3-quality"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "inflection-ai/inflection-1",
+    "display_name": "Inflection-1",
+    "creator": "Inflection AI",
+    "modality": "text",
+    "released_at": "2023-06-22",
+    "open_weights": null,
+    "aliases": [
+      "Inflection-1",
+      "inflection-ai/inflection-1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Inflection-1"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "krea/krea-2-large",
+    "display_name": "krea-2-large",
+    "creator": "Krea",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "krea-2-large",
+      "krea/krea-2-large"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "krea-2-large",
+          "krea/krea-2-large"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "krea/krea-2-medium",
+    "display_name": "krea-2-medium",
+    "creator": "Krea",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "krea-2-medium",
+      "krea/krea-2-medium"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "krea-2-medium",
+          "krea/krea-2-medium"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "krea/krea-2-turbo",
+    "display_name": "krea-2-turbo",
+    "creator": "Krea",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "krea-2-turbo",
+      "krea/krea-2-turbo"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "krea-2-turbo",
+          "krea/krea-2-turbo"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "large-model-systems-organization-university-of-california-uc-berkeley/vicuna-13b-v1.3",
+    "display_name": "Vicuna v1.3 (13B)",
+    "creator": "Large Model Systems Organization,University of California (UC) Berkeley",
+    "modality": "text",
+    "released_at": "2023-06-18",
+    "open_weights": null,
+    "aliases": [
+      "Vicuna v1.3 (13B)",
+      "large-model-systems-organization-university-of-california-uc-berkeley/vicuna-13b-v1.3",
+      "vicuna-13b-v1.3"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "vicuna-13b-v1.3"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "leonardo-ai/lucid-origin",
+    "display_name": "lucid-origin",
+    "creator": "Leonardo AI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "lucid-origin",
+      "leonardo-ai/lucid-origin"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "lucid-origin",
+          "leonardo-ai/lucid-origin"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "luma-ai/photon",
+    "display_name": "photon",
+    "creator": "Luma AI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "photon",
+      "luma-ai/photon"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "photon",
+          "luma-ai/photon"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "luma-ai/uni-1.1",
+    "display_name": "uni-1.1",
+    "creator": "Luma AI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "uni-1.1",
+      "luma-ai/uni-1.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "uni-1.1",
+          "luma-ai/uni-1.1"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "luma-ai/uni-1.1-max",
+    "display_name": "uni-1.1-max",
+    "creator": "Luma AI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "uni-1.1-max",
+      "luma-ai/uni-1.1-max"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "uni-1.1-max",
+          "luma-ai/uni-1.1-max"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/llama-13b",
+    "display_name": "LLaMA 13B",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2023-02-24",
+    "open_weights": null,
+    "aliases": [
+      "LLaMA 13B",
+      "LLaMA-13B",
+      "meta-ai/llama-13b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "LLaMA-13B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/llama-2-13b",
+    "display_name": "LLaMA-2 13B",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2023-07-18",
+    "open_weights": null,
+    "aliases": [
+      "LLaMA-2 13B",
+      "Llama-2-13b",
+      "meta-ai/llama-2-13b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Llama-2-13b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/llama-2-13b-chat",
+    "display_name": "LLaMA2-Chat 13B",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2023-07-18",
+    "open_weights": null,
+    "aliases": [
+      "LLaMA2-Chat 13B",
+      "Llama-2-13b-chat",
+      "meta-ai/llama-2-13b-chat"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Llama-2-13b-chat"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/llama-2-34b",
+    "display_name": "LLAMA 2 34B",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2023-07-18",
+    "open_weights": null,
+    "aliases": [
+      "LLAMA 2 34B",
+      "Llama-2-34b",
+      "meta-ai/llama-2-34b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Llama-2-34b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/llama-2-70b-chat",
+    "display_name": "LLaMA2-Chat 70B",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2023-07-18",
+    "open_weights": null,
+    "aliases": [
+      "LLaMA2-Chat 70B",
+      "Llama-2-70b-chat",
+      "meta-ai/llama-2-70b-chat"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Llama-2-70b-chat"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/llama-2-70b-chat-hf",
+    "display_name": "Llama-2-70b-chat-hf",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2023-07-18",
+    "open_weights": null,
+    "aliases": [
+      "Llama-2-70b-chat-hf",
+      "meta-ai/llama-2-70b-chat-hf"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Llama-2-70b-chat-hf"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/llama-2-70b-hf",
+    "display_name": "LLAMA 2 70B",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2023-07-18",
+    "open_weights": null,
+    "aliases": [
+      "LLAMA 2 70B",
+      "Llama-2-70b-hf",
+      "meta-ai/llama-2-70b-hf"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Llama-2-70b-hf"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/llama-2-7b",
+    "display_name": "LLAMA 2 7B",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2023-07-18",
+    "open_weights": null,
+    "aliases": [
+      "LLAMA 2 7B",
+      "Llama-2-7b",
+      "meta-ai/llama-2-7b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Llama-2-7b"
         ]
       }
     ],
@@ -4997,6 +7686,31 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "meta-ai/llama-33b",
+    "display_name": "LLaMA 33B",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2023-02-24",
+    "open_weights": null,
+    "aliases": [
+      "LLaMA 33B",
+      "LLaMA-33B",
+      "meta-ai/llama-33b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "LLaMA-33B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "meta-ai/llama-4-maverick-17b-128e-instruct",
     "display_name": "Llama 4 Maverick",
     "creator": "Meta AI",
@@ -5060,6 +7774,56 @@
         "variant": "base",
         "aliases": [
           "Llama-4-Scout-17B-16E-Instruct"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/llama-65b",
+    "display_name": "LLaMA 65B",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2023-02-24",
+    "open_weights": null,
+    "aliases": [
+      "LLaMA 65B",
+      "LLaMA-65B",
+      "meta-ai/llama-65b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "LLaMA-65B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/llama-7b",
+    "display_name": "LLaMA 7B",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2023-02-24",
+    "open_weights": null,
+    "aliases": [
+      "LLaMA 7B",
+      "LLaMA-7B",
+      "meta-ai/llama-7b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "LLaMA-7B"
         ]
       }
     ],
@@ -5193,6 +7957,81 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "meta-ai/opt-1.3b",
+    "display_name": "OPT-1.3B",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2022-05-11",
+    "open_weights": null,
+    "aliases": [
+      "OPT-1.3B",
+      "meta-ai/opt-1.3b",
+      "opt-1.3b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "opt-1.3b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/opt-175b",
+    "display_name": "OPT (175B)",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2022-05-02",
+    "open_weights": null,
+    "aliases": [
+      "OPT (175B)",
+      "meta-ai/opt-175b",
+      "opt-175b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "opt-175b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "meta-ai/opt-66b",
+    "display_name": "OPT (66B)",
+    "creator": "Meta AI",
+    "modality": "text",
+    "released_at": "2022-05-03",
+    "open_weights": null,
+    "aliases": [
+      "OPT (66B)",
+      "meta-ai/opt-66b",
+      "opt-66b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "opt-66b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "meta/llama-4-maverick",
     "display_name": "Llama 4 Maverick",
     "creator": "Meta",
@@ -5218,19 +8057,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.1875,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 0.6525,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-maverick",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -5259,20 +8098,70 @@
       "value": 1310720,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.18,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 0.59,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/meta-llama/llama-4-scout",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
+  },
+  {
+    "model_id": "meta/muse-image",
+    "display_name": "muse-image",
+    "creator": "Meta",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "muse-image",
+      "meta/muse-image"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "muse-image",
+          "meta/muse-image"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "microsoft-nvidia/megatron-turing-nlg-530b",
+    "display_name": "MT-NLG",
+    "creator": "Microsoft,Nvidia",
+    "modality": "text",
+    "released_at": "2021-10-11",
+    "open_weights": null,
+    "aliases": [
+      "MT-NLG",
+      "Megatron-Turing NLG 530B",
+      "microsoft-nvidia/megatron-turing-nlg-530b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Megatron-Turing NLG 530B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
   },
   {
     "model_id": "microsoft-research/phi-4",
@@ -5291,6 +8180,156 @@
         "variant": "base",
         "aliases": [
           "phi-4"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "microsoft/mai-image-1",
+    "display_name": "mai-image-1",
+    "creator": "Microsoft",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "mai-image-1",
+      "microsoft/mai-image-1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "mai-image-1",
+          "microsoft/mai-image-1"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "microsoft/mai-image-2",
+    "display_name": "mai-image-2",
+    "creator": "Microsoft",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "mai-image-2",
+      "microsoft/mai-image-2"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "mai-image-2",
+          "microsoft/mai-image-2"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "microsoft/mai-image-2.5",
+    "display_name": "mai-image-2.5",
+    "creator": "Microsoft",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "mai-image-2.5",
+      "microsoft/mai-image-2.5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "mai-image-2.5",
+          "microsoft/mai-image-2.5"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "microsoft/mai-image-2.6",
+    "display_name": "mai-image-2.6",
+    "creator": "Microsoft",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "mai-image-2.6",
+      "microsoft/mai-image-2.6"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "mai-image-2.6",
+          "microsoft/mai-image-2.6"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "microsoft/phi-1-5",
+    "display_name": "phi-1.5",
+    "creator": "Microsoft",
+    "modality": "text",
+    "released_at": "2023-09-11",
+    "open_weights": null,
+    "aliases": [
+      "microsoft/phi-1-5",
+      "phi-1.5",
+      "phi-1_5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "phi-1_5"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "microsoft/phi-2",
+    "display_name": "Phi-2",
+    "creator": "Microsoft",
+    "modality": "text",
+    "released_at": "2023-12-12",
+    "open_weights": null,
+    "aliases": [
+      "Phi-2",
+      "microsoft/phi-2",
+      "phi-2"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "phi-2"
         ]
       }
     ],
@@ -5448,19 +8487,19 @@
       "value": 65535,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/microsoft/wizardlm-2-8x22b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.62,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/microsoft/wizardlm-2-8x22b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 0.62,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/microsoft/wizardlm-2-8x22b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -5513,19 +8552,19 @@
       "value": 204800,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.3,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1.2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -5553,19 +8592,19 @@
       "value": 204800,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2.1",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.3,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2.1",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1.2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2.1",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -5594,19 +8633,19 @@
       "value": 204800,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2.5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.27,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2.5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1.08,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2.5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -5634,19 +8673,19 @@
       "value": 204800,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2.7",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.3,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2.7",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1.2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m2.7",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -5675,19 +8714,19 @@
       "value": 1048576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m3",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.3,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m3",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1.2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/minimax/minimax-m3",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -5817,6 +8856,30 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "mistral-ai/mistral-7b-instruct-v0.2",
+    "display_name": "Mistral 7B",
+    "creator": "Mistral AI",
+    "modality": "text",
+    "released_at": "2023-12-11",
+    "open_weights": null,
+    "aliases": [
+      "Mistral-7B-Instruct-v0.2",
+      "mistral-ai/mistral-7b-instruct-v0.2"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Mistral-7B-Instruct-v0.2"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "mistral-ai/mistral-7b-instruct-v0.3",
     "display_name": "Mistral Instruct v0.3 (7B)",
     "creator": "Mistral AI",
@@ -5833,6 +8896,30 @@
         "variant": "base",
         "aliases": [
           "Mistral-7B-Instruct-v0.3"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "mistral-ai/mistral-7b-v0.1",
+    "display_name": "Mistral 7B",
+    "creator": "Mistral AI",
+    "modality": "text",
+    "released_at": "2023-09-27",
+    "open_weights": null,
+    "aliases": [
+      "Mistral-7B-v0.1",
+      "mistral-ai/mistral-7b-v0.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Mistral-7B-v0.1"
         ]
       }
     ],
@@ -5891,19 +8978,19 @@
       "value": 131072,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/mistralai/mistral-large-2407",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/mistralai/mistral-large-2407",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 6,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/mistralai/mistral-large-2407",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -6153,6 +9240,80 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "mistral-ai/mixtral-8x7b-instruct-v0.1",
+    "display_name": "Mixtral-8x7B-Instruct-v0.1",
+    "creator": "Mistral AI",
+    "modality": "text",
+    "released_at": "2023-12-11",
+    "open_weights": null,
+    "aliases": [
+      "Mixtral-8x7B-Instruct-v0.1",
+      "mistral-ai/mixtral-8x7b-instruct-v0.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Mixtral-8x7B-Instruct-v0.1"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "mistral-ai/mixtral-8x7b-v0.1",
+    "display_name": "Mixtral 8x7B",
+    "creator": "Mistral AI",
+    "modality": "text",
+    "released_at": "2023-12-11",
+    "open_weights": null,
+    "aliases": [
+      "Mixtral 8x7B",
+      "Mixtral-8x7B-v0.1",
+      "mistral-ai/mixtral-8x7b-v0.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Mixtral-8x7B-v0.1"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "mistral-ai/open-mistral-7b",
+    "display_name": "Mistral Tiny",
+    "creator": "Mistral AI",
+    "modality": "text",
+    "released_at": "2023-09-27",
+    "open_weights": null,
+    "aliases": [
+      "Mistral Tiny",
+      "mistral-ai/open-mistral-7b",
+      "open-mistral-7b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "open-mistral-7b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "mistral-ai/open-mistral-nemo-2407",
     "display_name": "open-mistral-nemo-2407",
     "creator": "Mistral AI",
@@ -6192,6 +9353,31 @@
         "variant": "base",
         "aliases": [
           "open-mixtral-8x22b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "mistral-ai/open-mixtral-8x7b",
+    "display_name": "Mistral Small (Dec '23)",
+    "creator": "Mistral AI",
+    "modality": "text",
+    "released_at": "2023-12-11",
+    "open_weights": null,
+    "aliases": [
+      "Mistral Small (Dec '23)",
+      "mistral-ai/open-mixtral-8x7b",
+      "open-mixtral-8x7b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "open-mixtral-8x7b"
         ]
       }
     ],
@@ -6450,6 +9636,81 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "mosaicml/mpt-30b",
+    "display_name": "MPT 30B",
+    "creator": "MosaicML",
+    "modality": "text",
+    "released_at": "2023-06-22",
+    "open_weights": null,
+    "aliases": [
+      "MPT 30B",
+      "mosaicml/mpt-30b",
+      "mpt-30b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "mpt-30b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "mosaicml/mpt-30b-instruct",
+    "display_name": "MPT-Instruct (30B)",
+    "creator": "MosaicML",
+    "modality": "text",
+    "released_at": "2023-06-22",
+    "open_weights": null,
+    "aliases": [
+      "MPT-Instruct (30B)",
+      "mosaicml/mpt-30b-instruct",
+      "mpt-30b-instruct"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "mpt-30b-instruct"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "mosaicml/mpt-7b",
+    "display_name": "MPT 7B",
+    "creator": "MosaicML",
+    "modality": "text",
+    "released_at": "2023-05-05",
+    "open_weights": null,
+    "aliases": [
+      "MPT 7B",
+      "mosaicml/mpt-7b",
+      "mpt-7b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "mpt-7b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "nous-research-arcee-ai/hermes-2-theta-llama-3-70b",
     "display_name": "Hermes-2-Theta-Llama-3-70B",
     "creator": "Nous Research,Arcee AI",
@@ -6469,6 +9730,56 @@
       }
     ],
     "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "nvidia/cosmos3-super-text2image",
+    "display_name": "Cosmos3-Super-Text2Image",
+    "creator": "NVIDIA",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "Cosmos3-Super-Text2Image",
+      "nvidia/cosmos3-super-text2image"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Cosmos3-Super-Text2Image",
+          "nvidia/cosmos3-super-text2image"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "nvidia/cosmos3-super-text2image-agentic",
+    "display_name": "Cosmos3-Super-Text2Image (Agentic)",
+    "creator": "NVIDIA",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "Cosmos3-Super-Text2Image (Agentic)",
+      "nvidia/cosmos3-super-text2image-agentic"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "Cosmos3-Super-Text2Image (Agentic)",
+          "nvidia/cosmos3-super-text2image-agentic"
+        ]
+      }
+    ],
+    "state": "announced",
     "context_window": null,
     "price_input_per_mtok": null,
     "price_output_per_mtok": null
@@ -6499,19 +9810,19 @@
       "value": 262144,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.6,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 2.4,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -6530,6 +9841,155 @@
         "variant": "base",
         "aliases": [
           "Nemotron-4 15B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/ada",
+    "display_name": "ada (350M)",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": null,
+    "open_weights": null,
+    "aliases": [
+      "ada",
+      "ada (350M)",
+      "openai/ada"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "ada"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/babbage",
+    "display_name": "babbage (1.3B)",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2020-06-22",
+    "open_weights": null,
+    "aliases": [
+      "babbage",
+      "babbage (1.3B)",
+      "openai/babbage"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "babbage"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/code-davinci-002",
+    "display_name": "code-davinci-002",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2022-03-15",
+    "open_weights": null,
+    "aliases": [
+      "code-davinci-002",
+      "openai/code-davinci-002"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "code-davinci-002"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/curie",
+    "display_name": "curie (6.7B)",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": null,
+    "open_weights": null,
+    "aliases": [
+      "curie",
+      "curie (6.7B)",
+      "openai/curie"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "curie"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/dall-e-3",
+    "display_name": "dall-e-3",
+    "creator": "OpenAI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "dall-e-3",
+      "openai/dall-e-3"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "dall-e-3",
+          "openai/dall-e-3"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/davinci",
+    "display_name": "davinci (175B)",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": null,
+    "open_weights": null,
+    "aliases": [
+      "davinci",
+      "davinci (175B)",
+      "openai/davinci"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "davinci"
         ]
       }
     ],
@@ -6564,6 +10024,70 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "openai/gpt-3.5-turbo-0613",
+    "display_name": "GPT-3.5 Turbo",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2023-06-13",
+    "open_weights": null,
+    "aliases": [
+      "gpt-3.5-turbo-0613",
+      "openai/gpt-3.5-turbo-0613"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-3.5-turbo-0613"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 4095,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-3.5-turbo-0613",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_input_per_mtok": {
+      "value": 1,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-3.5-turbo-0613",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_output_per_mtok": {
+      "value": 2,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-3.5-turbo-0613",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    }
+  },
+  {
+    "model_id": "openai/gpt-3.5-turbo-1106",
+    "display_name": "GPT-3.5 version 1106",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2023-11-06",
+    "open_weights": null,
+    "aliases": [
+      "GPT-3.5 version 1106",
+      "gpt-3.5-turbo-1106",
+      "openai/gpt-3.5-turbo-1106"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-3.5-turbo-1106"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "openai/gpt-4-0125-preview",
     "display_name": "gpt-4-0125-preview",
     "creator": "OpenAI",
@@ -6586,6 +10110,143 @@
     "context_window": null,
     "price_input_per_mtok": null,
     "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-4-0314",
+    "display_name": "GPT-4",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2023-03-14",
+    "open_weights": null,
+    "aliases": [
+      "GPT-4",
+      "gpt-4-0314",
+      "openai/gpt-4-0314"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-4-0314"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-4-0613",
+    "display_name": "GPT-4",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2023-06-13",
+    "open_weights": null,
+    "aliases": [
+      "gpt-4-0613",
+      "openai/gpt-4-0613"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-4-0613"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-4-1106-preview",
+    "display_name": "gpt-4-1106-preview",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2023-11-06",
+    "open_weights": null,
+    "aliases": [
+      "gpt-4-1106-preview",
+      "openai/gpt-4-1106-preview"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-4-1106-preview"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-4-32k-0314",
+    "display_name": "GPT-4",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2023-03-14",
+    "open_weights": null,
+    "aliases": [
+      "gpt-4-32k-0314",
+      "openai/gpt-4-32k-0314"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-4-32k-0314"
+        ]
+      }
+    ],
+    "state": "released_unranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-4-turbo",
+    "display_name": "GPT-4 Turbo",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2023-11-06",
+    "open_weights": null,
+    "aliases": [
+      "GPT-4 Turbo",
+      "gpt-4-turbo",
+      "openai/gpt-4-turbo"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-4-turbo"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 128000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-4-turbo",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_input_per_mtok": {
+      "value": 10,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-4-turbo",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_output_per_mtok": {
+      "value": 30,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-4-turbo",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    }
   },
   {
     "model_id": "openai/gpt-4-turbo-2024-04-09",
@@ -6636,19 +10297,19 @@
       "value": 1047576,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4.1",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4.1",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 8,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4.1",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -6751,19 +10412,19 @@
       "value": 128000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-2024-05-13",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-2024-05-13",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 15,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-2024-05-13",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -6791,19 +10452,19 @@
       "value": 128000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-2024-08-06",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 2.5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-2024-08-06",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-2024-08-06",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -6830,19 +10491,19 @@
       "value": 128000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-2024-11-20",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 2.5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-2024-11-20",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-2024-11-20",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -6870,19 +10531,19 @@
       "value": 128000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-mini-2024-07-18",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.15,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-mini-2024-07-18",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 0.6,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-4o-mini-2024-07-18",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -6939,19 +10600,19 @@
       "value": 400000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 1.25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -7194,19 +10855,19 @@
       "value": 400000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.1-codex",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 1.25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.1-codex",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.1-codex",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -7234,19 +10895,19 @@
       "value": 400000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.1-codex-max",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 1.25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.1-codex-max",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.1-codex-max",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -7274,19 +10935,19 @@
       "value": 400000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.1-codex-mini",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.25,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.1-codex-mini",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.1-codex-mini",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -7371,19 +11032,19 @@
       "value": 400000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.2-codex",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 1.75,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.2-codex",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 14,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.2-codex",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -7470,19 +11131,19 @@
       "value": 400000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.3-codex",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 1.75,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.3-codex",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 14,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.3-codex",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -7752,19 +11413,19 @@
       "value": 1050000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 5,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 30,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.5",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -7862,19 +11523,19 @@
       "value": 1050000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.5-pro",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 30,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.5-pro",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 180,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.5-pro",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -7982,19 +11643,19 @@
       "value": 1050000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.6-luna",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.19999999999999998,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.6-luna",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1.2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.6-luna",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -8059,19 +11720,19 @@
       "value": 1050000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.6-sol",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.6-sol",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.6-sol",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -8142,19 +11803,19 @@
       "value": 1050000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.6-terra",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.6-terra",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 12,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-5.6-terra",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -8224,19 +11885,248 @@
       "value": 1050000,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-6-astra",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 10,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-6-astra",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 50,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-6-astra",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    }
+  },
+  {
+    "model_id": "openai/gpt-6-luna",
+    "display_name": "GPT-6 Luna",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-09-22",
+    "open_weights": null,
+    "aliases": [
+      "GPT-6 Luna",
+      "gpt-6-luna",
+      "openai/gpt-6-luna"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "GPT-6 Luna (None)",
+          "gpt-6-luna_none",
+          "gpt-6-luna_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-6 Luna (High)",
+          "gpt-6-luna_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-6 Luna (Low)",
+          "gpt-6-luna_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "GPT-6 Luna (Max)",
+          "gpt-6-luna_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-6 Luna (Medium)",
+          "gpt-6-luna_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT-6 Luna (XHigh)",
+          "gpt-6-luna_xhigh"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1050000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6-luna",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_input_per_mtok": {
+      "value": 0.09999999999999999,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6-luna",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_output_per_mtok": {
+      "value": 0.5,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6-luna",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    }
+  },
+  {
+    "model_id": "openai/gpt-6-sol",
+    "display_name": "GPT-6 Sol",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-09-22",
+    "open_weights": null,
+    "aliases": [
+      "GPT-6 Sol",
+      "gpt-6-sol",
+      "openai/gpt-6-sol"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "GPT-6 Sol (None)",
+          "gpt-6-sol_none",
+          "gpt-6-sol_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-6 Sol (High)",
+          "gpt-6-sol_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-6 Sol (Low)",
+          "gpt-6-sol_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "GPT-6 Sol (Max)",
+          "gpt-6-sol_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-6 Sol (Medium)",
+          "gpt-6-sol_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT-6 Sol (XHigh)",
+          "gpt-6-sol_xhigh"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1050000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6-sol",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_input_per_mtok": {
+      "value": 2,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6-sol",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_output_per_mtok": {
+      "value": 10,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6-sol",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    }
+  },
+  {
+    "model_id": "openai/gpt-6.1-sol",
+    "display_name": "GPT-6.1 Sol",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2026-09-29",
+    "open_weights": null,
+    "aliases": [
+      "GPT-6.1 Sol",
+      "gpt-6.1-sol",
+      "openai/gpt-6.1-sol"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-6.1-sol_unknown"
+        ]
+      },
+      {
+        "variant": "high",
+        "aliases": [
+          "GPT-6.1 Sol (High)",
+          "gpt-6.1-sol_high"
+        ]
+      },
+      {
+        "variant": "low",
+        "aliases": [
+          "GPT-6.1 Sol (Low)",
+          "gpt-6.1-sol_low"
+        ]
+      },
+      {
+        "variant": "max",
+        "aliases": [
+          "GPT-6.1 Sol (Max)",
+          "gpt-6.1-sol_max"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "GPT-6.1 Sol (Medium)",
+          "gpt-6.1-sol_medium"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "GPT-6.1 Sol (XHigh)",
+          "gpt-6.1-sol_xhigh"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": {
+      "value": 1050000,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6.1-sol",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_input_per_mtok": {
+      "value": 2,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6.1-sol",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
+    },
+    "price_output_per_mtok": {
+      "value": 10,
+      "quoted_by": "openrouter",
+      "source_url": "https://openrouter.ai/openai/gpt-6.1-sol",
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -8260,6 +12150,137 @@
       }
     ],
     "state": "released_unranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-image-1-mini",
+    "display_name": "gpt-image-1-mini",
+    "creator": "OpenAI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gpt-image-1-mini",
+      "openai/gpt-image-1-mini"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-image-1-mini",
+          "openai/gpt-image-1-mini"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-image-1.5-high-fidelity",
+    "display_name": "gpt-image-1.5-high-fidelity",
+    "creator": "OpenAI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gpt-image-1.5-high-fidelity",
+      "openai/gpt-image-1.5-high-fidelity"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-image-1.5-high-fidelity",
+          "openai/gpt-image-1.5-high-fidelity"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-image-2",
+    "display_name": "gpt-image-2",
+    "creator": "OpenAI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gpt-image-2",
+      "openai/gpt-image-2"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-image-2",
+          "openai/gpt-image-2"
+        ]
+      },
+      {
+        "variant": "medium",
+        "aliases": [
+          "gpt-image-2 (medium)"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-image-2.5-flare",
+    "display_name": "gpt-image-2.5-flare",
+    "creator": "OpenAI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gpt-image-2.5-flare",
+      "openai/gpt-image-2.5-flare"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-image-2.5-flare",
+          "openai/gpt-image-2.5-flare"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/gpt-image-2.5-sunburst",
+    "display_name": "gpt-image-2.5-sunburst",
+    "creator": "OpenAI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "gpt-image-2.5-sunburst",
+      "openai/gpt-image-2.5-sunburst"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt-image-2.5-sunburst",
+          "openai/gpt-image-2.5-sunburst"
+        ]
+      }
+    ],
+    "state": "announced",
     "context_window": null,
     "price_input_per_mtok": null,
     "price_output_per_mtok": null
@@ -8301,19 +12322,19 @@
       "value": 131072,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-oss-120b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.15,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-oss-120b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 0.6,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-oss-120b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -8359,20 +12380,45 @@
       "value": 131072,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-oss-20b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.018,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-oss-20b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 0.09,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/openai/gpt-oss-20b",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
+  },
+  {
+    "model_id": "openai/gpt2-xl",
+    "display_name": "GPT2-XL-1.5B",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2019-11-05",
+    "open_weights": null,
+    "aliases": [
+      "GPT2-XL-1.5B",
+      "gpt2-xl",
+      "openai/gpt2-xl"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "gpt2-xl"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
   },
   {
     "model_id": "openai/o1-2024-12-17",
@@ -8704,6 +12750,152 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "openai/text-ada-001",
+    "display_name": "text-ada-001",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": null,
+    "open_weights": null,
+    "aliases": [
+      "openai/text-ada-001",
+      "text-ada-001"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "text-ada-001"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/text-babbage-001",
+    "display_name": "text-babbage-001",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": null,
+    "open_weights": null,
+    "aliases": [
+      "openai/text-babbage-001",
+      "text-babbage-001"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "text-babbage-001"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/text-curie-001",
+    "display_name": "text-curie-001",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": null,
+    "open_weights": null,
+    "aliases": [
+      "openai/text-curie-001",
+      "text-curie-001"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "text-curie-001"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/text-davinci-001",
+    "display_name": "GPT-3",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2022-01-27",
+    "open_weights": null,
+    "aliases": [
+      "GPT-3",
+      "openai/text-davinci-001",
+      "text-davinci-001"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "text-davinci-001"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/text-davinci-002",
+    "display_name": "GPT-3.5",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2022-03-15",
+    "open_weights": null,
+    "aliases": [
+      "GPT-3.5",
+      "openai/text-davinci-002",
+      "text-davinci-002"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "text-davinci-002"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "openai/text-davinci-003",
+    "display_name": "GPT-3.5",
+    "creator": "OpenAI",
+    "modality": "text",
+    "released_at": "2022-11-28",
+    "open_weights": null,
+    "aliases": [
+      "openai/text-davinci-003",
+      "text-davinci-003"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "text-davinci-003"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "prime-intellect-hugging-face-arcee-ai/intellect-1-instruct",
     "display_name": "INTELLECT-1-Instruct",
     "creator": "Prime Intellect,Hugging Face,Arcee AI",
@@ -8719,6 +12911,281 @@
         "variant": "base",
         "aliases": [
           "INTELLECT-1-Instruct"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "recraft/recraft-v3",
+    "display_name": "recraft-v3",
+    "creator": "Recraft",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "recraft-v3",
+      "recraft/recraft-v3"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "recraft-v3",
+          "recraft/recraft-v3"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "recraft/recraft-v4",
+    "display_name": "recraft-v4",
+    "creator": "Recraft",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "recraft-v4",
+      "recraft/recraft-v4"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "recraft-v4",
+          "recraft/recraft-v4"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "recraft/recraft-v4.1-flash",
+    "display_name": "recraft-v4.1-flash",
+    "creator": "Recraft",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "recraft-v4.1-flash",
+      "recraft/recraft-v4.1-flash"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "recraft-v4.1-flash",
+          "recraft/recraft-v4.1-flash"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "recraft/recraft-v4.1-pro",
+    "display_name": "recraft-v4.1-pro",
+    "creator": "Recraft",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "recraft-v4.1-pro",
+      "recraft/recraft-v4.1-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "recraft-v4.1-pro",
+          "recraft/recraft-v4.1-pro"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "recraft/recraft-v4.1-utility-pro",
+    "display_name": "recraft-v4.1-utility-pro",
+    "creator": "Recraft",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "recraft-v4.1-utility-pro",
+      "recraft/recraft-v4.1-utility-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "recraft-v4.1-utility-pro",
+          "recraft/recraft-v4.1-utility-pro"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "reve/reve-2.0",
+    "display_name": "reve-2.0",
+    "creator": "Reve",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "reve-2.0",
+      "reve/reve-2.0"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "reve-2.0",
+          "reve/reve-2.0"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "reve/reve-2.1",
+    "display_name": "reve-2.1",
+    "creator": "Reve",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "reve-2.1",
+      "reve/reve-2.1"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "reve-2.1",
+          "reve/reve-2.1"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "reve/reve-v1.5",
+    "display_name": "reve-v1.5",
+    "creator": "Reve",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "reve-v1.5",
+      "reve/reve-v1.5"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "reve-v1.5",
+          "reve/reve-v1.5"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "runway/runway-gen4",
+    "display_name": "runway-gen4",
+    "creator": "Runway",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "runway-gen4",
+      "runway/runway-gen4"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "runway-gen4",
+          "runway/runway-gen4"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "salesforce/xgen-7b-8k-base",
+    "display_name": "XGen-7B",
+    "creator": "Salesforce",
+    "modality": "text",
+    "released_at": "2023-06-27",
+    "open_weights": null,
+    "aliases": [
+      "XGen-7B",
+      "salesforce/xgen-7b-8k-base",
+      "xgen-7b-8k-base"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "xgen-7b-8k-base"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "stability-ai/stablebeluga2",
+    "display_name": "StableBeluga2 70B",
+    "creator": "Stability AI",
+    "modality": "text",
+    "released_at": "2023-07-20",
+    "open_weights": null,
+    "aliases": [
+      "StableBeluga2",
+      "StableBeluga2 70B",
+      "stability-ai/stablebeluga2"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "StableBeluga2"
         ]
       }
     ],
@@ -8779,6 +13246,131 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "technology-innovation-institute/falcon-180b",
+    "display_name": "Falcon 180B",
+    "creator": "Technology Innovation Institute",
+    "modality": "text",
+    "released_at": "2023-09-06",
+    "open_weights": null,
+    "aliases": [
+      "Falcon 180B",
+      "falcon-180B",
+      "technology-innovation-institute/falcon-180b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "falcon-180B"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "technology-innovation-institute/falcon-40b",
+    "display_name": "Falcon 40B",
+    "creator": "Technology Innovation Institute",
+    "modality": "text",
+    "released_at": "2023-03-15",
+    "open_weights": null,
+    "aliases": [
+      "Falcon 40B",
+      "falcon-40b",
+      "technology-innovation-institute/falcon-40b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "falcon-40b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "technology-innovation-institute/falcon-40b-instruct",
+    "display_name": "Falcon-Instruct (40B)",
+    "creator": "Technology Innovation Institute",
+    "modality": "text",
+    "released_at": "2023-05-25",
+    "open_weights": null,
+    "aliases": [
+      "Falcon-Instruct (40B)",
+      "falcon-40b-instruct",
+      "technology-innovation-institute/falcon-40b-instruct"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "falcon-40b-instruct"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "technology-innovation-institute/falcon-7b",
+    "display_name": "Falcon 7B",
+    "creator": "Technology Innovation Institute",
+    "modality": "text",
+    "released_at": "2023-04-24",
+    "open_weights": null,
+    "aliases": [
+      "Falcon 7B",
+      "falcon-7b",
+      "technology-innovation-institute/falcon-7b"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "falcon-7b"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "tencent/hunyuan-image-3.0",
+    "display_name": "hunyuan-image-3.0",
+    "creator": "Tencent",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "hunyuan-image-3.0",
+      "tencent/hunyuan-image-3.0"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "hunyuan-image-3.0",
+          "tencent/hunyuan-image-3.0"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "thinking-machines/inkling",
     "display_name": "Inkling",
     "creator": "Thinking Machines",
@@ -8802,19 +13394,19 @@
       "value": 524288,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/thinkingmachines/inkling",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 1,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/thinkingmachines/inkling",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 4.05,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/thinkingmachines/inkling",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -8879,19 +13471,19 @@
       "value": 524288,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/thinkingmachines/inkling-small",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_input_per_mtok": {
       "value": 0.44999999999999996,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/thinkingmachines/inkling-small",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     },
     "price_output_per_mtok": {
       "value": 1.2,
       "quoted_by": "openrouter",
       "source_url": "https://openrouter.ai/thinkingmachines/inkling-small",
-      "fetched_at": "2026-10-13T06:56:27.028Z"
+      "fetched_at": "2026-10-13T07:17:04.325Z"
     }
   },
   {
@@ -9310,6 +13902,137 @@
     "price_output_per_mtok": null
   },
   {
+    "model_id": "xai/grok-4.7",
+    "display_name": "Grok 4.7",
+    "creator": "xAI",
+    "modality": "text",
+    "released_at": "2026-09-21",
+    "open_weights": null,
+    "aliases": [
+      "Grok 4.7",
+      "grok-4.7",
+      "xai/grok-4.7"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "grok-4.7_unknown"
+        ]
+      },
+      {
+        "variant": "xhigh",
+        "aliases": [
+          "grok-4.7_xhigh"
+        ]
+      }
+    ],
+    "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "xai/grok-imagine-image",
+    "display_name": "grok-imagine-image",
+    "creator": "xAI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "grok-imagine-image",
+      "xai/grok-imagine-image"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "grok-imagine-image",
+          "xai/grok-imagine-image"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "xai/grok-imagine-image-2.0-20260801",
+    "display_name": "grok-imagine-image-2.0 (20260801)",
+    "creator": "xAI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "grok-imagine-image-2.0 (20260801)",
+      "xai/grok-imagine-image-2.0-20260801"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "grok-imagine-image-2.0 (20260801)",
+          "xai/grok-imagine-image-2.0-20260801"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "xai/grok-imagine-image-2.0-canvas",
+    "display_name": "grok-imagine-image-2.0 (canvas)",
+    "creator": "xAI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "grok-imagine-image-2.0 (canvas)",
+      "xai/grok-imagine-image-2.0-canvas"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "grok-imagine-image-2.0 (canvas)",
+          "xai/grok-imagine-image-2.0-canvas"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "xai/grok-imagine-image-pro",
+    "display_name": "grok-imagine-image-pro",
+    "creator": "xAI",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": false,
+    "aliases": [
+      "grok-imagine-image-pro",
+      "xai/grok-imagine-image-pro"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "grok-imagine-image-pro",
+          "xai/grok-imagine-image-pro"
+        ]
+      }
+    ],
+    "state": "announced",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
     "model_id": "z.ai-zhipu-ai-tsinghua-university/glm-4.5",
     "display_name": "glm-4p5",
     "creator": "Z.ai (Zhipu AI),Tsinghua University",
@@ -9592,6 +14315,31 @@
       }
     ],
     "state": "ranked",
+    "context_window": null,
+    "price_input_per_mtok": null,
+    "price_output_per_mtok": null
+  },
+  {
+    "model_id": "z.ai-zhipu-ai/glm-image",
+    "display_name": "glm-image",
+    "creator": "Z.ai (Zhipu AI)",
+    "modality": "image",
+    "released_at": null,
+    "open_weights": true,
+    "aliases": [
+      "glm-image",
+      "z.ai-zhipu-ai/glm-image"
+    ],
+    "variants": [
+      {
+        "variant": "base",
+        "aliases": [
+          "glm-image",
+          "z.ai-zhipu-ai/glm-image"
+        ]
+      }
+    ],
+    "state": "announced",
     "context_window": null,
     "price_input_per_mtok": null,
     "price_output_per_mtok": null

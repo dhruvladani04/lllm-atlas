@@ -124,7 +124,6 @@ export default function ModelsPage() {
         tableModels={toTableModels(models)}
         coverage={coverage}
         image={image}
-        models={models}
         freshness={freshness}
         capabilityIndexNote={indexFile?.note ?? null}
       />

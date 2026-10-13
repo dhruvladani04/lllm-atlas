@@ -171,7 +171,7 @@
     "performance_timeline": [
       {
         "model": "text-davinci-003",
-        "model_id": null,
+        "model_id": "openai/text-davinci-003",
         "vendor": "openai",
         "measured_at": "2023-04-13",
         "score": 37.4,
@@ -189,7 +189,7 @@
       },
       {
         "model": "GPT-4",
-        "model_id": null,
+        "model_id": "openai/gpt-4-0314",
         "vendor": "openai",
         "measured_at": "2023-04-13",
         "score": 58.4,
@@ -830,7 +830,7 @@
     "performance_timeline": [
       {
         "model": "PaLM 540B",
-        "model_id": null,
+        "model_id": "google-research/palm-540b",
         "vendor": "google",
         "measured_at": "2022-10-17",
         "score": 65.2,
@@ -1324,7 +1324,7 @@
       },
       {
         "model": "gpt-4",
-        "model_id": null,
+        "model_id": "openai/gpt-4-0314",
         "vendor": "openai",
         "measured_at": "2023-03-14",
         "score": 19.87,
@@ -1931,7 +1931,7 @@
       },
       {
         "model": "PaLM 540B",
-        "model_id": null,
+        "model_id": "google-research/palm-540b",
         "vendor": "google",
         "measured_at": "2022-04-01",
         "score": 83.4,
@@ -1940,7 +1940,7 @@
       },
       {
         "model": "LLaMA-65B",
-        "model_id": null,
+        "model_id": "meta-ai/llama-65b",
         "vendor": "meta",
         "measured_at": "2023-02-27",
         "score": 84.2,
@@ -3655,7 +3655,7 @@
       },
       {
         "model": "Gopher 280B",
-        "model_id": null,
+        "model_id": "deepmind/gopher-280b",
         "vendor": "deepmind",
         "measured_at": "2021-12-08",
         "score": 60,
@@ -3664,7 +3664,7 @@
       },
       {
         "model": "Chinchilla 70B",
-        "model_id": null,
+        "model_id": "deepmind/chinchilla-70b",
         "vendor": "deepmind",
         "measured_at": "2022-03-29",
         "score": 67.6,
@@ -3673,7 +3673,7 @@
       },
       {
         "model": "PaLM 540B",
-        "model_id": null,
+        "model_id": "google-research/palm-540b",
         "vendor": "google",
         "measured_at": "2022-04-05",
         "score": 69.3,
@@ -3682,7 +3682,7 @@
       },
       {
         "model": "GPT-4",
-        "model_id": null,
+        "model_id": "openai/gpt-4-0314",
         "vendor": "openai",
         "measured_at": "2023-03-14",
         "score": 86.4,
@@ -3764,7 +3764,7 @@
     "performance_timeline": [
       {
         "model": "GPT-4-Turbo",
-        "model_id": null,
+        "model_id": "openai/gpt-4-turbo",
         "vendor": "openai",
         "measured_at": "2024-04-09",
         "score": 63.7,
@@ -3928,7 +3928,7 @@
     "performance_timeline": [
       {
         "model": "GPT-4",
-        "model_id": null,
+        "model_id": "openai/gpt-4-0314",
         "vendor": "openai",
         "measured_at": "2023-06-09",
         "score": 8.99,
@@ -5412,7 +5412,7 @@
       },
       {
         "model": "T5-11B",
-        "model_id": null,
+        "model_id": "google/t5-11b",
         "vendor": "google",
         "measured_at": "2019-10-23",
         "score": 89.3,
@@ -5448,7 +5448,7 @@
       },
       {
         "model": "PaLM 540B",
-        "model_id": null,
+        "model_id": "google-research/palm-540b",
         "vendor": "google",
         "measured_at": "2022-04-04",
         "score": 90.4,

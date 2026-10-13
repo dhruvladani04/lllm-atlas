@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
 import { useSearchParams } from "next/navigation";
-import type { Model } from "@/lib/schemas/model";
 import type { Score } from "@/lib/schemas/score";
 import type { SourceMeta } from "@/lib/schemas/common";
 import type { Tab } from "@/lib/leaderboard/rows";
@@ -28,7 +27,6 @@ const TAB_LABEL: Record<Tab, string> = {
 export function Leaderboard({
   tabs,
   image,
-  models,
   tableModels,
   freshness,
   capabilityIndexNote,
@@ -36,7 +34,6 @@ export function Leaderboard({
 }: {
   tabs: Record<"text" | "agentic", { hidden: TableData; shown: TableData }>;
   image: { note: string; source: SourceMeta; scores: Score[] } | null;
-  models: Model[];
   tableModels: Record<string, TableModel>;
   freshness: Record<string, string | null>;
   capabilityIndexNote: string | null;
@@ -95,7 +92,7 @@ export function Leaderboard({
         {tab === "image" ? (
           <ImageTable
             leaderboard={image}
-            models={models}
+            models={tableModels}
             fetchedAt={freshness["arena-mirror"] ?? null}
           />
         ) : (

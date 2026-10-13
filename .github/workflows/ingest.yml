@@ -40,6 +40,13 @@ jobs:
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
 
+      # The commit below is what deploys the site, so the data has to be shown to build
+      # before it is committed. Every page parses these files with Zod at build time; a
+      # snapshot that fails here would otherwise reach Vercel as a broken deploy. If this
+      # step fails nothing is committed, and the site keeps serving the last good data.
+      - name: Check the site builds on the new data
+        run: pnpm build
+
       - name: Commit if anything changed
         run: |
           git config user.name "github-actions[bot]"

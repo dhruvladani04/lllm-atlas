@@ -115,6 +115,24 @@ Three rules the generator follows, each a case where guessing would be worse tha
 A candidate measured only on benchmarks with no health record here is demoted, because
 approving it would add no scores — accurate, and useless.
 
+**Image models are proposed from Arena's board, by different rules.** Epoch names no image
+models at all, so `lib/registry/image-candidates.ts` reads the text-to-image board instead.
+The evidence is a different shape — a vendor slug and the model's licence, but no release
+date — and three things follow from that:
+
+- **The creator comes from a table, not a rule.** Arena's slugs are `bfl` and `xai`; no
+  capitalisation rule produces "Black Forest Labs" or "xAI". A slug missing from the table
+  is kept raw and held out of the high tier rather than guessed at.
+- **`open_weights` is derivable here, and only here.** `Proprietary` means no weights. Any
+  other named licence is a licence on released weights — a non-commercial licence
+  restricts use, not availability — so the weights are open. No licence stated stays null.
+- **Parentheses are a tier only when they say so.** `gpt-image-2 (medium)` is one model
+  with a `medium` variant; `(nano-banana-2)` and `(canvas)` are part of the name, and
+  splitting on them would merge distinct models.
+
+`released_at` is null for every image entry, because Arena publishes no release date and
+nothing else here names these models.
+
 ## Changelog
 
 - Initial version.
@@ -133,3 +151,5 @@ generator has no path to a score on a text benchmark, so listing one in the text
 "released, not yet independently scored" block promises a gap that will never close. Six of
 the seven models in that block were image models before this field existed.
 - Added `modality`, so a ranking only lists models it could ever include. Post-launch.
+- Image models are proposed from Arena's board, with `open_weights` read from the licence
+  Arena records. Registry expansion.

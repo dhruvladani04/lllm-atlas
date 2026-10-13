@@ -231,7 +231,7 @@ describe("harvestArenaScores", () => {
       [
         {
           rank: 1,
-          model: "gpt-image-2.5-sunburst",
+          model: "a-model-no-registry-will-ever-hold",
           vendor: "OpenAI",
           license: "proprietary",
           score: 1421,
@@ -243,7 +243,7 @@ describe("harvestArenaScores", () => {
       source,
     );
     expect(scores).toHaveLength(0);
-    expect(unresolvedModels[0]?.name).toBe("gpt-image-2.5-sunburst");
+    expect(unresolvedModels[0]?.name).toBe("a-model-no-registry-will-ever-hold");
   });
 });
 
