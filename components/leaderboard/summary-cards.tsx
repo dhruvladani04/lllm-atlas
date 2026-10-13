@@ -22,7 +22,7 @@ const usd = (value: number) => `$${value.toFixed(2)}`;
 
 function Card({ card }: { card: SummaryCard }) {
   return (
-    <li className="flex w-[16rem] shrink-0 flex-col rounded-md border border-rule bg-surface p-4 shadow-sm sm:w-auto">
+    <li className="flex w-[16rem] shrink-0 flex-col rounded-md border border-rule bg-surface p-4 shadow-sm lg:w-auto">
       <h3 className="text-xs text-ink-mute">{card.label}</h3>
 
       <p className="mt-2 flex items-start gap-2 text-sm">
@@ -134,7 +134,7 @@ export function SummaryCards({
         Each card is one row from the leaderboard, picked by the rule in its heading.
         &ldquo;Highest on a benchmark&rdquo; is not &ldquo;best&rdquo;.
       </p>
-      <ul className="mt-3 flex gap-3 overflow-x-auto pb-1 sm:grid sm:overflow-visible sm:pb-0 sm:grid-cols-[repeat(auto-fit,minmax(min(100%,15rem),1fr))]">
+      <ul className="mt-3 flex gap-3 overflow-x-auto pb-1 lg:grid lg:grid-cols-[repeat(auto-fit,minmax(13rem,1fr))] lg:overflow-visible lg:pb-0">
         {cards.map((card) => (
           <Card key={card.kind} card={card} />
         ))}
