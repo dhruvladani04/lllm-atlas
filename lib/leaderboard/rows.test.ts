@@ -299,3 +299,50 @@ describe("modality keeps a tab's unranked block honest", () => {
     expect(result.unranked.map((row) => row.model.model_id)).toContain("unscored");
   });
 });
+
+describe("buildRows with a reader-chosen basis", () => {
+  const other = benchmark("other-bench", { status: "nearing-saturation" });
+  const scores = [
+    score("a", ACTIVE, 90),
+    score("b", ACTIVE, 80),
+    score("c", ACTIVE, 70),
+    score("a", other, 40),
+    score("b", other, 60),
+  ];
+  const models = [model("a"), model("b"), model("c")];
+  const input = {
+    scores,
+    models,
+    capabilityIndex: new Map(),
+    tab: "text" as const,
+    hideSaturated: true,
+  };
+
+  it("ranks on the chosen benchmark and keeps the coverage rule's choice as the default", () => {
+    const result = buildRows({ ...input, basis: "other-bench" });
+    expect(result.reference?.slug).toBe("other-bench");
+    expect(result.defaultReference?.slug).toBe("active-bench");
+    expect(result.rows.map((row) => row.model.model_id)).toEqual(["b", "a"]);
+    // The rationale defends the rule's choice, not the reader's.
+    expect(result.rationale).toBeNull();
+  });
+
+  it("lists every rankable benchmark, the default first", () => {
+    const result = buildRows(input);
+    expect(result.options.map((option) => option.slug)).toEqual([
+      "active-bench",
+      "other-bench",
+    ]);
+  });
+
+  it("ignores a basis the view does not offer", () => {
+    expect(buildRows({ ...input, basis: "nope" }).reference?.slug).toBe("active-bench");
+    // A saturated benchmark is not on offer while saturated benchmarks are hidden.
+    const withSaturated = buildRows({
+      ...input,
+      scores: [...scores, score("a", SATURATED, 99), score("b", SATURATED, 98)],
+      basis: "saturated-bench",
+    });
+    expect(withSaturated.reference?.slug).toBe("active-bench");
+  });
+});
