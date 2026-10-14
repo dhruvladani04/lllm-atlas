@@ -21,6 +21,8 @@ import {
 import { FreshnessStamp } from "@/components/data/freshness-stamp";
 import { BenchwikiAttribution } from "@/components/benchmarks/attribution";
 import { Trajectory } from "@/components/benchmarks/trajectory";
+import { BestOverTimeChart } from "@/components/benchmarks/best-over-time-chart";
+import { bestOverTime } from "@/lib/benchmarks/best-over-time";
 
 /**
  * specs/03-sections/benchmarks.md — the mirrored detail page.
@@ -271,6 +273,20 @@ export default async function BenchmarkPage({
 
       <section className="mt-8">
         <h2 className="text-lg font-medium">Trajectory</h2>
+        {independent.length > 1 &&
+        independent.every((score) => score.unit === "percent") ? (
+          <>
+            <h3 className="mt-3 text-sm font-medium">Best score measured on this site</h3>
+            <BestOverTimeChart
+              series={bestOverTime(independent)}
+              benchmarkName={benchmark.name}
+              names={Object.fromEntries(
+                [...models.values()].map((model) => [model.model_id, model.display_name]),
+              )}
+            />
+            <h3 className="mt-6 text-sm font-medium">As benchwiki records it</h3>
+          </>
+        ) : null}
         <Trajectory benchmark={benchmark} />
       </section>
 

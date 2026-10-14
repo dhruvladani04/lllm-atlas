@@ -84,3 +84,7 @@ mirrored pages, not the site's core feature.
 - Added the optional hand-maintained "History & lineage" and "Further reading" blocks,
   backed by `data/registry/benchmark-history.json`, and renumbered the detail-page list.
   Populated for the ARC-AGI family (`arc-agi`, `arc-agi-2`, `arc-agi-3`).
+- Benchmark pages chart the best score measured on this site over time: every independent
+  score as a dot, a step line through the record-setters, and no line at all when the
+  scores come from different agent harnesses. benchwiki's own trajectory follows it. UX
+  refresh, P1.

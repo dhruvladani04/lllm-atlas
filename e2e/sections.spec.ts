@@ -184,3 +184,11 @@ test("a guide's contents list points at headings that exist", async ({ page }) =
     await expect(page.locator(`h2[id="${id}"]`)).toHaveCount(1);
   }
 });
+
+test("the leaderboard and a benchmark page each carry their chart", async ({ page }) => {
+  await page.goto("/models");
+  await expect(page.getByRole("img", { name: /^Price against score on/ })).toBeVisible();
+
+  await page.goto("/benchmarks/gpqa");
+  await expect(page.getByRole("img", { name: /measured on this site/ })).toBeVisible();
+});

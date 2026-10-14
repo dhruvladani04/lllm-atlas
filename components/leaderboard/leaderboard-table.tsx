@@ -31,6 +31,7 @@ import { FreshnessStamp } from "@/components/data/freshness-stamp";
 import { CreatorLogo } from "@/components/ui/creator-logo";
 import { primaryCreator } from "@/lib/format/display-name";
 import { Legend, MODEL_TABLE_MARKS } from "@/components/data/legend";
+import { PriceScoreChart } from "@/components/leaderboard/price-score-chart";
 import {
   STACKED_BADGES,
   STACKED_CELL,
@@ -1056,6 +1057,14 @@ export function LeaderboardTable({
             </>
           )}
         </div>
+      ) : null}
+
+      {data.reference !== null && rows.length > 0 ? (
+        <PriceScoreChart
+          rows={rows}
+          models={models}
+          benchmarkName={data.reference.name}
+        />
       ) : null}
 
       {data.unranked.length > 0 ? (

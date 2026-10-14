@@ -403,3 +403,6 @@ Decide." Copy guidance is in `04-design/design-system.md`.
   three pairs from the rankings when empty, and leads with shared benchmarks. The model page
   groups a benchmark's configurations under its best one in a single shared table, and has
   a "Compare with…" action. UX refresh, P1.
+- Price against score: a hand-rolled SVG scatter below the table, one dot per row the
+  table shows, log price axis, open-weights models hollow, unpriced rows counted and left
+  off rather than placed at zero. UX refresh, P1.
