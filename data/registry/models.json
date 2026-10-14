@@ -1203,7 +1203,7 @@
   },
   {
     "model_id": "alibaba/qwen3.7-flash",
-    "display_name": "qwen3.7-flash",
+    "display_name": "Qwen3.7 Flash",
     "creator": "Alibaba",
     "modality": "text",
     "released_at": "2026-07-27",
@@ -1342,7 +1342,7 @@
   },
   {
     "model_id": "alibaba/qwen3.8-max-0902",
-    "display_name": "qwen3.8-max-0902",
+    "display_name": "Qwen3.8-Max-0902",
     "creator": "Alibaba",
     "modality": "text",
     "released_at": "2026-09-01",
@@ -2007,7 +2007,7 @@
   },
   {
     "model_id": "anthropic/claude-haiku-5-5",
-    "display_name": "claude-haiku-5-5",
+    "display_name": "Claude Haiku 5.5",
     "creator": "Anthropic",
     "modality": "text",
     "released_at": "2026-10-07",
@@ -4682,7 +4682,7 @@
   },
   {
     "model_id": "google-deepmind/gemini-3.1-pro-preview-customtools",
-    "display_name": "gemini-3.1-pro-preview-customtools",
+    "display_name": "Gemini 3.1 Pro Preview Custom Tools",
     "creator": "Google DeepMind",
     "modality": "text",
     "released_at": "2026-02-19",
@@ -4752,7 +4752,7 @@
   },
   {
     "model_id": "google-deepmind/gemini-3.8-flash",
-    "display_name": "gemini-3-8-flash",
+    "display_name": "Gemini 3.8 Flash",
     "creator": "Google DeepMind",
     "modality": "text",
     "released_at": "2026-09-02",
@@ -4954,7 +4954,7 @@
   },
   {
     "model_id": "google-deepmind/gemma-4-26b-a4b-it",
-    "display_name": "gemma-4-26b-a4b-it",
+    "display_name": "Gemma 4 26B A4B",
     "creator": "Google DeepMind",
     "modality": "text",
     "released_at": "2026-04-02",
@@ -6438,7 +6438,7 @@
   },
   {
     "model_id": "meta-ai/muse-spark",
-    "display_name": "meta/muse_spark",
+    "display_name": "Muse Spark",
     "creator": "Meta AI",
     "modality": "text",
     "released_at": "2026-04-08",
@@ -11009,7 +11009,7 @@
   },
   {
     "model_id": "xai/grok-4.20-0309-reasoning",
-    "display_name": "grok/grok-4.20-0309-reasoning",
+    "display_name": "grok-4.20-0309-reasoning",
     "creator": "xAI",
     "modality": "text",
     "released_at": "2026-02-17",
@@ -11261,7 +11261,7 @@
   },
   {
     "model_id": "z.ai-zhipu-ai-tsinghua-university/glm-4.5",
-    "display_name": "glm-4p5",
+    "display_name": "GLM 4.5",
     "creator": "Z.ai (Zhipu AI),Tsinghua University",
     "modality": "text",
     "released_at": "2025-08-03",
@@ -11288,7 +11288,7 @@
   },
   {
     "model_id": "z.ai-zhipu-ai-tsinghua-university/glm-4.5-air",
-    "display_name": "glm-4p5-air",
+    "display_name": "GLM 4.5 Air",
     "creator": "Z.ai (Zhipu AI),Tsinghua University",
     "modality": "text",
     "released_at": "2025-07-20",
@@ -11451,7 +11451,7 @@
   },
   {
     "model_id": "z.ai-zhipu-ai/glm-5.3",
-    "display_name": "glm-5-3",
+    "display_name": "GLM 5.3",
     "creator": "Z.ai (Zhipu AI)",
     "modality": "text",
     "released_at": "2026-08-14",
@@ -11481,7 +11481,7 @@
   },
   {
     "model_id": "z.ai-zhipu-ai/glm-5.3-flash",
-    "display_name": "glm-5-3-flash",
+    "display_name": "GLM 5.3 Flash",
     "creator": "Z.ai (Zhipu AI)",
     "modality": "text",
     "released_at": "2026-08-20",
