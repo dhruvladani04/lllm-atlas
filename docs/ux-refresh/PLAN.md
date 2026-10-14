@@ -111,3 +111,38 @@ Still open after P0, and where it is planned:
   `disputed`, because the column only collapses when every row is identical. P1 shows only
   what differs.
 - The sticky table header still does not pin. P1.
+
+## Rest of P0, and P1 result
+
+Measured 2026-10-14 on a local production build. Screenshots are in
+[`after-p1/`](after-p1/), same naming as `before/`, plus five `x-*` views that only exist
+below the fold or after an interaction.
+
+Finished from P0: the shared health flag is stated once and each row's Health cell shows
+only what it adds; "Not ranked here" is grouped by reason, collapsed, with counts and a
+search; the table header sticks, now that the overflow wrapper that pinned it to itself is
+gone.
+
+| Check                                           | After P0 | After P1                                     |
+| ----------------------------------------------- | -------- | -------------------------------------------- |
+| `/models` DOM nodes on load                     | 1,614    | 933 (before the chart, which adds about 150) |
+| `/models?tab=agentic` DOM nodes on load         | 2,251    | 906                                          |
+| `/models` document, uncompressed                | 667KB    | 558KB, including every ranking-basis option  |
+| Fonts preloaded per page                        | 4        | 1                                            |
+| e2e tests                                       | 55       | 88                                           |
+| Routes scrolling sideways at 390, 768 or 1024px | 0        | 0, all three widths now tested               |
+
+Lighthouse could not be re-measured reliably. Identical runs on this machine moved by 15
+points between consecutive attempts (home scored 76 and then 90 on the same build), and the
+keyless PageSpeed Insights quota was exhausted. The changes aimed at it — one preloaded
+font, a smaller client payload, half the hydrated DOM — measurably reduce the work, but the
+score itself should be taken from PageSpeed Insights against the deployed site.
+
+Not done, and why:
+
+- **Raw names on image models** stay as Arena writes them. No source publishes another name
+  for them, and inventing one is the thing this site does not do.
+- **Duplicate registry entries.** `meta-ai/llama-4-maverick-17b-128e-instruct` and
+  `meta/llama-4-maverick` are the same model registered twice, as are the two Llama 4
+  Scout entries. Merging them is a registry decision and is left for the owner; the lists
+  now tell them apart by id rather than showing two identical names.
