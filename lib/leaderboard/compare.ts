@@ -1,5 +1,6 @@
 import type { HealthFlag, JoinedScore } from "@/lib/schemas/score";
 import type { Benchmark } from "@/lib/schemas/benchmark";
+import type { BuildRowsResult } from "@/lib/leaderboard/rows";
 
 /**
  * Comparing two models is the feature people come to a leaderboard for, and it is also the
@@ -128,4 +129,57 @@ export function compareModels(
     comparable: rows.filter((row) => row.complete).sort(byName),
     incomplete: rows.filter((row) => !row.complete).sort(byName),
   };
+}
+
+/** A pair worth comparing, and the rule that picked it. */
+export interface SuggestedPair {
+  label: string;
+  ids: [string, string];
+}
+
+/**
+ * Starting points for an empty comparison, taken from the rankings rather than chosen by
+ * hand: the top two on each tab's reference benchmark, and the top model against the top
+ * open-weights one. Each pair shares at least that benchmark, so every suggestion opens on
+ * a comparison with something in it. A rule that matches nothing suggests nothing.
+ */
+export function suggestedPairs(
+  text: BuildRowsResult,
+  agentic: BuildRowsResult,
+): SuggestedPair[] {
+  // One entry per model, keeping its best (first) row: rows are per configuration.
+  const models = (result: BuildRowsResult) => {
+    const seen = new Set<string>();
+    return result.rows.filter((row) => {
+      if (seen.has(row.model.model_id)) return false;
+      seen.add(row.model.model_id);
+      return true;
+    });
+  };
+
+  const pairs: SuggestedPair[] = [];
+  const textModels = models(text);
+  const [first, second] = textModels;
+  if (text.reference !== null && first !== undefined && second !== undefined) {
+    pairs.push({
+      label: `The top two on ${text.reference.name}`,
+      ids: [first.model.model_id, second.model.model_id],
+    });
+    const open = textModels.find((row) => row.model.open_weights === true);
+    if (open !== undefined && open.model.model_id !== first.model.model_id) {
+      pairs.push({
+        label: `The top model and the top open-weights model on ${text.reference.name}`,
+        ids: [first.model.model_id, open.model.model_id],
+      });
+    }
+  }
+
+  const [a, b] = models(agentic);
+  if (agentic.reference !== null && a !== undefined && b !== undefined) {
+    pairs.push({
+      label: `The top two on ${agentic.reference.name}`,
+      ids: [a.model.model_id, b.model.model_id],
+    });
+  }
+  return pairs;
 }

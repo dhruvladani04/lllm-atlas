@@ -232,9 +232,22 @@ that never ends, never a blank table.
 
 ## Compare view
 
-Route: `/compare`. Selection lives in component state, not the URL — the route is static,
-and reading a search parameter during render is what caused the hydration mismatch the tabs
-had to be rewritten to avoid.
+Route: `/compare?models=a,b,c`. The selection is in the URL so a comparison can be
+shared. The route is static, so the first client render matches the server's empty
+selection and the URL is applied straight after hydration — the same trade the tabs make,
+because reading a search parameter during the first render is a hydration mismatch.
+Choosing a model replaces the URL in place; it is not a navigation.
+
+Models are chosen with a combobox: type to filter, arrow keys and Enter to choose, Escape
+to clear, options grouped by creator, at most 40 shown at once. It replaced a native select
+of 377 alphabetised names. With fewer than two models chosen the page offers three pairs
+taken from the rankings — the top two on the text reference, the top model against the top
+open-weights one, the top two on the agentic reference — each one click, and each sharing
+at least that benchmark, so a suggestion never opens on an empty comparison.
+
+The results lead with the benchmarks every chosen model was measured on, then the partial
+overlap, set apart and stated as an absence of measurement. Identity comes last: the
+comparison is the point of the page.
 
 The view exists to answer the question a leaderboard raises and does not settle: how do
 these two actually differ. Its one non-obvious rule is the reason it is worth building at
@@ -359,3 +372,7 @@ Decide." Copy guidance is in `04-design/design-system.md`.
 - Shared health flags are stated once in the summary line and dropped from each row's
   Health cell; "Not ranked here" is grouped by reason, collapsed, with counts and a search;
   the overflow wrapper that stopped the header sticking is removed. UX refresh, rest of P0.
+- Compare keeps its selection in the URL, chooses models with a typeable combobox, offers
+  three pairs from the rankings when empty, and leads with shared benchmarks. The model page
+  groups a benchmark's configurations under its best one in a single shared table, and has
+  a "Compare with…" action. UX refresh, P1.

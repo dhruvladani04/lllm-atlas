@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { buildRows } from "@/lib/leaderboard/rows";
+import { suggestedPairs } from "@/lib/leaderboard/compare";
 import { loadJoinedScores, loadModels } from "@/lib/data/derived";
 import { toCompareBenchmarks, toCompareScores } from "@/lib/leaderboard/compare";
 import { toTableModels } from "@/lib/leaderboard/view";
@@ -8,8 +11,7 @@ import { CompareView } from "@/components/leaderboard/compare-view";
  * specs/03-sections/leaderboard.md — side-by-side comparison.
  *
  * Static like everything else: every model and score is shipped with the page and the
- * comparison is computed in the browser. The corpus is small enough (30 models, ~170
- * scores) that this costs less than a round trip would.
+ * comparison is computed in the browser.
  */
 
 export const dynamic = "force-static";
@@ -41,11 +43,29 @@ export default function ComparePage() {
         be read as a comparison at all.
       </p>
 
-      <CompareView
-        models={models}
-        scores={toCompareScores(scores)}
-        benchmarks={toCompareBenchmarks(scores)}
-      />
+      <Suspense fallback={null}>
+        <CompareView
+          models={models}
+          scores={toCompareScores(scores)}
+          benchmarks={toCompareBenchmarks(scores)}
+          suggestions={suggestedPairs(
+            buildRows({
+              scores,
+              models: loadModels(),
+              capabilityIndex: new Map(),
+              tab: "text",
+              hideSaturated: true,
+            }),
+            buildRows({
+              scores,
+              models: loadModels(),
+              capabilityIndex: new Map(),
+              tab: "agentic",
+              hideSaturated: true,
+            }),
+          )}
+        />
+      </Suspense>
     </main>
   );
 }
