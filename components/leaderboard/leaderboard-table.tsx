@@ -757,7 +757,7 @@ export function LeaderboardTable({
 
       {base.options.length > 1 ? (
         <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-3 text-sm">
-          <label className="flex flex-wrap items-center gap-2">
+          <label className="flex max-w-full min-w-0 flex-wrap items-center gap-2">
             Rank on
             <select
               value={wanted ?? base.defaultSlug ?? ""}
@@ -766,7 +766,9 @@ export function LeaderboardTable({
                   event.target.value === base.defaultSlug ? null : event.target.value,
                 )
               }
-              className="max-w-full rounded-sm border border-rule bg-surface px-2 py-1"
+              // A select sizes itself to its longest option; bounded so a long benchmark name
+              // and its status cannot push a phone screen sideways.
+              className="w-full max-w-[24rem] min-w-0 truncate rounded-sm border border-rule bg-surface px-2 py-1 sm:w-auto"
             >
               {base.options.map((option) => (
                 <option key={option.slug} value={option.slug}>
