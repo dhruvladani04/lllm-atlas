@@ -317,6 +317,15 @@ the summary cards, which are the same argument applied to the current leaders: e
 score with its benchmark's health attached. Then the three section entries with one line
 each. The cards come second on purpose; the caveat is taught before the rankings are shown.
 
+Under the opening sentence sit two plain actions: "Open the leaderboard", the page's one
+filled button, and "How we judge benchmarks", outlined. They are links styled as buttons,
+not a hero: no big number, no backdrop, no tagline.
+
+The home page shows three of the summary cards, one per tab — text, agentic, image — with a
+link to the leaderboard for the rest. The open-weights and price cards belong beside the
+table they are lifted from. The three section entries are cards, each one link the size of
+the card with a hover state, so the whole block is visibly the target.
+
 Do not write a hero with a big number and a gradient. Do not write "Track. Compare.
 Decide." Copy guidance is in `04-design/design-system.md`.
 

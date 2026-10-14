@@ -23,6 +23,24 @@ import { FreshnessStamp } from "@/components/data/freshness-stamp";
 
 export const dynamic = "force-static";
 
+const SECTIONS = [
+  {
+    href: "/models",
+    title: "Leaderboard",
+    line: "Who is ahead right now, on a named benchmark, with that benchmark's health and every number's provenance beside it.",
+  },
+  {
+    href: "/benchmarks",
+    title: "Benchmarks",
+    line: "Whether the test a model is ahead on still measures anything: saturation, contamination, deprecation.",
+  },
+  {
+    href: "/evals",
+    title: "Evals",
+    line: "How to measure your own application, which is a different discipline from ranking foundation models.",
+  },
+] as const;
+
 export default function HomePage() {
   const scores = loadJoinedScores();
   const models = loadModels();
@@ -48,6 +66,23 @@ export default function HomePage() {
         number.
       </p>
 
+      {/* Two plain actions, not a hero. The first is the one filled button on the page, which
+          is the design system's allowance for a page's single primary action. */}
+      <p className="mt-6 flex flex-wrap gap-3 text-sm">
+        <Link
+          href="/models"
+          className="rounded-sm bg-accent px-4 py-2 font-medium text-paper hover:bg-accent-strong hover:text-paper"
+        >
+          Open the leaderboard
+        </Link>
+        <Link
+          href="/methodology"
+          className="rounded-sm border border-rule-strong px-4 py-2 hover:border-accent"
+        >
+          How we judge benchmarks
+        </Link>
+      </p>
+
       {demonstration === null ? (
         <p className="mt-8 max-w-[66ch] text-sm text-ink-mute">
           No scored model currently sits on a saturated benchmark, so there is no example
@@ -62,40 +97,33 @@ export default function HomePage() {
         </>
       )}
 
-      <SummaryCards cards={cards} heading="Who is ahead, and on what" />
+      {/* One per tab — text, agentic, image. The open-weights and price cards live on the
+          leaderboard, beside the table they are lifted from. */}
+      <SummaryCards
+        cards={cards.filter((card) =>
+          ["top-text", "top-agentic", "top-image"].includes(card.kind),
+        )}
+        heading="Who is ahead, and on what"
+        more={{ href: "/models", label: "Open weights, price and the full ranking" }}
+      />
 
       <nav className="mt-12" aria-label="Sections">
-        <ul className="divide-y divide-rule border-y border-rule">
-          <li className="py-4">
-            <Link href="/models" className="text-base underline-offset-2 hover:underline">
-              Leaderboard
-            </Link>
-            <p className="mt-1 max-w-[66ch] text-sm text-ink-mute">
-              Who is ahead right now, on a named benchmark, with the health of that
-              benchmark and the provenance of every number beside it.
-            </p>
-          </li>
-          <li className="py-4">
-            <Link
-              href="/benchmarks"
-              className="text-base underline-offset-2 hover:underline"
-            >
-              Benchmarks
-            </Link>
-            <p className="mt-1 max-w-[66ch] text-sm text-ink-mute">
-              Whether the test a model is ahead on still measures anything — saturation,
-              contamination, deprecation, and which models were scored on it.
-            </p>
-          </li>
-          <li className="py-4">
-            <Link href="/evals" className="text-base underline-offset-2 hover:underline">
-              Evals
-            </Link>
-            <p className="mt-1 max-w-[66ch] text-sm text-ink-mute">
-              How to measure your own application, which is a different discipline from
-              ranking foundation models and is where most teams need the help.
-            </p>
-          </li>
+        {/* Each section is one link the size of its card, so the whole block is the target
+            and the hover state says so. No arrows: the design spec rules them out. */}
+        <ul className="grid gap-3 sm:grid-cols-3">
+          {SECTIONS.map((section) => (
+            <li key={section.href}>
+              <Link
+                href={section.href}
+                className="group block h-full rounded-md border border-rule bg-surface p-4 shadow-sm transition-colors hover:border-accent"
+              >
+                <span className="text-base font-medium underline-offset-2 group-hover:underline">
+                  {section.title}
+                </span>
+                <span className="mt-1 block text-sm text-ink-mute">{section.line}</span>
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
 

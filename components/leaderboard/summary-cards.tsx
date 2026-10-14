@@ -119,9 +119,12 @@ function Card({ card }: { card: SummaryCard }) {
 export function SummaryCards({
   cards,
   heading,
+  more = null,
 }: {
   cards: readonly SummaryCard[];
   heading: string;
+  /** Where the rest of the cards are, when this shows only some of them. */
+  more?: { href: "/models"; label: string } | null;
 }) {
   if (cards.length === 0) return null;
 
@@ -139,6 +142,13 @@ export function SummaryCards({
           <Card key={card.kind} card={card} />
         ))}
       </ul>
+      {more !== null ? (
+        <p className="mt-3 text-sm">
+          <Link href={more.href} className="underline underline-offset-2">
+            {more.label}
+          </Link>
+        </p>
+      ) : null}
     </section>
   );
 }
