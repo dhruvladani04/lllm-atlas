@@ -23,11 +23,12 @@ const ROUTES = [
   "/methodology",
 ];
 
-test.describe("at 390px", () => {
-  test.use({ viewport: { width: 390, height: 844 } });
-
+// 390 is a phone. 768 and 1024 are where the leaderboard stops stacking and has no
+// overflow wrapper to fall back on — that wrapper is what stopped the header sticking.
+for (const width of [390, 768, 1024]) {
   for (const route of ROUTES) {
-    test(`${route} does not scroll sideways`, async ({ page }) => {
+    test(`${route} does not scroll sideways at ${width}px`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 900 });
       await page.goto(route);
       const overflow = await page.evaluate(
         () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
@@ -35,6 +36,10 @@ test.describe("at 390px", () => {
       expect(overflow).toBeLessThanOrEqual(1);
     });
   }
+}
+
+test.describe("at 390px", () => {
+  test.use({ viewport: { width: 390, height: 844 } });
 
   test("a leaderboard row stacks, labels its values and fits the screen", async ({
     page,
@@ -183,4 +188,59 @@ test("the home page's worked example is in the HTML, not waiting on a script", a
   const html = await (await request.get("/")).text();
   expect(html).toContain("Worked example");
   expect(html).not.toMatch(/opacity:\s*0[;"]/);
+});
+
+test("the table header stays in view while the rows scroll", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/models");
+  await page.locator("tbody tr").nth(20).scrollIntoViewIfNeeded();
+  const top = await page
+    .locator("thead")
+    .evaluate((el) => el.getBoundingClientRect().top);
+  expect(Math.abs(top)).toBeLessThanOrEqual(1);
+});
+
+test("models the ranking cannot place are grouped by reason, with counts", async ({
+  page,
+}) => {
+  await page.goto("/models");
+  const section = page.locator("section", {
+    has: page.getByRole("heading", { name: "Not ranked here" }),
+  });
+
+  const groups = section.locator("details");
+  expect(await groups.count()).toBeGreaterThan(0);
+  for (const group of await groups.all()) {
+    await expect(group).not.toHaveAttribute("open", "");
+    await expect(group.locator("summary")).toHaveText(/\(\d+\)$/);
+  }
+  await expect(section.locator("li").first()).toBeHidden();
+
+  // A search shows matches from every group at once, each saying why it is here.
+  await section.getByPlaceholder("Search these models").fill("a");
+  await expect(section.locator("li").first()).toBeVisible();
+  await expect(section.locator("li").first()).toContainText("—");
+});
+
+test("a row's Health cell shows only what it adds to the flags every row shares", async ({
+  page,
+}) => {
+  await page.goto("/models");
+  const header = page.getByRole("columnheader", { name: "Health" });
+  if ((await header.count()) === 0) return; // every row identical: the column collapsed
+
+  // A flag on every row is stated once in the summary line…
+  const summary = page.getByText(/on every row/);
+  if ((await summary.count()) > 0) {
+    const shared = await page
+      .locator("p", { has: summary })
+      .first()
+      .locator("[title]")
+      .allTextContents();
+    const healthCells = page.locator("tbody tr td:last-child");
+    // …and never repeated in a row.
+    for (const text of shared.map((t) => t.replace(/^\W+/, "").trim()).filter(Boolean)) {
+      await expect(healthCells.filter({ hasText: text })).toHaveCount(0);
+    }
+  }
 });

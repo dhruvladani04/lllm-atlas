@@ -5,9 +5,15 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Link from "next/link";
 import type { UnrankedRow } from "@/lib/leaderboard/rows";
 import type { HealthFlag } from "@/lib/schemas/score";
-import type { TableData, TableModel, TableRow } from "@/lib/leaderboard/view";
+import type {
+  TableData,
+  TableModel,
+  TableRow,
+  TableUnranked,
+} from "@/lib/leaderboard/view";
 import {
   bestConfigurationPerModel,
+  particularFlags,
   uniformColumns,
   type CollapsedRow,
   type UniformColumns,
@@ -123,7 +129,13 @@ const PROVENANCE_SENTENCE: Record<TableRow["provenance"], string> = {
  * data — which is the same order the home page uses to make the argument.
  */
 function CollapsedColumns({ uniform }: { uniform: UniformColumns }) {
-  if (uniform.provenance === null && uniform.health === null) return null;
+  if (
+    uniform.provenance === null &&
+    uniform.health === null &&
+    uniform.sharedHealth.length === 0
+  ) {
+    return null;
+  }
 
   return (
     <>
@@ -138,6 +150,12 @@ function CollapsedColumns({ uniform }: { uniform: UniformColumns }) {
       ) : null}
       {uniform.health !== null && uniform.health.length === 0 ? (
         <>No benchmark behind these numbers carries a health warning. </>
+      ) : null}
+      {uniform.health === null && uniform.sharedHealth.length > 0 ? (
+        <>
+          Every row carries <HealthFlags flags={uniform.sharedHealth} />; the Health
+          column shows only what a row adds to that.{" "}
+        </>
       ) : null}
       Shown once rather than repeated down a column that would read the same on every row.
     </>
@@ -209,9 +227,9 @@ function RankingSummary({
   if (reference === null) return null;
 
   // The status chip already says saturated or deprecated.
-  const shared =
-    uniform.health?.filter((flag) => flag !== "saturated" && flag !== "deprecated") ??
-    null;
+  const shared = uniform.sharedHealth.filter(
+    (flag) => flag !== "saturated" && flag !== "deprecated",
+  );
 
   return (
     <div className="py-3 text-sm">
@@ -227,7 +245,7 @@ function RankingSummary({
           </Link>
         </span>
         <StatusChip status={reference.status} />
-        {shared !== null && shared.length > 0 ? (
+        {shared.length > 0 ? (
           <span className="inline-flex flex-wrap items-center gap-1.5">
             <HealthFlags flags={shared} />
             <span className="text-xs">on every row</span>
@@ -277,7 +295,9 @@ function RankingSummary({
             </Link>
             .
           </p>
-          {uniform.provenance !== null || uniform.health !== null ? (
+          {uniform.provenance !== null ||
+          uniform.health !== null ||
+          uniform.sharedHealth.length > 0 ? (
             <p>
               <CollapsedColumns uniform={uniform} />
             </p>
@@ -285,6 +305,75 @@ function RankingSummary({
         </div>
       </details>
     </div>
+  );
+}
+
+/** A row's own flags; the ones every row shares are stated once above the table. */
+function RowFlags({ flags }: { flags: readonly HealthFlag[] }) {
+  if (flags.length === 0) {
+    return (
+      <span className="text-ink-mute" title="No flags beyond those on every row">
+        <span aria-hidden="true">—</span>
+        <span className="sr-only">no flags beyond those on every row</span>
+      </span>
+    );
+  }
+  return <HealthFlags flags={flags} />;
+}
+
+const UNRANKED_GROUPS: { reason: UnrankedRow["reason"]; label: string }[] = [
+  { reason: "released_unranked", label: "Released, not yet scored" },
+  { reason: "no-score-on-reference", label: "Scored on other benchmarks" },
+  { reason: "only-saturated-scores", label: "Only on saturated benchmarks" },
+  { reason: "announced", label: "Announced, not yet servable" },
+];
+
+function UnrankedList({
+  entries,
+  meta,
+  showReason = false,
+}: {
+  entries: readonly TableUnranked[];
+  meta: (model_id: string) => TableModel;
+  /** A search mixes groups, so each line has to say which one it came from. */
+  showReason?: boolean;
+}) {
+  if (entries.length === 0) {
+    return (
+      <p className="py-3 text-sm text-ink-mute">No model here matches that search.</p>
+    );
+  }
+  return (
+    <ul className="mt-2 divide-y divide-rule">
+      {entries.map((entry) => {
+        const model = meta(entry.model_id);
+        const age = daysSince(model.released_at);
+        const { reason, scoreCount } = entry;
+        return (
+          <li key={entry.model_id} className="flex flex-wrap gap-x-3 py-2 text-sm">
+            <Link
+              href={`/models/${entry.model_id}`}
+              prefetch={false}
+              className="underline-offset-2 hover:underline"
+            >
+              {model.display_name}
+            </Link>
+            <span className="text-ink-mute">{model.creator}</span>
+            {showReason ? (
+              <span className="text-ink-mute">— {UNRANKED_REASON[reason]}</span>
+            ) : null}
+            {scoreCount > 0 ? (
+              <span className="text-ink-mute">
+                ({scoreCount} score{scoreCount === 1 ? "" : "s"} on other benchmarks)
+              </span>
+            ) : null}
+            {age !== null ? (
+              <span className="tabular text-ink-mute">released {age} days ago</span>
+            ) : null}
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 
@@ -320,6 +409,7 @@ export function LeaderboardTable({
   const [query, setQuery] = useState("");
   const [showAll, setShowAll] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [unrankedQuery, setUnrankedQuery] = useState("");
   const [body] = useAutoAnimate<HTMLTableSectionElement>();
 
   const data = hideSaturated ? hidden : shown;
@@ -576,7 +666,11 @@ export function LeaderboardTable({
       )}
 
       {data.rows.length > 0 ? (
-        <div className="md:overflow-x-auto">
+        <div>
+          {/* No overflow wrapper. `overflow-x: auto` makes the wrapper a scroll container, and a
+              sticky header then pins to the wrapper rather than the viewport — so it never
+              stuck. Below 768px rows stack and need no sideways room; from 768px up the table
+              fits, which the e2e suite measures at 768 and 1024px. */}
           <table role="table" className="w-full border-collapse text-sm">
             {/* Read out but not drawn on a phone, where each cell carries its own label. */}
             <thead
@@ -755,7 +849,9 @@ export function LeaderboardTable({
                     ) : null}
                     {uniform.health === null ? (
                       <td role="cell" className={`py-2 max-md:p-0 ${STACKED_BADGES}`}>
-                        <HealthFlags flags={row.health_flags} />
+                        <RowFlags
+                          flags={particularFlags(row.health_flags, uniform.sharedHealth)}
+                        />
                       </td>
                     ) : null}
                   </tr>
@@ -796,39 +892,54 @@ export function LeaderboardTable({
         <section className="mt-10">
           <h2 className="text-lg font-medium">Not ranked here</h2>
           <p className="mt-1 max-w-[66ch] text-sm text-ink-mute">
-            These models are on the site but cannot be placed in the ranking above. That
-            is information rather than an omission: a model released days ago with no
-            independent scores yet is worth seeing.
+            {data.unranked.length} models are on the site but cannot be placed in the
+            ranking above. That is information rather than an omission: a model released
+            days ago with no independent scores yet is worth seeing.
           </p>
-          <ul className="mt-3 divide-y divide-rule border-y border-rule">
-            {data.unranked.map((entry) => {
-              const model = meta(entry.model_id);
-              const age = daysSince(model.released_at);
-              const { reason, scoreCount } = entry;
-              return (
-                <li key={entry.model_id} className="flex flex-wrap gap-x-3 py-2 text-sm">
-                  <Link
-                    href={`/models/${entry.model_id}`}
-                    prefetch={false}
-                    className="underline-offset-2 hover:underline"
-                  >
-                    {model.display_name}
-                  </Link>
-                  <span className="text-ink-mute">{model.creator}</span>
-                  <span className="text-ink-mute">— {UNRANKED_REASON[reason]}</span>
-                  {scoreCount > 0 ? (
-                    <span className="text-ink-mute">
-                      ({scoreCount} score{scoreCount === 1 ? "" : "s"} on other
-                      benchmarks)
-                    </span>
-                  ) : null}
-                  {age !== null ? (
-                    <span className="tabular text-ink-mute">released {age} days ago</span>
-                  ) : null}
-                </li>
-              );
-            })}
-          </ul>
+
+          <label className="mt-3 flex items-center gap-2 text-sm">
+            <span className="sr-only">Search models not ranked here</span>
+            <input
+              type="search"
+              value={unrankedQuery}
+              onChange={(event) => setUnrankedQuery(event.target.value)}
+              placeholder="Search these models"
+              className="w-60 rounded-sm border border-rule bg-surface px-2 py-1 max-md:w-full"
+            />
+          </label>
+
+          {/* Collapsed by default, by reason. The list ran to 170 lines and made the page
+              15,000px taller on a phone; the counts carry the information and the names are
+              one press away. A search shows every match at once, whatever its group. */}
+          {unrankedQuery.trim() === "" ? (
+            <div className="mt-3 divide-y divide-rule border-y border-rule">
+              {UNRANKED_GROUPS.map(({ reason, label }) => {
+                const entries = data.unranked.filter((entry) => entry.reason === reason);
+                if (entries.length === 0) return null;
+                return (
+                  <details key={reason} className="py-2">
+                    <summary className="cursor-pointer text-sm hover:text-accent">
+                      {label}{" "}
+                      <span className="tabular text-ink-mute">({entries.length})</span>
+                    </summary>
+                    <UnrankedList entries={entries} meta={meta} />
+                  </details>
+                );
+              })}
+            </div>
+          ) : (
+            <UnrankedList
+              entries={data.unranked.filter((entry) => {
+                const model = meta(entry.model_id);
+                return [entry.model_id, model.display_name, model.creator]
+                  .join(" ")
+                  .toLowerCase()
+                  .includes(unrankedQuery.trim().toLowerCase());
+              })}
+              meta={meta}
+              showReason
+            />
+          )}
         </section>
       ) : null}
     </div>

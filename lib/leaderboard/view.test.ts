@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { uniformColumns } from "@/lib/leaderboard/view";
+import { particularFlags, uniformColumns } from "@/lib/leaderboard/view";
 import type { TableRow } from "@/lib/leaderboard/view";
 
 /**
@@ -65,6 +65,32 @@ describe("uniformColumns", () => {
   });
 
   it("collapses nothing for an empty table", () => {
-    expect(uniformColumns([])).toEqual({ provenance: null, health: null });
+    expect(uniformColumns([])).toEqual({
+      provenance: null,
+      health: null,
+      sharedHealth: [],
+    });
+  });
+
+  it("names the flags every row shares even when the rows differ in others", () => {
+    const result = uniformColumns([
+      row({ health_flags: ["superseded"] }),
+      row({ health_flags: ["superseded", "disputed"] }),
+      row({ health_flags: ["disputed", "superseded"] }),
+    ]);
+    expect(result.health).toBeNull();
+    expect(result.sharedHealth).toEqual(["superseded"]);
+  });
+
+  it("shares nothing when one row is clear", () => {
+    const result = uniformColumns([row({ health_flags: ["superseded"] }), row()]);
+    expect(result.sharedHealth).toEqual([]);
+  });
+
+  it("leaves a row only the flags particular to it", () => {
+    expect(particularFlags(["superseded", "disputed"], ["superseded"])).toEqual([
+      "disputed",
+    ]);
+    expect(particularFlags(["superseded"], ["superseded"])).toEqual([]);
   });
 });

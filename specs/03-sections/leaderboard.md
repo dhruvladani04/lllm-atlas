@@ -126,6 +126,13 @@ the twenty-five on screen, so asking for the rest can never contradict the line 
 Both directions are unit-tested, because with current data only the collapsing direction
 is reachable through the UI.
 
+**A flag shared by every row is stated once even when the rows differ in others.** Ranking
+on a superseded benchmark put `→ superseded` on all 210 rows, because three of them also
+carried `disputed` and the column could only collapse when every row was identical. The
+shared flags now go in the summary line ("→ superseded on every row") whether or not the
+column stays, and a row's Health cell shows only what it adds: `≠ disputed` on the three,
+"—" on the rest, read out as "no flags beyond those on every row".
+
 ### The summary line, and what may sit behind a disclosure
 
 Two paragraphs, about 110 words, used to stand between the reader and the first row. They
@@ -185,6 +192,22 @@ least usable there: a sideways-scrolling table under six wrapped controls.
   must never look unfiltered. Search stays outside the button.
 - **Sorting moves into the filter panel**, since there are no column headers to press.
 - The image tab stacks the same way.
+
+### Not ranked here
+
+Grouped by reason — released and not yet scored, scored on other benchmarks, only on
+saturated benchmarks, announced — each a collapsed disclosure with its count. The flat list
+ran to 170 lines and made the phone page 15,000px taller. A search box above the groups
+shows every match at once, with the reason written on each line because a search mixes
+groups.
+
+### The sticky header
+
+The column headers pin to the top of the viewport from 768px up. They never did before:
+the table sat inside an `overflow-x: auto` wrapper, which made the wrapper the scroll
+container, so the header pinned to the wrapper and scrolled away with the page. The wrapper
+is gone. From 768px up the table fits without it, and the e2e suite measures every route
+at 768 and 1024px to keep it that way.
 
 ### Empty and degraded states
 
@@ -315,3 +338,6 @@ Decide." Copy guidance is in `04-design/design-system.md`.
   disclosure, with a rule for which facts must stay visible. Rows stack below 768px, filters
   collapse behind a counting button there, and the table shows its top 25 first. UX
   refresh, P0.
+- Shared health flags are stated once in the summary line and dropped from each row's
+  Health cell; "Not ranked here" is grouped by reason, collapsed, with counts and a search;
+  the overflow wrapper that stopped the header sticking is removed. UX refresh, rest of P0.

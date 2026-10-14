@@ -74,11 +74,26 @@ export interface TableData {
 export interface UniformColumns {
   provenance: TableRow["provenance"] | null;
   health: HealthFlag[] | null;
+  /**
+   * The flags every row carries, even when the rows differ in others. Stated once above the
+   * table, so a row's Health cell shows only what is particular to it. Ranking on a
+   * superseded benchmark put `→ superseded` on all 210 rows because three of them were
+   * also `disputed`; the shared flag is a fact about the view, the extra one about the row.
+   */
+  sharedHealth: HealthFlag[];
+}
+
+/** A row's flags minus the ones every row shares — what its Health cell has to say. */
+export function particularFlags(
+  flags: readonly HealthFlag[],
+  shared: readonly HealthFlag[],
+): HealthFlag[] {
+  return flags.filter((flag) => !shared.includes(flag));
 }
 
 export function uniformColumns(rows: readonly TableRow[]): UniformColumns {
   const first = rows[0];
-  if (first === undefined) return { provenance: null, health: null };
+  if (first === undefined) return { provenance: null, health: null, sharedHealth: [] };
 
   const flagKey = (row: TableRow) => [...row.health_flags].sort().join(",");
   const firstFlags = flagKey(first);
@@ -88,6 +103,9 @@ export function uniformColumns(rows: readonly TableRow[]): UniformColumns {
       ? first.provenance
       : null,
     health: rows.every((row) => flagKey(row) === firstFlags) ? first.health_flags : null,
+    sharedHealth: first.health_flags.filter((flag) =>
+      rows.every((row) => row.health_flags.includes(flag)),
+    ),
   };
 }
 
