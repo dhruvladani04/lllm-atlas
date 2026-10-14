@@ -10,11 +10,19 @@ import type { QuotedNumber } from "@/lib/schemas/common";
  * survives colour blindness, greyscale printing and disabled CSS.
  */
 
-/** Never an em dash, never a zero, never a blank cell. */
+/**
+ * A dash, explained: never a zero and never a blank cell.
+ *
+ * This used to spell out "not reported", 598 times on one tab. A dash on its own reads as
+ * data, which is why it was banned; a dash with a key entry above the table, the reason in
+ * a tooltip and "not reported" read aloud is a mark like `~` or `◇`, and it lets the
+ * numbers that do exist stand out from the ones that do not.
+ */
 export function MissingValue({ reason }: { reason: string }) {
   return (
     <span className="text-ink-mute" title={reason}>
-      not reported
+      <span aria-hidden="true">—</span>
+      <span className="sr-only">not reported</span>
     </span>
   );
 }

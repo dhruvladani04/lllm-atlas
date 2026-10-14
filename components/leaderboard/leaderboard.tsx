@@ -82,6 +82,8 @@ export function Leaderboard({
           <Link
             key={name}
             href={`/models?tab=${name}`}
+            // Switching tab is a view change, not a new page: stay where the reader is.
+            scroll={false}
             aria-current={tab === name ? "page" : undefined}
             className={`-mb-px border-b-2 px-1 pb-2 ${
               tab === name ? "border-ink text-ink" : "border-transparent text-ink-mute"

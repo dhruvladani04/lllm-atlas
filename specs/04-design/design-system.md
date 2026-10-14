@@ -280,8 +280,23 @@ a page that scrolls and one that does not.
   the leaderboard section. Below 640px the links sit behind a "Menu" button with
   `aria-expanded`, which closes on navigation and on Escape. Where scripting is unavailable
   the button is hidden and the links stay visible, so it is never the only way to a section.
-- **`MissingValue`** — an explicit component. Renders "not reported" with a tooltip giving
-  the reason. Never an em dash, never a zero, never a blank cell.
+- **`MissingValue`** — an explicit component. Renders "—" with a tooltip giving the
+  reason and "not reported" read aloud. Never a zero, never a blank cell. It used to spell
+  out "not reported" and banned the dash, on the grounds that a bare dash reads as data; it
+  did, 598 times on one tab, which buried the numbers that exist. A dash with an entry in
+  the key above every table that uses it is a mark like `~` or `◇`, not a bare dash.
+- **`Legend`** — the key for a table's marks, always visible and always *above* the rows
+  it explains. Every mark that appears in a table — `ind.`, `vendor`, `~`, `◇`, a
+  configuration tag such as `(max)`, `—`, the matrix's `!` — has an entry there and a
+  `title` where it appears. The key is what works on touch, in print and for a screen
+  reader; the tooltip is a convenience.
+- **Score bars** — under a percentage in the leaderboard, drawn from zero and never from
+  the lowest score on screen. A bar from the minimum turns 93% against 96% into a bar a
+  third the length of another, which is a bigger lie than no bar. Close scores look close.
+  Percentages only: an Elo or an index has no zero to draw from. Neutral ink, not a data
+  colour.
+- **Row density** — "Comfortable" or "Compact", from 768px up. Compact halves the row
+  padding and changes nothing else.
 
 ## Motion
 
@@ -405,3 +420,6 @@ must be readable and correct with CSS disabled.
   not from hidden. UX refresh, P0.
 - Leaderboard rows stack below 768px as one restyled table with explicit ARIA roles; the
   quality floor's "no horizontal scroll" is now measured on every route. UX refresh, P0.
+- `MissingValue` renders "—" with a key entry, a tooltip and "not reported" read aloud,
+  replacing the spelled-out form; added the `Legend` component, score bars drawn from zero,
+  and a row-density control. UX refresh, P1.

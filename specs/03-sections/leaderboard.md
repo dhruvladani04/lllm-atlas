@@ -161,8 +161,12 @@ The disclosure is a native `<details>`, so it opens without a script.
 `ind.` and the `~` that marks an OpenRouter routed price were explained only by `title`
 attributes. Tooltips do not exist on touch and are announced inconsistently by screen
 readers, so on a phone the two marks carrying this site's entire honesty claim were
-unexplained. Both are spelled out in a legend below the table. A `title` may repeat an
-explanation; it may never be the only place one exists.
+unexplained. Every mark is spelled out in a key directly above the table — above, not
+below, so the meaning of `~` arrives before the first `~` rather than after 25 rows of
+them. A `title` may repeat an explanation; it may never be the only place one exists.
+
+Switching tab keeps the reader's scroll position: a tab is a view of the same page, and
+jumping back to the top made comparing tabs a matter of finding your place again.
 
 ### Interactions
 

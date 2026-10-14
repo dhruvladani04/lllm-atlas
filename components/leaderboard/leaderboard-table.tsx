@@ -29,6 +29,7 @@ import {
 } from "@/components/data/primitives";
 import { FreshnessStamp } from "@/components/data/freshness-stamp";
 import { CreatorLogo } from "@/components/ui/creator-logo";
+import { Legend, MODEL_TABLE_MARKS } from "@/components/data/legend";
 import {
   STACKED_BADGES,
   STACKED_CELL,
@@ -163,31 +164,25 @@ function CollapsedColumns({ uniform }: { uniform: UniformColumns }) {
 }
 
 /**
- * The abbreviations, written out rather than hidden in `title` attributes.
+ * A bar under a percentage, drawn from zero.
  *
- * Tooltips do not exist on touch and are announced inconsistently by screen readers, so on
- * a phone the two marks carrying this site's honesty claim — `ind.` and the `~` on a routed
- * price — were simply unexplained. A `title` may repeat an explanation; it may never be the
- * only place one exists.
+ * From zero and never from the lowest score on screen: a bar that starts at the minimum
+ * turns 93% against 96% into a bar a third the length of another, which is a bigger lie
+ * than no bar. The cost is that close scores look close, which is the truth. Only for
+ * percentages — an Elo or an index has no zero to draw from.
  */
-function Legend({ uniform }: { uniform: UniformColumns }) {
+function ScoreBar({ value }: { value: number }) {
+  const width = Math.max(0, Math.min(100, value));
   return (
-    <div className="mt-3 space-y-1 border-t border-rule pt-3 text-xs text-ink-mute">
-      {uniform.provenance === null ? (
-        <p>
-          <strong className="font-medium text-ink">Provenance:</strong>{" "}
-          <span className="font-mono">ind.</span> means independently measured;{" "}
-          <span className="font-mono">vendor</span> means reported by the model&rsquo;s
-          own maker. The two are never averaged.
-        </p>
-      ) : null}
-
-      <p>
-        <strong className="font-medium text-ink">Prices:</strong> a{" "}
-        <span className="font-mono">~</span> marks OpenRouter&rsquo;s routed price, used
-        where the vendor&rsquo;s own page could not be read. It is not a list price.
-      </p>
-    </div>
+    <span aria-hidden="true" className="mt-1 ml-auto block h-1 w-20 rounded-full bg-rule">
+      <span
+        className="block h-1 rounded-full"
+        style={{
+          width: `${width}%`,
+          backgroundColor: "color-mix(in srgb, var(--ink) 55%, transparent)",
+        }}
+      />
+    </span>
   );
 }
 
@@ -442,6 +437,7 @@ export function LeaderboardTable({
   const [showAll, setShowAll] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [unrankedQuery, setUnrankedQuery] = useState("");
+  const [density, setDensity] = useState<"comfortable" | "compact">("comfortable");
   const [body] = useAutoAnimate<HTMLTableSectionElement>();
 
   const data = hideSaturated ? hidden : shown;
@@ -657,6 +653,23 @@ export function LeaderboardTable({
             </select>
           </label>
 
+          {/* Rows on a phone are blocks, so density only exists from md up. */}
+          <fieldset className="flex items-center gap-3 max-md:hidden">
+            <legend className="sr-only">Row density</legend>
+            {(["comfortable", "compact"] as const).map((value) => (
+              <label key={value} className="flex items-center gap-1.5">
+                <input
+                  type="radio"
+                  name="density"
+                  value={value}
+                  checked={density === value}
+                  onChange={() => setDensity(value)}
+                />
+                {value === "comfortable" ? "Comfortable" : "Compact"}
+              </label>
+            ))}
+          </fieldset>
+
           {/* The column headers are the sort control on a wide screen. A stacked row has
               no headers to press, so the same choice is offered here. */}
           <label className="flex items-center gap-2 md:hidden">
@@ -703,7 +716,14 @@ export function LeaderboardTable({
               sticky header then pins to the wrapper rather than the viewport — so it never
               stuck. Below 768px rows stack and need no sideways room; from 768px up the table
               fits, which the e2e suite measures at 768 and 1024px. */}
-          <table role="table" className="w-full border-collapse text-sm">
+          <div className="pb-3">
+            <Legend items={MODEL_TABLE_MARKS} />
+          </div>
+          <table
+            role="table"
+            data-density={density}
+            className="w-full border-collapse text-sm"
+          >
             {/* Read out but not drawn on a phone, where each cell carries its own label. */}
             <thead
               role="rowgroup"
@@ -777,7 +797,10 @@ export function LeaderboardTable({
                         {model.display_name}
                       </Link>
                       {row.variant !== "base" ? (
-                        <span className="font-mono text-xs text-ink-mute">
+                        <span
+                          className="font-mono text-xs text-ink-mute"
+                          title="The setting this score was measured at, such as reasoning effort"
+                        >
                           {" "}
                           ({row.variant})
                         </span>
@@ -808,6 +831,7 @@ export function LeaderboardTable({
                         confidenceInterval={row.confidence_interval}
                         flags={row.health_flags}
                       />
+                      {row.unit === "percent" ? <ScoreBar value={row.value} /> : null}
                     </td>
                     <td
                       role="cell"
@@ -914,7 +938,6 @@ export function LeaderboardTable({
                   </button>
                 </p>
               ) : null}
-              <Legend uniform={uniform} />
             </>
           )}
         </div>

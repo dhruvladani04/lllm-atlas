@@ -185,6 +185,14 @@
     border-radius: 2px;
   }
 
+  /* Compact leaderboard rows. From md up only: below that rows are stacked blocks. */
+  @media (min-width: 48rem) {
+    table[data-density="compact"] > tbody > tr > td {
+      padding-top: 0.125rem;
+      padding-bottom: 0.125rem;
+    }
+  }
+
   /* A hovered leaderboard/benchmark row — interaction feedback, not decoration. */
   .row-hover:hover {
     background-color: color-mix(in srgb, var(--ink) 5%, transparent);
