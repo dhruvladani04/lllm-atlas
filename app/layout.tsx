@@ -18,6 +18,11 @@ const plexMono = IBM_Plex_Mono({
   weight: ["400", "500"],
   variable: "--font-plex-mono",
   display: "swap",
+  // Only the sans is preloaded. Every page linked all four font files at the top of the
+  // document, so the serif — used on evals guides alone — competed with the leaderboard's
+  // first paint on every route. Mono and serif load when a page first uses them, and
+  // `swap` shows the fallback until then.
+  preload: false,
 });
 
 const sourceSerif = Source_Serif_4({
@@ -25,6 +30,7 @@ const sourceSerif = Source_Serif_4({
   weight: ["400", "600"],
   variable: "--font-source-serif",
   display: "swap",
+  preload: false,
 });
 
 const DESCRIPTION =
