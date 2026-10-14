@@ -276,11 +276,18 @@ Sections in this order:
 
 1. **Identity** — name, creator, release date, weights availability, context, pricing,
    with a freshness stamp for each fetched field.
-2. **Scores** — grouped by capability. Each row: benchmark name, score, unit, provenance
-   badge, measured date, source link, and the benchmark's status chip. Saturated and
-   deprecated benchmarks render in a visually recessed group headed "Scores on benchmarks
-   that no longer discriminate", not removed — the reader should see what the marketing
-   numbers are based on.
+2. **Scores** — one table, with each capability a row group, so the columns line up from
+   the first group to the last. Each row: benchmark name, configuration, score, harness,
+   provenance badge, measured date, and the benchmark's status chip. A benchmark measured
+   in several configurations shows its best one with "best of N — show N more", and the
+   others are listed beneath it on request; a group is one benchmark under one harness from
+   one kind of source, so a different harness or a vendor's number is never folded under
+   another. Saturated and deprecated benchmarks are the last row group, recessed and
+   headed "On benchmarks that no longer discriminate", not removed — the reader should see
+   what the marketing numbers are based on.
+
+   "Compare with…" sits beside the model's name as the page's one primary action, and
+   opens the compare view with this model already chosen.
 3. **Health summary** — one honest paragraph generated from flags: how many of this
    model's scores sit on active benchmarks, how many are vendor-reported only.
 4. **Timeline** — where benchwiki provides a `performance_timeline`, plot this model's

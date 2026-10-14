@@ -71,9 +71,11 @@ test.describe("methodology, compare and export", () => {
     page,
   }) => {
     await page.goto("/compare");
-    const selects = page.locator("select");
-    await selects.nth(0).selectOption({ index: 1 });
-    await selects.nth(1).selectOption({ index: 2 });
+    // A suggested pair is chosen from the rankings, so it always shares a benchmark.
+    await page
+      .getByRole("button", { name: /^The top two on/ })
+      .first()
+      .click();
 
     await expect(
       page.getByRole("heading", { name: /Measured on the same benchmark/ }),
@@ -102,4 +104,72 @@ test.describe("methodology, compare and export", () => {
     expect(csv.headers()["content-type"]).toContain("text/csv");
     expect(await csv.text()).toMatch(/^# LLM Atlas/);
   });
+});
+
+test.describe("compare", () => {
+  test("a model can be found by typing, and the choice is in the URL", async ({
+    page,
+  }) => {
+    await page.goto("/compare");
+    const first = page.getByRole("combobox", { name: "Model 1" });
+    await first.fill("claude");
+    const option = page.getByRole("option").first();
+    await expect(option).toBeVisible();
+    const name = (await option.textContent()) ?? "";
+    await first.press("Enter");
+
+    await expect(first).toHaveValue(name);
+    await expect(page).toHaveURL(/\/compare\?models=[^,]+$/);
+
+    // Keyboard only for the second.
+    const second = page.getByRole("combobox", { name: "Model 2" });
+    await second.focus();
+    await second.press("ArrowDown");
+    await second.press("Enter");
+    await expect(page).toHaveURL(/\/compare\?models=[^,]+,[^,]+$/);
+  });
+
+  test("a shared URL opens on the same comparison", async ({ page }) => {
+    await page.goto("/compare");
+    await page
+      .getByRole("button", { name: /^The top two on/ })
+      .first()
+      .click();
+    const url = page.url();
+
+    await page.goto(url);
+    await expect(
+      page.getByRole("heading", { name: /Measured on the same benchmark/ }),
+    ).toBeVisible();
+  });
+
+  test("a model page's Compare action opens compare with that model chosen", async ({
+    page,
+  }) => {
+    await page.goto("/models/openai/gpt-6-astra");
+    await page.getByRole("link", { name: "Compare with…" }).click();
+    await expect(page).toHaveURL(/\/compare\?models=openai\/gpt-6-astra$/);
+    await expect(page.getByRole("combobox", { name: "Model 1" })).toHaveValue(
+      "GPT-6 Astra",
+    );
+  });
+});
+
+test("a model page lists a benchmark's configurations under its best one", async ({
+  page,
+}) => {
+  await page.goto("/models/openai/gpt-6-astra");
+  const toggle = page
+    .getByRole("button", { name: /^best of \d+ — show \d+ more$/ })
+    .first();
+  if ((await toggle.count()) === 0) return; // this model has one configuration per benchmark
+
+  const rows = page.locator("tbody tr");
+  const before = await rows.count();
+  await toggle.click();
+  // The label changes once open, so find it by its new name.
+  await expect(
+    page.getByRole("button", { name: "hide the others" }).first(),
+  ).toHaveAttribute("aria-expanded", "true");
+  expect(await rows.count()).toBeGreaterThan(before);
 });

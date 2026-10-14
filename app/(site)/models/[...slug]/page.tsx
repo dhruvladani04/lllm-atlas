@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { capabilityLabel } from "@/lib/format/labels";
+import { groupScores } from "@/lib/models/score-groups";
+import { ScoreTable, type ScoreSection } from "@/components/models/score-table";
 import { CreatorLogo } from "@/components/ui/creator-logo";
 import { notFound } from "next/navigation";
 import {
@@ -13,12 +15,9 @@ import {
 import type { JoinedScore } from "@/lib/schemas/score";
 import { formatTokenCount } from "@/lib/format/number";
 import {
-  HealthFlags,
   MissingValue,
   ProvenanceBadge,
   QuotedValue,
-  ScoreCell,
-  StatusChip,
 } from "@/components/data/primitives";
 import { FreshnessStamp } from "@/components/data/freshness-stamp";
 import { isDiscriminating } from "@/lib/leaderboard/rows";
@@ -112,6 +111,23 @@ export default async function ModelPage({
     ]);
   }
 
+  const sections: ScoreSection[] = [
+    ...[...byCapability.entries()].map(([capability, group]) => ({
+      heading: capabilityLabel(capability),
+      recessed: false,
+      groups: groupScores(group),
+    })),
+    ...(recessed.length > 0
+      ? [
+          {
+            heading: "On benchmarks that no longer discriminate",
+            recessed: true,
+            groups: groupScores(recessed),
+          },
+        ]
+      : []),
+  ];
+
   return (
     <main className="mx-auto max-w-data px-6 py-10">
       <p className="text-sm text-ink-mute">
@@ -120,8 +136,22 @@ export default async function ModelPage({
         </Link>
       </p>
 
-      <h1 className="mt-2 text-xl font-medium">{model.display_name}</h1>
-      <p className="font-mono text-xs text-ink-mute">{model.model_id}</p>
+      <div className="mt-2 flex flex-wrap items-start justify-between gap-x-6 gap-y-3">
+        <div>
+          <h1 className="text-xl font-medium">{model.display_name}</h1>
+          <p className="font-mono text-xs text-ink-mute">{model.model_id}</p>
+        </div>
+        {/* The page's one primary action. Compare reads the model from the URL and waits
+            for a second one; a comparison of one is not a comparison. */}
+        {model.modality === "text" ? (
+          <Link
+            href={`/compare?models=${model.model_id}`}
+            className="rounded-sm bg-accent px-4 py-2 text-sm font-medium text-paper hover:bg-accent-strong hover:text-paper"
+          >
+            Compare with…
+          </Link>
+        ) : null}
+      </div>
 
       <section className="mt-6 grid grid-cols-2 gap-x-8 gap-y-3 border-y border-rule py-4 text-sm sm:grid-cols-3">
         <div>
@@ -219,12 +249,7 @@ export default async function ModelPage({
           </p>
         ) : null}
 
-        {[...byCapability.entries()].map(([capability, group]) => (
-          <div key={capability} className="mt-5">
-            <h3 className="text-sm font-medium">{capabilityLabel(capability)}</h3>
-            <ScoreTable scores={group} />
-          </div>
-        ))}
+        {sections.length > 0 ? <ScoreTable sections={sections} /> : null}
 
         {arena.length > 0 ? (
           <div className="mt-5">
@@ -256,109 +281,7 @@ export default async function ModelPage({
             </ul>
           </div>
         ) : null}
-
-        {recessed.length > 0 ? (
-          <div className="mt-8 border-l-2 border-rule pl-4">
-            <h3 className="text-sm font-medium text-ink-mute">
-              Scores on benchmarks that no longer discriminate
-            </h3>
-            <p className="mt-1 max-w-[66ch] text-xs text-ink-mute">
-              Kept visible on purpose. These are often the numbers a launch announcement
-              leads with.
-            </p>
-            <ScoreTable scores={recessed} />
-          </div>
-        ) : null}
       </section>
     </main>
-  );
-}
-
-function ScoreTable({ scores }: { scores: readonly JoinedScore[] }) {
-  return (
-    <div className="overflow-x-auto">
-      <table className="mt-2 w-full border-collapse text-sm">
-        <thead>
-          <tr className="border-b border-rule text-left">
-            <th scope="col" className="py-2 pr-3 font-medium">
-              Benchmark
-            </th>
-            {/* Without this the reasoning-effort variants read as one benchmark scored
-                six different ways for no stated reason. */}
-            <th scope="col" className="py-2 pr-3 font-medium">
-              Config
-            </th>
-            <th scope="col" className="py-2 pr-3 text-right font-medium">
-              Score
-            </th>
-            <th scope="col" className="py-2 pr-3 font-medium">
-              Harness
-            </th>
-            <th scope="col" className="py-2 pr-3 font-medium">
-              Provenance
-            </th>
-            <th scope="col" className="py-2 pr-3 font-medium">
-              Measured
-            </th>
-            <th scope="col" className="py-2 font-medium">
-              Health
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {scores.map((score, index) => (
-            <tr
-              // The tiebreaker index guards against Epoch reporting two distinct scores
-              // (e.g. different HLE tool configurations) that are identical on every
-              // field the schema declares as the score's identity — see the Score key
-              // comment in specs/02-data/schemas.md.
-              key={`${score.model_id}#${score.variant}#${score.benchmark_slug}#${score.harness ?? "none"}#${score.provenance}#${score.measured_at ?? "none"}#${index}`}
-              className="row-hover border-b border-rule"
-            >
-              <td className="py-2 pr-3">
-                {/* Internal, matching the leaderboard. Linking straight out to benchwiki
-                    from here sent the reader off-site past this site's own contribution —
-                    the reverse lookup on that benchmark's page — and meant the same
-                    benchmark name went to two different places depending on which table
-                    you found it in. The internal page attributes and links onward. */}
-                <Link
-                  className="underline-offset-2 hover:underline"
-                  href={`/benchmarks/${score.benchmark_slug}`}
-                >
-                  {score.benchmark.name}
-                </Link>
-                <span className="block">
-                  <StatusChip status={score.benchmark.status} />
-                </span>
-              </td>
-              <td className="py-2 pr-3 font-mono text-xs">
-                {score.variant === "base" ? (
-                  <span className="text-ink-mute">base</span>
-                ) : (
-                  score.variant
-                )}
-              </td>
-              <td className="py-2 pr-3 text-right">
-                <ScoreCell score={score} />
-              </td>
-              <td className="py-2 pr-3 font-mono text-xs">
-                {score.harness ?? <span className="text-ink-mute">—</span>}
-              </td>
-              <td className="py-2 pr-3">
-                <ProvenanceBadge provenance={score.provenance} />
-              </td>
-              <td className="tabular py-2 pr-3 text-xs">
-                {score.measured_at ?? (
-                  <MissingValue reason="The source did not state when this was measured" />
-                )}
-              </td>
-              <td className="py-2">
-                <HealthFlags flags={score.health_flags} />
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
   );
 }
