@@ -13,6 +13,8 @@ import {
   type MatrixFilters,
 } from "@/lib/benchmarks/matrix";
 import { StatusChip } from "@/components/data/primitives";
+import { Legend } from "@/components/data/legend";
+import { capabilityLabel, languageLabel } from "@/lib/format/labels";
 
 /**
  * specs/03-sections/benchmarks.md — the index.
@@ -105,7 +107,7 @@ export function MatrixView({
             <option value="any">any</option>
             {langs.map((language) => (
               <option key={language} value={language}>
-                {language}
+                {languageLabel(language)}
               </option>
             ))}
           </select>
@@ -129,7 +131,19 @@ export function MatrixView({
         </p>
       ) : (
         <div className="overflow-x-auto">
-          <table className="mt-4 w-full border-collapse text-sm">
+          {/* The key sits above the grid: a reader meets "!" before the first one. */}
+          <div className="mt-4">
+            <Legend
+              items={[
+                {
+                  mark: <span style={{ color: "var(--risk-high)" }}>!</span>,
+                  meaning: "high contamination risk",
+                },
+                { mark: "◇", meaning: "models on this site have scores on it" },
+              ]}
+            />
+          </div>
+          <table className="mt-3 w-full table-fixed border-collapse text-sm">
             <caption className="sr-only">
               Benchmarks by capability and status. Rows are capabilities, columns are how
               much the benchmark still discriminates between models.
@@ -150,7 +164,7 @@ export function MatrixView({
               {matrix.map((row) => (
                 <tr key={row.capability} className="border-b border-rule align-top">
                   <th scope="row" className="py-3 pr-4 text-left font-medium">
-                    {row.capability}
+                    {capabilityLabel(row.capability)}
                     <span className="block text-xs font-normal text-ink-mute">
                       {row.total} benchmark{row.total === 1 ? "" : "s"}
                     </span>
@@ -216,11 +230,6 @@ export function MatrixView({
           </table>
         </div>
       )}
-
-      <p className="mt-4 text-xs text-ink-mute">
-        <span aria-hidden="true">! </span>high contamination risk ·{" "}
-        <span aria-hidden="true">◇ </span>has scores from models on this site
-      </p>
     </div>
   );
 }

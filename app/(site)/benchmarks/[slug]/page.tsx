@@ -1,5 +1,6 @@
 import type { Metadata, Route } from "next";
 import Link from "next/link";
+import { capabilityLabel, languageLabel } from "@/lib/format/labels";
 import { notFound, redirect } from "next/navigation";
 import {
   loadBenchmarkHistory,
@@ -86,7 +87,7 @@ export default async function BenchmarkPage({
       <h1 className="mt-2 text-xl font-medium">{benchmark.name}</h1>
       <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
         <StatusChip status={benchmark.status} />
-        <span className="text-ink-mute">{benchmark.capability}</span>
+        <span className="text-ink-mute">{capabilityLabel(benchmark.capability)}</span>
         <span className="text-ink-mute">
           contamination risk: {benchmark.contamination.risk}
         </span>
@@ -144,7 +145,7 @@ export default async function BenchmarkPage({
           </div>
           <div>
             <dt className="text-xs text-ink-mute">Languages</dt>
-            <dd>{benchmark.languages.join(", ") || "not stated"}</dd>
+            <dd>{benchmark.languages.map(languageLabel).join(", ") || "not stated"}</dd>
           </div>
         </dl>
       </section>

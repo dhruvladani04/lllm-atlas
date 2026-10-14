@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { capabilityLabel } from "@/lib/format/labels";
 import { CreatorLogo } from "@/components/ui/creator-logo";
 import { notFound } from "next/navigation";
 import {
@@ -220,7 +221,7 @@ export default async function ModelPage({
 
         {[...byCapability.entries()].map(([capability, group]) => (
           <div key={capability} className="mt-5">
-            <h3 className="text-sm font-medium">{capability}</h3>
+            <h3 className="text-sm font-medium">{capabilityLabel(capability)}</h3>
             <ScoreTable scores={group} />
           </div>
         ))}
