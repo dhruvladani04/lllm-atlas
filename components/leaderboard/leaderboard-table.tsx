@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Link from "next/link";
 import type { UnrankedRow } from "@/lib/leaderboard/rows";
@@ -187,6 +187,13 @@ function ScoreBar({ value }: { value: number }) {
   );
 }
 
+const STATUS_TEXT: Record<TableRow["benchmark_status"], string> = {
+  active: "● active",
+  "nearing-saturation": "◐ nearing saturation",
+  saturated: "○ saturated",
+  deprecated: "× deprecated",
+};
+
 /** How many rows render before the reader asks for the rest. */
 const PAGE_SIZE = 25;
 
@@ -211,7 +218,10 @@ function RankingSummary({
   uniform,
   coverage,
   fetchedAt,
+  chosen = null,
 }: {
+  /** The default basis's name, when the reader chose a different one. */
+  chosen?: string | null;
   data: TableData;
   /** The benchmark the table would rank on if saturated ones were shown, when different. */
   alternative: string | null;
@@ -241,6 +251,11 @@ function RankingSummary({
           </Link>
         </span>
         <StatusChip status={reference.status} />
+        {chosen !== null ? (
+          <span className="text-xs">
+            your choice; the default is {chosen}, the most measured
+          </span>
+        ) : null}
         {shared.length > 0 ? (
           <span className="inline-flex flex-wrap items-center gap-1.5">
             <HealthFlags flags={shared} />
@@ -413,12 +428,19 @@ function daysSince(date: string | null): number | null {
 }
 
 export function LeaderboardTable({
+  tab,
   models,
   hidden,
   shown,
   fetchedAt,
   coverage,
+  basis,
+  onBasisChange,
 }: {
+  tab: "text" | "agentic";
+  /** The benchmark the reader chose to rank on, from the URL; null for the default. */
+  basis: string | null;
+  onBasisChange: (slug: string | null) => void;
   /** The tab's data with saturated benchmarks excluded from reference selection. */
   models: Record<string, TableModel>;
   hidden: TableData;
@@ -441,7 +463,43 @@ export function LeaderboardTable({
   const [density, setDensity] = useState<"comfortable" | "compact">("comfortable");
   const [body] = useAutoAnimate<HTMLTableSectionElement>();
 
-  const data = hideSaturated ? hidden : shown;
+  const base = hideSaturated ? hidden : shown;
+  const view = hideSaturated ? "hidden" : "shown";
+
+  // Another basis is honoured only if this view offers it: a saturated benchmark chosen
+  // before "hide saturated" was switched back on falls back to the default, visibly.
+  const wanted =
+    basis !== null &&
+    basis !== base.defaultSlug &&
+    base.options.some((option) => option.slug === basis)
+      ? basis
+      : null;
+  const [fetched, setFetched] = useState<Record<string, TableData>>({});
+  const [failed, setFailed] = useState<string | null>(null);
+  const key = wanted === null ? null : `${tab}/${view}/${wanted}`;
+  const loading = key !== null && fetched[key] === undefined && failed !== key;
+  const data = key !== null ? (fetched[key] ?? base) : base;
+
+  // The page ships only the default ranking. Any other is a static file written at build
+  // time, fetched when asked for and kept for the visit.
+  useEffect(() => {
+    if (key === null || fetched[key] !== undefined) return;
+    let cancelled = false;
+    fetch(`/api/ranking/${key}`)
+      .then((response) => {
+        if (!response.ok) throw new Error(String(response.status));
+        return response.json() as Promise<TableData>;
+      })
+      .then((result) => {
+        if (!cancelled) setFetched((current) => ({ ...current, [key]: result }));
+      })
+      .catch(() => {
+        if (!cancelled) setFailed(key);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [fetched, key]);
 
   const meta = useCallback(
     (model_id: string): TableModel =>
@@ -697,6 +755,47 @@ export function LeaderboardTable({
         </div>
       </div>
 
+      {base.options.length > 1 ? (
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-3 text-sm">
+          <label className="flex flex-wrap items-center gap-2">
+            Rank on
+            <select
+              value={wanted ?? base.defaultSlug ?? ""}
+              onChange={(event) =>
+                onBasisChange(
+                  event.target.value === base.defaultSlug ? null : event.target.value,
+                )
+              }
+              className="max-w-full rounded-sm border border-rule bg-surface px-2 py-1"
+            >
+              {base.options.map((option) => (
+                <option key={option.slug} value={option.slug}>
+                  {option.name} — {STATUS_TEXT[option.status]}, {option.coverage} rows
+                  {option.slug === base.defaultSlug ? " (most measured)" : ""}
+                </option>
+              ))}
+            </select>
+          </label>
+          {wanted !== null ? (
+            <button
+              type="button"
+              onClick={() => onBasisChange(null)}
+              className="text-ink-mute underline underline-offset-2 hover:text-accent"
+            >
+              Back to the default
+            </button>
+          ) : null}
+          {/* The fetch is the one wait on the site, so it says what it is waiting for. */}
+          <span role="status" className="text-xs text-ink-mute">
+            {loading
+              ? `Loading the ranking on ${base.options.find((o) => o.slug === wanted)?.name}…`
+              : failed !== null && failed === key
+                ? "That ranking could not be loaded; showing the default."
+                : ""}
+          </span>
+        </div>
+      ) : null}
+
       {data.reference === null ? (
         <p className="py-8 text-sm text-ink-mute">
           No benchmark in this tab has scores from more than one model, so there is
@@ -715,11 +814,17 @@ export function LeaderboardTable({
           uniform={uniform}
           coverage={coverage}
           fetchedAt={fetchedAt}
+          chosen={
+            wanted !== null && data !== base
+              ? (base.options.find((option) => option.slug === base.defaultSlug)?.name ??
+                null)
+              : null
+          }
         />
       )}
 
       {data.rows.length > 0 ? (
-        <div>
+        <div aria-busy={loading} className={loading ? "opacity-50" : ""}>
           {/* No overflow wrapper. `overflow-x: auto` makes the wrapper a scroll container, and a
               sticky header then pins to the wrapper rather than the viewport — so it never
               stuck. Below 768px rows stack and need no sideways room; from 768px up the table

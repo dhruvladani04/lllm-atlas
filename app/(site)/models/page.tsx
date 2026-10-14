@@ -4,11 +4,8 @@ import {
   loadCapabilityIndex,
   loadFreshness,
   loadImageLeaderboard,
-  loadBenchmarks,
-  loadJoinedScores,
-  loadModels,
 } from "@/lib/data/derived";
-import { buildRows, type CapabilityIndexEntry } from "@/lib/leaderboard/rows";
+import { rank, rankingInputs } from "@/lib/leaderboard/ranking-inputs";
 import { toTableData, toTableModels } from "@/lib/leaderboard/view";
 import { toImageBoard } from "@/lib/leaderboard/image-board";
 import { buildSummaryCards } from "@/lib/leaderboard/cards";
@@ -32,32 +29,21 @@ export const metadata: Metadata = {
 };
 
 export default function ModelsPage() {
-  const scores = loadJoinedScores();
-  const models = loadModels();
+  // The same inputs the static ranking files use, so the default ranking here and a
+  // reader-chosen one fetched later cannot disagree about what a ranking contains.
+  const inputs = rankingInputs();
+  const { scores, models } = inputs;
   const freshness = loadFreshness();
   const indexFile = loadCapabilityIndex();
   const image = loadImageLeaderboard();
-
-  // Names for every benchmark, not only the scored ones: the ranking rationale may need to
-  // name a successor that has no scores here yet, which is precisely why it is the runner-up.
-  const benchmarkNames = new Map(
-    loadBenchmarks().map((benchmark) => [benchmark.slug, benchmark.name]),
-  );
 
   // How much of the benchmark universe the ranking can actually speak to. Saying this on
   // the leaderboard rather than only at the bottom of /benchmarks matters: without it the
   // table reads as "the state of the field" instead of "what one source has measured".
   const coverage = {
     scored: new Set(scores.map((score) => score.benchmark_slug)).size,
-    total: benchmarkNames.size,
+    total: inputs.benchmarkNames.size,
   };
-
-  const capabilityIndex = new Map<string, CapabilityIndexEntry>(
-    (indexFile?.rows ?? []).map((row) => [
-      row.model_id,
-      { eci: row.eci, ci_low: row.eci_ci_low, ci_high: row.eci_ci_high },
-    ]),
-  );
 
   // Both views of every tab are built here, so toggling "hide saturated benchmarks"
   // reorders prerendered rows on the client rather than asking the server for anything.
@@ -73,49 +59,16 @@ export default function ModelsPage() {
       ? { hidden, shown: hidden }
       : { hidden, shown };
 
-  const ranked = (tab: "text" | "agentic") =>
-    buildRows({
-      scores,
-      models,
-      capabilityIndex,
-      benchmarkNames,
-      tab,
-      hideSaturated: true,
-    });
-  const text = ranked("text");
-  const agentic = ranked("agentic");
+  const text = rank(inputs, "text", "hidden");
+  const agentic = rank(inputs, "agentic", "hidden");
 
   // The cards are lifted from the default view of each tab, so a card can never name a
   // model the table below it ranks differently.
   const cards = buildSummaryCards({ text, agentic, image: image?.scores ?? [], models });
 
   const tabs = {
-    text: pair(
-      toTableData(text),
-      toTableData(
-        buildRows({
-          scores,
-          models,
-          capabilityIndex,
-          benchmarkNames,
-          tab: "text",
-          hideSaturated: false,
-        }),
-      ),
-    ),
-    agentic: pair(
-      toTableData(agentic),
-      toTableData(
-        buildRows({
-          scores,
-          models,
-          capabilityIndex,
-          benchmarkNames,
-          tab: "agentic",
-          hideSaturated: false,
-        }),
-      ),
-    ),
+    text: pair(toTableData(text), toTableData(rank(inputs, "text", "shown"))),
+    agentic: pair(toTableData(agentic), toTableData(rank(inputs, "agentic", "shown"))),
   };
 
   return (

@@ -209,10 +209,28 @@ export interface BuildRowsInput {
   hideSaturated: boolean;
   /** Slug to display name for every known benchmark, not only the scored ones. */
   benchmarkNames?: ReadonlyMap<string, string>;
+  /**
+   * A benchmark the reader chose to rank on instead of the default. Honoured only when it
+   * is a candidate in this view — measured on at least two model-variants, and not hidden
+   * by the saturated toggle — so a URL can never rank on something the view cannot show.
+   */
+  basis?: string | null;
+}
+
+/** A benchmark the reader may rank this tab on, with what they need to choose. */
+export interface BasisOption {
+  slug: string;
+  name: string;
+  status: Benchmark["status"];
+  coverage: number;
 }
 
 export interface BuildRowsResult {
   reference: Benchmark | null;
+  /** Every benchmark this view could rank on, the default first. */
+  options: BasisOption[];
+  /** The benchmark the coverage rule picks; equal to `reference` unless the reader chose. */
+  defaultReference: Benchmark | null;
   /** Null when the reference is `active` and needs no defending. */
   rationale: ReferenceRationale | null;
   rows: LeaderboardRow[];
@@ -232,12 +250,26 @@ export function buildRows(input: BuildRowsInput): BuildRowsResult {
   const candidates = referenceCandidates(inTab).filter((candidate) =>
     input.hideSaturated ? isDiscriminating(candidate.benchmark) : true,
   );
-  const reference = candidates[0]?.benchmark ?? null;
-  // An `active` reference is self-justifying; anything else owes the reader a reason.
+  // A ranking on one model is not a ranking.
+  const rankable = candidates.filter((candidate) => candidate.coverage >= 2);
+  const defaultReference = candidates[0]?.benchmark ?? null;
+  const chosen =
+    input.basis === undefined || input.basis === null
+      ? undefined
+      : rankable.find((candidate) => candidate.slug === input.basis);
+  const reference = chosen?.benchmark ?? defaultReference;
+  // An `active` reference is self-justifying; anything else owes the reader a reason. A
+  // reader's own choice is not the rule's to defend, so it carries no rationale.
   const rationale =
-    reference !== null && reference.status !== "active"
+    chosen === undefined && reference !== null && reference.status !== "active"
       ? explainReference(reference, candidates, input.benchmarkNames)
       : null;
+  const options: BasisOption[] = rankable.map((candidate) => ({
+    slug: candidate.slug,
+    name: candidate.benchmark.name,
+    status: candidate.benchmark.status,
+    coverage: candidate.coverage,
+  }));
   const excludedScores = all.length - inTab.length;
   const excludedBenchmarks = new Set(
     all
@@ -310,6 +342,8 @@ export function buildRows(input: BuildRowsInput): BuildRowsResult {
 
   return {
     reference,
+    options,
+    defaultReference,
     rationale,
     rows,
     unranked,

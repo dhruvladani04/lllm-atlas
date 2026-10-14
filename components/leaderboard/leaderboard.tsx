@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useSyncExternalStore, type ReactNode } from "react";
+import { useState, useSyncExternalStore, type ReactNode } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Tab } from "@/lib/leaderboard/rows";
 import { LeaderboardTable } from "@/components/leaderboard/leaderboard-table";
@@ -61,6 +61,10 @@ export function Leaderboard({
   );
 
   const requested = hydrated ? params.get("tab") : null;
+  // Undefined until the reader picks: until then the URL decides, read after hydration for
+  // the same reason as the tab.
+  const [picked, setBasis] = useState<string | null | undefined>(undefined);
+  const basis = picked !== undefined ? picked : hydrated ? params.get("basis") : null;
   const tab: Tab =
     requested === "agentic" || requested === "image" || requested === "text"
       ? requested
@@ -113,6 +117,16 @@ export function Leaderboard({
             ) : null}
             <LeaderboardTable
               key={tab}
+              tab={tab}
+              basis={basis}
+              onBasisChange={(slug) => {
+                setBasis(slug);
+                // The choice is in the URL so a ranking on another benchmark can be shared.
+                // replaceState rather than a navigation: the page already has what it needs.
+                const query = new URLSearchParams({ tab });
+                if (slug !== null) query.set("basis", slug);
+                window.history.replaceState(null, "", `/models?${query.toString()}`);
+              }}
               models={tableModels}
               hidden={tabs[tab].hidden}
               shown={tabs[tab].shown}

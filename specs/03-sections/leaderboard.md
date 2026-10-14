@@ -51,6 +51,26 @@ Whether the ranking reorders is a property of the data, not of the control. It r
 when the most-covered benchmark is saturated. Today it does not, because ARC-AGI-2 —
 nearing saturation, not saturated — is the most-measured benchmark on the text tab.
 
+**The reader may rank on another benchmark.** The coverage rule above picks the default,
+and the default is what the page renders. A "Rank on" control above the summary line lists
+every benchmark this view could rank on — measured on at least two model-variants, and not
+hidden by the saturated toggle — each with its status written beside its name and its row
+count, the default marked "most measured". Choosing one:
+
+- ranks the table on it, with every caveat applied exactly as for the default; nothing
+  about what a score means changes, only which benchmark orders the rows;
+- puts `?basis=<slug>` in the URL, so the ranking can be shared;
+- says so in the summary line — "your choice; the default is GPQA, the most measured" —
+  and drops the rationale, which defends the rule's choice and not the reader's;
+- loads that ranking on demand. The page ships only the default; each alternative is a
+  static JSON file written at build time (`/api/ranking/<tab>/<view>/<basis>`), so
+  offering every basis costs the first load nothing. While it loads, the old rows are dimmed
+  and marked busy, and a status line says what is loading.
+
+A basis the current view does not offer — an unknown slug, or a saturated benchmark after
+"hide saturated" is switched back on — falls back to the default rather than ranking on
+something the view cannot show.
+
 ## Index page
 
 A dense, sortable table. Not cards. The reader is scanning and comparing, and cards

@@ -79,3 +79,45 @@ test.describe("the leaderboard states its caveats", () => {
     ).toBeVisible();
   });
 });
+
+test.describe("ranking on another benchmark", () => {
+  test("the reader can pick the basis, and the choice is in the URL", async ({
+    page,
+  }) => {
+    await page.goto("/models");
+    const select = page.getByRole("combobox", { name: "Rank on" });
+    const options = await select.locator("option").allTextContents();
+    expect(options.length).toBeGreaterThan(1);
+    // Every option states its benchmark's health, not just its name.
+    for (const option of options) {
+      expect(option).toMatch(/active|nearing saturation|saturated|deprecated/);
+    }
+
+    const second = await select.locator("option").nth(1).getAttribute("value");
+    const name = (await select.locator("option").nth(1).textContent())?.split(" — ")[0];
+    await select.selectOption(second!);
+
+    await expect(page).toHaveURL(new RegExp(`basis=${second}`));
+    await expect(page.getByText(/your choice; the default is/)).toBeVisible();
+    await expect(
+      page
+        .locator("p", { hasText: /^Ranked on/ })
+        .getByRole("link")
+        .first(),
+    ).toHaveText(name!.trim());
+
+    // The same URL opens on the same ranking.
+    await page.reload();
+    await expect(page.getByText(/your choice; the default is/)).toBeVisible();
+
+    await page.getByRole("button", { name: "Back to the default" }).click();
+    await expect(page).not.toHaveURL(/basis=/);
+    await expect(page.getByText(/your choice; the default is/)).toHaveCount(0);
+  });
+
+  test("an unknown basis in the URL falls back to the default", async ({ page }) => {
+    await page.goto("/models?tab=text&basis=not-a-benchmark");
+    await expect(page.getByText(/^Ranked on/)).toBeVisible();
+    await expect(page.getByText(/your choice; the default is/)).toHaveCount(0);
+  });
+});

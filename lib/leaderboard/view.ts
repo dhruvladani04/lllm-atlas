@@ -7,6 +7,7 @@ import type {
   LeaderboardRow,
   ReferenceRationale,
   UnrankedRow,
+  BasisOption,
 } from "@/lib/leaderboard/rows";
 
 /**
@@ -62,6 +63,10 @@ export interface TableUnranked {
 
 export interface TableData {
   reference: { slug: string; name: string; status: TableRow["benchmark_status"] } | null;
+  /** Benchmarks the reader may rank on instead, the default first. */
+  options: BasisOption[];
+  /** The slug the coverage rule picks, so the UI can say when the reader overrode it. */
+  defaultSlug: string | null;
   /** Why a less-than-active benchmark is the ranking basis. Null when it is active. */
   rationale: ReferenceRationale | null;
   rows: TableRow[];
@@ -192,6 +197,8 @@ export function toTableData(result: BuildRowsResult): TableData {
             name: result.reference.name,
             status: result.reference.status,
           },
+    options: result.options,
+    defaultSlug: result.defaultReference?.slug ?? null,
     rationale: result.rationale,
     rows: result.rows.map(toRow),
     unranked: result.unranked.map((entry) => ({
