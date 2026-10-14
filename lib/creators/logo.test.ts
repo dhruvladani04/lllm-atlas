@@ -34,7 +34,7 @@ describe("creator logos", () => {
 
   it("falls back to a monogram for any creator, including one starting with a digit", () => {
     expect(monogram("xAI")).toBe("X");
-    expect(monogram("01.AI")).toBe("0");
+    expect(monogram("01.AI")).toBe("A");
     expect(monogram("")).toBe("?");
   });
 });

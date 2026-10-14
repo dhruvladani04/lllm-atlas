@@ -37,7 +37,12 @@ export function logoFor(creator: string): string | null {
   return CREATOR_LOGOS[creator] ?? null;
 }
 
-/** The fallback for a creator with no committed mark: its first letter or digit. */
+/**
+ * The fallback for a creator with no committed mark: its first letter.
+ *
+ * Letters only. "01.AI" used to get a "0" beside every other creator's letter, which read
+ * as a different kind of mark rather than the same fallback; it now gets "A" like any name.
+ */
 export function monogram(creator: string): string {
-  return (/[\p{L}\p{N}]/u.exec(creator)?.[0] ?? "?").toUpperCase();
+  return (/\p{L}/u.exec(creator)?.[0] ?? "?").toUpperCase();
 }
