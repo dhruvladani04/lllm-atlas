@@ -105,8 +105,11 @@ Same, with two changes that matter:
 
 ### Columns — image tab
 
-Elo, confidence interval, arena appearance count, source. No capability index — there
-isn't an honest one. These rows are not part of the benchmark join and carry no health
+Elo, confidence interval, vote count. The source is the same on every row, so it is stated
+once above the table and linked to Arena's own board, with the dataset page linked in the
+attribution below it; the JSON endpoint the pipeline reads stays recorded in the snapshot
+as the provenance of record, and is not a page to send a reader to. No capability index —
+there isn't an honest one. These rows are not part of the benchmark join and carry no health
 flags, because no benchmark health record exists for an arena board upstream. The tab
 says so rather than leaving the reader to assume the flags were checked and came back
 clean: a preference ranking is a different kind of claim from a benchmark score. If the arena mirror is unavailable, render the empty state described

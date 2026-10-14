@@ -3,12 +3,11 @@
 import Link from "next/link";
 import { useSyncExternalStore, type ReactNode } from "react";
 import { useSearchParams } from "next/navigation";
-import type { Score } from "@/lib/schemas/score";
-import type { SourceMeta } from "@/lib/schemas/common";
 import type { Tab } from "@/lib/leaderboard/rows";
 import { LeaderboardTable } from "@/components/leaderboard/leaderboard-table";
 import type { TableData, TableModel } from "@/lib/leaderboard/view";
 import { ImageTable } from "@/components/leaderboard/image-table";
+import type { ImageBoard } from "@/lib/leaderboard/image-board";
 
 /**
  * The tab shell. The tab is read from the URL on the client so the route can stay static;
@@ -36,7 +35,7 @@ export function Leaderboard({
   tabs: Record<"text" | "agentic", { hidden: TableData; shown: TableData }>;
   /** Rendered on the server and passed through; this shell adds nothing to them. */
   cards: ReactNode;
-  image: { note: string; source: SourceMeta; scores: Score[] } | null;
+  image: ImageBoard | null;
   tableModels: Record<string, TableModel>;
   freshness: Record<string, string | null>;
   capabilityIndexNote: string | null;

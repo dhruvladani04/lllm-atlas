@@ -218,7 +218,8 @@ export function QuotedValue({
   format,
   missingReason,
 }: {
-  quoted: QuotedNumber | null;
+  /** Only the value and who quoted it are shown, so that is all a caller must pass. */
+  quoted: Pick<QuotedNumber, "value" | "quoted_by"> | null;
   format: (value: number) => string;
   missingReason: string;
 }) {

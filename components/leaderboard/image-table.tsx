@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { TableModel } from "@/lib/leaderboard/view";
-import type { Score } from "@/lib/schemas/score";
-import type { SourceMeta } from "@/lib/schemas/common";
+import type { ImageBoard } from "@/lib/leaderboard/image-board";
 import { FreshnessStamp } from "@/components/data/freshness-stamp";
 import { MissingValue } from "@/components/data/primitives";
 import { CreatorLogo } from "@/components/ui/creator-logo";
@@ -24,12 +23,12 @@ export function ImageTable({
   models,
   fetchedAt,
 }: {
-  leaderboard: { note: string; source: SourceMeta; scores: Score[] } | null;
+  leaderboard: ImageBoard | null;
   /** The compact lookup the text tabs already ship; this tab needs only a name and a creator. */
   models: Record<string, TableModel>;
   fetchedAt: string | null;
 }) {
-  if (leaderboard === null || leaderboard.scores.length === 0) {
+  if (leaderboard === null || leaderboard.rows.length === 0) {
     return (
       <div className="py-8">
         <p className="max-w-[66ch] text-sm">
@@ -46,15 +45,18 @@ export function ImageTable({
     );
   }
 
-  const rows = [...leaderboard.scores].sort((a, b) => b.value - a.value);
+  const rows = leaderboard.rows;
 
   return (
     <div>
       <p className="py-3 max-w-[76ch] text-sm text-ink-mute">
         Arena Elo from public pairwise votes — a preference ranking, not a benchmark
         score. No benchmark health record exists for an arena board, so these rows carry
-        no health flags: there is nothing to check them against.{" "}
-        <FreshnessStamp fetchedAt={fetchedAt} />
+        no health flags: there is nothing to check them against. Every row is from{" "}
+        <a className="underline" href={leaderboard.boardUrl}>
+          Arena&rsquo;s text-to-image board
+        </a>
+        , <FreshnessStamp fetchedAt={fetchedAt} />
       </p>
 
       <div className="md:overflow-x-auto">
@@ -87,9 +89,6 @@ export function ImageTable({
                 className="py-2 pr-3 text-right font-medium"
               >
                 Votes
-              </th>
-              <th role="columnheader" scope="col" className="py-2 font-medium">
-                Source
               </th>
             </tr>
           </thead>
@@ -156,15 +155,6 @@ export function ImageTable({
                       score.sample_size.toLocaleString("en")
                     )}
                   </td>
-                  <td
-                    role="cell"
-                    data-label="Source"
-                    className={`py-2 text-xs text-ink-mute max-md:p-0 ${STACKED_META}`}
-                  >
-                    <a className="underline" href={score.source.source_url}>
-                      Arena
-                    </a>
-                  </td>
                 </tr>
               );
             })}
@@ -172,7 +162,13 @@ export function ImageTable({
         </table>
       </div>
 
-      <p className="mt-4 text-xs text-ink-mute">{leaderboard.source.attribution}</p>
+      <p className="mt-4 text-xs text-ink-mute">
+        {leaderboard.attribution}{" "}
+        <a className="underline" href={leaderboard.dataUrl}>
+          The dataset
+        </a>
+        .
+      </p>
     </div>
   );
 }

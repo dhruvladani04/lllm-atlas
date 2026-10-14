@@ -10,6 +10,7 @@ import {
 } from "@/lib/data/derived";
 import { buildRows, type CapabilityIndexEntry } from "@/lib/leaderboard/rows";
 import { toTableData, toTableModels } from "@/lib/leaderboard/view";
+import { toImageBoard } from "@/lib/leaderboard/image-board";
 import { buildSummaryCards } from "@/lib/leaderboard/cards";
 import { Leaderboard } from "@/components/leaderboard/leaderboard";
 import { SummaryCards } from "@/components/leaderboard/summary-cards";
@@ -124,7 +125,7 @@ export default function ModelsPage() {
         cards={<SummaryCards cards={cards} heading="At a glance" />}
         tableModels={toTableModels(models)}
         coverage={coverage}
-        image={image}
+        image={toImageBoard(image)}
         freshness={freshness}
         capabilityIndexNote={indexFile?.note ?? null}
       />

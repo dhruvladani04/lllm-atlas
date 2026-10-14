@@ -24,14 +24,20 @@ import type {
  * with a source URL — in every one of them put tens of kilobytes of duplicate JSON into the
  * page. They travel once, in a lookup, and rows reference them.
  */
+/** A quoted number as a table cell needs it: the value and whose quote it is. */
+export type TableQuote = Pick<QuotedNumber, "value" | "quoted_by">;
+
+const toQuote = (quoted: QuotedNumber | null): TableQuote | null =>
+  quoted === null ? null : { value: quoted.value, quoted_by: quoted.quoted_by };
+
 export interface TableModel {
   display_name: string;
   creator: string;
   open_weights: boolean | null;
   released_at: string | null;
-  context_window: QuotedNumber | null;
-  price_input: QuotedNumber | null;
-  price_output: QuotedNumber | null;
+  context_window: TableQuote | null;
+  price_input: TableQuote | null;
+  price_output: TableQuote | null;
 }
 
 export interface TableRow {
@@ -165,9 +171,9 @@ export function toTableModels(models: readonly Model[]): Record<string, TableMod
         creator: model.creator,
         open_weights: model.open_weights,
         released_at: model.released_at,
-        context_window: model.context_window,
-        price_input: model.price_input_per_mtok,
-        price_output: model.price_output_per_mtok,
+        context_window: toQuote(model.context_window),
+        price_input: toQuote(model.price_input_per_mtok),
+        price_output: toQuote(model.price_output_per_mtok),
       },
     ]),
   );

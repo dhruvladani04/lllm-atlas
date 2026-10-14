@@ -1,3 +1,4 @@
+import { ARENA_ORIGINATOR_URL } from "@/lib/ingest/arena";
 import type {
   BuildRowsResult,
   LeaderboardRow,
@@ -170,7 +171,8 @@ export function buildSummaryCards(input: {
       benchmark: null,
       health_flags: null,
       provenance: null,
-      source_url: topImage.source.source_url,
+      // Arena's own board, not the API the pipeline read; the snapshot keeps that URL.
+      source_url: ARENA_ORIGINATOR_URL,
       price: null,
     });
   }
