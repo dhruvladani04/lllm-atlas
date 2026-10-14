@@ -199,7 +199,9 @@ least usable there: a sideways-scrolling table under six wrapped controls.
 ### Not ranked here
 
 Grouped by reason — released and not yet scored, scored on other benchmarks, only on
-saturated benchmarks, announced — each a collapsed disclosure with its count. The flat list
+saturated benchmarks, announced — each a collapsed disclosure with its count. A group's
+names are rendered when it is opened, not before: closed, the four lists were 43% of the
+page's DOM and all of it was hydrated on load. The flat list
 ran to 170 lines and made the phone page 15,000px taller. A search box above the groups
 shows every match at once, with the reason written on each line because a search mixes
 groups.

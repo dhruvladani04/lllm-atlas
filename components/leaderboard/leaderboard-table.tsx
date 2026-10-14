@@ -328,6 +328,38 @@ const UNRANKED_GROUPS: { reason: UnrankedRow["reason"]; label: string }[] = [
   { reason: "announced", label: "Announced, not yet servable" },
 ];
 
+/**
+ * One reason's models, rendered only once opened.
+ *
+ * The four lists hold 170 to 330 models between them, and rendered closed they were 43% of
+ * the leaderboard's DOM — every node of it hydrated on load for a list most readers never
+ * open, on a page whose main-thread time was the one Lighthouse score below target. The
+ * count in the summary is the information; the names arrive when asked for.
+ */
+function UnrankedGroup({
+  label,
+  entries,
+  meta,
+}: {
+  label: string;
+  entries: readonly TableUnranked[];
+  meta: (model_id: string) => TableModel;
+}) {
+  const [open, setOpen] = useState(false);
+  return (
+    <details
+      className="py-2"
+      open={open}
+      onToggle={(event) => setOpen(event.currentTarget.open)}
+    >
+      <summary className="cursor-pointer text-sm hover:text-accent">
+        {label} <span className="tabular text-ink-mute">({entries.length})</span>
+      </summary>
+      {open ? <UnrankedList entries={entries} meta={meta} /> : null}
+    </details>
+  );
+}
+
 function UnrankedList({
   entries,
   meta,
@@ -917,13 +949,12 @@ export function LeaderboardTable({
                 const entries = data.unranked.filter((entry) => entry.reason === reason);
                 if (entries.length === 0) return null;
                 return (
-                  <details key={reason} className="py-2">
-                    <summary className="cursor-pointer text-sm hover:text-accent">
-                      {label}{" "}
-                      <span className="tabular text-ink-mute">({entries.length})</span>
-                    </summary>
-                    <UnrankedList entries={entries} meta={meta} />
-                  </details>
+                  <UnrankedGroup
+                    key={reason}
+                    label={label}
+                    entries={entries}
+                    meta={meta}
+                  />
                 );
               })}
             </div>
