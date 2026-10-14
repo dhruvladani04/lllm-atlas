@@ -21,7 +21,7 @@ export function CreatorLogo({ creator }: { creator: string }) {
         aria-hidden="true"
         // Filled, not outlined, so it reads as the same kind of thing as a vendor mark
         // beside it in a list rather than as a box with a letter in it.
-        className="inline-flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-sm bg-rule text-[0.6875rem] leading-none font-medium text-ink"
+        className="inline-flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-sm bg-rule text-xs leading-none font-medium text-ink"
       >
         {monogram(creator)}
       </span>
