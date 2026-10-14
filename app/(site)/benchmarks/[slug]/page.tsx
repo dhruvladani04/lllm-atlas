@@ -399,9 +399,11 @@ function ScoreTable({
                     <ScoreCell score={score} />
                   </td>
                   <td className="py-2 pr-3 font-mono text-xs">
-                    {score.harness ?? <span className="text-ink-mute">—</span>}
+                    {score.harness ?? (
+                      <MissingValue reason="Not run under a named agent harness" />
+                    )}
                   </td>
-                  <td className="tabular py-2 pr-3 text-xs">
+                  <td className="tabular py-2 pr-3 text-xs whitespace-nowrap">
                     {score.measured_at ?? (
                       <MissingValue reason="The source did not state when this was measured" />
                     )}

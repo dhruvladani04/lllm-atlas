@@ -108,7 +108,9 @@ export function PriceScoreChart({
       <figure className="mt-3">
         <svg
           viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-          className="w-full"
+          // Drawn at about its own size: scaled to a 1280px column, 11px labels became
+          // 19px and the chart outgrew the screen it sits on.
+          className="w-full max-w-[48rem]"
           role="img"
           aria-label={`Price against score on ${benchmarkName} for ${dots.length} models. Prices run from $${Math.min(...dots.map((d) => d.price)).toFixed(2)} to $${Math.max(...dots.map((d) => d.price)).toFixed(2)} per million tokens; scores from ${formatScore(Math.min(...values), unit)} to ${formatScore(Math.max(...values), unit)}.`}
         >

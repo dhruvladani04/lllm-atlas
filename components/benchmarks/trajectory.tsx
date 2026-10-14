@@ -60,7 +60,9 @@ export function Trajectory({ benchmark }: { benchmark: Benchmark }) {
     <figure className="mt-3">
       <svg
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-        className="w-full"
+        // Drawn at about its own size: scaled to a 1280px column, 11px labels became
+        // 19px and the chart outgrew the screen it sits on.
+        className="w-full max-w-[48rem]"
         role="img"
         aria-label={`Scores on ${benchmark.name} over time, ${points.length} points from ${firstYear} to ${lastYear}. Vendor-reported points are drawn as open squares, independent ones as filled circles.`}
       >

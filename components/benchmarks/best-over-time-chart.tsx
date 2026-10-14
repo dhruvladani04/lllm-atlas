@@ -62,7 +62,9 @@ export function BestOverTimeChart({
     <figure className="mt-3">
       <svg
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-        className="w-full"
+        // Drawn at about its own size: scaled to a 1280px column, 11px labels became
+        // 19px and the chart outgrew the screen it sits on.
+        className="w-full max-w-[48rem]"
         role="img"
         aria-label={label}
       >
