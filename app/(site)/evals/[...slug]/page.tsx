@@ -6,6 +6,7 @@ import { guideSlugs, loadGuide, loadGuides } from "@/lib/evals/load";
 import { UNIT_LABEL } from "@/lib/evals/frontmatter";
 import { mdxComponents } from "@/components/evals/mdx";
 import { VerifiedStamp } from "@/components/evals/verified-stamp";
+import { outline, readingMinutes } from "@/lib/evals/outline";
 
 /**
  * specs/03-sections/evals.md — a guide.
@@ -43,6 +44,7 @@ export default async function GuidePage({
   if (guide === null) notFound();
 
   const { frontmatter, body } = guide;
+  const contents = outline(body);
   const prerequisites = loadGuides().filter((other) =>
     frontmatter.prerequisites.includes(other.frontmatter.slug),
   );
@@ -62,7 +64,8 @@ export default async function GuidePage({
         <strong className="font-medium text-ink">
           {UNIT_LABEL[frontmatter.unit_of_evaluation]}
         </strong>{" "}
-        · {frontmatter.level} · <VerifiedStamp verifiedOn={frontmatter.verified_on} />
+        · {frontmatter.level} · {readingMinutes(body)} min read ·{" "}
+        <VerifiedStamp verifiedOn={frontmatter.verified_on} />
       </p>
 
       {prerequisites.length > 0 ? (
@@ -78,6 +81,23 @@ export default async function GuidePage({
           ))}
           .
         </p>
+      ) : null}
+
+      {/* A contents list at the top of the column rather than a sidebar: the reading
+          width is the point of this page, and a sidebar would take it. */}
+      {contents.length > 1 ? (
+        <nav aria-label="Contents" className="mt-6 border-y border-rule py-3 text-sm">
+          <p className="text-xs text-ink-mute">Contents</p>
+          <ol className="mt-1 space-y-1">
+            {contents.map((entry) => (
+              <li key={entry.id}>
+                <a href={`#${entry.id}`} className="underline-offset-2 hover:underline">
+                  {entry.text}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
       ) : null}
 
       <article className="font-serif">

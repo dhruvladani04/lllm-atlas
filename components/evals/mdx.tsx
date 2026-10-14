@@ -7,6 +7,17 @@ import { MetricCard } from "@/components/evals/metric-card";
 import { FrameworkTable } from "@/components/evals/framework-table";
 import { BenchmarkRef } from "@/components/evals/benchmark-ref";
 import { Scene } from "@/components/evals/scene";
+import { headingId } from "@/lib/evals/outline";
+
+/** The plain text of a heading's children, which may include inline code or emphasis. */
+function textOf(node: React.ReactNode): string {
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(textOf).join("");
+  if (isValidElement<{ children?: React.ReactNode }>(node)) {
+    return textOf(node.props.children);
+  }
+  return "";
+}
 
 /**
  * The components available inside a guide — specs/03-sections/evals.md.
@@ -21,8 +32,13 @@ export const mdxComponents: MDXRemoteProps["components"] = {
   FrameworkTable,
   BenchmarkRef,
   Scene,
+  // An id from the heading's own text, the same one the contents list links to.
   h2: (props: ComponentPropsWithoutRef<"h2">) => (
-    <h2 className="mt-10 text-xl font-medium" {...props} />
+    <h2
+      id={headingId(textOf(props.children))}
+      className="mt-10 scroll-mt-6 text-xl font-medium"
+      {...props}
+    />
   ),
   h3: (props: ComponentPropsWithoutRef<"h3">) => (
     <h3 className="mt-8 text-lg font-medium" {...props} />

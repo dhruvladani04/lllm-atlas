@@ -231,8 +231,10 @@ they are in.
   above the tabs; see `SummaryCard` below.
 - **Benchmarks** — the capability × status grid. Fixed row labels, scrollable columns on
   narrow viewports.
-- **Evals** — single narrow reading column, generous leading, a quiet sidebar for
-  contents.
+- **Evals** — single narrow reading column, generous leading, and a quiet contents list
+  at the top of each guide with its reading time beside the metadata. A list rather than
+  the sidebar first planned: the reading width is the point of the page, and a sidebar
+  would take it. Both are read from the MDX source, so they cannot drift from the guide.
 
 Density is a virtue in the first two and a vice in the third.
 

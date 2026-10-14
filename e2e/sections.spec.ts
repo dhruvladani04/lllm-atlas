@@ -173,3 +173,14 @@ test("a model page lists a benchmark's configurations under its best one", async
   ).toHaveAttribute("aria-expanded", "true");
   expect(await rows.count()).toBeGreaterThan(before);
 });
+
+test("a guide's contents list points at headings that exist", async ({ page }) => {
+  await page.goto("/evals/agentic-systems");
+  await expect(page.getByText(/\d+ min read/)).toBeVisible();
+  const links = page.getByRole("navigation", { name: "Contents" }).getByRole("link");
+  expect(await links.count()).toBeGreaterThan(1);
+  for (const link of await links.all()) {
+    const id = ((await link.getAttribute("href")) ?? "").slice(1);
+    await expect(page.locator(`h2[id="${id}"]`)).toHaveCount(1);
+  }
+});
