@@ -1,4 +1,5 @@
 import type { QuotedNumber } from "@/lib/schemas/common";
+import { distinctDisplayNames } from "@/lib/format/display-name";
 import type { HealthFlag } from "@/lib/schemas/score";
 import type { Model } from "@/lib/schemas/model";
 import type {
@@ -163,11 +164,13 @@ function toRow(row: LeaderboardRow): TableRow {
 }
 
 export function toTableModels(models: readonly Model[]): Record<string, TableModel> {
+  // A list cannot show two rows called "GPT-4o"; see distinctDisplayNames.
+  const names = distinctDisplayNames(models);
   return Object.fromEntries(
     models.map((model) => [
       model.model_id,
       {
-        display_name: model.display_name,
+        display_name: names.get(model.model_id) ?? model.display_name,
         creator: model.creator,
         open_weights: model.open_weights,
         released_at: model.released_at,

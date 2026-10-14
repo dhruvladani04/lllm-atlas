@@ -29,6 +29,7 @@ import {
 } from "@/components/data/primitives";
 import { FreshnessStamp } from "@/components/data/freshness-stamp";
 import { CreatorLogo } from "@/components/ui/creator-logo";
+import { primaryCreator } from "@/lib/format/display-name";
 import { Legend, MODEL_TABLE_MARKS } from "@/components/data/legend";
 import {
   STACKED_BADGES,
@@ -462,8 +463,10 @@ export function LeaderboardTable({
     () =>
       [
         ...new Set(
-          [...shown.rows, ...hidden.rows].map(
-            (row) => models[row.model_id]?.creator ?? "",
+          // By primary creator: a joint release is listed under its first organisation
+          // rather than as a 163-character option of its own.
+          [...shown.rows, ...hidden.rows].map((row) =>
+            primaryCreator(models[row.model_id]?.creator ?? ""),
           ),
         ),
       ]
@@ -478,7 +481,12 @@ export function LeaderboardTable({
     const filtered = data.rows.filter((row) => {
       if (independentOnly && row.provenance === "vendor-reported") return false;
       if (openWeightsOnly && models[row.model_id]?.open_weights !== true) return false;
-      if (creator !== "all" && models[row.model_id]?.creator !== creator) return false;
+      if (
+        creator !== "all" &&
+        primaryCreator(models[row.model_id]?.creator ?? "") !== creator
+      ) {
+        return false;
+      }
       if (needle !== "") {
         // The id is searchable as well as the name: it is what the URL shows and what
         // someone who already knows the model is most likely to type.

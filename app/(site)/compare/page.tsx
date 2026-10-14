@@ -28,8 +28,8 @@ export default function ComparePage() {
   // alias list, and the table needs a score's number, not the benchmark record behind it.
   const models = loadModels()
     .filter((model) => model.modality === "text")
-    .sort((a, b) => a.display_name.localeCompare(b.display_name))
-    .map((model) => ({ model_id: model.model_id, ...lookup[model.model_id]! }));
+    .map((model) => ({ model_id: model.model_id, ...lookup[model.model_id]! }))
+    .sort((a, b) => a.display_name.localeCompare(b.display_name));
 
   return (
     <main className="mx-auto max-w-data px-6 py-10">
