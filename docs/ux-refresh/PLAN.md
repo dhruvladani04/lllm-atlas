@@ -61,8 +61,8 @@ place the site fetches after load.
 ## Acceptance criteria
 
 - Lighthouse accessibility at least 95 and performance at least 90, mobile, on home,
-  leaderboard and a model page. Performance on the leaderboard is a target, not a given;
-  it has not been measured at the current registry size.
+  leaderboard and a model page. **Met** on the deployed site after P1; see "PageSpeed
+  Insights, deployed site" below.
 - No horizontal page scroll at 390px on any route.
 - A first-time visitor can say who leads on a benchmark and whether to trust it without
   reading a paragraph.
@@ -132,11 +132,9 @@ gone.
 | e2e tests                                       | 55       | 88                                           |
 | Routes scrolling sideways at 390, 768 or 1024px | 0        | 0, all three widths now tested               |
 
-Lighthouse could not be re-measured reliably. Identical runs on this machine moved by 15
-points between consecutive attempts (home scored 76 and then 90 on the same build), and the
-keyless PageSpeed Insights quota was exhausted. The changes aimed at it — one preloaded
-font, a smaller client payload, half the hydrated DOM — measurably reduce the work, but the
-score itself should be taken from PageSpeed Insights against the deployed site.
+Lighthouse could not be re-measured reliably on this machine. Identical runs moved by 15
+points between consecutive attempts (home scored 76 and then 90 on the same build). The
+deployed site was measured with PageSpeed Insights instead; see below.
 
 Not done, and why:
 
@@ -146,3 +144,31 @@ Not done, and why:
   `meta/llama-4-maverick` are the same model registered twice, as are the two Llama 4
   Scout entries. Merging them is a registry decision and is left for the owner; the lists
   now tell them apart by id rather than showing two identical names.
+
+## PageSpeed Insights, deployed site
+
+Measured by the owner on 2026-10-15 against `https://lllm-atlas.vercel.app` after the P1
+deploy (`399a6a7`). Lighthouse 13.5, mobile, emulating a Moto G Power; one run per page.
+
+| Page                         | Performance | Accessibility | Best practices | SEO | FCP   | LCP   | TBT    | CLS | Speed Index |
+| ---------------------------- | ----------- | ------------- | -------------- | --- | ----- | ----- | ------ | --- | ----------- |
+| `/`                          | 100         | 100           | 100            | 100 | 0.9 s | 1.4 s | 30 ms  | 0   | 0.9 s       |
+| `/models`                    | 96          | 100           | 100            | 100 | 1.1 s | 2.3 s | 160 ms | 0   | 2.5 s       |
+| `/models/openai/gpt-6-astra` | 100         | 100           | 100            | 100 | 0.9 s | 1.5 s | 0 ms   | 0   | 0.9 s       |
+
+These are lab results. There is no real-user (CrUX) data yet: the site does not have the
+traffic for Google to report it. Scores move a few points between runs, so `/models` at 96
+reads as "close to 100", not a regression. Every page clears the acceptance criteria, and
+the 15-point swings in the local runs above were the machine, not the site.
+
+What the report flagged, and what was done:
+
+| Finding                                                                                          | Outcome                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/models` main-thread work: 160 ms TBT, Speed Index 2.5 s                                        | Reduced. The view with saturated benchmarks shown, nearly a copy of the default and the largest thing on the page, is now a static file fetched the first time the toggle is switched off. The price chart draws, and its code loads, only when the reader scrolls near it. The `/models` document fell from 558KB to 416KB; the chart's ~150 SVG nodes are no longer built on load.                                                   |
+| About 27 KiB unused in the 71 KiB chunk                                                          | That chunk is React DOM itself, not this site's code; the leaderboard's own client code is a separate 40KB chunk. The chart's code is now split out of it.                                                                                                                                                                                                                                                                             |
+| About 14 KiB of legacy polyfills (`Array.prototype.at`, `flat`, `flatMap`, `Object.fromEntries`) | Not fixable by configuration. Next.js imports these unconditionally from its client entry (`next/dist/client/app-globals.js` imports `polyfill-module`), whatever the browserslist says, and its default browserslist is already modern (Chrome 111, Safari 16.4). The module is about 1.4KB; "14 KiB" is Lighthouse's per-polyfill estimate. The 112KB core-js bundle Next also builds loads only in browsers without module support. |
+| One 8.9 KiB CSS file blocking render, about 150 ms                                               | Left alone. The fix is an experimental Next.js option, which is more risk than 150 ms is worth on a static site.                                                                                                                                                                                                                                                                                                                       |
+| A 32 ms forced reflow on the model page                                                          | Left alone, as the report itself advised.                                                                                                                                                                                                                                                                                                                                                                                              |
+
+The follow-up has not yet been re-measured on the deployed site.
