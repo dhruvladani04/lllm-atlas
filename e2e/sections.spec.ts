@@ -187,6 +187,9 @@ test("a guide's contents list points at headings that exist", async ({ page }) =
 
 test("the leaderboard and a benchmark page each carry their chart", async ({ page }) => {
   await page.goto("/models");
+  // Drawn only once the reader nears it, so scroll there first.
+  await expect(page.getByRole("img", { name: /^Price against score on/ })).toHaveCount(0);
+  await page.mouse.wheel(0, 20000);
   await expect(page.getByRole("img", { name: /^Price against score on/ })).toBeVisible();
 
   await page.goto("/benchmarks/gpqa");

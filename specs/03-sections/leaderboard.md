@@ -198,6 +198,14 @@ jumping back to the top made comparing tabs a matter of finding your place again
   interactive. Rows animate to their new positions rather than jumping, because watching
   the ranking rearrange is what makes the argument land. Position only, under 300ms,
   disabled under `prefers-reduced-motion`. Sorting and filtering animate the same way.
+  The view with saturated benchmarks shown is not shipped with the page when it differs
+  from the default: it is a static file (`/api/ranking/<tab>/shown/default`) fetched the
+  first time the toggle is switched off, with the rows dimmed and a status line until it
+  arrives. It was nearly a copy of the default view and the largest thing on the page.
+  The name of the benchmark it would rank on still ships, so the summary can say so.
+- **The price chart draws when the reader nears it**, not on load. It sits under 25 rows,
+  and drawing it during hydration was work most visits never scrolled to. A placeholder
+  holds its height so nothing below it moves.
 - **Twenty-five rows first.** The table renders its top 25 and states the total
   ("Showing 25 of 210 ranked rows") beside a "Show all" button. This replaces "no
   pagination, virtualise past 200": the registry grew from 30 models to 460, the phone
