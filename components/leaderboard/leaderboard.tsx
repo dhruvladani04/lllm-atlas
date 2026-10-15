@@ -32,7 +32,10 @@ export function Leaderboard({
   capabilityIndexNote,
   coverage,
 }: {
-  tabs: Record<"text" | "agentic", { hidden: TableData; shown: TableData }>;
+  tabs: Record<
+    "text" | "agentic",
+    { hidden: TableData; shown: TableData | null; shownReference: string | null }
+  >;
   /** Rendered on the server and passed through; this shell adds nothing to them. */
   cards: ReactNode;
   image: ImageBoard | null;
@@ -130,6 +133,7 @@ export function Leaderboard({
               models={tableModels}
               hidden={tabs[tab].hidden}
               shown={tabs[tab].shown}
+              shownReference={tabs[tab].shownReference}
               fetchedAt={freshness["epoch"] ?? null}
               coverage={coverage}
             />

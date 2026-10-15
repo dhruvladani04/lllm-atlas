@@ -414,3 +414,6 @@ Decide." Copy guidance is in `04-design/design-system.md`.
 - Price against score: a hand-rolled SVG scatter below the table, one dot per row the
   table shows, log price axis, open-weights models hollow, unpriced rows counted and left
   off rather than placed at zero. UX refresh, P1.
+- The saturated view is fetched on first use rather than shipped, and the price chart
+  draws when scrolled near; the `/models` document fell from 558KB to 416KB. UX refresh,
+  performance follow-up.

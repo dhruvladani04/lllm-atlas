@@ -20,16 +20,22 @@ export const dynamicParams = false;
 
 const TABS: RankingTab[] = ["text", "agentic"];
 const VIEWS: RankingView[] = ["hidden", "shown"];
+/** Not a benchmark slug: the view ranked by the coverage rule. */
+const DEFAULT = "default";
 
 export function generateStaticParams() {
   const inputs = rankingInputs();
   return TABS.flatMap((tab) =>
     VIEWS.flatMap((view) => {
       const result = rank(inputs, tab, view);
-      // The default is already in the page; only the alternatives need a file.
-      return result.options
-        .filter((option) => option.slug !== result.defaultReference?.slug)
-        .map((option) => ({ tab, view, basis: option.slug }));
+      // The default ranking of the default view is in the page. Every alternative needs a
+      // file, and so does the saturated view's default, which the page no longer ships.
+      return [
+        ...(view === "shown" ? [{ tab, view, basis: DEFAULT }] : []),
+        ...result.options
+          .filter((option) => option.slug !== result.defaultReference?.slug)
+          .map((option) => ({ tab, view, basis: option.slug })),
+      ];
     }),
   );
 }
@@ -39,6 +45,11 @@ export async function GET(
   { params }: { params: Promise<{ tab: string; view: string; basis: string }> },
 ): Promise<Response> {
   const { tab, view, basis } = await params;
-  const result = rank(rankingInputs(), tab as RankingTab, view as RankingView, basis);
+  const result = rank(
+    rankingInputs(),
+    tab as RankingTab,
+    view as RankingView,
+    basis === DEFAULT ? null : basis,
+  );
   return Response.json(toTableData(result));
 }

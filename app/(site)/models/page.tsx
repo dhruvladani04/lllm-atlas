@@ -51,13 +51,18 @@ export default function ModelsPage() {
   // When hiding saturated benchmarks changes nothing — which happens whenever the
   // most-measured benchmark is healthy — the two views are the same object, and the RSC
   // payload carries it once instead of twice.
+  //
+  // When they differ, the saturated view is not shipped at all: it is a static file the
+  // table fetches the first time "hide saturated benchmarks" is switched off. It was nearly
+  // a copy of the default and the largest thing on the page. Its reference benchmark's name
+  // travels on its own, so the table can still say what the other setting would rank on.
   const pair = (
     hidden: ReturnType<typeof toTableData>,
     shown: ReturnType<typeof toTableData>,
   ) =>
     JSON.stringify(hidden) === JSON.stringify(shown)
-      ? { hidden, shown: hidden }
-      : { hidden, shown };
+      ? { hidden, shown: hidden, shownReference: shown.reference?.name ?? null }
+      : { hidden, shown: null, shownReference: shown.reference?.name ?? null };
 
   const text = rank(inputs, "text", "hidden");
   const agentic = rank(inputs, "agentic", "hidden");

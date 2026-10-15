@@ -430,6 +430,7 @@ function daysSince(date: string | null): number | null {
 
 export function LeaderboardTable({
   tab,
+  shownReference,
   models,
   hidden,
   shown,
@@ -445,8 +446,14 @@ export function LeaderboardTable({
   /** The tab's data with saturated benchmarks excluded from reference selection. */
   models: Record<string, TableModel>;
   hidden: TableData;
-  /** The same tab with every benchmark eligible. */
-  shown: TableData;
+  /**
+   * The same tab with every benchmark eligible, or null when it is to be fetched: it is
+   * nearly a copy of `hidden`, and shipping both doubled the page's largest payload for a
+   * view most readers never switch to.
+   */
+  shown: TableData | null;
+  /** The benchmark the saturated view would rank on, named without loading that view. */
+  shownReference: string | null;
   fetchedAt: string | null;
   /** Benchmarks with any score on this site, against every benchmark tracked. */
   coverage: { scored: number; total: number };
@@ -464,8 +471,13 @@ export function LeaderboardTable({
   const [density, setDensity] = useState<"comfortable" | "compact">("comfortable");
   const [body] = useAutoAnimate<HTMLTableSectionElement>();
 
-  const base = hideSaturated ? hidden : shown;
   const view = hideSaturated ? "hidden" : "shown";
+  const [fetched, setFetched] = useState<Record<string, TableData>>({});
+  const [failed, setFailed] = useState<string | null>(null);
+  const shownData = shown ?? fetched[`${tab}/shown/default`] ?? null;
+  // Until the saturated view has loaded, its options are not known; the default view's
+  // stand in, and the rows are dimmed while it loads.
+  const base = hideSaturated ? hidden : (shownData ?? hidden);
 
   // Another basis is honoured only if this view offers it: a saturated benchmark chosen
   // before "hide saturated" was switched back on falls back to the default, visibly.
@@ -475,9 +487,12 @@ export function LeaderboardTable({
     base.options.some((option) => option.slug === basis)
       ? basis
       : null;
-  const [fetched, setFetched] = useState<Record<string, TableData>>({});
-  const [failed, setFailed] = useState<string | null>(null);
-  const key = wanted === null ? null : `${tab}/${view}/${wanted}`;
+  const key =
+    wanted !== null
+      ? `${tab}/${view}/${wanted}`
+      : !hideSaturated && shown === null
+        ? `${tab}/shown/default`
+        : null;
   const loading = key !== null && fetched[key] === undefined && failed !== key;
   const data = key !== null ? (fetched[key] ?? base) : base;
 
@@ -524,14 +539,14 @@ export function LeaderboardTable({
         ...new Set(
           // By primary creator: a joint release is listed under its first organisation
           // rather than as a 163-character option of its own.
-          [...shown.rows, ...hidden.rows].map((row) =>
+          [...(shown?.rows ?? []), ...hidden.rows].map((row) =>
             primaryCreator(models[row.model_id]?.creator ?? ""),
           ),
         ),
       ]
         .filter((name) => name !== "")
         .sort(),
-    [hidden.rows, models, shown.rows],
+    [hidden.rows, models, shown?.rows],
   );
 
   const rows = useMemo(() => {
@@ -788,16 +803,20 @@ export function LeaderboardTable({
               Back to the default
             </button>
           ) : null}
-          {/* The fetch is the one wait on the site, so it says what it is waiting for. */}
-          <span role="status" className="text-xs text-ink-mute">
-            {loading
-              ? `Loading the ranking on ${base.options.find((o) => o.slug === wanted)?.name}…`
-              : failed !== null && failed === key
-                ? "That ranking could not be loaded; showing the default."
-                : ""}
-          </span>
         </div>
       ) : null}
+
+      {/* Fetching another ranking, or the saturated view, is the one wait on the site, so it
+          says what it is waiting for. */}
+      <p role="status" className="text-xs text-ink-mute empty:hidden">
+        {loading
+          ? wanted !== null
+            ? `Loading the ranking on ${base.options.find((o) => o.slug === wanted)?.name}…`
+            : "Loading the view with saturated benchmarks…"
+          : failed !== null && failed === key
+            ? "That view could not be loaded; showing the default ranking."
+            : ""}
+      </p>
 
       {data.reference === null ? (
         <p className="py-8 text-sm text-ink-mute">
@@ -809,9 +828,9 @@ export function LeaderboardTable({
           data={data}
           alternative={
             hideSaturated &&
-            shown.reference !== null &&
-            shown.reference.slug !== data.reference.slug
-              ? shown.reference.name
+            shownReference !== null &&
+            shownReference !== data.reference.name
+              ? shownReference
               : null
           }
           uniform={uniform}

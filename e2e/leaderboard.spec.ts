@@ -121,3 +121,21 @@ test.describe("ranking on another benchmark", () => {
     await expect(page.getByText(/your choice; the default is/)).toHaveCount(0);
   });
 });
+
+test("the saturated view is fetched when asked for, and ranks once it arrives", async ({
+  page,
+}) => {
+  await page.goto("/models");
+  const requests: string[] = [];
+  page.on("request", (request) => requests.push(request.url()));
+
+  await page.getByLabel(/Hide saturated benchmarks/).uncheck();
+  await expect(page.locator("tbody tr").first()).toBeVisible();
+  await expect
+    .poll(() => requests.some((url) => url.includes("/api/ranking/text/shown/default")))
+    .toBe(true);
+  await expect(page.getByText("Loading the view with saturated benchmarks…")).toHaveCount(
+    0,
+  );
+  await expect(page.getByText(/^Ranked on/)).toBeVisible();
+});
