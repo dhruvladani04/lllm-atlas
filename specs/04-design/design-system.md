@@ -291,6 +291,11 @@ a page that scrolls and one that does not.
   the leaderboard section. Below 640px the links sit behind a "Menu" button with
   `aria-expanded`, which closes on navigation and on Escape. Where scripting is unavailable
   the button is hidden and the links stay visible, so it is never the only way to a section.
+- **Header freshness pill** — "data fetched 3 hours ago" beside the scheme toggle, from
+  640px up, linking to the methodology. It shows the *oldest* of the sources' last
+  successful fetches, not the newest: the site is only as current as its stalest input. It
+  is a `FreshnessStamp`, so it turns amber past seven days like every other one, and it
+  does not replace the per-surface stamps.
 - **`MissingValue`** — an explicit component. Renders "—" with a tooltip giving the
   reason and "not reported" read aloud. Never a zero, never a blank cell. It used to spell
   out "not reported" and banned the dash, on the grounds that a bare dash reads as data; it
@@ -437,3 +442,4 @@ must be readable and correct with CSS disabled.
 - First visits follow the operating system's scheme, and an explicit choice beats it. The
   toggle is an icon button whose click is handled by the inline script, so it works before
   hydration, and whose icon and name are set by CSS. UX refresh, P2.
+- A header pill states the oldest source's last successful fetch. UX refresh, P2.

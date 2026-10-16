@@ -5,6 +5,8 @@ import { siteUrl } from "@/lib/config";
 import { SiteNav } from "@/components/ui/site-nav";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { ThemeSync } from "@/components/ui/theme-sync";
+import { FreshnessStamp } from "@/components/data/freshness-stamp";
+import { loadFreshness } from "@/lib/data/derived";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
@@ -97,6 +99,11 @@ window.addEventListener("storage",function(e){if(e.key===K)apply(stored())});
 })()`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const fetches = Object.values(loadFreshness()).filter(
+    (value): value is string => value !== null,
+  );
+  const oldestFetch = fetches.length === 0 ? null : [...fetches].sort()[0]!;
+
   return (
     <html
       lang="en"
@@ -137,7 +144,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               LLM Atlas
             </Link>
             <SiteNav items={NAV} />
-            <div className="order-2 ml-auto sm:order-3">
+            <div className="order-2 ml-auto flex items-center gap-3 sm:order-3">
+              {/* The oldest of the sources' last successful fetches, not the newest: the
+                  site is only as current as its stalest input, and the stamp turns amber
+                  past seven days like every other one. Each data surface still states its
+                  own source's freshness. Hidden on phones, where the header has no room. */}
+              <Link
+                href="/methodology"
+                className="hidden items-center rounded-full border border-rule px-2.5 py-0.5 hover:border-accent sm:inline-flex"
+                title="The oldest of the sources' last successful fetches. The data refreshes daily at 06:00 UTC."
+              >
+                <FreshnessStamp fetchedAt={oldestFetch} label="data fetched" />
+              </Link>
               <ThemeToggle />
               <ThemeSync />
             </div>
