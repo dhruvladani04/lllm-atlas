@@ -172,3 +172,28 @@ What the report flagged, and what was done:
 | A 32 ms forced reflow on the model page                                                          | Left alone, as the report itself advised.                                                                                                                                                                                                                                                                                                                                                                                              |
 
 The follow-up has not yet been re-measured on the deployed site.
+
+## P2 result
+
+Done 2026-10-16. Screenshots are in [`after-p2/`](after-p2/), taken with the scheme
+coming from an emulated operating system, as a first visit now gets it.
+
+| Change                | What shipped                                                                                                                                                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Scheme on first visit | Follows the operating system, dark where it states no preference. Pressing the toggle stores a choice, which beats the operating system from then on                                                                                             |
+| Theme toggle          | An icon button (sun or moon) named for its effect, "Switch to light theme". Its click is handled by the inline script in the document, so it works before the page's JavaScript has loaded; an e2e test blocks every script chunk and presses it |
+| Link previews         | 1200×630 images for the site, the leaderboard (its current leader) and each of the 460 models, each carrying the benchmark's status and other flags. Per-page titles and descriptions on the leaderboard, model and compare pages                |
+| Header freshness      | A pill reading "data fetched 1 day ago", from 640px up. It states the _oldest_ source's last fetch, and turns amber past seven days like every other stamp                                                                                       |
+| Hover and focus       | A table row a keyboard user tabs into gets the hover tint; a summary card firms its border on hover and takes the accent when focus is inside it                                                                                                 |
+
+Costs worth knowing:
+
+- **Build time.** The 460 model preview images are drawn at build time; on this machine
+  the build rose to about 200 seconds. The daily ingest job builds before it commits, so
+  it pays this every day.
+- **Previews sit at `/og/models/<creator>/<model>`**, not beside the page, because Next.js
+  does not allow a generated image under the `[...slug]` catch-all. A unit test holds every
+  model id to exactly two parts so the route can always address it.
+
+Loading states were covered in P1: the one place the site fetches after load, another
+ranking or the saturated view, dims the rows and says what it is waiting for.
