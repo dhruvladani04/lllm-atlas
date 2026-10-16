@@ -10,7 +10,9 @@ export default defineConfig({
   testDir: "./e2e",
   fullyParallel: true,
   reporter: process.env.CI ? "github" : "list",
-  use: { baseURL: "http://localhost:3210" },
+  // A dark operating system by default, so the suite reads the site the way most of its
+  // readers arrive; the light scheme is audited by emulating a light one.
+  use: { baseURL: "http://localhost:3210", colorScheme: "dark" },
   webServer: {
     command: "pnpm build && pnpm start -p 3210",
     url: "http://localhost:3210",

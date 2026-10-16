@@ -49,13 +49,13 @@ for (const { scheme, route } of CASES) {
     // when the registry held thirty models.
     test.setTimeout(120_000);
 
-    if (scheme === "light") {
-      await page.addInitScript(() => localStorage.setItem("llm-atlas-theme", "light"));
-    }
+    // The scheme comes from the operating system here, which is what a first visit gets.
+    await page.emulateMedia({ colorScheme: scheme });
     await page.goto(route);
-    expect(await page.locator("html").getAttribute("data-theme")).toBe(
-      scheme === "light" ? "light" : null,
-    );
+    expect(await page.locator("html").getAttribute("data-theme")).toBeNull();
+    expect(
+      await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme),
+    ).toBe(scheme);
     await settled(page);
     const results = await new AxeBuilder({ page })
       .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"])
@@ -86,13 +86,41 @@ test("the scheme toggle switches to light, and the choice survives a reload", as
     page.evaluate(() => getComputedStyle(document.body).backgroundColor);
   const dark = await paper();
 
-  await page.getByRole("button", { name: "Switch to light" }).click();
+  await page.getByRole("button", { name: "Switch to light theme" }).click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
   expect(await paper()).not.toBe(dark);
 
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
-  await expect(page.getByRole("button", { name: "Switch to dark" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Switch to dark theme" })).toBeVisible();
+});
+
+test("a first visit follows the operating system's scheme", async ({ page }) => {
+  await page.emulateMedia({ colorScheme: "light" });
+  await page.goto("/");
+  await expect(page.getByRole("button", { name: "Switch to dark theme" })).toBeVisible();
+  expect(
+    await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme),
+  ).toBe("light");
+});
+
+test("a reader's choice beats the operating system's", async ({ page }) => {
+  await page.emulateMedia({ colorScheme: "light" });
+  await page.addInitScript(() => localStorage.setItem("llm-atlas-theme", "dark"));
+  await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  expect(
+    await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme),
+  ).toBe("dark");
+});
+
+test("the toggle works before the page's JavaScript has loaded", async ({ page }) => {
+  // No framework code at all: the inline script in the document is all there is, which is
+  // the state a slow phone is in for its first second or two.
+  await page.route("**/_next/static/chunks/**", (route) => route.abort());
+  await page.goto("/");
+  await page.getByRole("button", { name: "Switch to light theme" }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
 });
 
 for (const route of ["/", "/models"])

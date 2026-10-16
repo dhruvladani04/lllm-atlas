@@ -4,6 +4,7 @@ import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
 import { siteUrl } from "@/lib/config";
 import { SiteNav } from "@/components/ui/site-nav";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { ThemeSync } from "@/components/ui/theme-sync";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
@@ -68,13 +69,32 @@ const NAV = [
 ] as const;
 
 /**
- * Applies a stored light preference while the HTML is still being parsed, before anything
- * paints. Without it a reader who chose light would see the dark default flash on every
- * load. The key matches `THEME_KEY` in the toggle, and the script only ever compares the
- * stored value against a literal — nothing read from storage is written into the page.
+ * The scheme, handled before React exists.
+ *
+ * While the HTML is still parsing, this applies a stored choice so a reader who chose a
+ * scheme never sees the other one flash. With no stored choice it does nothing and the
+ * operating system's scheme applies through CSS.
+ *
+ * It also owns the toggle's click, through one listener on the document. A React handler
+ * only works once the page has hydrated, so the first click on a slow phone did nothing;
+ * this listener exists from the first byte. The stored value is only ever compared against
+ * the literals "light" and "dark" — nothing read from storage is written into the page —
+ * and another tab changing the scheme changes this one too.
  */
-const APPLY_THEME =
-  '(function(){try{if(localStorage.getItem("llm-atlas-theme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}})()';
+const THEME_SCRIPT = `(function(){
+var K="llm-atlas-theme",d=document.documentElement;
+function stored(){try{var t=localStorage.getItem(K);return t==="light"||t==="dark"?t:null}catch(e){return null}}
+function apply(t){if(t)d.setAttribute("data-theme",t);else d.removeAttribute("data-theme")}
+apply(stored());
+document.addEventListener("click",function(e){
+var b=e.target&&e.target.closest&&e.target.closest("[data-theme-toggle]");if(!b)return;
+var now=d.getAttribute("data-theme")||(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");
+var next=now==="dark"?"light":"dark";
+try{localStorage.setItem(K,next)}catch(e){}
+apply(next);
+});
+window.addEventListener("storage",function(e){if(e.key===K)apply(stored())});
+})()`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -90,7 +110,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <head>
-        <script dangerouslySetInnerHTML={{ __html: APPLY_THEME }} />
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
       <body className="min-h-screen bg-paper text-ink">
         <a
@@ -119,6 +139,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <SiteNav items={NAV} />
             <div className="order-2 ml-auto sm:order-3">
               <ThemeToggle />
+              <ThemeSync />
             </div>
           </div>
         </header>

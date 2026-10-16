@@ -20,10 +20,11 @@ Three things carry colour or weight on this site, and each has exactly one job:
 3. **Vendor marks** identify who made a model. They are drawn in the current text colour,
    never in the vendor's brand colour, so they add recognition without adding a hue.
 
-The site is **dark by default**, with a light scheme one click away. Both schemes are the
-same design: the same tokens re-pointed, held to the same contrast floor, audited by the
-same tests. Dark is the default because the audience reads dense tables for long stretches
-and the comparable sites they arrive from are dark; it is not a mood.
+A first visit gets **the operating system's scheme**, dark where it states no preference,
+and the reader's own choice beats it from then on. Both schemes are the same design: the
+same tokens re-pointed, held to the same contrast floor, audited by the same tests. Dark is
+the fallback because the audience reads dense tables for long stretches and the comparable
+sites they arrive from are dark; it is not a mood.
 
 This replaces two earlier paragraphs. The chrome was strictly achromatic through Milestone
 7, then gained the accent, then gained marks and a dark default. Rather than keep a rule
@@ -41,8 +42,8 @@ pixel is unchanged: does it tell the reader a fact, or something they can do.
 - Elevation on the leaderboard or benchmark-matrix body, which stay flat so density reads
   as density. Shadow is for interactive or floating chrome and for the named card
   surfaces: the header, a hovered row, the home worked example, the summary cards.
-- Following the operating system's scheme silently. The scheme is the reader's explicit
-  choice and is remembered; it does not change because the room got dark.
+- Overriding a reader's explicit choice. Once they have pressed the toggle, the scheme is
+  theirs and is remembered; it does not follow the operating system any more.
 
 ## What to avoid
 
@@ -161,14 +162,21 @@ tint opacity means re-running that check, not eyeballing it.
 
 ### Scheme
 
-Dark is what the server renders. A reader who chooses light has `data-theme="light"` set
-on `<html>` by an inline script while the document is still being parsed, so the page never
-paints in the wrong scheme first. The choice is stored in `localStorage` under
-`llm-atlas-theme`; if storage is blocked the toggle still works for the visit.
+With no stored choice there is no `data-theme` attribute, and `prefers-color-scheme`
+decides through CSS: light where the operating system asks for it, dark otherwise. A reader
+who presses the toggle has `data-theme="light"` or `"dark"` stored in `localStorage`
+under `llm-atlas-theme` and set on `<html>` by an inline script while the document is
+still being parsed, so the page never paints in the wrong scheme first. If storage is
+blocked the toggle still works for the visit. The decision was taken with the owner in the
+UX refresh, reversing "dark for everyone until they switch".
 
-The script compares the stored value against a literal and writes nothing from storage into
-the page. The toggle's label is read through `useSyncExternalStore` with a server snapshot
-of "dark", so a reader in light gets a label swap after hydration, not a hydration error.
+**The toggle works before React does.** The same inline script owns its click, through one
+listener on the document, so the first press on a slow phone works before the page has
+hydrated; a React handler would do nothing until then. The toggle itself is a server
+component with no state: which icon shows and what it is called are decided by CSS from
+the scheme in effect, so they are right in the server HTML and nothing can mismatch on
+hydration. The script compares the stored value against the literals "light" and "dark"
+and writes nothing from storage into the page.
 
 `.scheme-light` and `.scheme-dark` remain as classes so the token reference page can show
 both schemes side by side.
@@ -275,8 +283,9 @@ a page that scrolls and one that does not.
   entrance animation, no colour beyond the data palette, `--shadow-sm` and `--radius-md`.
   The rules for which cards exist are in `03-sections/leaderboard.md`.
 - **`CreatorLogo`** — the vendor mark or its monogram fallback, as above.
-- **`ThemeToggle`** — a text button in the header that names its effect, "Switch to light"
-  or "Switch to dark".
+- **`ThemeToggle`** — an icon button in the header: a sun while dark is in effect, a moon
+  while light is. Its accessible name, and its tooltip, is the effect of pressing it:
+  "Switch to light theme" or "Switch to dark theme".
 - **`SiteNav`** — the main navigation. The link for the current section carries
   `aria-current="page"` and is set in ink with a heavier underline; a model page counts as
   the leaderboard section. Below 640px the links sit behind a "Menu" button with
@@ -425,3 +434,6 @@ must be readable and correct with CSS disabled.
 - `MissingValue` renders "—" with a key entry, a tooltip and "not reported" read aloud,
   replacing the spelled-out form; added the `Legend` component, score bars drawn from zero,
   and a row-density control. UX refresh, P1.
+- First visits follow the operating system's scheme, and an explicit choice beats it. The
+  toggle is an icon button whose click is handled by the inline script, so it works before
+  hydration, and whose icon and name are set by CSS. UX refresh, P2.

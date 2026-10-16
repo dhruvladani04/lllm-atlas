@@ -54,10 +54,10 @@
   --shadow-md-dark: 0 8px 24px rgba(0, 0, 0, 0.55);
 }
 
-/* Dark is the default scheme, and it does not follow the operating system: the reader
-   chooses with the toggle in the header, which sets data-theme on <html> before first
-   paint. .scheme-light / .scheme-dark exist so both schemes can be shown side by side on
-   the token reference page. */
+/* Dark unless the operating system asks for light, and the reader's own choice over
+   either: the toggle in the header stores it, and the script in app/layout.tsx sets
+   data-theme on <html> before first paint. .scheme-light / .scheme-dark exist so both
+   schemes can be shown side by side on the token reference page. */
 :root,
 .scheme-dark {
   --paper: var(--paper-dark);
@@ -102,6 +102,55 @@
   --elevation-sm: var(--shadow-sm-light);
   --elevation-md: var(--shadow-md-light);
   color-scheme: light;
+}
+
+/* No stored choice: the operating system decides. The reader's explicit choice, written
+   to data-theme by the script in app/layout.tsx, beats it in either direction. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --paper: var(--paper-light);
+    --surface: var(--surface-light);
+    --ink: var(--ink-light);
+    --ink-mute: var(--ink-mute-light);
+    --rule: var(--rule-light);
+    --rule-strong: var(--rule-strong-light);
+    --status-active: var(--status-active-light);
+    --status-nearing: var(--status-nearing-light);
+    --status-saturated: var(--status-saturated-light);
+    --status-deprecated: var(--status-deprecated-light);
+    --risk-high: var(--risk-high-light);
+    --risk-medium: var(--risk-medium-light);
+    --provenance-vendor: var(--provenance-vendor-light);
+    --stale: var(--stale-light);
+    --accent: var(--accent-light);
+    --accent-strong: var(--accent-strong-light);
+    --elevation-sm: var(--shadow-sm-light);
+    --elevation-md: var(--shadow-md-light);
+    color-scheme: light;
+  }
+}
+
+/* The toggle's two halves: the one for the scheme in effect is shown, the other is not —
+   and display: none also takes its label out of the accessibility tree. */
+.theme-when-light {
+  display: none;
+}
+.theme-when-dark {
+  display: inline-flex;
+}
+:root[data-theme="light"] .theme-when-light {
+  display: inline-flex;
+}
+:root[data-theme="light"] .theme-when-dark {
+  display: none;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .theme-when-light {
+    display: inline-flex;
+  }
+  :root:not([data-theme="dark"]) .theme-when-dark {
+    display: none;
+  }
 }
 
 @theme inline {
