@@ -243,7 +243,10 @@
   }
 
   /* A hovered leaderboard/benchmark row — interaction feedback, not decoration. */
-  .row-hover:hover {
+  /* A row a keyboard user has tabbed into gets the same tint as one under the mouse, so
+     focus says which row the focused link belongs to, not only which link it is. */
+  .row-hover:hover,
+  .row-hover:focus-within {
     background-color: color-mix(in srgb, var(--ink) 5%, transparent);
   }
 

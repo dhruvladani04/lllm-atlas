@@ -22,7 +22,9 @@ const usd = (value: number) => `$${value.toFixed(2)}`;
 
 function Card({ card }: { card: SummaryCard }) {
   return (
-    <li className="flex w-[16rem] shrink-0 flex-col rounded-md border border-rule bg-surface p-4 shadow-sm lg:w-auto">
+    // A card holds links rather than being one, so it answers hover with a firmer border
+    // and keyboard focus inside it with the accent: the accent is for interaction only.
+    <li className="flex w-[16rem] shrink-0 flex-col rounded-md border border-rule bg-surface p-4 shadow-sm transition-colors focus-within:border-accent hover:border-rule-strong lg:w-auto">
       <h3 className="text-xs text-ink-mute">{card.label}</h3>
 
       <p className="mt-2 flex items-start gap-2 text-sm">
