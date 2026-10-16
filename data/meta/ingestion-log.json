@@ -1,5 +1,50 @@
 [
   {
+    "run_at": "2026-10-16T11:05:36.075Z",
+    "results": [
+      {
+        "source_id": "benchwiki",
+        "status": "ok",
+        "record_count": 80,
+        "previous_record_count": 80,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "epoch",
+        "status": "ok",
+        "record_count": 62,
+        "previous_record_count": 62,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "epoch-eci",
+        "status": "ok",
+        "record_count": 277,
+        "previous_record_count": 277,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "arena-mirror",
+        "status": "unreachable",
+        "record_count": 82,
+        "previous_record_count": 82,
+        "unresolved_models": [],
+        "message": "arena dataset responded 502 at offset 0"
+      },
+      {
+        "source_id": "openrouter",
+        "status": "ok",
+        "record_count": 465,
+        "previous_record_count": 462,
+        "unresolved_models": [],
+        "message": null
+      }
+    ]
+  },
+  {
     "run_at": "2026-10-15T11:10:54.661Z",
     "results": [
       {
