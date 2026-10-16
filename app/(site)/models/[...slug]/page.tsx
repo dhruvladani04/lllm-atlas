@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { capabilityLabel } from "@/lib/format/labels";
+import { modelImagePath, quotableScore, shareMetadata } from "@/lib/og/metadata";
 import { groupScores } from "@/lib/models/score-groups";
 import { ScoreTable, type ScoreSection } from "@/components/models/score-table";
 import { CreatorLogo } from "@/components/ui/creator-logo";
@@ -14,11 +15,7 @@ import {
 } from "@/lib/data/derived";
 import type { JoinedScore } from "@/lib/schemas/score";
 import { formatTokenCount } from "@/lib/format/number";
-import {
-  MissingValue,
-  ProvenanceBadge,
-  QuotedValue,
-} from "@/components/data/primitives";
+import { MissingValue, ProvenanceBadge, QuotedValue } from "@/components/data/primitives";
 import { FreshnessStamp } from "@/components/data/freshness-stamp";
 import { isDiscriminating } from "@/lib/leaderboard/rows";
 
@@ -49,8 +46,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const model = findModel(slug);
+  if (model === null) return { title: "Model" };
+
+  // The same quotable number the preview image leads with, and its caveat, in words.
+  const best = quotableScore(
+    loadJoinedScores().filter((score) => score.model_id === model.model_id),
+  );
+  const description =
+    best === undefined
+      ? `${model.display_name} by ${model.creator}: every score on LLM Atlas, each with the health of its benchmark. No independent score on a benchmark that still discriminates yet.`
+      : `${model.display_name} by ${model.creator}: ${best.value.toFixed(1)}% on ${best.benchmark.name} (${best.benchmark.status.replace("-", " ")}), independently measured. Every score with the health of its benchmark.`;
+
   return {
-    title: model === null ? "Model" : `${model.display_name}`,
+    title: model.display_name,
+    description,
+    ...shareMetadata({
+      title: `${model.display_name} — LLM Atlas`,
+      description,
+      path: `/models/${model.model_id}`,
+      image: modelImagePath(model.model_id),
+      alt: `${model.display_name}'s scores on LLM Atlas, with the health of each benchmark.`,
+    }),
   };
 }
 

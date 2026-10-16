@@ -6,6 +6,7 @@ import {
   loadImageLeaderboard,
 } from "@/lib/data/derived";
 import { rank, rankingInputs } from "@/lib/leaderboard/ranking-inputs";
+import { shareMetadata } from "@/lib/og/metadata";
 import { toTableData, toTableModels } from "@/lib/leaderboard/view";
 import { toImageBoard } from "@/lib/leaderboard/image-board";
 import { buildSummaryCards } from "@/lib/leaderboard/cards";
@@ -22,10 +23,19 @@ import { SummaryCards } from "@/components/leaderboard/summary-cards";
 
 export const dynamic = "force-static";
 
+const DESCRIPTION =
+  "Model scores shown with the health of the benchmark that produced them and the provenance of the number.";
+
 export const metadata: Metadata = {
   title: "Leaderboard",
-  description:
-    "Model scores shown with the health of the benchmark that produced them and the provenance of the number.",
+  description: DESCRIPTION,
+  ...shareMetadata({
+    title: "Leaderboard — LLM Atlas",
+    description: DESCRIPTION,
+    path: "/models",
+    image: "/og/leaderboard",
+    alt: "The current leader on LLM Atlas, with the health of the benchmark it leads on.",
+  }),
 };
 
 export default function ModelsPage() {

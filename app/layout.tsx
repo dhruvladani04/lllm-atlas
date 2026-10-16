@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
 import { siteUrl } from "@/lib/config";
+import { shareMetadata } from "@/lib/og/metadata";
 import { SiteNav } from "@/components/ui/site-nav";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { ThemeSync } from "@/components/ui/theme-sync";
@@ -47,18 +48,13 @@ export const metadata: Metadata = {
   },
   description: DESCRIPTION,
   applicationName: "LLM Atlas",
-  openGraph: {
-    type: "website",
-    siteName: "LLM Atlas",
+  ...shareMetadata({
     title: "LLM Atlas",
     description: DESCRIPTION,
-    url: siteUrl(),
-  },
-  twitter: {
-    card: "summary",
-    title: "LLM Atlas",
-    description: DESCRIPTION,
-  },
+    path: "/",
+    image: "/og/site",
+    alt: "LLM Atlas: model scores shown with the health of the benchmark that produced them.",
+  }),
   robots: { index: true, follow: true },
 };
 

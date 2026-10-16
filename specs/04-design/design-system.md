@@ -296,6 +296,16 @@ a page that scrolls and one that does not.
   successful fetches, not the newest: the site is only as current as its stalest input. It
   is a `FreshnessStamp`, so it turns amber past seven days like every other one, and it
   does not replace the per-surface stamps.
+- **Link previews** — 1200×630 images for the site, the leaderboard and every model, drawn
+  at build time by `next/og` and served as static routes under `/og/`. A preview carries
+  what its row carries: the leaderboard's shows the current leader with the benchmark it
+  leads on, its status and its other flags in words; a model's shows its best independent
+  score on a benchmark that still discriminates, or says it has none, rather than reaching
+  for a saturated or vendor-reported number. They are routes and not `opengraph-image`
+  files because file-based images override a page's own metadata, and a site-wide one
+  would have masked the per-model images. The model route is `/og/models/<creator>/<model>`,
+  because a generated image cannot sit under the `[...slug]` catch-all; a unit test holds
+  every model id to exactly two parts.
 - **`MissingValue`** — an explicit component. Renders "—" with a tooltip giving the
   reason and "not reported" read aloud. Never a zero, never a blank cell. It used to spell
   out "not reported" and banned the dash, on the grounds that a bare dash reads as data; it
@@ -443,3 +453,8 @@ must be readable and correct with CSS disabled.
   toggle is an icon button whose click is handled by the inline script, so it works before
   hydration, and whose icon and name are set by CSS. UX refresh, P2.
 - A header pill states the oldest source's last successful fetch. UX refresh, P2.
+- Hover and focus: a table row a keyboard user has tabbed into gets the hover tint; a
+  summary card answers hover with a firmer border and focus inside it with the accent. UX
+  refresh, P2.
+- Link previews for the site, the leaderboard and each model, carrying their caveats. UX
+  refresh, P2.

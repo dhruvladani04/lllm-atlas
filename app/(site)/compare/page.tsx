@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { buildRows } from "@/lib/leaderboard/rows";
 import { suggestedPairs } from "@/lib/leaderboard/compare";
+import { shareMetadata } from "@/lib/og/metadata";
 import { loadJoinedScores, loadModels } from "@/lib/data/derived";
 import { toCompareBenchmarks, toCompareScores } from "@/lib/leaderboard/compare";
 import { toTableModels } from "@/lib/leaderboard/view";
@@ -16,10 +17,19 @@ import { CompareView } from "@/components/leaderboard/compare-view";
 
 export const dynamic = "force-static";
 
+const DESCRIPTION =
+  "Compare models on the benchmarks all of them were actually measured on, with the health of each benchmark and the provenance of each number.";
+
 export const metadata: Metadata = {
   title: "Compare models",
-  description:
-    "Compare models on the benchmarks all of them were actually measured on, with the health of each benchmark and the provenance of each number.",
+  description: DESCRIPTION,
+  ...shareMetadata({
+    title: "Compare models — LLM Atlas",
+    description: DESCRIPTION,
+    path: "/compare",
+    image: "/og/site",
+    alt: "LLM Atlas: model scores shown with the health of the benchmark that produced them.",
+  }),
 };
 
 export default function ComparePage() {

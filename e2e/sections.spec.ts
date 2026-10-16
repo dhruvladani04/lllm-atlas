@@ -195,3 +195,32 @@ test("the leaderboard and a benchmark page each carry their chart", async ({ pag
   await page.goto("/benchmarks/gpqa");
   await expect(page.getByRole("img", { name: /measured on this site/ })).toBeVisible();
 });
+
+test("a model page shares its own preview image, which carries its caveats", async ({
+  page,
+  request,
+}) => {
+  await page.goto("/models/openai/gpt-6-astra");
+  const image = await page.locator('meta[property="og:image"]').getAttribute("content");
+  expect(image).toMatch(/\/og\/models\/openai\/gpt-6-astra$/);
+  await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute(
+    "content",
+    "summary_large_image",
+  );
+
+  const response = await request.get("/og/models/openai/gpt-6-astra");
+  expect(response.status()).toBe(200);
+  expect(response.headers()["content-type"]).toBe("image/png");
+});
+
+test("the leaderboard shares a preview of its current leader", async ({ page }) => {
+  await page.goto("/models");
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
+    "content",
+    /\/og\/leaderboard$/,
+  );
+  await expect(page.locator('meta[property="og:title"]')).toHaveAttribute(
+    "content",
+    "Leaderboard — LLM Atlas",
+  );
+});
