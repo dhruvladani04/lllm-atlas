@@ -10,8 +10,8 @@
     "name": "p-image",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 46
+    "last_seen_at": "2026-10-20",
+    "occurrences": 47
   },
   {
     "name": "stable-diffusion-v35-large",
@@ -2292,43 +2292,43 @@
     "name": "Baichuan2-Chat 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "ChatGLM 2-6B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "ChatGLM 2-6B (base)*",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "ChatGLM2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "ChatGLM2 6B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "ChatGLM2 6B (8-shot)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Claude 3 Haiku",
@@ -2558,29 +2558,43 @@
     "name": "Claude Haiku 4.5 (Thinking 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Claude Haiku 4.5 (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Claude Haiku 4.5 (Thinking 32K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Claude Haiku 4.5 (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
+  },
+  {
+    "name": "Claude Haiku 5.5 (Low)",
+    "source_id": "epoch",
+    "first_seen_at": "2026-10-20",
+    "last_seen_at": "2026-10-20",
+    "occurrences": 1
+  },
+  {
+    "name": "Claude Haiku 5.5 (Medium)",
+    "source_id": "epoch",
+    "first_seen_at": "2026-10-20",
+    "last_seen_at": "2026-10-20",
+    "occurrences": 1
   },
   {
     "name": "Claude instant",
@@ -2600,22 +2614,22 @@
     "name": "Claude Opus 4 (Thinking 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Claude Opus 4 (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Claude Opus 4 (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Claude Opus 4 (Thinking)",
@@ -2775,22 +2789,22 @@
     "name": "Claude Sonnet 4 (Thinking 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Claude Sonnet 4 (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Claude Sonnet 4 (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Claude Sonnet 4 (Thinking)",
@@ -2950,8 +2964,8 @@
     "name": "claude-haiku-4-5-20251001_32K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "claude-opus-4-1-20250805",
@@ -2992,8 +3006,8 @@
     "name": "claude-opus-4-20250514_16K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "claude-opus-4-5-20251101",
@@ -3132,22 +3146,22 @@
     "name": "claude-sonnet-4-20250514_16K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "claude-sonnet-4-20250514_32K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "claude-sonnet-4-20250514_59K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "claude-sonnet-4-5-20250929",
@@ -3223,36 +3237,36 @@
     "name": "claude-sonnet-5_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "claude-sonnet-5_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "CodeQwen1.5-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Codex Mini (Latest)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Command R",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Command R Plus",
@@ -3363,15 +3377,15 @@
     "name": "DeepSeek V4.1 Flash (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 5
+    "last_seen_at": "2026-10-20",
+    "occurrences": 6
   },
   {
     "name": "DeepSeek V4.1 Flash (None)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 5
+    "last_seen_at": "2026-10-20",
+    "occurrences": 6
   },
   {
     "name": "deepseek-chat",
@@ -3391,8 +3405,8 @@
     "name": "deepseek-r1-0528-qwen3-8b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "DeepSeek-R1-Distill-Llama-70B",
@@ -3468,15 +3482,15 @@
     "name": "deepseek-v4-pro_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "deepseek-v4-pro_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "deepseek-v4-pro-0813_max",
@@ -3503,15 +3517,15 @@
     "name": "DS-Coder-V2-Lite-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "DS-Coder-V2-Lite-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Eurus-2-7B-PRIME",
@@ -3699,8 +3713,8 @@
     "name": "Gemini 2.5 Pro (Thinking 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Gemini 2.5 Pro (Thinking 1K)",
@@ -3713,15 +3727,15 @@
     "name": "Gemini 2.5 Pro (Thinking 32K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Gemini 2.5 Pro (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Gemini 2.5 Pro Experimental (March 2025)",
@@ -3951,8 +3965,8 @@
     "name": "Gemini 3.8 Flash (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-06",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 17
+    "last_seen_at": "2026-10-20",
+    "occurrences": 18
   },
   {
     "name": "Gemini 3.8 Flash (Medium)",
@@ -3965,8 +3979,29 @@
     "name": "Gemini 4 Argon",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 5
+    "last_seen_at": "2026-10-20",
+    "occurrences": 6
+  },
+  {
+    "name": "Gemini 4 Argon (High)",
+    "source_id": "epoch",
+    "first_seen_at": "2026-10-20",
+    "last_seen_at": "2026-10-20",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 4 Argon (Low)",
+    "source_id": "epoch",
+    "first_seen_at": "2026-10-20",
+    "last_seen_at": "2026-10-20",
+    "occurrences": 1
+  },
+  {
+    "name": "Gemini 4 Argon (Medium)",
+    "source_id": "epoch",
+    "first_seen_at": "2026-10-20",
+    "last_seen_at": "2026-10-20",
+    "occurrences": 1
   },
   {
     "name": "Gemini-1.5 Flash",
@@ -4217,8 +4252,8 @@
     "name": "gemini-4-argon_high",
     "source_id": "epoch",
     "first_seen_at": "2026-10-14",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 6
+    "last_seen_at": "2026-10-20",
+    "occurrences": 7
   },
   {
     "name": "Gemma (7B)",
@@ -4392,15 +4427,15 @@
     "name": "glm-4.7-flash",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "glm-4.7-flash_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "glm-4p5",
@@ -4476,15 +4511,15 @@
     "name": "GLM-5.3-Flash (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-06",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 17
+    "last_seen_at": "2026-10-20",
+    "occurrences": 18
   },
   {
     "name": "GLM-5.3-Flash (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-06",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 17
+    "last_seen_at": "2026-10-20",
+    "occurrences": 18
   },
   {
     "name": "GLM-5.3-Flash (Max)",
@@ -5876,22 +5911,22 @@
     "name": "granite-4.0-1b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "granite-4.0-350m",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "granite-4.0-micro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "Grok 3",
@@ -6002,29 +6037,29 @@
     "name": "Grok 4.7 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 5
+    "last_seen_at": "2026-10-20",
+    "occurrences": 6
   },
   {
     "name": "Grok 4.7 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 5
+    "last_seen_at": "2026-10-20",
+    "occurrences": 6
   },
   {
     "name": "Grok 4.7 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 5
+    "last_seen_at": "2026-10-20",
+    "occurrences": 6
   },
   {
     "name": "Grok Code Fast 1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "grok-2-1212",
@@ -6100,8 +6135,8 @@
     "name": "grok-code-fast-1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Hermes-2-Theta-Llama-3-70B",
@@ -6163,8 +6198,8 @@
     "name": "Inkling_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "inkling-small_xhigh",
@@ -6191,22 +6226,22 @@
     "name": "InternLM 20B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "InternLM 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "InternLM-Chat 20B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Kimi K2 Instruct",
@@ -6730,8 +6765,8 @@
     "name": "Mistral Large 4 (Preview)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 5
+    "last_seen_at": "2026-10-20",
+    "occurrences": 6
   },
   {
     "name": "Mistral Medium 3",
@@ -6744,8 +6779,8 @@
     "name": "Mistral Small (2402)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Mistral v0.1 (7B)",
@@ -6786,8 +6821,8 @@
     "name": "mistral-large-4-0_high",
     "source_id": "epoch",
     "first_seen_at": "2026-10-14",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 6
+    "last_seen_at": "2026-10-20",
+    "occurrences": 7
   },
   {
     "name": "mistral-medium-2505",
@@ -6863,8 +6898,8 @@
     "name": "Muse-Spark-Open-816B-A42B_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-10-16",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 4
+    "last_seen_at": "2026-10-20",
+    "occurrences": 5
   },
   {
     "name": "Nemotron 3 Ultra",
@@ -7185,22 +7220,22 @@
     "name": "openai/gpt-oss-120b_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "OpenLLaMA-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "OPT-13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Opus 4.5 (Thinking, 16K)",
@@ -7241,29 +7276,29 @@
     "name": "PaLM 2-L",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "PaLM 2-M",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "PaLM 2-S",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "PaLM 62B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Phi-2 2.7b",
@@ -7367,15 +7402,15 @@
     "name": "Qwen 1.8B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "QWEN 1.8B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Qwen 3 Coder 480B",
@@ -7521,8 +7556,8 @@
     "name": "Qwen2.5-Coder-0.5B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Qwen2.5-Coder-1.5B",
@@ -7535,15 +7570,15 @@
     "name": "Qwen2.5-Coder-14B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Qwen2.5-Coder-14B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Qwen2.5-Coder-32B",
@@ -7563,15 +7598,15 @@
     "name": "Qwen2.5-Coder-3B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Qwen2.5-Coder-3B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Qwen2.5-Coder-7B",
@@ -7689,8 +7724,8 @@
     "name": "qwen3-4b-instruct-2507",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "qwen3-8b",
@@ -7906,22 +7941,22 @@
     "name": "Redpajama-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "seed-oss-36b-instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 44
+    "last_seen_at": "2026-10-20",
+    "occurrences": 45
   },
   {
     "name": "StableLM-alpha-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "StarCoder2-15B",
@@ -7962,57 +7997,57 @@
     "name": "Switch-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Switch-Large",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "T5-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "T5-Large",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "T5-Small",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Tiny Recursion Model (TRM)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Vicuna-13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "Vicuna-13B (v1.1)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   },
   {
     "name": "WizardLM-2-8x22B",
@@ -8039,7 +8074,7 @@
     "name": "Yi-9B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-10-19",
-    "occurrences": 45
+    "last_seen_at": "2026-10-20",
+    "occurrences": 46
   }
 ]
