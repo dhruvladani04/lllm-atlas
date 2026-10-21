@@ -11,7 +11,6 @@
   "Cybench",
   "DTBench",
   "DeepResearch Bench",
-  "DeepSWE",
   "EBR-bench",
   "ExploitBench",
   "Fiction.LiveBench",
@@ -39,7 +38,6 @@
   "PostTrainBench",
   "ProofBench",
   "Remote Labor Index",
-  "ScienceQA",
   "SimpleBench",
   "SimpleQA Verified",
   "SpireClimb",
@@ -47,5 +45,6 @@
   "The Agent Company",
   "TriviaQA",
   "VPCT",
-  "WeirdML"
+  "WeirdML",
+  "WeirdML v3"
 ]

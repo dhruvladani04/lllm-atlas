@@ -38,7 +38,6 @@
   "GSM8K: \"gpt-4-0613\" vs \"GPT-4\" resolve to different models",
   "GSM8K: \"text-davinci-003\" vs \"GPT-3.5\" resolve to different models",
   "GSM8K: \"text-davinci-003\" vs \"GPT-3.5\" resolve to different models",
-  "HLE: \"Llama-4-Maverick-17B-128E-Instruct\" vs \"Llama 4 Maverick\" resolve to different models",
   "HellaSwag: \"gpt-4-32k-0314\" vs \"GPT-4\" resolve to different models",
   "HellaSwag: \"text-davinci-003\" vs \"GPT-3.5\" resolve to different models",
   "HellaSwag: \"text-davinci-003\" vs \"GPT-3.5\" resolve to different models",
