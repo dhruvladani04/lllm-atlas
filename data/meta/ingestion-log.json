@@ -1,5 +1,50 @@
 [
   {
+    "run_at": "2026-11-02T15:19:02.693Z",
+    "results": [
+      {
+        "source_id": "benchwiki",
+        "status": "ok",
+        "record_count": 80,
+        "previous_record_count": 80,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "epoch",
+        "status": "ok",
+        "record_count": 58,
+        "previous_record_count": 58,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "epoch-eci",
+        "status": "ok",
+        "record_count": 271,
+        "previous_record_count": 271,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "arena-mirror",
+        "status": "ok",
+        "record_count": 82,
+        "previous_record_count": 82,
+        "unresolved_models": [],
+        "message": null
+      },
+      {
+        "source_id": "openrouter",
+        "status": "ok",
+        "record_count": 451,
+        "previous_record_count": 452,
+        "unresolved_models": [],
+        "message": null
+      }
+    ]
+  },
+  {
     "run_at": "2026-11-01T12:58:50.130Z",
     "results": [
       {
