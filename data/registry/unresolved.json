@@ -3,22 +3,36 @@
     "name": "FLUX1.1 [pro]",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Gemini 3 Pro Image (nano-banana-pro, 2K)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
+  },
+  {
+    "name": "GPT-Image-2.6 Flare (Medium)",
+    "source_id": "arena-mirror",
+    "first_seen_at": "2026-11-06",
+    "last_seen_at": "2026-11-06",
+    "occurrences": 1
+  },
+  {
+    "name": "GPT-Image-2.6 Sunburst (Medium)",
+    "source_id": "arena-mirror",
+    "first_seen_at": "2026-11-06",
+    "last_seen_at": "2026-11-06",
+    "occurrences": 1
   },
   {
     "name": "Grok Imagine Image 2.0",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "grok-imagine-image-2.0 (low)",
@@ -31,50 +45,50 @@
     "name": "HunyuanImage 3.0",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Ideogram 2.0",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Ideogram 3.0 (Quality)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Imagen 3 (generate-002)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Imagen 4 (generate-001)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Imagen 4 Ultra (generate-001)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Luma Photon",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "p-image",
@@ -87,43 +101,43 @@
     "name": "P-Image",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Runway Gen-4",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Seedream 3.0",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Seedream 4.0 (2K)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Seedream 4.0 (fal)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Seedream 4.0 (High Res, fal)",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "stable-diffusion-v35-large",
@@ -136,29 +150,29 @@
     "name": "Wan 2.5 Preview",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Wan 2.6",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Wan 2.7 Image",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "Wan 2.7 Image Pro",
     "source_id": "arena-mirror",
     "first_seen_at": "2026-10-27",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 9
+    "last_seen_at": "2026-11-06",
+    "occurrences": 10
   },
   {
     "name": "ALBERT (ensemble)",
@@ -2432,71 +2446,71 @@
     "name": "Baichuan2-Chat 13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Beam 1.0 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "Beam 1.0 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "Beam 1.0 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "Beam 1.0 (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "ChatGLM 2-6B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "ChatGLM 2-6B (base)*",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "ChatGLM2",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "ChatGLM2 6B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "ChatGLM2 6B (8-shot)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Claude 3 Haiku",
@@ -2726,43 +2740,43 @@
     "name": "Claude Haiku 4.5 (Thinking 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Claude Haiku 4.5 (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Claude Haiku 4.5 (Thinking 32K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Claude Haiku 4.5 (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Claude Haiku 5.5 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-20",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 15
+    "last_seen_at": "2026-11-06",
+    "occurrences": 16
   },
   {
     "name": "Claude Haiku 5.5 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-20",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 15
+    "last_seen_at": "2026-11-06",
+    "occurrences": 16
   },
   {
     "name": "Claude instant",
@@ -2782,22 +2796,22 @@
     "name": "Claude Opus 4 (Thinking 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Claude Opus 4 (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Claude Opus 4 (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Claude Opus 4 (Thinking)",
@@ -2957,22 +2971,22 @@
     "name": "Claude Sonnet 4 (Thinking 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Claude Sonnet 4 (Thinking 1K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Claude Sonnet 4 (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Claude Sonnet 4 (Thinking)",
@@ -3041,15 +3055,15 @@
     "name": "Claude Sonnet 5.5 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "Claude Sonnet 5.5 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "claude-3-5-haiku-20241022",
@@ -3146,8 +3160,8 @@
     "name": "claude-haiku-4-5-20251001_32K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "claude-opus-4-1-20250805",
@@ -3188,8 +3202,8 @@
     "name": "claude-opus-4-20250514_16K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "claude-opus-4-5-20251101",
@@ -3328,22 +3342,22 @@
     "name": "claude-sonnet-4-20250514_16K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "claude-sonnet-4-20250514_32K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "claude-sonnet-4-20250514_59K",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "claude-sonnet-4-5-20250929",
@@ -3419,36 +3433,36 @@
     "name": "claude-sonnet-5_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "claude-sonnet-5_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "CodeQwen1.5-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Codex Mini (Latest)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Command R",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Command R Plus",
@@ -3559,43 +3573,43 @@
     "name": "DeepSeek V4.1 Flash (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 20
+    "last_seen_at": "2026-11-06",
+    "occurrences": 21
   },
   {
     "name": "DeepSeek V4.1 Flash (None)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 20
+    "last_seen_at": "2026-11-06",
+    "occurrences": 21
   },
   {
     "name": "DeepSeek V4.1 Flash 1017 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "DeepSeek V4.1 Flash 1017 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "DeepSeek V4.1 Flash 1017 (Max)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "DeepSeek V4.1 Flash 1017 (None)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "deepseek-chat",
@@ -3615,8 +3629,8 @@
     "name": "deepseek-r1-0528-qwen3-8b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "DeepSeek-R1-Distill-Llama-70B",
@@ -3692,15 +3706,15 @@
     "name": "deepseek-v4-pro_max",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "deepseek-v4-pro_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "deepseek-v4-pro-0813_max",
@@ -3713,43 +3727,43 @@
     "name": "deepseek-v4.1-flash-1017_max",
     "source_id": "epoch",
     "first_seen_at": "2026-10-22",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 13
+    "last_seen_at": "2026-11-06",
+    "occurrences": 14
   },
   {
     "name": "doubao-seed-2.0-lite-260428_high",
     "source_id": "epoch",
     "first_seen_at": "2026-11-04",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 1
+    "last_seen_at": "2026-11-06",
+    "occurrences": 2
   },
   {
     "name": "doubao-seed-2.0-pro-260215_high",
     "source_id": "epoch",
     "first_seen_at": "2026-11-04",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 1
+    "last_seen_at": "2026-11-06",
+    "occurrences": 2
   },
   {
     "name": "doubao-seed-2.1-pro-260628_high",
     "source_id": "epoch",
     "first_seen_at": "2026-11-04",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 1
+    "last_seen_at": "2026-11-06",
+    "occurrences": 2
   },
   {
     "name": "doubao-seed-2.1-turbo-260628_high",
     "source_id": "epoch",
     "first_seen_at": "2026-11-04",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 1
+    "last_seen_at": "2026-11-06",
+    "occurrences": 2
   },
   {
     "name": "doubao-seed-evolving_high",
     "source_id": "epoch",
     "first_seen_at": "2026-11-04",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 1
+    "last_seen_at": "2026-11-06",
+    "occurrences": 2
   },
   {
     "name": "DS-Coder-V2-Base",
@@ -3769,15 +3783,15 @@
     "name": "DS-Coder-V2-Lite-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "DS-Coder-V2-Lite-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Eurus-2-7B-PRIME",
@@ -3965,8 +3979,8 @@
     "name": "Gemini 2.5 Pro (Thinking 16K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Gemini 2.5 Pro (Thinking 1K)",
@@ -3979,15 +3993,15 @@
     "name": "Gemini 2.5 Pro (Thinking 32K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Gemini 2.5 Pro (Thinking 8K)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Gemini 2.5 Pro Experimental (March 2025)",
@@ -4217,8 +4231,8 @@
     "name": "Gemini 3.8 Flash (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-06",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 32
+    "last_seen_at": "2026-11-06",
+    "occurrences": 33
   },
   {
     "name": "Gemini 3.8 Flash (Medium)",
@@ -4231,29 +4245,29 @@
     "name": "Gemini 4 Argon",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 20
+    "last_seen_at": "2026-11-06",
+    "occurrences": 21
   },
   {
     "name": "Gemini 4 Argon (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-20",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 15
+    "last_seen_at": "2026-11-06",
+    "occurrences": 16
   },
   {
     "name": "Gemini 4 Argon (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-20",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 15
+    "last_seen_at": "2026-11-06",
+    "occurrences": 16
   },
   {
     "name": "Gemini 4 Argon (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-20",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 15
+    "last_seen_at": "2026-11-06",
+    "occurrences": 16
   },
   {
     "name": "Gemini-1.5 Flash",
@@ -4504,8 +4518,8 @@
     "name": "gemini-4-argon_high",
     "source_id": "epoch",
     "first_seen_at": "2026-10-14",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 21
+    "last_seen_at": "2026-11-06",
+    "occurrences": 22
   },
   {
     "name": "Gemma (7B)",
@@ -4679,15 +4693,15 @@
     "name": "glm-4.7-flash",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "glm-4.7-flash_none",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "glm-4p5",
@@ -4763,15 +4777,15 @@
     "name": "GLM-5.3-Flash (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-06",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 32
+    "last_seen_at": "2026-11-06",
+    "occurrences": 33
   },
   {
     "name": "GLM-5.3-Flash (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-06",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 32
+    "last_seen_at": "2026-11-06",
+    "occurrences": 33
   },
   {
     "name": "GLM-5.3-Flash (Max)",
@@ -6114,8 +6128,8 @@
     "name": "gpt-6.1-terra_max",
     "source_id": "epoch",
     "first_seen_at": "2026-10-28",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 8
+    "last_seen_at": "2026-11-06",
+    "occurrences": 9
   },
   {
     "name": "gpt-oss-120b",
@@ -6170,22 +6184,22 @@
     "name": "granite-4.0-1b",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "granite-4.0-350m",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "granite-4.0-micro",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "Grok 3",
@@ -6296,29 +6310,29 @@
     "name": "Grok 4.7 (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 20
+    "last_seen_at": "2026-11-06",
+    "occurrences": 21
   },
   {
     "name": "Grok 4.7 (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 20
+    "last_seen_at": "2026-11-06",
+    "occurrences": 21
   },
   {
     "name": "Grok 4.7 (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 20
+    "last_seen_at": "2026-11-06",
+    "occurrences": 21
   },
   {
     "name": "Grok Code Fast 1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "grok-2-1212",
@@ -6394,8 +6408,8 @@
     "name": "grok-code-fast-1",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Hermes-2-Theta-Llama-3-70B",
@@ -6457,8 +6471,8 @@
     "name": "Inkling_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "inkling-small_xhigh",
@@ -6485,22 +6499,22 @@
     "name": "InternLM 20B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "InternLM 7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "InternLM-Chat 20B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Kimi K2 Instruct",
@@ -7024,8 +7038,8 @@
     "name": "Mistral Large 4 (Preview)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-15",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 20
+    "last_seen_at": "2026-11-06",
+    "occurrences": 21
   },
   {
     "name": "Mistral Medium 3",
@@ -7038,8 +7052,8 @@
     "name": "Mistral Small (2402)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Mistral v0.1 (7B)",
@@ -7080,15 +7094,15 @@
     "name": "mistral-large-4-0_high",
     "source_id": "epoch",
     "first_seen_at": "2026-10-14",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 21
+    "last_seen_at": "2026-11-06",
+    "occurrences": 22
   },
   {
     "name": "mistral-large-4-0-oss_high",
     "source_id": "epoch",
     "first_seen_at": "2026-11-03",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 2
+    "last_seen_at": "2026-11-06",
+    "occurrences": 3
   },
   {
     "name": "mistral-medium-2505",
@@ -7157,29 +7171,29 @@
     "name": "Muse Spark Open (High)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "Muse Spark Open (Low)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "Muse Spark Open (Medium)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "Muse Spark Open (XHigh)",
     "source_id": "epoch",
     "first_seen_at": "2026-10-29",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 7
+    "last_seen_at": "2026-11-06",
+    "occurrences": 8
   },
   {
     "name": "muse-spark",
@@ -7192,8 +7206,8 @@
     "name": "Muse-Spark-Open-816B-A42B_xhigh",
     "source_id": "epoch",
     "first_seen_at": "2026-10-16",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 19
+    "last_seen_at": "2026-11-06",
+    "occurrences": 20
   },
   {
     "name": "Nemotron 3 Ultra",
@@ -7514,22 +7528,22 @@
     "name": "openai/gpt-oss-120b_high",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "OpenLLaMA-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "OPT-13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Opus 4.5 (Thinking, 16K)",
@@ -7570,29 +7584,29 @@
     "name": "PaLM 2-L",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "PaLM 2-M",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "PaLM 2-S",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "PaLM 62B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Phi-2 2.7b",
@@ -7696,15 +7710,15 @@
     "name": "Qwen 1.8B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "QWEN 1.8B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Qwen 3 Coder 480B",
@@ -7850,8 +7864,8 @@
     "name": "Qwen2.5-Coder-0.5B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Qwen2.5-Coder-1.5B",
@@ -7864,15 +7878,15 @@
     "name": "Qwen2.5-Coder-14B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Qwen2.5-Coder-14B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Qwen2.5-Coder-32B",
@@ -7892,15 +7906,15 @@
     "name": "Qwen2.5-Coder-3B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Qwen2.5-Coder-3B-Instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Qwen2.5-Coder-7B",
@@ -8018,8 +8032,8 @@
     "name": "qwen3-4b-instruct-2507",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "qwen3-8b",
@@ -8235,29 +8249,29 @@
     "name": "Redpajama-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "seed-1.6",
     "source_id": "epoch",
     "first_seen_at": "2026-11-04",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 1
+    "last_seen_at": "2026-11-06",
+    "occurrences": 2
   },
   {
     "name": "seed-oss-36b-instruct",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 59
+    "last_seen_at": "2026-11-06",
+    "occurrences": 60
   },
   {
     "name": "StableLM-alpha-7B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "StarCoder2-15B",
@@ -8298,57 +8312,57 @@
     "name": "Switch-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Switch-Large",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "T5-Base",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "T5-Large",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "T5-Small",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Tiny Recursion Model (TRM)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Vicuna-13B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "Vicuna-13B (v1.1)",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   },
   {
     "name": "WizardLM-2-8x22B",
@@ -8375,7 +8389,7 @@
     "name": "Yi-9B",
     "source_id": "epoch",
     "first_seen_at": "2026-09-12",
-    "last_seen_at": "2026-11-04",
-    "occurrences": 60
+    "last_seen_at": "2026-11-06",
+    "occurrences": 61
   }
 ]
