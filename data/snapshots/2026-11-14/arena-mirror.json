@@ -1,0 +1,776 @@
+{
+  "_meta": {
+    "source_id": "arena-mirror",
+    "source_url": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_to_image&split=latest&offset=0&length=100",
+    "fetched_at": "2026-11-14T13:16:23.093Z",
+    "record_count": 85,
+    "status": "ok"
+  },
+  "records": [
+    {
+      "rank": 1,
+      "model": "GPT-Image-2.5 Sunburst",
+      "vendor": "openai",
+      "license": "Proprietary",
+      "score": 1428.658740106337,
+      "ci": 5.116893883403918,
+      "votes": 63818
+    },
+    {
+      "rank": 2,
+      "model": "GPT-Image-2.6 Sunburst (Medium)",
+      "vendor": "openai",
+      "license": "Proprietary",
+      "score": 1405.5960201244966,
+      "ci": 13.40051689089637,
+      "votes": 2697
+    },
+    {
+      "rank": 3,
+      "model": "GPT-Image-2.5 Flare",
+      "vendor": "openai",
+      "license": "Proprietary",
+      "score": 1398.1844908090748,
+      "ci": 4.959374222685028,
+      "votes": 63120
+    },
+    {
+      "rank": 4,
+      "model": "GPT-Image-2.6 Flare (Medium)",
+      "vendor": "openai",
+      "license": "Proprietary",
+      "score": 1383.51155141982,
+      "ci": 13.19418834425187,
+      "votes": 2532
+    },
+    {
+      "rank": 5,
+      "model": "GPT-Image-2 (Medium)",
+      "vendor": "openai",
+      "license": "Proprietary",
+      "score": 1381.72527119212,
+      "ci": 3.81895416978341,
+      "votes": 108559
+    },
+    {
+      "rank": 6,
+      "model": "MAI-Image-2.6",
+      "vendor": "microsoft-ai",
+      "license": "Proprietary",
+      "score": 1329.8690695678902,
+      "ci": 5.031610855159215,
+      "votes": 41413
+    },
+    {
+      "rank": 7,
+      "model": "Gemini Nano Banana 2.1",
+      "vendor": "google",
+      "license": "Proprietary",
+      "score": 1327.474846718301,
+      "ci": 9.108665654934384,
+      "votes": 4961
+    },
+    {
+      "rank": 8,
+      "model": "Grok Imagine Image 2.0",
+      "vendor": "xai",
+      "license": "Proprietary",
+      "score": 1317.8719076201676,
+      "ci": 7.464349320199744,
+      "votes": 9919
+    },
+    {
+      "rank": 9,
+      "model": "Reve 2.1",
+      "vendor": "reve",
+      "license": "Proprietary",
+      "score": 1301.4697159231348,
+      "ci": 7.635046280056713,
+      "votes": 7893
+    },
+    {
+      "rank": 10,
+      "model": "Grok Imagine Image 2.0 (20260801)",
+      "vendor": "xai",
+      "license": "Proprietary",
+      "score": 1287.2899489231472,
+      "ci": 5.136976736770748,
+      "votes": 36215
+    },
+    {
+      "rank": 11,
+      "model": "Reve 2.0",
+      "vendor": "reve",
+      "license": "Proprietary",
+      "score": 1268.0600216821813,
+      "ci": 6.245935918599116,
+      "votes": 15293
+    },
+    {
+      "rank": 12,
+      "model": "Muse Image",
+      "vendor": "meta",
+      "license": "Proprietary",
+      "score": 1266.1698356343638,
+      "ci": 4.465101731555478,
+      "votes": 59855
+    },
+    {
+      "rank": 13,
+      "model": "Gemini 3.1 Flash Image (nano-banana-2, Web Search)",
+      "vendor": "google",
+      "license": "Proprietary",
+      "score": 1256.3655234376752,
+      "ci": 3.8070453490718137,
+      "votes": 81208
+    },
+    {
+      "rank": 14,
+      "model": "Qwen-Image-3.0-Pro",
+      "vendor": "alibaba",
+      "license": "Proprietary",
+      "score": 1254.1076302685196,
+      "ci": 6.612238418656489,
+      "votes": 10899
+    },
+    {
+      "rank": 15,
+      "model": "MAI-Image-2.5",
+      "vendor": "microsoft-ai",
+      "license": "Proprietary",
+      "score": 1252.518264638503,
+      "ci": 4.239333097667895,
+      "votes": 59026
+    },
+    {
+      "rank": 16,
+      "model": "Gemini 3.1 Flash-Lite Image (nano-banana-2-lite)",
+      "vendor": "google",
+      "license": "Proprietary",
+      "score": 1249.025821071521,
+      "ci": 6.07390967156789,
+      "votes": 17125
+    },
+    {
+      "rank": 17,
+      "model": "Seedream 5.0 Pro",
+      "vendor": "bytedance",
+      "license": "Proprietary",
+      "score": 1248.0746327795516,
+      "ci": 3.7631929442761702,
+      "votes": 110580
+    },
+    {
+      "rank": 18,
+      "model": "Gemini 3 Pro Image (nano-banana-pro, 2K)",
+      "vendor": "google",
+      "license": "Proprietary",
+      "score": 1245.5988435664224,
+      "ci": 3.023951197765882,
+      "votes": 184749
+    },
+    {
+      "rank": 19,
+      "model": "GPT-Image-1.5 (High Fidelity)",
+      "vendor": "openai",
+      "license": "Proprietary",
+      "score": 1235.997128699871,
+      "ci": 3.0661235451138964,
+      "votes": 169318
+    },
+    {
+      "rank": 20,
+      "model": "Gemini 3 Pro Image Preview (nano-banana-pro)",
+      "vendor": "google",
+      "license": "Proprietary",
+      "score": 1231.1841519408872,
+      "ci": 4.93095873864354,
+      "votes": 83791
+    },
+    {
+      "rank": 21,
+      "model": "Qwen-Image-2.1",
+      "vendor": "alibaba",
+      "license": "qwen-research",
+      "score": 1226.8850661758834,
+      "ci": 6.3061512817578205,
+      "votes": 17822
+    },
+    {
+      "rank": 22,
+      "model": "Ideogram 4.0 (Quality)",
+      "vendor": "ideogram",
+      "license": "Ideogram Open Model",
+      "score": 1198.612891726555,
+      "ci": 3.683977924288911,
+      "votes": 80995
+    },
+    {
+      "rank": 23,
+      "model": "MiniMax H3-Image",
+      "vendor": "minimax",
+      "license": "minimax-h3-image-community-license-agreement",
+      "score": 1197.2357037500099,
+      "ci": 10.688269196092506,
+      "votes": 3277
+    },
+    {
+      "rank": 24,
+      "model": "Qwen-Image-2.0-Pro (2026-06-22)",
+      "vendor": "alibaba",
+      "license": "Proprietary",
+      "score": 1190.0832906310393,
+      "ci": 5.934051625729126,
+      "votes": 12657
+    },
+    {
+      "rank": 25,
+      "model": "UNI-1.1 Max",
+      "vendor": "luma-ai",
+      "license": "Proprietary",
+      "score": 1188.3974895502051,
+      "ci": 6.211759957882123,
+      "votes": 13728
+    },
+    {
+      "rank": 26,
+      "model": "MAI-Image-2",
+      "vendor": "microsoft-ai",
+      "license": "Proprietary",
+      "score": 1182.7370614459373,
+      "ci": 4.58734457902915,
+      "votes": 50391
+    },
+    {
+      "rank": 27,
+      "model": "UNI-1.1",
+      "vendor": "luma-ai",
+      "license": "Proprietary",
+      "score": 1181.2243653270343,
+      "ci": 4.08311842015587,
+      "votes": 61451
+    },
+    {
+      "rank": 28,
+      "model": "Recraft V4.1 Utility Pro",
+      "vendor": "recraft",
+      "license": "Proprietary",
+      "score": 1169.0883870812686,
+      "ci": 11.120827965635954,
+      "votes": 2564
+    },
+    {
+      "rank": 29,
+      "model": "Grok Imagine Image",
+      "vendor": "xai",
+      "license": "Proprietary",
+      "score": 1168.8413802301309,
+      "ci": 2.624855806224332,
+      "votes": 292090
+    },
+    {
+      "rank": 30,
+      "model": "Cosmos3-Super-Text2Image (Agentic)",
+      "vendor": "nvidia",
+      "license": "OpenMDW-1.1",
+      "score": 1163.9124776577892,
+      "ci": 7.182655357932845,
+      "votes": 10144
+    },
+    {
+      "rank": 31,
+      "model": "FLUX.2 [max]",
+      "vendor": "bfl",
+      "license": "Proprietary",
+      "score": 1160.9927620957253,
+      "ci": 3.5523273264118416,
+      "votes": 120408
+    },
+    {
+      "rank": 32,
+      "model": "Grok Imagine Image Pro",
+      "vendor": "xai",
+      "license": "Proprietary",
+      "score": 1159.9499343307432,
+      "ci": 3.808995299675189,
+      "votes": 96908
+    },
+    {
+      "rank": 33,
+      "model": "FLUX.2 [flex]",
+      "vendor": "bfl",
+      "license": "Proprietary",
+      "score": 1156.3339897018311,
+      "ci": 3.4215972658782903,
+      "votes": 152898
+    },
+    {
+      "rank": 34,
+      "model": "Reve v1.5",
+      "vendor": "reve",
+      "license": "Proprietary",
+      "score": 1154.1267933757845,
+      "ci": 4.2884995535168855,
+      "votes": 38472
+    },
+    {
+      "rank": 35,
+      "model": "FLUX.2 [pro]",
+      "vendor": "bfl",
+      "license": "Proprietary",
+      "score": 1152.5347300449414,
+      "ci": 2.8562242626057923,
+      "votes": 218975
+    },
+    {
+      "rank": 36,
+      "model": "HunyuanImage 3.0",
+      "vendor": "tencent",
+      "license": "tencent-hunyuan-community",
+      "score": 1151.501313938116,
+      "ci": 3.359537484832117,
+      "votes": 175188
+    },
+    {
+      "rank": 37,
+      "model": "Cosmos3-Super-Text2Image",
+      "vendor": "nvidia",
+      "license": "OpenMDW-1.1",
+      "score": 1149.5083605847842,
+      "ci": 6.003981114236467,
+      "votes": 17415
+    },
+    {
+      "rank": 38,
+      "model": "Gemini 2.5 Flash Image Preview (nano-banana)",
+      "vendor": "google",
+      "license": "Proprietary",
+      "score": 1148.3394177654307,
+      "ci": 2.419911462445043,
+      "votes": 893974
+    },
+    {
+      "rank": 39,
+      "model": "Seedream 4.5",
+      "vendor": "bytedance",
+      "license": "Proprietary",
+      "score": 1147.713842803876,
+      "ci": 2.58380529440592,
+      "votes": 312018
+    },
+    {
+      "rank": 40,
+      "model": "Imagen 4 Ultra (generate-001)",
+      "vendor": "google",
+      "license": "Proprietary",
+      "score": 1145.9078525820787,
+      "ci": 4.338322614557001,
+      "votes": 385752
+    },
+    {
+      "rank": 41,
+      "model": "FLUX.2 [dev]",
+      "vendor": "bfl",
+      "license": "flux-non-commercial-license",
+      "score": 1144.946720887251,
+      "ci": 4.184582091301536,
+      "votes": 75646
+    },
+    {
+      "rank": 42,
+      "model": "Seedream 5.0 Lite",
+      "vendor": "bytedance",
+      "license": "Proprietary",
+      "score": 1141.1220323947969,
+      "ci": 3.09775676738559,
+      "votes": 147237
+    },
+    {
+      "rank": 43,
+      "model": "Wan 2.6",
+      "vendor": "alibaba",
+      "license": "Proprietary",
+      "score": 1138.626107383381,
+      "ci": 2.7449083790183977,
+      "votes": 251923
+    },
+    {
+      "rank": 44,
+      "model": "Seedream 4.0 (2K)",
+      "vendor": "bytedance",
+      "license": "Proprietary",
+      "score": 1138.2281244206101,
+      "ci": 6.586759043029588,
+      "votes": 12274
+    },
+    {
+      "rank": 45,
+      "model": "Recraft V4.1 Pro",
+      "vendor": "recraft",
+      "license": "Proprietary",
+      "score": 1131.8912369202026,
+      "ci": 10.573486356489866,
+      "votes": 2744
+    },
+    {
+      "rank": 46,
+      "model": "Krea 2 Medium",
+      "vendor": "krea",
+      "license": "Proprietary",
+      "score": 1128.0131059802673,
+      "ci": 3.871369770485444,
+      "votes": 78137
+    },
+    {
+      "rank": 47,
+      "model": "Imagen 4 (generate-001)",
+      "vendor": "google",
+      "license": "Proprietary",
+      "score": 1127.6249932500814,
+      "ci": 2.7665199344112352,
+      "votes": 533124
+    },
+    {
+      "rank": 48,
+      "model": "Qwen-Image (2512)",
+      "vendor": "alibaba",
+      "license": "Apache 2.0",
+      "score": 1123.9436828612652,
+      "ci": 3.4934501966943117,
+      "votes": 95286
+    },
+    {
+      "rank": 49,
+      "model": "Wan 2.5 Preview",
+      "vendor": "alibaba",
+      "license": "Proprietary",
+      "score": 1117.2952419952267,
+      "ci": 2.791713091804695,
+      "votes": 283791
+    },
+    {
+      "rank": 50,
+      "model": "Recraft V4",
+      "vendor": "recraft",
+      "license": "Proprietary",
+      "score": 1116.599992152511,
+      "ci": 3.0921112340445234,
+      "votes": 156056
+    },
+    {
+      "rank": 51,
+      "model": "Seedream 4.0 (fal)",
+      "vendor": "bytedance",
+      "license": "Proprietary",
+      "score": 1115.746395457736,
+      "ci": 6.550466994321823,
+      "votes": 11707
+    },
+    {
+      "rank": 52,
+      "model": "Krea 2 Turbo",
+      "vendor": "krea",
+      "license": "krea-2-community-license",
+      "score": 1115.220234289177,
+      "ci": 4.337843302549572,
+      "votes": 63492
+    },
+    {
+      "rank": 53,
+      "model": "GPT-Image-1",
+      "vendor": "openai",
+      "license": "Proprietary",
+      "score": 1114.9140697689106,
+      "ci": 3.194644764073928,
+      "votes": 265845
+    },
+    {
+      "rank": 54,
+      "model": "HiDream-O1-Image",
+      "vendor": "hidream",
+      "license": "MIT",
+      "score": 1114.1982220382442,
+      "ci": 3.6960570365426975,
+      "votes": 75759
+    },
+    {
+      "rank": 55,
+      "model": "Krea 2 Large",
+      "vendor": "krea",
+      "license": "Proprietary",
+      "score": 1113.788542116425,
+      "ci": 4.089227827235845,
+      "votes": 67862
+    },
+    {
+      "rank": 56,
+      "model": "Seedream 4.0 (High Res, fal)",
+      "vendor": "bytedance",
+      "license": "Proprietary",
+      "score": 1112.6853122072578,
+      "ci": 3.273042672784186,
+      "votes": 178375
+    },
+    {
+      "rank": 57,
+      "model": "GPT-Image-1 mini",
+      "vendor": "openai",
+      "license": "Proprietary",
+      "score": 1108.9857924801595,
+      "ci": 3.2251496323281117,
+      "votes": 167720
+    },
+    {
+      "rank": 58,
+      "model": "Wan 2.7 Image Pro",
+      "vendor": "alibaba",
+      "license": "Proprietary",
+      "score": 1103.2519025722015,
+      "ci": 5.07195984452278,
+      "votes": 29781
+    },
+    {
+      "rank": 59,
+      "model": "Wan 2.7 Image",
+      "vendor": "alibaba",
+      "license": "Proprietary",
+      "score": 1099.9365507092289,
+      "ci": 5.0296173752051345,
+      "votes": 30219
+    },
+    {
+      "rank": 60,
+      "model": "Recraft V4.1 Flash",
+      "vendor": "recraft",
+      "license": "Proprietary",
+      "score": 1099.0887621013842,
+      "ci": 7.586859929929233,
+      "votes": 5946
+    },
+    {
+      "rank": 61,
+      "model": "MAI-Image-1",
+      "vendor": "microsoft-ai",
+      "license": "Proprietary",
+      "score": 1092.7099365843153,
+      "ci": 3.6474473845375996,
+      "votes": 96235
+    },
+    {
+      "rank": 62,
+      "model": "Z-Image-Turbo",
+      "vendor": "alibaba",
+      "license": "Apache 2.0",
+      "score": 1081.8952868608992,
+      "ci": 5.387355333931282,
+      "votes": 24090
+    },
+    {
+      "rank": 63,
+      "model": "Seedream 3.0",
+      "vendor": "bytedance",
+      "license": "Proprietary",
+      "score": 1081.2127311615059,
+      "ci": 5.088601074196731,
+      "votes": 36189
+    },
+    {
+      "rank": 64,
+      "model": "FLUX.1 Kontext [max]",
+      "vendor": "bfl",
+      "license": "Proprietary",
+      "score": 1075.0514465184692,
+      "ci": 3.2616630622649154,
+      "votes": 65270
+    },
+    {
+      "rank": 65,
+      "model": "FLUX.2 [klein] 9B",
+      "vendor": "bfl",
+      "license": "flux-non-commercial-license",
+      "score": 1070.0265449012054,
+      "ci": 3.2554224264497407,
+      "votes": 147087
+    },
+    {
+      "rank": 66,
+      "model": "Qwen-Image (Prompt Extend)",
+      "vendor": "alibaba",
+      "license": "Apache 2.0",
+      "score": 1061.5298290883306,
+      "ci": 2.723752165559972,
+      "votes": 706356
+    },
+    {
+      "rank": 67,
+      "model": "FLUX.1 Kontext [pro]",
+      "vendor": "bfl",
+      "license": "Proprietary",
+      "score": 1058.8640497967092,
+      "ci": 3.458564114737783,
+      "votes": 329839
+    },
+    {
+      "rank": 68,
+      "model": "Qwen-Image",
+      "vendor": "alibaba",
+      "license": "Apache 2.0",
+      "score": 1056.972058496797,
+      "ci": 2.6485327647073973,
+      "votes": 84280
+    },
+    {
+      "rank": 69,
+      "model": "Imagen 3 (generate-002)",
+      "vendor": "google",
+      "license": "Proprietary",
+      "score": 1056.8635088091737,
+      "ci": 3.271429199849763,
+      "votes": 358265
+    },
+    {
+      "rank": 70,
+      "model": "Ideogram 3.0 (Quality)",
+      "vendor": "ideogram",
+      "license": "Proprietary",
+      "score": 1048.872344465041,
+      "ci": 3.7928982117364285,
+      "votes": 115788
+    },
+    {
+      "rank": 71,
+      "model": "Luma Photon",
+      "vendor": "luma-ai",
+      "license": "Proprietary",
+      "score": 1035.6658062892666,
+      "ci": 3.763330366275568,
+      "votes": 127828
+    },
+    {
+      "rank": 72,
+      "model": "P-Image",
+      "vendor": "",
+      "license": "Proprietary",
+      "score": 1032.6930195150023,
+      "ci": 3.5097503513859465,
+      "votes": 107125
+    },
+    {
+      "rank": 73,
+      "model": "FLUX.2 [klein] 4B",
+      "vendor": "bfl",
+      "license": "Apache 2.0",
+      "score": 1029.901712385779,
+      "ci": 3.2674789341181167,
+      "votes": 148703
+    },
+    {
+      "rank": 74,
+      "model": "Runway Gen-4",
+      "vendor": "runway",
+      "license": "Proprietary",
+      "score": 1024.3205838411795,
+      "ci": 4.487390540534307,
+      "votes": 53198
+    },
+    {
+      "rank": 75,
+      "model": "Recraft V3",
+      "vendor": "recraft",
+      "license": "Proprietary",
+      "score": 1021.9641877492038,
+      "ci": 3.7095784004925463,
+      "votes": 192944
+    },
+    {
+      "rank": 76,
+      "model": "FLUX1.1 [pro]",
+      "vendor": "bfl",
+      "license": "Proprietary",
+      "score": 1015.6238967305115,
+      "ci": 3.4988012893551286,
+      "votes": 70460
+    },
+    {
+      "rank": 77,
+      "model": "Ideogram 2.0",
+      "vendor": "ideogram",
+      "license": "Proprietary",
+      "score": 1013.3351833783581,
+      "ci": 3.5600445041143303,
+      "votes": 72090
+    },
+    {
+      "rank": 78,
+      "model": "Lucid Origin",
+      "vendor": "leonardo-ai",
+      "license": "Proprietary",
+      "score": 1012.8708051601186,
+      "ci": 3.4262183191632403,
+      "votes": 284717
+    },
+    {
+      "rank": 79,
+      "model": "GLM-Image",
+      "vendor": "zai",
+      "license": "MIT",
+      "score": 1011.9745491553001,
+      "ci": 8.931015691514403,
+      "votes": 4757
+    },
+    {
+      "rank": 80,
+      "model": "Gemini 2.0 Flash Preview Image Generation",
+      "vendor": "google",
+      "license": "Proprietary",
+      "score": 976.0199035898218,
+      "ci": 3.4837063314204215,
+      "votes": 255441
+    },
+    {
+      "rank": 81,
+      "model": "FLUX.1 [dev] (FP8)",
+      "vendor": "bfl",
+      "license": "Open",
+      "score": 969.3896770013564,
+      "ci": 3.7401868273658465,
+      "votes": 49221
+    },
+    {
+      "rank": 82,
+      "model": "DALL-E 3",
+      "vendor": "openai",
+      "license": "Proprietary",
+      "score": 967.634828147402,
+      "ci": 3.749849428861694,
+      "votes": 238150
+    },
+    {
+      "rank": 83,
+      "model": "FLUX.1 Kontext [dev]",
+      "vendor": "bfl",
+      "license": "flux-1-dev-non-commercial-license",
+      "score": 941.4201242141027,
+      "ci": 3.802281630692619,
+      "votes": 214341
+    },
+    {
+      "rank": 84,
+      "model": "Stable Diffusion 3.5 Large",
+      "vendor": "",
+      "license": "Open",
+      "score": 938.2820759526626,
+      "ci": 4.487629729458604,
+      "votes": 23396
+    },
+    {
+      "rank": 85,
+      "model": "BAGEL",
+      "vendor": "bytedance",
+      "license": "Apache 2.0",
+      "score": 897.2514407992292,
+      "ci": 5.792133939949622,
+      "votes": 12313
+    }
+  ]
+}
