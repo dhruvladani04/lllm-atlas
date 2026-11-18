@@ -3,7 +3,7 @@
   "source": {
     "source_id": "epoch-eci",
     "source_url": "https://epoch.ai/data/benchmark_data.zip",
-    "fetched_at": "2026-11-17T15:45:38.847Z",
+    "fetched_at": "2026-11-18T15:26:43.573Z",
     "licence": "CC BY 4.0",
     "attribution": "Epoch AI, 'Capabilities & Benchmarking'. Published online at epoch.ai. Retrieved from 'https://epoch.ai/benchmarks'. CC BY 4.0."
   },
@@ -11,9 +11,9 @@
     {
       "model": "GPT-6 Astra",
       "display_name": "GPT-6 Astra",
-      "eci": 169,
-      "eci_ci_low": 166.08,
-      "eci_ci_high": 172.26,
+      "eci": 169.2,
+      "eci_ci_low": 166.33,
+      "eci_ci_high": 172.48,
       "date": "2026-09-03",
       "organization": "OpenAI",
       "model_id": "openai/gpt-6-astra"
@@ -21,9 +21,9 @@
     {
       "model": "Claude Opus 5.5",
       "display_name": "Claude Opus 5.5",
-      "eci": 168.54,
-      "eci_ci_low": 165.63,
-      "eci_ci_high": 171.83,
+      "eci": 168.7,
+      "eci_ci_low": 165.87,
+      "eci_ci_high": 171.89,
       "date": "2026-09-22",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-opus-5-5"
@@ -31,9 +31,9 @@
     {
       "model": "GPT-6.1 Sol",
       "display_name": "GPT-6.1 Sol",
-      "eci": 168.48,
-      "eci_ci_low": 165.49,
-      "eci_ci_high": 171.8,
+      "eci": 168.63,
+      "eci_ci_low": 165.7,
+      "eci_ci_high": 171.91,
       "date": "2026-09-29",
       "organization": "OpenAI",
       "model_id": "openai/gpt-6.1-sol"
@@ -41,8 +41,8 @@
     {
       "model": "Claude Fable 5.1",
       "display_name": "Claude Fable 5.1",
-      "eci": 166.99,
-      "eci_ci_low": 164.23,
+      "eci": 167.09,
+      "eci_ci_low": 164.43,
       "eci_ci_high": 170.11,
       "date": "2026-09-01",
       "organization": "Anthropic",
@@ -51,9 +51,9 @@
     {
       "model": "Claude Sonnet 5.5",
       "display_name": "Claude Sonnet 5.5",
-      "eci": 166.56,
-      "eci_ci_low": 163.76,
-      "eci_ci_high": 169.58,
+      "eci": 166.59,
+      "eci_ci_low": 163.83,
+      "eci_ci_high": 169.65,
       "date": "2026-09-28",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-sonnet-5-5"
@@ -61,9 +61,9 @@
     {
       "model": "Claude Opus 5",
       "display_name": "Claude Opus 5",
-      "eci": 164.68,
-      "eci_ci_low": 162.14,
-      "eci_ci_high": 167.49,
+      "eci": 164.74,
+      "eci_ci_low": 162.3,
+      "eci_ci_high": 167.66,
       "date": "2026-07-24",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-opus-5"
@@ -71,9 +71,9 @@
     {
       "model": "Claude Fable 5",
       "display_name": "Claude Fable 5",
-      "eci": 164.13,
-      "eci_ci_low": 161.68,
-      "eci_ci_high": 166.83,
+      "eci": 164.21,
+      "eci_ci_low": 161.78,
+      "eci_ci_high": 166.86,
       "date": "2026-06-09",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-fable-5"
@@ -81,9 +81,9 @@
     {
       "model": "GPT-6 Sol",
       "display_name": "GPT-6 Sol",
-      "eci": 163.75,
-      "eci_ci_low": 161.33,
-      "eci_ci_high": 166.42,
+      "eci": 163.82,
+      "eci_ci_low": 161.4,
+      "eci_ci_high": 166.57,
       "date": "2026-09-22",
       "organization": "OpenAI",
       "model_id": "openai/gpt-6-sol"
@@ -91,9 +91,9 @@
     {
       "model": "GPT-5.6 Sol",
       "display_name": "GPT-5.6 Sol",
-      "eci": 162.99,
-      "eci_ci_low": 160.68,
-      "eci_ci_high": 165.49,
+      "eci": 163.05,
+      "eci_ci_low": 160.76,
+      "eci_ci_high": 165.59,
       "date": "2026-07-09",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5.6-sol"
@@ -101,9 +101,9 @@
     {
       "model": "GPT-5.5 Pro",
       "display_name": "GPT-5.5 Pro",
-      "eci": 162.7,
-      "eci_ci_low": 159.98,
-      "eci_ci_high": 165.86,
+      "eci": 162.77,
+      "eci_ci_low": 160.14,
+      "eci_ci_high": 165.77,
       "date": "2026-04-23",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5.5-pro"
@@ -111,39 +111,39 @@
     {
       "model": "GPT-5.6 Terra",
       "display_name": "GPT-5.6 Terra",
-      "eci": 160.73,
-      "eci_ci_low": 158.47,
-      "eci_ci_high": 163.25,
+      "eci": 160.78,
+      "eci_ci_low": 158.58,
+      "eci_ci_high": 163.23,
       "date": "2026-07-09",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5.6-terra"
     },
     {
-      "model": "Claude Haiku 5.5",
-      "display_name": "Claude Haiku 5.5",
-      "eci": 160.43,
-      "eci_ci_low": 158.27,
-      "eci_ci_high": 162.87,
-      "date": "2026-10-07",
-      "organization": "Anthropic",
-      "model_id": "anthropic/claude-haiku-5-5"
-    },
-    {
       "model": "GPT-5.4 Pro",
       "display_name": "GPT-5.4 Pro",
-      "eci": 160.24,
-      "eci_ci_low": 157.75,
-      "eci_ci_high": 163.04,
+      "eci": 160.32,
+      "eci_ci_low": 157.87,
+      "eci_ci_high": 163.03,
       "date": "2026-03-05",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5.4-pro-2026-03-05"
     },
     {
+      "model": "Claude Haiku 5.5",
+      "display_name": "Claude Haiku 5.5",
+      "eci": 160.29,
+      "eci_ci_low": 158.12,
+      "eci_ci_high": 162.69,
+      "date": "2026-10-07",
+      "organization": "Anthropic",
+      "model_id": "anthropic/claude-haiku-5-5"
+    },
+    {
       "model": "GPT-5.5",
       "display_name": "GPT-5.5",
-      "eci": 160.1,
-      "eci_ci_low": 158.12,
-      "eci_ci_high": 162.36,
+      "eci": 160.19,
+      "eci_ci_low": 158.2,
+      "eci_ci_high": 162.43,
       "date": "2026-04-23",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5.5"
@@ -151,9 +151,9 @@
     {
       "model": "Claude Opus 4.8",
       "display_name": "Claude Opus 4.8",
-      "eci": 159.94,
-      "eci_ci_low": 157.86,
-      "eci_ci_high": 162.2,
+      "eci": 159.91,
+      "eci_ci_low": 157.82,
+      "eci_ci_high": 162.21,
       "date": "2026-05-28",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-opus-4-8"
@@ -161,9 +161,9 @@
     {
       "model": "Gemini 3.8 Flash",
       "display_name": "Gemini 3.8 Flash",
-      "eci": 158.79,
-      "eci_ci_low": 156.77,
-      "eci_ci_high": 160.94,
+      "eci": 158.83,
+      "eci_ci_low": 156.86,
+      "eci_ci_high": 160.97,
       "date": "2026-09-02",
       "organization": "Google DeepMind",
       "model_id": "google-deepmind/gemini-3.8-flash"
@@ -171,8 +171,8 @@
     {
       "model": "Kimi K3",
       "display_name": "Kimi K3",
-      "eci": 158.58,
-      "eci_ci_low": 156.6,
+      "eci": 158.6,
+      "eci_ci_low": 156.63,
       "eci_ci_high": 160.8,
       "date": "2026-07-16",
       "organization": "Moonshot",
@@ -181,9 +181,9 @@
     {
       "model": "Gemini 3.7 Flash",
       "display_name": "Gemini 3.7 Flash",
-      "eci": 158.36,
-      "eci_ci_low": 156.35,
-      "eci_ci_high": 160.59,
+      "eci": 158.38,
+      "eci_ci_low": 156.41,
+      "eci_ci_high": 160.53,
       "date": "2026-08-13",
       "organization": "Google DeepMind",
       "model_id": "google/gemini-3.7-flash"
@@ -191,9 +191,9 @@
     {
       "model": "GPT-5.4",
       "display_name": "GPT-5.4",
-      "eci": 157.85,
-      "eci_ci_low": 155.93,
-      "eci_ci_high": 159.9,
+      "eci": 157.87,
+      "eci_ci_low": 155.96,
+      "eci_ci_high": 159.97,
       "date": "2026-03-05",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5.4-2026-03-05"
@@ -201,9 +201,9 @@
     {
       "model": "Grok 4.6",
       "display_name": "Grok 4.6",
-      "eci": 157.79,
-      "eci_ci_low": 155.77,
-      "eci_ci_high": 159.95,
+      "eci": 157.82,
+      "eci_ci_low": 155.86,
+      "eci_ci_high": 160,
       "date": "2026-08-12",
       "organization": "xAI",
       "model_id": "xai/grok-4.6"
@@ -211,9 +211,9 @@
     {
       "model": "Claude Opus 4.7",
       "display_name": "Claude Opus 4.7",
-      "eci": 157.44,
-      "eci_ci_low": 155.52,
-      "eci_ci_high": 159.56,
+      "eci": 157.5,
+      "eci_ci_low": 155.63,
+      "eci_ci_high": 159.46,
       "date": "2026-04-16",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-opus-4-7"
@@ -221,9 +221,9 @@
     {
       "model": "GPT-5.2 Pro",
       "display_name": "GPT-5.2 Pro",
-      "eci": 157.27,
-      "eci_ci_low": 154.92,
-      "eci_ci_high": 159.87,
+      "eci": 157.31,
+      "eci_ci_low": 155.11,
+      "eci_ci_high": 159.77,
       "date": "2025-12-11",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5.2-pro-2025-12-11"
@@ -232,48 +232,58 @@
       "model": "GLM-5.3",
       "display_name": "GLM-5.3",
       "eci": 157.1,
-      "eci_ci_low": 154.94,
-      "eci_ci_high": 159.53,
+      "eci_ci_low": 155.04,
+      "eci_ci_high": 159.33,
       "date": "2026-08-14",
       "organization": "Z.ai (Zhipu AI)",
       "model_id": "z.ai-zhipu-ai/glm-5.3"
     },
     {
-      "model": "Claude Sonnet 5",
-      "display_name": "Claude Sonnet 5",
-      "eci": 156.94,
-      "eci_ci_low": 154.84,
-      "eci_ci_high": 159.2,
-      "date": "2026-06-30",
-      "organization": "Anthropic",
-      "model_id": "anthropic/claude-sonnet-5"
-    },
-    {
       "model": "DeepSeek V4.1 Flash",
       "display_name": "DeepSeek V4.1 Flash",
-      "eci": 156.7,
-      "eci_ci_low": 154.79,
-      "eci_ci_high": 158.78,
+      "eci": 157,
+      "eci_ci_low": 155.08,
+      "eci_ci_high": 159.03,
       "date": "2026-09-09",
       "organization": "DeepSeek",
       "model_id": "deepseek/deepseek-v4.1-flash"
     },
     {
+      "model": "Claude Sonnet 5",
+      "display_name": "Claude Sonnet 5",
+      "eci": 156.9,
+      "eci_ci_low": 154.91,
+      "eci_ci_high": 159.08,
+      "date": "2026-06-30",
+      "organization": "Anthropic",
+      "model_id": "anthropic/claude-sonnet-5"
+    },
+    {
       "model": "GPT-5.6 Luna",
       "display_name": "GPT-5.6 Luna",
-      "eci": 156.67,
-      "eci_ci_low": 154.83,
-      "eci_ci_high": 158.69,
+      "eci": 156.7,
+      "eci_ci_low": 154.87,
+      "eci_ci_high": 158.77,
       "date": "2026-07-09",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5.6-luna"
     },
     {
+      "model": "Grok 4.7",
+      "display_name": "Grok 4.7",
+      "eci": 156.43,
+      "eci_ci_low": 154.47,
+      "eci_ci_high": 158.52,
+      "date": "2026-09-21",
+      "organization": "xAI",
+      "model_id": "xai/grok-4.7"
+    },
+    {
       "model": "GPT-6 Luna",
       "display_name": "GPT-6 Luna",
-      "eci": 156.41,
-      "eci_ci_low": 154.45,
-      "eci_ci_high": 158.5,
+      "eci": 156.39,
+      "eci_ci_low": 154.5,
+      "eci_ci_high": 158.47,
       "date": "2026-09-22",
       "organization": "OpenAI",
       "model_id": "openai/gpt-6-luna"
@@ -281,29 +291,19 @@
     {
       "model": "Claude Opus 4.6",
       "display_name": "Claude Opus 4.6",
-      "eci": 156.34,
-      "eci_ci_low": 154.55,
-      "eci_ci_high": 158.31,
+      "eci": 156.35,
+      "eci_ci_low": 154.59,
+      "eci_ci_high": 158.29,
       "date": "2026-02-05",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-opus-4-6"
     },
     {
-      "model": "Grok 4.7",
-      "display_name": "Grok 4.7",
-      "eci": 156.18,
-      "eci_ci_low": 154.23,
-      "eci_ci_high": 158.27,
-      "date": "2026-09-21",
-      "organization": "xAI",
-      "model_id": "xai/grok-4.7"
-    },
-    {
       "model": "Gemini 3.1 Pro",
       "display_name": "Gemini 3.1 Pro",
-      "eci": 156.18,
-      "eci_ci_low": 154.39,
-      "eci_ci_high": 158.14,
+      "eci": 156.25,
+      "eci_ci_low": 154.49,
+      "eci_ci_high": 158.15,
       "date": "2026-02-19",
       "organization": "Google DeepMind",
       "model_id": "google-deepmind/gemini-3.1-pro-preview"
@@ -311,8 +311,8 @@
     {
       "model": "Qwen3.8 Max (0902)",
       "display_name": "Qwen3.8 Max (0902)",
-      "eci": 155.97,
-      "eci_ci_low": 153.85,
+      "eci": 155.98,
+      "eci_ci_low": 153.89,
       "eci_ci_high": 158.27,
       "date": "2026-09-01",
       "organization": "Alibaba",
@@ -321,9 +321,9 @@
     {
       "model": "DeepSeek V4 Pro 0813",
       "display_name": "DeepSeek V4 Pro 0813",
-      "eci": 155.94,
-      "eci_ci_low": 154.06,
-      "eci_ci_high": 158.01,
+      "eci": 155.96,
+      "eci_ci_low": 154.1,
+      "eci_ci_high": 157.99,
       "date": "2026-08-13",
       "organization": "DeepSeek",
       "model_id": "deepseek/deepseek-v4-pro"
@@ -331,9 +331,9 @@
     {
       "model": "Gemini 3.5 Flash",
       "display_name": "Gemini 3.5 Flash",
-      "eci": 155.28,
-      "eci_ci_low": 153.47,
-      "eci_ci_high": 157.27,
+      "eci": 155.35,
+      "eci_ci_low": 153.52,
+      "eci_ci_high": 157.38,
       "date": "2026-05-19",
       "organization": "Google DeepMind",
       "model_id": "google-deepmind/gemini-3.5-flash"
@@ -341,9 +341,9 @@
     {
       "model": "Gemini 3.6 Flash",
       "display_name": "Gemini 3.6 Flash",
-      "eci": 155.21,
-      "eci_ci_low": 153.39,
-      "eci_ci_high": 157.2,
+      "eci": 155.24,
+      "eci_ci_low": 153.42,
+      "eci_ci_high": 157.18,
       "date": "2026-07-21",
       "organization": "Google DeepMind",
       "model_id": "google/gemini-3.6-flash"
@@ -351,9 +351,9 @@
     {
       "model": "Grok 4.5",
       "display_name": "Grok 4.5",
-      "eci": 154.98,
-      "eci_ci_low": 153.22,
-      "eci_ci_high": 156.88,
+      "eci": 154.97,
+      "eci_ci_low": 153.23,
+      "eci_ci_high": 156.91,
       "date": "2026-07-08",
       "organization": "xAI",
       "model_id": "xai/grok-4.5"
@@ -361,8 +361,8 @@
     {
       "model": "Qwen3.7-Max",
       "display_name": "Qwen3.7-Max",
-      "eci": 154.54,
-      "eci_ci_low": 152.52,
+      "eci": 154.58,
+      "eci_ci_low": 152.57,
       "eci_ci_high": 156.67,
       "date": "2026-05-19",
       "organization": "Alibaba",
@@ -371,9 +371,9 @@
     {
       "model": "GPT-5.2",
       "display_name": "GPT-5.2",
-      "eci": 154.46,
-      "eci_ci_low": 152.83,
-      "eci_ci_high": 156.22,
+      "eci": 154.52,
+      "eci_ci_low": 152.94,
+      "eci_ci_high": 156.31,
       "date": "2025-12-11",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5.2-2025-12-11"
@@ -381,9 +381,9 @@
     {
       "model": "DeepSeek V4 Flash 0731",
       "display_name": "DeepSeek V4 Flash 0731",
-      "eci": 154.41,
-      "eci_ci_low": 152.56,
-      "eci_ci_high": 156.38,
+      "eci": 154.43,
+      "eci_ci_low": 152.55,
+      "eci_ci_high": 156.42,
       "date": "2026-07-31",
       "organization": "DeepSeek",
       "model_id": "deepseek/deepseek-v4-flash"
@@ -391,9 +391,9 @@
     {
       "model": "GLM-5.3-Flash",
       "display_name": "GLM-5.3-Flash",
-      "eci": 153.82,
-      "eci_ci_low": 152,
-      "eci_ci_high": 155.78,
+      "eci": 153.78,
+      "eci_ci_low": 152.04,
+      "eci_ci_high": 155.62,
       "date": "2026-08-20",
       "organization": "Z.ai (Zhipu AI)",
       "model_id": "z.ai-zhipu-ai/glm-5.3-flash"
@@ -401,9 +401,9 @@
     {
       "model": "Muse Spark",
       "display_name": "Muse Spark",
-      "eci": 153.14,
-      "eci_ci_low": 151.01,
-      "eci_ci_high": 155.43,
+      "eci": 153.16,
+      "eci_ci_low": 150.94,
+      "eci_ci_high": 155.46,
       "date": "2026-04-08",
       "organization": "Meta AI",
       "model_id": "meta-ai/muse-spark"
@@ -411,9 +411,9 @@
     {
       "model": "GLM-5.2",
       "display_name": "GLM-5.2",
-      "eci": 153.03,
-      "eci_ci_low": 151.34,
-      "eci_ci_high": 154.83,
+      "eci": 153.04,
+      "eci_ci_low": 151.35,
+      "eci_ci_high": 154.86,
       "date": "2026-06-16",
       "organization": "Z.ai (Zhipu AI)",
       "model_id": "z.ai-zhipu-ai/glm-5.2"
@@ -421,9 +421,9 @@
     {
       "model": "Gemini 3 Pro",
       "display_name": "Gemini 3 Pro",
-      "eci": 152.98,
-      "eci_ci_low": 151.37,
-      "eci_ci_high": 154.69,
+      "eci": 153.04,
+      "eci_ci_low": 151.45,
+      "eci_ci_high": 154.78,
       "date": "2025-11-18",
       "organization": "Google DeepMind",
       "model_id": "google-deepmind/gemini-3-pro-preview"
@@ -433,7 +433,7 @@
       "display_name": "Claude Sonnet 4.6",
       "eci": 152.86,
       "eci_ci_low": 151.17,
-      "eci_ci_high": 154.65,
+      "eci_ci_high": 154.66,
       "date": "2026-02-17",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-sonnet-4-6"
@@ -441,9 +441,9 @@
     {
       "model": "Grok 4.20",
       "display_name": "Grok 4.20",
-      "eci": 152.28,
+      "eci": 152.3,
       "eci_ci_low": 150.58,
-      "eci_ci_high": 154.08,
+      "eci_ci_high": 154.09,
       "date": "2026-02-17",
       "organization": "xAI",
       "model_id": "xai/grok-4-20"
@@ -451,9 +451,9 @@
     {
       "model": "Claude Opus 4.5",
       "display_name": "Claude Opus 4.5",
-      "eci": 151.92,
+      "eci": 151.88,
       "eci_ci_low": 150.32,
-      "eci_ci_high": 153.58,
+      "eci_ci_high": 153.53,
       "date": "2025-11-24",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-opus-4-5-20251101"
@@ -461,9 +461,9 @@
     {
       "model": "Kimi K2.6",
       "display_name": "Kimi K2.6",
-      "eci": 151.56,
-      "eci_ci_low": 149.79,
-      "eci_ci_high": 153.46,
+      "eci": 151.62,
+      "eci_ci_low": 149.86,
+      "eci_ci_high": 153.44,
       "date": "2026-04-20",
       "organization": "Moonshot",
       "model_id": "moonshot/kimi-k2.6"
@@ -471,9 +471,9 @@
     {
       "model": "GPT-5 Pro",
       "display_name": "GPT-5 Pro",
-      "eci": 151.23,
-      "eci_ci_low": 149.31,
-      "eci_ci_high": 153.29,
+      "eci": 151.27,
+      "eci_ci_low": 149.32,
+      "eci_ci_high": 153.32,
       "date": "2025-10-07",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5-pro-2025-10-06"
@@ -482,8 +482,8 @@
       "model": "Kimi K2.7 Code",
       "display_name": "Kimi K2.7 Code",
       "eci": 151.15,
-      "eci_ci_low": 149.08,
-      "eci_ci_high": 153.28,
+      "eci_ci_low": 149.18,
+      "eci_ci_high": 153.25,
       "date": "2026-06-12",
       "organization": "Moonshot",
       "model_id": "moonshot/kimi-k2.7-code"
@@ -491,9 +491,9 @@
     {
       "model": "GPT-5.1",
       "display_name": "GPT-5.1",
-      "eci": 150.94,
-      "eci_ci_low": 149.36,
-      "eci_ci_high": 152.58,
+      "eci": 150.97,
+      "eci_ci_low": 149.42,
+      "eci_ci_high": 152.61,
       "date": "2025-11-13",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5.1-2025-11-13"
@@ -501,9 +501,9 @@
     {
       "model": "Inkling-Small",
       "display_name": "Inkling-Small",
-      "eci": 150.75,
-      "eci_ci_low": 149,
-      "eci_ci_high": 152.61,
+      "eci": 150.78,
+      "eci_ci_low": 149.02,
+      "eci_ci_high": 152.58,
       "date": "2026-07-15",
       "organization": "Thinking Machines",
       "model_id": "thinking-machines/inkling-small"
@@ -512,8 +512,8 @@
       "model": "GLM-5.1",
       "display_name": "GLM-5.1",
       "eci": 150.73,
-      "eci_ci_low": 148.59,
-      "eci_ci_high": 152.88,
+      "eci_ci_low": 148.77,
+      "eci_ci_high": 152.77,
       "date": "2026-04-07",
       "organization": "Z.ai (Zhipu AI)",
       "model_id": "z.ai-zhipu-ai/glm-5.1"
@@ -521,9 +521,9 @@
     {
       "model": "DeepSeek-V4-Pro",
       "display_name": "DeepSeek-V4-Pro",
-      "eci": 150.17,
-      "eci_ci_low": 148.4,
-      "eci_ci_high": 152.01,
+      "eci": 150.21,
+      "eci_ci_low": 148.47,
+      "eci_ci_high": 152.04,
       "date": "2026-04-24",
       "organization": "DeepSeek",
       "model_id": "deepseek/deepseek-v4-pro"
@@ -541,8 +541,8 @@
     {
       "model": "GPT-5.4 Mini",
       "display_name": "GPT-5.4 Mini",
-      "eci": 149.34,
-      "eci_ci_low": 147.68,
+      "eci": 149.35,
+      "eci_ci_low": 147.71,
       "eci_ci_high": 151.06,
       "date": "2026-03-17",
       "organization": "OpenAI",
@@ -551,8 +551,8 @@
     {
       "model": "Kimi K2.5",
       "display_name": "Kimi K2.5",
-      "eci": 148.76,
-      "eci_ci_low": 147.22,
+      "eci": 148.8,
+      "eci_ci_low": 147.3,
       "eci_ci_high": 150.35,
       "date": "2026-01-27",
       "organization": "Moonshot",
@@ -561,9 +561,9 @@
     {
       "model": "Inkling",
       "display_name": "Inkling",
-      "eci": 148.39,
-      "eci_ci_low": 146.77,
-      "eci_ci_high": 150.01,
+      "eci": 148.43,
+      "eci_ci_low": 146.88,
+      "eci_ci_high": 150.03,
       "date": "2026-07-15",
       "organization": "Thinking Machines",
       "model_id": "thinking-machines/inkling"
@@ -571,9 +571,9 @@
     {
       "model": "Qwen3.5 397B-A17B",
       "display_name": "Qwen3.5 397B-A17B",
-      "eci": 147.9,
-      "eci_ci_low": 145.75,
-      "eci_ci_high": 150.12,
+      "eci": 147.95,
+      "eci_ci_low": 145.8,
+      "eci_ci_high": 150.07,
       "date": "2026-02-13",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen3.5-397b-a17b"
@@ -581,9 +581,9 @@
     {
       "model": "Qwen3.7-Plus",
       "display_name": "Qwen3.7-Plus",
-      "eci": 147.87,
-      "eci_ci_low": 145.8,
-      "eci_ci_high": 149.96,
+      "eci": 147.95,
+      "eci_ci_low": 145.91,
+      "eci_ci_high": 150.04,
       "date": "2026-06-02",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen3.7-plus"
@@ -591,9 +591,9 @@
     {
       "model": "MiniMax-M3",
       "display_name": "MiniMax-M3",
-      "eci": 147.74,
-      "eci_ci_low": 145.56,
-      "eci_ci_high": 149.98,
+      "eci": 147.9,
+      "eci_ci_low": 145.76,
+      "eci_ci_high": 150.04,
       "date": "2026-06-01",
       "organization": "MiniMax",
       "model_id": "minimax/minimax-m3"
@@ -601,9 +601,9 @@
     {
       "model": "Claude Sonnet 4.5",
       "display_name": "Claude Sonnet 4.5",
-      "eci": 147.63,
-      "eci_ci_low": 146.17,
-      "eci_ci_high": 149.15,
+      "eci": 147.59,
+      "eci_ci_low": 146.14,
+      "eci_ci_high": 149.04,
       "date": "2025-09-29",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-sonnet-4-5-20250929"
@@ -612,8 +612,8 @@
       "model": "o3-pro",
       "display_name": "o3-pro",
       "eci": 147.46,
-      "eci_ci_low": 145.61,
-      "eci_ci_high": 149.34,
+      "eci_ci_low": 145.58,
+      "eci_ci_high": 149.37,
       "date": "2025-06-10",
       "organization": "OpenAI",
       "model_id": "openai/o3-pro-2025-06-10"
@@ -622,8 +622,8 @@
       "model": "o3",
       "display_name": "o3",
       "eci": 147.05,
-      "eci_ci_low": 145.54,
-      "eci_ci_high": 148.62,
+      "eci_ci_low": 145.6,
+      "eci_ci_high": 148.55,
       "date": "2025-04-16",
       "organization": "OpenAI",
       "model_id": "openai/o3-2025-04-16"
@@ -631,9 +631,9 @@
     {
       "model": "Nemotron 3 Ultra",
       "display_name": "Nemotron 3 Ultra",
-      "eci": 146.95,
-      "eci_ci_low": 144.75,
-      "eci_ci_high": 149.19,
+      "eci": 147,
+      "eci_ci_low": 145.02,
+      "eci_ci_high": 149.09,
       "date": "2026-06-04",
       "organization": "Nvidia",
       "model_id": "nvidia/nemotron-3-ultra"
@@ -641,9 +641,9 @@
     {
       "model": "Grok 4",
       "display_name": "Grok 4",
-      "eci": 146.9,
-      "eci_ci_low": 145.4,
-      "eci_ci_high": 148.42,
+      "eci": 146.96,
+      "eci_ci_low": 145.48,
+      "eci_ci_high": 148.46,
       "date": "2025-07-09",
       "organization": "xAI",
       "model_id": "xai/grok-4"
@@ -651,9 +651,9 @@
     {
       "model": "DeepSeek-V4-Flash",
       "display_name": "DeepSeek-V4-Flash",
-      "eci": 146.85,
-      "eci_ci_low": 143.58,
-      "eci_ci_high": 150.14,
+      "eci": 146.84,
+      "eci_ci_low": 143.6,
+      "eci_ci_high": 150.16,
       "date": "2026-04-24",
       "organization": "DeepSeek",
       "model_id": "deepseek/deepseek-v4-flash"
@@ -661,9 +661,9 @@
     {
       "model": "Qwen3.6 27B",
       "display_name": "Qwen3.6 27B",
-      "eci": 146.73,
-      "eci_ci_low": 144.48,
-      "eci_ci_high": 149.04,
+      "eci": 146.78,
+      "eci_ci_low": 144.68,
+      "eci_ci_high": 148.89,
       "date": "2026-04-22",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen3.6-27b"
@@ -671,9 +671,9 @@
     {
       "model": "GLM-5",
       "display_name": "GLM-5",
-      "eci": 146.48,
-      "eci_ci_low": 144.84,
-      "eci_ci_high": 148.16,
+      "eci": 146.54,
+      "eci_ci_low": 144.97,
+      "eci_ci_high": 148.11,
       "date": "2026-02-11",
       "organization": "Z.ai (Zhipu AI)",
       "model_id": "z.ai-zhipu-ai/glm-5"
@@ -681,9 +681,9 @@
     {
       "model": "GPT-5.4 Nano",
       "display_name": "GPT-5.4 Nano",
-      "eci": 146.4,
-      "eci_ci_low": 144.72,
-      "eci_ci_high": 148.1,
+      "eci": 146.33,
+      "eci_ci_low": 144.67,
+      "eci_ci_high": 148.02,
       "date": "2026-03-17",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5.4-nano-2026-03-17"
@@ -691,9 +691,9 @@
     {
       "model": "DeepSeek-V3.2",
       "display_name": "DeepSeek-V3.2",
-      "eci": 146.25,
-      "eci_ci_low": 144.72,
-      "eci_ci_high": 147.79,
+      "eci": 146.26,
+      "eci_ci_low": 144.75,
+      "eci_ci_high": 147.75,
       "date": "2025-12-01",
       "organization": "DeepSeek",
       "model_id": "deepseek/deepseek-deepseek-v3.2"
@@ -701,9 +701,9 @@
     {
       "model": "GPT-5 mini",
       "display_name": "GPT-5 mini",
-      "eci": 146.09,
-      "eci_ci_low": 144.57,
-      "eci_ci_high": 147.62,
+      "eci": 146.01,
+      "eci_ci_low": 144.4,
+      "eci_ci_high": 147.59,
       "date": "2025-08-07",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5-mini-2025-08-07"
@@ -711,9 +711,9 @@
     {
       "model": "Gemini 3.5 Flash-Lite",
       "display_name": "Gemini 3.5 Flash-Lite",
-      "eci": 145.63,
+      "eci": 145.65,
       "eci_ci_low": 143.98,
-      "eci_ci_high": 147.33,
+      "eci_ci_high": 147.32,
       "date": "2026-07-21",
       "organization": "Google DeepMind",
       "model_id": "google/gemini-3.5-flash-lite"
@@ -721,9 +721,9 @@
     {
       "model": "Kimi K2 Thinking",
       "display_name": "Kimi K2 Thinking",
-      "eci": 145.43,
-      "eci_ci_low": 143.58,
-      "eci_ci_high": 147.25,
+      "eci": 145.48,
+      "eci_ci_low": 143.69,
+      "eci_ci_high": 147.27,
       "date": "2025-11-06",
       "organization": "Moonshot",
       "model_id": "moonshot/kimi-k2-thinking"
@@ -731,9 +731,9 @@
     {
       "model": "o4-mini",
       "display_name": "o4-mini",
-      "eci": 145.25,
-      "eci_ci_low": 143.67,
-      "eci_ci_high": 146.8,
+      "eci": 145.22,
+      "eci_ci_low": 143.68,
+      "eci_ci_high": 146.7,
       "date": "2025-04-16",
       "organization": "OpenAI",
       "model_id": "openai/o4-mini-2025-04-16"
@@ -741,9 +741,9 @@
     {
       "model": "Gemini 3.1 Flash-Lite",
       "display_name": "Gemini 3.1 Flash-Lite",
-      "eci": 145.01,
-      "eci_ci_low": 142.75,
-      "eci_ci_high": 147.21,
+      "eci": 145.03,
+      "eci_ci_low": 142.88,
+      "eci_ci_high": 147.25,
       "date": "2026-03-03",
       "organization": "Google",
       "model_id": "google/gemini-3.1-flash-lite"
@@ -751,9 +751,9 @@
     {
       "model": "Claude Opus 4.1",
       "display_name": "Claude Opus 4.1",
-      "eci": 144.84,
-      "eci_ci_low": 142.99,
-      "eci_ci_high": 146.6,
+      "eci": 144.77,
+      "eci_ci_low": 143,
+      "eci_ci_high": 146.5,
       "date": "2025-08-05",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-opus-4-1-20250805"
@@ -761,9 +761,9 @@
     {
       "model": "Grok 4 Fast",
       "display_name": "Grok 4 Fast",
-      "eci": 144.31,
-      "eci_ci_low": 142.2,
-      "eci_ci_high": 146.41,
+      "eci": 144.35,
+      "eci_ci_low": 142.19,
+      "eci_ci_high": 146.46,
       "date": "2025-09-19",
       "organization": "xAI",
       "model_id": "xai/grok-4-fast"
@@ -771,9 +771,9 @@
     {
       "model": "Gemma 4 31B IT",
       "display_name": "Gemma 4 31B IT",
-      "eci": 144.27,
-      "eci_ci_low": 141.71,
-      "eci_ci_high": 146.83,
+      "eci": 144.12,
+      "eci_ci_low": 141.72,
+      "eci_ci_high": 146.59,
       "date": "2026-04-02",
       "organization": "Google DeepMind",
       "model_id": "google-deepmind/gemma-4-31b-it"
@@ -781,9 +781,9 @@
     {
       "model": "Qwen3.5-35B-A3B",
       "display_name": "Qwen3.5-35B-A3B",
-      "eci": 143.98,
-      "eci_ci_low": 141.41,
-      "eci_ci_high": 146.63,
+      "eci": 144.08,
+      "eci_ci_low": 141.59,
+      "eci_ci_high": 146.7,
       "date": "2026-02-24",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen3.5-35b-a3b"
@@ -791,9 +791,9 @@
     {
       "model": "GLM-4.7",
       "display_name": "GLM-4.7",
-      "eci": 143.28,
-      "eci_ci_low": 141.29,
-      "eci_ci_high": 145.28,
+      "eci": 143.36,
+      "eci_ci_low": 141.4,
+      "eci_ci_high": 145.27,
       "date": "2025-12-22",
       "organization": "Z.ai (Zhipu AI)",
       "model_id": "z.ai-zhipu-ai/glm-4.7"
@@ -801,8 +801,8 @@
     {
       "model": "Claude Opus 4",
       "display_name": "Claude Opus 4",
-      "eci": 142.9,
-      "eci_ci_low": 141.3,
+      "eci": 142.88,
+      "eci_ci_low": 141.27,
       "eci_ci_high": 144.47,
       "date": "2025-05-22",
       "organization": "Anthropic",
@@ -811,9 +811,9 @@
     {
       "model": "Claude Haiku 4.5",
       "display_name": "Claude Haiku 4.5",
-      "eci": 142.83,
-      "eci_ci_low": 141.13,
-      "eci_ci_high": 144.48,
+      "eci": 142.76,
+      "eci_ci_low": 141.15,
+      "eci_ci_high": 144.34,
       "date": "2025-10-15",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-haiku-4.5"
@@ -821,9 +821,9 @@
     {
       "model": "Qwen3-Max",
       "display_name": "Qwen3-Max",
-      "eci": 142.57,
-      "eci_ci_low": 140.55,
-      "eci_ci_high": 144.58,
+      "eci": 142.44,
+      "eci_ci_low": 140.29,
+      "eci_ci_high": 144.54,
       "date": "2025-09-24",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen3-max-2025-09-23"
@@ -831,9 +831,9 @@
     {
       "model": "Claude Sonnet 4",
       "display_name": "Claude Sonnet 4",
-      "eci": 141.86,
-      "eci_ci_low": 140.27,
-      "eci_ci_high": 143.36,
+      "eci": 141.88,
+      "eci_ci_low": 140.3,
+      "eci_ci_high": 143.41,
       "date": "2025-05-22",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-sonnet-4"
@@ -841,9 +841,9 @@
     {
       "model": "Mistral Medium 3.5",
       "display_name": "Mistral Medium 3.5",
-      "eci": 141.59,
-      "eci_ci_low": 138.38,
-      "eci_ci_high": 144.64,
+      "eci": 141.57,
+      "eci_ci_low": 138.4,
+      "eci_ci_high": 144.68,
       "date": "2026-04-28",
       "organization": "Mistral AI",
       "model_id": "mistral-ai/mistral-medium-2604"
@@ -851,9 +851,9 @@
     {
       "model": "o1",
       "display_name": "o1",
-      "eci": 141.16,
-      "eci_ci_low": 139.47,
-      "eci_ci_high": 142.84,
+      "eci": 141.18,
+      "eci_ci_low": 139.48,
+      "eci_ci_high": 142.79,
       "date": "2024-12-17",
       "organization": "OpenAI",
       "model_id": "openai/o1-2024-12-17"
@@ -861,9 +861,9 @@
     {
       "model": "o3-mini",
       "display_name": "o3-mini",
-      "eci": 140.61,
-      "eci_ci_low": 138.83,
-      "eci_ci_high": 142.31,
+      "eci": 140.65,
+      "eci_ci_low": 138.96,
+      "eci_ci_high": 142.25,
       "date": "2025-01-31",
       "organization": "OpenAI",
       "model_id": "openai/o3-mini-2025-01-31"
@@ -871,9 +871,9 @@
     {
       "model": "gpt-oss-120b",
       "display_name": "gpt-oss-120b",
-      "eci": 140.16,
-      "eci_ci_low": 138.18,
-      "eci_ci_high": 142.05,
+      "eci": 140.23,
+      "eci_ci_low": 138.26,
+      "eci_ci_high": 142.08,
       "date": "2025-08-05",
       "organization": "OpenAI",
       "model_id": "openai/gpt-oss-120b"
@@ -881,9 +881,9 @@
     {
       "model": "Grok-3 mini",
       "display_name": "Grok-3 mini",
-      "eci": 139.88,
-      "eci_ci_low": 138.05,
-      "eci_ci_high": 141.67,
+      "eci": 139.95,
+      "eci_ci_low": 138.15,
+      "eci_ci_high": 141.69,
       "date": "2025-06-24",
       "organization": "xAI",
       "model_id": "xai/grok-3-mini"
@@ -891,9 +891,9 @@
     {
       "model": "Qwen3.5-9B",
       "display_name": "Qwen3.5-9B",
-      "eci": 139.32,
-      "eci_ci_low": 136.95,
-      "eci_ci_high": 141.58,
+      "eci": 139.48,
+      "eci_ci_low": 137.26,
+      "eci_ci_high": 141.69,
       "date": "2026-02-24",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen3.5-9b"
@@ -901,9 +901,9 @@
     {
       "model": "GPT-5 nano",
       "display_name": "GPT-5 nano",
-      "eci": 139.1,
-      "eci_ci_low": 137.04,
-      "eci_ci_high": 141.05,
+      "eci": 139.09,
+      "eci_ci_low": 137.15,
+      "eci_ci_high": 140.93,
       "date": "2025-08-07",
       "organization": "OpenAI",
       "model_id": "openai/gpt-5-nano-2025-08-07"
@@ -911,9 +911,9 @@
     {
       "model": "DeepSeek-R1",
       "display_name": "DeepSeek-R1",
-      "eci": 138.59,
-      "eci_ci_low": 136.69,
-      "eci_ci_high": 140.38,
+      "eci": 138.63,
+      "eci_ci_low": 136.7,
+      "eci_ci_high": 140.4,
       "date": "2025-01-20",
       "organization": "DeepSeek",
       "model_id": "deepseek/deepseek-r1"
@@ -921,9 +921,9 @@
     {
       "model": "Qwen3-235B-A22B",
       "display_name": "Qwen3-235B-A22B",
-      "eci": 138.42,
-      "eci_ci_low": 136.01,
-      "eci_ci_high": 140.74,
+      "eci": 138.43,
+      "eci_ci_low": 136.11,
+      "eci_ci_high": 140.67,
       "date": "2025-04-28",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen3-235b-a22b"
@@ -931,9 +931,9 @@
     {
       "model": "Grok 3",
       "display_name": "Grok 3",
-      "eci": 137.49,
-      "eci_ci_low": 135.5,
-      "eci_ci_high": 139.3,
+      "eci": 137.59,
+      "eci_ci_low": 135.63,
+      "eci_ci_high": 139.42,
       "date": "2025-04-09",
       "organization": "xAI",
       "model_id": "xai/grok-3"
@@ -941,39 +941,39 @@
     {
       "model": "Qwen3-32B",
       "display_name": "Qwen3-32B",
-      "eci": 136.89,
-      "eci_ci_low": 134.37,
-      "eci_ci_high": 139.28,
+      "eci": 136.84,
+      "eci_ci_low": 134.41,
+      "eci_ci_high": 139.22,
       "date": "2025-04-29",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen3-32b"
     },
     {
-      "model": "QwQ-32B",
-      "display_name": "QwQ-32B",
-      "eci": 136.48,
-      "eci_ci_low": 133.57,
-      "eci_ci_high": 139.2,
-      "date": "2025-03-05",
-      "organization": "Alibaba",
-      "model_id": "alibaba/qwq-32b"
-    },
-    {
       "model": "GPT-4.5",
       "display_name": "GPT-4.5",
-      "eci": 136.45,
-      "eci_ci_low": 134.31,
+      "eci": 136.5,
+      "eci_ci_low": 134.41,
       "eci_ci_high": 138.45,
       "date": "2025-02-27",
       "organization": "OpenAI",
       "model_id": "openai/gpt-4.5-preview-2025-02-27"
     },
     {
+      "model": "QwQ-32B",
+      "display_name": "QwQ-32B",
+      "eci": 136.48,
+      "eci_ci_low": 133.72,
+      "eci_ci_high": 139.15,
+      "date": "2025-03-05",
+      "organization": "Alibaba",
+      "model_id": "alibaba/qwq-32b"
+    },
+    {
       "model": "GPT-4.1",
       "display_name": "GPT-4.1",
-      "eci": 136.15,
-      "eci_ci_low": 134.1,
-      "eci_ci_high": 138.03,
+      "eci": 136.18,
+      "eci_ci_low": 134.14,
+      "eci_ci_high": 138.06,
       "date": "2025-04-14",
       "organization": "OpenAI",
       "model_id": "openai/gpt-4.1"
@@ -981,9 +981,9 @@
     {
       "model": "Qwen3-14B",
       "display_name": "Qwen3-14B",
-      "eci": 136.14,
+      "eci": 136.08,
       "eci_ci_low": 133.42,
-      "eci_ci_high": 138.69,
+      "eci_ci_high": 138.55,
       "date": "2025-04-29",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen3-14b"
@@ -991,9 +991,9 @@
     {
       "model": "o1-mini",
       "display_name": "o1-mini",
-      "eci": 135.3,
-      "eci_ci_low": 133.04,
-      "eci_ci_high": 137.43,
+      "eci": 135.28,
+      "eci_ci_low": 133.1,
+      "eci_ci_high": 137.29,
       "date": "2024-09-12",
       "organization": "OpenAI",
       "model_id": "openai/o1-mini-2024-09-12"
@@ -1001,9 +1001,9 @@
     {
       "model": "gpt-oss-20b",
       "display_name": "gpt-oss-20b",
-      "eci": 134.97,
+      "eci": 134.88,
       "eci_ci_low": 132.27,
-      "eci_ci_high": 137.46,
+      "eci_ci_high": 137.31,
       "date": "2025-08-05",
       "organization": "OpenAI",
       "model_id": "openai/gpt-oss-20b"
@@ -1011,9 +1011,9 @@
     {
       "model": "GPT-4.1 mini",
       "display_name": "GPT-4.1 mini",
-      "eci": 134.2,
-      "eci_ci_low": 131.88,
-      "eci_ci_high": 136.34,
+      "eci": 134.27,
+      "eci_ci_low": 132.13,
+      "eci_ci_high": 136.21,
       "date": "2025-04-14",
       "organization": "OpenAI",
       "model_id": "openai/gpt-4.1-mini-2025-04-14"
@@ -1021,9 +1021,9 @@
     {
       "model": "Qwen3-30B-A3B",
       "display_name": "Qwen3-30B-A3B",
-      "eci": 134.14,
-      "eci_ci_low": 131.3,
-      "eci_ci_high": 136.77,
+      "eci": 134.18,
+      "eci_ci_low": 131.45,
+      "eci_ci_high": 136.76,
       "date": "2025-04-29",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen3-30b-a3b"
@@ -1031,9 +1031,9 @@
     {
       "model": "o1-preview",
       "display_name": "o1-preview",
-      "eci": 133.84,
-      "eci_ci_low": 131.2,
-      "eci_ci_high": 136.29,
+      "eci": 133.54,
+      "eci_ci_low": 130.97,
+      "eci_ci_high": 135.94,
       "date": "2024-09-12",
       "organization": "OpenAI",
       "model_id": "openai/o1-preview-2024-09-12"
@@ -1042,38 +1042,38 @@
       "model": "Mistral Medium 3",
       "display_name": "Mistral Medium 3",
       "eci": 132.81,
-      "eci_ci_low": 130.09,
-      "eci_ci_high": 135.26,
+      "eci_ci_low": 130.17,
+      "eci_ci_high": 135.2,
       "date": "2025-05-07",
       "organization": "Mistral AI",
       "model_id": "mistral-ai/mistral-medium-2505"
     },
     {
-      "model": "Qwen3-8B",
-      "display_name": "Qwen3-8B",
-      "eci": 132.09,
-      "eci_ci_low": 128.87,
-      "eci_ci_high": 135.01,
-      "date": "2025-04-28",
-      "organization": "Alibaba",
-      "model_id": "alibaba/qwen3-8b"
-    },
-    {
       "model": "Llama 4 Maverick",
       "display_name": "Llama 4 Maverick",
-      "eci": 132.08,
-      "eci_ci_low": 129.58,
-      "eci_ci_high": 134.27,
+      "eci": 132.24,
+      "eci_ci_low": 130,
+      "eci_ci_high": 134.26,
       "date": "2025-04-06",
       "organization": "Meta AI",
       "model_id": "meta/llama-4-maverick"
     },
     {
+      "model": "Qwen3-8B",
+      "display_name": "Qwen3-8B",
+      "eci": 132.08,
+      "eci_ci_low": 129.06,
+      "eci_ci_high": 134.78,
+      "date": "2025-04-28",
+      "organization": "Alibaba",
+      "model_id": "alibaba/qwen3-8b"
+    },
+    {
       "model": "DeepSeek-V3",
       "display_name": "DeepSeek-V3",
-      "eci": 131.7,
-      "eci_ci_low": 128.94,
-      "eci_ci_high": 134.15,
+      "eci": 131.71,
+      "eci_ci_low": 129.14,
+      "eci_ci_high": 134.01,
       "date": "2024-12-26",
       "organization": "DeepSeek",
       "model_id": "deepseek/deepseek-v3"
@@ -1081,9 +1081,9 @@
     {
       "model": "Phi-4",
       "display_name": "Phi-4",
-      "eci": 129.04,
-      "eci_ci_low": 125.79,
-      "eci_ci_high": 131.94,
+      "eci": 129.24,
+      "eci_ci_low": 126.27,
+      "eci_ci_high": 131.95,
       "date": "2024-12-12",
       "organization": "Microsoft Research",
       "model_id": "microsoft-research/phi-4"
@@ -1091,9 +1091,9 @@
     {
       "model": "Llama 3.1-405B",
       "display_name": "Llama 3.1-405B",
-      "eci": 127.8,
-      "eci_ci_low": 124.76,
-      "eci_ci_high": 130.52,
+      "eci": 127.87,
+      "eci_ci_low": 124.95,
+      "eci_ci_high": 130.51,
       "date": "2024-07-23",
       "organization": "Meta AI",
       "model_id": "meta-ai/llama-3.1-405b"
@@ -1101,9 +1101,9 @@
     {
       "model": "Llama 4 Scout",
       "display_name": "Llama 4 Scout",
-      "eci": 127.68,
-      "eci_ci_low": 124.73,
-      "eci_ci_high": 130.29,
+      "eci": 127.77,
+      "eci_ci_low": 124.88,
+      "eci_ci_high": 130.4,
       "date": "2025-04-05",
       "organization": "Meta AI",
       "model_id": "meta/llama-4-scout"
@@ -1111,9 +1111,9 @@
     {
       "model": "Gemma 3 27B",
       "display_name": "Gemma 3 27B",
-      "eci": 127.51,
-      "eci_ci_low": 124.29,
-      "eci_ci_high": 130.42,
+      "eci": 127.5,
+      "eci_ci_low": 124.41,
+      "eci_ci_high": 130.28,
       "date": "2025-03-12",
       "organization": "Google DeepMind",
       "model_id": "google-deepmind/gemma-3-27b-it"
@@ -1121,8 +1121,8 @@
     {
       "model": "Qwen2.5-72B",
       "display_name": "Qwen2.5-72B",
-      "eci": 127.18,
-      "eci_ci_low": 124.21,
+      "eci": 127.21,
+      "eci_ci_low": 124.47,
       "eci_ci_high": 129.8,
       "date": "2024-09-19",
       "organization": "Alibaba",
@@ -1131,9 +1131,9 @@
     {
       "model": "GPT-4.1 nano",
       "display_name": "GPT-4.1 nano",
-      "eci": 126.77,
-      "eci_ci_low": 123.76,
-      "eci_ci_high": 129.43,
+      "eci": 126.81,
+      "eci_ci_low": 123.79,
+      "eci_ci_high": 129.59,
       "date": "2025-04-14",
       "organization": "OpenAI",
       "model_id": "openai/gpt-4.1-nano-2025-04-14"
@@ -1141,9 +1141,9 @@
     {
       "model": "Llama 3.3 70B",
       "display_name": "Llama 3.3 70B",
-      "eci": 126.13,
-      "eci_ci_low": 123.12,
-      "eci_ci_high": 128.96,
+      "eci": 126.16,
+      "eci_ci_low": 123.1,
+      "eci_ci_high": 128.98,
       "date": "2024-12-06",
       "organization": "Meta AI",
       "model_id": "meta-ai/llama-3.3-70b-instruct"
@@ -1151,9 +1151,9 @@
     {
       "model": "Claude 3 Opus",
       "display_name": "Claude 3 Opus",
-      "eci": 125.52,
-      "eci_ci_low": 122.44,
-      "eci_ci_high": 128.23,
+      "eci": 125.58,
+      "eci_ci_low": 122.65,
+      "eci_ci_high": 128.17,
       "date": "2024-02-29",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-3-opus-20240229"
@@ -1161,9 +1161,9 @@
     {
       "model": "Gemini 1.5 Pro (May 2024)",
       "display_name": "Gemini 1.5 Pro (May 2024)",
-      "eci": 125.31,
-      "eci_ci_low": 121.93,
-      "eci_ci_high": 128.4,
+      "eci": 125.37,
+      "eci_ci_low": 122.09,
+      "eci_ci_high": 128.37,
       "date": "2024-05-14",
       "organization": "Google DeepMind",
       "model_id": "google-deepmind/gemini-1.5-pro-001"
@@ -1171,9 +1171,9 @@
     {
       "model": "Claude 3.5 Haiku",
       "display_name": "Claude 3.5 Haiku",
-      "eci": 124.93,
-      "eci_ci_low": 121.67,
-      "eci_ci_high": 127.91,
+      "eci": 124.75,
+      "eci_ci_low": 121.49,
+      "eci_ci_high": 127.65,
       "date": "2024-10-22",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-3-5-haiku-20241022"
@@ -1181,9 +1181,9 @@
     {
       "model": "Llama 3.1-70B",
       "display_name": "Llama 3.1-70B",
-      "eci": 124.7,
-      "eci_ci_low": 121.4,
-      "eci_ci_high": 127.55,
+      "eci": 124.72,
+      "eci_ci_low": 121.58,
+      "eci_ci_high": 127.63,
       "date": "2024-07-23",
       "organization": "Meta AI",
       "model_id": "meta-ai/llama-3.1-70b-instruct"
@@ -1191,9 +1191,9 @@
     {
       "model": "GPT-4o mini",
       "display_name": "GPT-4o mini",
-      "eci": 123.86,
-      "eci_ci_low": 120.46,
-      "eci_ci_high": 126.91,
+      "eci": 123.75,
+      "eci_ci_low": 120.5,
+      "eci_ci_high": 126.65,
       "date": "2024-07-18",
       "organization": "OpenAI",
       "model_id": "openai/gpt-4o-mini-2024-07-18"
@@ -1201,9 +1201,9 @@
     {
       "model": "Llama 3-70B",
       "display_name": "Llama 3-70B",
-      "eci": 121.22,
-      "eci_ci_low": 117.3,
-      "eci_ci_high": 124.73,
+      "eci": 121.34,
+      "eci_ci_low": 117.67,
+      "eci_ci_high": 124.75,
       "date": "2024-04-18",
       "organization": "Meta AI",
       "model_id": "meta-ai/meta-llama-3-70b"
@@ -1211,9 +1211,9 @@
     {
       "model": "Claude 3 Sonnet",
       "display_name": "Claude 3 Sonnet",
-      "eci": 119.45,
-      "eci_ci_low": 115.15,
-      "eci_ci_high": 123.26,
+      "eci": 119.65,
+      "eci_ci_low": 115.71,
+      "eci_ci_high": 123.23,
       "date": "2024-02-29",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-3-sonnet-20240229"
@@ -1221,9 +1221,9 @@
     {
       "model": "Qwen2.5-Coder-32B",
       "display_name": "Qwen2.5-Coder-32B",
-      "eci": 118.94,
-      "eci_ci_low": 110.07,
-      "eci_ci_high": 127.78,
+      "eci": 118.74,
+      "eci_ci_low": 110.04,
+      "eci_ci_high": 127.38,
       "date": "2024-09-18",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen2.5-coder-32b"
@@ -1231,9 +1231,9 @@
     {
       "model": "Claude 3 Haiku",
       "display_name": "Claude 3 Haiku",
-      "eci": 117.7,
-      "eci_ci_low": 113.36,
-      "eci_ci_high": 121.45,
+      "eci": 117.79,
+      "eci_ci_low": 113.6,
+      "eci_ci_high": 121.58,
       "date": "2024-03-07",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-3-haiku-20240307"
@@ -1241,9 +1241,9 @@
     {
       "model": "Claude 2",
       "display_name": "Claude 2",
-      "eci": 117.06,
-      "eci_ci_low": 112.46,
-      "eci_ci_high": 121.24,
+      "eci": 117.12,
+      "eci_ci_low": 112.61,
+      "eci_ci_high": 121.05,
       "date": "2023-07-11",
       "organization": "Anthropic",
       "model_id": "anthropic/claude-2.0"
@@ -1251,9 +1251,9 @@
     {
       "model": "Mixtral 8x7B",
       "display_name": "Mixtral 8x7B",
-      "eci": 113.22,
-      "eci_ci_low": 108.14,
-      "eci_ci_high": 117.66,
+      "eci": 113.1,
+      "eci_ci_low": 108.13,
+      "eci_ci_high": 117.48,
       "date": "2023-12-11",
       "organization": "Mistral AI",
       "model_id": "mistral-ai/mixtral-8x7b-v0.1"
@@ -1261,9 +1261,9 @@
     {
       "model": "Gemma 2 9B",
       "display_name": "Gemma 2 9B",
-      "eci": 112.7,
-      "eci_ci_low": 106.91,
-      "eci_ci_high": 117.71,
+      "eci": 112.28,
+      "eci_ci_low": 106.66,
+      "eci_ci_high": 117.21,
       "date": "2024-06-24",
       "organization": "Google DeepMind",
       "model_id": "google-deepmind/gemma-2-9b"
@@ -1271,9 +1271,9 @@
     {
       "model": "Llama 3.1-8B",
       "display_name": "Llama 3.1-8B",
-      "eci": 111.14,
-      "eci_ci_low": 105.46,
-      "eci_ci_high": 116.2,
+      "eci": 110.78,
+      "eci_ci_low": 105.32,
+      "eci_ci_high": 115.82,
       "date": "2024-07-23",
       "organization": "Meta AI",
       "model_id": "meta-ai/llama-3.1-8b-instruct"
@@ -1281,9 +1281,9 @@
     {
       "model": "Llama 3-8B",
       "display_name": "Llama 3-8B",
-      "eci": 109.42,
-      "eci_ci_low": 103.76,
-      "eci_ci_high": 114.34,
+      "eci": 109,
+      "eci_ci_low": 103.32,
+      "eci_ci_high": 113.95,
       "date": "2024-04-18",
       "organization": "Meta AI",
       "model_id": "meta-ai/meta-llama-3-8b"
@@ -1291,9 +1291,9 @@
     {
       "model": "Qwen2.5-Coder (7B)",
       "display_name": "Qwen2.5-Coder (7B)",
-      "eci": 107.7,
-      "eci_ci_low": 97.99,
-      "eci_ci_high": 116.17,
+      "eci": 107.45,
+      "eci_ci_low": 98.13,
+      "eci_ci_high": 115.86,
       "date": "2024-09-18",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen2.5-coder-7b"
@@ -1301,9 +1301,9 @@
     {
       "model": "Falcon-180B",
       "display_name": "Falcon-180B",
-      "eci": 107.11,
-      "eci_ci_low": 98.08,
-      "eci_ci_high": 115,
+      "eci": 106.92,
+      "eci_ci_low": 98.04,
+      "eci_ci_high": 115.21,
       "date": "2023-09-06",
       "organization": "Technology Innovation Institute",
       "model_id": "technology-innovation-institute/falcon-180b"
@@ -1311,9 +1311,9 @@
     {
       "model": "Llama 2-70B",
       "display_name": "Llama 2-70B",
-      "eci": 105.85,
-      "eci_ci_low": 99.77,
-      "eci_ci_high": 111.11,
+      "eci": 105.64,
+      "eci_ci_low": 99.62,
+      "eci_ci_high": 110.86,
       "date": "2023-07-18",
       "organization": "Meta AI",
       "model_id": "meta-ai/llama-2-70b-hf"
@@ -1321,9 +1321,9 @@
     {
       "model": "Gemma 7B",
       "display_name": "Gemma 7B",
-      "eci": 103.27,
-      "eci_ci_low": 95.38,
-      "eci_ci_high": 109.95,
+      "eci": 102.87,
+      "eci_ci_low": 94.96,
+      "eci_ci_high": 109.59,
       "date": "2024-02-21",
       "organization": "Google DeepMind",
       "model_id": "google-deepmind/gemma-7b"
@@ -1331,9 +1331,9 @@
     {
       "model": "Mistral 7B v0.1",
       "display_name": "Mistral 7B v0.1",
-      "eci": 102.84,
-      "eci_ci_low": 94.95,
-      "eci_ci_high": 109.55,
+      "eci": 102.56,
+      "eci_ci_low": 94.84,
+      "eci_ci_high": 109.26,
       "date": "2023-09-27",
       "organization": "Mistral AI",
       "model_id": "mistral-ai/mistral-7b-v0.1"
@@ -1341,9 +1341,9 @@
     {
       "model": "Qwen-14B",
       "display_name": "Qwen-14B",
-      "eci": 101.86,
-      "eci_ci_low": 93.21,
-      "eci_ci_high": 109.3,
+      "eci": 101.61,
+      "eci_ci_low": 92.75,
+      "eci_ci_high": 109.54,
       "date": "2023-09-24",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen-14b"
@@ -1351,9 +1351,9 @@
     {
       "model": "LLaMA-65B",
       "display_name": "LLaMA-65B",
-      "eci": 101.68,
-      "eci_ci_low": 93.01,
-      "eci_ci_high": 109.06,
+      "eci": 101.38,
+      "eci_ci_low": 92.98,
+      "eci_ci_high": 108.66,
       "date": "2023-02-24",
       "organization": "Meta AI",
       "model_id": "meta-ai/llama-65b"
@@ -1361,39 +1361,39 @@
     {
       "model": "Nemotron-4 15B",
       "display_name": "Nemotron-4 15B",
-      "eci": 99.24,
-      "eci_ci_low": 90.07,
-      "eci_ci_high": 107.26,
+      "eci": 98.97,
+      "eci_ci_low": 89.56,
+      "eci_ci_high": 106.97,
       "date": "2024-02-26",
       "organization": "Nvidia",
       "model_id": "nvidia/nemotron-4-15b"
     },
     {
-      "model": "Llama 2-13B",
-      "display_name": "Llama 2-13B",
-      "eci": 96.66,
-      "eci_ci_low": 87.58,
-      "eci_ci_high": 104.62,
-      "date": "2023-07-18",
-      "organization": "Meta AI",
-      "model_id": "meta-ai/llama-2-13b"
-    },
-    {
       "model": "LLaMA-33B",
       "display_name": "LLaMA-33B",
-      "eci": 96.64,
-      "eci_ci_low": 86.97,
-      "eci_ci_high": 104.97,
+      "eci": 96.37,
+      "eci_ci_low": 87.05,
+      "eci_ci_high": 104.65,
       "date": "2023-02-24",
       "organization": "Meta AI",
       "model_id": "meta-ai/llama-33b"
     },
     {
+      "model": "Llama 2-13B",
+      "display_name": "Llama 2-13B",
+      "eci": 96.28,
+      "eci_ci_low": 87.19,
+      "eci_ci_high": 104.31,
+      "date": "2023-07-18",
+      "organization": "Meta AI",
+      "model_id": "meta-ai/llama-2-13b"
+    },
+    {
       "model": "Phi-2",
       "display_name": "Phi-2",
-      "eci": 96.38,
-      "eci_ci_low": 86.27,
-      "eci_ci_high": 104.55,
+      "eci": 95.94,
+      "eci_ci_low": 86.5,
+      "eci_ci_high": 104.28,
       "date": "2023-12-12",
       "organization": "Microsoft",
       "model_id": "microsoft/phi-2"
@@ -1401,9 +1401,9 @@
     {
       "model": "Yi 6B",
       "display_name": "Yi 6B",
-      "eci": 94.43,
-      "eci_ci_low": 83.72,
-      "eci_ci_high": 103.34,
+      "eci": 94.06,
+      "eci_ci_low": 83.69,
+      "eci_ci_high": 102.91,
       "date": "2023-11-22",
       "organization": "01.AI",
       "model_id": "01.ai/yi-6b"
@@ -1411,9 +1411,9 @@
     {
       "model": "Llama 2-34B",
       "display_name": "Llama 2-34B",
-      "eci": 94.09,
-      "eci_ci_low": 83.74,
-      "eci_ci_high": 102.91,
+      "eci": 93.69,
+      "eci_ci_low": 83.73,
+      "eci_ci_high": 102.35,
       "date": "2023-07-18",
       "organization": "Meta AI",
       "model_id": "meta-ai/llama-2-34b"
@@ -1421,9 +1421,9 @@
     {
       "model": "Baichuan2-13B",
       "display_name": "Baichuan2-13B",
-      "eci": 91.97,
-      "eci_ci_low": 80.92,
-      "eci_ci_high": 101.21,
+      "eci": 91.59,
+      "eci_ci_low": 80.91,
+      "eci_ci_high": 100.91,
       "date": "2023-09-06",
       "organization": "Baichuan",
       "model_id": "baichuan/baichuan-2-13b-base"
@@ -1431,9 +1431,9 @@
     {
       "model": "Falcon-40B",
       "display_name": "Falcon-40B",
-      "eci": 90.88,
-      "eci_ci_low": 79.76,
-      "eci_ci_high": 100.11,
+      "eci": 90.42,
+      "eci_ci_low": 79.63,
+      "eci_ci_high": 99.75,
       "date": "2023-05-25",
       "organization": "Technology Innovation Institute",
       "model_id": "technology-innovation-institute/falcon-40b"
@@ -1441,8 +1441,8 @@
     {
       "model": "Qwen2.5-Coder (1.5B)",
       "display_name": "Qwen2.5-Coder (1.5B)",
-      "eci": 89.31,
-      "eci_ci_low": 76.27,
+      "eci": 89.01,
+      "eci_ci_low": 76.06,
       "eci_ci_high": 99.99,
       "date": "2024-09-18",
       "organization": "Alibaba",
@@ -1451,9 +1451,9 @@
     {
       "model": "Qwen-7B",
       "display_name": "Qwen-7B",
-      "eci": 89.22,
-      "eci_ci_low": 77.66,
-      "eci_ci_high": 99.04,
+      "eci": 88.87,
+      "eci_ci_low": 77.54,
+      "eci_ci_high": 98.62,
       "date": "2023-09-28",
       "organization": "Alibaba",
       "model_id": "alibaba/qwen-7b"
@@ -1461,9 +1461,9 @@
     {
       "model": "MPT-30B",
       "display_name": "MPT-30B",
-      "eci": 85.49,
-      "eci_ci_low": 73.34,
-      "eci_ci_high": 95.39,
+      "eci": 84.95,
+      "eci_ci_low": 72.95,
+      "eci_ci_high": 95.48,
       "date": "2023-06-22",
       "organization": "MosaicML",
       "model_id": "mosaicml/mpt-30b"
@@ -1471,9 +1471,9 @@
     {
       "model": "LLaMA-13B",
       "display_name": "LLaMA-13B",
-      "eci": 85.42,
-      "eci_ci_low": 73.81,
-      "eci_ci_high": 95.79,
+      "eci": 84.95,
+      "eci_ci_low": 72.99,
+      "eci_ci_high": 95.23,
       "date": "2023-02-24",
       "organization": "Meta AI",
       "model_id": "meta-ai/llama-13b"
@@ -1481,9 +1481,9 @@
     {
       "model": "Llama 2-7B",
       "display_name": "Llama 2-7B",
-      "eci": 83.38,
-      "eci_ci_low": 70.61,
-      "eci_ci_high": 94.13,
+      "eci": 82.8,
+      "eci_ci_low": 70.34,
+      "eci_ci_high": 93.04,
       "date": "2023-07-18",
       "organization": "Meta AI",
       "model_id": "meta-ai/llama-2-7b"
@@ -1491,9 +1491,9 @@
     {
       "model": "LLaMA-7B",
       "display_name": "LLaMA-7B",
-      "eci": 77.53,
-      "eci_ci_low": 63.71,
-      "eci_ci_high": 89.48,
+      "eci": 76.96,
+      "eci_ci_low": 62.98,
+      "eci_ci_high": 88.78,
       "date": "2023-02-24",
       "organization": "Meta AI",
       "model_id": "meta-ai/llama-7b"
@@ -1501,9 +1501,9 @@
     {
       "model": "Gemma 2B",
       "display_name": "Gemma 2B",
-      "eci": 76.01,
-      "eci_ci_low": 61.36,
-      "eci_ci_high": 88.4,
+      "eci": 75.36,
+      "eci_ci_low": 60.81,
+      "eci_ci_high": 87.85,
       "date": "2024-02-21",
       "organization": "Google DeepMind",
       "model_id": "google-deepmind/gemma-2b"
@@ -1511,9 +1511,9 @@
     {
       "model": "MPT-7B",
       "display_name": "MPT-7B",
-      "eci": 73.72,
-      "eci_ci_low": 59.23,
-      "eci_ci_high": 86.28,
+      "eci": 73.18,
+      "eci_ci_low": 58.58,
+      "eci_ci_high": 86.14,
       "date": "2023-05-05",
       "organization": "MosaicML",
       "model_id": "mosaicml/mpt-7b"
@@ -1521,9 +1521,9 @@
     {
       "model": "Falcon-7B",
       "display_name": "Falcon-7B",
-      "eci": 73.37,
-      "eci_ci_low": 58.12,
-      "eci_ci_high": 86.51,
+      "eci": 72.84,
+      "eci_ci_low": 57.82,
+      "eci_ci_high": 85.82,
       "date": "2023-04-24",
       "organization": "Technology Innovation Institute",
       "model_id": "technology-innovation-institute/falcon-7b"
@@ -1531,9 +1531,9 @@
     {
       "model": "XGen-7B",
       "display_name": "XGen-7B",
-      "eci": 70.59,
-      "eci_ci_low": 53.99,
-      "eci_ci_high": 84.6,
+      "eci": 69.95,
+      "eci_ci_low": 53.38,
+      "eci_ci_high": 83.98,
       "date": "2023-06-27",
       "organization": "Salesforce",
       "model_id": "salesforce/xgen-7b-8k-base"
@@ -1541,9 +1541,9 @@
     {
       "model": "Phi-1.5",
       "display_name": "Phi-1.5",
-      "eci": 68.7,
-      "eci_ci_low": 50.94,
-      "eci_ci_high": 83.51,
+      "eci": 68.17,
+      "eci_ci_low": 49.93,
+      "eci_ci_high": 83.48,
       "date": "2023-09-11",
       "organization": "Microsoft",
       "model_id": "microsoft/phi-1-5"
@@ -1551,9 +1551,9 @@
     {
       "model": "Cerebras-GPT-13B",
       "display_name": "Cerebras-GPT-13B",
-      "eci": 49.33,
-      "eci_ci_low": 26.86,
-      "eci_ci_high": 68.67,
+      "eci": 48.59,
+      "eci_ci_low": 25.79,
+      "eci_ci_high": 67.73,
       "date": "2023-03-20",
       "organization": "Cerebras Systems",
       "model_id": "cerebras-systems/cerebras-gpt-13b"
